@@ -30,6 +30,7 @@ Run commands from the repository root. Activate `.venv`, or use its Python expli
 | [`application/`](application/) | Start the server with project CUDA library paths | `start_voice_app.py` |
 | [`setup/`](setup/) | Download pinned local speech models and manifests | `download_speech_models.py` |
 | [`dependencies/`](dependencies/) | Export and check installed package versions | `export_installed_versions.py` |
+| [`documentation/`](documentation/) | Build the interactive pipeline and README GIF | `build_pipeline_animation.py` |
 | [`runtime/`](runtime) | Persistent GPU Qwen subprocess used by the app | `qwen_asr_worker.py`; started automatically, not a standalone CLI |
 | [`demo/`](demo) | Record, render and verify the bilingual demo | `record_bilingual_demo.py` |
 | [`validation/`](validation) | Configuration, cloud, translation, speech and browser checks | `validate_configuration.py`, `validate_voice_session.py` |
@@ -63,3 +64,20 @@ See [recording details](../docs/demo/README.md). Recording uses the real cloud m
 Live cloud checks use account quota. Some GPU evaluations need the isolated ASR or TTS interpreter and exclusive GPU capacity. Read the relevant [test guide](../docs/guides/advanced-story-testing.md) before running them. Inputs and raw traces belong in ignored `logs/`; reviewed synthetic exports belong in `docs/`.
 
 The [filename migration map](../docs/reference/filename-migration.json) lists all renamed tools and requirement files. Old script names were replaced rather than kept as duplicate wrappers.
+
+## Animated README pipeline
+
+```bash
+.venv/bin/python -m scripts.documentation.build_pipeline_animation
+```
+
+This writes `docs/architecture.html` and `docs/assets/pipeline-animation.gif`. It needs Playwright Chromium and FFmpeg; no cloud calls or speech models are loaded.
+
+To preview the player and animation without loading models:
+
+```bash
+.venv/bin/python -m scripts.documentation.serve_docs
+# Open http://localhost:8768/demo.html
+```
+
+This preview supports HTTP byte ranges, which video seeking needs.

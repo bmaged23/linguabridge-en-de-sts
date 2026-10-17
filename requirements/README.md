@@ -18,3 +18,15 @@ Every installed distribution is pinned with `==`. Keep snapshots separate and in
 ```
 
 These commands read installed package metadata without importing models or changing environments. The main `uv.lock` remains an older dependency resolution; it does not reproduce all three production environments.
+
+## Captured environment caveats
+
+The main app and ASR environments pass `uv pip check`. GPU TTS currently reports six incompatibilities: four packages declare a dependency on the CPU `onnxruntime` distribution even though the GPU distribution provides the same Python module; `onnxruntime-gpu` also declares `coloredlogs` and `sympy`, which are absent in this captured environment. These files preserve the installed versions that ran the local app. They do not claim a clean dependency check or a validated clean-machine installation.
+
+Do not fix the CPU/GPU package-name mismatch by co-installing both ONNX Runtime distributions. The project keeps CPU VAD and GPU voices in separate interpreters. The optional Qwen TTS environment is an experiment and is not required for normal startup.
+
+```bash
+uv pip check --python .venv/bin/python
+uv pip check --python .venv-asr/bin/python
+uv pip check --python .venv-tts-gpu/bin/python
+```

@@ -22,8 +22,8 @@ This is a functional demonstration, not a human speech or translation accuracy b
 
 | File | Contents |
 | --- | --- |
-| `bridge-demo.mp4` | H.264/AAC video |
-| `bridge-demo.webm` | VP9/Vorbis alternative |
+| `bridge-demo.mp4` | H.264 Constrained Baseline / AAC-LC video (MP4 primary) |
+| `bridge-demo.webm` | VP9/Vorbis alternative with an explicit codec type |
 | `demo-cover.png` | README cover with the play button inside its left panel |
 | `poster.png` | Actual app screenshot |
 | `captions.vtt` | Bilingual synthesis-text captions |
@@ -53,3 +53,7 @@ Open `http://localhost:8766/docs/demo.html` with the regular app running, or ser
 ## Project name
 
 The project is now **LinguaBridge STS — English–German Speech-to-Speech**. This recording predates the rename and preserves its original Bridge interface, spoken name and captions.
+
+## Browser playback
+
+The player prefers MP4 with explicit H.264/AAC codec information, falls back to the supported WebM format on a media error, and restores the play button when paused or finished. Open MP4 provides a direct alternative. The MP4 is exported with fast-start metadata for progressive loading.

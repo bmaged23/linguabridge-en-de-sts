@@ -1,13 +1,12 @@
 {
   "mp4": {
     "seconds": 180.48,
-    "bytes": 5122757,
+    "bytes": 5397289,
     "codecs": [
       "h264",
       "aac"
     ],
-    "audio_rms": 0.07566242665052414,
-    "audible_one_second_blocks": 157
+    "audio_rms": 0.0754682794213295
   },
   "webm": {
     "seconds": 180.483,
@@ -16,14 +15,15 @@
       "vp9",
       "vorbis"
     ],
-    "audio_rms": 0.07607676833868027,
-    "audible_one_second_blocks": 157
+    "audio_rms": 0.07607676833868027
   },
   "browser": {
-    "source": "bridge-demo.webm",
-    "duration": 180.483,
-    "playing_confirmed": true,
-    "ended_confirmed": true
+    "base_url": "http://127.0.0.1:8768/",
+    "primary_source": "bridge-demo.mp4?v=compat-2",
+    "duration": 180.48,
+    "decoded_frames": 341,
+    "start_pause_resume_seek_end": true,
+    "failed_mp4_recovers_with_webm": true
   },
   "browser_errors": []
 }

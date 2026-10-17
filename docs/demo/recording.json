@@ -20,8 +20,14 @@
   "soundtrack": "Actual browser audio buffers, scheduled starts and observed stops; original pauses retained",
   "captions": "Source synthesis text for user; actual synthesized phrase text for assistant; interrupted phrase caption omitted",
   "browser_errors": null,
-  "video_bytes": 5122757,
+  "video_bytes": 5397289,
   "observed_stopped_assistant_chunks": 1,
   "recorded_user_utterances": 13,
-  "post_capture_cleanup_note": "All 13 turns and audio/timeline artifacts were saved before an End conversation locator timed out following large PCM serialization. Media was recovered from the intact saved buffers; the recorder now stops capture before PCM export. The original recording browser-error list was not saved; player checks are reported separately."
+  "post_capture_cleanup_note": "All 13 turns and audio/timeline artifacts were saved before an End conversation locator timed out following large PCM serialization. Media was recovered from the intact saved buffers; the recorder now stops capture before PCM export. The original recording browser-error list was not saved; player checks are reported separately.",
+  "compatibility_export": {
+    "video": "H.264 Constrained Baseline, level 4.0, yuv420p",
+    "audio": "AAC-LC, 48 kHz",
+    "mp4_faststart": true,
+    "note": "Re-encoded the saved recording for browser compatibility; story and playback timing unchanged."
+  }
 }

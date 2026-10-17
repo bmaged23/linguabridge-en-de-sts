@@ -5,6 +5,8 @@
 - [Project overview and installation](../README.md)
 - [Tools and commands](../scripts/README.md)
 - [Exact dependency environments](../requirements/README.md)
+- [Memory and voice commands](guides/memory-and-voice-commands.md)
+- [Model notices and privacy](reference/model-notices.md)
 - [All configuration parameters](reference/configuration-parameters.md)
 - [Interactive animated voice pipeline](architecture.html)
 - [Bilingual demo player](demo.html) and [recording details](demo/README.md)
