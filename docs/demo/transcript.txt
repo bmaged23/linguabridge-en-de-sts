@@ -1,0 +1,77 @@
+[user]
+Bridge, remember that my German level is A two, and our Berlin food market budget is sixty euros.
+
+[assistant]
+I saved that note in your persistent memory.
+
+[user]
+High Bridge, Lena and I are exploring a Berlin food market this Saturday. We love vegetarian food. Suggest three fun things we could do with a little excitement.
+
+[assistant — interrupted; displayed text may not have played]
+Hi! Since you and Lena have a budget of sixty euros, you can have a great time. First, try a tasting challenge. Pick three different vegetarian snacks and see which one is the best. Second, look for a local producer and ask them Was ist Ihre Empfehlung? which means What is your recommendation? Third, find a unique vegetable you have never seen before and try to guess its taste before you buy it.
+
+[user]
+Wait one change. It's going to rain. Give us one indoor idea instead—just two short sentences, please.
+
+[assistant]
+Visit a covered market hall like Markthalle Neun to stay dry. You can sample various vegetarian treats while exploring the indoor stalls.
+
+[user]
+I want to tell Lena. Ich freue mich auf Samstag. Does that sound natural? Explain briefly. Then say the German sentence once.
+
+[assistant]
+Yes, that sounds very natural. It means I am looking forward to Saturday. Ich freue mich auf Samstag.
+
+[user]
+Bridge translator mode.
+
+[assistant]
+Enable translation between English and German until you turn it off? Please say yes or no.
+
+[user]
+Yes. Confirm.
+
+[assistant]
+Confirmed. Your settings are now active.
+
+[user]
+Hi Lena, I am excited about Saturday. If it rains, shall we meet inside the market at eleven?
+
+[assistant]
+Hallo Lena, ich freue mich auf Samstag. Wenn es regnet, sollen wir uns um elf Uhr innerhalb des Marktes treffen?
+
+[user]
+Ja, sehr gern. Wir treffen uns am Hauptteignag. Ich kenne dort einen Stand mit vegetarischen Gerichten.
+
+[assistant]
+Yes, I'd love to. We'll meet at the main entrance. I know a stall there with vegetarian dishes.
+
+[user]
+That sounds wonderful. We have sixty euros for both of us. Is there also somewhere to get hot chocolate?
+
+[assistant]
+Das klingt wunderbar. Wir haben sechzig Euro für uns beide. Gibt es dort auch irgendwo heiße Schokolade?
+
+[user]
+Natürlich neben dem Blumenladen gibt es ein kleines Café. Danach können wir zusammen nach Angeschenk suchen.
+
+[assistant]
+Of course, next to the flower shop there is a small café. Afterwards we can look for gifts together.
+
+[user]
+Bridge conversation mode.
+
+[assistant]
+Your settings are updated.
+
+[user]
+Before we go, what German level and market budget did I ask you to remember? Keep it to one sentence.
+
+[assistant]
+You asked me to remember that your German level is A two and your Berlin food market budget is sixty euros.
+
+[user]
+That's kind of super. Teach me how to say I am looking forward to it in German. Then wish us a great Saturday in English, keep it short.
+
+[assistant]
+You can say Ich freue mich darauf. Have a great Saturday!

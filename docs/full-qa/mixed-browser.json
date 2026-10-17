@@ -1,0 +1,3116 @@
+{
+  "turns": [
+    {
+      "case": "english_complex",
+      "seconds": 14.25,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "en"
+      ],
+      "reply": "I am sorry to hear about your train.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Although my appointment was originally scheduled for Thursday, I need to move it to Friday afternoon because my connecting train has been cancelled.",
+      "stt_final": "Although my appointment was originally scheduled for Thursday, I need to move it to Friday afternoon because my connecting train has been cancelled.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 1,
+          "at_ms": 2181.2999999998137
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 2181.5
+        },
+        {
+          "type": "partial",
+          "text": "Although my appointment was originally scheduled.",
+          "language": "en",
+          "at_ms": 5146.899999999441
+        },
+        {
+          "type": "partial",
+          "text": "Although my appointment was originally scheduled for Thursday, I need to move it.",
+          "language": "en",
+          "at_ms": 7416.399999999441
+        },
+        {
+          "type": "partial",
+          "text": "Although my appointment was originally scheduled for Thursday, I need to move it to Friday afternoon because my.",
+          "language": "en",
+          "at_ms": 9011.200000000186
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 1,
+          "at_ms": 10791.599999999627
+        },
+        {
+          "type": "final",
+          "text": "Although my appointment was originally scheduled for Thursday, I need to move it to Friday afternoon because my connecting train has been cancelled.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 13298.200000000186
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 13299.700000000186
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 1,
+          "at_ms": 13299.899999999441
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 13735.200000000186
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 13737.099999999627
+        },
+        {
+          "type": "token",
+          "text": " sorry",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 13737.5
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 13742.399999999441
+        },
+        {
+          "type": "token",
+          "text": " hear",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 13743.099999999627
+        },
+        {
+          "type": "token",
+          "text": " about",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 13743.799999999814
+        },
+        {
+          "type": "token",
+          "text": " your",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 13751.200000000186
+        },
+        {
+          "type": "token",
+          "text": " train",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 13753.099999999627
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 13753.599999999627
+        },
+        {
+          "type": "audio",
+          "id": "1:1",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 14092.700000000186
+        },
+        {
+          "type": "latency",
+          "seconds": 3.298,
+          "at_ms": 14106.899999999441
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 1,
+          "at_ms": 14109.099999999627
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "german_complex",
+      "seconds": 16.93,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "de"
+      ],
+      "reply": "Das ist ein guter Satz, aber es muss heißen ausgefallen ist statt außerfallen.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Obwohl mein Termin ursprünglich für Donnerstag geplant war, muss ich ihn auf Freitagnachmittag verschieben, weil mein Anschlusszug ausgefallen ist.",
+      "stt_final": "Ob mein Termin ursprünglich für Donnerstag geplant war, muss ich ihn auf Freitagnachmittag verschieben, weil mein Anschlusszug außerfallen ist.",
+      "stt_metrics": {
+        "wer": 0.1053,
+        "cer": 0.0417
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 2,
+          "at_ms": 16802.099999999627
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 16802.39999999944
+        },
+        {
+          "type": "partial",
+          "text": "Ob mein Termin ursprünglich für Donnerstag.",
+          "language": "de",
+          "at_ms": 20076.299999999814
+        },
+        {
+          "type": "partial",
+          "text": "Ob mein Termin ursprünglich für Donnerstag geplant war, muss ich ihn auf Freitag nach",
+          "language": "de",
+          "at_ms": 22347.89999999944
+        },
+        {
+          "type": "partial",
+          "text": "Ob mein Termin ursprünglich für Donnerstag geplant war, muss ich ihn auf Freitagnachmittag verschieben, weil mein Anschlusszug.",
+          "language": "de",
+          "at_ms": 24184.39999999944
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 2,
+          "at_ms": 24422.39999999944
+        },
+        {
+          "type": "final",
+          "text": "Ob mein Termin ursprünglich für Donnerstag geplant war, muss ich ihn auf Freitagnachmittag verschieben, weil mein Anschlusszug außerfallen ist.",
+          "language": "de",
+          "certain": true,
+          "at_ms": 28252.799999999814
+        },
+        {
+          "type": "route",
+          "source": "de",
+          "target": "de",
+          "mode": "conversation",
+          "at_ms": 28254
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 2,
+          "at_ms": 28254.099999999627
+        },
+        {
+          "type": "token",
+          "text": "Das",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28674.39999999944
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28675.89999999944
+        },
+        {
+          "type": "token",
+          "text": " ein",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28676.5
+        },
+        {
+          "type": "token",
+          "text": " guter",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28682.39999999944
+        },
+        {
+          "type": "token",
+          "text": " Satz",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28684.5
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28685
+        },
+        {
+          "type": "token",
+          "text": " aber",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28692.799999999814
+        },
+        {
+          "type": "token",
+          "text": " es",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28693.5
+        },
+        {
+          "type": "token",
+          "text": " muss",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28702.599999999627
+        },
+        {
+          "type": "token",
+          "text": " hei",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28714.39999999944
+        },
+        {
+          "type": "token",
+          "text": "ßen",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28720.700000000186
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28721.5
+        },
+        {
+          "type": "token",
+          "text": "aus",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28730.200000000186
+        },
+        {
+          "type": "token",
+          "text": "ge",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28730.700000000186
+        },
+        {
+          "type": "token",
+          "text": "fallen",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28738.099999999627
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28741.200000000186
+        },
+        {
+          "type": "token",
+          "text": " statt",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28749.799999999814
+        },
+        {
+          "type": "token",
+          "text": " außer",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28758.89999999944
+        },
+        {
+          "type": "token",
+          "text": "fallen",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28759.599999999627
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 28760
+        },
+        {
+          "type": "audio",
+          "id": "2:1",
+          "turn": 2,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 29026.099999999627
+        },
+        {
+          "type": "latency",
+          "seconds": 4.6,
+          "at_ms": 29053.299999999814
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 2,
+          "at_ms": 29053.5
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "2:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "english_numbers",
+      "seconds": 16.21,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "en"
+      ],
+      "reply": "I cannot book tickets for you, but I can help you translate that request into German.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Please reserve two tickets to Berlin for the twenty third of November, but do not confirm the booking until I have checked the total price.",
+      "stt_final": "Please reserve two tickets to Berlin for the twenty-third of November, but do not confirm the booking until I have checked the total price.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 3,
+          "at_ms": 34121.59999999963
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 34121.799999999814
+        },
+        {
+          "type": "partial",
+          "text": "Please reserve two tickets to Berlin for the.",
+          "language": "en",
+          "at_ms": 37104.200000000186
+        },
+        {
+          "type": "partial",
+          "text": "Please reserve two tickets to Berlin for the twenty-third of November, but do not.",
+          "language": "en",
+          "at_ms": 39419.39999999944
+        },
+        {
+          "type": "partial",
+          "text": "Please reserve two tickets to Berlin for the twenty-third of November, but do not confirm the booking until I have checked.",
+          "language": "en",
+          "at_ms": 41033
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 3,
+          "at_ms": 41702.799999999814
+        },
+        {
+          "type": "final",
+          "text": "Please reserve two tickets to Berlin for the twenty-third of November, but do not confirm the booking until I have checked the total price.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 44043
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 44044.299999999814
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 3,
+          "at_ms": 44044.299999999814
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44498.200000000186
+        },
+        {
+          "type": "token",
+          "text": " cannot",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44499.5
+        },
+        {
+          "type": "token",
+          "text": " book",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44499.89999999944
+        },
+        {
+          "type": "token",
+          "text": " tickets",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44512.299999999814
+        },
+        {
+          "type": "token",
+          "text": " for",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44513
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44527.799999999814
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44532
+        },
+        {
+          "type": "token",
+          "text": " but",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44532.5
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44533
+        },
+        {
+          "type": "token",
+          "text": " can",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44533.5
+        },
+        {
+          "type": "token",
+          "text": " help",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44550.09999999963
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44550.799999999814
+        },
+        {
+          "type": "token",
+          "text": " translate",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44551.200000000186
+        },
+        {
+          "type": "token",
+          "text": " that",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44564
+        },
+        {
+          "type": "token",
+          "text": " request",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44565.59999999963
+        },
+        {
+          "type": "token",
+          "text": " into",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44582.5
+        },
+        {
+          "type": "token",
+          "text": " German",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44602.39999999944
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 44603
+        },
+        {
+          "type": "audio",
+          "id": "3:1",
+          "turn": 3,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 45308.5
+        },
+        {
+          "type": "latency",
+          "seconds": 3.601,
+          "at_ms": 45333
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 3,
+          "at_ms": 45333.09999999963
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "3:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "german_numbers",
+      "seconds": 14.96,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "de"
+      ],
+      "reply": "Das ist ein perfekter Satz.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Bitte reservieren Sie zwei Fahrkarten nach Berlin für den dreiundzwanzigsten November, aber bestätigen Sie die Buchung erst, nachdem ich den Gesamtpreis geprüft habe.",
+      "stt_final": "Bitte reservieren Sie zwei Fahrkarten nach Berlin für den dreiundzwanzigsten November, aber bestätigen Sie die Buchung erst, nachdem ich den Gesamtpreis geprüft habe.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 4,
+          "at_ms": 50662.200000000186
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 50662.39999999944
+        },
+        {
+          "type": "partial",
+          "text": "Bitte reservieren Sie zwei Fahrkarten nach Berlin.",
+          "language": "de",
+          "at_ms": 54039.39999999944
+        },
+        {
+          "type": "partial",
+          "text": "Bitte reservieren Sie zwei Fahrkarten nach Berlin für den dreiundzwanzigsten November.",
+          "language": "de",
+          "at_ms": 56339.299999999814
+        },
+        {
+          "type": "partial",
+          "text": "Bitte reservieren Sie zwei Fahrkarten nach Berlin für den dreiundzwanzigsten November, aber bestätigen Sie die Buchung erst.",
+          "language": "de",
+          "at_ms": 57690.5
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 4,
+          "at_ms": 59491.59999999963
+        },
+        {
+          "type": "final",
+          "text": "Bitte reservieren Sie zwei Fahrkarten nach Berlin für den dreiundzwanzigsten November, aber bestätigen Sie die Buchung erst, nachdem ich den Gesamtpreis geprüft habe.",
+          "language": "de",
+          "certain": true,
+          "at_ms": 63223.299999999814
+        },
+        {
+          "type": "route",
+          "source": "de",
+          "target": "de",
+          "mode": "conversation",
+          "at_ms": 63224.5
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 4,
+          "at_ms": 63224.59999999963
+        },
+        {
+          "type": "token",
+          "text": "Das",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 63700
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 63712.299999999814
+        },
+        {
+          "type": "token",
+          "text": " ein",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 63712.700000000186
+        },
+        {
+          "type": "token",
+          "text": " perfek",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 63713.09999999963
+        },
+        {
+          "type": "token",
+          "text": "ter",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 63725.89999999944
+        },
+        {
+          "type": "token",
+          "text": " Satz",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 63728
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 63728.59999999963
+        },
+        {
+          "type": "audio",
+          "id": "4:1",
+          "turn": 4,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 63966.200000000186
+        },
+        {
+          "type": "latency",
+          "seconds": 4.474,
+          "at_ms": 63976.299999999814
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 4,
+          "at_ms": 63976.5
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "4:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "en_de_en_travel",
+      "seconds": 22.9,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 4,
+      "played_chunks": 4,
+      "languages": [
+        "en",
+        "de",
+        "de",
+        "de"
+      ],
+      "reply": "You can say Ich möchte meine Reservierung ändern, weil mein Zug Verspätung hat und ich den Anschluss verpasse. Könnten Sie eine andere Verbindung finden, die vor Mitternacht ankommt?",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "I would like to change my reservation because mein Zug hat Verspätung und ich verpasse den Anschluss so could you find another connection that arrives before midnight?",
+      "stt_final": "I would like to change my reservation because mein Zug hat Verspätung und ich verpasse den Anschluss. So could you find another connection that arrives before midnight?",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 5,
+          "at_ms": 66081.59999999963
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 66081.79999999981
+        },
+        {
+          "type": "partial",
+          "text": "I would like to change my reservation because.",
+          "language": "en",
+          "at_ms": 69025.39999999944
+        },
+        {
+          "type": "partial",
+          "text": "I would like to change my reservation because mein Zug hat Verspätung und ich hab.",
+          "language": "en",
+          "at_ms": 71510
+        },
+        {
+          "type": "partial",
+          "text": "I would like to change my reservation because mein Zug hat Verspätung und ich verpasse den Anschluss. So could you find another.",
+          "language": "en",
+          "at_ms": 73395.70000000019
+        },
+        {
+          "type": "partial",
+          "text": "I would like to change my reservation because mein Zug hat Verspätung und ich verpasse den Anschluss. So could you find another connection that arrives before mid.",
+          "language": "en",
+          "at_ms": 74863.89999999944
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 5,
+          "at_ms": 75172.29999999981
+        },
+        {
+          "type": "final",
+          "text": "I would like to change my reservation because mein Zug hat Verspätung und ich verpasse den Anschluss. So could you find another connection that arrives before midnight?",
+          "language": "en",
+          "certain": true,
+          "at_ms": 78083.70000000019
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 78084.89999999944
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 5,
+          "at_ms": 78084.89999999944
+        },
+        {
+          "type": "token",
+          "text": "You",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 78879.59999999963
+        },
+        {
+          "type": "token",
+          "text": " can",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 78880.70000000019
+        },
+        {
+          "type": "token",
+          "text": " say",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 78881.09999999963
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 78892.29999999981
+        },
+        {
+          "type": "token",
+          "text": "Ich",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78894.29999999981
+        },
+        {
+          "type": "token",
+          "text": " möchte",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78894.70000000019
+        },
+        {
+          "type": "token",
+          "text": " meine",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78925.79999999981
+        },
+        {
+          "type": "token",
+          "text": " Reserv",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78929.59999999963
+        },
+        {
+          "type": "token",
+          "text": "ierung",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78930.5
+        },
+        {
+          "type": "token",
+          "text": " ändern",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78930.89999999944
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78931.5
+        },
+        {
+          "type": "token",
+          "text": " weil",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78933.5
+        },
+        {
+          "type": "token",
+          "text": " mein",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78934
+        },
+        {
+          "type": "token",
+          "text": " Zug",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78934.29999999981
+        },
+        {
+          "type": "token",
+          "text": " Vers",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78934.59999999963
+        },
+        {
+          "type": "token",
+          "text": "p",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78948.39999999944
+        },
+        {
+          "type": "token",
+          "text": "ät",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78950.39999999944
+        },
+        {
+          "type": "token",
+          "text": "ung",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78951
+        },
+        {
+          "type": "token",
+          "text": " hat",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78951.29999999981
+        },
+        {
+          "type": "token",
+          "text": " und",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78951.70000000019
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78966.5
+        },
+        {
+          "type": "token",
+          "text": " den",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78968.39999999944
+        },
+        {
+          "type": "token",
+          "text": " Anschluss",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78986.09999999963
+        },
+        {
+          "type": "token",
+          "text": " ver",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78991.39999999944
+        },
+        {
+          "type": "token",
+          "text": "passe",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78992.09999999963
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 78992.29999999981
+        },
+        {
+          "type": "token",
+          "text": " Kön",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79004.29999999981
+        },
+        {
+          "type": "token",
+          "text": "nten",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79006.39999999944
+        },
+        {
+          "type": "audio",
+          "id": "5:1",
+          "turn": 5,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 79010.5
+        },
+        {
+          "type": "latency",
+          "seconds": 3.837,
+          "at_ms": 79018.09999999963
+        },
+        {
+          "type": "token",
+          "text": " Sie",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79024.70000000019
+        },
+        {
+          "type": "token",
+          "text": " eine",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79025.70000000019
+        },
+        {
+          "type": "token",
+          "text": " andere",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79041.70000000019
+        },
+        {
+          "type": "token",
+          "text": " Verbindung",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79042.89999999944
+        },
+        {
+          "type": "token",
+          "text": " finden",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79043.70000000019
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79044.5
+        },
+        {
+          "type": "token",
+          "text": " die",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79044.79999999981
+        },
+        {
+          "type": "token",
+          "text": " vor",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79060.5
+        },
+        {
+          "type": "token",
+          "text": " Mit",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79078.29999999981
+        },
+        {
+          "type": "token",
+          "text": "tern",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79094.39999999944
+        },
+        {
+          "type": "token",
+          "text": "acht",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79096.20000000019
+        },
+        {
+          "type": "token",
+          "text": " an",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79097.5
+        },
+        {
+          "type": "token",
+          "text": "kommt",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79126.59999999963
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 79127.09999999963
+        },
+        {
+          "type": "audio",
+          "id": "5:2",
+          "turn": 5,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 79278.20000000019
+        },
+        {
+          "type": "audio",
+          "id": "5:3",
+          "turn": 5,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 80240.70000000019
+        },
+        {
+          "type": "audio",
+          "id": "5:4",
+          "turn": 5,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 80243.70000000019
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 5,
+          "at_ms": 80244.20000000019
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "5:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:3",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:4",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "de_en_de_travel",
+      "seconds": 21.17,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 3,
+      "played_chunks": 3,
+      "languages": [
+        "en",
+        "de",
+        "de"
+      ],
+      "reply": "You can say Könnten Sie bitte prüfen, ob der Anschlussflug gestrichen wurde oder nur Verspätung hat, damit ich entscheiden kann, ob ich heute noch ein Hotel buchen muss.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Könnten Sie bitte prüfen, ob the connecting flight has been cancelled or simply delayed damit ich entscheiden kann, ob ich heute noch ein Hotel buchen muss?",
+      "stt_final": "Könnten bitte prüfen ob the connecting flight has been cancelled or simply delayed, damit ich entscheiden kann ob ich heute noch ein Hotel buchen muss.",
+      "stt_metrics": {
+        "wer": 0.0385,
+        "cer": 0.0261
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 6,
+          "at_ms": 89281.79999999981
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 89282
+        },
+        {
+          "type": "partial",
+          "text": "Couldnten bitte prüfen ob",
+          "language": "en",
+          "at_ms": 92165.39999999944
+        },
+        {
+          "type": "partial",
+          "text": "Könnten bitte prüfen ob",
+          "language": "en",
+          "at_ms": 94021.29999999981
+        },
+        {
+          "type": "partial",
+          "text": "Könnten bitte prüfen ob the connecting flight has been cancelled or simply delayed, damit ich entscheiden kann.",
+          "language": "en",
+          "at_ms": 96632.39999999944
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 6,
+          "at_ms": 97542.09999999963
+        },
+        {
+          "type": "final",
+          "text": "Könnten bitte prüfen ob the connecting flight has been cancelled or simply delayed, damit ich entscheiden kann ob ich heute noch ein Hotel buchen muss.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 100897.79999999981
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 100898.89999999944
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 6,
+          "at_ms": 100899
+        },
+        {
+          "type": "token",
+          "text": "You",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 101347.09999999963
+        },
+        {
+          "type": "token",
+          "text": " can",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 101348.5
+        },
+        {
+          "type": "token",
+          "text": " say",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 101349
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 101363
+        },
+        {
+          "type": "token",
+          "text": "K",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101365
+        },
+        {
+          "type": "token",
+          "text": "ön",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101365.5
+        },
+        {
+          "type": "token",
+          "text": "nten",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101389.39999999944
+        },
+        {
+          "type": "token",
+          "text": " Sie",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101390.09999999963
+        },
+        {
+          "type": "token",
+          "text": " bitte",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101390.59999999963
+        },
+        {
+          "type": "token",
+          "text": " prüfen",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101390.89999999944
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101391.29999999981
+        },
+        {
+          "type": "token",
+          "text": " ob",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101406.20000000019
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101406.89999999944
+        },
+        {
+          "type": "token",
+          "text": " Anschluss",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101407.59999999963
+        },
+        {
+          "type": "token",
+          "text": "flug",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101408
+        },
+        {
+          "type": "token",
+          "text": " gest",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101408.29999999981
+        },
+        {
+          "type": "token",
+          "text": "ric",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101419
+        },
+        {
+          "type": "token",
+          "text": "hen",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101445.79999999981
+        },
+        {
+          "type": "token",
+          "text": " wurde",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101446.29999999981
+        },
+        {
+          "type": "token",
+          "text": " oder",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101446.70000000019
+        },
+        {
+          "type": "token",
+          "text": " nur",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101446.89999999944
+        },
+        {
+          "type": "audio",
+          "id": "6:1",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 101463.79999999981
+        },
+        {
+          "type": "latency",
+          "seconds": 3.922,
+          "at_ms": 101469.20000000019
+        },
+        {
+          "type": "token",
+          "text": " Vers",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101503
+        },
+        {
+          "type": "token",
+          "text": "p",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101505.89999999944
+        },
+        {
+          "type": "token",
+          "text": "ät",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101506.70000000019
+        },
+        {
+          "type": "token",
+          "text": "ung",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101507.29999999981
+        },
+        {
+          "type": "token",
+          "text": " hat",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101507.89999999944
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101508.29999999981
+        },
+        {
+          "type": "token",
+          "text": " damit",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101508.79999999981
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101509.20000000019
+        },
+        {
+          "type": "token",
+          "text": " entscheiden",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101509.70000000019
+        },
+        {
+          "type": "token",
+          "text": " kann",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101519
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101519.59999999963
+        },
+        {
+          "type": "token",
+          "text": " ob",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101537.59999999963
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101538.20000000019
+        },
+        {
+          "type": "token",
+          "text": " heute",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101538.59999999963
+        },
+        {
+          "type": "token",
+          "text": " noch",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101539.09999999963
+        },
+        {
+          "type": "token",
+          "text": " ein",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101539.59999999963
+        },
+        {
+          "type": "token",
+          "text": " Hotel",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101550.79999999981
+        },
+        {
+          "type": "token",
+          "text": " bu",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101555.09999999963
+        },
+        {
+          "type": "token",
+          "text": "chen",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101557
+        },
+        {
+          "type": "token",
+          "text": " muss",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101557.39999999944
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 101557.79999999981
+        },
+        {
+          "type": "audio",
+          "id": "6:2",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 101763.79999999981
+        },
+        {
+          "type": "audio",
+          "id": "6:3",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 101939.09999999963
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 6,
+          "at_ms": 101940.39999999944
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "6:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:3",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "en_de_en_learning",
+      "seconds": 34.81,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 10,
+      "played_chunks": 10,
+      "languages": [
+        "en",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "en",
+        "de",
+        "en",
+        "en"
+      ],
+      "reply": "Obwohl means although, which shows a contrast. Weil means because, which gives a reason. Obwohl ich müde bin, arbeite ich weiter means although I am tired, I keep working. Weil ich müde bin, mache ich eine Pause means because I am tired, I am taking a break. For work tomorrow, you could say Obwohl ich viel zu tun habe, helfe ich Ihnen gerne which means although I have a lot to do, I am happy to help you.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Please explain the difference between obwohl ich müde bin und weil ich müde bin and then give me an example that I could use at work tomorrow.",
+      "stt_final": "Please explain the difference between. Obwohl ich müde bin und weil ich müde bin, and then give me an example that I could use at work tomorrow.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 7,
+          "at_ms": 110881.59999999963
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 110881.79999999981
+        },
+        {
+          "type": "partial",
+          "text": "Please explain the difference between.",
+          "language": "en",
+          "at_ms": 113721.59999999963
+        },
+        {
+          "type": "partial",
+          "text": "Please explain the difference between. Obwohl ich müde bin und weil ich müde bin.",
+          "language": "en",
+          "at_ms": 116394.29999999981
+        },
+        {
+          "type": "partial",
+          "text": "Please explain the difference between. Obwohl ich müde bin und weil ich müde bin, and then give me an example that I could.",
+          "language": "en",
+          "at_ms": 117960.59999999963
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 7,
+          "at_ms": 118761.70000000019
+        },
+        {
+          "type": "final",
+          "text": "Please explain the difference between. Obwohl ich müde bin und weil ich müde bin, and then give me an example that I could use at work tomorrow.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 121964.59999999963
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 121965.79999999981
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 7,
+          "at_ms": 121965.89999999944
+        },
+        {
+          "type": "token",
+          "text": "Ob",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122452.5
+        },
+        {
+          "type": "token",
+          "text": "wohl",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122456.39999999944
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122456.89999999944
+        },
+        {
+          "type": "token",
+          "text": " although",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122460.59999999963
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122479.09999999963
+        },
+        {
+          "type": "token",
+          "text": " which",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122479.59999999963
+        },
+        {
+          "type": "token",
+          "text": " shows",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122499.59999999963
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122500.20000000019
+        },
+        {
+          "type": "token",
+          "text": " contrast",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122500.59999999963
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122501.09999999963
+        },
+        {
+          "type": "token",
+          "text": " Weil",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122524.5
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122621.29999999981
+        },
+        {
+          "type": "token",
+          "text": " because",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122634.20000000019
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122635.39999999944
+        },
+        {
+          "type": "token",
+          "text": " which",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122636
+        },
+        {
+          "type": "token",
+          "text": " gives",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122636.39999999944
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122637.20000000019
+        },
+        {
+          "type": "token",
+          "text": " reason",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122637.70000000019
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122638.20000000019
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122638.70000000019
+        },
+        {
+          "type": "token",
+          "text": "Ob",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122665.39999999944
+        },
+        {
+          "type": "token",
+          "text": "wohl",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122666
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122666.59999999963
+        },
+        {
+          "type": "token",
+          "text": " mü",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122667.09999999963
+        },
+        {
+          "type": "token",
+          "text": "de",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122668
+        },
+        {
+          "type": "token",
+          "text": " bin",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122668.70000000019
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122669.29999999981
+        },
+        {
+          "type": "token",
+          "text": " arbe",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122670
+        },
+        {
+          "type": "token",
+          "text": "ite",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122670.59999999963
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122671.5
+        },
+        {
+          "type": "token",
+          "text": " weiter",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122672.09999999963
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122672.5
+        },
+        {
+          "type": "token",
+          "text": " although",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122676.79999999981
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122683.20000000019
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122684.20000000019
+        },
+        {
+          "type": "token",
+          "text": " tired",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122685.09999999963
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122685.79999999981
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122694.09999999963
+        },
+        {
+          "type": "token",
+          "text": " keep",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122783.09999999963
+        },
+        {
+          "type": "token",
+          "text": " working",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122783.79999999981
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122784.29999999981
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122784.59999999963
+        },
+        {
+          "type": "token",
+          "text": "Weil",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122784.89999999944
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122785.29999999981
+        },
+        {
+          "type": "token",
+          "text": " mü",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122785.59999999963
+        },
+        {
+          "type": "token",
+          "text": "de",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122785.79999999981
+        },
+        {
+          "type": "token",
+          "text": " bin",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122786.20000000019
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122786.5
+        },
+        {
+          "type": "token",
+          "text": " mache",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122786.70000000019
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122787.09999999963
+        },
+        {
+          "type": "token",
+          "text": " eine",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122787.29999999981
+        },
+        {
+          "type": "audio",
+          "id": "7:1",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 122795.39999999944
+        },
+        {
+          "type": "latency",
+          "seconds": 4.032,
+          "at_ms": 122808
+        },
+        {
+          "type": "token",
+          "text": " Pause",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122810.20000000019
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122811
+        },
+        {
+          "type": "token",
+          "text": " because",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122818.59999999963
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122819.5
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122820
+        },
+        {
+          "type": "token",
+          "text": " tired",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122820.39999999944
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122820.89999999944
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122832.79999999981
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122903.29999999981
+        },
+        {
+          "type": "token",
+          "text": " taking",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122903.89999999944
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122904.29999999981
+        },
+        {
+          "type": "token",
+          "text": " break",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122904.59999999963
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122905
+        },
+        {
+          "type": "audio",
+          "id": "7:2",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 122994.89999999944
+        },
+        {
+          "type": "token",
+          "text": " For",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122995.89999999944
+        },
+        {
+          "type": "token",
+          "text": " work",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122996.5
+        },
+        {
+          "type": "token",
+          "text": " tomorrow",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122996.89999999944
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122997.20000000019
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122997.5
+        },
+        {
+          "type": "token",
+          "text": " could",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122997.89999999944
+        },
+        {
+          "type": "token",
+          "text": " say",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122998.29999999981
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 122998.59999999963
+        },
+        {
+          "type": "token",
+          "text": "Ob",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122999
+        },
+        {
+          "type": "token",
+          "text": "wohl",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122999.29999999981
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 122999.70000000019
+        },
+        {
+          "type": "token",
+          "text": " viel",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123000
+        },
+        {
+          "type": "token",
+          "text": " zu",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123000.39999999944
+        },
+        {
+          "type": "token",
+          "text": " tun",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123000.70000000019
+        },
+        {
+          "type": "token",
+          "text": " habe",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123001
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123001.29999999981
+        },
+        {
+          "type": "token",
+          "text": " hel",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123001.70000000019
+        },
+        {
+          "type": "token",
+          "text": "fe",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123002
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123002.39999999944
+        },
+        {
+          "type": "token",
+          "text": " Ihnen",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123002.70000000019
+        },
+        {
+          "type": "token",
+          "text": " gerne",
+          "turn": 7,
+          "language": "de",
+          "at_ms": 123003.20000000019
+        },
+        {
+          "type": "audio",
+          "id": "7:3",
+          "turn": 7,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 123138.29999999981
+        },
+        {
+          "type": "audio",
+          "id": "7:4",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 125762
+        },
+        {
+          "type": "token",
+          "text": " which",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125762.89999999944
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125763.39999999944
+        },
+        {
+          "type": "token",
+          "text": " although",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125763.79999999981
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125764.20000000019
+        },
+        {
+          "type": "token",
+          "text": " have",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125764.5
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125764.79999999981
+        },
+        {
+          "type": "token",
+          "text": " lot",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125765.20000000019
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125765.59999999963
+        },
+        {
+          "type": "token",
+          "text": " do",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125765.89999999944
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125766.20000000019
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125766.59999999963
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125766.89999999944
+        },
+        {
+          "type": "token",
+          "text": " happy",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125767.20000000019
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125767.59999999963
+        },
+        {
+          "type": "token",
+          "text": " help",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125767.89999999944
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125768.29999999981
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 125768.59999999963
+        },
+        {
+          "type": "audio",
+          "id": "7:5",
+          "turn": 7,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 128119.09999999963
+        },
+        {
+          "type": "audio",
+          "id": "7:6",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 130365.39999999944
+        },
+        {
+          "type": "audio",
+          "id": "7:7",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 132755
+        },
+        {
+          "type": "audio",
+          "id": "7:8",
+          "turn": 7,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 134956.39999999944
+        },
+        {
+          "type": "audio",
+          "id": "7:9",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 137605.59999999963
+        },
+        {
+          "type": "audio",
+          "id": "7:10",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 139109.5
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 7,
+          "at_ms": 139110.2000000002
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "7:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:3",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:4",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:5",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:6",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:7",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:8",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:9",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:10",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "de_en_de_work",
+      "seconds": 26.98,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 5,
+      "played_chunks": 5,
+      "languages": [
+        "en",
+        "de",
+        "en",
+        "de",
+        "de"
+      ],
+      "reply": "You probably mean Mein Chef hat gesagt, which means my boss said. You can say Wir sollten das Meeting verschieben, bis alle den aktualisierten Vertrag geprüft haben. Aber ich möchte zuerst wissen, ob der Kunde damit einverstanden ist.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Meine Kollegin hat gesagt we should postpone the meeting until everyone has reviewed the updated contract aber ich möchte zuerst wissen, ob der Kunde damit einverstanden ist.",
+      "stt_final": "Meine Knecht gesagt. We should postpone the meeting until everyone has reviewed the updated contract. Aber ich möchte zuerst wissen, ob der Kunde damit einverstanden ist.",
+      "stt_metrics": {
+        "wer": 0.0741,
+        "cer": 0.0465
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 8,
+          "at_ms": 146210.89999999944
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 146211
+        },
+        {
+          "type": "partial",
+          "text": "Meine Klinin hat gesagt.",
+          "language": "en",
+          "at_ms": 149322
+        },
+        {
+          "type": "partial",
+          "text": "Meine Knecht gesagt. We should postpone the meeting until everyone has.",
+          "language": "en",
+          "at_ms": 151478.7000000002
+        },
+        {
+          "type": "partial",
+          "text": "Meine Knecht gesagt. We should postpone the meeting until everyone has reviewed the updated contract.",
+          "language": "en",
+          "at_ms": 152954.7000000002
+        },
+        {
+          "type": "partial",
+          "text": "Meine Knecht gesagt. We should postpone the meeting until everyone has reviewed the updated contract. Aber ich möchte zuerst wissen, ob der Kunde.",
+          "language": "en",
+          "at_ms": 155366
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 8,
+          "at_ms": 156071.7999999998
+        },
+        {
+          "type": "final",
+          "text": "Meine Knecht gesagt. We should postpone the meeting until everyone has reviewed the updated contract. Aber ich möchte zuerst wissen, ob der Kunde damit einverstanden ist.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 159323.7000000002
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 159324.7999999998
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 8,
+          "at_ms": 159325
+        },
+        {
+          "type": "token",
+          "text": "You",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159762.7999999998
+        },
+        {
+          "type": "token",
+          "text": " probably",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159764.2000000002
+        },
+        {
+          "type": "token",
+          "text": " mean",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159764.59999999963
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159780.2999999998
+        },
+        {
+          "type": "token",
+          "text": "Mein",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159800.59999999963
+        },
+        {
+          "type": "token",
+          "text": " Chef",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159803.59999999963
+        },
+        {
+          "type": "token",
+          "text": " hat",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159804.39999999944
+        },
+        {
+          "type": "token",
+          "text": " gesagt",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159819.59999999963
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159820.2000000002
+        },
+        {
+          "type": "token",
+          "text": " which",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159838.2999999998
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159838.7000000002
+        },
+        {
+          "type": "token",
+          "text": " my",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159839.09999999963
+        },
+        {
+          "type": "token",
+          "text": " boss",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159856.5
+        },
+        {
+          "type": "token",
+          "text": " said",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159917.39999999944
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159919.7999999998
+        },
+        {
+          "type": "token",
+          "text": " You",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159920.39999999944
+        },
+        {
+          "type": "token",
+          "text": " can",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159920.7999999998
+        },
+        {
+          "type": "token",
+          "text": " say",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159921.2999999998
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 159921.7000000002
+        },
+        {
+          "type": "token",
+          "text": "Wir",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159922
+        },
+        {
+          "type": "token",
+          "text": " sollten",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159922.5
+        },
+        {
+          "type": "token",
+          "text": " das",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159922.89999999944
+        },
+        {
+          "type": "token",
+          "text": " Meeting",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159923.2999999998
+        },
+        {
+          "type": "token",
+          "text": " versch",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159923.59999999963
+        },
+        {
+          "type": "audio",
+          "id": "8:1",
+          "turn": 8,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 159928.5
+        },
+        {
+          "type": "latency",
+          "seconds": 3.856,
+          "at_ms": 159938
+        },
+        {
+          "type": "token",
+          "text": "ieben",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159938.2000000002
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159938.89999999944
+        },
+        {
+          "type": "token",
+          "text": " bis",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159939.5
+        },
+        {
+          "type": "token",
+          "text": " alle",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159940
+        },
+        {
+          "type": "token",
+          "text": " den",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159940.5
+        },
+        {
+          "type": "token",
+          "text": " aktual",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159954.59999999963
+        },
+        {
+          "type": "token",
+          "text": "isierten",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159955.09999999963
+        },
+        {
+          "type": "token",
+          "text": " Vertrag",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159955.59999999963
+        },
+        {
+          "type": "token",
+          "text": " geprüft",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159955.7999999998
+        },
+        {
+          "type": "token",
+          "text": " haben",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159956.2000000002
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 159970
+        },
+        {
+          "type": "token",
+          "text": " Aber",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160014.89999999944
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160015.89999999944
+        },
+        {
+          "type": "token",
+          "text": " möchte",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160016.89999999944
+        },
+        {
+          "type": "token",
+          "text": " zuerst",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160017.39999999944
+        },
+        {
+          "type": "token",
+          "text": " wissen",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160017.7999999998
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160018.09999999963
+        },
+        {
+          "type": "token",
+          "text": " ob",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160018.59999999963
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160018.7999999998
+        },
+        {
+          "type": "token",
+          "text": " Kunde",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160019.2000000002
+        },
+        {
+          "type": "token",
+          "text": " damit",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160019.59999999963
+        },
+        {
+          "type": "token",
+          "text": " ein",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160030.2000000002
+        },
+        {
+          "type": "token",
+          "text": "ver",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160036.7999999998
+        },
+        {
+          "type": "token",
+          "text": "standen",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160037.2999999998
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160037.89999999944
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 8,
+          "language": "de",
+          "at_ms": 160038.2000000002
+        },
+        {
+          "type": "audio",
+          "id": "8:2",
+          "turn": 8,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 160077.39999999944
+        },
+        {
+          "type": "audio",
+          "id": "8:3",
+          "turn": 8,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 160265.89999999944
+        },
+        {
+          "type": "audio",
+          "id": "8:4",
+          "turn": 8,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 162825.59999999963
+        },
+        {
+          "type": "audio",
+          "id": "8:5",
+          "turn": 8,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 162833.2999999998
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 8,
+          "at_ms": 162834.5
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "8:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "8:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "8:3",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "8:4",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "8:5",
+          "complete": true
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "browser_errors": []
+}

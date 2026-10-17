@@ -1,0 +1,1070 @@
+{"seconds": 0.7757, "event": "interrupt", "turn": 0}
+{"seconds": 4.4822, "event": "stt_final", "turn": 1, "text": "Hello. Answer in one short sentence.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 4.9679, "event": "llm_raw", "turn": 1, "text": "[", "done": false, "done_reason": null}
+{"seconds": 4.9908, "event": "llm_raw", "turn": 1, "text": "en", "done": false, "done_reason": null}
+{"seconds": 4.9925, "event": "llm_raw", "turn": 1, "text": "]", "done": false, "done_reason": null}
+{"seconds": 4.9926, "event": "llm_raw", "turn": 1, "text": "Hello", "done": false, "done_reason": null}
+{"seconds": 4.9927, "event": "llm_raw", "turn": 1, "text": ",", "done": false, "done_reason": null}
+{"seconds": 4.9929, "event": "parsed_segment", "turn": 1, "language": "en", "text": "Hello", "closed": false}
+{"seconds": 4.9932, "event": "parsed_segment", "turn": 1, "language": "en", "text": ",", "closed": false}
+{"seconds": 5.0187, "event": "llm_raw", "turn": 1, "text": " I", "done": false, "done_reason": null}
+{"seconds": 5.019, "event": "parsed_segment", "turn": 1, "language": "en", "text": " I", "closed": false}
+{"seconds": 5.0206, "event": "llm_raw", "turn": 1, "text": " am", "done": false, "done_reason": null}
+{"seconds": 5.0207, "event": "llm_raw", "turn": 1, "text": " Bridge", "done": false, "done_reason": null}
+{"seconds": 5.0207, "event": "llm_raw", "turn": 1, "text": ",", "done": false, "done_reason": null}
+{"seconds": 5.0208, "event": "llm_raw", "turn": 1, "text": " your", "done": false, "done_reason": null}
+{"seconds": 5.021, "event": "parsed_segment", "turn": 1, "language": "en", "text": " am", "closed": false}
+{"seconds": 5.0211, "event": "parsed_segment", "turn": 1, "language": "en", "text": " Bridge", "closed": false}
+{"seconds": 5.0212, "event": "parsed_segment", "turn": 1, "language": "en", "text": ",", "closed": false}
+{"seconds": 5.0214, "event": "parsed_segment", "turn": 1, "language": "en", "text": " your", "closed": false}
+{"seconds": 5.0426, "event": "llm_raw", "turn": 1, "text": " bilingual", "done": false, "done_reason": null}
+{"seconds": 5.0428, "event": "llm_raw", "turn": 1, "text": " assistant", "done": false, "done_reason": null}
+{"seconds": 5.0429, "event": "llm_raw", "turn": 1, "text": ".", "done": false, "done_reason": null}
+{"seconds": 5.043, "event": "parsed_segment", "turn": 1, "language": "en", "text": " bilingual", "closed": false}
+{"seconds": 5.0431, "event": "parsed_segment", "turn": 1, "language": "en", "text": " assistant", "closed": false}
+{"seconds": 5.0432, "event": "parsed_segment", "turn": 1, "language": "en", "text": ".", "closed": false}
+{"seconds": 5.0434, "event": "tts_input", "turn": 1, "language": "en", "phrases": ["Hello, I am Bridge, your bilingual assistant."]}
+{"seconds": 5.0445, "event": "llm_raw", "turn": 1, "text": "", "done": false, "done_reason": null}
+{"seconds": 5.1247, "event": "llm_raw", "turn": 1, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 5.1253, "event": "parsed_segment", "turn": 1, "language": "en", "text": "", "closed": true}
+{"seconds": 5.2797, "event": "tts_audio", "id": "1:1", "audio": "1-1.wav", "sample_rate": 24000, "audio_seconds": 2.7093, "turn": 1, "language": "en", "text": "Hello, I am Bridge, your bilingual assistant."}
+{"seconds": 8.0156, "event": "playback_ack", "type": "played", "id": "1:1", "complete": true}
+{"seconds": 8.7752, "event": "interrupt", "turn": 1}
+{"seconds": 11.7855, "event": "stt_partial", "turn": 2, "text": "Teach how to order coffee in German.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 13.9326, "event": "stt_partial", "turn": 2, "text": "Teach how to order coffee in German with two German examples and an English.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 14.9862, "event": "stt_final", "turn": 2, "text": "Teach how to order coffee in German with two German examples and an English explanation.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 15.4518, "event": "llm_raw", "turn": 2, "text": "[", "done": false, "done_reason": null}
+{"seconds": 15.4751, "event": "llm_raw", "turn": 2, "text": "en", "done": false, "done_reason": null}
+{"seconds": 15.4768, "event": "llm_raw", "turn": 2, "text": "]", "done": false, "done_reason": null}
+{"seconds": 15.4769, "event": "llm_raw", "turn": 2, "text": "To", "done": false, "done_reason": null}
+{"seconds": 15.477, "event": "llm_raw", "turn": 2, "text": " order", "done": false, "done_reason": null}
+{"seconds": 15.4771, "event": "llm_raw", "turn": 2, "text": " coffee", "done": false, "done_reason": null}
+{"seconds": 15.4773, "event": "parsed_segment", "turn": 2, "language": "en", "text": "To", "closed": false}
+{"seconds": 15.4774, "event": "parsed_segment", "turn": 2, "language": "en", "text": " order", "closed": false}
+{"seconds": 15.4776, "event": "parsed_segment", "turn": 2, "language": "en", "text": " coffee", "closed": false}
+{"seconds": 15.5009, "event": "llm_raw", "turn": 2, "text": ",", "done": false, "done_reason": null}
+{"seconds": 15.5012, "event": "parsed_segment", "turn": 2, "language": "en", "text": ",", "closed": false}
+{"seconds": 15.5049, "event": "llm_raw", "turn": 2, "text": " you", "done": false, "done_reason": null}
+{"seconds": 15.5051, "event": "llm_raw", "turn": 2, "text": " can", "done": false, "done_reason": null}
+{"seconds": 15.5051, "event": "llm_raw", "turn": 2, "text": " use", "done": false, "done_reason": null}
+{"seconds": 15.5052, "event": "llm_raw", "turn": 2, "text": " these", "done": false, "done_reason": null}
+{"seconds": 15.5054, "event": "parsed_segment", "turn": 2, "language": "en", "text": " you", "closed": false}
+{"seconds": 15.5056, "event": "parsed_segment", "turn": 2, "language": "en", "text": " can", "closed": false}
+{"seconds": 15.5058, "event": "parsed_segment", "turn": 2, "language": "en", "text": " use", "closed": false}
+{"seconds": 15.5059, "event": "parsed_segment", "turn": 2, "language": "en", "text": " these", "closed": false}
+{"seconds": 15.5268, "event": "llm_raw", "turn": 2, "text": " phrases", "done": false, "done_reason": null}
+{"seconds": 15.5271, "event": "parsed_segment", "turn": 2, "language": "en", "text": " phrases", "closed": false}
+{"seconds": 15.5288, "event": "llm_raw", "turn": 2, "text": ".", "done": false, "done_reason": null}
+{"seconds": 15.529, "event": "llm_raw", "turn": 2, "text": " [", "done": false, "done_reason": null}
+{"seconds": 15.529, "event": "llm_raw", "turn": 2, "text": "de", "done": false, "done_reason": null}
+{"seconds": 15.5291, "event": "llm_raw", "turn": 2, "text": "]", "done": false, "done_reason": null}
+{"seconds": 15.5293, "event": "parsed_segment", "turn": 2, "language": "en", "text": ".", "closed": false}
+{"seconds": 15.5296, "event": "parsed_segment", "turn": 2, "language": "en", "text": " ", "closed": false}
+{"seconds": 15.5298, "event": "parsed_segment", "turn": 2, "language": "en", "text": "", "closed": true}
+{"seconds": 15.5299, "event": "tts_input", "turn": 2, "language": "en", "phrases": ["To order coffee, you can use these phrases."]}
+{"seconds": 15.5574, "event": "llm_raw", "turn": 2, "text": "Ich", "done": false, "done_reason": null}
+{"seconds": 15.5576, "event": "llm_raw", "turn": 2, "text": " hätte", "done": false, "done_reason": null}
+{"seconds": 15.5577, "event": "llm_raw", "turn": 2, "text": " gerne", "done": false, "done_reason": null}
+{"seconds": 15.5578, "event": "llm_raw", "turn": 2, "text": " einen", "done": false, "done_reason": null}
+{"seconds": 15.5578, "event": "llm_raw", "turn": 2, "text": " Kaffee", "done": false, "done_reason": null}
+{"seconds": 15.5579, "event": "parsed_segment", "turn": 2, "language": "de", "text": "Ich", "closed": false}
+{"seconds": 15.5581, "event": "parsed_segment", "turn": 2, "language": "de", "text": " hätte", "closed": false}
+{"seconds": 15.5582, "event": "parsed_segment", "turn": 2, "language": "de", "text": " gerne", "closed": false}
+{"seconds": 15.5583, "event": "parsed_segment", "turn": 2, "language": "de", "text": " einen", "closed": false}
+{"seconds": 15.5584, "event": "parsed_segment", "turn": 2, "language": "de", "text": " Kaffee", "closed": false}
+{"seconds": 15.5791, "event": "llm_raw", "turn": 2, "text": ",", "done": false, "done_reason": null}
+{"seconds": 15.5793, "event": "parsed_segment", "turn": 2, "language": "de", "text": ",", "closed": false}
+{"seconds": 15.5814, "event": "llm_raw", "turn": 2, "text": " bitte", "done": false, "done_reason": null}
+{"seconds": 15.5815, "event": "llm_raw", "turn": 2, "text": ".[", "done": false, "done_reason": null}
+{"seconds": 15.5817, "event": "parsed_segment", "turn": 2, "language": "de", "text": " bitte", "closed": false}
+{"seconds": 15.5818, "event": "parsed_segment", "turn": 2, "language": "de", "text": ".", "closed": false}
+{"seconds": 15.6692, "event": "llm_raw", "turn": 2, "text": "en", "done": false, "done_reason": null}
+{"seconds": 15.6694, "event": "llm_raw", "turn": 2, "text": "]", "done": false, "done_reason": null}
+{"seconds": 15.6696, "event": "llm_raw", "turn": 2, "text": " This", "done": false, "done_reason": null}
+{"seconds": 15.6696, "event": "llm_raw", "turn": 2, "text": " means", "done": false, "done_reason": null}
+{"seconds": 15.6698, "event": "llm_raw", "turn": 2, "text": " I", "done": false, "done_reason": null}
+{"seconds": 15.6699, "event": "llm_raw", "turn": 2, "text": " would", "done": false, "done_reason": null}
+{"seconds": 15.6699, "event": "llm_raw", "turn": 2, "text": " like", "done": false, "done_reason": null}
+{"seconds": 15.67, "event": "llm_raw", "turn": 2, "text": " a", "done": false, "done_reason": null}
+{"seconds": 15.67, "event": "llm_raw", "turn": 2, "text": " coffee", "done": false, "done_reason": null}
+{"seconds": 15.6701, "event": "llm_raw", "turn": 2, "text": ",", "done": false, "done_reason": null}
+{"seconds": 15.6705, "event": "llm_raw", "turn": 2, "text": " please", "done": false, "done_reason": null}
+{"seconds": 15.6706, "event": "llm_raw", "turn": 2, "text": ".", "done": false, "done_reason": null}
+{"seconds": 15.6706, "event": "llm_raw", "turn": 2, "text": " [", "done": false, "done_reason": null}
+{"seconds": 15.6707, "event": "llm_raw", "turn": 2, "text": "de", "done": false, "done_reason": null}
+{"seconds": 15.6707, "event": "llm_raw", "turn": 2, "text": "]", "done": false, "done_reason": null}
+{"seconds": 15.6711, "event": "parsed_segment", "turn": 2, "language": "de", "text": "", "closed": true}
+{"seconds": 15.6712, "event": "parsed_segment", "turn": 2, "language": "en", "text": " This", "closed": false}
+{"seconds": 15.6713, "event": "parsed_segment", "turn": 2, "language": "en", "text": " means", "closed": false}
+{"seconds": 15.6714, "event": "parsed_segment", "turn": 2, "language": "en", "text": " I", "closed": false}
+{"seconds": 15.6715, "event": "parsed_segment", "turn": 2, "language": "en", "text": " would", "closed": false}
+{"seconds": 15.6716, "event": "parsed_segment", "turn": 2, "language": "en", "text": " like", "closed": false}
+{"seconds": 15.6719, "event": "parsed_segment", "turn": 2, "language": "en", "text": " a", "closed": false}
+{"seconds": 15.6722, "event": "parsed_segment", "turn": 2, "language": "en", "text": " coffee", "closed": false}
+{"seconds": 15.6724, "event": "parsed_segment", "turn": 2, "language": "en", "text": ",", "closed": false}
+{"seconds": 15.6728, "event": "parsed_segment", "turn": 2, "language": "en", "text": " please", "closed": false}
+{"seconds": 15.6729, "event": "parsed_segment", "turn": 2, "language": "en", "text": ".", "closed": false}
+{"seconds": 15.6731, "event": "parsed_segment", "turn": 2, "language": "en", "text": " ", "closed": false}
+{"seconds": 15.6738, "event": "parsed_segment", "turn": 2, "language": "en", "text": "", "closed": true}
+{"seconds": 15.6828, "event": "llm_raw", "turn": 2, "text": "E", "done": false, "done_reason": null}
+{"seconds": 15.683, "event": "parsed_segment", "turn": 2, "language": "de", "text": "E", "closed": false}
+{"seconds": 15.6951, "event": "llm_raw", "turn": 2, "text": "inen", "done": false, "done_reason": null}
+{"seconds": 15.6952, "event": "llm_raw", "turn": 2, "text": " Kaffee", "done": false, "done_reason": null}
+{"seconds": 15.6953, "event": "llm_raw", "turn": 2, "text": ",", "done": false, "done_reason": null}
+{"seconds": 15.6954, "event": "llm_raw", "turn": 2, "text": " bitte", "done": false, "done_reason": null}
+{"seconds": 15.6955, "event": "parsed_segment", "turn": 2, "language": "de", "text": "inen", "closed": false}
+{"seconds": 15.6956, "event": "parsed_segment", "turn": 2, "language": "de", "text": " Kaffee", "closed": false}
+{"seconds": 15.6958, "event": "parsed_segment", "turn": 2, "language": "de", "text": ",", "closed": false}
+{"seconds": 15.6959, "event": "parsed_segment", "turn": 2, "language": "de", "text": " bitte", "closed": false}
+{"seconds": 15.7092, "event": "llm_raw", "turn": 2, "text": ".[", "done": false, "done_reason": null}
+{"seconds": 15.7094, "event": "llm_raw", "turn": 2, "text": "en", "done": false, "done_reason": null}
+{"seconds": 15.7095, "event": "llm_raw", "turn": 2, "text": "]", "done": false, "done_reason": null}
+{"seconds": 15.7095, "event": "llm_raw", "turn": 2, "text": " This", "done": false, "done_reason": null}
+{"seconds": 15.7096, "event": "llm_raw", "turn": 2, "text": " is", "done": false, "done_reason": null}
+{"seconds": 15.7098, "event": "parsed_segment", "turn": 2, "language": "de", "text": ".", "closed": false}
+{"seconds": 15.71, "event": "parsed_segment", "turn": 2, "language": "de", "text": "", "closed": true}
+{"seconds": 15.71, "event": "parsed_segment", "turn": 2, "language": "en", "text": " This", "closed": false}
+{"seconds": 15.7101, "event": "parsed_segment", "turn": 2, "language": "en", "text": " is", "closed": false}
+{"seconds": 15.7732, "event": "tts_audio", "id": "2:1", "audio": "2-1.wav", "sample_rate": 24000, "audio_seconds": 2.4107, "turn": 2, "language": "en", "text": "To order coffee, you can use these phrases."}
+{"seconds": 15.7796, "event": "tts_input", "turn": 2, "language": "de", "phrases": ["Ich hätte gerne einen Kaffee, bitte."]}
+{"seconds": 15.785, "event": "llm_raw", "turn": 2, "text": " a", "done": false, "done_reason": null}
+{"seconds": 15.7851, "event": "llm_raw", "turn": 2, "text": " shorter", "done": false, "done_reason": null}
+{"seconds": 15.7852, "event": "llm_raw", "turn": 2, "text": " way", "done": false, "done_reason": null}
+{"seconds": 15.7852, "event": "llm_raw", "turn": 2, "text": " to", "done": false, "done_reason": null}
+{"seconds": 15.7853, "event": "llm_raw", "turn": 2, "text": " say", "done": false, "done_reason": null}
+{"seconds": 15.7853, "event": "llm_raw", "turn": 2, "text": " one", "done": false, "done_reason": null}
+{"seconds": 15.7854, "event": "llm_raw", "turn": 2, "text": " coffee", "done": false, "done_reason": null}
+{"seconds": 15.7854, "event": "llm_raw", "turn": 2, "text": ",", "done": false, "done_reason": null}
+{"seconds": 15.7854, "event": "llm_raw", "turn": 2, "text": " please", "done": false, "done_reason": null}
+{"seconds": 15.7855, "event": "llm_raw", "turn": 2, "text": ".", "done": false, "done_reason": null}
+{"seconds": 15.7856, "event": "parsed_segment", "turn": 2, "language": "en", "text": " a", "closed": false}
+{"seconds": 15.7858, "event": "parsed_segment", "turn": 2, "language": "en", "text": " shorter", "closed": false}
+{"seconds": 15.7859, "event": "parsed_segment", "turn": 2, "language": "en", "text": " way", "closed": false}
+{"seconds": 15.7859, "event": "parsed_segment", "turn": 2, "language": "en", "text": " to", "closed": false}
+{"seconds": 15.786, "event": "parsed_segment", "turn": 2, "language": "en", "text": " say", "closed": false}
+{"seconds": 15.7861, "event": "parsed_segment", "turn": 2, "language": "en", "text": " one", "closed": false}
+{"seconds": 15.7862, "event": "parsed_segment", "turn": 2, "language": "en", "text": " coffee", "closed": false}
+{"seconds": 15.7862, "event": "parsed_segment", "turn": 2, "language": "en", "text": ",", "closed": false}
+{"seconds": 15.7863, "event": "parsed_segment", "turn": 2, "language": "en", "text": " please", "closed": false}
+{"seconds": 15.7865, "event": "parsed_segment", "turn": 2, "language": "en", "text": ".", "closed": false}
+{"seconds": 15.7989, "event": "llm_raw", "turn": 2, "text": "", "done": false, "done_reason": null}
+{"seconds": 15.8709, "event": "llm_raw", "turn": 2, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 15.8717, "event": "parsed_segment", "turn": 2, "language": "en", "text": "", "closed": true}
+{"seconds": 15.9096, "event": "tts_audio", "id": "2:2", "audio": "2-2.wav", "sample_rate": 22050, "audio_seconds": 1.6718, "turn": 2, "language": "de", "text": "Ich hätte gerne einen Kaffee, bitte."}
+{"seconds": 15.9135, "event": "tts_input", "turn": 2, "language": "en", "phrases": ["This means I would like a coffee, please."]}
+{"seconds": 16.0993, "event": "tts_audio", "id": "2:3", "audio": "2-3.wav", "sample_rate": 24000, "audio_seconds": 2.112, "turn": 2, "language": "en", "text": "This means I would like a coffee, please."}
+{"seconds": 18.2056, "event": "playback_ack", "type": "played", "id": "2:1", "complete": true}
+{"seconds": 18.2168, "event": "tts_input", "turn": 2, "language": "de", "phrases": ["Einen Kaffee, bitte."]}
+{"seconds": 18.4696, "event": "tts_audio", "id": "2:4", "audio": "2-4.wav", "sample_rate": 22050, "audio_seconds": 1.0797, "turn": 2, "language": "de", "text": "Einen Kaffee, bitte."}
+{"seconds": 19.8847, "event": "playback_ack", "type": "played", "id": "2:2", "complete": true}
+{"seconds": 19.9008, "event": "tts_input", "turn": 2, "language": "en", "phrases": ["This is a shorter way to say one coffee,"]}
+{"seconds": 20.1712, "event": "tts_audio", "id": "2:5", "audio": "2-5.wav", "sample_rate": 24000, "audio_seconds": 2.2187, "turn": 2, "language": "en", "text": "This is a shorter way to say one coffee,"}
+{"seconds": 22.0245, "event": "playback_ack", "type": "played", "id": "2:3", "complete": true}
+{"seconds": 22.0387, "event": "tts_input", "turn": 2, "language": "en", "phrases": ["please."]}
+{"seconds": 22.2774, "event": "tts_audio", "id": "2:6", "audio": "2-6.wav", "sample_rate": 24000, "audio_seconds": 0.832, "turn": 2, "language": "en", "text": "please."}
+{"seconds": 23.1056, "event": "playback_ack", "type": "played", "id": "2:4", "complete": true}
+{"seconds": 25.335, "event": "playback_ack", "type": "played", "id": "2:5", "complete": true}
+{"seconds": 26.1753, "event": "playback_ack", "type": "played", "id": "2:6", "complete": true}
+{"seconds": 26.8957, "event": "interrupt", "turn": 2}
+{"seconds": 30.2023, "event": "stt_partial", "turn": 3, "text": "Repeat exactly. You can say \"gut\" and \"more.\"", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 32.0307, "event": "stt_final", "turn": 3, "text": "Repeat exactly. You can say \"Guten Morgen\" to greet someone.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 32.4697, "event": "llm_raw", "turn": 3, "text": "[", "done": false, "done_reason": null}
+{"seconds": 32.4904, "event": "llm_raw", "turn": 3, "text": "en", "done": false, "done_reason": null}
+{"seconds": 32.4943, "event": "llm_raw", "turn": 3, "text": "]", "done": false, "done_reason": null}
+{"seconds": 32.4945, "event": "llm_raw", "turn": 3, "text": "You", "done": false, "done_reason": null}
+{"seconds": 32.4946, "event": "llm_raw", "turn": 3, "text": " can", "done": false, "done_reason": null}
+{"seconds": 32.4946, "event": "llm_raw", "turn": 3, "text": " say", "done": false, "done_reason": null}
+{"seconds": 32.4949, "event": "parsed_segment", "turn": 3, "language": "en", "text": "You", "closed": false}
+{"seconds": 32.4951, "event": "parsed_segment", "turn": 3, "language": "en", "text": " can", "closed": false}
+{"seconds": 32.4953, "event": "parsed_segment", "turn": 3, "language": "en", "text": " say", "closed": false}
+{"seconds": 32.5224, "event": "llm_raw", "turn": 3, "text": " [", "done": false, "done_reason": null}
+{"seconds": 32.5227, "event": "parsed_segment", "turn": 3, "language": "en", "text": " ", "closed": false}
+{"seconds": 32.5241, "event": "llm_raw", "turn": 3, "text": "de", "done": false, "done_reason": null}
+{"seconds": 32.5242, "event": "llm_raw", "turn": 3, "text": "]", "done": false, "done_reason": null}
+{"seconds": 32.5245, "event": "llm_raw", "turn": 3, "text": "G", "done": false, "done_reason": null}
+{"seconds": 32.5246, "event": "llm_raw", "turn": 3, "text": "uten", "done": false, "done_reason": null}
+{"seconds": 32.5248, "event": "parsed_segment", "turn": 3, "language": "en", "text": "", "closed": true}
+{"seconds": 32.525, "event": "parsed_segment", "turn": 3, "language": "de", "text": "G", "closed": false}
+{"seconds": 32.5251, "event": "parsed_segment", "turn": 3, "language": "de", "text": "uten", "closed": false}
+{"seconds": 32.5254, "event": "tts_input", "turn": 3, "language": "en", "phrases": ["You can say"]}
+{"seconds": 32.5493, "event": "llm_raw", "turn": 3, "text": " Morgen", "done": false, "done_reason": null}
+{"seconds": 32.5495, "event": "parsed_segment", "turn": 3, "language": "de", "text": " Morgen", "closed": false}
+{"seconds": 32.5503, "event": "llm_raw", "turn": 3, "text": "[", "done": false, "done_reason": null}
+{"seconds": 32.5503, "event": "llm_raw", "turn": 3, "text": "en", "done": false, "done_reason": null}
+{"seconds": 32.5504, "event": "llm_raw", "turn": 3, "text": "]", "done": false, "done_reason": null}
+{"seconds": 32.5504, "event": "llm_raw", "turn": 3, "text": " to", "done": false, "done_reason": null}
+{"seconds": 32.5506, "event": "parsed_segment", "turn": 3, "language": "de", "text": "", "closed": true}
+{"seconds": 32.5507, "event": "parsed_segment", "turn": 3, "language": "en", "text": " to", "closed": false}
+{"seconds": 32.5816, "event": "llm_raw", "turn": 3, "text": " greet", "done": false, "done_reason": null}
+{"seconds": 32.5817, "event": "llm_raw", "turn": 3, "text": " someone", "done": false, "done_reason": null}
+{"seconds": 32.5818, "event": "llm_raw", "turn": 3, "text": ".", "done": false, "done_reason": null}
+{"seconds": 32.5818, "event": "llm_raw", "turn": 3, "text": "", "done": false, "done_reason": null}
+{"seconds": 32.5821, "event": "parsed_segment", "turn": 3, "language": "en", "text": " greet", "closed": false}
+{"seconds": 32.5824, "event": "parsed_segment", "turn": 3, "language": "en", "text": " someone", "closed": false}
+{"seconds": 32.5826, "event": "parsed_segment", "turn": 3, "language": "en", "text": ".", "closed": false}
+{"seconds": 32.6429, "event": "tts_audio", "id": "3:1", "audio": "3-1.wav", "sample_rate": 24000, "audio_seconds": 1.0027, "turn": 3, "language": "en", "text": "You can say"}
+{"seconds": 32.6459, "event": "tts_input", "turn": 3, "language": "de", "phrases": ["Guten Morgen"]}
+{"seconds": 32.6617, "event": "llm_raw", "turn": 3, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 32.6621, "event": "parsed_segment", "turn": 3, "language": "en", "text": "", "closed": true}
+{"seconds": 32.7772, "event": "tts_audio", "id": "3:2", "audio": "3-2.wav", "sample_rate": 22050, "audio_seconds": 0.9288, "turn": 3, "language": "de", "text": "Guten Morgen"}
+{"seconds": 32.7791, "event": "tts_input", "turn": 3, "language": "en", "phrases": ["to greet someone."]}
+{"seconds": 32.911, "event": "tts_audio", "id": "3:3", "audio": "3-3.wav", "sample_rate": 24000, "audio_seconds": 1.1093, "turn": 3, "language": "en", "text": "to greet someone."}
+{"seconds": 33.6545, "event": "playback_ack", "type": "played", "id": "3:1", "complete": true}
+{"seconds": 34.5858, "event": "playback_ack", "type": "played", "id": "3:2", "complete": true}
+{"seconds": 35.6956, "event": "playback_ack", "type": "played", "id": "3:3", "complete": true}
+{"seconds": 36.4061, "event": "interrupt", "turn": 3}
+{"seconds": 39.6152, "event": "stt_partial", "turn": 4, "text": "Erkläre mir bitte den Unterschied zwischen Beruf.", "language": "de", "detected_language": "German", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 42.4402, "event": "stt_final", "turn": 4, "text": "Erkläre mir bitte den Unterschied zwischen Beruf und Land mit einem englischen Beispiel.", "language": "de", "detected_language": "German", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 42.8882, "event": "llm_raw", "turn": 4, "text": "[", "done": false, "done_reason": null}
+{"seconds": 42.8974, "event": "llm_raw", "turn": 4, "text": "de", "done": false, "done_reason": null}
+{"seconds": 42.9034, "event": "llm_raw", "turn": 4, "text": "]", "done": false, "done_reason": null}
+{"seconds": 42.9036, "event": "llm_raw", "turn": 4, "text": "Ein", "done": false, "done_reason": null}
+{"seconds": 42.9036, "event": "llm_raw", "turn": 4, "text": " Beruf", "done": false, "done_reason": null}
+{"seconds": 42.9037, "event": "llm_raw", "turn": 4, "text": " ist", "done": false, "done_reason": null}
+{"seconds": 42.9039, "event": "parsed_segment", "turn": 4, "language": "de", "text": "Ein", "closed": false}
+{"seconds": 42.9041, "event": "parsed_segment", "turn": 4, "language": "de", "text": " Beruf", "closed": false}
+{"seconds": 42.9043, "event": "parsed_segment", "turn": 4, "language": "de", "text": " ist", "closed": false}
+{"seconds": 42.9095, "event": "llm_raw", "turn": 4, "text": " das", "done": false, "done_reason": null}
+{"seconds": 42.9098, "event": "parsed_segment", "turn": 4, "language": "de", "text": " das", "closed": false}
+{"seconds": 42.9193, "event": "llm_raw", "turn": 4, "text": ",", "done": false, "done_reason": null}
+{"seconds": 42.9196, "event": "parsed_segment", "turn": 4, "language": "de", "text": ",", "closed": false}
+{"seconds": 42.9205, "event": "llm_raw", "turn": 4, "text": " was", "done": false, "done_reason": null}
+{"seconds": 42.9206, "event": "llm_raw", "turn": 4, "text": " man", "done": false, "done_reason": null}
+{"seconds": 42.9208, "event": "parsed_segment", "turn": 4, "language": "de", "text": " was", "closed": false}
+{"seconds": 42.9209, "event": "parsed_segment", "turn": 4, "language": "de", "text": " man", "closed": false}
+{"seconds": 42.9299, "event": "llm_raw", "turn": 4, "text": " arbeitet", "done": false, "done_reason": null}
+{"seconds": 42.9302, "event": "parsed_segment", "turn": 4, "language": "de", "text": " arbeitet", "closed": false}
+{"seconds": 42.9617, "event": "llm_raw", "turn": 4, "text": ",", "done": false, "done_reason": null}
+{"seconds": 42.962, "event": "llm_raw", "turn": 4, "text": " während", "done": false, "done_reason": null}
+{"seconds": 42.9622, "event": "parsed_segment", "turn": 4, "language": "de", "text": ",", "closed": false}
+{"seconds": 42.9624, "event": "parsed_segment", "turn": 4, "language": "de", "text": " während", "closed": false}
+{"seconds": 42.9717, "event": "llm_raw", "turn": 4, "text": " ein", "done": false, "done_reason": null}
+{"seconds": 42.972, "event": "llm_raw", "turn": 4, "text": " Land", "done": false, "done_reason": null}
+{"seconds": 42.9721, "event": "llm_raw", "turn": 4, "text": " ein", "done": false, "done_reason": null}
+{"seconds": 42.9723, "event": "parsed_segment", "turn": 4, "language": "de", "text": " ein", "closed": false}
+{"seconds": 42.9725, "event": "parsed_segment", "turn": 4, "language": "de", "text": " Land", "closed": false}
+{"seconds": 42.9727, "event": "parsed_segment", "turn": 4, "language": "de", "text": " ein", "closed": false}
+{"seconds": 42.9816, "event": "llm_raw", "turn": 4, "text": " geograf", "done": false, "done_reason": null}
+{"seconds": 42.9818, "event": "parsed_segment", "turn": 4, "language": "de", "text": " geograf", "closed": false}
+{"seconds": 42.9928, "event": "llm_raw", "turn": 4, "text": "ischer", "done": false, "done_reason": null}
+{"seconds": 42.9929, "event": "llm_raw", "turn": 4, "text": " Ort", "done": false, "done_reason": null}
+{"seconds": 42.993, "event": "llm_raw", "turn": 4, "text": " ist", "done": false, "done_reason": null}
+{"seconds": 42.9932, "event": "llm_raw", "turn": 4, "text": ".", "done": false, "done_reason": null}
+{"seconds": 42.9935, "event": "llm_raw", "turn": 4, "text": " [", "done": false, "done_reason": null}
+{"seconds": 42.9938, "event": "parsed_segment", "turn": 4, "language": "de", "text": "ischer", "closed": false}
+{"seconds": 42.994, "event": "parsed_segment", "turn": 4, "language": "de", "text": " Ort", "closed": false}
+{"seconds": 42.9943, "event": "parsed_segment", "turn": 4, "language": "de", "text": " ist", "closed": false}
+{"seconds": 42.9945, "event": "parsed_segment", "turn": 4, "language": "de", "text": ".", "closed": false}
+{"seconds": 42.9948, "event": "parsed_segment", "turn": 4, "language": "de", "text": " ", "closed": false}
+{"seconds": 42.9952, "event": "llm_raw", "turn": 4, "text": "en", "done": false, "done_reason": null}
+{"seconds": 42.9953, "event": "llm_raw", "turn": 4, "text": "]", "done": false, "done_reason": null}
+{"seconds": 42.9954, "event": "llm_raw", "turn": 4, "text": "For", "done": false, "done_reason": null}
+{"seconds": 42.9957, "event": "tts_input", "turn": 4, "language": "de", "phrases": ["Ein Beruf ist das, was man arbeitet, während ein Land ein geografischer Ort ist."]}
+{"seconds": 42.9961, "event": "parsed_segment", "turn": 4, "language": "de", "text": "", "closed": true}
+{"seconds": 42.9966, "event": "parsed_segment", "turn": 4, "language": "en", "text": "For", "closed": false}
+{"seconds": 43.0812, "event": "llm_raw", "turn": 4, "text": " example", "done": false, "done_reason": null}
+{"seconds": 43.0813, "event": "llm_raw", "turn": 4, "text": ",", "done": false, "done_reason": null}
+{"seconds": 43.0814, "event": "llm_raw", "turn": 4, "text": " my", "done": false, "done_reason": null}
+{"seconds": 43.0814, "event": "llm_raw", "turn": 4, "text": " profession", "done": false, "done_reason": null}
+{"seconds": 43.0815, "event": "llm_raw", "turn": 4, "text": " is", "done": false, "done_reason": null}
+{"seconds": 43.0815, "event": "llm_raw", "turn": 4, "text": " a", "done": false, "done_reason": null}
+{"seconds": 43.0816, "event": "llm_raw", "turn": 4, "text": " teacher", "done": false, "done_reason": null}
+{"seconds": 43.0816, "event": "llm_raw", "turn": 4, "text": " and", "done": false, "done_reason": null}
+{"seconds": 43.0817, "event": "llm_raw", "turn": 4, "text": " my", "done": false, "done_reason": null}
+{"seconds": 43.0817, "event": "llm_raw", "turn": 4, "text": " country", "done": false, "done_reason": null}
+{"seconds": 43.0819, "event": "llm_raw", "turn": 4, "text": " is", "done": false, "done_reason": null}
+{"seconds": 43.0819, "event": "llm_raw", "turn": 4, "text": " Germany", "done": false, "done_reason": null}
+{"seconds": 43.082, "event": "llm_raw", "turn": 4, "text": ".", "done": false, "done_reason": null}
+{"seconds": 43.082, "event": "llm_raw", "turn": 4, "text": "", "done": false, "done_reason": null}
+{"seconds": 43.0821, "event": "parsed_segment", "turn": 4, "language": "en", "text": " example", "closed": false}
+{"seconds": 43.0823, "event": "parsed_segment", "turn": 4, "language": "en", "text": ",", "closed": false}
+{"seconds": 43.0824, "event": "parsed_segment", "turn": 4, "language": "en", "text": " my", "closed": false}
+{"seconds": 43.0825, "event": "parsed_segment", "turn": 4, "language": "en", "text": " profession", "closed": false}
+{"seconds": 43.0825, "event": "parsed_segment", "turn": 4, "language": "en", "text": " is", "closed": false}
+{"seconds": 43.0826, "event": "parsed_segment", "turn": 4, "language": "en", "text": " a", "closed": false}
+{"seconds": 43.0827, "event": "parsed_segment", "turn": 4, "language": "en", "text": " teacher", "closed": false}
+{"seconds": 43.0828, "event": "parsed_segment", "turn": 4, "language": "en", "text": " and", "closed": false}
+{"seconds": 43.0829, "event": "parsed_segment", "turn": 4, "language": "en", "text": " my", "closed": false}
+{"seconds": 43.0831, "event": "parsed_segment", "turn": 4, "language": "en", "text": " country", "closed": false}
+{"seconds": 43.0833, "event": "parsed_segment", "turn": 4, "language": "en", "text": " is", "closed": false}
+{"seconds": 43.0834, "event": "parsed_segment", "turn": 4, "language": "en", "text": " Germany", "closed": false}
+{"seconds": 43.0836, "event": "parsed_segment", "turn": 4, "language": "en", "text": ".", "closed": false}
+{"seconds": 43.1395, "event": "llm_raw", "turn": 4, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 43.14, "event": "parsed_segment", "turn": 4, "language": "en", "text": "", "closed": true}
+{"seconds": 43.2059, "event": "tts_audio", "id": "4:1", "audio": "4-1.wav", "sample_rate": 22050, "audio_seconds": 4.3189, "turn": 4, "language": "de", "text": "Ein Beruf ist das, was man arbeitet, während ein Land ein geografischer Ort ist."}
+{"seconds": 43.2153, "event": "tts_input", "turn": 4, "language": "en", "phrases": ["For example, my profession is a teacher and my country is Germany."]}
+{"seconds": 43.6534, "event": "tts_audio", "id": "4:2", "audio": "4-2.wav", "sample_rate": 24000, "audio_seconds": 3.9467, "turn": 4, "language": "en", "text": "For example, my profession is a teacher and my country is Germany."}
+{"seconds": 47.5552, "event": "playback_ack", "type": "played", "id": "4:1", "complete": true}
+{"seconds": 51.5255, "event": "playback_ack", "type": "played", "id": "4:2", "complete": true}
+{"seconds": 52.2465, "event": "interrupt", "turn": 4}
+{"seconds": 55.1982, "event": "stt_partial", "turn": 5, "text": "Give me five pairs of German phrases.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 57.3004, "event": "stt_partial", "turn": 5, "text": "Give me five pairs of German phrases and their English translations.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 58.341, "event": "stt_final", "turn": 5, "text": "Give me five pairs of German phrases and their English translations. No introduction.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 58.7607, "event": "llm_raw", "turn": 5, "text": "[", "done": false, "done_reason": null}
+{"seconds": 58.786, "event": "llm_raw", "turn": 5, "text": "en", "done": false, "done_reason": null}
+{"seconds": 58.7877, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 58.7878, "event": "llm_raw", "turn": 5, "text": "How", "done": false, "done_reason": null}
+{"seconds": 58.788, "event": "parsed_segment", "turn": 5, "language": "en", "text": "How", "closed": false}
+{"seconds": 58.818, "event": "llm_raw", "turn": 5, "text": " are", "done": false, "done_reason": null}
+{"seconds": 58.8183, "event": "parsed_segment", "turn": 5, "language": "en", "text": " are", "closed": false}
+{"seconds": 58.8453, "event": "llm_raw", "turn": 5, "text": " you", "done": false, "done_reason": null}
+{"seconds": 58.8455, "event": "llm_raw", "turn": 5, "text": "?", "done": false, "done_reason": null}
+{"seconds": 58.8457, "event": "parsed_segment", "turn": 5, "language": "en", "text": " you", "closed": false}
+{"seconds": 58.8458, "event": "parsed_segment", "turn": 5, "language": "en", "text": "?", "closed": false}
+{"seconds": 58.846, "event": "llm_raw", "turn": 5, "text": " [", "done": false, "done_reason": null}
+{"seconds": 58.8461, "event": "llm_raw", "turn": 5, "text": "de", "done": false, "done_reason": null}
+{"seconds": 58.8462, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 58.8463, "event": "parsed_segment", "turn": 5, "language": "en", "text": " ", "closed": false}
+{"seconds": 58.8464, "event": "parsed_segment", "turn": 5, "language": "en", "text": "", "closed": true}
+{"seconds": 58.8466, "event": "tts_input", "turn": 5, "language": "en", "phrases": ["How are you?"]}
+{"seconds": 58.877, "event": "llm_raw", "turn": 5, "text": "Wie", "done": false, "done_reason": null}
+{"seconds": 58.8772, "event": "llm_raw", "turn": 5, "text": " geht", "done": false, "done_reason": null}
+{"seconds": 58.8773, "event": "llm_raw", "turn": 5, "text": " es", "done": false, "done_reason": null}
+{"seconds": 58.8773, "event": "llm_raw", "turn": 5, "text": " dir", "done": false, "done_reason": null}
+{"seconds": 58.8775, "event": "parsed_segment", "turn": 5, "language": "de", "text": "Wie", "closed": false}
+{"seconds": 58.8776, "event": "parsed_segment", "turn": 5, "language": "de", "text": " geht", "closed": false}
+{"seconds": 58.8777, "event": "parsed_segment", "turn": 5, "language": "de", "text": " es", "closed": false}
+{"seconds": 58.8778, "event": "parsed_segment", "turn": 5, "language": "de", "text": " dir", "closed": false}
+{"seconds": 58.9441, "event": "llm_raw", "turn": 5, "text": "?", "done": false, "done_reason": null}
+{"seconds": 58.9442, "event": "llm_raw", "turn": 5, "text": " [", "done": false, "done_reason": null}
+{"seconds": 58.9443, "event": "llm_raw", "turn": 5, "text": "en", "done": false, "done_reason": null}
+{"seconds": 58.9444, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 58.9445, "event": "llm_raw", "turn": 5, "text": "I", "done": false, "done_reason": null}
+{"seconds": 58.9445, "event": "llm_raw", "turn": 5, "text": " am", "done": false, "done_reason": null}
+{"seconds": 58.9446, "event": "llm_raw", "turn": 5, "text": " hungry", "done": false, "done_reason": null}
+{"seconds": 58.9448, "event": "parsed_segment", "turn": 5, "language": "de", "text": "?", "closed": false}
+{"seconds": 58.9449, "event": "parsed_segment", "turn": 5, "language": "de", "text": " ", "closed": false}
+{"seconds": 58.9451, "event": "parsed_segment", "turn": 5, "language": "de", "text": "", "closed": true}
+{"seconds": 58.9453, "event": "parsed_segment", "turn": 5, "language": "en", "text": "I", "closed": false}
+{"seconds": 58.9454, "event": "parsed_segment", "turn": 5, "language": "en", "text": " am", "closed": false}
+{"seconds": 58.9456, "event": "parsed_segment", "turn": 5, "language": "en", "text": " hungry", "closed": false}
+{"seconds": 58.9482, "event": "llm_raw", "turn": 5, "text": ".", "done": false, "done_reason": null}
+{"seconds": 58.9485, "event": "parsed_segment", "turn": 5, "language": "en", "text": ".", "closed": false}
+{"seconds": 58.9686, "event": "llm_raw", "turn": 5, "text": " [", "done": false, "done_reason": null}
+{"seconds": 58.9687, "event": "llm_raw", "turn": 5, "text": "de", "done": false, "done_reason": null}
+{"seconds": 58.9688, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 58.9688, "event": "llm_raw", "turn": 5, "text": "Ich", "done": false, "done_reason": null}
+{"seconds": 58.969, "event": "parsed_segment", "turn": 5, "language": "en", "text": " ", "closed": false}
+{"seconds": 58.9692, "event": "parsed_segment", "turn": 5, "language": "en", "text": "", "closed": true}
+{"seconds": 58.9692, "event": "parsed_segment", "turn": 5, "language": "de", "text": "Ich", "closed": false}
+{"seconds": 58.9751, "event": "tts_audio", "id": "5:1", "audio": "5-1.wav", "sample_rate": 24000, "audio_seconds": 1.0027, "turn": 5, "language": "en", "text": "How are you?"}
+{"seconds": 58.9783, "event": "tts_input", "turn": 5, "language": "de", "phrases": ["Wie geht es dir?"]}
+{"seconds": 58.9788, "event": "llm_raw", "turn": 5, "text": " habe", "done": false, "done_reason": null}
+{"seconds": 58.9793, "event": "llm_raw", "turn": 5, "text": " Hunger", "done": false, "done_reason": null}
+{"seconds": 58.9793, "event": "llm_raw", "turn": 5, "text": ".", "done": false, "done_reason": null}
+{"seconds": 58.9794, "event": "llm_raw", "turn": 5, "text": " [", "done": false, "done_reason": null}
+{"seconds": 58.9794, "event": "llm_raw", "turn": 5, "text": "en", "done": false, "done_reason": null}
+{"seconds": 58.9796, "event": "parsed_segment", "turn": 5, "language": "de", "text": " habe", "closed": false}
+{"seconds": 58.9797, "event": "parsed_segment", "turn": 5, "language": "de", "text": " Hunger", "closed": false}
+{"seconds": 58.9798, "event": "parsed_segment", "turn": 5, "language": "de", "text": ".", "closed": false}
+{"seconds": 58.9799, "event": "parsed_segment", "turn": 5, "language": "de", "text": " ", "closed": false}
+{"seconds": 59.0419, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 59.042, "event": "llm_raw", "turn": 5, "text": "Where", "done": false, "done_reason": null}
+{"seconds": 59.0421, "event": "llm_raw", "turn": 5, "text": " is", "done": false, "done_reason": null}
+{"seconds": 59.0421, "event": "llm_raw", "turn": 5, "text": " the", "done": false, "done_reason": null}
+{"seconds": 59.0422, "event": "llm_raw", "turn": 5, "text": " station", "done": false, "done_reason": null}
+{"seconds": 59.0422, "event": "llm_raw", "turn": 5, "text": "?", "done": false, "done_reason": null}
+{"seconds": 59.0423, "event": "llm_raw", "turn": 5, "text": " [", "done": false, "done_reason": null}
+{"seconds": 59.0423, "event": "llm_raw", "turn": 5, "text": "de", "done": false, "done_reason": null}
+{"seconds": 59.0423, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 59.0424, "event": "llm_raw", "turn": 5, "text": "Wo", "done": false, "done_reason": null}
+{"seconds": 59.0426, "event": "parsed_segment", "turn": 5, "language": "de", "text": "", "closed": true}
+{"seconds": 59.0426, "event": "parsed_segment", "turn": 5, "language": "en", "text": "Where", "closed": false}
+{"seconds": 59.0428, "event": "parsed_segment", "turn": 5, "language": "en", "text": " is", "closed": false}
+{"seconds": 59.0428, "event": "parsed_segment", "turn": 5, "language": "en", "text": " the", "closed": false}
+{"seconds": 59.0429, "event": "parsed_segment", "turn": 5, "language": "en", "text": " station", "closed": false}
+{"seconds": 59.043, "event": "parsed_segment", "turn": 5, "language": "en", "text": "?", "closed": false}
+{"seconds": 59.0431, "event": "parsed_segment", "turn": 5, "language": "en", "text": " ", "closed": false}
+{"seconds": 59.0432, "event": "parsed_segment", "turn": 5, "language": "en", "text": "", "closed": true}
+{"seconds": 59.0432, "event": "parsed_segment", "turn": 5, "language": "de", "text": "Wo", "closed": false}
+{"seconds": 59.0537, "event": "llm_raw", "turn": 5, "text": " ist", "done": false, "done_reason": null}
+{"seconds": 59.0538, "event": "llm_raw", "turn": 5, "text": " der", "done": false, "done_reason": null}
+{"seconds": 59.054, "event": "parsed_segment", "turn": 5, "language": "de", "text": " ist", "closed": false}
+{"seconds": 59.0541, "event": "parsed_segment", "turn": 5, "language": "de", "text": " der", "closed": false}
+{"seconds": 59.0778, "event": "llm_raw", "turn": 5, "text": " Bahnhof", "done": false, "done_reason": null}
+{"seconds": 59.078, "event": "parsed_segment", "turn": 5, "language": "de", "text": " Bahnhof", "closed": false}
+{"seconds": 59.0797, "event": "llm_raw", "turn": 5, "text": "?", "done": false, "done_reason": null}
+{"seconds": 59.0798, "event": "llm_raw", "turn": 5, "text": " [", "done": false, "done_reason": null}
+{"seconds": 59.0799, "event": "llm_raw", "turn": 5, "text": "en", "done": false, "done_reason": null}
+{"seconds": 59.0801, "event": "parsed_segment", "turn": 5, "language": "de", "text": "?", "closed": false}
+{"seconds": 59.0802, "event": "parsed_segment", "turn": 5, "language": "de", "text": " ", "closed": false}
+{"seconds": 59.1056, "event": "tts_audio", "id": "5:2", "audio": "5-2.wav", "sample_rate": 22050, "audio_seconds": 1.0217, "turn": 5, "language": "de", "text": "Wie geht es dir?"}
+{"seconds": 59.1079, "event": "tts_input", "turn": 5, "language": "en", "phrases": ["I am hungry."]}
+{"seconds": 59.1399, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 59.1401, "event": "llm_raw", "turn": 5, "text": "Thank", "done": false, "done_reason": null}
+{"seconds": 59.1402, "event": "llm_raw", "turn": 5, "text": " you", "done": false, "done_reason": null}
+{"seconds": 59.1402, "event": "llm_raw", "turn": 5, "text": " very", "done": false, "done_reason": null}
+{"seconds": 59.1403, "event": "llm_raw", "turn": 5, "text": " much", "done": false, "done_reason": null}
+{"seconds": 59.1404, "event": "llm_raw", "turn": 5, "text": ".", "done": false, "done_reason": null}
+{"seconds": 59.1405, "event": "llm_raw", "turn": 5, "text": " [", "done": false, "done_reason": null}
+{"seconds": 59.1405, "event": "llm_raw", "turn": 5, "text": "de", "done": false, "done_reason": null}
+{"seconds": 59.1406, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 59.1407, "event": "parsed_segment", "turn": 5, "language": "de", "text": "", "closed": true}
+{"seconds": 59.1408, "event": "parsed_segment", "turn": 5, "language": "en", "text": "Thank", "closed": false}
+{"seconds": 59.141, "event": "parsed_segment", "turn": 5, "language": "en", "text": " you", "closed": false}
+{"seconds": 59.141, "event": "parsed_segment", "turn": 5, "language": "en", "text": " very", "closed": false}
+{"seconds": 59.1411, "event": "parsed_segment", "turn": 5, "language": "en", "text": " much", "closed": false}
+{"seconds": 59.1412, "event": "parsed_segment", "turn": 5, "language": "en", "text": ".", "closed": false}
+{"seconds": 59.1413, "event": "parsed_segment", "turn": 5, "language": "en", "text": " ", "closed": false}
+{"seconds": 59.1414, "event": "parsed_segment", "turn": 5, "language": "en", "text": "", "closed": true}
+{"seconds": 59.167, "event": "llm_raw", "turn": 5, "text": "V", "done": false, "done_reason": null}
+{"seconds": 59.1671, "event": "llm_raw", "turn": 5, "text": "ielen", "done": false, "done_reason": null}
+{"seconds": 59.1672, "event": "llm_raw", "turn": 5, "text": " Dank", "done": false, "done_reason": null}
+{"seconds": 59.1672, "event": "llm_raw", "turn": 5, "text": ".", "done": false, "done_reason": null}
+{"seconds": 59.1818, "event": "llm_raw", "turn": 5, "text": " [", "done": false, "done_reason": null}
+{"seconds": 59.182, "event": "llm_raw", "turn": 5, "text": "en", "done": false, "done_reason": null}
+{"seconds": 59.1821, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 59.1821, "event": "llm_raw", "turn": 5, "text": "I", "done": false, "done_reason": null}
+{"seconds": 59.1822, "event": "llm_raw", "turn": 5, "text": " love", "done": false, "done_reason": null}
+{"seconds": 59.2078, "event": "llm_raw", "turn": 5, "text": " you", "done": false, "done_reason": null}
+{"seconds": 59.2079, "event": "llm_raw", "turn": 5, "text": ".", "done": false, "done_reason": null}
+{"seconds": 59.2079, "event": "llm_raw", "turn": 5, "text": " [", "done": false, "done_reason": null}
+{"seconds": 59.208, "event": "llm_raw", "turn": 5, "text": "de", "done": false, "done_reason": null}
+{"seconds": 59.2081, "event": "llm_raw", "turn": 5, "text": "]", "done": false, "done_reason": null}
+{"seconds": 59.2155, "event": "tts_audio", "id": "5:3", "audio": "5-3.wav", "sample_rate": 24000, "audio_seconds": 1.1307, "turn": 5, "language": "en", "text": "I am hungry."}
+{"seconds": 59.2191, "event": "parsed_segment", "turn": 5, "language": "de", "text": "V", "closed": false}
+{"seconds": 59.2192, "event": "parsed_segment", "turn": 5, "language": "de", "text": "ielen", "closed": false}
+{"seconds": 59.2193, "event": "parsed_segment", "turn": 5, "language": "de", "text": " Dank", "closed": false}
+{"seconds": 59.2194, "event": "parsed_segment", "turn": 5, "language": "de", "text": ".", "closed": false}
+{"seconds": 59.2194, "event": "parsed_segment", "turn": 5, "language": "de", "text": " ", "closed": false}
+{"seconds": 59.2195, "event": "parsed_segment", "turn": 5, "language": "de", "text": "", "closed": true}
+{"seconds": 59.2196, "event": "parsed_segment", "turn": 5, "language": "en", "text": "I", "closed": false}
+{"seconds": 59.2196, "event": "parsed_segment", "turn": 5, "language": "en", "text": " love", "closed": false}
+{"seconds": 59.2197, "event": "parsed_segment", "turn": 5, "language": "en", "text": " you", "closed": false}
+{"seconds": 59.2198, "event": "parsed_segment", "turn": 5, "language": "en", "text": ".", "closed": false}
+{"seconds": 59.2199, "event": "parsed_segment", "turn": 5, "language": "en", "text": " ", "closed": false}
+{"seconds": 59.22, "event": "parsed_segment", "turn": 5, "language": "en", "text": "", "closed": true}
+{"seconds": 59.2373, "event": "llm_raw", "turn": 5, "text": "Ich", "done": false, "done_reason": null}
+{"seconds": 59.2376, "event": "llm_raw", "turn": 5, "text": " liebe", "done": false, "done_reason": null}
+{"seconds": 59.2377, "event": "llm_raw", "turn": 5, "text": " dich", "done": false, "done_reason": null}
+{"seconds": 59.2377, "event": "llm_raw", "turn": 5, "text": ".", "done": false, "done_reason": null}
+{"seconds": 59.2379, "event": "llm_raw", "turn": 5, "text": "", "done": false, "done_reason": null}
+{"seconds": 59.3018, "event": "llm_raw", "turn": 5, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 59.9943, "event": "playback_ack", "type": "played", "id": "5:1", "complete": true}
+{"seconds": 60.0096, "event": "tts_input", "turn": 5, "language": "de", "phrases": ["Ich habe Hunger."]}
+{"seconds": 60.1327, "event": "tts_audio", "id": "5:4", "audio": "5-4.wav", "sample_rate": 22050, "audio_seconds": 0.8824, "turn": 5, "language": "de", "text": "Ich habe Hunger."}
+{"seconds": 61.0248, "event": "playback_ack", "type": "played", "id": "5:2", "complete": true}
+{"seconds": 61.0377, "event": "tts_input", "turn": 5, "language": "en", "phrases": ["Where is the station?"]}
+{"seconds": 61.223, "event": "tts_audio", "id": "5:5", "audio": "5-5.wav", "sample_rate": 24000, "audio_seconds": 1.2373, "turn": 5, "language": "en", "text": "Where is the station?"}
+{"seconds": 61.2265, "event": "parsed_segment", "turn": 5, "language": "de", "text": "Ich", "closed": false}
+{"seconds": 61.2266, "event": "parsed_segment", "turn": 5, "language": "de", "text": " liebe", "closed": false}
+{"seconds": 61.2267, "event": "parsed_segment", "turn": 5, "language": "de", "text": " dich", "closed": false}
+{"seconds": 61.2268, "event": "parsed_segment", "turn": 5, "language": "de", "text": ".", "closed": false}
+{"seconds": 61.2269, "event": "parsed_segment", "turn": 5, "language": "de", "text": "", "closed": true}
+{"seconds": 62.1662, "event": "playback_ack", "type": "played", "id": "5:3", "complete": true}
+{"seconds": 62.1809, "event": "tts_input", "turn": 5, "language": "de", "phrases": ["Wo ist der Bahnhof?"]}
+{"seconds": 62.3153, "event": "tts_audio", "id": "5:6", "audio": "5-6.wav", "sample_rate": 22050, "audio_seconds": 1.219, "turn": 5, "language": "de", "text": "Wo ist der Bahnhof?"}
+{"seconds": 63.0547, "event": "playback_ack", "type": "played", "id": "5:4", "complete": true}
+{"seconds": 63.0698, "event": "tts_input", "turn": 5, "language": "en", "phrases": ["Thank you very much."]}
+{"seconds": 63.2775, "event": "tts_audio", "id": "5:7", "audio": "5-7.wav", "sample_rate": 24000, "audio_seconds": 1.3013, "turn": 5, "language": "en", "text": "Thank you very much."}
+{"seconds": 64.2953, "event": "playback_ack", "type": "played", "id": "5:5", "complete": true}
+{"seconds": 64.308, "event": "tts_input", "turn": 5, "language": "de", "phrases": ["Vielen Dank."]}
+{"seconds": 64.4242, "event": "tts_audio", "id": "5:8", "audio": "5-8.wav", "sample_rate": 22050, "audio_seconds": 0.6618, "turn": 5, "language": "de", "text": "Vielen Dank."}
+{"seconds": 65.526, "event": "playback_ack", "type": "played", "id": "5:6", "complete": true}
+{"seconds": 65.5399, "event": "tts_input", "turn": 5, "language": "en", "phrases": ["I love you."]}
+{"seconds": 65.7929, "event": "tts_audio", "id": "5:9", "audio": "5-9.wav", "sample_rate": 24000, "audio_seconds": 1.024, "turn": 5, "language": "en", "text": "I love you."}
+{"seconds": 66.8245, "event": "playback_ack", "type": "played", "id": "5:7", "complete": true}
+{"seconds": 66.8385, "event": "tts_input", "turn": 5, "language": "de", "phrases": ["Ich liebe dich."]}
+{"seconds": 66.9572, "event": "tts_audio", "id": "5:10", "audio": "5-10.wav", "sample_rate": 22050, "audio_seconds": 0.7546, "turn": 5, "language": "de", "text": "Ich liebe dich."}
+{"seconds": 67.4954, "event": "playback_ack", "type": "played", "id": "5:8", "complete": true}
+{"seconds": 68.5248, "event": "playback_ack", "type": "played", "id": "5:9", "complete": true}
+{"seconds": 69.2852, "event": "playback_ack", "type": "played", "id": "5:10", "complete": true}
+{"seconds": 70.0657, "event": "interrupt", "turn": 5}
+{"seconds": 73.1468, "event": "stt_partial", "turn": 6, "text": "Teach ten useful German sentences.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 75.1624, "event": "stt_partial", "turn": 6, "text": "Teach ten useful German sentences for the train station, and explain.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 76.6486, "event": "stt_final", "turn": 6, "text": "Teach ten useful German sentences for the train station, and explain each one in English.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 77.069, "event": "llm_raw", "turn": 6, "text": "[", "done": false, "done_reason": null}
+{"seconds": 77.0944, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 77.0961, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.0962, "event": "llm_raw", "turn": 6, "text": "Here", "done": false, "done_reason": null}
+{"seconds": 77.0964, "event": "parsed_segment", "turn": 6, "language": "en", "text": "Here", "closed": false}
+{"seconds": 77.1224, "event": "llm_raw", "turn": 6, "text": " are", "done": false, "done_reason": null}
+{"seconds": 77.1227, "event": "llm_raw", "turn": 6, "text": " ten", "done": false, "done_reason": null}
+{"seconds": 77.1229, "event": "llm_raw", "turn": 6, "text": " useful", "done": false, "done_reason": null}
+{"seconds": 77.123, "event": "llm_raw", "turn": 6, "text": " sentences", "done": false, "done_reason": null}
+{"seconds": 77.1232, "event": "parsed_segment", "turn": 6, "language": "en", "text": " are", "closed": false}
+{"seconds": 77.1234, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ten", "closed": false}
+{"seconds": 77.1235, "event": "parsed_segment", "turn": 6, "language": "en", "text": " useful", "closed": false}
+{"seconds": 77.1237, "event": "parsed_segment", "turn": 6, "language": "en", "text": " sentences", "closed": false}
+{"seconds": 77.1467, "event": "llm_raw", "turn": 6, "text": " for", "done": false, "done_reason": null}
+{"seconds": 77.147, "event": "parsed_segment", "turn": 6, "language": "en", "text": " for", "closed": false}
+{"seconds": 77.1528, "event": "llm_raw", "turn": 6, "text": " the", "done": false, "done_reason": null}
+{"seconds": 77.1529, "event": "llm_raw", "turn": 6, "text": " train", "done": false, "done_reason": null}
+{"seconds": 77.153, "event": "llm_raw", "turn": 6, "text": " station", "done": false, "done_reason": null}
+{"seconds": 77.1531, "event": "llm_raw", "turn": 6, "text": ".", "done": false, "done_reason": null}
+{"seconds": 77.1533, "event": "parsed_segment", "turn": 6, "language": "en", "text": " the", "closed": false}
+{"seconds": 77.1535, "event": "parsed_segment", "turn": 6, "language": "en", "text": " train", "closed": false}
+{"seconds": 77.1536, "event": "parsed_segment", "turn": 6, "language": "en", "text": " station", "closed": false}
+{"seconds": 77.1538, "event": "parsed_segment", "turn": 6, "language": "en", "text": ".", "closed": false}
+{"seconds": 77.1539, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["Here are ten useful sentences for the train station."]}
+{"seconds": 77.1765, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 77.1767, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 77.1768, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.177, "event": "llm_raw", "turn": 6, "text": "Wo", "done": false, "done_reason": null}
+{"seconds": 77.1771, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 77.1773, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 77.1774, "event": "parsed_segment", "turn": 6, "language": "de", "text": "Wo", "closed": false}
+{"seconds": 77.2486, "event": "llm_raw", "turn": 6, "text": " ist", "done": false, "done_reason": null}
+{"seconds": 77.2487, "event": "llm_raw", "turn": 6, "text": " der", "done": false, "done_reason": null}
+{"seconds": 77.2488, "event": "llm_raw", "turn": 6, "text": " Bahnhof", "done": false, "done_reason": null}
+{"seconds": 77.2488, "event": "llm_raw", "turn": 6, "text": "?[", "done": false, "done_reason": null}
+{"seconds": 77.2489, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 77.2489, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.249, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 77.2491, "event": "parsed_segment", "turn": 6, "language": "de", "text": " ist", "closed": false}
+{"seconds": 77.2493, "event": "parsed_segment", "turn": 6, "language": "de", "text": " der", "closed": false}
+{"seconds": 77.2494, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Bahnhof", "closed": false}
+{"seconds": 77.2495, "event": "parsed_segment", "turn": 6, "language": "de", "text": "?", "closed": false}
+{"seconds": 77.2496, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 77.2497, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 77.276, "event": "llm_raw", "turn": 6, "text": " Where", "done": false, "done_reason": null}
+{"seconds": 77.2761, "event": "llm_raw", "turn": 6, "text": " is", "done": false, "done_reason": null}
+{"seconds": 77.2761, "event": "llm_raw", "turn": 6, "text": " the", "done": false, "done_reason": null}
+{"seconds": 77.2762, "event": "llm_raw", "turn": 6, "text": " train", "done": false, "done_reason": null}
+{"seconds": 77.2762, "event": "llm_raw", "turn": 6, "text": " station", "done": false, "done_reason": null}
+{"seconds": 77.2764, "event": "parsed_segment", "turn": 6, "language": "en", "text": " Where", "closed": false}
+{"seconds": 77.2765, "event": "parsed_segment", "turn": 6, "language": "en", "text": " is", "closed": false}
+{"seconds": 77.2766, "event": "parsed_segment", "turn": 6, "language": "en", "text": " the", "closed": false}
+{"seconds": 77.2767, "event": "parsed_segment", "turn": 6, "language": "en", "text": " train", "closed": false}
+{"seconds": 77.2768, "event": "parsed_segment", "turn": 6, "language": "en", "text": " station", "closed": false}
+{"seconds": 77.2842, "event": "llm_raw", "turn": 6, "text": "?", "done": false, "done_reason": null}
+{"seconds": 77.2845, "event": "parsed_segment", "turn": 6, "language": "en", "text": "?", "closed": false}
+{"seconds": 77.2873, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 77.2875, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 77.2875, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.2876, "event": "llm_raw", "turn": 6, "text": "Ein", "done": false, "done_reason": null}
+{"seconds": 77.2878, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 77.2879, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 77.288, "event": "parsed_segment", "turn": 6, "language": "de", "text": "Ein", "closed": false}
+{"seconds": 77.3102, "event": "llm_raw", "turn": 6, "text": " Ticket", "done": false, "done_reason": null}
+{"seconds": 77.3104, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Ticket", "closed": false}
+{"seconds": 77.3441, "event": "llm_raw", "turn": 6, "text": " nach", "done": false, "done_reason": null}
+{"seconds": 77.3444, "event": "parsed_segment", "turn": 6, "language": "de", "text": " nach", "closed": false}
+{"seconds": 77.3701, "event": "llm_raw", "turn": 6, "text": " Berlin", "done": false, "done_reason": null}
+{"seconds": 77.3703, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Berlin", "closed": false}
+{"seconds": 77.3824, "event": "llm_raw", "turn": 6, "text": ",", "done": false, "done_reason": null}
+{"seconds": 77.3827, "event": "llm_raw", "turn": 6, "text": " bitte", "done": false, "done_reason": null}
+{"seconds": 77.3829, "event": "llm_raw", "turn": 6, "text": ".[", "done": false, "done_reason": null}
+{"seconds": 77.3847, "event": "parsed_segment", "turn": 6, "language": "de", "text": ",", "closed": false}
+{"seconds": 77.3855, "event": "parsed_segment", "turn": 6, "language": "de", "text": " bitte", "closed": false}
+{"seconds": 77.3857, "event": "parsed_segment", "turn": 6, "language": "de", "text": ".", "closed": false}
+{"seconds": 77.398, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 77.3981, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.3982, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 77.3984, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 77.3984, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 77.426, "event": "llm_raw", "turn": 6, "text": " One", "done": false, "done_reason": null}
+{"seconds": 77.4262, "event": "parsed_segment", "turn": 6, "language": "en", "text": " One", "closed": false}
+{"seconds": 77.4421, "event": "llm_raw", "turn": 6, "text": " ticket", "done": false, "done_reason": null}
+{"seconds": 77.4422, "event": "llm_raw", "turn": 6, "text": " to", "done": false, "done_reason": null}
+{"seconds": 77.4423, "event": "llm_raw", "turn": 6, "text": " Berlin", "done": false, "done_reason": null}
+{"seconds": 77.4423, "event": "llm_raw", "turn": 6, "text": ",", "done": false, "done_reason": null}
+{"seconds": 77.4425, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ticket", "closed": false}
+{"seconds": 77.4426, "event": "parsed_segment", "turn": 6, "language": "en", "text": " to", "closed": false}
+{"seconds": 77.4427, "event": "parsed_segment", "turn": 6, "language": "en", "text": " Berlin", "closed": false}
+{"seconds": 77.4428, "event": "parsed_segment", "turn": 6, "language": "en", "text": ",", "closed": false}
+{"seconds": 77.4688, "event": "llm_raw", "turn": 6, "text": " please", "done": false, "done_reason": null}
+{"seconds": 77.4689, "event": "llm_raw", "turn": 6, "text": ".", "done": false, "done_reason": null}
+{"seconds": 77.4689, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 77.469, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 77.469, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.4692, "event": "parsed_segment", "turn": 6, "language": "en", "text": " please", "closed": false}
+{"seconds": 77.4694, "event": "parsed_segment", "turn": 6, "language": "en", "text": ".", "closed": false}
+{"seconds": 77.4695, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 77.4695, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 77.4781, "event": "llm_raw", "turn": 6, "text": "W", "done": false, "done_reason": null}
+{"seconds": 77.4799, "event": "llm_raw", "turn": 6, "text": "ann", "done": false, "done_reason": null}
+{"seconds": 77.48, "event": "llm_raw", "turn": 6, "text": " fährt", "done": false, "done_reason": null}
+{"seconds": 77.4801, "event": "llm_raw", "turn": 6, "text": " der", "done": false, "done_reason": null}
+{"seconds": 77.4802, "event": "llm_raw", "turn": 6, "text": " nächste", "done": false, "done_reason": null}
+{"seconds": 77.4974, "event": "tts_audio", "id": "6:1", "audio": "6-1.wav", "sample_rate": 24000, "audio_seconds": 3.072, "turn": 6, "language": "en", "text": "Here are ten useful sentences for the train station."}
+{"seconds": 77.5056, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Wo ist der Bahnhof?"]}
+{"seconds": 77.5061, "event": "parsed_segment", "turn": 6, "language": "de", "text": "W", "closed": false}
+{"seconds": 77.5063, "event": "parsed_segment", "turn": 6, "language": "de", "text": "ann", "closed": false}
+{"seconds": 77.5064, "event": "parsed_segment", "turn": 6, "language": "de", "text": " fährt", "closed": false}
+{"seconds": 77.5067, "event": "parsed_segment", "turn": 6, "language": "de", "text": " der", "closed": false}
+{"seconds": 77.5068, "event": "parsed_segment", "turn": 6, "language": "de", "text": " nächste", "closed": false}
+{"seconds": 77.5102, "event": "llm_raw", "turn": 6, "text": " Zug", "done": false, "done_reason": null}
+{"seconds": 77.5104, "event": "llm_raw", "turn": 6, "text": "?[", "done": false, "done_reason": null}
+{"seconds": 77.5106, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Zug", "closed": false}
+{"seconds": 77.5107, "event": "parsed_segment", "turn": 6, "language": "de", "text": "?", "closed": false}
+{"seconds": 77.5384, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 77.5417, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.5418, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 77.5419, "event": "llm_raw", "turn": 6, "text": " When", "done": false, "done_reason": null}
+{"seconds": 77.5419, "event": "llm_raw", "turn": 6, "text": " does", "done": false, "done_reason": null}
+{"seconds": 77.5425, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 77.5426, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 77.5431, "event": "parsed_segment", "turn": 6, "language": "en", "text": " When", "closed": false}
+{"seconds": 77.5433, "event": "parsed_segment", "turn": 6, "language": "en", "text": " does", "closed": false}
+{"seconds": 77.5684, "event": "llm_raw", "turn": 6, "text": " the", "done": false, "done_reason": null}
+{"seconds": 77.5689, "event": "llm_raw", "turn": 6, "text": " next", "done": false, "done_reason": null}
+{"seconds": 77.5689, "event": "llm_raw", "turn": 6, "text": " train", "done": false, "done_reason": null}
+{"seconds": 77.569, "event": "llm_raw", "turn": 6, "text": " leave", "done": false, "done_reason": null}
+{"seconds": 77.5692, "event": "llm_raw", "turn": 6, "text": "?", "done": false, "done_reason": null}
+{"seconds": 77.5693, "event": "parsed_segment", "turn": 6, "language": "en", "text": " the", "closed": false}
+{"seconds": 77.5694, "event": "parsed_segment", "turn": 6, "language": "en", "text": " next", "closed": false}
+{"seconds": 77.5695, "event": "parsed_segment", "turn": 6, "language": "en", "text": " train", "closed": false}
+{"seconds": 77.5696, "event": "parsed_segment", "turn": 6, "language": "en", "text": " leave", "closed": false}
+{"seconds": 77.57, "event": "parsed_segment", "turn": 6, "language": "en", "text": "?", "closed": false}
+{"seconds": 77.5922, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 77.5925, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 77.5925, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.5927, "event": "llm_raw", "turn": 6, "text": "Wel", "done": false, "done_reason": null}
+{"seconds": 77.5929, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 77.5931, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 77.6182, "event": "llm_raw", "turn": 6, "text": "ches", "done": false, "done_reason": null}
+{"seconds": 77.6222, "event": "llm_raw", "turn": 6, "text": " Gle", "done": false, "done_reason": null}
+{"seconds": 77.6223, "event": "llm_raw", "turn": 6, "text": "is", "done": false, "done_reason": null}
+{"seconds": 77.6224, "event": "llm_raw", "turn": 6, "text": " ist", "done": false, "done_reason": null}
+{"seconds": 77.6224, "event": "llm_raw", "turn": 6, "text": " das", "done": false, "done_reason": null}
+{"seconds": 77.6249, "event": "tts_audio", "id": "6:2", "audio": "6-2.wav", "sample_rate": 22050, "audio_seconds": 1.2655, "turn": 6, "language": "de", "text": "Wo ist der Bahnhof?"}
+{"seconds": 77.6278, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means Where is the train station?"]}
+{"seconds": 77.6527, "event": "llm_raw", "turn": 6, "text": "?[", "done": false, "done_reason": null}
+{"seconds": 77.6834, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 77.6836, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.6837, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 77.6838, "event": "llm_raw", "turn": 6, "text": " Which", "done": false, "done_reason": null}
+{"seconds": 77.6839, "event": "llm_raw", "turn": 6, "text": " platform", "done": false, "done_reason": null}
+{"seconds": 77.7042, "event": "llm_raw", "turn": 6, "text": " is", "done": false, "done_reason": null}
+{"seconds": 77.7043, "event": "llm_raw", "turn": 6, "text": " it", "done": false, "done_reason": null}
+{"seconds": 77.7303, "event": "llm_raw", "turn": 6, "text": "?", "done": false, "done_reason": null}
+{"seconds": 77.7319, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 77.732, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 77.7321, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.7321, "event": "llm_raw", "turn": 6, "text": "Hat", "done": false, "done_reason": null}
+{"seconds": 77.7568, "event": "llm_raw", "turn": 6, "text": " der", "done": false, "done_reason": null}
+{"seconds": 77.7581, "event": "llm_raw", "turn": 6, "text": " Zug", "done": false, "done_reason": null}
+{"seconds": 77.7582, "event": "llm_raw", "turn": 6, "text": " Vers", "done": false, "done_reason": null}
+{"seconds": 77.7882, "event": "llm_raw", "turn": 6, "text": "p", "done": false, "done_reason": null}
+{"seconds": 77.79, "event": "llm_raw", "turn": 6, "text": "ät", "done": false, "done_reason": null}
+{"seconds": 77.7902, "event": "llm_raw", "turn": 6, "text": "ung", "done": false, "done_reason": null}
+{"seconds": 77.7906, "event": "llm_raw", "turn": 6, "text": "?[", "done": false, "done_reason": null}
+{"seconds": 77.7907, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 77.7936, "event": "tts_audio", "id": "6:3", "audio": "6-3.wav", "sample_rate": 24000, "audio_seconds": 1.792, "turn": 6, "language": "en", "text": "means Where is the train station?"}
+{"seconds": 77.7984, "event": "parsed_segment", "turn": 6, "language": "de", "text": "Wel", "closed": false}
+{"seconds": 77.7985, "event": "parsed_segment", "turn": 6, "language": "de", "text": "ches", "closed": false}
+{"seconds": 77.7986, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Gle", "closed": false}
+{"seconds": 77.7987, "event": "parsed_segment", "turn": 6, "language": "de", "text": "is", "closed": false}
+{"seconds": 77.7987, "event": "parsed_segment", "turn": 6, "language": "de", "text": " ist", "closed": false}
+{"seconds": 77.7988, "event": "parsed_segment", "turn": 6, "language": "de", "text": " das", "closed": false}
+{"seconds": 77.7989, "event": "parsed_segment", "turn": 6, "language": "de", "text": "?", "closed": false}
+{"seconds": 77.799, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 77.7991, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 77.7991, "event": "parsed_segment", "turn": 6, "language": "en", "text": " Which", "closed": false}
+{"seconds": 77.7993, "event": "parsed_segment", "turn": 6, "language": "en", "text": " platform", "closed": false}
+{"seconds": 77.7995, "event": "parsed_segment", "turn": 6, "language": "en", "text": " is", "closed": false}
+{"seconds": 77.7997, "event": "parsed_segment", "turn": 6, "language": "en", "text": " it", "closed": false}
+{"seconds": 77.7999, "event": "parsed_segment", "turn": 6, "language": "en", "text": "?", "closed": false}
+{"seconds": 77.8, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 77.8001, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 77.8143, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.8146, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 77.8147, "event": "llm_raw", "turn": 6, "text": " Is", "done": false, "done_reason": null}
+{"seconds": 77.8424, "event": "llm_raw", "turn": 6, "text": " the", "done": false, "done_reason": null}
+{"seconds": 77.8426, "event": "llm_raw", "turn": 6, "text": " train", "done": false, "done_reason": null}
+{"seconds": 77.8428, "event": "llm_raw", "turn": 6, "text": " delayed", "done": false, "done_reason": null}
+{"seconds": 77.843, "event": "llm_raw", "turn": 6, "text": "?", "done": false, "done_reason": null}
+{"seconds": 77.8431, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 77.8683, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 77.8701, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.8702, "event": "llm_raw", "turn": 6, "text": "Ist", "done": false, "done_reason": null}
+{"seconds": 77.8703, "event": "llm_raw", "turn": 6, "text": " dieser", "done": false, "done_reason": null}
+{"seconds": 77.8945, "event": "llm_raw", "turn": 6, "text": " Platz", "done": false, "done_reason": null}
+{"seconds": 77.8961, "event": "llm_raw", "turn": 6, "text": " frei", "done": false, "done_reason": null}
+{"seconds": 77.8962, "event": "llm_raw", "turn": 6, "text": "?[", "done": false, "done_reason": null}
+{"seconds": 77.9204, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 77.9208, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 77.9209, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 77.9211, "event": "llm_raw", "turn": 6, "text": " Is", "done": false, "done_reason": null}
+{"seconds": 77.9212, "event": "llm_raw", "turn": 6, "text": " this", "done": false, "done_reason": null}
+{"seconds": 77.9483, "event": "llm_raw", "turn": 6, "text": " seat", "done": false, "done_reason": null}
+{"seconds": 77.9487, "event": "llm_raw", "turn": 6, "text": " free", "done": false, "done_reason": null}
+{"seconds": 77.9488, "event": "llm_raw", "turn": 6, "text": "?", "done": false, "done_reason": null}
+{"seconds": 77.9489, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 80.5856, "event": "playback_ack", "type": "played", "id": "6:1", "complete": true}
+{"seconds": 80.5974, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Ein Ticket nach Berlin, bitte."]}
+{"seconds": 80.9004, "event": "tts_audio", "id": "6:4", "audio": "6-4.wav", "sample_rate": 22050, "audio_seconds": 1.5906, "turn": 6, "language": "de", "text": "Ein Ticket nach Berlin, bitte."}
+{"seconds": 81.8555, "event": "playback_ack", "type": "played", "id": "6:2", "complete": true}
+{"seconds": 81.8702, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means One ticket to Berlin, please."]}
+{"seconds": 82.066, "event": "tts_audio", "id": "6:5", "audio": "6-5.wav", "sample_rate": 24000, "audio_seconds": 2.048, "turn": 6, "language": "en", "text": "means One ticket to Berlin, please."}
+{"seconds": 82.0716, "event": "parsed_segment", "turn": 6, "language": "de", "text": "Hat", "closed": false}
+{"seconds": 82.0719, "event": "parsed_segment", "turn": 6, "language": "de", "text": " der", "closed": false}
+{"seconds": 82.072, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Zug", "closed": false}
+{"seconds": 82.0721, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Vers", "closed": false}
+{"seconds": 82.0725, "event": "parsed_segment", "turn": 6, "language": "de", "text": "p", "closed": false}
+{"seconds": 82.0728, "event": "parsed_segment", "turn": 6, "language": "de", "text": "ät", "closed": false}
+{"seconds": 82.0731, "event": "parsed_segment", "turn": 6, "language": "de", "text": "ung", "closed": false}
+{"seconds": 82.0733, "event": "parsed_segment", "turn": 6, "language": "de", "text": "?", "closed": false}
+{"seconds": 82.0734, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 82.0735, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 82.0736, "event": "parsed_segment", "turn": 6, "language": "en", "text": " Is", "closed": false}
+{"seconds": 82.0737, "event": "parsed_segment", "turn": 6, "language": "en", "text": " the", "closed": false}
+{"seconds": 82.0738, "event": "parsed_segment", "turn": 6, "language": "en", "text": " train", "closed": false}
+{"seconds": 82.0738, "event": "parsed_segment", "turn": 6, "language": "en", "text": " delayed", "closed": false}
+{"seconds": 82.0739, "event": "parsed_segment", "turn": 6, "language": "en", "text": "?", "closed": false}
+{"seconds": 82.0741, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 82.0743, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 82.0745, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 82.0748, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 82.0749, "event": "llm_raw", "turn": 6, "text": "Wo", "done": false, "done_reason": null}
+{"seconds": 82.075, "event": "llm_raw", "turn": 6, "text": " ist", "done": false, "done_reason": null}
+{"seconds": 82.0751, "event": "llm_raw", "turn": 6, "text": " der", "done": false, "done_reason": null}
+{"seconds": 82.0752, "event": "llm_raw", "turn": 6, "text": " Fahr", "done": false, "done_reason": null}
+{"seconds": 82.0752, "event": "llm_raw", "turn": 6, "text": "kart", "done": false, "done_reason": null}
+{"seconds": 82.0754, "event": "llm_raw", "turn": 6, "text": "ensch", "done": false, "done_reason": null}
+{"seconds": 82.0755, "event": "llm_raw", "turn": 6, "text": "alter", "done": false, "done_reason": null}
+{"seconds": 82.0755, "event": "llm_raw", "turn": 6, "text": "?[", "done": false, "done_reason": null}
+{"seconds": 82.0756, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 82.0757, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 82.0757, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 82.0759, "event": "llm_raw", "turn": 6, "text": " Where", "done": false, "done_reason": null}
+{"seconds": 82.076, "event": "llm_raw", "turn": 6, "text": " is", "done": false, "done_reason": null}
+{"seconds": 82.0761, "event": "llm_raw", "turn": 6, "text": " the", "done": false, "done_reason": null}
+{"seconds": 82.0761, "event": "llm_raw", "turn": 6, "text": " ticket", "done": false, "done_reason": null}
+{"seconds": 82.0762, "event": "llm_raw", "turn": 6, "text": " counter", "done": false, "done_reason": null}
+{"seconds": 82.0763, "event": "llm_raw", "turn": 6, "text": "?", "done": false, "done_reason": null}
+{"seconds": 83.6651, "event": "playback_ack", "type": "played", "id": "6:3", "complete": true}
+{"seconds": 83.6804, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Wann fährt der nächste Zug?"]}
+{"seconds": 83.7839, "event": "tts_audio", "id": "6:6", "audio": "6-6.wav", "sample_rate": 22050, "audio_seconds": 1.37, "turn": 6, "language": "de", "text": "Wann fährt der nächste Zug?"}
+{"seconds": 85.2654, "event": "playback_ack", "type": "played", "id": "6:4", "complete": true}
+{"seconds": 85.2766, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means When does the next train leave?"]}
+{"seconds": 85.5836, "event": "tts_audio", "id": "6:7", "audio": "6-7.wav", "sample_rate": 24000, "audio_seconds": 1.8773, "turn": 6, "language": "en", "text": "means When does the next train leave?"}
+{"seconds": 85.5888, "event": "parsed_segment", "turn": 6, "language": "de", "text": "Ist", "closed": false}
+{"seconds": 85.5889, "event": "parsed_segment", "turn": 6, "language": "de", "text": " dieser", "closed": false}
+{"seconds": 85.589, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Platz", "closed": false}
+{"seconds": 85.589, "event": "parsed_segment", "turn": 6, "language": "de", "text": " frei", "closed": false}
+{"seconds": 85.5891, "event": "parsed_segment", "turn": 6, "language": "de", "text": "?", "closed": false}
+{"seconds": 85.5892, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 85.5893, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 85.5894, "event": "parsed_segment", "turn": 6, "language": "en", "text": " Is", "closed": false}
+{"seconds": 85.5894, "event": "parsed_segment", "turn": 6, "language": "en", "text": " this", "closed": false}
+{"seconds": 85.5895, "event": "parsed_segment", "turn": 6, "language": "en", "text": " seat", "closed": false}
+{"seconds": 85.5896, "event": "parsed_segment", "turn": 6, "language": "en", "text": " free", "closed": false}
+{"seconds": 85.5897, "event": "parsed_segment", "turn": 6, "language": "en", "text": "?", "closed": false}
+{"seconds": 85.5897, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 85.5898, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 85.5905, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 85.5905, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 85.5906, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 85.5906, "event": "llm_raw", "turn": 6, "text": "Ich", "done": false, "done_reason": null}
+{"seconds": 85.5908, "event": "llm_raw", "turn": 6, "text": " habe", "done": false, "done_reason": null}
+{"seconds": 85.5909, "event": "llm_raw", "turn": 6, "text": " meinen", "done": false, "done_reason": null}
+{"seconds": 85.591, "event": "llm_raw", "turn": 6, "text": " Zug", "done": false, "done_reason": null}
+{"seconds": 85.5911, "event": "llm_raw", "turn": 6, "text": " ver", "done": false, "done_reason": null}
+{"seconds": 85.5913, "event": "llm_raw", "turn": 6, "text": "passt", "done": false, "done_reason": null}
+{"seconds": 85.5913, "event": "llm_raw", "turn": 6, "text": ".[", "done": false, "done_reason": null}
+{"seconds": 85.5914, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 85.5914, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 85.5915, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 85.5917, "event": "llm_raw", "turn": 6, "text": " I", "done": false, "done_reason": null}
+{"seconds": 85.5918, "event": "llm_raw", "turn": 6, "text": " missed", "done": false, "done_reason": null}
+{"seconds": 85.592, "event": "llm_raw", "turn": 6, "text": " my", "done": false, "done_reason": null}
+{"seconds": 87.3256, "event": "playback_ack", "type": "played", "id": "6:5", "complete": true}
+{"seconds": 87.3384, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Welches Gleis ist das?"]}
+{"seconds": 87.5477, "event": "tts_audio", "id": "6:8", "audio": "6-8.wav", "sample_rate": 22050, "audio_seconds": 1.2307, "turn": 6, "language": "de", "text": "Welches Gleis ist das?"}
+{"seconds": 88.6954, "event": "playback_ack", "type": "played", "id": "6:6", "complete": true}
+{"seconds": 88.7101, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means Which platform is it?"]}
+{"seconds": 88.8586, "event": "tts_audio", "id": "6:9", "audio": "6-9.wav", "sample_rate": 24000, "audio_seconds": 1.5573, "turn": 6, "language": "en", "text": "means Which platform is it?"}
+{"seconds": 88.8628, "event": "parsed_segment", "turn": 6, "language": "de", "text": "Wo", "closed": false}
+{"seconds": 88.8629, "event": "parsed_segment", "turn": 6, "language": "de", "text": " ist", "closed": false}
+{"seconds": 88.863, "event": "parsed_segment", "turn": 6, "language": "de", "text": " der", "closed": false}
+{"seconds": 88.8631, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Fahr", "closed": false}
+{"seconds": 88.8632, "event": "parsed_segment", "turn": 6, "language": "de", "text": "kart", "closed": false}
+{"seconds": 88.8633, "event": "parsed_segment", "turn": 6, "language": "de", "text": "ensch", "closed": false}
+{"seconds": 88.8634, "event": "parsed_segment", "turn": 6, "language": "de", "text": "alter", "closed": false}
+{"seconds": 88.8634, "event": "parsed_segment", "turn": 6, "language": "de", "text": "?", "closed": false}
+{"seconds": 88.8635, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 88.8636, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 88.8637, "event": "parsed_segment", "turn": 6, "language": "en", "text": " Where", "closed": false}
+{"seconds": 88.8638, "event": "parsed_segment", "turn": 6, "language": "en", "text": " is", "closed": false}
+{"seconds": 88.8639, "event": "parsed_segment", "turn": 6, "language": "en", "text": " the", "closed": false}
+{"seconds": 88.864, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ticket", "closed": false}
+{"seconds": 88.8641, "event": "parsed_segment", "turn": 6, "language": "en", "text": " counter", "closed": false}
+{"seconds": 88.8642, "event": "parsed_segment", "turn": 6, "language": "en", "text": "?", "closed": false}
+{"seconds": 88.8643, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 88.8644, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 88.8647, "event": "llm_raw", "turn": 6, "text": " train", "done": false, "done_reason": null}
+{"seconds": 88.8648, "event": "llm_raw", "turn": 6, "text": ".", "done": false, "done_reason": null}
+{"seconds": 88.8648, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 88.8649, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 88.8649, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 88.865, "event": "llm_raw", "turn": 6, "text": "G", "done": false, "done_reason": null}
+{"seconds": 88.8652, "event": "llm_raw", "turn": 6, "text": "ilt", "done": false, "done_reason": null}
+{"seconds": 88.8653, "event": "llm_raw", "turn": 6, "text": " dieses", "done": false, "done_reason": null}
+{"seconds": 88.8654, "event": "llm_raw", "turn": 6, "text": " Ticket", "done": false, "done_reason": null}
+{"seconds": 88.8655, "event": "llm_raw", "turn": 6, "text": " für", "done": false, "done_reason": null}
+{"seconds": 88.8656, "event": "llm_raw", "turn": 6, "text": " den", "done": false, "done_reason": null}
+{"seconds": 88.8658, "event": "llm_raw", "turn": 6, "text": " Regional", "done": false, "done_reason": null}
+{"seconds": 88.8659, "event": "llm_raw", "turn": 6, "text": "zug", "done": false, "done_reason": null}
+{"seconds": 88.866, "event": "llm_raw", "turn": 6, "text": "?[", "done": false, "done_reason": null}
+{"seconds": 88.866, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 88.8661, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 88.8662, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 88.8662, "event": "llm_raw", "turn": 6, "text": " Is", "done": false, "done_reason": null}
+{"seconds": 88.8663, "event": "llm_raw", "turn": 6, "text": " this", "done": false, "done_reason": null}
+{"seconds": 88.8664, "event": "llm_raw", "turn": 6, "text": " ticket", "done": false, "done_reason": null}
+{"seconds": 90.5855, "event": "playback_ack", "type": "played", "id": "6:7", "complete": true}
+{"seconds": 90.5966, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Hat der Zug Verspätung?"]}
+{"seconds": 90.8075, "event": "tts_audio", "id": "6:10", "audio": "6-10.wav", "sample_rate": 22050, "audio_seconds": 1.3584, "turn": 6, "language": "de", "text": "Hat der Zug Verspätung?"}
+{"seconds": 91.8246, "event": "playback_ack", "type": "played", "id": "6:8", "complete": true}
+{"seconds": 91.8395, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means Is the train delayed?"]}
+{"seconds": 92.1367, "event": "tts_audio", "id": "6:11", "audio": "6-11.wav", "sample_rate": 24000, "audio_seconds": 1.5573, "turn": 6, "language": "en", "text": "means Is the train delayed?"}
+{"seconds": 92.1409, "event": "parsed_segment", "turn": 6, "language": "de", "text": "Ich", "closed": false}
+{"seconds": 92.141, "event": "parsed_segment", "turn": 6, "language": "de", "text": " habe", "closed": false}
+{"seconds": 92.1411, "event": "parsed_segment", "turn": 6, "language": "de", "text": " meinen", "closed": false}
+{"seconds": 92.1412, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Zug", "closed": false}
+{"seconds": 92.1413, "event": "parsed_segment", "turn": 6, "language": "de", "text": " ver", "closed": false}
+{"seconds": 92.1414, "event": "parsed_segment", "turn": 6, "language": "de", "text": "passt", "closed": false}
+{"seconds": 92.1414, "event": "parsed_segment", "turn": 6, "language": "de", "text": ".", "closed": false}
+{"seconds": 92.1415, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 92.1416, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 92.1417, "event": "parsed_segment", "turn": 6, "language": "en", "text": " I", "closed": false}
+{"seconds": 92.1417, "event": "parsed_segment", "turn": 6, "language": "en", "text": " missed", "closed": false}
+{"seconds": 92.1418, "event": "parsed_segment", "turn": 6, "language": "en", "text": " my", "closed": false}
+{"seconds": 92.1419, "event": "parsed_segment", "turn": 6, "language": "en", "text": " train", "closed": false}
+{"seconds": 92.1419, "event": "parsed_segment", "turn": 6, "language": "en", "text": ".", "closed": false}
+{"seconds": 92.142, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 92.1421, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 92.1422, "event": "llm_raw", "turn": 6, "text": " valid", "done": false, "done_reason": null}
+{"seconds": 92.1423, "event": "llm_raw", "turn": 6, "text": " for", "done": false, "done_reason": null}
+{"seconds": 92.1423, "event": "llm_raw", "turn": 6, "text": " the", "done": false, "done_reason": null}
+{"seconds": 92.1425, "event": "llm_raw", "turn": 6, "text": " regional", "done": false, "done_reason": null}
+{"seconds": 92.1427, "event": "llm_raw", "turn": 6, "text": " train", "done": false, "done_reason": null}
+{"seconds": 92.1428, "event": "llm_raw", "turn": 6, "text": "?", "done": false, "done_reason": null}
+{"seconds": 92.143, "event": "llm_raw", "turn": 6, "text": " [", "done": false, "done_reason": null}
+{"seconds": 92.143, "event": "llm_raw", "turn": 6, "text": "de", "done": false, "done_reason": null}
+{"seconds": 92.1433, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 92.1434, "event": "llm_raw", "turn": 6, "text": "Wo", "done": false, "done_reason": null}
+{"seconds": 92.1435, "event": "llm_raw", "turn": 6, "text": " ste", "done": false, "done_reason": null}
+{"seconds": 92.1436, "event": "llm_raw", "turn": 6, "text": "ige", "done": false, "done_reason": null}
+{"seconds": 92.1437, "event": "llm_raw", "turn": 6, "text": " ich", "done": false, "done_reason": null}
+{"seconds": 92.1438, "event": "llm_raw", "turn": 6, "text": " um", "done": false, "done_reason": null}
+{"seconds": 92.1439, "event": "llm_raw", "turn": 6, "text": "?[", "done": false, "done_reason": null}
+{"seconds": 92.144, "event": "llm_raw", "turn": 6, "text": "en", "done": false, "done_reason": null}
+{"seconds": 92.144, "event": "llm_raw", "turn": 6, "text": "]", "done": false, "done_reason": null}
+{"seconds": 92.1441, "event": "llm_raw", "turn": 6, "text": " means", "done": false, "done_reason": null}
+{"seconds": 93.385, "event": "playback_ack", "type": "played", "id": "6:9", "complete": true}
+{"seconds": 93.3982, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Ist dieser Platz frei?"]}
+{"seconds": 93.5208, "event": "tts_audio", "id": "6:12", "audio": "6-12.wav", "sample_rate": 22050, "audio_seconds": 1.2887, "turn": 6, "language": "de", "text": "Ist dieser Platz frei?"}
+{"seconds": 94.7447, "event": "playback_ack", "type": "played", "id": "6:10", "complete": true}
+{"seconds": 94.7586, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means Is this seat free?"]}
+{"seconds": 95.0201, "event": "tts_audio", "id": "6:13", "audio": "6-13.wav", "sample_rate": 24000, "audio_seconds": 1.472, "turn": 6, "language": "en", "text": "means Is this seat free?"}
+{"seconds": 95.0244, "event": "parsed_segment", "turn": 6, "language": "de", "text": "G", "closed": false}
+{"seconds": 95.0246, "event": "parsed_segment", "turn": 6, "language": "de", "text": "ilt", "closed": false}
+{"seconds": 95.0249, "event": "parsed_segment", "turn": 6, "language": "de", "text": " dieses", "closed": false}
+{"seconds": 95.025, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Ticket", "closed": false}
+{"seconds": 95.0251, "event": "parsed_segment", "turn": 6, "language": "de", "text": " für", "closed": false}
+{"seconds": 95.0252, "event": "parsed_segment", "turn": 6, "language": "de", "text": " den", "closed": false}
+{"seconds": 95.0253, "event": "parsed_segment", "turn": 6, "language": "de", "text": " Regional", "closed": false}
+{"seconds": 95.0255, "event": "parsed_segment", "turn": 6, "language": "de", "text": "zug", "closed": false}
+{"seconds": 95.0257, "event": "parsed_segment", "turn": 6, "language": "de", "text": "?", "closed": false}
+{"seconds": 95.0258, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 95.0259, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 95.0259, "event": "parsed_segment", "turn": 6, "language": "en", "text": " Is", "closed": false}
+{"seconds": 95.026, "event": "parsed_segment", "turn": 6, "language": "en", "text": " this", "closed": false}
+{"seconds": 95.0261, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ticket", "closed": false}
+{"seconds": 95.0262, "event": "parsed_segment", "turn": 6, "language": "en", "text": " valid", "closed": false}
+{"seconds": 95.0263, "event": "parsed_segment", "turn": 6, "language": "en", "text": " for", "closed": false}
+{"seconds": 95.0264, "event": "parsed_segment", "turn": 6, "language": "en", "text": " the", "closed": false}
+{"seconds": 95.0265, "event": "parsed_segment", "turn": 6, "language": "en", "text": " regional", "closed": false}
+{"seconds": 95.0266, "event": "parsed_segment", "turn": 6, "language": "en", "text": " train", "closed": false}
+{"seconds": 95.0267, "event": "parsed_segment", "turn": 6, "language": "en", "text": "?", "closed": false}
+{"seconds": 95.027, "event": "llm_raw", "turn": 6, "text": " Where", "done": false, "done_reason": null}
+{"seconds": 95.0272, "event": "llm_raw", "turn": 6, "text": " do", "done": false, "done_reason": null}
+{"seconds": 95.0273, "event": "llm_raw", "turn": 6, "text": " I", "done": false, "done_reason": null}
+{"seconds": 95.0274, "event": "llm_raw", "turn": 6, "text": " change", "done": false, "done_reason": null}
+{"seconds": 95.0274, "event": "llm_raw", "turn": 6, "text": " trains", "done": false, "done_reason": null}
+{"seconds": 95.0276, "event": "llm_raw", "turn": 6, "text": "?", "done": false, "done_reason": null}
+{"seconds": 95.0277, "event": "llm_raw", "turn": 6, "text": "", "done": false, "done_reason": null}
+{"seconds": 95.0279, "event": "llm_raw", "turn": 6, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 96.306, "event": "playback_ack", "type": "played", "id": "6:11", "complete": true}
+{"seconds": 96.3197, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Wo ist der Fahrkartenschalter?"]}
+{"seconds": 96.452, "event": "tts_audio", "id": "6:14", "audio": "6-14.wav", "sample_rate": 22050, "audio_seconds": 1.7183, "turn": 6, "language": "de", "text": "Wo ist der Fahrkartenschalter?"}
+{"seconds": 97.6053, "event": "playback_ack", "type": "played", "id": "6:12", "complete": true}
+{"seconds": 97.6171, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means Where is the ticket counter?"]}
+{"seconds": 97.9912, "event": "tts_audio", "id": "6:15", "audio": "6-15.wav", "sample_rate": 24000, "audio_seconds": 1.792, "turn": 6, "language": "en", "text": "means Where is the ticket counter?"}
+{"seconds": 97.9962, "event": "parsed_segment", "turn": 6, "language": "en", "text": " ", "closed": false}
+{"seconds": 97.9964, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 97.9964, "event": "parsed_segment", "turn": 6, "language": "de", "text": "Wo", "closed": false}
+{"seconds": 97.9965, "event": "parsed_segment", "turn": 6, "language": "de", "text": " ste", "closed": false}
+{"seconds": 97.9966, "event": "parsed_segment", "turn": 6, "language": "de", "text": "ige", "closed": false}
+{"seconds": 97.9967, "event": "parsed_segment", "turn": 6, "language": "de", "text": " ich", "closed": false}
+{"seconds": 97.9968, "event": "parsed_segment", "turn": 6, "language": "de", "text": " um", "closed": false}
+{"seconds": 97.9969, "event": "parsed_segment", "turn": 6, "language": "de", "text": "?", "closed": false}
+{"seconds": 97.997, "event": "parsed_segment", "turn": 6, "language": "de", "text": "", "closed": true}
+{"seconds": 97.997, "event": "parsed_segment", "turn": 6, "language": "en", "text": " means", "closed": false}
+{"seconds": 97.9971, "event": "parsed_segment", "turn": 6, "language": "en", "text": " Where", "closed": false}
+{"seconds": 97.9972, "event": "parsed_segment", "turn": 6, "language": "en", "text": " do", "closed": false}
+{"seconds": 97.9973, "event": "parsed_segment", "turn": 6, "language": "en", "text": " I", "closed": false}
+{"seconds": 97.9975, "event": "parsed_segment", "turn": 6, "language": "en", "text": " change", "closed": false}
+{"seconds": 97.9976, "event": "parsed_segment", "turn": 6, "language": "en", "text": " trains", "closed": false}
+{"seconds": 97.9976, "event": "parsed_segment", "turn": 6, "language": "en", "text": "?", "closed": false}
+{"seconds": 97.9978, "event": "parsed_segment", "turn": 6, "language": "en", "text": "", "closed": true}
+{"seconds": 99.0948, "event": "playback_ack", "type": "played", "id": "6:13", "complete": true}
+{"seconds": 99.1119, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Ich habe meinen Zug verpasst."]}
+{"seconds": 99.246, "event": "tts_audio", "id": "6:16", "audio": "6-16.wav", "sample_rate": 22050, "audio_seconds": 1.2771, "turn": 6, "language": "de", "text": "Ich habe meinen Zug verpasst."}
+{"seconds": 100.8247, "event": "playback_ack", "type": "played", "id": "6:14", "complete": true}
+{"seconds": 100.8383, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means I missed my train."]}
+{"seconds": 101.1863, "event": "tts_audio", "id": "6:17", "audio": "6-17.wav", "sample_rate": 24000, "audio_seconds": 1.5147, "turn": 6, "language": "en", "text": "means I missed my train."}
+{"seconds": 102.6253, "event": "playback_ack", "type": "played", "id": "6:15", "complete": true}
+{"seconds": 102.6371, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Gilt dieses Ticket für den Regionalzug?"]}
+{"seconds": 102.7763, "event": "tts_audio", "id": "6:18", "audio": "6-18.wav", "sample_rate": 22050, "audio_seconds": 2.1827, "turn": 6, "language": "de", "text": "Gilt dieses Ticket für den Regionalzug?"}
+{"seconds": 103.9047, "event": "playback_ack", "type": "played", "id": "6:16", "complete": true}
+{"seconds": 103.9196, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means Is this ticket valid for the regional train?"]}
+{"seconds": 104.2505, "event": "tts_audio", "id": "6:19", "audio": "6-19.wav", "sample_rate": 24000, "audio_seconds": 2.8587, "turn": 6, "language": "en", "text": "means Is this ticket valid for the regional train?"}
+{"seconds": 105.4261, "event": "playback_ack", "type": "played", "id": "6:17", "complete": true}
+{"seconds": 105.445, "event": "tts_input", "turn": 6, "language": "de", "phrases": ["Wo steige ich um?"]}
+{"seconds": 105.5612, "event": "tts_audio", "id": "6:20", "audio": "6-20.wav", "sample_rate": 22050, "audio_seconds": 1.0217, "turn": 6, "language": "de", "text": "Wo steige ich um?"}
+{"seconds": 107.6246, "event": "playback_ack", "type": "played", "id": "6:18", "complete": true}
+{"seconds": 107.6372, "event": "tts_input", "turn": 6, "language": "en", "phrases": ["means Where do I change trains?"]}
+{"seconds": 108.0244, "event": "tts_audio", "id": "6:21", "audio": "6-21.wav", "sample_rate": 24000, "audio_seconds": 1.664, "turn": 6, "language": "en", "text": "means Where do I change trains?"}
+{"seconds": 110.4956, "event": "playback_ack", "type": "played", "id": "6:19", "complete": true}
+{"seconds": 111.5255, "event": "playback_ack", "type": "played", "id": "6:20", "complete": true}
+{"seconds": 113.1951, "event": "playback_ack", "type": "played", "id": "6:21", "complete": true}
+{"seconds": 114.1666, "event": "interrupt", "turn": 6}
+{"seconds": 116.8755, "event": "stt_final", "turn": 7, "text": "Keep going with the next example.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 117.4209, "event": "llm_raw", "turn": 7, "text": "[", "done": false, "done_reason": null}
+{"seconds": 117.4661, "event": "llm_raw", "turn": 7, "text": "en", "done": false, "done_reason": null}
+{"seconds": 117.4679, "event": "llm_raw", "turn": 7, "text": "]", "done": false, "done_reason": null}
+{"seconds": 117.468, "event": "llm_raw", "turn": 7, "text": "Since", "done": false, "done_reason": null}
+{"seconds": 117.4681, "event": "llm_raw", "turn": 7, "text": " we", "done": false, "done_reason": null}
+{"seconds": 117.4683, "event": "parsed_segment", "turn": 7, "language": "en", "text": "Since", "closed": false}
+{"seconds": 117.4686, "event": "parsed_segment", "turn": 7, "language": "en", "text": " we", "closed": false}
+{"seconds": 117.4842, "event": "llm_raw", "turn": 7, "text": " finished", "done": false, "done_reason": null}
+{"seconds": 117.4846, "event": "parsed_segment", "turn": 7, "language": "en", "text": " finished", "closed": false}
+{"seconds": 117.5123, "event": "llm_raw", "turn": 7, "text": " the", "done": false, "done_reason": null}
+{"seconds": 117.5125, "event": "llm_raw", "turn": 7, "text": " train", "done": false, "done_reason": null}
+{"seconds": 117.5126, "event": "llm_raw", "turn": 7, "text": " station", "done": false, "done_reason": null}
+{"seconds": 117.5127, "event": "llm_raw", "turn": 7, "text": " list", "done": false, "done_reason": null}
+{"seconds": 117.5129, "event": "parsed_segment", "turn": 7, "language": "en", "text": " the", "closed": false}
+{"seconds": 117.5131, "event": "parsed_segment", "turn": 7, "language": "en", "text": " train", "closed": false}
+{"seconds": 117.5132, "event": "parsed_segment", "turn": 7, "language": "en", "text": " station", "closed": false}
+{"seconds": 117.5134, "event": "parsed_segment", "turn": 7, "language": "en", "text": " list", "closed": false}
+{"seconds": 117.5282, "event": "llm_raw", "turn": 7, "text": ",", "done": false, "done_reason": null}
+{"seconds": 117.5285, "event": "llm_raw", "turn": 7, "text": " would", "done": false, "done_reason": null}
+{"seconds": 117.5287, "event": "parsed_segment", "turn": 7, "language": "en", "text": ",", "closed": false}
+{"seconds": 117.529, "event": "parsed_segment", "turn": 7, "language": "en", "text": " would", "closed": false}
+{"seconds": 117.5292, "event": "tts_input", "turn": 7, "language": "en", "phrases": ["Since we finished the train station list,"]}
+{"seconds": 117.5505, "event": "llm_raw", "turn": 7, "text": " you", "done": false, "done_reason": null}
+{"seconds": 117.5506, "event": "llm_raw", "turn": 7, "text": " like", "done": false, "done_reason": null}
+{"seconds": 117.5506, "event": "llm_raw", "turn": 7, "text": " to", "done": false, "done_reason": null}
+{"seconds": 117.5508, "event": "parsed_segment", "turn": 7, "language": "en", "text": " you", "closed": false}
+{"seconds": 117.551, "event": "parsed_segment", "turn": 7, "language": "en", "text": " like", "closed": false}
+{"seconds": 117.5511, "event": "parsed_segment", "turn": 7, "language": "en", "text": " to", "closed": false}
+{"seconds": 117.6123, "event": "llm_raw", "turn": 7, "text": " learn", "done": false, "done_reason": null}
+{"seconds": 117.6124, "event": "llm_raw", "turn": 7, "text": " phrases", "done": false, "done_reason": null}
+{"seconds": 117.6125, "event": "llm_raw", "turn": 7, "text": " for", "done": false, "done_reason": null}
+{"seconds": 117.6126, "event": "parsed_segment", "turn": 7, "language": "en", "text": " learn", "closed": false}
+{"seconds": 117.6128, "event": "parsed_segment", "turn": 7, "language": "en", "text": " phrases", "closed": false}
+{"seconds": 117.613, "event": "parsed_segment", "turn": 7, "language": "en", "text": " for", "closed": false}
+{"seconds": 117.6265, "event": "llm_raw", "turn": 7, "text": " a", "done": false, "done_reason": null}
+{"seconds": 117.6266, "event": "llm_raw", "turn": 7, "text": " restaurant", "done": false, "done_reason": null}
+{"seconds": 117.6267, "event": "llm_raw", "turn": 7, "text": " or", "done": false, "done_reason": null}
+{"seconds": 117.6267, "event": "llm_raw", "turn": 7, "text": " a", "done": false, "done_reason": null}
+{"seconds": 117.6268, "event": "llm_raw", "turn": 7, "text": " hotel", "done": false, "done_reason": null}
+{"seconds": 117.6269, "event": "parsed_segment", "turn": 7, "language": "en", "text": " a", "closed": false}
+{"seconds": 117.627, "event": "parsed_segment", "turn": 7, "language": "en", "text": " restaurant", "closed": false}
+{"seconds": 117.6271, "event": "parsed_segment", "turn": 7, "language": "en", "text": " or", "closed": false}
+{"seconds": 117.6272, "event": "parsed_segment", "turn": 7, "language": "en", "text": " a", "closed": false}
+{"seconds": 117.6274, "event": "parsed_segment", "turn": 7, "language": "en", "text": " hotel", "closed": false}
+{"seconds": 117.6362, "event": "llm_raw", "turn": 7, "text": "?", "done": false, "done_reason": null}
+{"seconds": 117.6365, "event": "parsed_segment", "turn": 7, "language": "en", "text": "?", "closed": false}
+{"seconds": 117.6562, "event": "llm_raw", "turn": 7, "text": "", "done": false, "done_reason": null}
+{"seconds": 117.747, "event": "tts_audio", "id": "7:1", "audio": "7-1.wav", "sample_rate": 24000, "audio_seconds": 1.9627, "turn": 7, "language": "en", "text": "Since we finished the train station list,"}
+{"seconds": 117.7527, "event": "tts_input", "turn": 7, "language": "en", "phrases": ["would you like to learn phrases for a restaurant or a hotel?"]}
+{"seconds": 117.7562, "event": "llm_raw", "turn": 7, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 117.7567, "event": "parsed_segment", "turn": 7, "language": "en", "text": "", "closed": true}
+{"seconds": 118.1315, "event": "tts_audio", "id": "7:2", "audio": "7-2.wav", "sample_rate": 24000, "audio_seconds": 3.1787, "turn": 7, "language": "en", "text": "would you like to learn phrases for a restaurant or a hotel?"}
+{"seconds": 119.7251, "event": "playback_ack", "type": "played", "id": "7:1", "complete": true}
+{"seconds": 122.9152, "event": "playback_ack", "type": "played", "id": "7:2", "complete": true}
+{"seconds": 123.6961, "event": "interrupt", "turn": 7}
+{"seconds": 127.5818, "event": "stt_final", "turn": 8, "text": "I am here. Please reply briefly.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 128.0449, "event": "llm_raw", "turn": 8, "text": "[", "done": false, "done_reason": null}
+{"seconds": 128.0644, "event": "llm_raw", "turn": 8, "text": "en", "done": false, "done_reason": null}
+{"seconds": 128.0682, "event": "llm_raw", "turn": 8, "text": "]", "done": false, "done_reason": null}
+{"seconds": 128.0683, "event": "llm_raw", "turn": 8, "text": "I", "done": false, "done_reason": null}
+{"seconds": 128.0684, "event": "llm_raw", "turn": 8, "text": " am", "done": false, "done_reason": null}
+{"seconds": 128.0685, "event": "llm_raw", "turn": 8, "text": " here", "done": false, "done_reason": null}
+{"seconds": 128.0687, "event": "parsed_segment", "turn": 8, "language": "en", "text": "I", "closed": false}
+{"seconds": 128.0689, "event": "parsed_segment", "turn": 8, "language": "en", "text": " am", "closed": false}
+{"seconds": 128.0691, "event": "parsed_segment", "turn": 8, "language": "en", "text": " here", "closed": false}
+{"seconds": 128.0883, "event": "llm_raw", "turn": 8, "text": " and", "done": false, "done_reason": null}
+{"seconds": 128.0886, "event": "parsed_segment", "turn": 8, "language": "en", "text": " and", "closed": false}
+{"seconds": 128.1084, "event": "llm_raw", "turn": 8, "text": " ready", "done": false, "done_reason": null}
+{"seconds": 128.1087, "event": "parsed_segment", "turn": 8, "language": "en", "text": " ready", "closed": false}
+{"seconds": 128.1101, "event": "llm_raw", "turn": 8, "text": " to", "done": false, "done_reason": null}
+{"seconds": 128.1102, "event": "llm_raw", "turn": 8, "text": " help", "done": false, "done_reason": null}
+{"seconds": 128.1103, "event": "llm_raw", "turn": 8, "text": ".", "done": false, "done_reason": null}
+{"seconds": 128.1105, "event": "parsed_segment", "turn": 8, "language": "en", "text": " to", "closed": false}
+{"seconds": 128.1107, "event": "parsed_segment", "turn": 8, "language": "en", "text": " help", "closed": false}
+{"seconds": 128.1109, "event": "parsed_segment", "turn": 8, "language": "en", "text": ".", "closed": false}
+{"seconds": 128.1121, "event": "llm_raw", "turn": 8, "text": "", "done": false, "done_reason": null}
+{"seconds": 128.2063, "event": "llm_raw", "turn": 8, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 128.2069, "event": "parsed_segment", "turn": 8, "language": "en", "text": "", "closed": true}
+{"seconds": 128.2071, "event": "tts_input", "turn": 8, "language": "en", "phrases": ["I am here and ready to help."]}
+{"seconds": 128.4231, "event": "tts_audio", "id": "8:1", "audio": "8-1.wav", "sample_rate": 24000, "audio_seconds": 1.6427, "turn": 8, "language": "en", "text": "I am here and ready to help."}
+{"seconds": 130.0851, "event": "playback_ack", "type": "played", "id": "8:1", "complete": true}
+{"seconds": 138.8058, "event": "interrupt", "turn": 8}
+{"seconds": 141.3225, "event": "stt_final", "turn": 9, "text": "Bridge translator mode.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 141.3246, "event": "tts_input", "turn": 9, "language": "en", "phrases": ["Enable English ↔ German translation until you turn it off?"]}
+{"seconds": 141.8611, "event": "tts_audio", "id": "9:1", "audio": "9-1.wav", "sample_rate": 24000, "audio_seconds": 4.352, "turn": 9, "language": "en", "text": "Enable English ↔ German translation until you turn it off?"}
+{"seconds": 141.8723, "event": "tts_input", "turn": 9, "language": "en", "phrases": ["Please say yes or no."]}
+{"seconds": 141.9992, "event": "tts_audio", "id": "9:2", "audio": "9-2.wav", "sample_rate": 24000, "audio_seconds": 1.3653, "turn": 9, "language": "en", "text": "Please say yes or no."}
+{"seconds": 146.3047, "event": "playback_ack", "type": "played", "id": "9:1", "complete": true}
+{"seconds": 147.6747, "event": "playback_ack", "type": "played", "id": "9:2", "complete": true}
+{"seconds": 148.3659, "event": "interrupt", "turn": 9}
+{"seconds": 150.3952, "event": "stt_final", "turn": 10, "text": "Yes, confirm.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 150.4208, "event": "tts_input", "turn": 10, "language": "en", "phrases": ["Confirmed. Your settings are now active."]}
+{"seconds": 150.6436, "event": "tts_audio", "id": "10:1", "audio": "10-1.wav", "sample_rate": 24000, "audio_seconds": 2.2613, "turn": 10, "language": "en", "text": "Confirmed. Your settings are now active."}
+{"seconds": 152.9247, "event": "playback_ack", "type": "played", "id": "10:1", "complete": true}
+{"seconds": 153.6458, "event": "interrupt", "turn": 10}
+{"seconds": 157.1196, "event": "stt_final", "turn": 11, "text": "Where is nearest train station?", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 157.5337, "event": "llm_raw", "turn": 11, "text": "[", "done": false, "done_reason": null}
+{"seconds": 157.5474, "event": "llm_raw", "turn": 11, "text": "de", "done": false, "done_reason": null}
+{"seconds": 157.5489, "event": "llm_raw", "turn": 11, "text": "]", "done": false, "done_reason": null}
+{"seconds": 157.549, "event": "llm_raw", "turn": 11, "text": "Wo", "done": false, "done_reason": null}
+{"seconds": 157.5491, "event": "llm_raw", "turn": 11, "text": " ist", "done": false, "done_reason": null}
+{"seconds": 157.5492, "event": "llm_raw", "turn": 11, "text": " der", "done": false, "done_reason": null}
+{"seconds": 157.5494, "event": "parsed_segment", "turn": 11, "language": "de", "text": "Wo", "closed": false}
+{"seconds": 157.5497, "event": "parsed_segment", "turn": 11, "language": "de", "text": " ist", "closed": false}
+{"seconds": 157.5498, "event": "parsed_segment", "turn": 11, "language": "de", "text": " der", "closed": false}
+{"seconds": 157.5551, "event": "llm_raw", "turn": 11, "text": " nächste", "done": false, "done_reason": null}
+{"seconds": 157.5554, "event": "parsed_segment", "turn": 11, "language": "de", "text": " nächste", "closed": false}
+{"seconds": 157.5569, "event": "llm_raw", "turn": 11, "text": " Bahnhof", "done": false, "done_reason": null}
+{"seconds": 157.5571, "event": "llm_raw", "turn": 11, "text": "?", "done": false, "done_reason": null}
+{"seconds": 157.5573, "event": "parsed_segment", "turn": 11, "language": "de", "text": " Bahnhof", "closed": false}
+{"seconds": 157.5575, "event": "parsed_segment", "turn": 11, "language": "de", "text": "?", "closed": false}
+{"seconds": 157.5589, "event": "llm_raw", "turn": 11, "text": "", "done": false, "done_reason": null}
+{"seconds": 157.6471, "event": "llm_raw", "turn": 11, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 157.6477, "event": "parsed_segment", "turn": 11, "language": "de", "text": "", "closed": true}
+{"seconds": 157.6479, "event": "tts_input", "turn": 11, "language": "de", "phrases": ["Wo ist der nächste Bahnhof?"]}
+{"seconds": 157.7685, "event": "tts_audio", "id": "11:1", "audio": "11-1.wav", "sample_rate": 22050, "audio_seconds": 1.4745, "turn": 11, "language": "de", "text": "Wo ist der nächste Bahnhof?"}
+{"seconds": 159.2552, "event": "playback_ack", "type": "played", "id": "11:1", "complete": true}
+{"seconds": 159.9855, "event": "interrupt", "turn": 11}
+{"seconds": 163.5939, "event": "stt_final", "turn": 12, "text": "Ich möchte einen Kaffee, bitte.", "language": "de", "detected_language": "German", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 164.0119, "event": "llm_raw", "turn": 12, "text": "[", "done": false, "done_reason": null}
+{"seconds": 164.0191, "event": "llm_raw", "turn": 12, "text": "en", "done": false, "done_reason": null}
+{"seconds": 164.023, "event": "llm_raw", "turn": 12, "text": "]", "done": false, "done_reason": null}
+{"seconds": 164.0231, "event": "llm_raw", "turn": 12, "text": "I", "done": false, "done_reason": null}
+{"seconds": 164.0233, "event": "llm_raw", "turn": 12, "text": " would", "done": false, "done_reason": null}
+{"seconds": 164.0234, "event": "llm_raw", "turn": 12, "text": " like", "done": false, "done_reason": null}
+{"seconds": 164.0236, "event": "parsed_segment", "turn": 12, "language": "en", "text": "I", "closed": false}
+{"seconds": 164.0238, "event": "parsed_segment", "turn": 12, "language": "en", "text": " would", "closed": false}
+{"seconds": 164.0239, "event": "parsed_segment", "turn": 12, "language": "en", "text": " like", "closed": false}
+{"seconds": 164.029, "event": "llm_raw", "turn": 12, "text": " a", "done": false, "done_reason": null}
+{"seconds": 164.0293, "event": "parsed_segment", "turn": 12, "language": "en", "text": " a", "closed": false}
+{"seconds": 164.0311, "event": "llm_raw", "turn": 12, "text": " coffee", "done": false, "done_reason": null}
+{"seconds": 164.0312, "event": "llm_raw", "turn": 12, "text": ",", "done": false, "done_reason": null}
+{"seconds": 164.0313, "event": "llm_raw", "turn": 12, "text": " please", "done": false, "done_reason": null}
+{"seconds": 164.0314, "event": "llm_raw", "turn": 12, "text": ".", "done": false, "done_reason": null}
+{"seconds": 164.0316, "event": "parsed_segment", "turn": 12, "language": "en", "text": " coffee", "closed": false}
+{"seconds": 164.0318, "event": "parsed_segment", "turn": 12, "language": "en", "text": ",", "closed": false}
+{"seconds": 164.0319, "event": "parsed_segment", "turn": 12, "language": "en", "text": " please", "closed": false}
+{"seconds": 164.0321, "event": "parsed_segment", "turn": 12, "language": "en", "text": ".", "closed": false}
+{"seconds": 164.0412, "event": "llm_raw", "turn": 12, "text": "", "done": false, "done_reason": null}
+{"seconds": 164.2058, "event": "llm_raw", "turn": 12, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 164.2064, "event": "parsed_segment", "turn": 12, "language": "en", "text": "", "closed": true}
+{"seconds": 164.2065, "event": "tts_input", "turn": 12, "language": "en", "phrases": ["I would like a coffee, please."]}
+{"seconds": 164.3628, "event": "tts_audio", "id": "12:1", "audio": "12-1.wav", "sample_rate": 24000, "audio_seconds": 1.6213, "turn": 12, "language": "en", "text": "I would like a coffee, please."}
+{"seconds": 166.0059, "event": "playback_ack", "type": "played", "id": "12:1", "complete": true}

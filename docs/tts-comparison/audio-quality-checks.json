@@ -1,0 +1,194 @@
+[
+  {
+    "audio": "en_booking-kokoro.wav",
+    "peak": 0.397,
+    "rms": 0.0614,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_negation-kokoro.wav",
+    "peak": 0.4203,
+    "rms": 0.0589,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_names-kokoro.wav",
+    "peak": 0.5995,
+    "rms": 0.0584,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_teaching-kokoro.wav",
+    "peak": 0.3441,
+    "rms": 0.0604,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_booking-piper.wav",
+    "peak": 0.9997,
+    "rms": 0.17,
+    "clipped_fraction": 9e-06
+  },
+  {
+    "audio": "de_negation-piper.wav",
+    "peak": 0.9987,
+    "rms": 0.164,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_sounds-piper.wav",
+    "peak": 0.9984,
+    "rms": 0.1678,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_compounds-piper.wav",
+    "peak": 0.9993,
+    "rms": 0.1557,
+    "clipped_fraction": 8e-06
+  },
+  {
+    "audio": "en_de_en_lesson-hybrid_gold_spans.wav",
+    "peak": 0.9962,
+    "rms": 0.1164,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_de_en_lesson-current_single_voice.wav",
+    "peak": 0.4283,
+    "rms": 0.0629,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_en_de_lesson-hybrid_gold_spans.wav",
+    "peak": 0.9989,
+    "rms": 0.1379,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_en_de_lesson-current_single_voice.wav",
+    "peak": 0.9994,
+    "rms": 0.1623,
+    "clipped_fraction": 7e-06
+  },
+  {
+    "audio": "en_de_en_travel-hybrid_gold_spans.wav",
+    "peak": 0.9998,
+    "rms": 0.1093,
+    "clipped_fraction": 7e-06
+  },
+  {
+    "audio": "en_de_en_travel-current_single_voice.wav",
+    "peak": 0.4637,
+    "rms": 0.0599,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_en_de_work-hybrid_gold_spans.wav",
+    "peak": 0.9977,
+    "rms": 0.1402,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_en_de_work-current_single_voice.wav",
+    "peak": 0.9995,
+    "rms": 0.1583,
+    "clipped_fraction": 7e-06
+  },
+  {
+    "audio": "en_booking-qwen_float32.wav",
+    "peak": 0.3724,
+    "rms": 0.0605,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_negation-qwen_float32.wav",
+    "peak": 0.3463,
+    "rms": 0.0519,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_names-qwen_float32.wav",
+    "peak": 0.2792,
+    "rms": 0.0518,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_teaching-qwen_float32.wav",
+    "peak": 0.2798,
+    "rms": 0.0598,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_booking-qwen_float32.wav",
+    "peak": 0.3497,
+    "rms": 0.052,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_negation-qwen_float32.wav",
+    "peak": 0.3385,
+    "rms": 0.0503,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_sounds-qwen_float32.wav",
+    "peak": 0.2585,
+    "rms": 0.0523,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_compounds-qwen_float32.wav",
+    "peak": 0.368,
+    "rms": 0.0456,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_de_en_lesson-qwen_float32_auto.wav",
+    "peak": 0.2821,
+    "rms": 0.0556,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_de_en_lesson-qwen_float32_gold_spans.wav",
+    "peak": 0.282,
+    "rms": 0.0602,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_en_de_lesson-qwen_float32_auto.wav",
+    "peak": 0.421,
+    "rms": 0.0507,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_en_de_lesson-qwen_float32_gold_spans.wav",
+    "peak": 0.3779,
+    "rms": 0.0474,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_de_en_travel-qwen_float32_auto.wav",
+    "peak": 0.3588,
+    "rms": 0.051,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "en_de_en_travel-qwen_float32_gold_spans.wav",
+    "peak": 0.304,
+    "rms": 0.0468,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_en_de_work-qwen_float32_auto.wav",
+    "peak": 0.4474,
+    "rms": 0.0591,
+    "clipped_fraction": 0.0
+  },
+  {
+    "audio": "de_en_de_work-qwen_float32_gold_spans.wav",
+    "peak": 0.3225,
+    "rms": 0.0555,
+    "clipped_fraction": 0.0
+  }
+]

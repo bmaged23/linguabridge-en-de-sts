@@ -1,0 +1,12 @@
+{
+  "float16": {
+    "status": "failed during warmup",
+    "error": "CUDA probability tensor contains inf/nan or element <0; device-side assert in sampling",
+    "attention": "eager",
+    "device": "GTX 1660 Ti",
+    "dtype": "float16"
+  },
+  "float32": {
+    "status": "all 16 outputs generated successfully: 8 monolingual, 4 mixed auto, 4 mixed explicit spans"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "samples": 50,
+  "recognition": {
+    "Live Qwen progressive pipeline": {
+      "all": {
+        "n": 50,
+        "wer": 0.21699697682230434,
+        "cer": 0.16546981499513144
+      },
+      "mixed": {
+        "n": 38,
+        "wer": 0.2653327533710309,
+        "cer": 0.20832678711704636
+      }
+    },
+    "large-v3 (30s multilingual)": {
+      "all": {
+        "n": 50,
+        "wer": 0.4336580450117568,
+        "cer": 0.4124878286270691
+      },
+      "mixed": {
+        "n": 38,
+        "wer": 0.5306655067420618,
+        "cer": 0.5095051060487038
+      }
+    },
+    "large-v3 (5s multilingual)": {
+      "all": {
+        "n": 40,
+        "wer": 0.39050131926121373,
+        "cer": 0.3466346153846154
+      },
+      "mixed": {
+        "n": 28,
+        "wer": 0.4818295739348371,
+        "cer": 0.43928001822738666
+      }
+    },
+    "qwen-fresh": {
+      "all": {
+        "n": 50,
+        "wer": 0.16493113873026538,
+        "cer": 0.1063777994157741
+      },
+      "mixed": {
+        "n": 38,
+        "wer": 0.1948673336233145,
+        "cer": 0.13040062843676356
+      }
+    },
+    "qwen-replay": {
+      "all": {
+        "n": 26,
+        "wer": 0.20272783632982022,
+        "cer": 0.12516763522574878
+      },
+      "mixed": {
+        "n": 24,
+        "wer": 0.21533333333333332,
+        "cer": 0.133837474492858
+      }
+    },
+    "turbo (30s multilingual)": {
+      "all": {
+        "n": 50,
+        "wer": 0.4393684917702385,
+        "cer": 0.4153481012658228
+      },
+      "mixed": {
+        "n": 38,
+        "wer": 0.535450195737277,
+        "cer": 0.5124116260801257
+      }
+    },
+    "turbo (5s multilingual)": {
+      "all": {
+        "n": 40,
+        "wer": 0.401495162708883,
+        "cer": 0.35552884615384617
+      },
+      "mixed": {
+        "n": 28,
+        "wer": 0.5012531328320802,
+        "cer": 0.4523809523809524
+      }
+    }
+  },
+  "complete_mixed_recognition": {
+    "Live Qwen progressive pipeline": {
+      "n": 32,
+      "wer": 0.1502449646162221,
+      "cer": 0.08055747751309676
+    },
+    "large-v3 (30s multilingual)": {
+      "n": 32,
+      "wer": 0.5389221556886228,
+      "cer": 0.5200158149649106
+    },
+    "large-v3 (5s multilingual)": {
+      "n": 25,
+      "wer": 0.4869992972593113,
+      "cer": 0.44549520766773165
+    },
+    "qwen-fresh": {
+      "n": 32,
+      "wer": 0.2215568862275449,
+      "cer": 0.14905604428190175
+    },
+    "qwen-replay": {
+      "n": 18,
+      "wer": 0.23410404624277456,
+      "cer": 0.1470793983910458
+    },
+    "turbo (30s multilingual)": {
+      "n": 32,
+      "wer": 0.5454545454545454,
+      "cer": 0.5236730256004745
+    },
+    "turbo (5s multilingual)": {
+      "n": 25,
+      "wer": 0.5052705551651441,
+      "cer": 0.45853035143769966
+    }
+  },
+  "findings": {
+    "LLM/memory infers a bus journey that the current transcript only describes as finding a bus": 40,
+    "LLM/memory adds rescheduling; the current story only corrects ten rather than nine": 38,
+    "LLM omitted all voice markers; fallback routed the complete reply through one default voice": 24,
+    "WER exceeds 15 percent": 14,
+    "de vocabulary largely missing or translated; inspect original and recognized text": 11,
+    "2 detected speech segments were canceled before their final transcription was delivered": 1,
+    "en vocabulary largely missing or translated; inspect original and recognized text": 4,
+    "Final STT timing measured with GPU in low-power P8 state": 5,
+    "1 detected speech segments were canceled before their final transcription was delivered": 5,
+    "TTS re-recognition disagrees with intended phrase: hattet ihr mehr Zeit.": 2,
+    "STT changed finding a bus into a bus journey; the summary propagates that change": 2,
+    "Voice-span mismatch candidate: en chunk contains gestern, seid, vorstellungsgespräch": 2,
+    "Voice-span mismatch candidate: en chunk contains bahnhof": 2,
+    "Voice-span mismatch candidate: en chunk contains firma": 3,
+    "Voice-span mismatch candidate: en chunk contains angekommen, fünfundvierzig, seid": 2,
+    "TTS re-recognition disagrees with intended phrase: Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.": 2,
+    "TTS re-recognition disagrees with intended phrase: so you looked for a bus. Am Bahnhof sagte Anna,": 1,
+    "TTS re-recognition disagrees with intended phrase: dass der Zug ausfällt, also habt ihr einen Bus gesucht.": 1,
+    "TTS re-recognition disagrees with intended phrase: um die Zeit von neun auf zehn Uhr zu ändern,": 2,
+    "TTS re-recognition disagrees with intended phrase: und ihr seid um neun Uhr fünfundvierzig angekommen.": 1,
+    "Voice-span mismatch candidate: en chunk contains gesagt": 1,
+    "Voice-span mismatch candidate: en chunk contains keine, soll": 1,
+    "TTS re-recognition disagrees with intended phrase: You told Anna not to buy tickets. Du hast Anna gesagt,": 1,
+    "TTS re-recognition disagrees with intended phrase: dass sie keine Tickets kaufen soll. Then the company called to change the interview from nine to ten.": 1,
+    "TTS re-recognition disagrees with intended phrase: Dann hat die Firma angerufen, um das Gespräch von neun auf zehn Uhr zu verschieben.": 1,
+    "TTS re-recognition disagrees with intended phrase: You arrived at nine forty-five. Ihr seid um neun Uhr fünfundvierzig angekommen.": 1,
+    "Voice-span mismatch candidate: de chunk contains yesterday, you": 2,
+    "Voice-span mismatch candidate: de chunk contains the": 2,
+    "Voice-span mismatch candidate: de chunk contains the, you": 2,
+    "Voice-span mismatch candidate: de chunk contains you": 2,
+    "Voice-span mismatch candidate: de chunk contains because, called, the": 2,
+    "Voice-span mismatch candidate: de chunk contains arrived, you": 2,
+    "TTS re-recognition disagrees with intended phrase: Yesterday, you and Anna traveled to Berlin for an interview.": 2,
+    "TTS re-recognition disagrees with intended phrase: sie solle noch keine Tickets kaufen. At the station,": 2,
+    "TTS re-recognition disagrees with intended phrase: Anna said the train was cancelled, so you found a bus,": 2,
+    "TTS re-recognition disagrees with intended phrase: but you told her not to buy tickets yet.": 2,
+    "TTS re-recognition disagrees with intended phrase: The company called because the interview was at ten instead of nine,": 2,
+    "TTS re-recognition disagrees with intended phrase: and you arrived at nine forty-five.": 2,
+    "Voice-span mismatch candidate: en chunk contains keine": 1,
+    "Voice-span mismatch candidate: en chunk contains fünfundvierzig": 1,
+    "TTS re-recognition disagrees with intended phrase: Am Bahnhof sagte Anna, dass der Zug ausfällt,": 1,
+    "TTS re-recognition disagrees with intended phrase: also habt ihr einen Bus gefunden, aber du sagtest,": 1,
+    "TTS re-recognition disagrees with intended phrase: sie solle noch keine Tickets kaufen. The company called to change the time from nine to ten,": 1,
+    "TTS re-recognition disagrees with intended phrase: and you arrived at nine forty-five. Die Firma rief an,": 1,
+    "TTS re-recognition disagrees with intended phrase: und ihr kamt um neun Uhr fünfundvierzig an.": 1,
+    "TTS re-recognition disagrees with intended phrase: Schließlich hat euch der Manager begrüßt und euch etwas Wasser angeboten.": 1
+  }
+}

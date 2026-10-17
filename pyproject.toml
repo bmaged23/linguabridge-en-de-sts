@@ -1,0 +1,39 @@
+[project]
+name = "linguabridge-sts"
+version = "0.1.0"
+description = "English-German speech-to-speech conversation and translation with streaming STT, LLM, TTS and persistent memory"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.34,<1",
+  "httpx>=0.28,<1",
+  "numpy>=2,<3",
+  "faster-whisper>=1.1,<2",
+  "piper-tts>=1.4,<2",
+  "kokoro-onnx==0.4.9",
+  "onnxruntime>=1.20,<2",
+  "python-dotenv>=1,<2",
+  "nvidia-cublas-cu12>=12,<13",
+  "nvidia-cudnn-cu12>=9,<10",
+  "av>=11,<19",
+]
+
+[dependency-groups]
+dev = [
+    "playwright>=1.56,<2",
+    "psutil==7.2.2",
+    "pytest>=8,<10",
+    "pytest-asyncio>=0.25,<2",
+    "websockets>=14,<17",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/voice_bridge"]

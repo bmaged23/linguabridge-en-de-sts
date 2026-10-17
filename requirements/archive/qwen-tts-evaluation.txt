@@ -1,0 +1,6 @@
+# Evaluation overlay; remaining packages come from the pinned .venv-asr environment.
+# This is not the deployed app's requirements file.
+qwen-tts==0.1.1
+transformers==4.57.3
+einops==0.8.2
+onnxruntime==1.31.0

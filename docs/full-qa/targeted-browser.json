@@ -1,0 +1,1242 @@
+{
+  "turns": [
+    {
+      "case": "isolated_vocabulary",
+      "seconds": 24.28,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 10,
+      "played_chunks": 10,
+      "languages": [
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "en",
+        "de",
+        "en"
+      ],
+      "reply": "You use obwohl for contrast and weil for a reason. For example, Obwohl es regnet, gehe ich spazieren means although it is raining, I am going for a walk. Then, Weil es regnet, bleibe ich zu Hause means because it is raining, I am staying at home.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Explain the difference between although and because using German words and examples.",
+      "stt_final": "Explain the difference between although and because, using German words and examples.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 1,
+          "at_ms": 2797.300000000745
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 2797.5999999996275
+        },
+        {
+          "type": "partial",
+          "text": "Explain the difference between although and.",
+          "language": "en",
+          "at_ms": 6488.9000000003725
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 1,
+          "at_ms": 7687.199999999255
+        },
+        {
+          "type": "final",
+          "text": "Explain the difference between although and because, using German words and examples.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 9337.099999999627
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 9338.5
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 1,
+          "at_ms": 9338.599999999627
+        },
+        {
+          "type": "token",
+          "text": "You",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9802.699999999255
+        },
+        {
+          "type": "token",
+          "text": " use",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9806.400000000373
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9808.099999999627
+        },
+        {
+          "type": "token",
+          "text": "ob",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9812.900000000373
+        },
+        {
+          "type": "token",
+          "text": "wohl",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9813.400000000373
+        },
+        {
+          "type": "token",
+          "text": " for",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9821.800000000745
+        },
+        {
+          "type": "token",
+          "text": " contrast",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9829.900000000373
+        },
+        {
+          "type": "token",
+          "text": " and",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9842.900000000373
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9845.800000000745
+        },
+        {
+          "type": "token",
+          "text": "weil",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9850.400000000373
+        },
+        {
+          "type": "token",
+          "text": " for",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9856.5
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9857.099999999627
+        },
+        {
+          "type": "token",
+          "text": " reason",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9866.099999999627
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9868.199999999255
+        },
+        {
+          "type": "token",
+          "text": " For",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9868.699999999255
+        },
+        {
+          "type": "token",
+          "text": " example",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9869.099999999627
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9869.400000000373
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 9880.5
+        },
+        {
+          "type": "audio",
+          "id": "1:1",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 9936.199999999255
+        },
+        {
+          "type": "latency",
+          "seconds": 2.248,
+          "at_ms": 9953.300000000745
+        },
+        {
+          "type": "token",
+          "text": "Ob",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9953.5
+        },
+        {
+          "type": "token",
+          "text": "wohl",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9954.400000000373
+        },
+        {
+          "type": "token",
+          "text": " es",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9954.699999999255
+        },
+        {
+          "type": "token",
+          "text": " reg",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9955.099999999627
+        },
+        {
+          "type": "token",
+          "text": "net",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9955.400000000373
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9955.800000000745
+        },
+        {
+          "type": "token",
+          "text": " gehe",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9956.199999999255
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9956.599999999627
+        },
+        {
+          "type": "token",
+          "text": " spaz",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9956.900000000373
+        },
+        {
+          "type": "token",
+          "text": "ieren",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 9957.199999999255
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10004
+        },
+        {
+          "type": "token",
+          "text": " although",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10004.599999999627
+        },
+        {
+          "type": "token",
+          "text": " it",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10005.199999999255
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10005.699999999255
+        },
+        {
+          "type": "token",
+          "text": " raining",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10006.199999999255
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10006.599999999627
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10006.900000000373
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10007.300000000745
+        },
+        {
+          "type": "token",
+          "text": " going",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10007.599999999627
+        },
+        {
+          "type": "token",
+          "text": " for",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10008
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10008.400000000373
+        },
+        {
+          "type": "token",
+          "text": " walk",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10008.800000000745
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10009.199999999255
+        },
+        {
+          "type": "audio",
+          "id": "1:2",
+          "turn": 1,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 10063.099999999627
+        },
+        {
+          "type": "audio",
+          "id": "1:3",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 10191.099999999627
+        },
+        {
+          "type": "token",
+          "text": " Then",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10192.199999999255
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10192.699999999255
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 10193.099999999627
+        },
+        {
+          "type": "token",
+          "text": "Weil",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10193.400000000373
+        },
+        {
+          "type": "token",
+          "text": " es",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10193.699999999255
+        },
+        {
+          "type": "token",
+          "text": " reg",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10194.099999999627
+        },
+        {
+          "type": "token",
+          "text": "net",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10194.400000000373
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10194.800000000745
+        },
+        {
+          "type": "token",
+          "text": " ble",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10195.900000000373
+        },
+        {
+          "type": "token",
+          "text": "ibe",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10196.300000000745
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10196.599999999627
+        },
+        {
+          "type": "token",
+          "text": " zu",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10196.900000000373
+        },
+        {
+          "type": "token",
+          "text": " Hause",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 10197.400000000373
+        },
+        {
+          "type": "audio",
+          "id": "1:4",
+          "turn": 1,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 11062.099999999627
+        },
+        {
+          "type": "audio",
+          "id": "1:5",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 11859.599999999627
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11860.300000000745
+        },
+        {
+          "type": "token",
+          "text": " because",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11860.900000000373
+        },
+        {
+          "type": "token",
+          "text": " it",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11861.300000000745
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11861.800000000745
+        },
+        {
+          "type": "token",
+          "text": " raining",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11862.099999999627
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11862.5
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11862.800000000745
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11863.199999999255
+        },
+        {
+          "type": "token",
+          "text": " staying",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11863.5
+        },
+        {
+          "type": "token",
+          "text": " at",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11863.900000000373
+        },
+        {
+          "type": "token",
+          "text": " home",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11864.5
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 11864.800000000745
+        },
+        {
+          "type": "audio",
+          "id": "1:6",
+          "turn": 1,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 13148.300000000745
+        },
+        {
+          "type": "audio",
+          "id": "1:7",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 13972.300000000745
+        },
+        {
+          "type": "audio",
+          "id": "1:8",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 15512.5
+        },
+        {
+          "type": "audio",
+          "id": "1:9",
+          "turn": 1,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 17918.5
+        },
+        {
+          "type": "audio",
+          "id": "1:10",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 20999.300000000745
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 1,
+          "at_ms": 21000.400000000373
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:3",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:4",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:5",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:6",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:7",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:8",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:9",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:10",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "enable_translation",
+      "seconds": 8.96,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 2,
+      "played_chunks": 2,
+      "languages": [
+        "en",
+        "en"
+      ],
+      "reply": "Enable translation between English and German until you turn it off? Please say yes or no.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Bridge, translator mode.",
+      "stt_final": "Bridge translator mode.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 2,
+          "at_ms": 26957.599999999627
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 26957.900000000373
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 2,
+          "at_ms": 28718
+        },
+        {
+          "type": "final",
+          "text": "Bridge translator mode.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 29786.5
+        },
+        {
+          "type": "mode",
+          "mode": "conversation",
+          "response_language": "same",
+          "facts": [
+            {
+              "id": 1,
+              "text": "QA note: My German level is A2."
+            }
+          ],
+          "recent": [
+            {
+              "id": 36,
+              "source": "en",
+              "target": "en",
+              "user": "Please answer with just one short sentence.",
+              "heard": "I am listening. "
+            },
+            {
+              "id": 37,
+              "source": "en",
+              "target": "en",
+              "user": "Please answer with just one short sentence.",
+              "heard": "I am ready for your request. "
+            },
+            {
+              "id": 38,
+              "source": "en",
+              "target": "en",
+              "user": "Please answer with just one short sentence.",
+              "heard": "I will keep my answers short. "
+            },
+            {
+              "id": 39,
+              "source": "en",
+              "target": "en",
+              "user": "Although my appointment was originally scheduled for Thursday, I need to move it to Friday afternoon because my connecting train has been cancelled.",
+              "heard": "I am sorry to hear about your train. "
+            },
+            {
+              "id": 40,
+              "source": "de",
+              "target": "de",
+              "user": "Ob mein Termin ursprünglich für Donnerstag geplant war, muss ich ihn auf Freitagnachmittag verschieben, weil mein Anschlusszug außerfallen ist.",
+              "heard": "Das ist ein guter Satz, aber es muss heißen ausgefallen ist statt außerfallen. "
+            },
+            {
+              "id": 41,
+              "source": "en",
+              "target": "en",
+              "user": "Please reserve two tickets to Berlin for the twenty-third of November, but do not confirm the booking until I have checked the total price.",
+              "heard": "I cannot book tickets for you, but I can help you translate that request into German. "
+            },
+            {
+              "id": 42,
+              "source": "de",
+              "target": "de",
+              "user": "Bitte reservieren Sie zwei Fahrkarten nach Berlin für den dreiundzwanzigsten November, aber bestätigen Sie die Buchung erst, nachdem ich den Gesamtpreis geprüft habe.",
+              "heard": "Das ist ein perfekter Satz. "
+            },
+            {
+              "id": 43,
+              "source": "en",
+              "target": "en",
+              "user": "I would like to change my reservation because mein Zug hat Verspätung und ich verpasse den Anschluss. So could you find another connection that arrives before midnight?",
+              "heard": "You can say Ich möchte meine Reservierung ändern, weil mein Zug Verspätung hat und ich den Anschluss verpasse. Könnten Sie eine andere Verbindung finden, die vor Mitternacht ankommt? "
+            },
+            {
+              "id": 44,
+              "source": "en",
+              "target": "en",
+              "user": "Könnten bitte prüfen ob the connecting flight has been cancelled or simply delayed, damit ich entscheiden kann ob ich heute noch ein Hotel buchen muss.",
+              "heard": "You can say Könnten Sie bitte prüfen, ob der Anschlussflug gestrichen wurde oder nur Verspätung hat, damit ich entscheiden kann, ob ich heute noch ein Hotel buchen muss. "
+            },
+            {
+              "id": 45,
+              "source": "en",
+              "target": "en",
+              "user": "Please explain the difference between. Obwohl ich müde bin und weil ich müde bin, and then give me an example that I could use at work tomorrow.",
+              "heard": "Obwohl means although, which shows a contrast. Weil means because, which gives a reason. Obwohl ich müde bin, arbeite ich weiter means although I am tired, I keep working. Weil ich müde bin, mache ich eine Pause means because I am tired, I am taking a break. For work tomorrow, you could say Obwohl ich viel zu tun habe, helfe ich Ihnen gerne which means although I have a lot to do, I am happy to help you. "
+            },
+            {
+              "id": 46,
+              "source": "en",
+              "target": "en",
+              "user": "Meine Knecht gesagt. We should postpone the meeting until everyone has reviewed the updated contract. Aber ich möchte zuerst wissen, ob der Kunde damit einverstanden ist.",
+              "heard": "You probably mean Mein Chef hat gesagt , which means my boss said. You can say Wir sollten das Meeting verschieben, bis alle den aktualisierten Vertrag geprüft haben. Aber ich möchte zuerst wissen, ob der Kunde damit einverstanden ist. "
+            },
+            {
+              "id": 47,
+              "source": "en",
+              "target": "en",
+              "user": "Explain the difference between although and because, using German words and examples.",
+              "heard": "You use obwohl for contrast and weil for a reason. For example, Obwohl es regnet, gehe ich spazieren means although it is raining, I am going for a walk. Then, Weil es regnet, bleibe ich zu Hause means because it is raining, I am staying at home. "
+            }
+          ],
+          "summary": "**Names:** Bridge (Bilingual Assistant).\n**Goals:** Learn German phrases for ordering coffee, greetings, vocabulary distinctions, and train station navigation.\n**Decisions:** User requested short sentences and no introductions for specific tasks.\n**Lesson Progress:**\n- Proficiency Level: A2.\n- Ordering coffee: \"Ich hätte gerne einen Kaffee, bitte\" and \"Einen Kaffee, bitte.\"\n- Greetings: \"Guten Morgen.\"\n- Vocabulary: Difference between \"Beruf\" (profession) and \"Land\" (country).\n- General phrases: Five pairs of German/English translations provided.\n- Train station: Ten useful sentences provided.",
+          "persistent": true,
+          "suppress_playback_input": true,
+          "silence_ms": 700,
+          "pending_confirmation": {
+            "id": "008a1a95847830cf407a818e",
+            "kind": "mode",
+            "value": "translation",
+            "message": "Enable translation between English and German until you turn it off?"
+          },
+          "at_ms": 29788.099999999627
+        },
+        {
+          "type": "token",
+          "text": "Enable translation between English and German until you turn it off? Please say yes or no.",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 29788.300000000745
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 2,
+          "at_ms": 29825.5
+        },
+        {
+          "type": "audio",
+          "id": "2:1",
+          "turn": 2,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 30188.900000000373
+        },
+        {
+          "type": "latency",
+          "seconds": 1.46,
+          "at_ms": 30210.300000000745
+        },
+        {
+          "type": "audio",
+          "id": "2:2",
+          "turn": 2,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 30338.800000000745
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 2,
+          "at_ms": 30339.400000000373
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "2:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "2:2",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "confirm_translation",
+      "seconds": 8.17,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 3,
+      "played_chunks": 3,
+      "languages": [
+        "en",
+        "de",
+        "en"
+      ],
+      "reply": "Do you mean the word die Firma for company, or are you describing something as firm?",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Yes, confirm.",
+      "stt_final": "Yes, firm.",
+      "stt_metrics": {
+        "wer": 0.5,
+        "cer": 0.2727
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 3,
+          "at_ms": 36267.5
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 36267.800000000745
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 3,
+          "at_ms": 37608
+        },
+        {
+          "type": "final",
+          "text": "Yes, firm.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 38769.09999999963
+        },
+        {
+          "type": "mode",
+          "mode": "conversation",
+          "response_language": "same",
+          "facts": [
+            {
+              "id": 1,
+              "text": "QA note: My German level is A2."
+            }
+          ],
+          "recent": [
+            {
+              "id": 36,
+              "source": "en",
+              "target": "en",
+              "user": "Please answer with just one short sentence.",
+              "heard": "I am listening. "
+            },
+            {
+              "id": 37,
+              "source": "en",
+              "target": "en",
+              "user": "Please answer with just one short sentence.",
+              "heard": "I am ready for your request. "
+            },
+            {
+              "id": 38,
+              "source": "en",
+              "target": "en",
+              "user": "Please answer with just one short sentence.",
+              "heard": "I will keep my answers short. "
+            },
+            {
+              "id": 39,
+              "source": "en",
+              "target": "en",
+              "user": "Although my appointment was originally scheduled for Thursday, I need to move it to Friday afternoon because my connecting train has been cancelled.",
+              "heard": "I am sorry to hear about your train. "
+            },
+            {
+              "id": 40,
+              "source": "de",
+              "target": "de",
+              "user": "Ob mein Termin ursprünglich für Donnerstag geplant war, muss ich ihn auf Freitagnachmittag verschieben, weil mein Anschlusszug außerfallen ist.",
+              "heard": "Das ist ein guter Satz, aber es muss heißen ausgefallen ist statt außerfallen. "
+            },
+            {
+              "id": 41,
+              "source": "en",
+              "target": "en",
+              "user": "Please reserve two tickets to Berlin for the twenty-third of November, but do not confirm the booking until I have checked the total price.",
+              "heard": "I cannot book tickets for you, but I can help you translate that request into German. "
+            },
+            {
+              "id": 42,
+              "source": "de",
+              "target": "de",
+              "user": "Bitte reservieren Sie zwei Fahrkarten nach Berlin für den dreiundzwanzigsten November, aber bestätigen Sie die Buchung erst, nachdem ich den Gesamtpreis geprüft habe.",
+              "heard": "Das ist ein perfekter Satz. "
+            },
+            {
+              "id": 43,
+              "source": "en",
+              "target": "en",
+              "user": "I would like to change my reservation because mein Zug hat Verspätung und ich verpasse den Anschluss. So could you find another connection that arrives before midnight?",
+              "heard": "You can say Ich möchte meine Reservierung ändern, weil mein Zug Verspätung hat und ich den Anschluss verpasse. Könnten Sie eine andere Verbindung finden, die vor Mitternacht ankommt? "
+            },
+            {
+              "id": 44,
+              "source": "en",
+              "target": "en",
+              "user": "Könnten bitte prüfen ob the connecting flight has been cancelled or simply delayed, damit ich entscheiden kann ob ich heute noch ein Hotel buchen muss.",
+              "heard": "You can say Könnten Sie bitte prüfen, ob der Anschlussflug gestrichen wurde oder nur Verspätung hat, damit ich entscheiden kann, ob ich heute noch ein Hotel buchen muss. "
+            },
+            {
+              "id": 45,
+              "source": "en",
+              "target": "en",
+              "user": "Please explain the difference between. Obwohl ich müde bin und weil ich müde bin, and then give me an example that I could use at work tomorrow.",
+              "heard": "Obwohl means although, which shows a contrast. Weil means because, which gives a reason. Obwohl ich müde bin, arbeite ich weiter means although I am tired, I keep working. Weil ich müde bin, mache ich eine Pause means because I am tired, I am taking a break. For work tomorrow, you could say Obwohl ich viel zu tun habe, helfe ich Ihnen gerne which means although I have a lot to do, I am happy to help you. "
+            },
+            {
+              "id": 46,
+              "source": "en",
+              "target": "en",
+              "user": "Meine Knecht gesagt. We should postpone the meeting until everyone has reviewed the updated contract. Aber ich möchte zuerst wissen, ob der Kunde damit einverstanden ist.",
+              "heard": "You probably mean Mein Chef hat gesagt , which means my boss said. You can say Wir sollten das Meeting verschieben, bis alle den aktualisierten Vertrag geprüft haben. Aber ich möchte zuerst wissen, ob der Kunde damit einverstanden ist. "
+            },
+            {
+              "id": 47,
+              "source": "en",
+              "target": "en",
+              "user": "Explain the difference between although and because, using German words and examples.",
+              "heard": "You use obwohl for contrast and weil for a reason. For example, Obwohl es regnet, gehe ich spazieren means although it is raining, I am going for a walk. Then, Weil es regnet, bleibe ich zu Hause means because it is raining, I am staying at home. "
+            }
+          ],
+          "summary": "**Names:** Bridge (Bilingual Assistant).\n**Goals:** Learn German phrases for ordering coffee, greetings, vocabulary distinctions, and train station navigation.\n**Decisions:** User requested short sentences and no introductions for specific tasks.\n**Lesson Progress:**\n- Proficiency Level: A2.\n- Ordering coffee: \"Ich hätte gerne einen Kaffee, bitte\" and \"Einen Kaffee, bitte.\"\n- Greetings: \"Guten Morgen.\"\n- Vocabulary: Difference between \"Beruf\" (profession) and \"Land\" (country).\n- General phrases: Five pairs of German/English translations provided.\n- Train station: Ten useful sentences provided.",
+          "persistent": true,
+          "suppress_playback_input": true,
+          "silence_ms": 700,
+          "pending_confirmation": null,
+          "at_ms": 38770.300000000745
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 38770.5
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 3,
+          "at_ms": 38770.699999999255
+        },
+        {
+          "type": "token",
+          "text": "Do",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39234.199999999255
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39237.40000000037
+        },
+        {
+          "type": "token",
+          "text": " mean",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39237.90000000037
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39240.300000000745
+        },
+        {
+          "type": "token",
+          "text": " word",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39241
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39241.40000000037
+        },
+        {
+          "type": "token",
+          "text": "die",
+          "turn": 3,
+          "language": "de",
+          "at_ms": 39250
+        },
+        {
+          "type": "token",
+          "text": " Firma",
+          "turn": 3,
+          "language": "de",
+          "at_ms": 39266.800000000745
+        },
+        {
+          "type": "token",
+          "text": " for",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39267.40000000037
+        },
+        {
+          "type": "token",
+          "text": " company",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39270.09999999963
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39270.59999999963
+        },
+        {
+          "type": "token",
+          "text": " or",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39275.59999999963
+        },
+        {
+          "type": "token",
+          "text": " are",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39281.699999999255
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39292.5
+        },
+        {
+          "type": "token",
+          "text": " describing",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39292.90000000037
+        },
+        {
+          "type": "token",
+          "text": " something",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39298.699999999255
+        },
+        {
+          "type": "token",
+          "text": " as",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39306
+        },
+        {
+          "type": "token",
+          "text": " firm",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39306.59999999963
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 39306.90000000037
+        },
+        {
+          "type": "audio",
+          "id": "3:1",
+          "turn": 3,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 39377.5
+        },
+        {
+          "type": "latency",
+          "seconds": 1.769,
+          "at_ms": 39383.5
+        },
+        {
+          "type": "audio",
+          "id": "3:2",
+          "turn": 3,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 39496
+        },
+        {
+          "type": "audio",
+          "id": "3:3",
+          "turn": 3,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 39740.5
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 3,
+          "at_ms": 39741.40000000037
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "3:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "3:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "3:3",
+          "complete": true
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "browser_errors": [],
+  "semantic_failures": [
+    "Spoken Yes, confirm was recognized as Yes, firm; confirmation did not activate."
+  ],
+  "ui_confirmation_recovery": "PASS: UI confirmation activates translation; conversation restored."
+}

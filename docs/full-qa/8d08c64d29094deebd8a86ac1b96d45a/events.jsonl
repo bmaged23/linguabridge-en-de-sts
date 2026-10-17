@@ -1,0 +1,46 @@
+{"seconds": 0.7405, "event": "interrupt", "turn": 0}
+{"seconds": 4.1941, "event": "stt_final", "turn": 1, "text": "Where nearest train station.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 4.5868, "event": "llm_raw", "turn": 1, "text": "[", "done": false, "done_reason": null}
+{"seconds": 4.5942, "event": "llm_raw", "turn": 1, "text": "de", "done": false, "done_reason": null}
+{"seconds": 4.5961, "event": "llm_raw", "turn": 1, "text": "]", "done": false, "done_reason": null}
+{"seconds": 4.5963, "event": "llm_raw", "turn": 1, "text": "Wo", "done": false, "done_reason": null}
+{"seconds": 4.5964, "event": "llm_raw", "turn": 1, "text": " ist", "done": false, "done_reason": null}
+{"seconds": 4.5964, "event": "llm_raw", "turn": 1, "text": " der", "done": false, "done_reason": null}
+{"seconds": 4.5966, "event": "parsed_segment", "turn": 1, "language": "de", "text": "Wo", "closed": false}
+{"seconds": 4.5968, "event": "parsed_segment", "turn": 1, "language": "de", "text": " ist", "closed": false}
+{"seconds": 4.597, "event": "parsed_segment", "turn": 1, "language": "de", "text": " der", "closed": false}
+{"seconds": 4.6062, "event": "llm_raw", "turn": 1, "text": " nächste", "done": false, "done_reason": null}
+{"seconds": 4.6064, "event": "llm_raw", "turn": 1, "text": " Bahnhof", "done": false, "done_reason": null}
+{"seconds": 4.6065, "event": "llm_raw", "turn": 1, "text": "?", "done": false, "done_reason": null}
+{"seconds": 4.6067, "event": "parsed_segment", "turn": 1, "language": "de", "text": " nächste", "closed": false}
+{"seconds": 4.6069, "event": "parsed_segment", "turn": 1, "language": "de", "text": " Bahnhof", "closed": false}
+{"seconds": 4.607, "event": "parsed_segment", "turn": 1, "language": "de", "text": "?", "closed": false}
+{"seconds": 4.608, "event": "llm_raw", "turn": 1, "text": "", "done": false, "done_reason": null}
+{"seconds": 4.6823, "event": "llm_raw", "turn": 1, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 4.683, "event": "parsed_segment", "turn": 1, "language": "de", "text": "", "closed": true}
+{"seconds": 4.6831, "event": "tts_input", "turn": 1, "language": "de", "phrases": ["Wo ist der nächste Bahnhof?"]}
+{"seconds": 4.7813, "event": "tts_audio", "id": "1:1", "audio": "1-1.wav", "sample_rate": 22050, "audio_seconds": 1.5441, "turn": 1, "language": "de", "text": "Wo ist der nächste Bahnhof?"}
+{"seconds": 6.3402, "event": "playback_ack", "type": "played", "id": "1:1", "complete": true}
+{"seconds": 6.4017, "event": "interrupt", "turn": 1}
+{"seconds": 7.171, "event": "interrupt", "turn": 2}
+{"seconds": 10.8128, "event": "stt_final", "turn": 3, "text": "Please answer with just one short sentence.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 11.3679, "event": "llm_raw", "turn": 3, "text": "I", "done": false, "done_reason": null}
+{"seconds": 11.3682, "event": "parsed_segment", "turn": 3, "language": "en", "text": "I", "closed": false}
+{"seconds": 11.3913, "event": "llm_raw", "turn": 3, "text": " will", "done": false, "done_reason": null}
+{"seconds": 11.3916, "event": "parsed_segment", "turn": 3, "language": "en", "text": " will", "closed": false}
+{"seconds": 11.4155, "event": "llm_raw", "turn": 3, "text": " keep", "done": false, "done_reason": null}
+{"seconds": 11.4157, "event": "parsed_segment", "turn": 3, "language": "en", "text": " keep", "closed": false}
+{"seconds": 11.4414, "event": "llm_raw", "turn": 3, "text": " my", "done": false, "done_reason": null}
+{"seconds": 11.4417, "event": "llm_raw", "turn": 3, "text": " answers", "done": false, "done_reason": null}
+{"seconds": 11.4419, "event": "parsed_segment", "turn": 3, "language": "en", "text": " my", "closed": false}
+{"seconds": 11.4421, "event": "parsed_segment", "turn": 3, "language": "en", "text": " answers", "closed": false}
+{"seconds": 11.4624, "event": "llm_raw", "turn": 3, "text": " short", "done": false, "done_reason": null}
+{"seconds": 11.4627, "event": "parsed_segment", "turn": 3, "language": "en", "text": " short", "closed": false}
+{"seconds": 11.4854, "event": "llm_raw", "turn": 3, "text": ".", "done": false, "done_reason": null}
+{"seconds": 11.4857, "event": "parsed_segment", "turn": 3, "language": "en", "text": ".", "closed": false}
+{"seconds": 11.4871, "event": "llm_raw", "turn": 3, "text": "", "done": false, "done_reason": null}
+{"seconds": 11.5655, "event": "llm_raw", "turn": 3, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 11.5661, "event": "parsed_segment", "turn": 3, "language": "en", "text": "", "closed": true}
+{"seconds": 11.5663, "event": "tts_input", "turn": 3, "language": "en", "phrases": ["I will keep my answers short."]}
+{"seconds": 11.7617, "event": "tts_audio", "id": "3:1", "audio": "3-1.wav", "sample_rate": 24000, "audio_seconds": 1.6213, "turn": 3, "language": "en", "text": "I will keep my answers short."}
+{"seconds": 13.3998, "event": "playback_ack", "type": "played", "id": "3:1", "complete": true}

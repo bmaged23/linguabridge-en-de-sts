@@ -1,0 +1,229 @@
+{
+  "method": "Cosine similarity in Qwen TTS own speaker encoder; internal diagnostic, not independent speaker verification or a human similarity score. Reference is synthetic Kokoro af_heart. Short clips and language affect embeddings.",
+  "cases": [
+    {
+      "name": "en_booking",
+      "variant": "kokoro",
+      "group": "en",
+      "audio": "en_booking-kokoro.wav",
+      "cosine_to_reference": 0.9969
+    },
+    {
+      "name": "en_negation",
+      "variant": "kokoro",
+      "group": "en",
+      "audio": "en_negation-kokoro.wav",
+      "cosine_to_reference": 0.9971
+    },
+    {
+      "name": "en_names",
+      "variant": "kokoro",
+      "group": "en",
+      "audio": "en_names-kokoro.wav",
+      "cosine_to_reference": 0.9958
+    },
+    {
+      "name": "en_teaching",
+      "variant": "kokoro",
+      "group": "en",
+      "audio": "en_teaching-kokoro.wav",
+      "cosine_to_reference": 0.9962
+    },
+    {
+      "name": "de_booking",
+      "variant": "piper",
+      "group": "de",
+      "audio": "de_booking-piper.wav",
+      "cosine_to_reference": 0.9222
+    },
+    {
+      "name": "de_negation",
+      "variant": "piper",
+      "group": "de",
+      "audio": "de_negation-piper.wav",
+      "cosine_to_reference": 0.9147
+    },
+    {
+      "name": "de_sounds",
+      "variant": "piper",
+      "group": "de",
+      "audio": "de_sounds-piper.wav",
+      "cosine_to_reference": 0.9162
+    },
+    {
+      "name": "de_compounds",
+      "variant": "piper",
+      "group": "de",
+      "audio": "de_compounds-piper.wav",
+      "cosine_to_reference": 0.9183
+    },
+    {
+      "name": "en_de_en_lesson",
+      "variant": "hybrid_gold_spans",
+      "group": "mixed",
+      "audio": "en_de_en_lesson-hybrid_gold_spans.wav",
+      "cosine_to_reference": 0.9804
+    },
+    {
+      "name": "en_de_en_lesson",
+      "variant": "current_single_voice",
+      "group": "mixed",
+      "audio": "en_de_en_lesson-current_single_voice.wav",
+      "cosine_to_reference": 0.9947
+    },
+    {
+      "name": "de_en_de_lesson",
+      "variant": "hybrid_gold_spans",
+      "group": "mixed",
+      "audio": "de_en_de_lesson-hybrid_gold_spans.wav",
+      "cosine_to_reference": 0.9398
+    },
+    {
+      "name": "de_en_de_lesson",
+      "variant": "current_single_voice",
+      "group": "mixed",
+      "audio": "de_en_de_lesson-current_single_voice.wav",
+      "cosine_to_reference": 0.918
+    },
+    {
+      "name": "en_de_en_travel",
+      "variant": "hybrid_gold_spans",
+      "group": "mixed",
+      "audio": "en_de_en_travel-hybrid_gold_spans.wav",
+      "cosine_to_reference": 0.9784
+    },
+    {
+      "name": "en_de_en_travel",
+      "variant": "current_single_voice",
+      "group": "mixed",
+      "audio": "en_de_en_travel-current_single_voice.wav",
+      "cosine_to_reference": 0.9974
+    },
+    {
+      "name": "de_en_de_work",
+      "variant": "hybrid_gold_spans",
+      "group": "mixed",
+      "audio": "de_en_de_work-hybrid_gold_spans.wav",
+      "cosine_to_reference": 0.9462
+    },
+    {
+      "name": "de_en_de_work",
+      "variant": "current_single_voice",
+      "group": "mixed",
+      "audio": "de_en_de_work-current_single_voice.wav",
+      "cosine_to_reference": 0.9239
+    },
+    {
+      "name": "en_booking",
+      "variant": "qwen_float32",
+      "group": "en",
+      "audio": "en_booking-qwen_float32.wav",
+      "cosine_to_reference": 0.9908
+    },
+    {
+      "name": "en_negation",
+      "variant": "qwen_float32",
+      "group": "en",
+      "audio": "en_negation-qwen_float32.wav",
+      "cosine_to_reference": 0.992
+    },
+    {
+      "name": "en_names",
+      "variant": "qwen_float32",
+      "group": "en",
+      "audio": "en_names-qwen_float32.wav",
+      "cosine_to_reference": 0.989
+    },
+    {
+      "name": "en_teaching",
+      "variant": "qwen_float32",
+      "group": "en",
+      "audio": "en_teaching-qwen_float32.wav",
+      "cosine_to_reference": 0.991
+    },
+    {
+      "name": "de_booking",
+      "variant": "qwen_float32",
+      "group": "de",
+      "audio": "de_booking-qwen_float32.wav",
+      "cosine_to_reference": 0.9879
+    },
+    {
+      "name": "de_negation",
+      "variant": "qwen_float32",
+      "group": "de",
+      "audio": "de_negation-qwen_float32.wav",
+      "cosine_to_reference": 0.9898
+    },
+    {
+      "name": "de_sounds",
+      "variant": "qwen_float32",
+      "group": "de",
+      "audio": "de_sounds-qwen_float32.wav",
+      "cosine_to_reference": 0.9872
+    },
+    {
+      "name": "de_compounds",
+      "variant": "qwen_float32",
+      "group": "de",
+      "audio": "de_compounds-qwen_float32.wav",
+      "cosine_to_reference": 0.9864
+    },
+    {
+      "name": "en_de_en_lesson",
+      "variant": "qwen_float32_auto",
+      "group": "mixed",
+      "audio": "en_de_en_lesson-qwen_float32_auto.wav",
+      "cosine_to_reference": 0.9874
+    },
+    {
+      "name": "en_de_en_lesson",
+      "variant": "qwen_float32_gold_spans",
+      "group": "mixed",
+      "audio": "en_de_en_lesson-qwen_float32_gold_spans.wav",
+      "cosine_to_reference": 0.9875
+    },
+    {
+      "name": "de_en_de_lesson",
+      "variant": "qwen_float32_auto",
+      "group": "mixed",
+      "audio": "de_en_de_lesson-qwen_float32_auto.wav",
+      "cosine_to_reference": 0.9891
+    },
+    {
+      "name": "de_en_de_lesson",
+      "variant": "qwen_float32_gold_spans",
+      "group": "mixed",
+      "audio": "de_en_de_lesson-qwen_float32_gold_spans.wav",
+      "cosine_to_reference": 0.9904
+    },
+    {
+      "name": "en_de_en_travel",
+      "variant": "qwen_float32_auto",
+      "group": "mixed",
+      "audio": "en_de_en_travel-qwen_float32_auto.wav",
+      "cosine_to_reference": 0.9895
+    },
+    {
+      "name": "en_de_en_travel",
+      "variant": "qwen_float32_gold_spans",
+      "group": "mixed",
+      "audio": "en_de_en_travel-qwen_float32_gold_spans.wav",
+      "cosine_to_reference": 0.991
+    },
+    {
+      "name": "de_en_de_work",
+      "variant": "qwen_float32_auto",
+      "group": "mixed",
+      "audio": "de_en_de_work-qwen_float32_auto.wav",
+      "cosine_to_reference": 0.9912
+    },
+    {
+      "name": "de_en_de_work",
+      "variant": "qwen_float32_gold_spans",
+      "group": "mixed",
+      "audio": "de_en_de_work-qwen_float32_gold_spans.wav",
+      "cosine_to_reference": 0.9909
+    }
+  ]
+}

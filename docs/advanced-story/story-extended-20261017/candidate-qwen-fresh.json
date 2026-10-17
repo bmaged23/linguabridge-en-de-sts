@@ -1,0 +1,665 @@
+{
+  "model": "/home/bmage/projects/voice-bridge/models/qwen3-asr-0.6b",
+  "compute_type": "float32",
+  "task": "transcribe",
+  "language": null,
+  "beam_size": 3,
+  "whisper_multilingual": false,
+  "whisper_chunk_seconds": null,
+  "load_seconds": 8.747805259000415,
+  "scope": "Same browser-captured audio as the application Qwen final; final decoding only, without VAD waiting, microphone arrival, cloud LLM or playback.",
+  "samples": [
+    {
+      "case": "bilingual_retelling_en_de_en_clean",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+      "text": "Yes, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie unser Zug fällt aus. We found a bus, but I said, bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.0517,
+        "cer": 0.0253
+      },
+      "decode_seconds": 5.7309,
+      "resources": {
+        "sample_count": 11,
+        "ram_tree_rss_mb": {
+          "peak": 1727.68,
+          "mean": 1696.58
+        },
+        "cpu_pct_one_core": {
+          "peak": 104.0,
+          "mean": 100.72
+        },
+        "cpu_pct_machine": {
+          "peak": 8.67,
+          "mean": 8.39
+        },
+        "gpu_vram_mb": {
+          "peak": 3771.0,
+          "mean": 3769.36
+        },
+        "gpu_util_pct": {
+          "peak": 35.0,
+          "mean": 25.82
+        },
+        "system_ram_used_mb": {
+          "peak": 2237.3,
+          "mean": 2188.9
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "Yes, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie unser Zug fällt aus. We found a bus, but I said, bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Yes, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie unser Zug fällt aus. We found a bus, but I said, bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    },
+    {
+      "case": "bilingual_retelling_en_de_en_noise20",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+      "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the train station, she said, \"Our train fell out.\" We found a bus, but I said, \"Please buy no tickets.\" Then the company called. The interview was at ten, not nine. We came at nine o'clock forty-five. Please retell this story briefly using both English and German.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.3966,
+        "cer": 0.2468
+      },
+      "decode_seconds": 4.7126,
+      "resources": {
+        "sample_count": 10,
+        "ram_tree_rss_mb": {
+          "peak": 1744.82,
+          "mean": 1743.44
+        },
+        "cpu_pct_one_core": {
+          "peak": 104.2,
+          "mean": 100.8
+        },
+        "cpu_pct_machine": {
+          "peak": 8.68,
+          "mean": 8.4
+        },
+        "gpu_vram_mb": {
+          "peak": 3773.0,
+          "mean": 3772.8
+        },
+        "gpu_util_pct": {
+          "peak": 41.0,
+          "mean": 35.3
+        },
+        "system_ram_used_mb": {
+          "peak": 2211.34,
+          "mean": 2202.19
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the train station, she said, \"Our train fell out.\" We found a bus, but I said, \"Please buy no tickets.\" Then the company called. The interview was at ten, not nine. We came at nine o'clock forty-five. Please retell this story briefly using both English and German.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Yesterday, Anna and I traveled to Berlin for an interview. At the train station, she said, \"Our train fell out.\" We found a bus, but I said, \"Please buy no tickets.\" Then the company called. The interview was at ten, not nine. We came at nine o'clock forty-five. Please retell this story briefly using both English and German.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    },
+    {
+      "case": "bilingual_retelling_en_de_en_quiet",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+      "text": "Yes, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.0517,
+        "cer": 0.0253
+      },
+      "decode_seconds": 5.1044,
+      "resources": {
+        "sample_count": 10,
+        "ram_tree_rss_mb": {
+          "peak": 1746.25,
+          "mean": 1746.25
+        },
+        "cpu_pct_one_core": {
+          "peak": 106.0,
+          "mean": 100.72
+        },
+        "cpu_pct_machine": {
+          "peak": 8.83,
+          "mean": 8.39
+        },
+        "gpu_vram_mb": {
+          "peak": 3773.0,
+          "mean": 3773.0
+        },
+        "gpu_util_pct": {
+          "peak": 49.0,
+          "mean": 34.7
+        },
+        "system_ram_used_mb": {
+          "peak": 2228.1,
+          "mean": 2201.51
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "Yes, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Yes, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    },
+    {
+      "case": "bilingual_retelling_en_de_en_pause",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+      "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the train station, she said, \"Our train fell out.\" We found a bus, but I said. Bitte kauf keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+      "languages": [
+        "en",
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.2241,
+        "cer": 0.1234
+      },
+      "decode_seconds": 6.1013,
+      "resources": {
+        "sample_count": 12,
+        "ram_tree_rss_mb": {
+          "peak": 1762.2,
+          "mean": 1756.98
+        },
+        "cpu_pct_one_core": {
+          "peak": 104.0,
+          "mean": 100.83
+        },
+        "cpu_pct_machine": {
+          "peak": 8.67,
+          "mean": 8.4
+        },
+        "gpu_vram_mb": {
+          "peak": 3881.0,
+          "mean": 3847.5
+        },
+        "gpu_util_pct": {
+          "peak": 42.0,
+          "mean": 30.42
+        },
+        "system_ram_used_mb": {
+          "peak": 2234.54,
+          "mean": 2223.46
+        }
+      },
+      "captured_segments": 2,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the train station, she said, \"Our train fell out.\" We found a bus, but I said.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Yesterday, Anna and I traveled to Berlin for an interview. At the train station, she said, \"Our train fell out.\" We found a bus, but I said.",
+          "reused_prefix": "",
+          "updates": 1
+        },
+        {
+          "text": "Bitte kauf keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Bitte kauf keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    },
+    {
+      "case": "long_story_en_de_en",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich ihr noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine Korrektur war. The manager finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+      "text": "Yesterday, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie unser Zug fällt aus. We found a bus, but I said: Bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich Ihnen noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine Korrektur war. The man finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+      "languages": [
+        "en",
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.0351,
+        "cer": 0.0136
+      },
+      "decode_seconds": 10.2379,
+      "resources": {
+        "sample_count": 21,
+        "ram_tree_rss_mb": {
+          "peak": 1783.82,
+          "mean": 1782.75
+        },
+        "cpu_pct_one_core": {
+          "peak": 108.0,
+          "mean": 101.4
+        },
+        "cpu_pct_machine": {
+          "peak": 9.0,
+          "mean": 8.45
+        },
+        "gpu_vram_mb": {
+          "peak": 3881.0,
+          "mean": 3881.0
+        },
+        "gpu_util_pct": {
+          "peak": 45.0,
+          "mean": 35.19
+        },
+        "system_ram_used_mb": {
+          "peak": 2260.47,
+          "mean": 2232.57
+        }
+      },
+      "captured_segments": 2,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "Yesterday, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie unser Zug fällt aus. We found a bus, but I said: Bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich Ihnen noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine Korrektur war.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Yesterday, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie unser Zug fällt aus. We found a bus, but I said: Bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich Ihnen noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine Korrektur war.",
+          "reused_prefix": "",
+          "updates": 1
+        },
+        {
+          "text": "The man finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>The man finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    },
+    {
+      "case": "bilingual_retelling_de_en_de_clean",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+      "text": "First, we went Anna and I to Berlin to a presentation speech. At the station, she said our train was cancelled. We found one bus, but I said, \"Please do not buy tickets yet.\" Then called the company. The conversation was at ten, not at nine. We arrived at nine forty-five. Please tell me these stories in English and German.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.6333,
+        "cer": 0.4018
+      },
+      "decode_seconds": 4.4271,
+      "resources": {
+        "sample_count": 9,
+        "ram_tree_rss_mb": {
+          "peak": 1783.4,
+          "mean": 1783.4
+        },
+        "cpu_pct_one_core": {
+          "peak": 104.0,
+          "mean": 100.88
+        },
+        "cpu_pct_machine": {
+          "peak": 8.67,
+          "mean": 8.41
+        },
+        "gpu_vram_mb": {
+          "peak": 3881.0,
+          "mean": 3881.0
+        },
+        "gpu_util_pct": {
+          "peak": 46.0,
+          "mean": 33.22
+        },
+        "system_ram_used_mb": {
+          "peak": 2208.25,
+          "mean": 2203.11
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "First, we went Anna and I to Berlin to a presentation speech. At the station, she said our train was cancelled. We found one bus, but I said, \"Please do not buy tickets yet.\" Then called the company. The conversation was at ten, not at nine. We arrived at nine forty-five. Please tell me these stories in English and German.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>First, we went Anna and I to Berlin to a presentation speech. At the station, she said our train was cancelled. We found one bus, but I said, \"Please do not buy tickets yet.\" Then called the company. The conversation was at ten, not at nine. We arrived at nine forty-five. Please tell me these stories in English and German.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    },
+    {
+      "case": "bilingual_retelling_de_en_de_noise20",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+      "text": "Yesterday, Puren Anna and I went to Berlin for a presentation speech. At the station, she said our train was canceled. We found one bus, but I said, \"Please do not buy tickets yet.\" Then the company called that the speech was at ten, not at nine. We arrived at nine forty-five. Please tell me these stories in English and German.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.65,
+        "cer": 0.3899
+      },
+      "decode_seconds": 4.5309,
+      "resources": {
+        "sample_count": 9,
+        "ram_tree_rss_mb": {
+          "peak": 1786.12,
+          "mean": 1786.12
+        },
+        "cpu_pct_one_core": {
+          "peak": 102.0,
+          "mean": 100.42
+        },
+        "cpu_pct_machine": {
+          "peak": 8.5,
+          "mean": 8.37
+        },
+        "gpu_vram_mb": {
+          "peak": 3881.0,
+          "mean": 3881.0
+        },
+        "gpu_util_pct": {
+          "peak": 51.0,
+          "mean": 36.33
+        },
+        "system_ram_used_mb": {
+          "peak": 2213.3,
+          "mean": 2208.27
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "Yesterday, Puren Anna and I went to Berlin for a presentation speech. At the station, she said our train was canceled. We found one bus, but I said, \"Please do not buy tickets yet.\" Then the company called that the speech was at ten, not at nine. We arrived at nine forty-five. Please tell me these stories in English and German.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Yesterday, Puren Anna and I went to Berlin for a presentation speech. At the station, she said our train was canceled. We found one bus, but I said, \"Please do not buy tickets yet.\" Then the company called that the speech was at ten, not at nine. We arrived at nine forty-five. Please tell me these stories in English and German.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    },
+    {
+      "case": "bilingual_retelling_de_en_de_quiet",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+      "text": "Erst dann fuhren ah und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was cancelled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an, das Gespräch war um zehn, nicht um neun. We arrived at nine forty-five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.05,
+        "cer": 0.0268
+      },
+      "decode_seconds": 5.6537,
+      "resources": {
+        "sample_count": 11,
+        "ram_tree_rss_mb": {
+          "peak": 1782.67,
+          "mean": 1782.67
+        },
+        "cpu_pct_one_core": {
+          "peak": 106.0,
+          "mean": 101.75
+        },
+        "cpu_pct_machine": {
+          "peak": 8.83,
+          "mean": 8.48
+        },
+        "gpu_vram_mb": {
+          "peak": 3881.0,
+          "mean": 3881.0
+        },
+        "gpu_util_pct": {
+          "peak": 49.0,
+          "mean": 34.18
+        },
+        "system_ram_used_mb": {
+          "peak": 2209.7,
+          "mean": 2203.8
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "Erst dann fuhren ah und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was cancelled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an, das Gespräch war um zehn, nicht um neun. We arrived at nine forty-five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Erst dann fuhren ah und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was cancelled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an, das Gespräch war um zehn, nicht um neun. We arrived at nine forty-five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    },
+    {
+      "case": "bilingual_retelling_de_en_de_pause",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+      "text": "Erst dann von Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was cancelled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty-five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.05,
+        "cer": 0.0327
+      },
+      "decode_seconds": 5.3729,
+      "resources": {
+        "sample_count": 11,
+        "ram_tree_rss_mb": {
+          "peak": 1783.12,
+          "mean": 1783.08
+        },
+        "cpu_pct_one_core": {
+          "peak": 102.6,
+          "mean": 100.71
+        },
+        "cpu_pct_machine": {
+          "peak": 8.55,
+          "mean": 8.39
+        },
+        "gpu_vram_mb": {
+          "peak": 3881.0,
+          "mean": 3881.0
+        },
+        "gpu_util_pct": {
+          "peak": 49.0,
+          "mean": 35.27
+        },
+        "system_ram_used_mb": {
+          "peak": 2215.16,
+          "mean": 2208.25
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "Erst dann von Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was cancelled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty-five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Erst dann von Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was cancelled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty-five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    },
+    {
+      "case": "long_story_de_en_de",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich ihr noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine Korrektur war. The manager finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+      "text": "Erst fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was cancelled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an, das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich Ihnen noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine. The manager finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+      "languages": [
+        "en",
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.0342,
+        "cer": 0.0322
+      },
+      "decode_seconds": 10.2647,
+      "resources": {
+        "sample_count": 21,
+        "ram_tree_rss_mb": {
+          "peak": 1791.47,
+          "mean": 1791.47
+        },
+        "cpu_pct_one_core": {
+          "peak": 107.4,
+          "mean": 101.17
+        },
+        "cpu_pct_machine": {
+          "peak": 8.95,
+          "mean": 8.43
+        },
+        "gpu_vram_mb": {
+          "peak": 3881.0,
+          "mean": 3881.0
+        },
+        "gpu_util_pct": {
+          "peak": 55.0,
+          "mean": 35.71
+        },
+        "system_ram_used_mb": {
+          "peak": 2221.28,
+          "mean": 2210.72
+        }
+      },
+      "captured_segments": 2,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [
+        {
+          "text": "Erst fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was cancelled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an, das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich Ihnen noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>Erst fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was cancelled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an, das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich Ihnen noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine.",
+          "reused_prefix": "",
+          "updates": 1
+        },
+        {
+          "text": "The manager finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+          "language": "en",
+          "detected_language": "English",
+          "certain": true,
+          "probability": null,
+          "used_context": false,
+          "can_route": true,
+          "supported_probability": null,
+          "decoder_raw": "language English<asr_text>The manager finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+          "reused_prefix": "",
+          "updates": 1
+        }
+      ],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": []
+    }
+  ]
+}

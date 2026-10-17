@@ -1,0 +1,57 @@
+{"seconds": 0.8258, "event": "interrupt", "turn": 0}
+{"seconds": 4.5731, "event": "stt_partial", "turn": 1, "text": "What is German level? Please answer in.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 5.7252, "event": "stt_final", "turn": 1, "text": "What is German level? Please answer in one short sentence.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 6.2264, "event": "llm_raw", "turn": 1, "text": "[", "done": false, "done_reason": null}
+{"seconds": 6.2469, "event": "llm_raw", "turn": 1, "text": "en", "done": false, "done_reason": null}
+{"seconds": 6.2485, "event": "llm_raw", "turn": 1, "text": "]", "done": false, "done_reason": null}
+{"seconds": 6.2487, "event": "llm_raw", "turn": 1, "text": "German", "done": false, "done_reason": null}
+{"seconds": 6.2489, "event": "parsed_segment", "turn": 1, "language": "en", "text": "German", "closed": false}
+{"seconds": 6.2747, "event": "llm_raw", "turn": 1, "text": " level", "done": false, "done_reason": null}
+{"seconds": 6.275, "event": "parsed_segment", "turn": 1, "language": "en", "text": " level", "closed": false}
+{"seconds": 6.3007, "event": "llm_raw", "turn": 1, "text": " refers", "done": false, "done_reason": null}
+{"seconds": 6.3009, "event": "parsed_segment", "turn": 1, "language": "en", "text": " refers", "closed": false}
+{"seconds": 6.325, "event": "llm_raw", "turn": 1, "text": " to", "done": false, "done_reason": null}
+{"seconds": 6.3255, "event": "parsed_segment", "turn": 1, "language": "en", "text": " to", "closed": false}
+{"seconds": 6.3267, "event": "llm_raw", "turn": 1, "text": " a", "done": false, "done_reason": null}
+{"seconds": 6.327, "event": "parsed_segment", "turn": 1, "language": "en", "text": " a", "closed": false}
+{"seconds": 6.3727, "event": "llm_raw", "turn": 1, "text": " person", "done": false, "done_reason": null}
+{"seconds": 6.373, "event": "parsed_segment", "turn": 1, "language": "en", "text": " person", "closed": false}
+{"seconds": 6.3986, "event": "llm_raw", "turn": 1, "text": "'", "done": false, "done_reason": null}
+{"seconds": 6.3987, "event": "llm_raw", "turn": 1, "text": "s", "done": false, "done_reason": null}
+{"seconds": 6.3988, "event": "llm_raw", "turn": 1, "text": " proficiency", "done": false, "done_reason": null}
+{"seconds": 6.3989, "event": "llm_raw", "turn": 1, "text": " in", "done": false, "done_reason": null}
+{"seconds": 6.399, "event": "llm_raw", "turn": 1, "text": " the", "done": false, "done_reason": null}
+{"seconds": 6.3992, "event": "parsed_segment", "turn": 1, "language": "en", "text": "'", "closed": false}
+{"seconds": 6.3993, "event": "parsed_segment", "turn": 1, "language": "en", "text": "s", "closed": false}
+{"seconds": 6.3994, "event": "parsed_segment", "turn": 1, "language": "en", "text": " proficiency", "closed": false}
+{"seconds": 6.3995, "event": "parsed_segment", "turn": 1, "language": "en", "text": " in", "closed": false}
+{"seconds": 6.3997, "event": "parsed_segment", "turn": 1, "language": "en", "text": " the", "closed": false}
+{"seconds": 6.4227, "event": "llm_raw", "turn": 1, "text": " language", "done": false, "done_reason": null}
+{"seconds": 6.4229, "event": "parsed_segment", "turn": 1, "language": "en", "text": " language", "closed": false}
+{"seconds": 6.4326, "event": "llm_raw", "turn": 1, "text": ",", "done": false, "done_reason": null}
+{"seconds": 6.4329, "event": "parsed_segment", "turn": 1, "language": "en", "text": ",", "closed": false}
+{"seconds": 6.433, "event": "tts_input", "turn": 1, "language": "en", "phrases": ["German level refers to a person's proficiency in the language,"]}
+{"seconds": 6.4788, "event": "llm_raw", "turn": 1, "text": " often", "done": false, "done_reason": null}
+{"seconds": 6.4789, "event": "llm_raw", "turn": 1, "text": " measured", "done": false, "done_reason": null}
+{"seconds": 6.479, "event": "llm_raw", "turn": 1, "text": " by", "done": false, "done_reason": null}
+{"seconds": 6.4791, "event": "llm_raw", "turn": 1, "text": " the", "done": false, "done_reason": null}
+{"seconds": 6.4791, "event": "llm_raw", "turn": 1, "text": " CE", "done": false, "done_reason": null}
+{"seconds": 6.4793, "event": "parsed_segment", "turn": 1, "language": "en", "text": " often", "closed": false}
+{"seconds": 6.4795, "event": "parsed_segment", "turn": 1, "language": "en", "text": " measured", "closed": false}
+{"seconds": 6.4796, "event": "parsed_segment", "turn": 1, "language": "en", "text": " by", "closed": false}
+{"seconds": 6.4798, "event": "parsed_segment", "turn": 1, "language": "en", "text": " the", "closed": false}
+{"seconds": 6.4799, "event": "parsed_segment", "turn": 1, "language": "en", "text": " CE", "closed": false}
+{"seconds": 6.4991, "event": "llm_raw", "turn": 1, "text": "FR", "done": false, "done_reason": null}
+{"seconds": 6.4992, "event": "llm_raw", "turn": 1, "text": " scale", "done": false, "done_reason": null}
+{"seconds": 6.4993, "event": "llm_raw", "turn": 1, "text": ".", "done": false, "done_reason": null}
+{"seconds": 6.4994, "event": "llm_raw", "turn": 1, "text": "", "done": false, "done_reason": null}
+{"seconds": 6.4995, "event": "parsed_segment", "turn": 1, "language": "en", "text": "FR", "closed": false}
+{"seconds": 6.4997, "event": "parsed_segment", "turn": 1, "language": "en", "text": " scale", "closed": false}
+{"seconds": 6.4998, "event": "parsed_segment", "turn": 1, "language": "en", "text": ".", "closed": false}
+{"seconds": 6.5557, "event": "llm_raw", "turn": 1, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 6.5562, "event": "parsed_segment", "turn": 1, "language": "en", "text": "", "closed": true}
+{"seconds": 6.7839, "event": "tts_audio", "id": "1:1", "audio": "1-1.wav", "sample_rate": 24000, "audio_seconds": 3.456, "turn": 1, "language": "en", "text": "German level refers to a person's proficiency in the language,"}
+{"seconds": 6.7928, "event": "tts_input", "turn": 1, "language": "en", "phrases": ["often measured by the CEFR scale."]}
+{"seconds": 6.9664, "event": "tts_audio", "id": "1:2", "audio": "1-2.wav", "sample_rate": 24000, "audio_seconds": 1.8773, "turn": 1, "language": "en", "text": "often measured by the CEFR scale."}
+{"seconds": 10.2754, "event": "playback_ack", "type": "played", "id": "1:1", "complete": true}
+{"seconds": 12.1648, "event": "playback_ack", "type": "played", "id": "1:2", "complete": true}

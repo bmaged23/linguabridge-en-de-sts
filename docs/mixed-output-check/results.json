@@ -1,0 +1,96 @@
+[
+  {
+    "case": "english_only",
+    "input": "Repeat exactly: I would like a cup of coffee, please.",
+    "reply": "I would like a cup of coffee, please.",
+    "languages": [
+      "en"
+    ],
+    "language_runs": [
+      "en"
+    ],
+    "audio_seconds": 1.96,
+    "audio": "english_only.wav"
+  },
+  {
+    "case": "german_only",
+    "input": "Wiederhole genau: Ich hätte gern einen Kaffee, bitte.",
+    "reply": "Ich hätte gern einen Kaffee, bitte.",
+    "languages": [
+      "de"
+    ],
+    "language_runs": [
+      "de"
+    ],
+    "audio_seconds": 1.74,
+    "audio": "german_only.wav"
+  },
+  {
+    "case": "english_german_english",
+    "input": "Repeat exactly these three parts in order, keeping every word in its original language, no introduction: You can say / Guten Morgen / to greet someone.",
+    "reply": "You can say Guten Morgen to greet someone.",
+    "languages": [
+      "en",
+      "de",
+      "en"
+    ],
+    "language_runs": [
+      "en",
+      "de",
+      "en"
+    ],
+    "audio_seconds": 3.11,
+    "audio": "english_german_english.wav"
+  },
+  {
+    "case": "german_english_german",
+    "input": "Wiederhole genau diese drei Teile in dieser Reihenfolge, ohne Einleitung und ohne Übersetzung: Du kannst / Good morning / zur Begrüßung sagen.",
+    "reply": "Du kannst Good morning zur Begrüßung sagen.",
+    "languages": [
+      "de",
+      "en",
+      "de"
+    ],
+    "language_runs": [
+      "de",
+      "en",
+      "de"
+    ],
+    "audio_seconds": 3.01,
+    "audio": "german_english_german.wav"
+  },
+  {
+    "case": "complex_english_german_english",
+    "input": "Repeat exactly these three parts, preserving their languages and order, without an introduction: Tell the receptionist / Mein Zug hat Verspätung und ich komme später an / then ask whether reception stays open.",
+    "reply": "Tell the receptionist Mein Zug hat Verspätung und ich komme später an then ask whether reception stays open.",
+    "languages": [
+      "en",
+      "de",
+      "en"
+    ],
+    "language_runs": [
+      "en",
+      "de",
+      "en"
+    ],
+    "audio_seconds": 6.02,
+    "audio": "complex_english_german_english.wav"
+  },
+  {
+    "case": "complex_german_english_german",
+    "input": "Wiederhole genau diese drei Teile, ohne Übersetzung oder Einleitung: Meine Kollegin hat gesagt / we should postpone the meeting until tomorrow / aber ich möchte zuerst den Kunden fragen.",
+    "reply": "Meine Kollegin hat gesagt we should postpone the meeting until tomorrow aber ich möchte zuerst den Kunden fragen.",
+    "languages": [
+      "de",
+      "en",
+      "de"
+    ],
+    "language_runs": [
+      "de",
+      "en",
+      "de"
+    ],
+    "audio_seconds": 6.17,
+    "audio": "complex_german_english_german.wav"
+  }
+]

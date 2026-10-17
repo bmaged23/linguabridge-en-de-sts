@@ -1,0 +1,7535 @@
+{
+  "model": "/mnt/d/voice-bridge-models/faster-whisper-large-v3-turbo",
+  "compute_type": "int8_float32",
+  "task": "transcribe",
+  "language": null,
+  "beam_size": 3,
+  "whisper_multilingual": true,
+  "whisper_chunk_seconds": 5,
+  "load_seconds": 22.8509976549999,
+  "scope": "Same browser-captured audio as the application Qwen final; final decoding only, without VAD waiting, microphone arrival, cloud LLM or playback.",
+  "samples": [
+    {
+      "case": "story_en_de_en_clean",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof sagte sie. Unser Zug fällt aus. Bitte kaufe noch keine Tickets. Wir kamen um 9.45 Uhr. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5818,
+        "cer": 0.5449
+      },
+      "decode_seconds": 3.131,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1165.71,
+          "mean": 1149.8
+        },
+        "cpu_pct_one_core": {
+          "peak": 301.9,
+          "mean": 132.97
+        },
+        "cpu_pct_machine": {
+          "peak": 25.16,
+          "mean": 11.08
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1179.67
+        },
+        "gpu_util_pct": {
+          "peak": 92.0,
+          "mean": 64.67
+        },
+        "system_ram_used_mb": {
+          "peak": 1963.06,
+          "mean": 1949.89
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3874.072521923,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9936360120773315
+            ],
+            [
+              "<|en|>",
+              0.005325102247297764
+            ],
+            [
+              "<|ru|>",
+              0.0001689208293100819
+            ],
+            [
+              "<|es|>",
+              0.00013867247616872191
+            ],
+            [
+              "<|fr|>",
+              0.00010484863014426082
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3874.592901725,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9936360120773315
+            ],
+            [
+              "<|en|>",
+              0.005325102247297764
+            ],
+            [
+              "<|ru|>",
+              0.0001689208293100819
+            ],
+            [
+              "<|es|>",
+              0.00013867247616872191
+            ],
+            [
+              "<|fr|>",
+              0.00010484863014426082
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3875.202751427,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9960762858390808
+            ],
+            [
+              "<|en|>",
+              0.0030096271075308323
+            ],
+            [
+              "<|ru|>",
+              0.00014450591697823256
+            ],
+            [
+              "<|es|>",
+              0.00011276714212726802
+            ],
+            [
+              "<|nl|>",
+              0.00010157258657272905
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3875.829959129,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9922813773155212
+            ],
+            [
+              "<|en|>",
+              0.006534617394208908
+            ],
+            [
+              "<|ru|>",
+              0.00019793146930169314
+            ],
+            [
+              "<|es|>",
+              0.00012930500088259578
+            ],
+            [
+              "<|nl|>",
+              0.0001282420998904854
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3876.417623632,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.8398016095161438
+            ],
+            [
+              "<|de|>",
+              0.13478882610797882
+            ],
+            [
+              "<|es|>",
+              0.004492847248911858
+            ],
+            [
+              "<|ru|>",
+              0.0037329832557588816
+            ],
+            [
+              "<|pt|>",
+              0.0025367126800119877
+            ]
+          ]
+        }
+      ],
+      "control_30s": {
+        "text": "Am Bahnhof sagte sie, unser Zug fällt aus. Bitte kaufe noch keine Tickets. Wir kamen um 9.45 Uhr an.",
+        "metrics": {
+          "wer": 0.6909,
+          "cer": 0.6944
+        },
+        "decode_seconds": 1.2741,
+        "language_detection_events": [
+          {
+            "monotonic_seconds": 3877.057748734,
+            "top_languages": [
+              [
+                "<|de|>",
+                0.9965983033180237
+              ],
+              [
+                "<|en|>",
+                0.0028043563943356276
+              ],
+              [
+                "<|ru|>",
+                9.701319504529238e-05
+              ],
+              [
+                "<|es|>",
+                7.011074194451794e-05
+              ],
+              [
+                "<|nl|>",
+                7.009076216490939e-05
+              ]
+            ]
+          },
+          {
+            "monotonic_seconds": 3877.581642736,
+            "top_languages": [
+              [
+                "<|de|>",
+                0.9974666833877563
+              ],
+              [
+                "<|en|>",
+                0.002048616297543049
+              ],
+              [
+                "<|ru|>",
+                7.771566743031144e-05
+              ],
+              [
+                "<|nl|>",
+                5.7117678807117045e-05
+              ],
+              [
+                "<|es|>",
+                5.5520766181871295e-05
+              ]
+            ]
+          }
+        ],
+        "resources": {
+          "sample_count": 3,
+          "ram_tree_rss_mb": {
+            "peak": 1165.75,
+            "mean": 1165.74
+          },
+          "cpu_pct_one_core": {
+            "peak": 308.8,
+            "mean": 176.67
+          },
+          "cpu_pct_machine": {
+            "peak": 25.73,
+            "mean": 14.72
+          },
+          "gpu_vram_mb": {
+            "peak": 1233.0,
+            "mean": 1169.0
+          },
+          "gpu_util_pct": {
+            "peak": 93.0,
+            "mean": 92.33
+          },
+          "system_ram_used_mb": {
+            "peak": 1945.48,
+            "mean": 1944.59
+          }
+        }
+      }
+    },
+    {
+      "case": "story_de_en_de_clean",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte, Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.3898,
+        "cer": 0.3558
+      },
+      "decode_seconds": 3.1957,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1165.87,
+          "mean": 1165.87
+        },
+        "cpu_pct_one_core": {
+          "peak": 331.9,
+          "mean": 138.32
+        },
+        "cpu_pct_machine": {
+          "peak": 27.66,
+          "mean": 11.53
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 92.0,
+          "mean": 87.67
+        },
+        "system_ram_used_mb": {
+          "peak": 1957.43,
+          "mean": 1948.66
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3878.333310339,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9978552460670471
+            ],
+            [
+              "<|en|>",
+              0.0016802472528070211
+            ],
+            [
+              "<|ru|>",
+              6.242875679163262e-05
+            ],
+            [
+              "<|nl|>",
+              6.120335456216708e-05
+            ],
+            [
+              "<|es|>",
+              5.577887350227684e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3878.855325641,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9978552460670471
+            ],
+            [
+              "<|en|>",
+              0.0016802472528070211
+            ],
+            [
+              "<|ru|>",
+              6.242875679163262e-05
+            ],
+            [
+              "<|nl|>",
+              6.120335456216708e-05
+            ],
+            [
+              "<|es|>",
+              5.577887350227684e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3879.505773843,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9976158142089844
+            ],
+            [
+              "<|en|>",
+              0.0018262675730511546
+            ],
+            [
+              "<|ru|>",
+              8.745659579290077e-05
+            ],
+            [
+              "<|es|>",
+              7.578242366435006e-05
+            ],
+            [
+              "<|nl|>",
+              6.480253068730235e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3880.256042046,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9977937936782837
+            ],
+            [
+              "<|en|>",
+              0.001687335898168385
+            ],
+            [
+              "<|es|>",
+              7.440637273248285e-05
+            ],
+            [
+              "<|nl|>",
+              6.971490802243352e-05
+            ],
+            [
+              "<|ru|>",
+              5.963606236036867e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3880.895594642,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9981158971786499
+            ],
+            [
+              "<|en|>",
+              0.0014047948643565178
+            ],
+            [
+              "<|es|>",
+              6.71248126309365e-05
+            ],
+            [
+              "<|ru|>",
+              6.26893452135846e-05
+            ],
+            [
+              "<|nl|>",
+              5.833273098687641e-05
+            ]
+          ]
+        }
+      ],
+      "control_30s": {
+        "text": "Gestern fanden Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+        "metrics": {
+          "wer": 0.4068,
+          "cer": 0.365
+        },
+        "decode_seconds": 1.41,
+        "language_detection_events": [
+          {
+            "monotonic_seconds": 3881.535964537,
+            "top_languages": [
+              [
+                "<|de|>",
+                0.999037504196167
+              ],
+              [
+                "<|en|>",
+                0.0006776119116693735
+              ],
+              [
+                "<|ru|>",
+                3.7494744901778176e-05
+              ],
+              [
+                "<|nl|>",
+                3.550981273292564e-05
+              ],
+              [
+                "<|es|>",
+                3.5345474316272885e-05
+              ]
+            ]
+          },
+          {
+            "monotonic_seconds": 3882.060073832,
+            "top_languages": [
+              [
+                "<|de|>",
+                0.9989401698112488
+              ],
+              [
+                "<|en|>",
+                0.0007528571877628565
+              ],
+              [
+                "<|ru|>",
+                4.203130447422154e-05
+              ],
+              [
+                "<|es|>",
+                3.905098856193945e-05
+              ],
+              [
+                "<|nl|>",
+                3.758097955142148e-05
+              ]
+            ]
+          }
+        ],
+        "resources": {
+          "sample_count": 3,
+          "ram_tree_rss_mb": {
+            "peak": 1165.89,
+            "mean": 1165.89
+          },
+          "cpu_pct_one_core": {
+            "peak": 284.2,
+            "mean": 175.07
+          },
+          "cpu_pct_machine": {
+            "peak": 23.68,
+            "mean": 14.59
+          },
+          "gpu_vram_mb": {
+            "peak": 1233.0,
+            "mean": 1169.0
+          },
+          "gpu_util_pct": {
+            "peak": 88.0,
+            "mean": 85.0
+          },
+          "system_ram_used_mb": {
+            "peak": 1962.73,
+            "mean": 1955.26
+          }
+        }
+      }
+    },
+    {
+      "case": "story_en_de_en_quiet",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof, sagte sie. Unser Zug fällt aus. Bitte kaufe noch keine Tickets. Wir kamen um 9.45 Uhr. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5818,
+        "cer": 0.5449
+      },
+      "decode_seconds": 3.0326,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1165.96,
+          "mean": 1165.95
+        },
+        "cpu_pct_one_core": {
+          "peak": 308.4,
+          "mean": 140.07
+        },
+        "cpu_pct_machine": {
+          "peak": 25.7,
+          "mean": 11.67
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 90.0,
+          "mean": 87.67
+        },
+        "system_ram_used_mb": {
+          "peak": 1995.06,
+          "mean": 1980.45
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3882.972757324,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.990920901298523
+            ],
+            [
+              "<|en|>",
+              0.007662713993340731
+            ],
+            [
+              "<|ru|>",
+              0.0002490806218702346
+            ],
+            [
+              "<|es|>",
+              0.00018500728765502572
+            ],
+            [
+              "<|fr|>",
+              0.00013906712410971522
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3883.49578842,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.990920901298523
+            ],
+            [
+              "<|en|>",
+              0.007662713993340731
+            ],
+            [
+              "<|ru|>",
+              0.0002490806218702346
+            ],
+            [
+              "<|es|>",
+              0.00018500728765502572
+            ],
+            [
+              "<|fr|>",
+              0.00013906712410971522
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3884.117654915,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9960252046585083
+            ],
+            [
+              "<|en|>",
+              0.003134332364425063
+            ],
+            [
+              "<|ru|>",
+              0.00012549603707157075
+            ],
+            [
+              "<|es|>",
+              0.00010772988753160462
+            ],
+            [
+              "<|nl|>",
+              9.729819430503994e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3884.764469109,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9908667802810669
+            ],
+            [
+              "<|en|>",
+              0.007737378589808941
+            ],
+            [
+              "<|ru|>",
+              0.00022132883896119893
+            ],
+            [
+              "<|es|>",
+              0.00015948561485856771
+            ],
+            [
+              "<|nl|>",
+              0.00014355286839418113
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3885.378361104,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.8089208602905273
+            ],
+            [
+              "<|de|>",
+              0.15032558143138885
+            ],
+            [
+              "<|es|>",
+              0.006602197419852018
+            ],
+            [
+              "<|ru|>",
+              0.006449774373322725
+            ],
+            [
+              "<|pt|>",
+              0.004436785355210304
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_noise20",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof sagte sie, Unser Zug fällt aus. Bitte kaufen noch keine Tickets. Wir kamen um 9.45 Uhr. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.6,
+        "cer": 0.5482
+      },
+      "decode_seconds": 3.0433,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.0,
+          "mean": 1166.0
+        },
+        "cpu_pct_one_core": {
+          "peak": 242.3,
+          "mean": 140.27
+        },
+        "cpu_pct_machine": {
+          "peak": 20.19,
+          "mean": 11.69
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 94.0,
+          "mean": 90.33
+        },
+        "system_ram_used_mb": {
+          "peak": 2002.4,
+          "mean": 1990.84
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3886.044435898,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9039562940597534
+            ],
+            [
+              "<|en|>",
+              0.08955161273479462
+            ],
+            [
+              "<|ru|>",
+              0.0012029577046632767
+            ],
+            [
+              "<|es|>",
+              0.0010209145257249475
+            ],
+            [
+              "<|pt|>",
+              0.0006051265518181026
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3886.567673594,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9039562940597534
+            ],
+            [
+              "<|en|>",
+              0.08955161273479462
+            ],
+            [
+              "<|ru|>",
+              0.0012029577046632767
+            ],
+            [
+              "<|es|>",
+              0.0010209145257249475
+            ],
+            [
+              "<|pt|>",
+              0.0006051265518181026
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3887.155695188,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9952823519706726
+            ],
+            [
+              "<|en|>",
+              0.003879536408931017
+            ],
+            [
+              "<|nl|>",
+              0.00012061742745572701
+            ],
+            [
+              "<|es|>",
+              0.00010004659270634875
+            ],
+            [
+              "<|ru|>",
+              9.674466855358332e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3887.795332583,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9657769203186035
+            ],
+            [
+              "<|en|>",
+              0.030896756798028946
+            ],
+            [
+              "<|ru|>",
+              0.0006261579692363739
+            ],
+            [
+              "<|es|>",
+              0.00036987915518693626
+            ],
+            [
+              "<|fr|>",
+              0.00035578294773586094
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3888.425517077,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.8110230565071106
+            ],
+            [
+              "<|de|>",
+              0.15487565100193024
+            ],
+            [
+              "<|es|>",
+              0.006778936367481947
+            ],
+            [
+              "<|ru|>",
+              0.006207282189279795
+            ],
+            [
+              "<|pt|>",
+              0.004383956082165241
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_noise10",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof sagte sie Unser Zug fällt aus. Bitte kaufen noch keine Ticket. Wir kamen um 9.45 Uhr in die Karte. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.6364,
+        "cer": 0.5349
+      },
+      "decode_seconds": 3.0314,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.03,
+          "mean": 1166.03
+        },
+        "cpu_pct_one_core": {
+          "peak": 322.4,
+          "mean": 136.72
+        },
+        "cpu_pct_machine": {
+          "peak": 26.87,
+          "mean": 11.39
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1233.0
+        },
+        "gpu_util_pct": {
+          "peak": 94.0,
+          "mean": 92.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1969.48,
+          "mean": 1956.79
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3889.088624952,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.7510887384414673
+            ],
+            [
+              "<|en|>",
+              0.23657192289829254
+            ],
+            [
+              "<|ru|>",
+              0.0021810783073306084
+            ],
+            [
+              "<|es|>",
+              0.001788462046533823
+            ],
+            [
+              "<|pt|>",
+              0.0010478361509740353
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3889.621226932,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.7510887384414673
+            ],
+            [
+              "<|en|>",
+              0.23657192289829254
+            ],
+            [
+              "<|ru|>",
+              0.0021810783073306084
+            ],
+            [
+              "<|es|>",
+              0.001788462046533823
+            ],
+            [
+              "<|pt|>",
+              0.0010478361509740353
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3890.206601411,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9952824711799622
+            ],
+            [
+              "<|en|>",
+              0.003968569450080395
+            ],
+            [
+              "<|nl|>",
+              0.0001147466609836556
+            ],
+            [
+              "<|ru|>",
+              9.214290184900165e-05
+            ],
+            [
+              "<|es|>",
+              8.103442814899608e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3890.831390888,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.7201230525970459
+            ],
+            [
+              "<|en|>",
+              0.26594364643096924
+            ],
+            [
+              "<|ru|>",
+              0.0029313538689166307
+            ],
+            [
+              "<|fr|>",
+              0.0017584364395588636
+            ],
+            [
+              "<|es|>",
+              0.0016051268903538585
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3891.485090464,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9894492626190186
+            ],
+            [
+              "<|es|>",
+              0.0018604715587571263
+            ],
+            [
+              "<|ru|>",
+              0.0012755166972056031
+            ],
+            [
+              "<|pt|>",
+              0.0011061750119552016
+            ],
+            [
+              "<|ko|>",
+              0.0010247178142890334
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_pause",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof sagte sie Unser Zug fällt aus. Bitte kaufe noch keine... Then the company called, the interview was at 10, not 9. Sie kamen um 9.45 Uhr an. Продолжение следует...",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5636,
+        "cer": 0.5515
+      },
+      "decode_seconds": 3.7131,
+      "resources": {
+        "sample_count": 7,
+        "ram_tree_rss_mb": {
+          "peak": 1166.15,
+          "mean": 1166.15
+        },
+        "cpu_pct_one_core": {
+          "peak": 323.9,
+          "mean": 131.41
+        },
+        "cpu_pct_machine": {
+          "peak": 26.99,
+          "mean": 10.95
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1233.0
+        },
+        "gpu_util_pct": {
+          "peak": 93.0,
+          "mean": 90.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1938.27,
+          "mean": 1931.61
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3892.11996034,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9874057173728943
+            ],
+            [
+              "<|en|>",
+              0.011227176524698734
+            ],
+            [
+              "<|ru|>",
+              0.00021706924599129707
+            ],
+            [
+              "<|es|>",
+              0.00017627050692681223
+            ],
+            [
+              "<|nl|>",
+              0.0001437365572201088
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3892.66367232,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9874057173728943
+            ],
+            [
+              "<|en|>",
+              0.011227176524698734
+            ],
+            [
+              "<|ru|>",
+              0.00021706924599129707
+            ],
+            [
+              "<|es|>",
+              0.00017627050692681223
+            ],
+            [
+              "<|nl|>",
+              0.0001437365572201088
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3893.318951796,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9975942969322205
+            ],
+            [
+              "<|en|>",
+              0.001748700742609799
+            ],
+            [
+              "<|ru|>",
+              9.660600335337222e-05
+            ],
+            [
+              "<|es|>",
+              8.59747888171114e-05
+            ],
+            [
+              "<|nl|>",
+              7.860883488319814e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3893.972329672,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9901952147483826
+            ],
+            [
+              "<|ru|>",
+              0.001768392394296825
+            ],
+            [
+              "<|de|>",
+              0.0017530197510495782
+            ],
+            [
+              "<|es|>",
+              0.0012221651850268245
+            ],
+            [
+              "<|pt|>",
+              0.0007235729717649519
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3894.599064249,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9913917779922485
+            ],
+            [
+              "<|en|>",
+              0.007403247524052858
+            ],
+            [
+              "<|ru|>",
+              0.00018199023907072842
+            ],
+            [
+              "<|es|>",
+              0.00017086230218410492
+            ],
+            [
+              "<|fr|>",
+              0.00013095770555082709
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3895.215777026,
+          "top_languages": [
+            [
+              "<|ru|>",
+              0.18374505639076233
+            ],
+            [
+              "<|en|>",
+              0.14657825231552124
+            ],
+            [
+              "<|es|>",
+              0.13442069292068481
+            ],
+            [
+              "<|pt|>",
+              0.11547566205263138
+            ],
+            [
+              "<|ja|>",
+              0.06743770092725754
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_noise15",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof sagte sie Unser Zug fällt aus. Bitte kaufen noch keine Tickets. Wir kamen um 9.45 Uhr in die Stadt. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.6182,
+        "cer": 0.5316
+      },
+      "decode_seconds": 3.0339,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.2,
+          "mean": 1166.19
+        },
+        "cpu_pct_one_core": {
+          "peak": 321.9,
+          "mean": 136.65
+        },
+        "cpu_pct_machine": {
+          "peak": 26.82,
+          "mean": 11.39
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1211.67
+        },
+        "gpu_util_pct": {
+          "peak": 97.0,
+          "mean": 93.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1964.97,
+          "mean": 1958.12
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3895.841916303,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.8628256916999817
+            ],
+            [
+              "<|en|>",
+              0.1281665414571762
+            ],
+            [
+              "<|ru|>",
+              0.0016431940020993352
+            ],
+            [
+              "<|es|>",
+              0.0012757519725710154
+            ],
+            [
+              "<|pt|>",
+              0.0008231510291807353
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3896.378472783,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.8628256916999817
+            ],
+            [
+              "<|en|>",
+              0.1281665414571762
+            ],
+            [
+              "<|ru|>",
+              0.0016431940020993352
+            ],
+            [
+              "<|es|>",
+              0.0012757519725710154
+            ],
+            [
+              "<|pt|>",
+              0.0008231510291807353
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3896.979538683,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9955682158470154
+            ],
+            [
+              "<|en|>",
+              0.003667838405817747
+            ],
+            [
+              "<|nl|>",
+              0.00011501397239044309
+            ],
+            [
+              "<|ru|>",
+              8.665440691402182e-05
+            ],
+            [
+              "<|es|>",
+              8.607612107880414e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3897.615701483,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9446947574615479
+            ],
+            [
+              "<|en|>",
+              0.050237301737070084
+            ],
+            [
+              "<|ru|>",
+              0.0009630483109503984
+            ],
+            [
+              "<|fr|>",
+              0.0005616431008093059
+            ],
+            [
+              "<|es|>",
+              0.0005445656133815646
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3898.248948883,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.85365229845047
+            ],
+            [
+              "<|de|>",
+              0.04815478250384331
+            ],
+            [
+              "<|ru|>",
+              0.01642417162656784
+            ],
+            [
+              "<|es|>",
+              0.015394591726362705
+            ],
+            [
+              "<|pt|>",
+              0.01043742336332798
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_quiet",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte, Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.3898,
+        "cer": 0.3558
+      },
+      "decode_seconds": 3.3487,
+      "resources": {
+        "sample_count": 7,
+        "ram_tree_rss_mb": {
+          "peak": 1166.21,
+          "mean": 1166.21
+        },
+        "cpu_pct_one_core": {
+          "peak": 325.3,
+          "mean": 131.91
+        },
+        "cpu_pct_machine": {
+          "peak": 27.11,
+          "mean": 10.99
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1210.14
+        },
+        "gpu_util_pct": {
+          "peak": 98.0,
+          "mean": 87.71
+        },
+        "system_ram_used_mb": {
+          "peak": 1951.56,
+          "mean": 1948.05
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3898.884633984,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9915076494216919
+            ],
+            [
+              "<|en|>",
+              0.00721764424815774
+            ],
+            [
+              "<|ru|>",
+              0.00018860618001781404
+            ],
+            [
+              "<|es|>",
+              0.00016407483781222254
+            ],
+            [
+              "<|nl|>",
+              0.00014177504635881633
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3899.435877384,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9915076494216919
+            ],
+            [
+              "<|en|>",
+              0.00721764424815774
+            ],
+            [
+              "<|ru|>",
+              0.00018860618001781404
+            ],
+            [
+              "<|es|>",
+              0.00016407483781222254
+            ],
+            [
+              "<|nl|>",
+              0.00014177504635881633
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3900.088056385,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9961250424385071
+            ],
+            [
+              "<|en|>",
+              0.003125256160274148
+            ],
+            [
+              "<|ru|>",
+              0.0001256880204891786
+            ],
+            [
+              "<|es|>",
+              0.00010275727981934324
+            ],
+            [
+              "<|nl|>",
+              7.544918480562046e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3900.843367385,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.997072696685791
+            ],
+            [
+              "<|en|>",
+              0.0024087592028081417
+            ],
+            [
+              "<|es|>",
+              7.480230851797387e-05
+            ],
+            [
+              "<|ru|>",
+              6.645977555308491e-05
+            ],
+            [
+              "<|nl|>",
+              6.405268504749984e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3901.535828186,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9978675842285156
+            ],
+            [
+              "<|en|>",
+              0.0016342193121090531
+            ],
+            [
+              "<|ru|>",
+              6.855130777694285e-05
+            ],
+            [
+              "<|es|>",
+              6.590627890545875e-05
+            ],
+            [
+              "<|nl|>",
+              6.096271317801438e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_noise20",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Hier ist die Tourin Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.4576,
+        "cer": 0.3957
+      },
+      "decode_seconds": 3.1277,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.26,
+          "mean": 1166.26
+        },
+        "cpu_pct_one_core": {
+          "peak": 337.8,
+          "mean": 138.97
+        },
+        "cpu_pct_machine": {
+          "peak": 28.15,
+          "mean": 11.58
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1233.0
+        },
+        "gpu_util_pct": {
+          "peak": 93.0,
+          "mean": 89.67
+        },
+        "system_ram_used_mb": {
+          "peak": 1936.09,
+          "mean": 1934.04
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3902.258022486,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9932950139045715
+            ],
+            [
+              "<|en|>",
+              0.005679137073457241
+            ],
+            [
+              "<|ru|>",
+              0.00015288592840079218
+            ],
+            [
+              "<|es|>",
+              0.0001230679772561416
+            ],
+            [
+              "<|nl|>",
+              0.0001130356831708923
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3902.819786187,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9932950139045715
+            ],
+            [
+              "<|en|>",
+              0.005679137073457241
+            ],
+            [
+              "<|ru|>",
+              0.00015288592840079218
+            ],
+            [
+              "<|es|>",
+              0.0001230679772561416
+            ],
+            [
+              "<|nl|>",
+              0.0001130356831708923
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3903.484466387,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.987939715385437
+            ],
+            [
+              "<|en|>",
+              0.01021957490593195
+            ],
+            [
+              "<|ru|>",
+              0.00029585929587483406
+            ],
+            [
+              "<|es|>",
+              0.00023435843468178064
+            ],
+            [
+              "<|pt|>",
+              0.00016779106226749718
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3904.104797188,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9987685084342957
+            ],
+            [
+              "<|en|>",
+              0.0009004453895613551
+            ],
+            [
+              "<|nl|>",
+              5.4447969887405634e-05
+            ],
+            [
+              "<|es|>",
+              5.03690134792123e-05
+            ],
+            [
+              "<|ru|>",
+              3.364200529176742e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3904.749541288,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9950214624404907
+            ],
+            [
+              "<|en|>",
+              0.0041763936169445515
+            ],
+            [
+              "<|es|>",
+              0.000113981994218193
+            ],
+            [
+              "<|ru|>",
+              0.00010080126958200708
+            ],
+            [
+              "<|nl|>",
+              9.07176363398321e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_noise10",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Hier ist die Türen Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte es. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.4576,
+        "cer": 0.3834
+      },
+      "decode_seconds": 3.2308,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.3,
+          "mean": 1166.29
+        },
+        "cpu_pct_one_core": {
+          "peak": 323.9,
+          "mean": 136.3
+        },
+        "cpu_pct_machine": {
+          "peak": 26.99,
+          "mean": 11.36
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 93.0,
+          "mean": 90.33
+        },
+        "system_ram_used_mb": {
+          "peak": 1948.25,
+          "mean": 1942.85
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3905.404990788,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.987322986125946
+            ],
+            [
+              "<|en|>",
+              0.010622645728290081
+            ],
+            [
+              "<|ru|>",
+              0.0003239700454287231
+            ],
+            [
+              "<|es|>",
+              0.00023701343161519617
+            ],
+            [
+              "<|pt|>",
+              0.0002154961257474497
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3905.958849789,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.987322986125946
+            ],
+            [
+              "<|en|>",
+              0.010622645728290081
+            ],
+            [
+              "<|ru|>",
+              0.0003239700454287231
+            ],
+            [
+              "<|es|>",
+              0.00023701343161519617
+            ],
+            [
+              "<|pt|>",
+              0.0002154961257474497
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3906.622445689,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.8185575604438782
+            ],
+            [
+              "<|en|>",
+              0.17055298388004303
+            ],
+            [
+              "<|ru|>",
+              0.0016526313265785575
+            ],
+            [
+              "<|es|>",
+              0.0012702809181064367
+            ],
+            [
+              "<|ko|>",
+              0.0008250332903116941
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3907.233977589,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9973148703575134
+            ],
+            [
+              "<|en|>",
+              0.0021822189446538687
+            ],
+            [
+              "<|nl|>",
+              7.25552235962823e-05
+            ],
+            [
+              "<|es|>",
+              6.700732774334028e-05
+            ],
+            [
+              "<|ru|>",
+              5.299073382047936e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3907.99676309,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9968355298042297
+            ],
+            [
+              "<|en|>",
+              0.0025603489484637976
+            ],
+            [
+              "<|nl|>",
+              8.253272244473919e-05
+            ],
+            [
+              "<|ru|>",
+              7.527056004619226e-05
+            ],
+            [
+              "<|es|>",
+              7.198790990514681e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_pause",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte. do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. 1945. Bitte fassen Sie die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de",
+        "de",
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.339,
+        "cer": 0.2914
+      },
+      "decode_seconds": 5.5,
+      "resources": {
+        "sample_count": 10,
+        "ram_tree_rss_mb": {
+          "peak": 1166.35,
+          "mean": 1166.34
+        },
+        "cpu_pct_one_core": {
+          "peak": 341.8,
+          "mean": 168.52
+        },
+        "cpu_pct_machine": {
+          "peak": 28.48,
+          "mean": 14.04
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1210.6
+        },
+        "gpu_util_pct": {
+          "peak": 96.0,
+          "mean": 92.4
+        },
+        "system_ram_used_mb": {
+          "peak": 1950.33,
+          "mean": 1931.7
+        }
+      },
+      "captured_segments": 3,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3908.67312769,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9985966086387634
+            ],
+            [
+              "<|en|>",
+              0.0010473734000697732
+            ],
+            [
+              "<|ru|>",
+              4.6950670366641134e-05
+            ],
+            [
+              "<|es|>",
+              4.357434590929188e-05
+            ],
+            [
+              "<|nl|>",
+              4.3095944420201704e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3909.219063891,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9985966086387634
+            ],
+            [
+              "<|en|>",
+              0.0010473734000697732
+            ],
+            [
+              "<|ru|>",
+              4.6950670366641134e-05
+            ],
+            [
+              "<|es|>",
+              4.357434590929188e-05
+            ],
+            [
+              "<|nl|>",
+              4.3095944420201704e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3909.896775791,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9967349171638489
+            ],
+            [
+              "<|en|>",
+              0.002618340775370598
+            ],
+            [
+              "<|ru|>",
+              9.30924215936102e-05
+            ],
+            [
+              "<|es|>",
+              9.157576278084889e-05
+            ],
+            [
+              "<|nl|>",
+              7.549300789833069e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3910.524381091,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9998069405555725
+            ],
+            [
+              "<|es|>",
+              3.121290137642063e-05
+            ],
+            [
+              "<|de|>",
+              2.524674346204847e-05
+            ],
+            [
+              "<|ja|>",
+              2.2313663066597655e-05
+            ],
+            [
+              "<|fr|>",
+              1.9981496734544635e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3911.154528192,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9990835189819336
+            ],
+            [
+              "<|en|>",
+              0.0006530312239192426
+            ],
+            [
+              "<|nl|>",
+              3.961565380450338e-05
+            ],
+            [
+              "<|es|>",
+              3.5600318369688466e-05
+            ],
+            [
+              "<|pt|>",
+              3.0077790142968297e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3911.700240792,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9990835189819336
+            ],
+            [
+              "<|en|>",
+              0.0006530312239192426
+            ],
+            [
+              "<|nl|>",
+              3.961565380450338e-05
+            ],
+            [
+              "<|es|>",
+              3.5600318369688466e-05
+            ],
+            [
+              "<|pt|>",
+              3.0077790142968297e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3912.366615393,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9980602860450745
+            ],
+            [
+              "<|es|>",
+              0.00039200036553665996
+            ],
+            [
+              "<|de|>",
+              0.00024029532505664974
+            ],
+            [
+              "<|pt|>",
+              0.0001867529790615663
+            ],
+            [
+              "<|fr|>",
+              0.00018486790941096842
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3912.957220176,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9994753003120422
+            ],
+            [
+              "<|en|>",
+              0.0003112582489848137
+            ],
+            [
+              "<|nl|>",
+              2.8870133974123746e-05
+            ],
+            [
+              "<|es|>",
+              2.6104491553269327e-05
+            ],
+            [
+              "<|ru|>",
+              2.4118658984662034e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3913.504804158,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9995129108428955
+            ],
+            [
+              "<|en|>",
+              0.00028101165662519634
+            ],
+            [
+              "<|nl|>",
+              2.861667235265486e-05
+            ],
+            [
+              "<|es|>",
+              2.6338766474509612e-05
+            ],
+            [
+              "<|ru|>",
+              2.4306094928761013e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_noise15",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Hier ist die Tourin Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.4576,
+        "cer": 0.3957
+      },
+      "decode_seconds": 3.166,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.39,
+          "mean": 1166.39
+        },
+        "cpu_pct_one_core": {
+          "peak": 315.9,
+          "mean": 135.28
+        },
+        "cpu_pct_machine": {
+          "peak": 26.32,
+          "mean": 11.27
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 95.0,
+          "mean": 93.33
+        },
+        "system_ram_used_mb": {
+          "peak": 1949.4,
+          "mean": 1938.53
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3914.179830436,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.994317352771759
+            ],
+            [
+              "<|en|>",
+              0.00459456630051136
+            ],
+            [
+              "<|ru|>",
+              0.00016345390758942813
+            ],
+            [
+              "<|es|>",
+              0.00013401033356785774
+            ],
+            [
+              "<|nl|>",
+              0.00011277980956947431
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3914.725480619,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.994317352771759
+            ],
+            [
+              "<|en|>",
+              0.00459456630051136
+            ],
+            [
+              "<|ru|>",
+              0.00016345390758942813
+            ],
+            [
+              "<|es|>",
+              0.00013401033356785774
+            ],
+            [
+              "<|nl|>",
+              0.00011277980956947431
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3915.380971297,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.971805214881897
+            ],
+            [
+              "<|en|>",
+              0.02519298531115055
+            ],
+            [
+              "<|ru|>",
+              0.0004625014844350517
+            ],
+            [
+              "<|es|>",
+              0.00036631812690757215
+            ],
+            [
+              "<|nl|>",
+              0.0002469831088092178
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3916.020785277,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9974344372749329
+            ],
+            [
+              "<|en|>",
+              0.0020577372051775455
+            ],
+            [
+              "<|nl|>",
+              7.322028250200674e-05
+            ],
+            [
+              "<|es|>",
+              7.30751853552647e-05
+            ],
+            [
+              "<|ru|>",
+              5.6469412811566144e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3916.702026055,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9967048764228821
+            ],
+            [
+              "<|en|>",
+              0.0026799405459314585
+            ],
+            [
+              "<|es|>",
+              8.754780719755217e-05
+            ],
+            [
+              "<|nl|>",
+              7.482471119146794e-05
+            ],
+            [
+              "<|ru|>",
+              7.441531488439068e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_noise8",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Yesterday, Anna and I Am Bahnhof sagte sie, unser Zug fällt aus. Bitte kauf noch keine Ticket! Wir kamen um 9.45 Uhr an. happened in two sentences.",
+      "languages": [
+        "en",
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5818,
+        "cer": 0.5449
+      },
+      "decode_seconds": 4.2396,
+      "resources": {
+        "sample_count": 8,
+        "ram_tree_rss_mb": {
+          "peak": 1166.45,
+          "mean": 1166.45
+        },
+        "cpu_pct_one_core": {
+          "peak": 306.0,
+          "mean": 152.18
+        },
+        "cpu_pct_machine": {
+          "peak": 25.5,
+          "mean": 12.68
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1233.0
+        },
+        "gpu_util_pct": {
+          "peak": 95.0,
+          "mean": 94.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1967.22,
+          "mean": 1957.94
+        }
+      },
+      "captured_segments": 2,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3917.341818334,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9424070119857788
+            ],
+            [
+              "<|ja|>",
+              0.011813917197287083
+            ],
+            [
+              "<|es|>",
+              0.008149905130267143
+            ],
+            [
+              "<|de|>",
+              0.00716678099706769
+            ],
+            [
+              "<|ru|>",
+              0.006763660814613104
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3917.893699816,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9351229071617126
+            ],
+            [
+              "<|ja|>",
+              0.011705251410603523
+            ],
+            [
+              "<|es|>",
+              0.00896679237484932
+            ],
+            [
+              "<|de|>",
+              0.008813856169581413
+            ],
+            [
+              "<|ru|>",
+              0.007691296748816967
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3918.518942496,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9239752888679504
+            ],
+            [
+              "<|en|>",
+              0.07059077173471451
+            ],
+            [
+              "<|ru|>",
+              0.0009167222306132317
+            ],
+            [
+              "<|es|>",
+              0.0006778090028092265
+            ],
+            [
+              "<|pt|>",
+              0.00043784428271465003
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3919.086905878,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9239752888679504
+            ],
+            [
+              "<|en|>",
+              0.07059077173471451
+            ],
+            [
+              "<|ru|>",
+              0.0009167222306132317
+            ],
+            [
+              "<|es|>",
+              0.0006778090028092265
+            ],
+            [
+              "<|pt|>",
+              0.00043784428271465003
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3919.731370757,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.8408306241035461
+            ],
+            [
+              "<|en|>",
+              0.1513364464044571
+            ],
+            [
+              "<|ru|>",
+              0.0014853265602141619
+            ],
+            [
+              "<|es|>",
+              0.0007727363845333457
+            ],
+            [
+              "<|fr|>",
+              0.000750978768337518
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3920.342858037,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.8305496573448181
+            ],
+            [
+              "<|en|>",
+              0.15824536979198456
+            ],
+            [
+              "<|ru|>",
+              0.0018400427652522922
+            ],
+            [
+              "<|es|>",
+              0.0014555671950802207
+            ],
+            [
+              "<|fr|>",
+              0.0012766473228111863
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3920.98167503,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9925617575645447
+            ],
+            [
+              "<|es|>",
+              0.0014903618721291423
+            ],
+            [
+              "<|de|>",
+              0.0008287893724627793
+            ],
+            [
+              "<|ru|>",
+              0.000791983911767602
+            ],
+            [
+              "<|pt|>",
+              0.000626715540420264
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_noise25",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof sagte sie Unser Zug fällt aus. Bitte kaufe noch keine Tickets. Wir kamen um 9.45 Uhr Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5818,
+        "cer": 0.5449
+      },
+      "decode_seconds": 3.1735,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.49,
+          "mean": 1166.49
+        },
+        "cpu_pct_one_core": {
+          "peak": 345.8,
+          "mean": 140.63
+        },
+        "cpu_pct_machine": {
+          "peak": 28.82,
+          "mean": 11.72
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1195.67
+        },
+        "gpu_util_pct": {
+          "peak": 97.0,
+          "mean": 92.17
+        },
+        "system_ram_used_mb": {
+          "peak": 1968.37,
+          "mean": 1961.3
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3921.633673226,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.969500720500946
+            ],
+            [
+              "<|en|>",
+              0.02742294780910015
+            ],
+            [
+              "<|ru|>",
+              0.0005227702204138041
+            ],
+            [
+              "<|es|>",
+              0.00045835404307581484
+            ],
+            [
+              "<|fr|>",
+              0.0002905667060986161
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3922.188661122,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.969500720500946
+            ],
+            [
+              "<|en|>",
+              0.02742294780910015
+            ],
+            [
+              "<|ru|>",
+              0.0005227702204138041
+            ],
+            [
+              "<|es|>",
+              0.00045835404307581484
+            ],
+            [
+              "<|fr|>",
+              0.0002905667060986161
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3922.803414417,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9964626431465149
+            ],
+            [
+              "<|en|>",
+              0.0027518447022885084
+            ],
+            [
+              "<|nl|>",
+              0.00010445457155583426
+            ],
+            [
+              "<|es|>",
+              9.884449536912143e-05
+            ],
+            [
+              "<|ru|>",
+              9.753605991136283e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3923.503976312,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9706736207008362
+            ],
+            [
+              "<|en|>",
+              0.026092370972037315
+            ],
+            [
+              "<|ru|>",
+              0.0005991782527416945
+            ],
+            [
+              "<|es|>",
+              0.0003492327523417771
+            ],
+            [
+              "<|fr|>",
+              0.00032956551876850426
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3924.135500908,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9492942094802856
+            ],
+            [
+              "<|de|>",
+              0.010631428100168705
+            ],
+            [
+              "<|es|>",
+              0.007845873013138771
+            ],
+            [
+              "<|ru|>",
+              0.005660877097398043
+            ],
+            [
+              "<|pt|>",
+              0.004949335474520922
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_quiet_noise20",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof sagte sie Unser Zug fällt aus. Bitte kaufe noch keine Tickets. Wir kamen um 9.45 Uhr an. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5636,
+        "cer": 0.5349
+      },
+      "decode_seconds": 3.1358,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.53,
+          "mean": 1166.52
+        },
+        "cpu_pct_one_core": {
+          "peak": 331.9,
+          "mean": 137.98
+        },
+        "cpu_pct_machine": {
+          "peak": 27.66,
+          "mean": 11.5
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 96.0,
+          "mean": 91.67
+        },
+        "system_ram_used_mb": {
+          "peak": 1975.99,
+          "mean": 1959.72
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3924.812464803,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.822878360748291
+            ],
+            [
+              "<|en|>",
+              0.16625778377056122
+            ],
+            [
+              "<|ru|>",
+              0.0021480789873749018
+            ],
+            [
+              "<|es|>",
+              0.0016464105574414134
+            ],
+            [
+              "<|fr|>",
+              0.0009788457537069917
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3925.372060899,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.822878360748291
+            ],
+            [
+              "<|en|>",
+              0.16625778377056122
+            ],
+            [
+              "<|ru|>",
+              0.0021480789873749018
+            ],
+            [
+              "<|es|>",
+              0.0016464105574414134
+            ],
+            [
+              "<|fr|>",
+              0.0009788457537069917
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3925.997216594,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9973530769348145
+            ],
+            [
+              "<|en|>",
+              0.002066625514999032
+            ],
+            [
+              "<|nl|>",
+              8.640883606858552e-05
+            ],
+            [
+              "<|ru|>",
+              7.334877591347322e-05
+            ],
+            [
+              "<|es|>",
+              6.999929610174149e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3926.67788059,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.971830427646637
+            ],
+            [
+              "<|en|>",
+              0.024360433220863342
+            ],
+            [
+              "<|ru|>",
+              0.0007121453527361155
+            ],
+            [
+              "<|fr|>",
+              0.00040609220741316676
+            ],
+            [
+              "<|pt|>",
+              0.00039656777516938746
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3927.311904285,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.7676329612731934
+            ],
+            [
+              "<|de|>",
+              0.09657656401395798
+            ],
+            [
+              "<|ru|>",
+              0.02496391348540783
+            ],
+            [
+              "<|es|>",
+              0.01725137047469616
+            ],
+            [
+              "<|pt|>",
+              0.013697593472898006
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_pause_noise20",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof sagte sie Unser Zug fällt aus. Bitte kaufe noch kein Hinten. Then the company called. The interview was at 10, not 9. kamen um 9.45 Uhr an. Продолжение следует...",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5818,
+        "cer": 0.5515
+      },
+      "decode_seconds": 3.7437,
+      "resources": {
+        "sample_count": 8,
+        "ram_tree_rss_mb": {
+          "peak": 1166.55,
+          "mean": 1166.55
+        },
+        "cpu_pct_one_core": {
+          "peak": 325.8,
+          "mean": 127.7
+        },
+        "cpu_pct_machine": {
+          "peak": 27.15,
+          "mean": 10.64
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1209.0
+        },
+        "gpu_util_pct": {
+          "peak": 97.0,
+          "mean": 93.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1968.27,
+          "mean": 1954.21
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3927.943985781,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9039261937141418
+            ],
+            [
+              "<|en|>",
+              0.09015857428312302
+            ],
+            [
+              "<|ru|>",
+              0.0011829632567241788
+            ],
+            [
+              "<|es|>",
+              0.0008667967631481588
+            ],
+            [
+              "<|pt|>",
+              0.000532423029653728
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3928.502426477,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9039261937141418
+            ],
+            [
+              "<|en|>",
+              0.09015857428312302
+            ],
+            [
+              "<|ru|>",
+              0.0011829632567241788
+            ],
+            [
+              "<|es|>",
+              0.0008667967631481588
+            ],
+            [
+              "<|pt|>",
+              0.000532423029653728
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3929.123187577,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9973739385604858
+            ],
+            [
+              "<|en|>",
+              0.001970079494640231
+            ],
+            [
+              "<|nl|>",
+              8.976249227998778e-05
+            ],
+            [
+              "<|ru|>",
+              8.634695404907688e-05
+            ],
+            [
+              "<|es|>",
+              7.916783943073824e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3929.798574377,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9861533641815186
+            ],
+            [
+              "<|de|>",
+              0.002747882390394807
+            ],
+            [
+              "<|ru|>",
+              0.0021107057109475136
+            ],
+            [
+              "<|es|>",
+              0.0017493568593636155
+            ],
+            [
+              "<|pt|>",
+              0.0010797298746183515
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3930.444635976,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9946569204330444
+            ],
+            [
+              "<|en|>",
+              0.004363988991826773
+            ],
+            [
+              "<|ru|>",
+              0.00014791564899496734
+            ],
+            [
+              "<|es|>",
+              0.00012460297148209065
+            ],
+            [
+              "<|nl|>",
+              0.00011030141467927024
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3931.070922976,
+          "top_languages": [
+            [
+              "<|ru|>",
+              0.16959843039512634
+            ],
+            [
+              "<|en|>",
+              0.1547451615333557
+            ],
+            [
+              "<|es|>",
+              0.15102849900722504
+            ],
+            [
+              "<|pt|>",
+              0.12369149923324585
+            ],
+            [
+              "<|id|>",
+              0.05445881187915802
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_repeat1",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof, sagte sie. Unser Zug fällt aus. Bitte kaufe noch keine Tickets. Wir kamen um 9.45 Uhr. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5818,
+        "cer": 0.5449
+      },
+      "decode_seconds": 3.1902,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.59,
+          "mean": 1166.59
+        },
+        "cpu_pct_one_core": {
+          "peak": 344.0,
+          "mean": 139.98
+        },
+        "cpu_pct_machine": {
+          "peak": 28.67,
+          "mean": 11.67
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 96.0,
+          "mean": 91.67
+        },
+        "system_ram_used_mb": {
+          "peak": 1972.39,
+          "mean": 1958.39
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3931.728518276,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9965232610702515
+            ],
+            [
+              "<|en|>",
+              0.002800182206556201
+            ],
+            [
+              "<|ru|>",
+              0.0001075023683370091
+            ],
+            [
+              "<|es|>",
+              8.578874985687435e-05
+            ],
+            [
+              "<|nl|>",
+              7.162451947806403e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3932.282809176,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9965232610702515
+            ],
+            [
+              "<|en|>",
+              0.002800182206556201
+            ],
+            [
+              "<|ru|>",
+              0.0001075023683370091
+            ],
+            [
+              "<|es|>",
+              8.578874985687435e-05
+            ],
+            [
+              "<|nl|>",
+              7.162451947806403e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3932.886715675,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9945183396339417
+            ],
+            [
+              "<|en|>",
+              0.004293103702366352
+            ],
+            [
+              "<|ru|>",
+              0.0001801714242901653
+            ],
+            [
+              "<|es|>",
+              0.0001585002028150484
+            ],
+            [
+              "<|nl|>",
+              0.00013058552576694638
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3933.555877175,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.992393970489502
+            ],
+            [
+              "<|en|>",
+              0.00639645429328084
+            ],
+            [
+              "<|ru|>",
+              0.00020275999850127846
+            ],
+            [
+              "<|es|>",
+              0.0001358453300781548
+            ],
+            [
+              "<|nl|>",
+              0.0001296675472985953
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3934.267700475,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9552633762359619
+            ],
+            [
+              "<|de|>",
+              0.029145045205950737
+            ],
+            [
+              "<|es|>",
+              0.003253281582146883
+            ],
+            [
+              "<|ru|>",
+              0.0027110690716654062
+            ],
+            [
+              "<|pt|>",
+              0.0017491377657279372
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_repeat2",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof sagte sie. Unser Zug fällt aus. Bitte kaufe noch keine Tickets. Wir kamen um 9.45 Uhr. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5818,
+        "cer": 0.5449
+      },
+      "decode_seconds": 3.0609,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.61,
+          "mean": 1166.61
+        },
+        "cpu_pct_one_core": {
+          "peak": 324.0,
+          "mean": 136.65
+        },
+        "cpu_pct_machine": {
+          "peak": 27.0,
+          "mean": 11.39
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 96.0,
+          "mean": 92.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1973.75,
+          "mean": 1971.17
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3934.902192775,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9936360120773315
+            ],
+            [
+              "<|en|>",
+              0.005325102247297764
+            ],
+            [
+              "<|ru|>",
+              0.0001689208293100819
+            ],
+            [
+              "<|es|>",
+              0.00013867247616872191
+            ],
+            [
+              "<|fr|>",
+              0.00010484863014426082
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3935.454953474,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9936360120773315
+            ],
+            [
+              "<|en|>",
+              0.005325102247297764
+            ],
+            [
+              "<|ru|>",
+              0.0001689208293100819
+            ],
+            [
+              "<|es|>",
+              0.00013867247616872191
+            ],
+            [
+              "<|fr|>",
+              0.00010484863014426082
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3936.074961474,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9960762858390808
+            ],
+            [
+              "<|en|>",
+              0.0030096271075308323
+            ],
+            [
+              "<|ru|>",
+              0.00014450591697823256
+            ],
+            [
+              "<|es|>",
+              0.00011276714212726802
+            ],
+            [
+              "<|nl|>",
+              0.00010157258657272905
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3936.740016572,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9922813773155212
+            ],
+            [
+              "<|en|>",
+              0.006534617394208908
+            ],
+            [
+              "<|ru|>",
+              0.00019793146930169314
+            ],
+            [
+              "<|es|>",
+              0.00012930500088259578
+            ],
+            [
+              "<|nl|>",
+              0.0001282420998904854
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3937.344442968,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.8398016095161438
+            ],
+            [
+              "<|de|>",
+              0.13478882610797882
+            ],
+            [
+              "<|es|>",
+              0.004492847248911858
+            ],
+            [
+              "<|ru|>",
+              0.0037329832557588816
+            ],
+            [
+              "<|pt|>",
+              0.0025367126800119877
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_repeat3",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof, sagte sie. Unser Zug fällt aus. Bitte kaufe noch keine Tickets. Wir kamen um 9.45 Uhr. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5818,
+        "cer": 0.5449
+      },
+      "decode_seconds": 3.1106,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.67,
+          "mean": 1166.67
+        },
+        "cpu_pct_one_core": {
+          "peak": 326.0,
+          "mean": 136.65
+        },
+        "cpu_pct_machine": {
+          "peak": 27.17,
+          "mean": 11.39
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 94.0,
+          "mean": 93.17
+        },
+        "system_ram_used_mb": {
+          "peak": 1953.16,
+          "mean": 1935.42
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3937.976678063,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9826844334602356
+            ],
+            [
+              "<|en|>",
+              0.015284799039363861
+            ],
+            [
+              "<|ru|>",
+              0.00035618565743789077
+            ],
+            [
+              "<|es|>",
+              0.00026016338961198926
+            ],
+            [
+              "<|pt|>",
+              0.00019091134890913963
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3938.522579859,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9826844334602356
+            ],
+            [
+              "<|en|>",
+              0.015284799039363861
+            ],
+            [
+              "<|ru|>",
+              0.00035618565743789077
+            ],
+            [
+              "<|es|>",
+              0.00026016338961198926
+            ],
+            [
+              "<|pt|>",
+              0.00019091134890913963
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3939.142991755,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9956241250038147
+            ],
+            [
+              "<|en|>",
+              0.0033793156035244465
+            ],
+            [
+              "<|ru|>",
+              0.0001490732392994687
+            ],
+            [
+              "<|es|>",
+              0.00013255586964078248
+            ],
+            [
+              "<|nl|>",
+              0.00011363455996615812
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3939.81391585,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9916804432868958
+            ],
+            [
+              "<|en|>",
+              0.006924828048795462
+            ],
+            [
+              "<|ru|>",
+              0.0002310674317413941
+            ],
+            [
+              "<|es|>",
+              0.00015825682203285396
+            ],
+            [
+              "<|fr|>",
+              0.00015668643754906952
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3940.470727246,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.896770179271698
+            ],
+            [
+              "<|de|>",
+              0.08270235359668732
+            ],
+            [
+              "<|es|>",
+              0.0046710055321455
+            ],
+            [
+              "<|ru|>",
+              0.0031888349913060665
+            ],
+            [
+              "<|pt|>",
+              0.0026840113569051027
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_en_de_en_repeat4",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+      "text": "Am Bahnhof, sagte sie. Unser Zug fällt aus. Bitte kaufe noch keine Tickets. Wir kamen um 9.45 Uhr. Please summarize what happened in two sentences.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.5818,
+        "cer": 0.5449
+      },
+      "decode_seconds": 3.2599,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.7,
+          "mean": 1166.7
+        },
+        "cpu_pct_one_core": {
+          "peak": 337.3,
+          "mean": 138.88
+        },
+        "cpu_pct_machine": {
+          "peak": 28.11,
+          "mean": 11.57
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1233.0
+        },
+        "gpu_util_pct": {
+          "peak": 96.0,
+          "mean": 93.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1949.07,
+          "mean": 1938.37
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3941.121980341,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9826844334602356
+            ],
+            [
+              "<|en|>",
+              0.015284799039363861
+            ],
+            [
+              "<|ru|>",
+              0.00035618565743789077
+            ],
+            [
+              "<|es|>",
+              0.00026016338961198926
+            ],
+            [
+              "<|pt|>",
+              0.00019091134890913963
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3941.670428137,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9826844334602356
+            ],
+            [
+              "<|en|>",
+              0.015284799039363861
+            ],
+            [
+              "<|ru|>",
+              0.00035618565743789077
+            ],
+            [
+              "<|es|>",
+              0.00026016338961198926
+            ],
+            [
+              "<|pt|>",
+              0.00019091134890913963
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3942.286565433,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9956241250038147
+            ],
+            [
+              "<|en|>",
+              0.0033793156035244465
+            ],
+            [
+              "<|ru|>",
+              0.0001490732392994687
+            ],
+            [
+              "<|es|>",
+              0.00013255586964078248
+            ],
+            [
+              "<|nl|>",
+              0.00011363455996615812
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3942.947282928,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9916804432868958
+            ],
+            [
+              "<|en|>",
+              0.006924828048795462
+            ],
+            [
+              "<|ru|>",
+              0.0002310674317413941
+            ],
+            [
+              "<|es|>",
+              0.00015825682203285396
+            ],
+            [
+              "<|fr|>",
+              0.00015668643754906952
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3943.601708823,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.896770179271698
+            ],
+            [
+              "<|de|>",
+              0.08270235359668732
+            ],
+            [
+              "<|es|>",
+              0.0046710055321455
+            ],
+            [
+              "<|ru|>",
+              0.0031888349913060665
+            ],
+            [
+              "<|pt|>",
+              0.0026840113569051027
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_noise8",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Hier ist die Türen Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sechsen zusammen",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.4746,
+        "cer": 0.4049
+      },
+      "decode_seconds": 3.2512,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.71,
+          "mean": 1166.71
+        },
+        "cpu_pct_one_core": {
+          "peak": 337.9,
+          "mean": 138.97
+        },
+        "cpu_pct_machine": {
+          "peak": 28.16,
+          "mean": 11.58
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 99.0,
+          "mean": 85.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1932.25,
+          "mean": 1929.27
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3944.391457418,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9798340201377869
+            ],
+            [
+              "<|en|>",
+              0.017475442960858345
+            ],
+            [
+              "<|ru|>",
+              0.000431891530752182
+            ],
+            [
+              "<|es|>",
+              0.00034469965612515807
+            ],
+            [
+              "<|pt|>",
+              0.00026856298791244626
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3944.936796613,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9798340201377869
+            ],
+            [
+              "<|en|>",
+              0.017475442960858345
+            ],
+            [
+              "<|ru|>",
+              0.000431891530752182
+            ],
+            [
+              "<|es|>",
+              0.00034469965612515807
+            ],
+            [
+              "<|pt|>",
+              0.00026856298791244626
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3945.652487308,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9782930016517639
+            ],
+            [
+              "<|en|>",
+              0.019030198454856873
+            ],
+            [
+              "<|ru|>",
+              0.00036000486579723656
+            ],
+            [
+              "<|nl|>",
+              0.0002876127837225795
+            ],
+            [
+              "<|ja|>",
+              0.00024984919582493603
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3946.292238703,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9938681721687317
+            ],
+            [
+              "<|en|>",
+              0.005244409199804068
+            ],
+            [
+              "<|es|>",
+              0.00012224460078869015
+            ],
+            [
+              "<|nl|>",
+              0.00011461147369118407
+            ],
+            [
+              "<|ru|>",
+              9.817918908083811e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3946.970715497,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9943072199821472
+            ],
+            [
+              "<|en|>",
+              0.004705597646534443
+            ],
+            [
+              "<|es|>",
+              0.00012157992750871927
+            ],
+            [
+              "<|ru|>",
+              0.00012064275506418198
+            ],
+            [
+              "<|nl|>",
+              0.00011083985737059265
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_noise25",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Es ist die Tourin Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte, Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.4576,
+        "cer": 0.3926
+      },
+      "decode_seconds": 3.1967,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.76,
+          "mean": 1166.76
+        },
+        "cpu_pct_one_core": {
+          "peak": 351.9,
+          "mean": 141.3
+        },
+        "cpu_pct_machine": {
+          "peak": 29.32,
+          "mean": 11.77
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 93.0,
+          "mean": 90.5
+        },
+        "system_ram_used_mb": {
+          "peak": 1940.3,
+          "mean": 1933.93
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3947.677626392,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9940950870513916
+            ],
+            [
+              "<|en|>",
+              0.004880563821643591
+            ],
+            [
+              "<|ru|>",
+              0.00014762923819944263
+            ],
+            [
+              "<|es|>",
+              0.0001275260583497584
+            ],
+            [
+              "<|nl|>",
+              0.00011095252557424828
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3948.226798788,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9940950870513916
+            ],
+            [
+              "<|en|>",
+              0.004880563821643591
+            ],
+            [
+              "<|ru|>",
+              0.00014762923819944263
+            ],
+            [
+              "<|es|>",
+              0.0001275260583497584
+            ],
+            [
+              "<|nl|>",
+              0.00011095252557424828
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3948.887337982,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.984262228012085
+            ],
+            [
+              "<|en|>",
+              0.013496317900717258
+            ],
+            [
+              "<|ru|>",
+              0.00037162352236919105
+            ],
+            [
+              "<|es|>",
+              0.0003216044569853693
+            ],
+            [
+              "<|pt|>",
+              0.0002085134037770331
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3949.510025577,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9985578656196594
+            ],
+            [
+              "<|en|>",
+              0.0010585683630779386
+            ],
+            [
+              "<|nl|>",
+              5.894840069231577e-05
+            ],
+            [
+              "<|es|>",
+              5.37373598490376e-05
+            ],
+            [
+              "<|ru|>",
+              4.180944597464986e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3950.208628372,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9972020387649536
+            ],
+            [
+              "<|en|>",
+              0.0022070417180657387
+            ],
+            [
+              "<|ru|>",
+              7.805874338373542e-05
+            ],
+            [
+              "<|es|>",
+              7.484018715331331e-05
+            ],
+            [
+              "<|nl|>",
+              7.452958379872143e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_quiet_noise20",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gäste fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.4068,
+        "cer": 0.365
+      },
+      "decode_seconds": 3.2777,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.78,
+          "mean": 1166.78
+        },
+        "cpu_pct_one_core": {
+          "peak": 325.8,
+          "mean": 136.93
+        },
+        "cpu_pct_machine": {
+          "peak": 27.15,
+          "mean": 11.41
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 90.0,
+          "mean": 89.33
+        },
+        "system_ram_used_mb": {
+          "peak": 1934.56,
+          "mean": 1931.71
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3950.908148366,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9948698282241821
+            ],
+            [
+              "<|en|>",
+              0.004162390250712633
+            ],
+            [
+              "<|ru|>",
+              0.0001315484259976074
+            ],
+            [
+              "<|es|>",
+              0.00012186841195216402
+            ],
+            [
+              "<|nl|>",
+              0.00011314149742247537
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3951.481154462,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9948698282241821
+            ],
+            [
+              "<|en|>",
+              0.004162390250712633
+            ],
+            [
+              "<|ru|>",
+              0.0001315484259976074
+            ],
+            [
+              "<|es|>",
+              0.00012186841195216402
+            ],
+            [
+              "<|nl|>",
+              0.00011314149742247537
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3952.201037256,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9924067854881287
+            ],
+            [
+              "<|en|>",
+              0.006514739710837603
+            ],
+            [
+              "<|ru|>",
+              0.00017806340474635363
+            ],
+            [
+              "<|es|>",
+              0.00014445518900174648
+            ],
+            [
+              "<|pt|>",
+              0.00010824685159604996
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3952.846009153,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.998629093170166
+            ],
+            [
+              "<|en|>",
+              0.0010343036847189069
+            ],
+            [
+              "<|nl|>",
+              5.302676800056361e-05
+            ],
+            [
+              "<|es|>",
+              4.567654832499102e-05
+            ],
+            [
+              "<|ru|>",
+              3.769650720641948e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3953.505029051,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9967652559280396
+            ],
+            [
+              "<|en|>",
+              0.0026408601552248
+            ],
+            [
+              "<|es|>",
+              7.975960761541501e-05
+            ],
+            [
+              "<|ru|>",
+              7.683123840251938e-05
+            ],
+            [
+              "<|nl|>",
+              7.06416685716249e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_pause_noise20",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Es ist die Tourin Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte. Dann rief die Firma an. Das Gespräch war um 10 Uhr, nicht in der Zeit. We arrived at 9.45. Bitte fangen Sie die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de",
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.4915,
+        "cer": 0.3804
+      },
+      "decode_seconds": 4.583,
+      "resources": {
+        "sample_count": 9,
+        "ram_tree_rss_mb": {
+          "peak": 1166.82,
+          "mean": 1166.82
+        },
+        "cpu_pct_one_core": {
+          "peak": 331.9,
+          "mean": 151.08
+        },
+        "cpu_pct_machine": {
+          "peak": 27.66,
+          "mean": 12.59
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1193.89
+        },
+        "gpu_util_pct": {
+          "peak": 99.0,
+          "mean": 90.11
+        },
+        "system_ram_used_mb": {
+          "peak": 1925.27,
+          "mean": 1911.68
+        }
+      },
+      "captured_segments": 2,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3954.188715349,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9954103827476501
+            ],
+            [
+              "<|en|>",
+              0.003650601953268051
+            ],
+            [
+              "<|ru|>",
+              0.00013184038107283413
+            ],
+            [
+              "<|es|>",
+              0.00011156542313983664
+            ],
+            [
+              "<|nl|>",
+              0.00010671038762666285
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3954.752681648,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9954103827476501
+            ],
+            [
+              "<|en|>",
+              0.003650601953268051
+            ],
+            [
+              "<|ru|>",
+              0.00013184038107283413
+            ],
+            [
+              "<|es|>",
+              0.00011156542313983664
+            ],
+            [
+              "<|nl|>",
+              0.00010671038762666285
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3955.438510046,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9255066514015198
+            ],
+            [
+              "<|en|>",
+              0.06776651740074158
+            ],
+            [
+              "<|ru|>",
+              0.0011559220729395747
+            ],
+            [
+              "<|es|>",
+              0.0008353125886060297
+            ],
+            [
+              "<|fr|>",
+              0.0005183164030313492
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3956.058780044,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.8719133138656616
+            ],
+            [
+              "<|en|>",
+              0.1207813173532486
+            ],
+            [
+              "<|es|>",
+              0.001078015542589128
+            ],
+            [
+              "<|ru|>",
+              0.000958399148657918
+            ],
+            [
+              "<|pt|>",
+              0.0006975934375077486
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3956.837680942,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.5160879492759705
+            ],
+            [
+              "<|de|>",
+              0.3604871332645416
+            ],
+            [
+              "<|ru|>",
+              0.02689994126558304
+            ],
+            [
+              "<|es|>",
+              0.017783651128411293
+            ],
+            [
+              "<|pt|>",
+              0.01535220630466938
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3957.48752274,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9992675185203552
+            ],
+            [
+              "<|en|>",
+              0.0004674015217460692
+            ],
+            [
+              "<|nl|>",
+              3.692655809572898e-05
+            ],
+            [
+              "<|es|>",
+              3.356441084179096e-05
+            ],
+            [
+              "<|ru|>",
+              2.9322231057449244e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3958.046688639,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9992545247077942
+            ],
+            [
+              "<|en|>",
+              0.0004771765961777419
+            ],
+            [
+              "<|nl|>",
+              3.920925155398436e-05
+            ],
+            [
+              "<|es|>",
+              3.397698310436681e-05
+            ],
+            [
+              "<|ru|>",
+              2.7806201615021564e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_repeat1",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fanden Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte, Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.4068,
+        "cer": 0.365
+      },
+      "decode_seconds": 3.1964,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.87,
+          "mean": 1166.87
+        },
+        "cpu_pct_one_core": {
+          "peak": 344.0,
+          "mean": 139.98
+        },
+        "cpu_pct_machine": {
+          "peak": 28.67,
+          "mean": 11.67
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1233.0
+        },
+        "gpu_util_pct": {
+          "peak": 99.0,
+          "mean": 90.5
+        },
+        "system_ram_used_mb": {
+          "peak": 1961.48,
+          "mean": 1929.86
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3958.796361337,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9974660873413086
+            ],
+            [
+              "<|en|>",
+              0.001993403071537614
+            ],
+            [
+              "<|ru|>",
+              7.75270164012909e-05
+            ],
+            [
+              "<|nl|>",
+              6.829244375694543e-05
+            ],
+            [
+              "<|es|>",
+              6.639925413765013e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3959.364543235,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9974660873413086
+            ],
+            [
+              "<|en|>",
+              0.001993403071537614
+            ],
+            [
+              "<|ru|>",
+              7.75270164012909e-05
+            ],
+            [
+              "<|nl|>",
+              6.829244375694543e-05
+            ],
+            [
+              "<|es|>",
+              6.639925413765013e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3960.042191833,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9974051117897034
+            ],
+            [
+              "<|en|>",
+              0.0020282731857150793
+            ],
+            [
+              "<|ru|>",
+              8.923652785597369e-05
+            ],
+            [
+              "<|es|>",
+              7.508358976338059e-05
+            ],
+            [
+              "<|nl|>",
+              6.165108061395586e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3960.686950531,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9976546764373779
+            ],
+            [
+              "<|en|>",
+              0.001818157033994794
+            ],
+            [
+              "<|es|>",
+              7.833294512238353e-05
+            ],
+            [
+              "<|nl|>",
+              7.202687265817076e-05
+            ],
+            [
+              "<|ru|>",
+              6.159480108181015e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3961.342568229,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9986745119094849
+            ],
+            [
+              "<|en|>",
+              0.0009591494454070926
+            ],
+            [
+              "<|es|>",
+              4.9226346163777635e-05
+            ],
+            [
+              "<|ru|>",
+              4.9068908992921934e-05
+            ],
+            [
+              "<|nl|>",
+              4.7049852582858875e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_repeat2",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte, Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.3898,
+        "cer": 0.3558
+      },
+      "decode_seconds": 3.1124,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.89,
+          "mean": 1166.89
+        },
+        "cpu_pct_one_core": {
+          "peak": 323.8,
+          "mean": 137.3
+        },
+        "cpu_pct_machine": {
+          "peak": 26.98,
+          "mean": 11.44
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 95.0,
+          "mean": 92.5
+        },
+        "system_ram_used_mb": {
+          "peak": 1975.64,
+          "mean": 1961.11
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3961.991984126,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9981949925422668
+            ],
+            [
+              "<|en|>",
+              0.0014111287891864777
+            ],
+            [
+              "<|ru|>",
+              5.740395135944709e-05
+            ],
+            [
+              "<|es|>",
+              4.883639485342428e-05
+            ],
+            [
+              "<|nl|>",
+              4.879519110545516e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3962.544842224,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9981949925422668
+            ],
+            [
+              "<|en|>",
+              0.0014111287891864777
+            ],
+            [
+              "<|ru|>",
+              5.740395135944709e-05
+            ],
+            [
+              "<|es|>",
+              4.883639485342428e-05
+            ],
+            [
+              "<|nl|>",
+              4.879519110545516e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3963.201918122,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9976243376731873
+            ],
+            [
+              "<|en|>",
+              0.001828102394938469
+            ],
+            [
+              "<|ru|>",
+              8.1359212344978e-05
+            ],
+            [
+              "<|es|>",
+              7.895477756392211e-05
+            ],
+            [
+              "<|nl|>",
+              6.2774503021501e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3963.81647912,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9980652928352356
+            ],
+            [
+              "<|en|>",
+              0.0014938339591026306
+            ],
+            [
+              "<|es|>",
+              6.357049278449267e-05
+            ],
+            [
+              "<|nl|>",
+              6.0630409279838204e-05
+            ],
+            [
+              "<|ru|>",
+              5.415994382929057e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3964.473906817,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9984517097473145
+            ],
+            [
+              "<|en|>",
+              0.0011576151009649038
+            ],
+            [
+              "<|es|>",
+              5.327416511136107e-05
+            ],
+            [
+              "<|ru|>",
+              5.2102692279731855e-05
+            ],
+            [
+              "<|nl|>",
+              4.863035064772703e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_repeat3",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.3898,
+        "cer": 0.3558
+      },
+      "decode_seconds": 3.1119,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.92,
+          "mean": 1166.92
+        },
+        "cpu_pct_one_core": {
+          "peak": 321.9,
+          "mean": 136.32
+        },
+        "cpu_pct_machine": {
+          "peak": 26.82,
+          "mean": 11.36
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1233.0
+        },
+        "gpu_util_pct": {
+          "peak": 94.0,
+          "mean": 92.33
+        },
+        "system_ram_used_mb": {
+          "peak": 1968.11,
+          "mean": 1946.32
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3965.136024115,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9979631900787354
+            ],
+            [
+              "<|en|>",
+              0.001592985587194562
+            ],
+            [
+              "<|ru|>",
+              6.575896259164438e-05
+            ],
+            [
+              "<|es|>",
+              5.456430517369881e-05
+            ],
+            [
+              "<|nl|>",
+              5.4333962907548994e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3965.681867913,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9979631900787354
+            ],
+            [
+              "<|en|>",
+              0.001592985587194562
+            ],
+            [
+              "<|ru|>",
+              6.575896259164438e-05
+            ],
+            [
+              "<|es|>",
+              5.456430517369881e-05
+            ],
+            [
+              "<|nl|>",
+              5.4333962907548994e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3966.334221411,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9965121150016785
+            ],
+            [
+              "<|en|>",
+              0.0027265918906778097
+            ],
+            [
+              "<|ru|>",
+              0.00011766060197260231
+            ],
+            [
+              "<|es|>",
+              0.00010184763959841803
+            ],
+            [
+              "<|nl|>",
+              8.777120092418045e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3966.951099508,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9983580708503723
+            ],
+            [
+              "<|en|>",
+              0.0012343327980488539
+            ],
+            [
+              "<|nl|>",
+              5.8045021432917565e-05
+            ],
+            [
+              "<|es|>",
+              5.553647497436032e-05
+            ],
+            [
+              "<|ru|>",
+              4.863891808781773e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3967.607550406,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9976183772087097
+            ],
+            [
+              "<|en|>",
+              0.001791464863345027
+            ],
+            [
+              "<|ru|>",
+              8.357134356629103e-05
+            ],
+            [
+              "<|es|>",
+              7.995336636668071e-05
+            ],
+            [
+              "<|nl|>",
+              6.850634963484481e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_de_en_de_repeat4",
+      "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. Wir fanden einen Bus, aber ich sagte. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.3898,
+        "cer": 0.3558
+      },
+      "decode_seconds": 3.1641,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1166.95,
+          "mean": 1166.95
+        },
+        "cpu_pct_one_core": {
+          "peak": 327.9,
+          "mean": 137.3
+        },
+        "cpu_pct_machine": {
+          "peak": 27.32,
+          "mean": 11.44
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1233.0
+        },
+        "gpu_util_pct": {
+          "peak": 96.0,
+          "mean": 93.5
+        },
+        "system_ram_used_mb": {
+          "peak": 1966.12,
+          "mean": 1961.67
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3968.262447803,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9981704950332642
+            ],
+            [
+              "<|en|>",
+              0.0014073686907067895
+            ],
+            [
+              "<|ru|>",
+              5.960631460766308e-05
+            ],
+            [
+              "<|nl|>",
+              5.6187309382949024e-05
+            ],
+            [
+              "<|es|>",
+              4.9967693485086784e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3968.809662202,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9981704950332642
+            ],
+            [
+              "<|en|>",
+              0.0014073686907067895
+            ],
+            [
+              "<|ru|>",
+              5.960631460766308e-05
+            ],
+            [
+              "<|nl|>",
+              5.6187309382949024e-05
+            ],
+            [
+              "<|es|>",
+              4.9967693485086784e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3969.4587225,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9972672462463379
+            ],
+            [
+              "<|en|>",
+              0.0021413336507976055
+            ],
+            [
+              "<|ru|>",
+              8.804209210211411e-05
+            ],
+            [
+              "<|es|>",
+              8.235347195295617e-05
+            ],
+            [
+              "<|nl|>",
+              6.677091732854024e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3970.096964399,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9980060458183289
+            ],
+            [
+              "<|en|>",
+              0.001520634861662984
+            ],
+            [
+              "<|es|>",
+              6.938532897038385e-05
+            ],
+            [
+              "<|nl|>",
+              6.495176785392687e-05
+            ],
+            [
+              "<|ru|>",
+              5.8474292018217966e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3970.793359097,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9972667694091797
+            ],
+            [
+              "<|en|>",
+              0.002136704046279192
+            ],
+            [
+              "<|es|>",
+              8.566008182242513e-05
+            ],
+            [
+              "<|nl|>",
+              7.930289575597271e-05
+            ],
+            [
+              "<|ru|>",
+              7.690017810091376e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_english_clean",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+      "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the station, she said our trip was going to Berlin. train was canceled. We found a bus, but I told her not to buy tickets yet, then the company called. The interview was at 10, not 9. We arrived at 9.45. Please summarize what happened in two sentences.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.2143,
+        "cer": 0.1633
+      },
+      "decode_seconds": 3.1951,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1167.0,
+          "mean": 1167.0
+        },
+        "cpu_pct_one_core": {
+          "peak": 326.0,
+          "mean": 137.33
+        },
+        "cpu_pct_machine": {
+          "peak": 27.17,
+          "mean": 11.45
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 96.0,
+          "mean": 90.67
+        },
+        "system_ram_used_mb": {
+          "peak": 1985.29,
+          "mean": 1973.45
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3971.439844795,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9958823919296265
+            ],
+            [
+              "<|es|>",
+              0.0006897324346937239
+            ],
+            [
+              "<|de|>",
+              0.0006459865835495293
+            ],
+            [
+              "<|ru|>",
+              0.0005907724262215197
+            ],
+            [
+              "<|fr|>",
+              0.00033731956500560045
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3971.982501094,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9958823919296265
+            ],
+            [
+              "<|es|>",
+              0.0006897324346937239
+            ],
+            [
+              "<|de|>",
+              0.0006459865835495293
+            ],
+            [
+              "<|ru|>",
+              0.0005907724262215197
+            ],
+            [
+              "<|fr|>",
+              0.00033731956500560045
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3972.699901692,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9992018342018127
+            ],
+            [
+              "<|es|>",
+              0.00014548591570928693
+            ],
+            [
+              "<|ru|>",
+              0.00010692107753129676
+            ],
+            [
+              "<|de|>",
+              0.000100712786661461
+            ],
+            [
+              "<|pt|>",
+              7.103790994733572e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3973.35503709,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9997966885566711
+            ],
+            [
+              "<|es|>",
+              3.7144345697015524e-05
+            ],
+            [
+              "<|de|>",
+              3.295288115623407e-05
+            ],
+            [
+              "<|ru|>",
+              2.1099840523675084e-05
+            ],
+            [
+              "<|pt|>",
+              1.6979407519102097e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3974.019340689,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9985957741737366
+            ],
+            [
+              "<|es|>",
+              0.00028756028041243553
+            ],
+            [
+              "<|ru|>",
+              0.00015022724983282387
+            ],
+            [
+              "<|pt|>",
+              0.00014701001055072993
+            ],
+            [
+              "<|de|>",
+              0.00014499139797408134
+            ]
+          ]
+        }
+      ],
+      "control_30s": {
+        "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the station, she said our train was canceled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at 10, not 9. We arrived at 9.45. Please summarize what happened in two sentences.",
+        "metrics": {
+          "wer": 0.125,
+          "cer": 0.0782
+        },
+        "decode_seconds": 1.532,
+        "language_detection_events": [
+          {
+            "monotonic_seconds": 3974.656452687,
+            "top_languages": [
+              [
+                "<|en|>",
+                0.999504566192627
+              ],
+              [
+                "<|de|>",
+                9.233860328095034e-05
+              ],
+              [
+                "<|es|>",
+                8.006657299119979e-05
+              ],
+              [
+                "<|ru|>",
+                5.818415593239479e-05
+              ],
+              [
+                "<|fr|>",
+                3.959441892220639e-05
+              ]
+            ]
+          },
+          {
+            "monotonic_seconds": 3975.199496086,
+            "top_languages": [
+              [
+                "<|en|>",
+                0.9992930889129639
+              ],
+              [
+                "<|de|>",
+                0.00012759874516632408
+              ],
+              [
+                "<|es|>",
+                0.00011268876551184803
+              ],
+              [
+                "<|ru|>",
+                8.420782978646457e-05
+              ],
+              [
+                "<|fr|>",
+                5.5414715461665764e-05
+              ]
+            ]
+          }
+        ],
+        "resources": {
+          "sample_count": 3,
+          "ram_tree_rss_mb": {
+            "peak": 1167.0,
+            "mean": 1167.0
+          },
+          "cpu_pct_one_core": {
+            "peak": 313.9,
+            "mean": 171.3
+          },
+          "cpu_pct_machine": {
+            "peak": 26.16,
+            "mean": 14.27
+          },
+          "gpu_vram_mb": {
+            "peak": 1233.0,
+            "mean": 1169.0
+          },
+          "gpu_util_pct": {
+            "peak": 100.0,
+            "mean": 92.0
+          },
+          "system_ram_used_mb": {
+            "peak": 1965.81,
+            "mean": 1964.06
+          }
+        }
+      }
+    },
+    {
+      "case": "story_german_clean",
+      "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fußen Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie. Unser Zug fällt aus, wir fanden einen Bus, aber ich sagte, kaufen noch keine Tickets. rief die Firma an. Das Gespräch war um 10, nicht um 9. Wir kamen um 9 Uhr von München. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.1404,
+        "cer": 0.1053
+      },
+      "decode_seconds": 3.3544,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1167.05,
+          "mean": 1167.05
+        },
+        "cpu_pct_one_core": {
+          "peak": 319.7,
+          "mean": 136.27
+        },
+        "cpu_pct_machine": {
+          "peak": 26.64,
+          "mean": 11.35
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 100.0,
+          "mean": 86.83
+        },
+        "system_ram_used_mb": {
+          "peak": 1975.18,
+          "mean": 1970.0
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3976.222974783,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9995236396789551
+            ],
+            [
+              "<|en|>",
+              0.00028479774482548237
+            ],
+            [
+              "<|nl|>",
+              2.9252369131427258e-05
+            ],
+            [
+              "<|es|>",
+              2.429191954433918e-05
+            ],
+            [
+              "<|ru|>",
+              2.2046611775294878e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3976.779329782,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9995236396789551
+            ],
+            [
+              "<|en|>",
+              0.00028479774482548237
+            ],
+            [
+              "<|nl|>",
+              2.9252369131427258e-05
+            ],
+            [
+              "<|es|>",
+              2.429191954433918e-05
+            ],
+            [
+              "<|ru|>",
+              2.2046611775294878e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3977.47782638,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9991004467010498
+            ],
+            [
+              "<|en|>",
+              0.0005639560404233634
+            ],
+            [
+              "<|nl|>",
+              5.043425699113868e-05
+            ],
+            [
+              "<|es|>",
+              4.378817538963631e-05
+            ],
+            [
+              "<|ru|>",
+              4.1498944483464584e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3978.185372178,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9990435242652893
+            ],
+            [
+              "<|en|>",
+              0.0006538195302709937
+            ],
+            [
+              "<|nl|>",
+              4.462628567125648e-05
+            ],
+            [
+              "<|es|>",
+              4.300472937757149e-05
+            ],
+            [
+              "<|ru|>",
+              3.352624116814695e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3978.925031176,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.999277651309967
+            ],
+            [
+              "<|en|>",
+              0.00044118036748841405
+            ],
+            [
+              "<|nl|>",
+              4.2175219277851284e-05
+            ],
+            [
+              "<|es|>",
+              3.37273049808573e-05
+            ],
+            [
+              "<|ru|>",
+              3.221417136956006e-05
+            ]
+          ]
+        }
+      ],
+      "control_30s": {
+        "text": "Gestern fußen Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um 10, nicht um 9. Wir kamen um 9.45 Uhr an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+        "metrics": {
+          "wer": 0.1053,
+          "cer": 0.0898
+        },
+        "decode_seconds": 1.5848,
+        "language_detection_events": [
+          {
+            "monotonic_seconds": 3979.592086475,
+            "top_languages": [
+              [
+                "<|de|>",
+                0.9994009733200073
+              ],
+              [
+                "<|en|>",
+                0.00035406873212195933
+              ],
+              [
+                "<|nl|>",
+                3.613237277022563e-05
+              ],
+              [
+                "<|es|>",
+                3.1207069696392864e-05
+              ],
+              [
+                "<|ru|>",
+                2.9161185011616908e-05
+              ]
+            ]
+          },
+          {
+            "monotonic_seconds": 3980.161506573,
+            "top_languages": [
+              [
+                "<|de|>",
+                0.9994736313819885
+              ],
+              [
+                "<|en|>",
+                0.0003100084431935102
+              ],
+              [
+                "<|nl|>",
+                3.1644060072721913e-05
+              ],
+              [
+                "<|es|>",
+                2.6188477932009846e-05
+              ],
+              [
+                "<|ru|>",
+                2.5615707272663713e-05
+              ]
+            ]
+          }
+        ],
+        "resources": {
+          "sample_count": 4,
+          "ram_tree_rss_mb": {
+            "peak": 1167.05,
+            "mean": 1167.05
+          },
+          "cpu_pct_one_core": {
+            "peak": 286.3,
+            "mean": 153.72
+          },
+          "cpu_pct_machine": {
+            "peak": 23.86,
+            "mean": 12.81
+          },
+          "gpu_vram_mb": {
+            "peak": 1233.0,
+            "mean": 1145.0
+          },
+          "gpu_util_pct": {
+            "peak": 98.0,
+            "mean": 88.25
+          },
+          "system_ram_used_mb": {
+            "peak": 1955.71,
+            "mean": 1943.85
+          }
+        }
+      }
+    },
+    {
+      "case": "story_english_quiet",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+      "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the station, she said our train... We found a bus, but I told her not to buy tickets yet. company called. The interview was at 10, not 9. We arrived at 9.45. Please summarize what happened in two sentences.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.1786,
+        "cer": 0.1531
+      },
+      "decode_seconds": 3.1741,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1167.12,
+          "mean": 1167.12
+        },
+        "cpu_pct_one_core": {
+          "peak": 326.5,
+          "mean": 137.4
+        },
+        "cpu_pct_machine": {
+          "peak": 27.21,
+          "mean": 11.45
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 98.0,
+          "mean": 87.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1958.83,
+          "mean": 1957.41
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3981.198651671,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9900181293487549
+            ],
+            [
+              "<|de|>",
+              0.002019220031797886
+            ],
+            [
+              "<|es|>",
+              0.0016474310541525483
+            ],
+            [
+              "<|ru|>",
+              0.0011245575733482838
+            ],
+            [
+              "<|fr|>",
+              0.0008645275374874473
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3981.753517069,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9900181293487549
+            ],
+            [
+              "<|de|>",
+              0.002019220031797886
+            ],
+            [
+              "<|es|>",
+              0.0016474310541525483
+            ],
+            [
+              "<|ru|>",
+              0.0011245575733482838
+            ],
+            [
+              "<|fr|>",
+              0.0008645275374874473
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3982.434878668,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9962433576583862
+            ],
+            [
+              "<|es|>",
+              0.0006538649904541671
+            ],
+            [
+              "<|ru|>",
+              0.000546406430657953
+            ],
+            [
+              "<|de|>",
+              0.0004751369415316731
+            ],
+            [
+              "<|fr|>",
+              0.0003186485555488616
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3983.088981266,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9991218447685242
+            ],
+            [
+              "<|es|>",
+              0.00016299959679599851
+            ],
+            [
+              "<|de|>",
+              0.00012774855713360012
+            ],
+            [
+              "<|ru|>",
+              8.828577847452834e-05
+            ],
+            [
+              "<|fr|>",
+              8.119246922433376e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3983.759268964,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9975148439407349
+            ],
+            [
+              "<|es|>",
+              0.0005430305027402937
+            ],
+            [
+              "<|ru|>",
+              0.000278613151749596
+            ],
+            [
+              "<|de|>",
+              0.0002467455342411995
+            ],
+            [
+              "<|pt|>",
+              0.00022329283819999546
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_english_noise20",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+      "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the station, she said our trip was a trip to Berlin. train was canceled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at 10, not 9. We arrived at 9.45. Please summarize what happened in two sentences.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.2321,
+        "cer": 0.1667
+      },
+      "decode_seconds": 3.2684,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1167.15,
+          "mean": 1167.15
+        },
+        "cpu_pct_one_core": {
+          "peak": 319.9,
+          "mean": 136.3
+        },
+        "cpu_pct_machine": {
+          "peak": 26.66,
+          "mean": 11.36
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 94.0,
+          "mean": 92.17
+        },
+        "system_ram_used_mb": {
+          "peak": 1967.35,
+          "mean": 1958.47
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3984.413340163,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.99791020154953
+            ],
+            [
+              "<|de|>",
+              0.0003998608735855669
+            ],
+            [
+              "<|es|>",
+              0.00034699923708103597
+            ],
+            [
+              "<|ru|>",
+              0.0002266376541228965
+            ],
+            [
+              "<|fr|>",
+              0.0001848048559622839
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3984.971842662,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.99791020154953
+            ],
+            [
+              "<|de|>",
+              0.0003998608735855669
+            ],
+            [
+              "<|es|>",
+              0.00034699923708103597
+            ],
+            [
+              "<|ru|>",
+              0.0002266376541228965
+            ],
+            [
+              "<|fr|>",
+              0.0001848048559622839
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3985.675027562,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9947675466537476
+            ],
+            [
+              "<|es|>",
+              0.0008757155737839639
+            ],
+            [
+              "<|ru|>",
+              0.0007309923530556262
+            ],
+            [
+              "<|de|>",
+              0.000715791480615735
+            ],
+            [
+              "<|fr|>",
+              0.00044572053593583405
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3986.345467662,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9997075200080872
+            ],
+            [
+              "<|es|>",
+              5.2805724408244714e-05
+            ],
+            [
+              "<|de|>",
+              4.630080729839392e-05
+            ],
+            [
+              "<|ru|>",
+              2.8723996365442872e-05
+            ],
+            [
+              "<|pt|>",
+              2.6700630769482814e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3987.031629962,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9984459280967712
+            ],
+            [
+              "<|es|>",
+              0.00029587626340799034
+            ],
+            [
+              "<|de|>",
+              0.0001652477221796289
+            ],
+            [
+              "<|pt|>",
+              0.00016193845658563077
+            ],
+            [
+              "<|ru|>",
+              0.00015392355271615088
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_english_noise10",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+      "text": "Yesterday Anna and I traveled to Berlin for an interview. At the station she said our train We found a bus, but I told her not to buy tickets yet. company called. The interview was at 10, not 9. We arrived at 9.45. Please summarize what happened in two sentences.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.1786,
+        "cer": 0.1531
+      },
+      "decode_seconds": 3.1574,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1167.19,
+          "mean": 1167.19
+        },
+        "cpu_pct_one_core": {
+          "peak": 324.0,
+          "mean": 137.32
+        },
+        "cpu_pct_machine": {
+          "peak": 27.0,
+          "mean": 11.44
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 99.0,
+          "mean": 90.67
+        },
+        "system_ram_used_mb": {
+          "peak": 1972.07,
+          "mean": 1964.94
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3987.700168762,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9335590600967407
+            ],
+            [
+              "<|de|>",
+              0.023621736094355583
+            ],
+            [
+              "<|ru|>",
+              0.007731590420007706
+            ],
+            [
+              "<|es|>",
+              0.007234515156596899
+            ],
+            [
+              "<|pt|>",
+              0.004747901577502489
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3988.249106661,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9335590600967407
+            ],
+            [
+              "<|de|>",
+              0.023621736094355583
+            ],
+            [
+              "<|ru|>",
+              0.007731590420007706
+            ],
+            [
+              "<|es|>",
+              0.007234515156596899
+            ],
+            [
+              "<|pt|>",
+              0.004747901577502489
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3988.915883661,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9912675023078918
+            ],
+            [
+              "<|es|>",
+              0.0014437917852774262
+            ],
+            [
+              "<|de|>",
+              0.001205274136736989
+            ],
+            [
+              "<|ru|>",
+              0.0011121818097308278
+            ],
+            [
+              "<|fr|>",
+              0.0007536922348663211
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3989.582989361,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9978424310684204
+            ],
+            [
+              "<|es|>",
+              0.00036953508970327675
+            ],
+            [
+              "<|de|>",
+              0.00034565324313007295
+            ],
+            [
+              "<|ru|>",
+              0.00022022073972038925
+            ],
+            [
+              "<|fr|>",
+              0.000218409244553186
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3990.233216061,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.993844747543335
+            ],
+            [
+              "<|es|>",
+              0.0012428894406184554
+            ],
+            [
+              "<|ru|>",
+              0.0006496451096609235
+            ],
+            [
+              "<|de|>",
+              0.000598051177803427
+            ],
+            [
+              "<|pt|>",
+              0.0005798813654109836
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_english_pause",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+      "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the station, she said our trip train was canceled. We found a bus, but I told her not to buy tickets yet, then the company called. The interview was at 10, not 9. We arrived at 9.45. Please summarize what happened in two sentences.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.1429,
+        "cer": 0.0952
+      },
+      "decode_seconds": 3.1551,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1167.23,
+          "mean": 1167.23
+        },
+        "cpu_pct_one_core": {
+          "peak": 322.0,
+          "mean": 136.67
+        },
+        "cpu_pct_machine": {
+          "peak": 26.83,
+          "mean": 11.39
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 96.0,
+          "mean": 92.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1969.83,
+          "mean": 1963.63
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3990.869296361,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9932885766029358
+            ],
+            [
+              "<|de|>",
+              0.0012207449181005359
+            ],
+            [
+              "<|es|>",
+              0.001081926515325904
+            ],
+            [
+              "<|ru|>",
+              0.000861228269059211
+            ],
+            [
+              "<|fr|>",
+              0.0005496579688042402
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3991.410158961,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9932885766029358
+            ],
+            [
+              "<|de|>",
+              0.0012207449181005359
+            ],
+            [
+              "<|es|>",
+              0.001081926515325904
+            ],
+            [
+              "<|ru|>",
+              0.000861228269059211
+            ],
+            [
+              "<|fr|>",
+              0.0005496579688042402
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3992.08636646,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9974276423454285
+            ],
+            [
+              "<|es|>",
+              0.0004702314327005297
+            ],
+            [
+              "<|ru|>",
+              0.00042594849946908653
+            ],
+            [
+              "<|de|>",
+              0.000303582230117172
+            ],
+            [
+              "<|pt|>",
+              0.000203632254851982
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3992.75342736,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.999572217464447
+            ],
+            [
+              "<|es|>",
+              7.90246413089335e-05
+            ],
+            [
+              "<|de|>",
+              6.174438749440014e-05
+            ],
+            [
+              "<|ru|>",
+              4.6162855142029e-05
+            ],
+            [
+              "<|pt|>",
+              3.672047387226485e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3993.41009036,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9990693926811218
+            ],
+            [
+              "<|es|>",
+              0.00019428676750976592
+            ],
+            [
+              "<|ru|>",
+              0.00010362257307861
+            ],
+            [
+              "<|de|>",
+              0.00010084359382744879
+            ],
+            [
+              "<|pt|>",
+              9.66320003499277e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_english_noise15",
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+      "text": "Yesterday, Anna and I traveled to Berlin for an interview. At the station, she said our... train was canceled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at 10, not 9. We arrived at 9.45. Please summarize what happened in two sentences.",
+      "languages": [
+        "en"
+      ],
+      "metrics": {
+        "wer": 0.125,
+        "cer": 0.0782
+      },
+      "decode_seconds": 3.2201,
+      "resources": {
+        "sample_count": 7,
+        "ram_tree_rss_mb": {
+          "peak": 1167.25,
+          "mean": 1167.25
+        },
+        "cpu_pct_one_core": {
+          "peak": 221.7,
+          "mean": 130.56
+        },
+        "cpu_pct_machine": {
+          "peak": 18.47,
+          "mean": 10.88
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1205.57
+        },
+        "gpu_util_pct": {
+          "peak": 95.0,
+          "mean": 92.14
+        },
+        "system_ram_used_mb": {
+          "peak": 1971.47,
+          "mean": 1958.25
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3994.05743226,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9903935790061951
+            ],
+            [
+              "<|de|>",
+              0.002305015455931425
+            ],
+            [
+              "<|es|>",
+              0.001223025843501091
+            ],
+            [
+              "<|ru|>",
+              0.0011520468397065997
+            ],
+            [
+              "<|fr|>",
+              0.0008496046648360789
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3994.60992996,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9903935790061951
+            ],
+            [
+              "<|de|>",
+              0.002305015455931425
+            ],
+            [
+              "<|es|>",
+              0.001223025843501091
+            ],
+            [
+              "<|ru|>",
+              0.0011520468397065997
+            ],
+            [
+              "<|fr|>",
+              0.0008496046648360789
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3995.304501461,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9948455095291138
+            ],
+            [
+              "<|es|>",
+              0.000835319806355983
+            ],
+            [
+              "<|de|>",
+              0.0007197048398666084
+            ],
+            [
+              "<|ru|>",
+              0.0007177931256592274
+            ],
+            [
+              "<|fr|>",
+              0.00045526609756052494
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3995.992260861,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.9997329115867615
+            ],
+            [
+              "<|es|>",
+              4.770260784425773e-05
+            ],
+            [
+              "<|de|>",
+              4.4081451051170006e-05
+            ],
+            [
+              "<|ru|>",
+              2.5308754629804753e-05
+            ],
+            [
+              "<|pt|>",
+              2.4347873477381654e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3996.653366561,
+          "top_languages": [
+            [
+              "<|en|>",
+              0.995850682258606
+            ],
+            [
+              "<|es|>",
+              0.0008021486573852599
+            ],
+            [
+              "<|de|>",
+              0.0004872637218795717
+            ],
+            [
+              "<|ru|>",
+              0.000456420675618574
+            ],
+            [
+              "<|pt|>",
+              0.0003778108803089708
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_german_quiet",
+      "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fuhre Tina und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie. Unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufen noch keine Tickets. Er rief die Firma an. Das Gespräch war um 10, nicht um 9. Wir kamen um 9 Uhr von München. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.1579,
+        "cer": 0.1053
+      },
+      "decode_seconds": 3.2565,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1167.27,
+          "mean": 1167.27
+        },
+        "cpu_pct_one_core": {
+          "peak": 325.9,
+          "mean": 137.28
+        },
+        "cpu_pct_machine": {
+          "peak": 27.16,
+          "mean": 11.44
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1206.33
+        },
+        "gpu_util_pct": {
+          "peak": 93.0,
+          "mean": 90.83
+        },
+        "system_ram_used_mb": {
+          "peak": 1963.79,
+          "mean": 1958.31
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 3997.297171661,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9994070529937744
+            ],
+            [
+              "<|en|>",
+              0.000366328313248232
+            ],
+            [
+              "<|nl|>",
+              3.375970118213445e-05
+            ],
+            [
+              "<|es|>",
+              3.0390414394787513e-05
+            ],
+            [
+              "<|ru|>",
+              2.347661393287126e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3997.844138261,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9994070529937744
+            ],
+            [
+              "<|en|>",
+              0.000366328313248232
+            ],
+            [
+              "<|nl|>",
+              3.375970118213445e-05
+            ],
+            [
+              "<|es|>",
+              3.0390414394787513e-05
+            ],
+            [
+              "<|ru|>",
+              2.347661393287126e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3998.527580861,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9989388585090637
+            ],
+            [
+              "<|en|>",
+              0.000688187952619046
+            ],
+            [
+              "<|nl|>",
+              5.8630230341805145e-05
+            ],
+            [
+              "<|es|>",
+              4.965331027051434e-05
+            ],
+            [
+              "<|ru|>",
+              4.341851672506891e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3999.207180461,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9991462230682373
+            ],
+            [
+              "<|en|>",
+              0.0005604543839581311
+            ],
+            [
+              "<|nl|>",
+              4.383430496091023e-05
+            ],
+            [
+              "<|es|>",
+              4.3505337089300156e-05
+            ],
+            [
+              "<|ru|>",
+              3.038028080482036e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 3999.908938661,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9992398023605347
+            ],
+            [
+              "<|en|>",
+              0.0004958584904670715
+            ],
+            [
+              "<|nl|>",
+              3.691056917887181e-05
+            ],
+            [
+              "<|es|>",
+              3.301314063719474e-05
+            ],
+            [
+              "<|ru|>",
+              3.214540993212722e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_german_noise20",
+      "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern suchen Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie. Unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Er rief die Firma an. Das Gespräch war um 10, nicht um 9. Wir kamen um 9 Uhr von München. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.1228,
+        "cer": 0.1022
+      },
+      "decode_seconds": 3.271,
+      "resources": {
+        "sample_count": 7,
+        "ram_tree_rss_mb": {
+          "peak": 1167.3,
+          "mean": 1167.3
+        },
+        "cpu_pct_one_core": {
+          "peak": 248.1,
+          "mean": 130.97
+        },
+        "cpu_pct_machine": {
+          "peak": 20.68,
+          "mean": 10.91
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1205.57
+        },
+        "gpu_util_pct": {
+          "peak": 94.0,
+          "mean": 92.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1964.23,
+          "mean": 1960.12
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 4000.583956861,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.999427318572998
+            ],
+            [
+              "<|en|>",
+              0.0003634433087427169
+            ],
+            [
+              "<|nl|>",
+              3.1035393476486206e-05
+            ],
+            [
+              "<|es|>",
+              2.5262608687626198e-05
+            ],
+            [
+              "<|ru|>",
+              2.456891343172174e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4001.134790461,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.999427318572998
+            ],
+            [
+              "<|en|>",
+              0.0003634433087427169
+            ],
+            [
+              "<|nl|>",
+              3.1035393476486206e-05
+            ],
+            [
+              "<|es|>",
+              2.5262608687626198e-05
+            ],
+            [
+              "<|ru|>",
+              2.456891343172174e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4001.81283026,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9989171028137207
+            ],
+            [
+              "<|en|>",
+              0.0006773151108063757
+            ],
+            [
+              "<|nl|>",
+              6.084197593736462e-05
+            ],
+            [
+              "<|es|>",
+              5.225838322076015e-05
+            ],
+            [
+              "<|ru|>",
+              4.8964793677441776e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4002.479029559,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9989221096038818
+            ],
+            [
+              "<|en|>",
+              0.000673513684887439
+            ],
+            [
+              "<|nl|>",
+              6.151128036435694e-05
+            ],
+            [
+              "<|es|>",
+              5.613355097011663e-05
+            ],
+            [
+              "<|ru|>",
+              4.285318573238328e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4003.217434659,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9990363121032715
+            ],
+            [
+              "<|en|>",
+              0.0006106493528932333
+            ],
+            [
+              "<|nl|>",
+              5.351955405785702e-05
+            ],
+            [
+              "<|es|>",
+              4.378410812932998e-05
+            ],
+            [
+              "<|ru|>",
+              3.9601465687155724e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_german_noise10",
+      "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Jetzt rufen Anna und ich für ein Vorstellungsgespräch nach Berlin am Bahnhof Saatgewicht. Unser Zug fällt aus, wir fanden einen Bus, aber ich sagte, kaufe noch keine Ticket. rief die Firma an. Das Gespräch war um 10, nicht um 9. Wir kamen um 9.45 Uhr Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.2105,
+        "cer": 0.1579
+      },
+      "decode_seconds": 3.2456,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1167.36,
+          "mean": 1167.36
+        },
+        "cpu_pct_one_core": {
+          "peak": 321.9,
+          "mean": 136.63
+        },
+        "cpu_pct_machine": {
+          "peak": 26.82,
+          "mean": 11.38
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1233.0
+        },
+        "gpu_util_pct": {
+          "peak": 99.0,
+          "mean": 89.0
+        },
+        "system_ram_used_mb": {
+          "peak": 1975.41,
+          "mean": 1971.05
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 4003.889128458,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.998497724533081
+            ],
+            [
+              "<|en|>",
+              0.0010550064034759998
+            ],
+            [
+              "<|nl|>",
+              6.527837103931233e-05
+            ],
+            [
+              "<|ru|>",
+              5.464197602123022e-05
+            ],
+            [
+              "<|es|>",
+              5.392010643845424e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4004.437477758,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.998497724533081
+            ],
+            [
+              "<|en|>",
+              0.0010550064034759998
+            ],
+            [
+              "<|nl|>",
+              6.527837103931233e-05
+            ],
+            [
+              "<|ru|>",
+              5.464197602123022e-05
+            ],
+            [
+              "<|es|>",
+              5.392010643845424e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4005.119980757,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9986268281936646
+            ],
+            [
+              "<|en|>",
+              0.0009250539005734026
+            ],
+            [
+              "<|nl|>",
+              6.57167038298212e-05
+            ],
+            [
+              "<|es|>",
+              5.796244295197539e-05
+            ],
+            [
+              "<|ru|>",
+              5.378516289056279e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4005.802107357,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9937605261802673
+            ],
+            [
+              "<|en|>",
+              0.004909277427941561
+            ],
+            [
+              "<|es|>",
+              0.00018787282169796526
+            ],
+            [
+              "<|ru|>",
+              0.0001793780829757452
+            ],
+            [
+              "<|nl|>",
+              0.00014097121311351657
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4006.492864556,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9983273148536682
+            ],
+            [
+              "<|en|>",
+              0.0011159562272951007
+            ],
+            [
+              "<|nl|>",
+              8.486925798933953e-05
+            ],
+            [
+              "<|es|>",
+              7.230103074107319e-05
+            ],
+            [
+              "<|ru|>",
+              6.172704161144793e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_german_pause",
+      "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie. Unser Zug fällt aus, wir fanden einen Bus, aber ich sagte, kaufen noch keine Tickets. rief die Firma an. Das Gespräch war um 10, nicht um 9. Wir kamen um 9.45 Uhr. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.1404,
+        "cer": 0.1115
+      },
+      "decode_seconds": 3.2489,
+      "resources": {
+        "sample_count": 6,
+        "ram_tree_rss_mb": {
+          "peak": 1167.38,
+          "mean": 1167.38
+        },
+        "cpu_pct_one_core": {
+          "peak": 317.9,
+          "mean": 135.65
+        },
+        "cpu_pct_machine": {
+          "peak": 26.49,
+          "mean": 11.3
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1201.0
+        },
+        "gpu_util_pct": {
+          "peak": 94.0,
+          "mean": 90.33
+        },
+        "system_ram_used_mb": {
+          "peak": 1966.96,
+          "mean": 1953.01
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 4007.165717255,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9995373487472534
+            ],
+            [
+              "<|en|>",
+              0.0002759218623396009
+            ],
+            [
+              "<|nl|>",
+              2.6922120014205575e-05
+            ],
+            [
+              "<|es|>",
+              2.4637201931909658e-05
+            ],
+            [
+              "<|ru|>",
+              2.051272167591378e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4007.705489855,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9995373487472534
+            ],
+            [
+              "<|en|>",
+              0.0002759218623396009
+            ],
+            [
+              "<|nl|>",
+              2.6922120014205575e-05
+            ],
+            [
+              "<|es|>",
+              2.4637201931909658e-05
+            ],
+            [
+              "<|ru|>",
+              2.051272167591378e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4008.395832454,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9990002512931824
+            ],
+            [
+              "<|en|>",
+              0.0006421799189411104
+            ],
+            [
+              "<|nl|>",
+              5.201847670832649e-05
+            ],
+            [
+              "<|es|>",
+              4.767224163515493e-05
+            ],
+            [
+              "<|ru|>",
+              4.193321365164593e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4009.065452191,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9992055296897888
+            ],
+            [
+              "<|en|>",
+              0.0005241042235866189
+            ],
+            [
+              "<|nl|>",
+              4.0053626435110345e-05
+            ],
+            [
+              "<|es|>",
+              3.725353235495277e-05
+            ],
+            [
+              "<|ru|>",
+              3.0230894481064752e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4009.760321403,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9991509914398193
+            ],
+            [
+              "<|en|>",
+              0.0005582342855632305
+            ],
+            [
+              "<|nl|>",
+              4.095961412531324e-05
+            ],
+            [
+              "<|es|>",
+              3.805441883741878e-05
+            ],
+            [
+              "<|ru|>",
+              3.4192082239314914e-05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "case": "story_german_noise15",
+      "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "text": "Gestern besuchen Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie. Unser Zug fällt aus, wir fanden einen Bus, aber ich sagte, kaufe noch keine Ticket. Er rief die Firma an. Das Gespräch war um 10, nicht um 9. Wir kamen um 9.45 Uhr. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "languages": [
+        "de"
+      ],
+      "metrics": {
+        "wer": 0.1579,
+        "cer": 0.1238
+      },
+      "decode_seconds": 3.4847,
+      "resources": {
+        "sample_count": 7,
+        "ram_tree_rss_mb": {
+          "peak": 1167.4,
+          "mean": 1167.4
+        },
+        "cpu_pct_one_core": {
+          "peak": 325.9,
+          "mean": 131.99
+        },
+        "cpu_pct_machine": {
+          "peak": 27.16,
+          "mean": 11.0
+        },
+        "gpu_vram_mb": {
+          "peak": 1233.0,
+          "mean": 1178.14
+        },
+        "gpu_util_pct": {
+          "peak": 90.0,
+          "mean": 85.71
+        },
+        "system_ram_used_mb": {
+          "peak": 1970.3,
+          "mean": 1963.44
+        }
+      },
+      "captured_segments": 1,
+      "progressive_replay": false,
+      "partials": [],
+      "raw_final_outputs": [],
+      "errors": [],
+      "repeated_unheard_ngrams": [],
+      "language_detection_events": [
+        {
+          "monotonic_seconds": 4010.444544716,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9988118410110474
+            ],
+            [
+              "<|en|>",
+              0.0007955095497891307
+            ],
+            [
+              "<|nl|>",
+              5.6466458772774786e-05
+            ],
+            [
+              "<|es|>",
+              4.838535824092105e-05
+            ],
+            [
+              "<|ru|>",
+              4.7877372708171606e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4010.995392747,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9988118410110474
+            ],
+            [
+              "<|en|>",
+              0.0007955095497891307
+            ],
+            [
+              "<|nl|>",
+              5.6466458772774786e-05
+            ],
+            [
+              "<|es|>",
+              4.838535824092105e-05
+            ],
+            [
+              "<|ru|>",
+              4.7877372708171606e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4011.781024947,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9987953901290894
+            ],
+            [
+              "<|en|>",
+              0.0007863089558668435
+            ],
+            [
+              "<|nl|>",
+              6.320703687379137e-05
+            ],
+            [
+              "<|es|>",
+              5.608924766420387e-05
+            ],
+            [
+              "<|ru|>",
+              4.971099042450078e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4012.55366915,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9981095790863037
+            ],
+            [
+              "<|en|>",
+              0.0013469429686665535
+            ],
+            [
+              "<|es|>",
+              7.843296771170571e-05
+            ],
+            [
+              "<|nl|>",
+              7.49397513573058e-05
+            ],
+            [
+              "<|ru|>",
+              6.414682138711214e-05
+            ]
+          ]
+        },
+        {
+          "monotonic_seconds": 4013.237621463,
+          "top_languages": [
+            [
+              "<|de|>",
+              0.9986639022827148
+            ],
+            [
+              "<|en|>",
+              0.0008714626310393214
+            ],
+            [
+              "<|nl|>",
+              6.906710768816993e-05
+            ],
+            [
+              "<|es|>",
+              5.937892638030462e-05
+            ],
+            [
+              "<|ru|>",
+              4.941505176248029e-05
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

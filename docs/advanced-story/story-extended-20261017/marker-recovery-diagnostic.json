@@ -1,0 +1,242 @@
+[
+  {
+    "case": "bilingual_retelling_en_de_en_quiet",
+    "method": "Separate labeling-only request on an actual unmarked answer; not deployed in production.",
+    "source": "Yesterday, you and Anna traveled to Berlin for an interview. Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. At the station, Anna said the train was cancelled, so you looked for a bus. Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gesucht. The company called to change the time from nine to ten, and you arrived at nine forty-five. Die Firma hat angerufen, um die Zeit von neun auf zehn Uhr zu ändern, und ihr seid um neun Uhr fünfundvierzig angekommen.",
+    "source_sha256": "4351a6adc6b88d2c7feb46b7c2109bf4e8305a3dc9ee7eb23e7e7e23fa262f0a",
+    "seconds": 1.251,
+    "raw_labeling_output": "```json\n{\n  \"segments\": [\n    {\n      \"language\": \"en\",\n      \"text\": \"Yesterday, you and Anna traveled to Berlin for an interview. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"At the station, Anna said the train was cancelled, so you looked for a bus. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gesucht. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"The company called to change the time from nine to ten, and you arrived at nine forty-five. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Die Firma hat angerufen, um die Zeit von neun auf zehn Uhr zu ändern, und ihr seid um neun Uhr fünfundvierzig angekommen.\"\n    }\n  ]\n}\n```",
+    "segments": [
+      {
+        "language": "en",
+        "text": "Yesterday, you and Anna traveled to Berlin for an interview. "
+      },
+      {
+        "language": "de",
+        "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. "
+      },
+      {
+        "language": "en",
+        "text": "At the station, Anna said the train was cancelled, so you looked for a bus. "
+      },
+      {
+        "language": "de",
+        "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gesucht. "
+      },
+      {
+        "language": "en",
+        "text": "The company called to change the time from nine to ten, and you arrived at nine forty-five. "
+      },
+      {
+        "language": "de",
+        "text": "Die Firma hat angerufen, um die Zeit von neun auf zehn Uhr zu ändern, und ihr seid um neun Uhr fünfundvierzig angekommen."
+      }
+    ],
+    "valid_schema": true,
+    "exact_character_preservation": true,
+    "nonwhitespace_preservation": true,
+    "languages": [
+      "en",
+      "de",
+      "en",
+      "de",
+      "en",
+      "de"
+    ],
+    "done_reason": "stop"
+  },
+  {
+    "case": "bilingual_retelling_en_de_en_pause",
+    "method": "Separate labeling-only request on an actual unmarked answer; not deployed in production.",
+    "source": "You told Anna not to buy tickets. Du hast Anna gesagt, dass sie keine Tickets kaufen soll. Then the company called to change the interview from nine to ten. Dann hat die Firma angerufen, um das Gespräch von neun auf zehn Uhr zu verschieben. You arrived at nine forty-five. Ihr seid um neun Uhr fünfundvierzig angekommen.",
+    "source_sha256": "39b71c5145c18ee2756015ac7c041cec77289faedcd01e5247703e3c5e607c33",
+    "seconds": 0.837,
+    "raw_labeling_output": "```json\n{\n  \"segments\": [\n    {\n      \"language\": \"en\",\n      \"text\": \"You told Anna not to buy tickets. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Du hast Anna gesagt, dass sie keine Tickets kaufen soll. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"Then the company called to change the interview from nine to ten. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Dann hat die Firma angerufen, um das Gespräch von neun auf zehn Uhr zu verschieben. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"You arrived at nine forty-five. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Ihr seid um neun Uhr fünfundvierzig angekommen.\"\n    }\n  ]\n}\n```",
+    "segments": [
+      {
+        "language": "en",
+        "text": "You told Anna not to buy tickets. "
+      },
+      {
+        "language": "de",
+        "text": "Du hast Anna gesagt, dass sie keine Tickets kaufen soll. "
+      },
+      {
+        "language": "en",
+        "text": "Then the company called to change the interview from nine to ten. "
+      },
+      {
+        "language": "de",
+        "text": "Dann hat die Firma angerufen, um das Gespräch von neun auf zehn Uhr zu verschieben. "
+      },
+      {
+        "language": "en",
+        "text": "You arrived at nine forty-five. "
+      },
+      {
+        "language": "de",
+        "text": "Ihr seid um neun Uhr fünfundvierzig angekommen."
+      }
+    ],
+    "valid_schema": true,
+    "exact_character_preservation": true,
+    "nonwhitespace_preservation": true,
+    "languages": [
+      "en",
+      "de",
+      "en",
+      "de",
+      "en",
+      "de"
+    ],
+    "done_reason": "stop"
+  },
+  {
+    "case": "bilingual_retelling_de_en_de_quiet",
+    "method": "Separate labeling-only request on an actual unmarked answer; not deployed in production.",
+    "source": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. Yesterday, you and Anna traveled to Berlin for an interview. Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gefunden, aber du sagtest, sie solle noch keine Tickets kaufen. At the station, Anna said the train was cancelled, so you found a bus, but you told her not to buy tickets yet. Die Firma rief an, weil das Gespräch erst um zehn statt um neun Uhr war, und ihr kamt um neun Uhr fünfundvierzig an. The company called because the interview was at ten instead of nine, and you arrived at nine forty-five.",
+    "source_sha256": "ccba6326212a67c6f971234fab56783a1886ce1c8003923499838f22e84c6fcd",
+    "seconds": 1.019,
+    "raw_labeling_output": "```json\n{\n  \"segments\": [\n    {\n      \"language\": \"de\",\n      \"text\": \"Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"Yesterday, you and Anna traveled to Berlin for an interview. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gefunden, aber du sagtest, sie solle noch keine Tickets kaufen. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"At the station, Anna said the train was cancelled, so you found a bus, but you told her not to buy tickets yet. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Die Firma rief an, weil das Gespräch erst um zehn statt um neun Uhr war, und ihr kamt um neun Uhr fünfundvierzig an. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"The company called because the interview was at ten instead of nine, and you arrived at nine forty-five.\"\n    }\n  ]\n}\n```",
+    "segments": [
+      {
+        "language": "de",
+        "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. "
+      },
+      {
+        "language": "en",
+        "text": "Yesterday, you and Anna traveled to Berlin for an interview. "
+      },
+      {
+        "language": "de",
+        "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gefunden, aber du sagtest, sie solle noch keine Tickets kaufen. "
+      },
+      {
+        "language": "en",
+        "text": "At the station, Anna said the train was cancelled, so you found a bus, but you told her not to buy tickets yet. "
+      },
+      {
+        "language": "de",
+        "text": "Die Firma rief an, weil das Gespräch erst um zehn statt um neun Uhr war, und ihr kamt um neun Uhr fünfundvierzig an. "
+      },
+      {
+        "language": "en",
+        "text": "The company called because the interview was at ten instead of nine, and you arrived at nine forty-five."
+      }
+    ],
+    "valid_schema": true,
+    "exact_character_preservation": true,
+    "nonwhitespace_preservation": true,
+    "languages": [
+      "de",
+      "en",
+      "de",
+      "en",
+      "de",
+      "en"
+    ],
+    "done_reason": "stop"
+  },
+  {
+    "case": "bilingual_retelling_de_en_de_pause",
+    "method": "Separate labeling-only request on an actual unmarked answer; not deployed in production.",
+    "source": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. Yesterday, you and Anna traveled to Berlin for an interview. Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gefunden, aber du sagtest, sie solle noch keine Tickets kaufen. At the station, Anna said the train was cancelled, so you found a bus, but you told her not to buy tickets yet. Die Firma rief an, weil das Gespräch erst um zehn statt um neun Uhr war, und ihr kamt um neun Uhr fünfundvierzig an. The company called because the interview was at ten instead of nine, and you arrived at nine forty-five.",
+    "source_sha256": "ccba6326212a67c6f971234fab56783a1886ce1c8003923499838f22e84c6fcd",
+    "seconds": 1.368,
+    "raw_labeling_output": "```json\n{\n  \"segments\": [\n    {\n      \"language\": \"de\",\n      \"text\": \"Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"Yesterday, you and Anna traveled to Berlin for an interview. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gefunden, aber du sagtest, sie solle noch keine Tickets kaufen. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"At the station, Anna said the train was cancelled, so you found a bus, but you told her not to buy tickets yet. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Die Firma rief an, weil das Gespräch erst um zehn statt um neun Uhr war, und ihr kamt um neun Uhr fünfundvierzig an. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"The company called because the interview was at ten instead of nine, and you arrived at nine forty-five.\"\n    }\n  ]\n}\n```",
+    "segments": [
+      {
+        "language": "de",
+        "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. "
+      },
+      {
+        "language": "en",
+        "text": "Yesterday, you and Anna traveled to Berlin for an interview. "
+      },
+      {
+        "language": "de",
+        "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gefunden, aber du sagtest, sie solle noch keine Tickets kaufen. "
+      },
+      {
+        "language": "en",
+        "text": "At the station, Anna said the train was cancelled, so you found a bus, but you told her not to buy tickets yet. "
+      },
+      {
+        "language": "de",
+        "text": "Die Firma rief an, weil das Gespräch erst um zehn statt um neun Uhr war, und ihr kamt um neun Uhr fünfundvierzig an. "
+      },
+      {
+        "language": "en",
+        "text": "The company called because the interview was at ten instead of nine, and you arrived at nine forty-five."
+      }
+    ],
+    "valid_schema": true,
+    "exact_character_preservation": true,
+    "nonwhitespace_preservation": true,
+    "languages": [
+      "de",
+      "en",
+      "de",
+      "en",
+      "de",
+      "en"
+    ],
+    "done_reason": "stop"
+  },
+  {
+    "case": "long_story_de_en_de",
+    "method": "Separate labeling-only request on an actual unmarked answer; not deployed in production.",
+    "source": "Yesterday, you and Anna traveled to Berlin for an interview. Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. At the station, Anna said the train was cancelled, so you found a bus, but you told her not to buy tickets yet. Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gefunden, aber du sagtest, sie solle noch keine Tickets kaufen. The company called to change the time from nine to ten, and you arrived at nine forty-five. Die Firma rief an, um die Zeit von neun auf zehn Uhr zu ändern, und ihr kamt um neun Uhr fünfundvierzig an. Finally, the manager welcomed you and offered you some water. Schließlich hat euch der Manager begrüßt und euch etwas Wasser angeboten.",
+    "source_sha256": "3e6ce62121deba3cc0a3698b033328c46e04867005853dd8ef8fa16ef2d51404",
+    "seconds": 1.175,
+    "raw_labeling_output": "```json\n{\n  \"segments\": [\n    {\n      \"language\": \"en\",\n      \"text\": \"Yesterday, you and Anna traveled to Berlin for an interview. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"At the station, Anna said the train was cancelled, so you found a bus, but you told her not to buy tickets yet. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gefunden, aber du sagtest, sie solle noch keine Tickets kaufen. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"The company called to change the time from nine to ten, and you arrived at nine forty-five. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Die Firma rief an, um die Zeit von neun auf zehn Uhr zu ändern, und ihr kamt um neun Uhr fünfundvierzig an. \"\n    },\n    {\n      \"language\": \"en\",\n      \"text\": \"Finally, the manager welcomed you and offered you some water. \"\n    },\n    {\n      \"language\": \"de\",\n      \"text\": \"Schließlich hat euch der Manager begrüßt und euch etwas Wasser angeboten.\"\n    }\n  ]\n}\n```",
+    "segments": [
+      {
+        "language": "en",
+        "text": "Yesterday, you and Anna traveled to Berlin for an interview. "
+      },
+      {
+        "language": "de",
+        "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist. "
+      },
+      {
+        "language": "en",
+        "text": "At the station, Anna said the train was cancelled, so you found a bus, but you told her not to buy tickets yet. "
+      },
+      {
+        "language": "de",
+        "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt, also habt ihr einen Bus gefunden, aber du sagtest, sie solle noch keine Tickets kaufen. "
+      },
+      {
+        "language": "en",
+        "text": "The company called to change the time from nine to ten, and you arrived at nine forty-five. "
+      },
+      {
+        "language": "de",
+        "text": "Die Firma rief an, um die Zeit von neun auf zehn Uhr zu ändern, und ihr kamt um neun Uhr fünfundvierzig an. "
+      },
+      {
+        "language": "en",
+        "text": "Finally, the manager welcomed you and offered you some water. "
+      },
+      {
+        "language": "de",
+        "text": "Schließlich hat euch der Manager begrüßt und euch etwas Wasser angeboten."
+      }
+    ],
+    "valid_schema": true,
+    "exact_character_preservation": true,
+    "nonwhitespace_preservation": true,
+    "languages": [
+      "en",
+      "de",
+      "en",
+      "de",
+      "en",
+      "de",
+      "en",
+      "de"
+    ],
+    "done_reason": "stop"
+  }
+]

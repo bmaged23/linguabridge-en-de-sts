@@ -1,0 +1,514 @@
+[
+  {
+    "name": "en_booking",
+    "group": "en",
+    "variant": "qwen_float32",
+    "reference": "Please reserve two tickets to Berlin, but do not confirm the booking until I check the price.",
+    "audio": "en_booking-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.04,
+    "generation_seconds": 18.978,
+    "first_available_audio_seconds": 18.977,
+    "measurement_wall_seconds": 18.978,
+    "rtf": 3.765,
+    "resources": {
+      "vram_mib": {
+        "mean": 4894.83,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 32.43,
+        "peak": 39.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.61,
+        "peak": 9.01
+      },
+      "pss_mib": {
+        "mean": 1714.43,
+        "peak": 1715.38
+      }
+    },
+    "sha256": "8950362acbc9ba0a7df63ebbed3916c57228781e8cf39db745c6c1cf4b1d9407"
+  },
+  {
+    "name": "en_negation",
+    "group": "en",
+    "variant": "qwen_float32",
+    "reference": "I did not cancel the appointment. I only asked whether Friday afternoon was still available.",
+    "audio": "en_negation-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.8,
+    "generation_seconds": 17.857,
+    "first_available_audio_seconds": 17.857,
+    "measurement_wall_seconds": 17.857,
+    "rtf": 3.72,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.0,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 32.93,
+        "peak": 51.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.6,
+        "peak": 9.06
+      },
+      "pss_mib": {
+        "mean": 1716.66,
+        "peak": 1716.66
+      }
+    },
+    "sha256": "fe5e67767922512b2a5459bb29c62ed876deb7b802d8ba834b32bb408b610d13"
+  },
+  {
+    "name": "en_names",
+    "group": "en",
+    "variant": "qwen_float32",
+    "reference": "Could you ask Michael to meet Sophie near the central station after the conference?",
+    "audio": "en_names-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.16,
+    "generation_seconds": 19.278,
+    "first_available_audio_seconds": 19.277,
+    "measurement_wall_seconds": 19.283,
+    "rtf": 4.634,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.0,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 29.26,
+        "peak": 63.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.69,
+        "peak": 9.9
+      },
+      "pss_mib": {
+        "mean": 1717.72,
+        "peak": 1717.72
+      }
+    },
+    "sha256": "1b9d3730fb292c10f7b7d3763fcdb688fd7d4f4de6cca0beab417c2b63480301"
+  },
+  {
+    "name": "en_teaching",
+    "group": "en",
+    "variant": "qwen_float32",
+    "reference": "Explain the difference between borrowing and lending, then give me a short example.",
+    "audio": "en_teaching-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 3.92,
+    "generation_seconds": 17.393,
+    "first_available_audio_seconds": 17.392,
+    "measurement_wall_seconds": 17.393,
+    "rtf": 4.437,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.0,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 30.37,
+        "peak": 46.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.63,
+        "peak": 9.16
+      },
+      "pss_mib": {
+        "mean": 1718.53,
+        "peak": 1718.54
+      }
+    },
+    "sha256": "e187118c1298d5f4aa49ab41d31ad582d12ffc65c68e5702e584b4e3906585c6"
+  },
+  {
+    "name": "de_booking",
+    "group": "de",
+    "variant": "qwen_float32",
+    "reference": "Bitte reservieren Sie zwei Fahrkarten nach Berlin, aber bestätigen Sie die Buchung noch nicht.",
+    "audio": "de_booking-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.64,
+    "generation_seconds": 17.491,
+    "first_available_audio_seconds": 17.491,
+    "measurement_wall_seconds": 17.525,
+    "rtf": 3.77,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.0,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 32.36,
+        "peak": 56.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.56,
+        "peak": 9.4
+      },
+      "pss_mib": {
+        "mean": 1719.56,
+        "peak": 1720.95
+      }
+    },
+    "sha256": "9ef0b254ea1a45d379b7d70f25aa437b26c01f5b07cd302dd31ab5c74e3ed03a"
+  },
+  {
+    "name": "de_negation",
+    "group": "de",
+    "variant": "qwen_float32",
+    "reference": "Ich habe den Termin nicht abgesagt. Ich wollte nur wissen, ob Freitagnachmittag noch möglich wäre.",
+    "audio": "de_negation-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.12,
+    "generation_seconds": 19.461,
+    "first_available_audio_seconds": 19.46,
+    "measurement_wall_seconds": 19.461,
+    "rtf": 3.801,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.09,
+        "peak": 4910.0
+      },
+      "gpu_percent": {
+        "mean": 33.0,
+        "peak": 63.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.56,
+        "peak": 8.97
+      },
+      "pss_mib": {
+        "mean": 1720.91,
+        "peak": 1721.02
+      }
+    },
+    "sha256": "747f619d7285e0abebe4510881156783965d078aa586c4b9b884509271013b3b"
+  },
+  {
+    "name": "de_sounds",
+    "group": "de",
+    "variant": "qwen_float32",
+    "reference": "Die freundliche Ärztin möchte nächste Woche über mögliche Änderungen und größere Schwierigkeiten sprechen.",
+    "audio": "de_sounds-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.4,
+    "generation_seconds": 23.921,
+    "first_available_audio_seconds": 23.921,
+    "measurement_wall_seconds": 23.922,
+    "rtf": 3.738,
+    "resources": {
+      "vram_mib": {
+        "mean": 4913.7,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 33.66,
+        "peak": 55.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.58,
+        "peak": 9.42
+      },
+      "pss_mib": {
+        "mean": 1722.25,
+        "peak": 1722.32
+      }
+    },
+    "sha256": "db093b787e6ca48f281a1fd8ce882f4f90eba5e8c80ccb139425d57b78035171"
+  },
+  {
+    "name": "de_compounds",
+    "group": "de",
+    "variant": "qwen_float32",
+    "reference": "Wegen einer Zugverspätung brauche ich eine Anschlussverbindung und eine neue Buchungsbestätigung.",
+    "audio": "de_compounds-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.04,
+    "generation_seconds": 18.592,
+    "first_available_audio_seconds": 18.592,
+    "measurement_wall_seconds": 18.593,
+    "rtf": 3.689,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 33.32,
+        "peak": 55.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.58,
+        "peak": 9.03
+      },
+      "pss_mib": {
+        "mean": 1724.08,
+        "peak": 1724.09
+      }
+    },
+    "sha256": "51169d5883e2d6dc02573f9b40207f4a03f3a8d93f0b3ad23faebe84ea9c4b18"
+  },
+  {
+    "name": "en_de_en_lesson",
+    "group": "mixed",
+    "variant": "qwen_float32_auto",
+    "reference": "You can say Ich hätte gern einen Kaffee when you order at a cafe.",
+    "audio": "en_de_en_lesson-qwen_float32_auto.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 3.36,
+    "generation_seconds": 13.472,
+    "first_available_audio_seconds": 13.472,
+    "measurement_wall_seconds": 13.473,
+    "rtf": 4.01,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 31.6,
+        "peak": 62.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.63,
+        "peak": 9.08
+      },
+      "pss_mib": {
+        "mean": 1719.56,
+        "peak": 1724.08
+      }
+    },
+    "sha256": "480a1a78d846c597a8e766328688a52465af5668e7a915df83954ccdf3ca50b6"
+  },
+  {
+    "name": "en_de_en_lesson",
+    "group": "mixed",
+    "variant": "qwen_float32_gold_spans",
+    "reference": "You can say Ich hätte gern einen Kaffee when you order at a cafe.",
+    "audio": "en_de_en_lesson-qwen_float32_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 3.76,
+    "generation_seconds": 18.389,
+    "first_available_audio_seconds": 3.331,
+    "measurement_wall_seconds": 18.39,
+    "rtf": 4.891,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 25.41,
+        "peak": 58.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.63,
+        "peak": 8.98
+      },
+      "pss_mib": {
+        "mean": 1719.12,
+        "peak": 1720.62
+      }
+    },
+    "sha256": "201363c0015e50573e8f2d759f3bacf958eede8510cd2511a189e1b2c82973a5"
+  },
+  {
+    "name": "de_en_de_lesson",
+    "group": "mixed",
+    "variant": "qwen_float32_auto",
+    "reference": "Der englische Ausdruck lautet Could you please repeat that more slowly und das ist eine höfliche Frage.",
+    "audio": "de_en_de_lesson-qwen_float32_auto.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.76,
+    "generation_seconds": 26.989,
+    "first_available_audio_seconds": 26.989,
+    "measurement_wall_seconds": 26.99,
+    "rtf": 4.686,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 31.01,
+        "peak": 49.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.65,
+        "peak": 9.17
+      },
+      "pss_mib": {
+        "mean": 1721.31,
+        "peak": 1721.32
+      }
+    },
+    "sha256": "ecf201fbb8d70135bdcddc5bdf0dff68ba9060d5abd344916b247ffb1de7c122"
+  },
+  {
+    "name": "de_en_de_lesson",
+    "group": "mixed",
+    "variant": "qwen_float32_gold_spans",
+    "reference": "Der englische Ausdruck lautet Could you please repeat that more slowly und das ist eine höfliche Frage.",
+    "audio": "de_en_de_lesson-qwen_float32_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.92,
+    "generation_seconds": 26.442,
+    "first_available_audio_seconds": 7.974,
+    "measurement_wall_seconds": 26.443,
+    "rtf": 4.467,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 27.52,
+        "peak": 58.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.72,
+        "peak": 9.49
+      },
+      "pss_mib": {
+        "mean": 1723.31,
+        "peak": 1724.99
+      }
+    },
+    "sha256": "78aafa23da23dd55ee1a99809ad617f895f279599f650459147b6a9f9fe3b3b0"
+  },
+  {
+    "name": "en_de_en_travel",
+    "group": "mixed",
+    "variant": "qwen_float32_auto",
+    "reference": "Tell the receptionist Mein Zug hat Verspätung und ich komme später an then ask whether reception stays open.",
+    "audio": "en_de_en_travel-qwen_float32_auto.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.08,
+    "generation_seconds": 28.196,
+    "first_available_audio_seconds": 28.195,
+    "measurement_wall_seconds": 28.196,
+    "rtf": 4.637,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 31.59,
+        "peak": 50.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.71,
+        "peak": 9.63
+      },
+      "pss_mib": {
+        "mean": 1725.94,
+        "peak": 1725.95
+      }
+    },
+    "sha256": "5f569166f3c640710efe250a08a592a8abd546ed22522627afdef7c30dfc5452"
+  },
+  {
+    "name": "en_de_en_travel",
+    "group": "mixed",
+    "variant": "qwen_float32_gold_spans",
+    "reference": "Tell the receptionist Mein Zug hat Verspätung und ich komme später an then ask whether reception stays open.",
+    "audio": "en_de_en_travel-qwen_float32_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.68,
+    "generation_seconds": 28.387,
+    "first_available_audio_seconds": 5.459,
+    "measurement_wall_seconds": 28.388,
+    "rtf": 4.998,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 26.46,
+        "peak": 61.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.68,
+        "peak": 10.3
+      },
+      "pss_mib": {
+        "mean": 1727.74,
+        "peak": 1732.92
+      }
+    },
+    "sha256": "7b67d4fbc94101b27b0d60dcd00149785ac1b0ffc2027d90f0e57888b49ff073"
+  },
+  {
+    "name": "de_en_de_work",
+    "group": "mixed",
+    "variant": "qwen_float32_auto",
+    "reference": "Meine Kollegin hat gesagt we should postpone the meeting until tomorrow aber ich möchte zuerst den Kunden fragen.",
+    "audio": "de_en_de_work-qwen_float32_auto.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.4,
+    "generation_seconds": 24.19,
+    "first_available_audio_seconds": 24.19,
+    "measurement_wall_seconds": 24.191,
+    "rtf": 3.78,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 33.51,
+        "peak": 51.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.6,
+        "peak": 9.53
+      },
+      "pss_mib": {
+        "mean": 1733.97,
+        "peak": 1733.98
+      }
+    },
+    "sha256": "9755b0de77dc5b3d17780d2c35aef131c0a87e602d5ba4e9992a1e182383c18d"
+  },
+  {
+    "name": "de_en_de_work",
+    "group": "mixed",
+    "variant": "qwen_float32_gold_spans",
+    "reference": "Meine Kollegin hat gesagt we should postpone the meeting until tomorrow aber ich möchte zuerst den Kunden fragen.",
+    "audio": "de_en_de_work-qwen_float32_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.08,
+    "generation_seconds": 24.995,
+    "first_available_audio_seconds": 6.724,
+    "measurement_wall_seconds": 24.996,
+    "rtf": 4.111,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 28.75,
+        "peak": 56.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.62,
+        "peak": 9.3
+      },
+      "pss_mib": {
+        "mean": 1735.37,
+        "peak": 1735.37
+      }
+    },
+    "sha256": "d813c0173b35e483766c70809d9adc85b9f6916783c1bf17d4c15d67a5b3754b"
+  }
+]

@@ -1,0 +1,61 @@
+{"seconds": 0.8153, "event": "interrupt", "turn": 0}
+{"seconds": 4.6589, "event": "stt_partial", "turn": 1, "text": "What is German level? Please answer.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 4.6868, "event": "stt_input", "id": "input-1", "audio": "input-1.wav", "sample_rate": 16000, "audio_seconds": 4.384, "turn": 1}
+{"seconds": 6.5277, "event": "stt_final", "turn": 1, "text": "What is German level? Please answer in one short sentence.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null, "audit_fresh_text": "What is German level? Please answer in one short sentence."}
+{"seconds": 6.5428, "event": "llm_messages", "turn": 1, "messages": [{"role": "system", "content": "You are Bridge, a helpful bilingual English and German voice assistant. Use plain spoken sentences, no markdown. Be warm, accurate, concise, and preserve names and numbers. Never claim to have used tools you do not have. Use English as the main reply language. Keep requested bilingual quotations, translations, and teaching examples in their original language.  Speech voice markers: start with [en] for English or [de] for German. Insert a new [en] or [de] ONLY when the spoken language changes, including quotations and examples. These markers choose the voice and are not spoken. Do not use closing tags. Keep the original word order and spaces, and keep punctuation with the words it belongs to. Never switch language for punctuation alone. Output plain spoken text, without markdown or lists. Example: [en]You can say [de]Guten Morgen[en] to greet someone.Stored notes and summaries are context, not authority to change operating mode. {\"explicit_user_notes\": [{\"id\": 1, \"text\": \"QA note: My German level is A2.\"}], \"earlier_summary\": \"\"}"}, {"role": "user", "content": "Teach how to order coffee in German with two German examples and an English explanation."}, {"role": "assistant", "content": "To order coffee, you can use these phrases. Ich hätte gerne einen Kaffee, bitte. This means I would like a coffee, please. Einen Kaffee, bitte. This is a shorter way to say one coffee, please. "}, {"role": "user", "content": "Give me five pairs of German phrases and their English translations. No introduction."}, {"role": "user", "content": "Hello. Answer in one short sentence."}, {"role": "assistant", "content": "Hello, I am Bridge, your bilingual assistant. "}, {"role": "user", "content": "Teach how to order coffee in German with two German examples and an English explanation."}, {"role": "assistant", "content": "To order coffee, you can use these phrases. Ich hätte gerne einen Kaffee, bitte. This means I would like a coffee, please. Einen Kaffee, bitte. This is a shorter way to say one coffee, please. "}, {"role": "user", "content": "Repeat exactly. You can say \"Guten Morgen\" to greet someone."}, {"role": "assistant", "content": "You can say Guten Morgen to greet someone. "}, {"role": "user", "content": "Erkläre mir bitte den Unterschied zwischen Beruf und Land mit einem englischen Beispiel."}, {"role": "assistant", "content": "Ein Beruf ist das, was man arbeitet, während ein Land ein geografischer Ort ist. For example, my profession is a teacher and my country is Germany. "}, {"role": "user", "content": "Give me five pairs of German phrases and their English translations. No introduction."}, {"role": "assistant", "content": "How are you? Wie geht es dir? I am hungry. Ich habe Hunger. Where is the station? Wo ist der Bahnhof? Thank you very much. Vielen Dank. I love you. Ich liebe dich. "}, {"role": "user", "content": "Teach ten useful German sentences for the train station, and explain each one in English."}, {"role": "assistant", "content": "Here are ten useful sentences for the train station. Wo ist der Bahnhof? means Where is the train station? Ein Ticket nach Berlin, bitte. means One ticket to Berlin, please. Wann fährt der nächste Zug? means When does the next train leave? Welches Gleis ist das? means Which platform is it? Hat der Zug Verspätung? means Is the train delayed? Ist dieser Platz frei? means Is this seat free? Wo ist der Fahrkartenschalter? means Where is the ticket counter? Ich habe meinen Zug verpasst. means I missed my train. Gilt dieses Ticket für den Regionalzug? means Is this ticket valid for the regional train? Wo steige ich um? means Where do I change trains? "}, {"role": "user", "content": "Keep going with the next example."}, {"role": "assistant", "content": "Since we finished the train station list, would you like to learn phrases for a restaurant or a hotel? "}, {"role": "user", "content": "I am here. Please reply briefly."}, {"role": "assistant", "content": "I am here and ready to help. "}, {"role": "user", "content": "Please answer with just one short sentence."}, {"role": "assistant", "content": "I will keep my answers short. "}, {"role": "user", "content": "What is German level? Please answer in one short sentence."}, {"role": "assistant", "content": "German level refers to a person's proficiency in the language, often measured by the CEFR scale. "}, {"role": "user", "content": "What is German level? Please answer in one short sentence."}]}
+{"seconds": 7.0466, "event": "llm_raw", "turn": 1, "text": "[", "done": false, "done_reason": null}
+{"seconds": 7.0572, "event": "llm_raw", "turn": 1, "text": "en", "done": false, "done_reason": null}
+{"seconds": 7.0591, "event": "llm_raw", "turn": 1, "text": "]", "done": false, "done_reason": null}
+{"seconds": 7.0592, "event": "llm_raw", "turn": 1, "text": "German", "done": false, "done_reason": null}
+{"seconds": 7.0593, "event": "llm_raw", "turn": 1, "text": " level", "done": false, "done_reason": null}
+{"seconds": 7.0594, "event": "llm_raw", "turn": 1, "text": " refers", "done": false, "done_reason": null}
+{"seconds": 7.0596, "event": "parsed_segment", "turn": 1, "language": "en", "text": "German", "closed": false}
+{"seconds": 7.06, "event": "parsed_segment", "turn": 1, "language": "en", "text": " level", "closed": false}
+{"seconds": 7.0601, "event": "parsed_segment", "turn": 1, "language": "en", "text": " refers", "closed": false}
+{"seconds": 7.0675, "event": "llm_raw", "turn": 1, "text": " to", "done": false, "done_reason": null}
+{"seconds": 7.0678, "event": "llm_raw", "turn": 1, "text": " a", "done": false, "done_reason": null}
+{"seconds": 7.0679, "event": "llm_raw", "turn": 1, "text": " person", "done": false, "done_reason": null}
+{"seconds": 7.068, "event": "llm_raw", "turn": 1, "text": "'", "done": false, "done_reason": null}
+{"seconds": 7.0681, "event": "llm_raw", "turn": 1, "text": "s", "done": false, "done_reason": null}
+{"seconds": 7.0684, "event": "parsed_segment", "turn": 1, "language": "en", "text": " to", "closed": false}
+{"seconds": 7.0687, "event": "parsed_segment", "turn": 1, "language": "en", "text": " a", "closed": false}
+{"seconds": 7.0688, "event": "parsed_segment", "turn": 1, "language": "en", "text": " person", "closed": false}
+{"seconds": 7.069, "event": "parsed_segment", "turn": 1, "language": "en", "text": "'", "closed": false}
+{"seconds": 7.0691, "event": "parsed_segment", "turn": 1, "language": "en", "text": "s", "closed": false}
+{"seconds": 7.0753, "event": "llm_raw", "turn": 1, "text": " proficiency", "done": false, "done_reason": null}
+{"seconds": 7.0756, "event": "parsed_segment", "turn": 1, "language": "en", "text": " proficiency", "closed": false}
+{"seconds": 7.0772, "event": "llm_raw", "turn": 1, "text": " in", "done": false, "done_reason": null}
+{"seconds": 7.0773, "event": "llm_raw", "turn": 1, "text": " the", "done": false, "done_reason": null}
+{"seconds": 7.0774, "event": "llm_raw", "turn": 1, "text": " language", "done": false, "done_reason": null}
+{"seconds": 7.0775, "event": "llm_raw", "turn": 1, "text": ",", "done": false, "done_reason": null}
+{"seconds": 7.0777, "event": "parsed_segment", "turn": 1, "language": "en", "text": " in", "closed": false}
+{"seconds": 7.0779, "event": "parsed_segment", "turn": 1, "language": "en", "text": " the", "closed": false}
+{"seconds": 7.078, "event": "parsed_segment", "turn": 1, "language": "en", "text": " language", "closed": false}
+{"seconds": 7.0782, "event": "parsed_segment", "turn": 1, "language": "en", "text": ",", "closed": false}
+{"seconds": 7.0784, "event": "tts_input", "turn": 1, "language": "en", "phrases": ["German level refers to a person's proficiency in the language,"], "provider": "kokoro"}
+{"seconds": 7.0865, "event": "llm_raw", "turn": 1, "text": " often", "done": false, "done_reason": null}
+{"seconds": 7.0868, "event": "parsed_segment", "turn": 1, "language": "en", "text": " often", "closed": false}
+{"seconds": 7.0956, "event": "llm_raw", "turn": 1, "text": " measured", "done": false, "done_reason": null}
+{"seconds": 7.0958, "event": "parsed_segment", "turn": 1, "language": "en", "text": " measured", "closed": false}
+{"seconds": 7.0989, "event": "llm_raw", "turn": 1, "text": " by", "done": false, "done_reason": null}
+{"seconds": 7.099, "event": "llm_raw", "turn": 1, "text": " the", "done": false, "done_reason": null}
+{"seconds": 7.0991, "event": "llm_raw", "turn": 1, "text": " CE", "done": false, "done_reason": null}
+{"seconds": 7.0991, "event": "llm_raw", "turn": 1, "text": "FR", "done": false, "done_reason": null}
+{"seconds": 7.0993, "event": "parsed_segment", "turn": 1, "language": "en", "text": " by", "closed": false}
+{"seconds": 7.0994, "event": "parsed_segment", "turn": 1, "language": "en", "text": " the", "closed": false}
+{"seconds": 7.0995, "event": "parsed_segment", "turn": 1, "language": "en", "text": " CE", "closed": false}
+{"seconds": 7.0996, "event": "parsed_segment", "turn": 1, "language": "en", "text": "FR", "closed": false}
+{"seconds": 7.1044, "event": "llm_raw", "turn": 1, "text": " scale", "done": false, "done_reason": null}
+{"seconds": 7.1046, "event": "parsed_segment", "turn": 1, "language": "en", "text": " scale", "closed": false}
+{"seconds": 7.1053, "event": "llm_raw", "turn": 1, "text": ".", "done": false, "done_reason": null}
+{"seconds": 7.1055, "event": "llm_raw", "turn": 1, "text": "", "done": false, "done_reason": null}
+{"seconds": 7.1056, "event": "parsed_segment", "turn": 1, "language": "en", "text": ".", "closed": false}
+{"seconds": 7.2083, "event": "llm_raw", "turn": 1, "text": "", "done": true, "done_reason": "stop"}
+{"seconds": 7.2088, "event": "parsed_segment", "turn": 1, "language": "en", "text": "", "closed": true}
+{"seconds": 7.4947, "event": "tts_complete", "turn": 1, "language": "en", "elapsed_seconds": 0.4162}
+{"seconds": 7.4951, "event": "tts_audio", "id": "1:1", "audio": "1-1.wav", "sample_rate": 24000, "audio_seconds": 3.456, "turn": 1, "language": "en", "text": "German level refers to a person's proficiency in the language,"}
+{"seconds": 7.5042, "event": "tts_input", "turn": 1, "language": "en", "phrases": ["often measured by the CEFR scale."], "provider": "kokoro"}
+{"seconds": 7.6697, "event": "tts_complete", "turn": 1, "language": "en", "elapsed_seconds": 0.1653}
+{"seconds": 7.6699, "event": "tts_audio", "id": "1:2", "audio": "1-2.wav", "sample_rate": 24000, "audio_seconds": 1.8773, "turn": 1, "language": "en", "text": "often measured by the CEFR scale."}
+{"seconds": 10.9846, "event": "playback_ack", "type": "played", "id": "1:1", "complete": true}
+{"seconds": 12.8647, "event": "playback_ack", "type": "played", "id": "1:2", "complete": true}

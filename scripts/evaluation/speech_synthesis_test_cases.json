@@ -1,0 +1,14 @@
+[
+ {"name":"en_booking","group":"en","spans":[["en","Please reserve two tickets to Berlin, but do not confirm the booking until I check the price."]]},
+ {"name":"en_negation","group":"en","spans":[["en","I did not cancel the appointment. I only asked whether Friday afternoon was still available."]]},
+ {"name":"en_names","group":"en","spans":[["en","Could you ask Michael to meet Sophie near the central station after the conference?"]]},
+ {"name":"en_teaching","group":"en","spans":[["en","Explain the difference between borrowing and lending, then give me a short example."]]},
+ {"name":"de_booking","group":"de","spans":[["de","Bitte reservieren Sie zwei Fahrkarten nach Berlin, aber bestätigen Sie die Buchung noch nicht."]]},
+ {"name":"de_negation","group":"de","spans":[["de","Ich habe den Termin nicht abgesagt. Ich wollte nur wissen, ob Freitagnachmittag noch möglich wäre."]]},
+ {"name":"de_sounds","group":"de","spans":[["de","Die freundliche Ärztin möchte nächste Woche über mögliche Änderungen und größere Schwierigkeiten sprechen."]]},
+ {"name":"de_compounds","group":"de","spans":[["de","Wegen einer Zugverspätung brauche ich eine Anschlussverbindung und eine neue Buchungsbestätigung."]]},
+ {"name":"en_de_en_lesson","group":"mixed","spans":[["en","You can say"],["de","Ich hätte gern einen Kaffee"],["en","when you order at a cafe."]]},
+ {"name":"de_en_de_lesson","group":"mixed","spans":[["de","Der englische Ausdruck lautet"],["en","Could you please repeat that more slowly"],["de","und das ist eine höfliche Frage."]]},
+ {"name":"en_de_en_travel","group":"mixed","spans":[["en","Tell the receptionist"],["de","Mein Zug hat Verspätung und ich komme später an"],["en","then ask whether reception stays open."]]},
+ {"name":"de_en_de_work","group":"mixed","spans":[["de","Meine Kollegin hat gesagt"],["en","we should postpone the meeting until tomorrow"],["de","aber ich möchte zuerst den Kunden fragen."]]}
+]

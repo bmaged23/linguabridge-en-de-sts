@@ -1,0 +1,24 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+  "dtype": "float32",
+  "attention": "eager",
+  "reference": "reference-kokoro.wav",
+  "seed": 20261016,
+  "warmup": true,
+  "max_new_tokens": 512,
+  "parameters_total": 914643008,
+  "generation_defaults": {
+    "do_sample": true,
+    "repetition_penalty": 1.05,
+    "temperature": 0.9,
+    "top_p": 1.0,
+    "top_k": 50,
+    "subtalker_dosample": true,
+    "subtalker_temperature": 0.9,
+    "subtalker_top_p": 1.0,
+    "subtalker_top_k": 50,
+    "max_new_tokens": 8192
+  },
+  "streaming": "SDK generate_voice_clone returns full waveforms, not streaming audio. First-audio timings are per completed call/segment."
+}

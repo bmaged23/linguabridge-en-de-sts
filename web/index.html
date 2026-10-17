@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <title>LinguaBridge STS — English–German Speech-to-Speech</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body data-state="idle">
+  <svg class="icon-library" aria-hidden="true"><defs>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path d="M4 10v4m4-8v12m4-15v18m4-15v12m4-8v4"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></symbol>
+    <symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="m11 5-6 5H2v4h3l6 5V5Zm4 3a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h5m4 0h7M4 17h9m4 0h3"/><circle cx="11" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m8 5 7 7-7 7"/></symbol>
+    <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M4 14v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="12" width="4" height="8" rx="2"/><rect x="17" y="12" width="4" height="8" rx="2"/></symbol>
+  </defs></svg>
+  <aside class="rail" aria-label="Application"><a class="brand-mark" href="/" aria-label="LinguaBridge STS home"><svg><use href="#i-wave"/></svg></a><span class="rail-active" title="Speech-to-speech"><svg><use href="#i-mic"/></svg></span><span class="rail-caption">TWO LANGUAGES. ONE CONVERSATION.</span><span class="profile" title="Local session">BM</span></aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="wordmark">linguabridge<span class="wordmark-dot">.</span><span class="breadcrumb">/</span><span class="page-name">Speech-to-speech</span></div><div class="top-actions"><span class="language-tag">EN ⇄ DE <span>English · Deutsch</span></span><span class="connection" id="connection"><i></i><span id="connection-text">Checking server</span></span></div></header>
+    <main>
+      <div class="page-heading"><div><div class="eyebrow"><span></span> A LITTLE CLOSER, IN ANY LANGUAGE</div><h1>Understand each other.</h1><p>English–German audio-to-audio conversation and translation. Speak naturally, or confirm translator mode.</p></div><button class="button subtle" id="new-session"><svg><use href="#i-plus"/></svg>Clear this history</button></div>
+      <section class="bridge-controls" aria-label="Conversation mode">
+        <div class="mode-buttons" role="group" aria-label="Mode">
+          <button data-mode="translation" aria-pressed="false">↔ Translate</button><button data-mode="conversation" aria-pressed="true">Conversation</button><button data-mode="teaching" aria-pressed="false">Learn together</button>
+        </div>
+        <label class="reply-language">Reply language <select id="reply-language"><option value="same">Match the speaker</option><option value="en">English</option><option value="de">Deutsch</option></select></label>
+        <div class="mode-summary" id="mode-summary" role="status">Loading saved mode…</div>
+        <div class="confirmation-card" id="confirmation-card" role="region" aria-label="Confirm settings change" hidden><strong id="confirmation-message"></strong><p>Current settings stay active until you confirm. You can also say “yes” or “no”.</p><div><button id="confirm-change" class="button primary">Yes, confirm</button><button id="cancel-change" class="button subtle">Cancel</button></div></div>
+      </section>
+      <div class="workspace">
+        <section class="voice-panel" aria-labelledby="voice-heading">
+          <div class="panel-top"><span class="section-label" id="voice-heading">VOICE SESSION</span><span class="live-pill" id="live-pill"><i></i><span>STANDBY</span></span></div>
+      <div class="error-banner" id="error" role="alert" hidden></div>
+          <div class="voice-stage">
+            <div class="orb-wrap" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb"><div class="orb-shimmer"></div><svg><use href="#i-wave"/></svg></div><div class="orb-shadow"></div></div>
+            <h2 id="stage-title">Ready when you are.</h2><p class="stage-description" id="stage-description">One click. A more natural way to talk.</p>
+            <div class="waveform-wrap"><canvas id="waveform" aria-label="Live microphone and playback activity"></canvas></div>
+            <div class="status-line" role="status" aria-live="polite"><span class="status-dot"></span><span id="status">Microphone off</span></div>
+          </div>
+          <div class="session-controls"><button class="round-control" id="mute" disabled aria-label="Mute microphone" aria-pressed="false"><svg><use href="#i-mic"/></svg></button><button class="button primary" id="start"><svg id="start-icon"><use href="#i-mic"/></svg><span id="start-label">Start conversation</span></button><button class="round-control" id="audio-settings" aria-label="Audio settings" aria-expanded="false" aria-controls="settings-panel"><svg><use href="#i-sliders"/></svg></button></div>
+          <button class="button" id="resume-audio" hidden>Resume audio</button><p class="control-hint" id="control-hint">Your microphone turns on only when you start.</p>
+          <div class="settings-panel" id="settings-panel" hidden><div class="settings-heading">Make yourself comfortable</div><label for="microphone-select">Microphone</label><select id="microphone-select"><option value="">System default</option></select><small id="device-hint">Start once to discover microphone names. Changes apply next session.</small><label for="volume">Assistant volume <output id="volume-label">100%</output></label><input id="volume" type="range" min="0" max="100" value="100"><label class="interrupt-option"><input id="allow-interruptions" type="checkbox" checked> Interrupt replies by voice</label><small>Voice interruptions are on by default. Headphones improve echo cancellation. Turn this off to pause the microphone during replies.</small><p>Echo cancellation and noise suppression are requested from your browser.</p></div>
+          <div class="session-stats"><div><span class="stat-label">SESSION TIME</span><strong id="duration">00:00</strong></div><div><span class="stat-label">FIRST AUDIO</span><strong id="latency">—<span> s</span></strong></div><div><span class="stat-label">YOUR TURNS</span><strong id="turn-count">0</strong></div></div>
+        </section>
+        <section class="transcript-panel" aria-labelledby="transcript-heading"><div class="transcript-header"><div><h2 id="transcript-heading">The conversation</h2><span>Live transcript</span></div><span class="transcript-indicator" id="transcript-indicator"><i></i>Not connected</span></div><div class="conversation-scroll" id="conversation-scroll" tabindex="0" aria-label="Conversation transcript"><div class="empty-state" id="empty-state"><div class="empty-icon"><svg><use href="#i-wave"/></svg></div><h3>Two languages.<br>One shared conversation.</h3><p>Your original words and spoken translation<br>will appear here as you talk.</p><div class="suggestion">Try saying <span>“Where is the nearest station?”</span></div></div><div id="messages" role="log" aria-label="Conversation messages"></div><div id="partial" class="partial" aria-live="off"></div></div><div class="transcript-footer"><span class="keyboard-key">↳</span>Enable voice interruptions in audio settings when using headphones.</div></section>
+      </div>
+      <details class="memory-card" id="memory-card"><summary>Persistent memory <span id="memory-count">0 notes</span></summary>
+        <p>Mode and language settings survive restarts. Saved notes apply to conversation and teaching. Translation stays faithful to the source.</p>
+        <form id="memory-form"><label for="memory-note">Remember a preference or fact</label><div class="memory-input"><input id="memory-note" maxlength="500" placeholder="For example: I am learning German at A2 level." required><button class="button primary" type="submit">Remember</button></div></form>
+        <ul id="memory-list"></ul><div class="memory-summary"><strong>Earlier conversation summary</strong><p id="saved-summary">No summary yet.</p></div>
+        <button class="button subtle" id="clear-memory" type="button">Erase all notes and conversation history</button>
+        <p class="command-help">Hands-free commands: “LinguaBridge, translator mode”, “LinguaBridge, conversation mode”, “LinguaBridge, teaching mode”, “LinguaBridge, remember that …”. German: “Brücke, Übersetzungsmodus”, “Brücke, Lernmodus”, “Brücke, merke dir …”. Everything else in translator mode is translated.</p>
+      </details>
+      <footer class="page-footer"><span><svg><use href="#i-headphones"/></svg>Headphones make it feel even better.</span><span class="model-label">Powered by <strong id="model-name">Ollama Cloud</strong></span></footer>
+      <p class="privacy-note">Audio is processed on this computer. Conversation text is sent to Ollama Cloud. Text history and explicit notes are saved locally in SQLite. You can review or erase them below. Raw audio is not saved.</p>
+    </main>
+  </div>
+  <script src="/static/playback-policy.js"></script><script src="/static/client.js?v=linguabridge-sts-1"></script>
+</body></html>

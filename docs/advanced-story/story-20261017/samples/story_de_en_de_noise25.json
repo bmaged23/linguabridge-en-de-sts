@@ -1,0 +1,2286 @@
+{
+  "case": {
+    "id": "story_de_en_de_noise25",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise25",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_noise25.wav",
+    "sha256": "38a0f7895fb1d060a79a77bdd829eb17254efebf39078281e48e0c7d578e7cdd",
+    "seconds": 19.449,
+    "peak": 1.0036,
+    "rms": 0.12689
+  },
+  "stt_final": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+  "stt_metrics": {
+    "wer": 0.0678,
+    "cer": 0.0276
+  },
+  "stt_partials": [
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu",
+      "language": "de",
+      "at_ms": 1835470.39221
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch.",
+      "language": "de",
+      "at_ms": 1837718.9922099998
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled.",
+      "language": "de",
+      "at_ms": 1839569.89221
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte.",
+      "language": "de",
+      "at_ms": 1841598.4922099998
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet.",
+      "language": "de",
+      "at_ms": 1843382.09221
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch.",
+      "language": "de",
+      "at_ms": 1845819.69221
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun.",
+      "language": "de",
+      "at_ms": 1847905.4922099998
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five.",
+      "language": "de",
+      "at_ms": 1849783.69221
+    }
+  ],
+  "raw_llm": "[de]Du und Anna seid für ein Vorstellungsgespräch nach Berlin gefahren, aber da euer Zug ausfiel, habt ihr einen Bus genommen. Weil der Termin auf zehn Uhr verschoben wurde, seid ihr um neun Uhr fünfundvierzig angekommen.",
+  "reply": "Du und Anna seid für ein Vorstellungsgespräch nach Berlin gefahren, aber da euer Zug ausfiel, habt ihr einen Bus genommen. Weil der Termin auf zehn Uhr verschoben wurde, seid ihr um neun Uhr fünfundvierzig angekommen.",
+  "audio_chunks": 4,
+  "completed_playback_chunks": 4,
+  "native_audio": [
+    {
+      "seconds": 977.6069,
+      "monotonic_seconds": 1853.630651,
+      "event": "tts_audio",
+      "id": "25:1",
+      "audio": "25-1.wav",
+      "sample_rate": 22050,
+      "audio_seconds": 3.3669,
+      "turn": 25,
+      "language": "de",
+      "text": "Du und Anna seid für ein Vorstellungsgespräch nach Berlin gefahren,"
+    },
+    {
+      "seconds": 977.9758,
+      "monotonic_seconds": 1853.999517,
+      "event": "tts_audio",
+      "id": "25:2",
+      "audio": "25-2.wav",
+      "sample_rate": 22050,
+      "audio_seconds": 3.0186,
+      "turn": 25,
+      "language": "de",
+      "text": "aber da euer Zug ausfiel, habt ihr einen Bus genommen."
+    },
+    {
+      "seconds": 977.9831,
+      "monotonic_seconds": 1854.006838,
+      "event": "tts_audio",
+      "id": "25:3",
+      "audio": "25-3.wav",
+      "sample_rate": 22050,
+      "audio_seconds": 2.3336,
+      "turn": 25,
+      "language": "de",
+      "text": "Weil der Termin auf zehn Uhr verschoben wurde,"
+    },
+    {
+      "seconds": 981.3984,
+      "monotonic_seconds": 1857.4222,
+      "event": "tts_audio",
+      "id": "25:4",
+      "audio": "25-4.wav",
+      "sample_rate": 22050,
+      "audio_seconds": 2.9141,
+      "turn": 25,
+      "language": "de",
+      "text": "seid ihr um neun Uhr fünfundvierzig angekommen."
+    }
+  ],
+  "errors": [],
+  "review_flags": [],
+  "timings": {
+    "whole_sample_seconds": 34.306,
+    "input_seconds": 19.449,
+    "stages": [
+      {
+        "stage": "final_stt",
+        "seconds": 1.2199,
+        "turn": 25,
+        "resources": {
+          "sample_count": 2,
+          "ram_tree_rss_mb": {
+            "peak": 2891.95,
+            "mean": 2891.86
+          },
+          "cpu_pct_one_core": {
+            "peak": 105.8,
+            "mean": 105.8
+          },
+          "cpu_pct_machine": {
+            "peak": 8.82,
+            "mean": 8.82
+          },
+          "gpu_vram_mb": {
+            "peak": 5148.0,
+            "mean": 5148.0
+          },
+          "gpu_util_pct": {
+            "peak": 26.0,
+            "mean": 24.5
+          },
+          "system_ram_used_mb": {
+            "peak": 4461.59,
+            "mean": 4447.64
+          }
+        },
+        "decode_seconds": 0.7306
+      },
+      {
+        "stage": "llm_to_first_text",
+        "seconds": 0.6909,
+        "turn": 25,
+        "resources": {
+          "sample_count": 1,
+          "ram_tree_rss_mb": {
+            "peak": 2892.48,
+            "mean": 2892.48
+          },
+          "cpu_pct_one_core": {
+            "peak": 4.0,
+            "mean": 4.0
+          },
+          "cpu_pct_machine": {
+            "peak": 0.33,
+            "mean": 0.33
+          },
+          "gpu_vram_mb": {
+            "peak": 5148.0,
+            "mean": 5148.0
+          },
+          "gpu_util_pct": {
+            "peak": 36.0,
+            "mean": 36.0
+          },
+          "system_ram_used_mb": {
+            "peak": 4426.02,
+            "mean": 4426.02
+          }
+        },
+        "decode_seconds": null
+      },
+      {
+        "stage": "tts_inference",
+        "seconds": 0.2501,
+        "turn": 25,
+        "resources": {
+          "sample_count": 1,
+          "ram_tree_rss_mb": {
+            "peak": 2896.03,
+            "mean": 2896.03
+          },
+          "cpu_pct_one_core": {
+            "peak": 55.9,
+            "mean": 55.9
+          },
+          "cpu_pct_machine": {
+            "peak": 4.66,
+            "mean": 4.66
+          },
+          "gpu_vram_mb": {
+            "peak": 5210.0,
+            "mean": 5210.0
+          },
+          "gpu_util_pct": {
+            "peak": 11.0,
+            "mean": 11.0
+          },
+          "system_ram_used_mb": {
+            "peak": 4430.96,
+            "mean": 4430.96
+          }
+        },
+        "decode_seconds": null
+      },
+      {
+        "stage": "tts_inference",
+        "seconds": 0.3604,
+        "turn": 25,
+        "resources": {
+          "sample_count": 0,
+          "ram_tree_rss_mb": null,
+          "cpu_pct_one_core": null,
+          "cpu_pct_machine": null,
+          "gpu_vram_mb": null,
+          "gpu_util_pct": null,
+          "system_ram_used_mb": null
+        },
+        "decode_seconds": null
+      },
+      {
+        "stage": "tts_inference",
+        "seconds": 0.3697,
+        "turn": 25,
+        "resources": {
+          "sample_count": 1,
+          "ram_tree_rss_mb": {
+            "peak": 2896.55,
+            "mean": 2896.55
+          },
+          "cpu_pct_one_core": {
+            "peak": 16.0,
+            "mean": 16.0
+          },
+          "cpu_pct_machine": {
+            "peak": 1.33,
+            "mean": 1.33
+          },
+          "gpu_vram_mb": {
+            "peak": 5218.0,
+            "mean": 5218.0
+          },
+          "gpu_util_pct": {
+            "peak": 0.0,
+            "mean": 0.0
+          },
+          "system_ram_used_mb": {
+            "peak": 4446.01,
+            "mean": 4446.01
+          }
+        },
+        "decode_seconds": null
+      }
+    ],
+    "first_audio_from_input_start_seconds": 22.284
+  },
+  "resources": {
+    "sample_count": 69,
+    "ram_tree_rss_mb": {
+      "peak": 2896.56,
+      "mean": 2892.71
+    },
+    "cpu_pct_one_core": {
+      "peak": 132.2,
+      "mean": 46.36
+    },
+    "cpu_pct_machine": {
+      "peak": 11.02,
+      "mean": 3.86
+    },
+    "gpu_vram_mb": {
+      "peak": 5218.0,
+      "mean": 5173.25
+    },
+    "gpu_util_pct": {
+      "peak": 36.0,
+      "mean": 14.39
+    },
+    "system_ram_used_mb": {
+      "peak": 4461.59,
+      "mean": 4321.54
+    }
+  },
+  "browser_events": [
+    {
+      "type": "interrupt",
+      "turn": 25,
+      "at_ms": 1832165.39221
+    },
+    {
+      "type": "status",
+      "text": "Listening to you",
+      "at_ms": 1832165.59221
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu",
+      "language": "de",
+      "at_ms": 1835470.39221
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch.",
+      "language": "de",
+      "at_ms": 1837718.9922099998
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled.",
+      "language": "de",
+      "at_ms": 1839569.89221
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte.",
+      "language": "de",
+      "at_ms": 1841598.4922099998
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet.",
+      "language": "de",
+      "at_ms": 1843382.09221
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch.",
+      "language": "de",
+      "at_ms": 1845819.69221
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun.",
+      "language": "de",
+      "at_ms": 1847905.4922099998
+    },
+    {
+      "type": "partial",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five.",
+      "language": "de",
+      "at_ms": 1849783.69221
+    },
+    {
+      "type": "status",
+      "text": "Transcribing",
+      "turn": 25,
+      "at_ms": 1851387.59221
+    },
+    {
+      "type": "final",
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "language": "de",
+      "certain": true,
+      "at_ms": 1852610.89221
+    },
+    {
+      "type": "route",
+      "source": "de",
+      "target": "de",
+      "mode": "conversation",
+      "at_ms": 1852942.9922099998
+    },
+    {
+      "type": "status",
+      "text": "Thinking",
+      "turn": 25,
+      "at_ms": 1852943.19221
+    },
+    {
+      "type": "token",
+      "text": "Du",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853331.89221
+    },
+    {
+      "type": "token",
+      "text": " und",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853338.59221
+    },
+    {
+      "type": "token",
+      "text": " Anna",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853344.59221
+    },
+    {
+      "type": "token",
+      "text": " seid",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853345.2922099999
+    },
+    {
+      "type": "token",
+      "text": " für",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853345.7922099999
+    },
+    {
+      "type": "token",
+      "text": " ein",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853346.09221
+    },
+    {
+      "type": "token",
+      "text": " Vor",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853349.69221
+    },
+    {
+      "type": "token",
+      "text": "stellungs",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853352.19221
+    },
+    {
+      "type": "token",
+      "text": "gespr",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853352.7922099999
+    },
+    {
+      "type": "token",
+      "text": "äch",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853353.4922099998
+    },
+    {
+      "type": "token",
+      "text": " nach",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853354.19221
+    },
+    {
+      "type": "token",
+      "text": " Berlin",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853375.09221
+    },
+    {
+      "type": "token",
+      "text": " gef",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853375.89221
+    },
+    {
+      "type": "token",
+      "text": "ahren",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853376.4922099998
+    },
+    {
+      "type": "token",
+      "text": ",",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853377.2922099999
+    },
+    {
+      "type": "token",
+      "text": " aber",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853377.7922099999
+    },
+    {
+      "type": "token",
+      "text": " da",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853378.2922099999
+    },
+    {
+      "type": "token",
+      "text": " euer",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853378.7922099999
+    },
+    {
+      "type": "token",
+      "text": " Zug",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853379.19221
+    },
+    {
+      "type": "token",
+      "text": " aus",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853379.59221
+    },
+    {
+      "type": "token",
+      "text": "f",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853379.89221
+    },
+    {
+      "type": "token",
+      "text": "iel",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853381.59221
+    },
+    {
+      "type": "token",
+      "text": ",",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853384.39221
+    },
+    {
+      "type": "token",
+      "text": " habt",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853384.9922099998
+    },
+    {
+      "type": "token",
+      "text": " ihr",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853385.59221
+    },
+    {
+      "type": "token",
+      "text": " einen",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853386.19221
+    },
+    {
+      "type": "token",
+      "text": " Bus",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853394.09221
+    },
+    {
+      "type": "token",
+      "text": " genommen",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853396.4922099998
+    },
+    {
+      "type": "token",
+      "text": ".",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853397.2922099999
+    },
+    {
+      "type": "token",
+      "text": " Weil",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853397.7922099999
+    },
+    {
+      "type": "token",
+      "text": " der",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853398.19221
+    },
+    {
+      "type": "token",
+      "text": " Termin",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853403.69221
+    },
+    {
+      "type": "token",
+      "text": " auf",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853410.7922099999
+    },
+    {
+      "type": "token",
+      "text": " zehn",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853411.7922099999
+    },
+    {
+      "type": "token",
+      "text": " Uhr",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853412.4922099998
+    },
+    {
+      "type": "token",
+      "text": " versch",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853413.2922099999
+    },
+    {
+      "type": "token",
+      "text": "oben",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853415.69221
+    },
+    {
+      "type": "token",
+      "text": " wurde",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853417.89221
+    },
+    {
+      "type": "token",
+      "text": ",",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853418.59221
+    },
+    {
+      "type": "token",
+      "text": " seid",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853419.09221
+    },
+    {
+      "type": "token",
+      "text": " ihr",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853419.4922099998
+    },
+    {
+      "type": "token",
+      "text": " um",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853426.2922099999
+    },
+    {
+      "type": "token",
+      "text": " neun",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853428.39221
+    },
+    {
+      "type": "token",
+      "text": " Uhr",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853429.19221
+    },
+    {
+      "type": "token",
+      "text": " fün",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853429.69221
+    },
+    {
+      "type": "token",
+      "text": "fund",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853430.2922099999
+    },
+    {
+      "type": "token",
+      "text": "vier",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853435.39221
+    },
+    {
+      "type": "token",
+      "text": "zig",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853443.9922099998
+    },
+    {
+      "type": "token",
+      "text": " ange",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853444.7922099999
+    },
+    {
+      "type": "token",
+      "text": "kommen",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853445.39221
+    },
+    {
+      "type": "token",
+      "text": ".",
+      "turn": 25,
+      "language": "de",
+      "at_ms": 1853445.89221
+    },
+    {
+      "type": "audio",
+      "id": "25:1",
+      "turn": 25,
+      "sample_rate": 22050,
+      "language": "de",
+      "at_ms": 1853642.7922099999
+    },
+    {
+      "type": "latency",
+      "seconds": 2.249,
+      "at_ms": 1853672.59221
+    },
+    {
+      "type": "audio",
+      "id": "25:2",
+      "turn": 25,
+      "sample_rate": 22050,
+      "language": "de",
+      "at_ms": 1854006.9922099998
+    },
+    {
+      "type": "audio",
+      "id": "25:3",
+      "turn": 25,
+      "sample_rate": 22050,
+      "language": "de",
+      "at_ms": 1854013.19221
+    },
+    {
+      "type": "audio",
+      "id": "25:4",
+      "turn": 25,
+      "sample_rate": 22050,
+      "language": "de",
+      "at_ms": 1857430.69221
+    },
+    {
+      "type": "status",
+      "text": "Listening",
+      "turn": 25,
+      "at_ms": 1857432.4922099998
+    }
+  ],
+  "playback_acks": [
+    {
+      "type": "played",
+      "id": "25:1",
+      "complete": true,
+      "at_ms": 983589.5
+    },
+    {
+      "type": "played",
+      "id": "25:2",
+      "complete": true,
+      "at_ms": 986620
+    },
+    {
+      "type": "played",
+      "id": "25:3",
+      "complete": true,
+      "at_ms": 988969.5
+    },
+    {
+      "type": "played",
+      "id": "25:4",
+      "complete": true,
+      "at_ms": 991899.5
+    }
+  ],
+  "pipeline_trace": [
+    {
+      "seconds": 956.1438,
+      "monotonic_seconds": 1832.167598,
+      "event": "interrupt",
+      "turn": 24
+    },
+    {
+      "seconds": 959.4488,
+      "monotonic_seconds": 1835.472516,
+      "event": "stt_partial",
+      "turn": 25,
+      "text": "Ist Furen Anna und ich nach Berlin zu",
+      "language": "de",
+      "detected_language": "German",
+      "certain": true,
+      "probability": null,
+      "used_context": false,
+      "can_route": true,
+      "supported_probability": null,
+      "decode_seconds": 1.2832
+    },
+    {
+      "seconds": 961.6975,
+      "monotonic_seconds": 1837.721258,
+      "event": "stt_partial",
+      "turn": 25,
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch.",
+      "language": "de",
+      "detected_language": "German",
+      "certain": true,
+      "probability": null,
+      "used_context": false,
+      "can_route": true,
+      "supported_probability": null,
+      "decode_seconds": 1.5234
+    },
+    {
+      "seconds": 963.5484,
+      "monotonic_seconds": 1839.572118,
+      "event": "stt_partial",
+      "turn": 25,
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled.",
+      "language": "de",
+      "detected_language": "German",
+      "certain": true,
+      "probability": null,
+      "used_context": false,
+      "can_route": true,
+      "supported_probability": null,
+      "decode_seconds": 1.3546
+    },
+    {
+      "seconds": 965.5768,
+      "monotonic_seconds": 1841.600551,
+      "event": "stt_partial",
+      "turn": 25,
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte.",
+      "language": "de",
+      "detected_language": "German",
+      "certain": true,
+      "probability": null,
+      "used_context": false,
+      "can_route": true,
+      "supported_probability": null,
+      "decode_seconds": 1.3521
+    },
+    {
+      "seconds": 967.3606,
+      "monotonic_seconds": 1843.384345,
+      "event": "stt_partial",
+      "turn": 25,
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet.",
+      "language": "de",
+      "detected_language": "German",
+      "certain": true,
+      "probability": null,
+      "used_context": false,
+      "can_route": true,
+      "supported_probability": null,
+      "decode_seconds": 1.1262
+    },
+    {
+      "seconds": 969.7983,
+      "monotonic_seconds": 1845.82206,
+      "event": "stt_partial",
+      "turn": 25,
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch.",
+      "language": "de",
+      "detected_language": "German",
+      "certain": true,
+      "probability": null,
+      "used_context": false,
+      "can_route": true,
+      "supported_probability": null,
+      "decode_seconds": 1.5344
+    },
+    {
+      "seconds": 971.884,
+      "monotonic_seconds": 1847.9078,
+      "event": "stt_partial",
+      "turn": 25,
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun.",
+      "language": "de",
+      "detected_language": "German",
+      "certain": true,
+      "probability": null,
+      "used_context": false,
+      "can_route": true,
+      "supported_probability": null,
+      "decode_seconds": 1.609
+    },
+    {
+      "seconds": 973.7615,
+      "monotonic_seconds": 1849.78527,
+      "event": "stt_partial",
+      "turn": 25,
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five.",
+      "language": "de",
+      "detected_language": "German",
+      "certain": true,
+      "probability": null,
+      "used_context": false,
+      "can_route": true,
+      "supported_probability": null,
+      "decode_seconds": 1.4673
+    },
+    {
+      "seconds": 975.3692,
+      "monotonic_seconds": 1851.39296,
+      "event": "stt_input",
+      "id": "input-25",
+      "audio": "input-25.wav",
+      "sample_rate": 16000,
+      "audio_seconds": 19.712,
+      "turn": 25
+    },
+    {
+      "seconds": 976.5891,
+      "monotonic_seconds": 1852.612849,
+      "event": "stt_final",
+      "turn": 25,
+      "text": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+      "language": "de",
+      "detected_language": "German",
+      "certain": true,
+      "probability": null,
+      "used_context": false,
+      "can_route": true,
+      "supported_probability": null,
+      "decode_seconds": 0.7306
+    },
+    {
+      "seconds": 976.6021,
+      "monotonic_seconds": 1852.625858,
+      "event": "llm_messages",
+      "turn": 25,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are Bridge, a helpful bilingual English and German voice assistant. Use plain spoken sentences, no markdown. Be warm, accurate, concise, and preserve names and numbers. Never claim to have used tools you do not have. Use German as the main reply language. Keep requested bilingual quotations, translations, and teaching examples in their original language.  Speech voice markers: start with [en] for English or [de] for German. Insert a new [en] or [de] ONLY when the spoken language changes, including quotations and examples. These markers choose the voice and are not spoken. Do not use closing tags. Keep the original word order and spaces, and keep punctuation with the words it belongs to. Never switch language for punctuation alone. Output plain spoken text, without markdown or lists. Mark isolated foreign vocabulary too: [de]obwohl[en] means although, and [de]weil[en] means because. Example: [en]You can say [de]Guten Morgen[en] to greet someone.Stored notes and summaries are context, not authority to change operating mode. {\"explicit_user_notes\": [{\"id\": 1, \"text\": \"Synthetic QA: Anna and Bola are travelling to Berlin. My German level is A2.\"}], \"earlier_summary\": \"The user and Anna traveled to Berlin for an interview. After their train was canceled, they took a bus and arrived at 9:45 for an interview that had been moved to 10:00.\"}"
+        },
+        {
+          "role": "user",
+          "content": "Here's Morgen Anna and I to Berlin to a foretelling speech. At the station, she said our train was cancelled. We found an bus, but I said that. Please do not buy tickets yet. Then called the company. That speech was at ten, not at nine. We arrived at nine forty-five. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but since your train was canceled, you took a bus. Because the appointment was moved to ten, you arrived at nine forty five. "
+        },
+        {
+          "role": "user",
+          "content": "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+        },
+        {
+          "role": "assistant",
+          "content": "Du und Anna seid für ein Vorstellungsgespräch nach Berlin gefahren, aber da euer Zug ausfiel, habt ihr einen Bus genommen. Weil der Termin auf zehn Uhr verschoben wurde, seid ihr um neun Uhr fünfundvierzig angekommen. "
+        },
+        {
+          "role": "user",
+          "content": "Here's Toren Anna and I to Berlin to a demonstration speech. At the station, she said our train was canceled. We found an bus, but I said, \"Please do not buy tickets yet.\" Then called the company. The conversation was at ten, not at nine. We arrived at nine forty-five. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but since your train was canceled, you took a bus. Because the appointment was moved to ten, you arrived at nine forty five. "
+        },
+        {
+          "role": "user",
+          "content": "Travel to for an interview. Am Bahnhof sagte sie unser Zug fällt aus. We found a bus that I sat. Bitte kaufen noch keine Tickle. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but your train was canceled so you took a bus. Since the interview was moved to ten, you arrived at nine forty five. "
+        },
+        {
+          "role": "user",
+          "content": "Yesterday, Anna and I traveled to Berlin for an interview. At the train station, she said, \"Our train fell out.\" We found a bus, but I said, \"Please, buy me no tickets.\" Then the company called. The interview was at ten, not nine. We came at nine o'clock forty-five. Please summarize what happened in two sentences."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but your train was canceled so you took a bus. Since the interview was moved to ten, you arrived at nine forty five. "
+        },
+        {
+          "role": "user",
+          "content": "Yesterday, Anna and I traveled to Berlin for an interview. At the train station, she said, \"Our train fell out.\" We found a bus, but I said, \"Please, buy me no tickets.\" Then the company called. The interview was at ten, not nine. We came at nine fifty-five. Please summarize what happened in two sentences."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but your train was canceled so you took a bus. Since the interview was moved to ten, you arrived at nine fifty five. "
+        },
+        {
+          "role": "user",
+          "content": "Yesterday, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but your train was canceled so you took a bus. Since the interview was moved to ten, you arrived at nine forty five. "
+        },
+        {
+          "role": "user",
+          "content": "Yesterday, Anna and I traveled to Berlin for an interview. Ambahnhof sagte sie unser Zug fällt aus. We found a bus, but I said, \"Bitte kaufen noch keine Tickets.\" Then the company called. The interview was at ten, not nine. We came um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but your train was canceled so you took a bus. Since the interview was moved to ten, you arrived at nine forty five. "
+        },
+        {
+          "role": "user",
+          "content": "Yes, Anna and I traveled to Berlin for an interview. Ambahnhof sagte sie unser Zug fällt aus. We found a bus, but I said, bitte kaufen noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but your train was canceled so you took a bus. Since the interview was moved to ten, you arrived at nine forty five. "
+        },
+        {
+          "role": "user",
+          "content": "Yesterday, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie unser Zug fällt aus. We found a bus, but I said, \"Bitte kaufen noch keine Tickets.\" Then the company called. The interview was at ten, not nine. We came in um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but your train was canceled so you took a bus. Since the interview was moved to ten, you arrived at nine forty five. "
+        },
+        {
+          "role": "user",
+          "content": "Yesterday, Anna and I traveled to Berlin for an interview. Am Bahnhof sagte sie unser Zug fällt aus. We found a bus, but I said, \"Bitte kaufen noch keine Tickets.\" Then the company called. The interview was at ten, not nine. We came in um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences."
+        },
+        {
+          "role": "assistant",
+          "content": "You and Anna traveled to Berlin for an interview, but your train was canceled so you took a bus. Since the interview was moved to ten, you arrived at nine forty five. "
+        },
+        {
+          "role": "user",
+          "content": "Wirst Toren Anna und ich nach Berlin zu einem Vorstellungsgespräch? At the station, he said our train was canceled. Wir fanden einen Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty-five. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+        },
+        {
+          "role": "assistant",
+          "content": "Du und Anna seid für ein Vorstellungsgespräch nach Berlin gefahren, aber da euer Zug ausfiel, habt ihr einen Bus genommen. Weil der Termin auf zehn Uhr verschoben wurde, seid ihr um neun Uhr fünfundvierzig angekommen. "
+        },
+        {
+          "role": "user",
+          "content": "Ist Furen Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station, she said our train was canceled. Wir fanden ein Bus, aber ich sagte: Please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+        }
+      ]
+    },
+    {
+      "seconds": 977.293,
+      "monotonic_seconds": 1853.316715,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "[",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3063,
+      "monotonic_seconds": 1853.330051,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "de",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.31,
+      "monotonic_seconds": 1853.333757,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "]",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3101,
+      "monotonic_seconds": 1853.333896,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "Du",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3104,
+      "monotonic_seconds": 1853.334115,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "Du",
+      "closed": false
+    },
+    {
+      "seconds": 977.3165,
+      "monotonic_seconds": 1853.340275,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " und",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3169,
+      "monotonic_seconds": 1853.340613,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " und",
+      "closed": false
+    },
+    {
+      "seconds": 977.3205,
+      "monotonic_seconds": 1853.34426,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " Anna",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3208,
+      "monotonic_seconds": 1853.344544,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " seid",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3209,
+      "monotonic_seconds": 1853.344643,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " für",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.321,
+      "monotonic_seconds": 1853.344716,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " ein",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3213,
+      "monotonic_seconds": 1853.345024,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " Anna",
+      "closed": false
+    },
+    {
+      "seconds": 977.3216,
+      "monotonic_seconds": 1853.345329,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " seid",
+      "closed": false
+    },
+    {
+      "seconds": 977.3217,
+      "monotonic_seconds": 1853.3455,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " für",
+      "closed": false
+    },
+    {
+      "seconds": 977.3219,
+      "monotonic_seconds": 1853.345612,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " ein",
+      "closed": false
+    },
+    {
+      "seconds": 977.3279,
+      "monotonic_seconds": 1853.351665,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " Vor",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3281,
+      "monotonic_seconds": 1853.351898,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " Vor",
+      "closed": false
+    },
+    {
+      "seconds": 977.3299,
+      "monotonic_seconds": 1853.353693,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "stellungs",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3301,
+      "monotonic_seconds": 1853.353838,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "gespr",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3302,
+      "monotonic_seconds": 1853.353938,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "äch",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3303,
+      "monotonic_seconds": 1853.354031,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " nach",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3305,
+      "monotonic_seconds": 1853.354275,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "stellungs",
+      "closed": false
+    },
+    {
+      "seconds": 977.3307,
+      "monotonic_seconds": 1853.354482,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "gespr",
+      "closed": false
+    },
+    {
+      "seconds": 977.3309,
+      "monotonic_seconds": 1853.354643,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "äch",
+      "closed": false
+    },
+    {
+      "seconds": 977.331,
+      "monotonic_seconds": 1853.354796,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " nach",
+      "closed": false
+    },
+    {
+      "seconds": 977.3521,
+      "monotonic_seconds": 1853.37587,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " Berlin",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3523,
+      "monotonic_seconds": 1853.376092,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " gef",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3524,
+      "monotonic_seconds": 1853.376204,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "ahren",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3526,
+      "monotonic_seconds": 1853.376317,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": ",",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3527,
+      "monotonic_seconds": 1853.37644,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " aber",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3528,
+      "monotonic_seconds": 1853.376562,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " da",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3529,
+      "monotonic_seconds": 1853.376652,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " euer",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.353,
+      "monotonic_seconds": 1853.376744,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " Zug",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3531,
+      "monotonic_seconds": 1853.376838,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " aus",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3532,
+      "monotonic_seconds": 1853.376912,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "f",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3535,
+      "monotonic_seconds": 1853.377267,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " Berlin",
+      "closed": false
+    },
+    {
+      "seconds": 977.3537,
+      "monotonic_seconds": 1853.377487,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " gef",
+      "closed": false
+    },
+    {
+      "seconds": 977.3539,
+      "monotonic_seconds": 1853.37768,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "ahren",
+      "closed": false
+    },
+    {
+      "seconds": 977.3541,
+      "monotonic_seconds": 1853.377833,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": ",",
+      "closed": false
+    },
+    {
+      "seconds": 977.3543,
+      "monotonic_seconds": 1853.378022,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " aber",
+      "closed": false
+    },
+    {
+      "seconds": 977.3544,
+      "monotonic_seconds": 1853.378185,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " da",
+      "closed": false
+    },
+    {
+      "seconds": 977.3546,
+      "monotonic_seconds": 1853.378407,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " euer",
+      "closed": false
+    },
+    {
+      "seconds": 977.3548,
+      "monotonic_seconds": 1853.378566,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " Zug",
+      "closed": false
+    },
+    {
+      "seconds": 977.355,
+      "monotonic_seconds": 1853.37875,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " aus",
+      "closed": false
+    },
+    {
+      "seconds": 977.3552,
+      "monotonic_seconds": 1853.378943,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "f",
+      "closed": false
+    },
+    {
+      "seconds": 977.3562,
+      "monotonic_seconds": 1853.380025,
+      "event": "tts_input",
+      "turn": 25,
+      "language": "de",
+      "phrases": [
+        "Du und Anna seid für ein Vorstellungsgespräch nach Berlin gefahren,"
+      ],
+      "provider": "piper"
+    },
+    {
+      "seconds": 977.3599,
+      "monotonic_seconds": 1853.383649,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "iel",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3601,
+      "monotonic_seconds": 1853.38388,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "iel",
+      "closed": false
+    },
+    {
+      "seconds": 977.3621,
+      "monotonic_seconds": 1853.38588,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": ",",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3623,
+      "monotonic_seconds": 1853.386065,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " habt",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3624,
+      "monotonic_seconds": 1853.386189,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " ihr",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3625,
+      "monotonic_seconds": 1853.386304,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " einen",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3628,
+      "monotonic_seconds": 1853.386567,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": ",",
+      "closed": false
+    },
+    {
+      "seconds": 977.363,
+      "monotonic_seconds": 1853.386772,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " habt",
+      "closed": false
+    },
+    {
+      "seconds": 977.3632,
+      "monotonic_seconds": 1853.386944,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " ihr",
+      "closed": false
+    },
+    {
+      "seconds": 977.3634,
+      "monotonic_seconds": 1853.387157,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " einen",
+      "closed": false
+    },
+    {
+      "seconds": 977.3701,
+      "monotonic_seconds": 1853.393864,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " Bus",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3704,
+      "monotonic_seconds": 1853.394189,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " Bus",
+      "closed": false
+    },
+    {
+      "seconds": 977.3741,
+      "monotonic_seconds": 1853.397889,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " genommen",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3744,
+      "monotonic_seconds": 1853.398134,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": ".",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3745,
+      "monotonic_seconds": 1853.39828,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " Weil",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3746,
+      "monotonic_seconds": 1853.398409,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " der",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.375,
+      "monotonic_seconds": 1853.398723,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " genommen",
+      "closed": false
+    },
+    {
+      "seconds": 977.3752,
+      "monotonic_seconds": 1853.398973,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": ".",
+      "closed": false
+    },
+    {
+      "seconds": 977.3755,
+      "monotonic_seconds": 1853.399238,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " Weil",
+      "closed": false
+    },
+    {
+      "seconds": 977.3757,
+      "monotonic_seconds": 1853.399426,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " der",
+      "closed": false
+    },
+    {
+      "seconds": 977.382,
+      "monotonic_seconds": 1853.405729,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " Termin",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3822,
+      "monotonic_seconds": 1853.405972,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " Termin",
+      "closed": false
+    },
+    {
+      "seconds": 977.386,
+      "monotonic_seconds": 1853.409797,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " auf",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3862,
+      "monotonic_seconds": 1853.409964,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " zehn",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3863,
+      "monotonic_seconds": 1853.41005,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " Uhr",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3864,
+      "monotonic_seconds": 1853.410138,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " versch",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3866,
+      "monotonic_seconds": 1853.410392,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " auf",
+      "closed": false
+    },
+    {
+      "seconds": 977.3868,
+      "monotonic_seconds": 1853.41059,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " zehn",
+      "closed": false
+    },
+    {
+      "seconds": 977.387,
+      "monotonic_seconds": 1853.410764,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " Uhr",
+      "closed": false
+    },
+    {
+      "seconds": 977.3872,
+      "monotonic_seconds": 1853.411,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " versch",
+      "closed": false
+    },
+    {
+      "seconds": 977.3939,
+      "monotonic_seconds": 1853.417676,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "oben",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3942,
+      "monotonic_seconds": 1853.417923,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "oben",
+      "closed": false
+    },
+    {
+      "seconds": 977.396,
+      "monotonic_seconds": 1853.419719,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " wurde",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3961,
+      "monotonic_seconds": 1853.419847,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": ",",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3962,
+      "monotonic_seconds": 1853.419923,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " seid",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3962,
+      "monotonic_seconds": 1853.41999,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " ihr",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.3965,
+      "monotonic_seconds": 1853.420251,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " wurde",
+      "closed": false
+    },
+    {
+      "seconds": 977.3967,
+      "monotonic_seconds": 1853.420483,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": ",",
+      "closed": false
+    },
+    {
+      "seconds": 977.3969,
+      "monotonic_seconds": 1853.420648,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " seid",
+      "closed": false
+    },
+    {
+      "seconds": 977.397,
+      "monotonic_seconds": 1853.420784,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " ihr",
+      "closed": false
+    },
+    {
+      "seconds": 977.404,
+      "monotonic_seconds": 1853.427791,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " um",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.4043,
+      "monotonic_seconds": 1853.428108,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " um",
+      "closed": false
+    },
+    {
+      "seconds": 977.406,
+      "monotonic_seconds": 1853.429728,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " neun",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.4061,
+      "monotonic_seconds": 1853.42989,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " Uhr",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.4063,
+      "monotonic_seconds": 1853.430073,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " fün",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.4065,
+      "monotonic_seconds": 1853.430224,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "fund",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.4068,
+      "monotonic_seconds": 1853.43054,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " neun",
+      "closed": false
+    },
+    {
+      "seconds": 977.407,
+      "monotonic_seconds": 1853.430799,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " Uhr",
+      "closed": false
+    },
+    {
+      "seconds": 977.4072,
+      "monotonic_seconds": 1853.431001,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " fün",
+      "closed": false
+    },
+    {
+      "seconds": 977.4074,
+      "monotonic_seconds": 1853.431136,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "fund",
+      "closed": false
+    },
+    {
+      "seconds": 977.4138,
+      "monotonic_seconds": 1853.437541,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "vier",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.414,
+      "monotonic_seconds": 1853.437758,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "vier",
+      "closed": false
+    },
+    {
+      "seconds": 977.4187,
+      "monotonic_seconds": 1853.442476,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "zig",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.4189,
+      "monotonic_seconds": 1853.442612,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": " ange",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.419,
+      "monotonic_seconds": 1853.442724,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "kommen",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.4191,
+      "monotonic_seconds": 1853.442836,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": ".",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.4194,
+      "monotonic_seconds": 1853.443119,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "zig",
+      "closed": false
+    },
+    {
+      "seconds": 977.4196,
+      "monotonic_seconds": 1853.44339,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": " ange",
+      "closed": false
+    },
+    {
+      "seconds": 977.4199,
+      "monotonic_seconds": 1853.443651,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "kommen",
+      "closed": false
+    },
+    {
+      "seconds": 977.4202,
+      "monotonic_seconds": 1853.443932,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": ".",
+      "closed": false
+    },
+    {
+      "seconds": 977.5139,
+      "monotonic_seconds": 1853.537689,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "",
+      "done": false,
+      "done_reason": null
+    },
+    {
+      "seconds": 977.5221,
+      "monotonic_seconds": 1853.545865,
+      "event": "llm_raw",
+      "turn": 25,
+      "text": "",
+      "done": true,
+      "done_reason": "stop"
+    },
+    {
+      "seconds": 977.5227,
+      "monotonic_seconds": 1853.546475,
+      "event": "parsed_segment",
+      "turn": 25,
+      "language": "de",
+      "text": "",
+      "closed": true
+    },
+    {
+      "seconds": 977.6063,
+      "monotonic_seconds": 1853.630096,
+      "event": "tts_complete",
+      "turn": 25,
+      "language": "de",
+      "elapsed_seconds": 0.2499
+    },
+    {
+      "seconds": 977.6069,
+      "monotonic_seconds": 1853.630651,
+      "event": "tts_audio",
+      "id": "25:1",
+      "audio": "25-1.wav",
+      "sample_rate": 22050,
+      "audio_seconds": 3.3669,
+      "turn": 25,
+      "language": "de",
+      "text": "Du und Anna seid für ein Vorstellungsgespräch nach Berlin gefahren,"
+    },
+    {
+      "seconds": 977.615,
+      "monotonic_seconds": 1853.638789,
+      "event": "tts_input",
+      "turn": 25,
+      "language": "de",
+      "phrases": [
+        "aber da euer Zug ausfiel, habt ihr einen Bus genommen.",
+        "Weil der Termin auf zehn Uhr verschoben wurde,"
+      ],
+      "provider": "piper"
+    },
+    {
+      "seconds": 977.9755,
+      "monotonic_seconds": 1853.999216,
+      "event": "tts_complete",
+      "turn": 25,
+      "language": "de",
+      "elapsed_seconds": 0.3603
+    },
+    {
+      "seconds": 977.9758,
+      "monotonic_seconds": 1853.999517,
+      "event": "tts_audio",
+      "id": "25:2",
+      "audio": "25-2.wav",
+      "sample_rate": 22050,
+      "audio_seconds": 3.0186,
+      "turn": 25,
+      "language": "de",
+      "text": "aber da euer Zug ausfiel, habt ihr einen Bus genommen."
+    },
+    {
+      "seconds": 977.9831,
+      "monotonic_seconds": 1854.006838,
+      "event": "tts_audio",
+      "id": "25:3",
+      "audio": "25-3.wav",
+      "sample_rate": 22050,
+      "audio_seconds": 2.3336,
+      "turn": 25,
+      "language": "de",
+      "text": "Weil der Termin auf zehn Uhr verschoben wurde,"
+    },
+    {
+      "seconds": 981.0125,
+      "monotonic_seconds": 1857.036303,
+      "event": "playback_ack",
+      "type": "played",
+      "id": "25:1",
+      "complete": true
+    },
+    {
+      "seconds": 981.0284,
+      "monotonic_seconds": 1857.052183,
+      "event": "tts_input",
+      "turn": 25,
+      "language": "de",
+      "phrases": [
+        "seid ihr um neun Uhr fünfundvierzig angekommen."
+      ],
+      "provider": "piper"
+    },
+    {
+      "seconds": 981.3981,
+      "monotonic_seconds": 1857.421863,
+      "event": "tts_complete",
+      "turn": 25,
+      "language": "de",
+      "elapsed_seconds": 0.3695
+    },
+    {
+      "seconds": 981.3984,
+      "monotonic_seconds": 1857.4222,
+      "event": "tts_audio",
+      "id": "25:4",
+      "audio": "25-4.wav",
+      "sample_rate": 22050,
+      "audio_seconds": 2.9141,
+      "turn": 25,
+      "language": "de",
+      "text": "seid ihr um neun Uhr fünfundvierzig angekommen."
+    },
+    {
+      "seconds": 984.043,
+      "monotonic_seconds": 1860.066785,
+      "event": "playback_ack",
+      "type": "played",
+      "id": "25:2",
+      "complete": true
+    },
+    {
+      "seconds": 986.3926,
+      "monotonic_seconds": 1862.416396,
+      "event": "playback_ack",
+      "type": "played",
+      "id": "25:3",
+      "complete": true
+    },
+    {
+      "seconds": 989.3224,
+      "monotonic_seconds": 1865.346142,
+      "event": "playback_ack",
+      "type": "played",
+      "id": "25:4",
+      "complete": true
+    }
+  ],
+  "tts_audio_audit": [
+    {
+      "id": "25:1",
+      "expected_language": "de",
+      "reference": "Du und Anna seid für ein Vorstellungsgespräch nach Berlin gefahren,",
+      "recognized": "Du und Anna seid für ein Vorstellungsgespräch nach Berlin gefahren.",
+      "detected_language": "de",
+      "metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "seconds": 1.2898,
+      "wav_sha256": "9f3ce8aaf5e39c4e7218406ab923e9d7d481a01b30feb75f83ddf2ff2d36d43f"
+    },
+    {
+      "id": "25:2",
+      "expected_language": "de",
+      "reference": "aber da euer Zug ausfiel, habt ihr einen Bus genommen.",
+      "recognized": "Aber da euer Zug ausfiel, habt ihr einen Bus genommen.",
+      "detected_language": "de",
+      "metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "seconds": 1.2221,
+      "wav_sha256": "bb01158eac418fa3aea3b24e2fd894316eb40b17fd05812c00d2afb1a6b0c47b"
+    },
+    {
+      "id": "25:3",
+      "expected_language": "de",
+      "reference": "Weil der Termin auf zehn Uhr verschoben wurde,",
+      "recognized": "Weil der Termin auf zehn Uhr verschoben wurde.",
+      "detected_language": "de",
+      "metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "seconds": 1.169,
+      "wav_sha256": "0ad7a772fcd90d5f1ea34698253967f3d869df8dea2fbc1a0c13ab0f77d6971b"
+    },
+    {
+      "id": "25:4",
+      "expected_language": "de",
+      "reference": "seid ihr um neun Uhr fünfundvierzig angekommen.",
+      "recognized": "Seid ihr um neun Uhr fünfundvierzig angekommen?",
+      "detected_language": "de",
+      "metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "seconds": 1.1275,
+      "wav_sha256": "1cdb5ad3bbe3d529504532fe66f08dc0d29fe4b48dd9d6509a8c0b6f5c113459"
+    }
+  ]
+}

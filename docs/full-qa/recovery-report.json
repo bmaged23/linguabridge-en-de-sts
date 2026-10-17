@@ -1,0 +1,2049 @@
+{
+  "checks": [
+    "KNOWN FAILURE: short recall question lost my in STT; testing explicit recall separately",
+    "Saved memory survives reload and is recalled in speech",
+    "Eight repeated real microphone/cloud/playback turns without reconnecting",
+    "Suspended audio resumes and completes another real turn",
+    "Cloud timeout is visible and the next real turn recovers",
+    "Length-limited replies finish their queued audio and recover",
+    "Voice interruption cancels playback and the next reply completes",
+    "Stopped audio clock is detected and a fresh session works",
+    "Microphone worklet failure is visible and restart works",
+    "Mute and unmute preserve microphone capture",
+    "Repeated stop and start do not leave a stale session lock"
+  ],
+  "turns": [
+    {
+      "case": "memory_recall",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 1
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "partial",
+          "text": "What is German level? Please answer.",
+          "language": "en"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 1
+        },
+        {
+          "type": "final",
+          "text": "What is German level? Please answer in one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 1
+        },
+        {
+          "type": "token",
+          "text": "German",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " level",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " refers",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " person",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": "'",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": "s",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " proficiency",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " in",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " language",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " often",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " measured",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " by",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " CE",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": "FR",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " scale",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "1:1",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.817
+        },
+        {
+          "type": "audio",
+          "id": "1:2",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 1
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "1:2",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "memory_explicit",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 2
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "partial",
+          "text": "Do you remember my saved German language?",
+          "language": "en"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 2
+        },
+        {
+          "type": "final",
+          "text": "Do you remember my saved German language proficiency level?",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 2
+        },
+        {
+          "type": "token",
+          "text": "Yes",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " your",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " German",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " level",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " A",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": "2",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "2:1",
+          "turn": 2,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.759
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 2
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "2:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 3
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 3
+        },
+        {
+          "type": "final",
+          "text": "Please, sir, with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 3
+        },
+        {
+          "type": "token",
+          "text": "Yes",
+          "turn": 3,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 3,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " your",
+          "turn": 3,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " German",
+          "turn": 3,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " level",
+          "turn": 3,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 3,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " A",
+          "turn": 3,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": "2",
+          "turn": 3,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 3,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "3:1",
+          "turn": 3,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.841
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 3
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "3:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 4
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 4
+        },
+        {
+          "type": "final",
+          "text": "Please, sir, with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 4
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 4,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " will",
+          "turn": 4,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " keep",
+          "turn": 4,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " my",
+          "turn": 4,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " responses",
+          "turn": 4,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " very",
+          "turn": 4,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " brief",
+          "turn": 4,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 4,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "4:1",
+          "turn": 4,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.749
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 4
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "4:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 5
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 5
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 5
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 5,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " will",
+          "turn": 5,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " do",
+          "turn": 5,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " that",
+          "turn": 5,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 5,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "5:1",
+          "turn": 5,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.389
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 5
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "5:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 6
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 6
+        },
+        {
+          "type": "final",
+          "text": "Please, sir, with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 6
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 6,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 6,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " listening",
+          "turn": 6,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 6,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "6:1",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 3.896
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 6
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "6:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 7
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 7
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 7
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 7,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " will",
+          "turn": 7,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " comply",
+          "turn": 7,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 7,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "7:1",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.853
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 7
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "7:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 8
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 8
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 8
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 8,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 8,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " ready",
+          "turn": 8,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 8,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "8:1",
+          "turn": 8,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.387
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 8
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "8:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 9
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 9
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 9
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 9,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " will",
+          "turn": 9,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " keep",
+          "turn": 9,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " it",
+          "turn": 9,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " short",
+          "turn": 9,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 9,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "9:1",
+          "turn": 9,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.299
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 9
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "9:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 10
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 10
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 10
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 10,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " understand",
+          "turn": 10,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 10,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "10:1",
+          "turn": 10,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.455
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 10
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "10:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 11
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 11
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 11
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 11,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " will",
+          "turn": 11,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " be",
+          "turn": 11,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " brief",
+          "turn": 11,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 11,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "11:1",
+          "turn": 11,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.494
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 11
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "11:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": true,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 12
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 12
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 12
+        },
+        {
+          "type": "error",
+          "text": "The cloud reply timed out. Please try again."
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 12
+        }
+      ],
+      "acks": []
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 13
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 13
+        },
+        {
+          "type": "final",
+          "text": "Please, sir, with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 13
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 13,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " will",
+          "turn": 13,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " do",
+          "turn": 13,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " my",
+          "turn": 13,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " best",
+          "turn": 13,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 13,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "13:1",
+          "turn": 13,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.652
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 13
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "13:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 14
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 14
+        },
+        {
+          "type": "final",
+          "text": "Please, sir, with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 14
+        },
+        {
+          "type": "notice",
+          "text": "The reply reached its length limit. Ask me to continue."
+        },
+        {
+          "type": "token",
+          "text": "This response was intentionally limited for the recovery test.",
+          "turn": 14,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "14:1",
+          "turn": 14,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.252
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 14
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "14:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 15
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 15
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 15
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 15,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 15,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " here",
+          "turn": 15,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 15,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " help",
+          "turn": 15,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 15,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "15:1",
+          "turn": 15,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.35
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 15
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "15:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "voice_interruption",
+      "events": [
+        {
+          "type": "token",
+          "text": " Berlin",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": " bitte",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": " meaning",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " One",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " ticket",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " Berlin",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " please",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": "Three",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": "W",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": "ann",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": " fährt",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": " nächste",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": " Zug",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 16,
+          "language": "de"
+        },
+        {
+          "type": "audio",
+          "id": "16:2",
+          "turn": 16,
+          "sample_rate": 22050,
+          "language": "de"
+        },
+        {
+          "type": "audio",
+          "id": "16:3",
+          "turn": 16,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " meaning",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " When",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " does",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " next",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " train",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " leave",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 16,
+          "language": "en"
+        },
+        {
+          "type": "interrupt",
+          "turn": 17
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "16:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "16:2",
+          "complete": false
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 1
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 1
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 1
+        },
+        {
+          "type": "token",
+          "text": "Hello",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " there",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "1:1",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.705
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 1
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 1
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 1
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 1
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " listening",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "1:1",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.69
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 1
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 2
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 2
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 2
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " ready",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " for",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " your",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " request",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 2,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "2:1",
+          "turn": 2,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.746
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 2
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "2:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "expected_error": false,
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 1
+        },
+        {
+          "type": "status",
+          "text": "Listening to you"
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 1
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation"
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 1
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " will",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " keep",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " my",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " answers",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": " short",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 1,
+          "language": "en"
+        },
+        {
+          "type": "audio",
+          "id": "1:1",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en"
+        },
+        {
+          "type": "latency",
+          "seconds": 2.516
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 1
+        }
+      ],
+      "acks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": true
+        }
+      ]
+    }
+  ],
+  "javascript_errors": []
+}

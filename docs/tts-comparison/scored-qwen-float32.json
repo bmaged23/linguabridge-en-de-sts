@@ -1,0 +1,1282 @@
+[
+  {
+    "name": "en_booking",
+    "group": "en",
+    "variant": "kokoro",
+    "reference": "Please reserve two tickets to Berlin, but do not confirm the booking until I check the price.",
+    "audio": "en_booking-kokoro.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.269,
+    "generation_seconds": 0.537,
+    "first_available_audio_seconds": 0.537,
+    "measurement_wall_seconds": 0.538,
+    "rtf": 0.102,
+    "resources": {
+      "vram_mib": {
+        "mean": 856.0,
+        "peak": 870.0
+      },
+      "gpu_percent": {
+        "mean": 13.0,
+        "peak": 13.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.26,
+        "peak": 8.41
+      },
+      "pss_mib": {
+        "mean": 998.84,
+        "peak": 998.84
+      }
+    },
+    "sha256": "60058538767732fa7fef29b9f26d6aab2549270674f525e89a49c306f7af4ff8",
+    "scorer": "qwen",
+    "hypothesis": "Please reserve two tickets to Berlin, but do not confirm the booking until I check the price.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 17,
+    "word_errors": 0,
+    "reference_characters": 91,
+    "character_errors": 0
+  },
+  {
+    "name": "en_negation",
+    "group": "en",
+    "variant": "kokoro",
+    "reference": "I did not cancel the appointment. I only asked whether Friday afternoon was still available.",
+    "audio": "en_negation-kokoro.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.12,
+    "generation_seconds": 0.672,
+    "first_available_audio_seconds": 0.672,
+    "measurement_wall_seconds": 0.673,
+    "rtf": 0.131,
+    "resources": {
+      "vram_mib": {
+        "mean": 982.0,
+        "peak": 982.0
+      },
+      "gpu_percent": {
+        "mean": 42.0,
+        "peak": 42.0
+      },
+      "cpu_machine_percent": {
+        "mean": 7.5,
+        "peak": 8.42
+      },
+      "pss_mib": {
+        "mean": 1001.18,
+        "peak": 1001.18
+      }
+    },
+    "sha256": "a5ac64394eb2b7abae57d35b7b3c7bc61e8ae39aad490b6b4bbc273c83ab1f64",
+    "scorer": "qwen",
+    "hypothesis": "I did not cancel the appointment. I only asked whether Friday afternoon was still available.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 15,
+    "word_errors": 0,
+    "reference_characters": 90,
+    "character_errors": 0
+  },
+  {
+    "name": "en_names",
+    "group": "en",
+    "variant": "kokoro",
+    "reference": "Could you ask Michael to meet Sophie near the central station after the conference?",
+    "audio": "en_names-kokoro.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.181,
+    "generation_seconds": 0.439,
+    "first_available_audio_seconds": 0.439,
+    "measurement_wall_seconds": 0.44,
+    "rtf": 0.105,
+    "resources": {
+      "vram_mib": {
+        "mean": 982.0,
+        "peak": 982.0
+      },
+      "gpu_percent": {
+        "mean": 42.0,
+        "peak": 42.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.53,
+        "peak": 8.66
+      },
+      "pss_mib": {
+        "mean": 1008.08,
+        "peak": 1008.19
+      }
+    },
+    "sha256": "2cf3ef6e9fe8b4cb4f59447d209006f49250bc26f882bc262b4dfdfb0bc32016",
+    "scorer": "qwen",
+    "hypothesis": "Could you ask Michael to meet Sophie near the central station after the conference?",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 14,
+    "word_errors": 0,
+    "reference_characters": 82,
+    "character_errors": 0
+  },
+  {
+    "name": "en_teaching",
+    "group": "en",
+    "variant": "kokoro",
+    "reference": "Explain the difference between borrowing and lending, then give me a short example.",
+    "audio": "en_teaching-kokoro.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.373,
+    "generation_seconds": 0.511,
+    "first_available_audio_seconds": 0.511,
+    "measurement_wall_seconds": 0.512,
+    "rtf": 0.117,
+    "resources": {
+      "vram_mib": {
+        "mean": 982.0,
+        "peak": 982.0
+      },
+      "gpu_percent": {
+        "mean": 40.0,
+        "peak": 40.0
+      },
+      "cpu_machine_percent": {
+        "mean": 7.93,
+        "peak": 8.45
+      },
+      "pss_mib": {
+        "mean": 1008.22,
+        "peak": 1008.26
+      }
+    },
+    "sha256": "e860f83f3dbef90f62951b2f7d7e9b1add6437d6413aab4f24f5c264f5536ed3",
+    "scorer": "qwen",
+    "hypothesis": "Explain the difference between borrowing and lending, then give me a short example.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 13,
+    "word_errors": 0,
+    "reference_characters": 81,
+    "character_errors": 0
+  },
+  {
+    "name": "de_booking",
+    "group": "de",
+    "variant": "piper",
+    "reference": "Bitte reservieren Sie zwei Fahrkarten nach Berlin, aber bestätigen Sie die Buchung noch nicht.",
+    "audio": "de_booking-piper.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.69,
+    "generation_seconds": 0.233,
+    "first_available_audio_seconds": 0.228,
+    "measurement_wall_seconds": 0.233,
+    "rtf": 0.05,
+    "resources": {
+      "vram_mib": {
+        "mean": 982.0,
+        "peak": 982.0
+      },
+      "gpu_percent": {
+        "mean": 40.0,
+        "peak": 40.0
+      },
+      "cpu_machine_percent": {
+        "mean": 7.77,
+        "peak": 7.77
+      },
+      "pss_mib": {
+        "mean": 1009.2,
+        "peak": 1009.2
+      }
+    },
+    "sha256": "4449cc953bda57ad5a8dfae86a7f2c52df89136e0373535be0178e0f78c70cc9",
+    "scorer": "qwen",
+    "hypothesis": "Bitte reservieren Sie zwei Fahrkarten nach Berlin, aber bestätigen Sie die Buchung noch nicht.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 14,
+    "word_errors": 0,
+    "reference_characters": 92,
+    "character_errors": 0
+  },
+  {
+    "name": "de_negation",
+    "group": "de",
+    "variant": "piper",
+    "reference": "Ich habe den Termin nicht abgesagt. Ich wollte nur wissen, ob Freitagnachmittag noch möglich wäre.",
+    "audio": "de_negation-piper.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.143,
+    "generation_seconds": 0.31,
+    "first_available_audio_seconds": 0.309,
+    "measurement_wall_seconds": 0.358,
+    "rtf": 0.06,
+    "resources": {
+      "vram_mib": {
+        "mean": 1100.0,
+        "peak": 1100.0
+      },
+      "gpu_percent": {
+        "mean": 43.5,
+        "peak": 47.0
+      },
+      "cpu_machine_percent": {
+        "mean": 7.76,
+        "peak": 7.94
+      },
+      "pss_mib": {
+        "mean": 1019.95,
+        "peak": 1019.95
+      }
+    },
+    "sha256": "9a4f05ae9225dbcc71f9af1400ac253d0188378e36e58a6ba9ee090151ffe854",
+    "scorer": "qwen",
+    "hypothesis": "Ich habe den Termin nicht abgesagt. Ich wollte nur wissen, ob Freitag Nachmittag noch möglich wäre.",
+    "wer": 0.1333,
+    "cer": 0.0105,
+    "reference_words": 15,
+    "word_errors": 2,
+    "reference_characters": 95,
+    "character_errors": 1
+  },
+  {
+    "name": "de_sounds",
+    "group": "de",
+    "variant": "piper",
+    "reference": "Die freundliche Ärztin möchte nächste Woche über mögliche Änderungen und größere Schwierigkeiten sprechen.",
+    "audio": "de_sounds-piper.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.747,
+    "generation_seconds": 0.251,
+    "first_available_audio_seconds": 0.245,
+    "measurement_wall_seconds": 0.252,
+    "rtf": 0.044,
+    "resources": {
+      "vram_mib": {
+        "mean": 1100.0,
+        "peak": 1100.0
+      },
+      "gpu_percent": {
+        "mean": 47.0,
+        "peak": 47.0
+      },
+      "cpu_machine_percent": {
+        "mean": 7.47,
+        "peak": 7.47
+      },
+      "pss_mib": {
+        "mean": 1019.96,
+        "peak": 1019.96
+      }
+    },
+    "sha256": "b8c5691741a4c1a256b0158351938b5da3e145a98048d5e4c2985c576a552915",
+    "scorer": "qwen",
+    "hypothesis": "Die freundliche Ärztin möchte nächste Woche über mögliche Änderungen und größere Schwierigkeiten sprechen.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 13,
+    "word_errors": 0,
+    "reference_characters": 106,
+    "character_errors": 0
+  },
+  {
+    "name": "de_compounds",
+    "group": "de",
+    "variant": "piper",
+    "reference": "Wegen einer Zugverspätung brauche ich eine Anschlussverbindung und eine neue Buchungsbestätigung.",
+    "audio": "de_compounds-piper.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.957,
+    "generation_seconds": 0.232,
+    "first_available_audio_seconds": 0.23,
+    "measurement_wall_seconds": 0.233,
+    "rtf": 0.047,
+    "resources": {
+      "vram_mib": {
+        "mean": 1276.0,
+        "peak": 1276.0
+      },
+      "gpu_percent": {
+        "mean": 47.0,
+        "peak": 47.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.09,
+        "peak": 8.09
+      },
+      "pss_mib": {
+        "mean": 1025.21,
+        "peak": 1025.21
+      }
+    },
+    "sha256": "e30acad0191675bea04e946d8bcf50d99dc1bbe14bb6313660a77c7de062d85f",
+    "scorer": "qwen",
+    "hypothesis": "Wegen einer Zugverspätung brauche ich eine Anschlussverbindung und eine neue Buchungsbestätigung.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 11,
+    "word_errors": 0,
+    "reference_characters": 96,
+    "character_errors": 0
+  },
+  {
+    "name": "en_de_en_lesson",
+    "group": "mixed",
+    "variant": "hybrid_gold_spans",
+    "reference": "You can say Ich hätte gern einen Kaffee when you order at a cafe.",
+    "audio": "en_de_en_lesson-hybrid_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 3.784,
+    "generation_seconds": 0.381,
+    "first_available_audio_seconds": 0.119,
+    "measurement_wall_seconds": 0.388,
+    "rtf": 0.101,
+    "resources": {
+      "vram_mib": {
+        "mean": 1278.0,
+        "peak": 1278.0
+      },
+      "gpu_percent": {
+        "mean": 51.5,
+        "peak": 56.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.8,
+        "peak": 9.19
+      },
+      "pss_mib": {
+        "mean": 1026.81,
+        "peak": 1026.82
+      }
+    },
+    "sha256": "6019a5029e362292491e8012eaef75a52d2e8fcbba8fbf724064d4c5882abb20",
+    "scorer": "qwen",
+    "hypothesis": "You can say: Ich hätte gern einen Kaffee.",
+    "wer": 0.4286,
+    "cer": 0.3906,
+    "reference_words": 14,
+    "word_errors": 6,
+    "reference_characters": 64,
+    "character_errors": 25
+  },
+  {
+    "name": "en_de_en_lesson",
+    "group": "mixed",
+    "variant": "current_single_voice",
+    "reference": "You can say Ich hätte gern einen Kaffee when you order at a cafe.",
+    "audio": "en_de_en_lesson-current_single_voice.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 3.584,
+    "generation_seconds": 0.413,
+    "first_available_audio_seconds": 0.413,
+    "measurement_wall_seconds": 0.417,
+    "rtf": 0.115,
+    "resources": {
+      "vram_mib": {
+        "mean": 1278.0,
+        "peak": 1278.0
+      },
+      "gpu_percent": {
+        "mean": 56.0,
+        "peak": 56.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.48,
+        "peak": 8.67
+      },
+      "pss_mib": {
+        "mean": 1026.83,
+        "peak": 1026.83
+      }
+    },
+    "sha256": "ac8b6d8f18a48f08bcd11c0e5e068249c5d5868b233fc1102ce070175be2c972",
+    "scorer": "qwen",
+    "hypothesis": "You can say \"ich het\" \"Jern einen Kaffee\" when you order a cafe.",
+    "wer": 0.2143,
+    "cer": 0.1094,
+    "reference_words": 14,
+    "word_errors": 3,
+    "reference_characters": 64,
+    "character_errors": 7
+  },
+  {
+    "name": "de_en_de_lesson",
+    "group": "mixed",
+    "variant": "hybrid_gold_spans",
+    "reference": "Der englische Ausdruck lautet Could you please repeat that more slowly und das ist eine höfliche Frage.",
+    "audio": "de_en_de_lesson-hybrid_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.299,
+    "generation_seconds": 0.45,
+    "first_available_audio_seconds": 0.102,
+    "measurement_wall_seconds": 0.45,
+    "rtf": 0.085,
+    "resources": {
+      "vram_mib": {
+        "mean": 1278.0,
+        "peak": 1278.0
+      },
+      "gpu_percent": {
+        "mean": 56.0,
+        "peak": 56.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.2,
+        "peak": 8.66
+      },
+      "pss_mib": {
+        "mean": 1026.85,
+        "peak": 1026.85
+      }
+    },
+    "sha256": "8d870063a031f8dacf977cc0568ebef5443855718b4d59a5c2835157066a72ce",
+    "scorer": "qwen",
+    "hypothesis": "Der englische Ausdruck lautet: \"Could you please repeat that more slowly?\" Und das ist eine höfliche Frage.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 17,
+    "word_errors": 0,
+    "reference_characters": 102,
+    "character_errors": 0
+  },
+  {
+    "name": "de_en_de_lesson",
+    "group": "mixed",
+    "variant": "current_single_voice",
+    "reference": "Der englische Ausdruck lautet Could you please repeat that more slowly und das ist eine höfliche Frage.",
+    "audio": "de_en_de_lesson-current_single_voice.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.246,
+    "generation_seconds": 0.265,
+    "first_available_audio_seconds": 0.262,
+    "measurement_wall_seconds": 0.266,
+    "rtf": 0.042,
+    "resources": {
+      "vram_mib": {
+        "mean": 1278.0,
+        "peak": 1278.0
+      },
+      "gpu_percent": {
+        "mean": 56.0,
+        "peak": 56.0
+      },
+      "cpu_machine_percent": {
+        "mean": 7.31,
+        "peak": 7.31
+      },
+      "pss_mib": {
+        "mean": 1026.85,
+        "peak": 1026.85
+      }
+    },
+    "sha256": "1e4b38f2839cd5c1916d91870cccb108899a1bff31ef0fe7720c1f603e91ce0d",
+    "scorer": "qwen",
+    "hypothesis": "Der englische Ausdruck lautet \"cold, jubelhase Repart, tat moros loolly\", und das ist eine höfliche Frage.",
+    "wer": 0.4118,
+    "cer": 0.1373,
+    "reference_words": 17,
+    "word_errors": 7,
+    "reference_characters": 102,
+    "character_errors": 14
+  },
+  {
+    "name": "en_de_en_travel",
+    "group": "mixed",
+    "variant": "hybrid_gold_spans",
+    "reference": "Tell the receptionist Mein Zug hat Verspätung und ich komme später an then ask whether reception stays open.",
+    "audio": "en_de_en_travel-hybrid_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.001,
+    "generation_seconds": 0.502,
+    "first_available_audio_seconds": 0.139,
+    "measurement_wall_seconds": 0.502,
+    "rtf": 0.084,
+    "resources": {
+      "vram_mib": {
+        "mean": 1314.0,
+        "peak": 1314.0
+      },
+      "gpu_percent": {
+        "mean": 41.0,
+        "peak": 41.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.25,
+        "peak": 8.34
+      },
+      "pss_mib": {
+        "mean": 1030.26,
+        "peak": 1030.26
+      }
+    },
+    "sha256": "07ea5523ebcc17af692c9f07555d71241e80bf3bd9320a0d7f3e3dc1c6369d2a",
+    "scorer": "qwen",
+    "hypothesis": "Tell the receptionist: Mein Zug hat Verspätung und ich komme später an. Then ask whether reception stays open.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 18,
+    "word_errors": 0,
+    "reference_characters": 107,
+    "character_errors": 0
+  },
+  {
+    "name": "en_de_en_travel",
+    "group": "mixed",
+    "variant": "current_single_voice",
+    "reference": "Tell the receptionist Mein Zug hat Verspätung und ich komme später an then ask whether reception stays open.",
+    "audio": "en_de_en_travel-current_single_voice.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.891,
+    "generation_seconds": 0.92,
+    "first_available_audio_seconds": 0.92,
+    "measurement_wall_seconds": 0.92,
+    "rtf": 0.134,
+    "resources": {
+      "vram_mib": {
+        "mean": 1314.0,
+        "peak": 1314.0
+      },
+      "gpu_percent": {
+        "mean": 42.33,
+        "peak": 43.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.46,
+        "peak": 8.53
+      },
+      "pss_mib": {
+        "mean": 1030.28,
+        "peak": 1030.28
+      }
+    },
+    "sha256": "4bc609514195095af0223ee86678f420786091148ee35389938e9bead6d23a53",
+    "scorer": "qwen",
+    "hypothesis": "Tell the receptionist Maine Zug Hat verse betung und it coms better, and then ask whether reception stays open.",
+    "wer": 0.3889,
+    "cer": 0.1402,
+    "reference_words": 18,
+    "word_errors": 7,
+    "reference_characters": 107,
+    "character_errors": 15
+  },
+  {
+    "name": "de_en_de_work",
+    "group": "mixed",
+    "variant": "hybrid_gold_spans",
+    "reference": "Meine Kollegin hat gesagt we should postpone the meeting until tomorrow aber ich möchte zuerst den Kunden fragen.",
+    "audio": "de_en_de_work-hybrid_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.938,
+    "generation_seconds": 0.558,
+    "first_available_audio_seconds": 0.152,
+    "measurement_wall_seconds": 0.558,
+    "rtf": 0.094,
+    "resources": {
+      "vram_mib": {
+        "mean": 1314.0,
+        "peak": 1314.0
+      },
+      "gpu_percent": {
+        "mean": 43.0,
+        "peak": 43.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.77,
+        "peak": 9.16
+      },
+      "pss_mib": {
+        "mean": 1030.29,
+        "peak": 1030.29
+      }
+    },
+    "sha256": "27b0ba4cf472b2cbaf02a1e87173278780395c36dc974618d608a53d9ebefee6",
+    "scorer": "qwen",
+    "hypothesis": "Meine Kollegin hat gesagt: \"We should postpone the meeting until tomorrow.\" Aber ich möchte zuerst den Kunden fragen.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 18,
+    "word_errors": 0,
+    "reference_characters": 112,
+    "character_errors": 0
+  },
+  {
+    "name": "de_en_de_work",
+    "group": "mixed",
+    "variant": "current_single_voice",
+    "reference": "Meine Kollegin hat gesagt we should postpone the meeting until tomorrow aber ich möchte zuerst den Kunden fragen.",
+    "audio": "de_en_de_work-current_single_voice.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.002,
+    "generation_seconds": 0.256,
+    "first_available_audio_seconds": 0.254,
+    "measurement_wall_seconds": 0.257,
+    "rtf": 0.043,
+    "resources": {
+      "vram_mib": {
+        "mean": 1314.0,
+        "peak": 1314.0
+      },
+      "gpu_percent": {
+        "mean": 45.0,
+        "peak": 45.0
+      },
+      "cpu_machine_percent": {
+        "mean": 9.08,
+        "peak": 9.08
+      },
+      "pss_mib": {
+        "mean": 1030.3,
+        "peak": 1030.3
+      }
+    },
+    "sha256": "fb0dcb964ea1013ec99c67f00321ad53b931f945fb72525b937c1767ffa495ea",
+    "scorer": "qwen",
+    "hypothesis": "Meine Kollegin hat gesagt wie Schulpostponierte Meeting und Hildemohof aber ich möchte zuerst den Kunden fragen.",
+    "wer": 0.3333,
+    "cer": 0.1518,
+    "reference_words": 18,
+    "word_errors": 6,
+    "reference_characters": 112,
+    "character_errors": 17
+  },
+  {
+    "name": "en_booking",
+    "group": "en",
+    "variant": "qwen_float32",
+    "reference": "Please reserve two tickets to Berlin, but do not confirm the booking until I check the price.",
+    "audio": "en_booking-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.04,
+    "generation_seconds": 18.978,
+    "first_available_audio_seconds": 18.977,
+    "measurement_wall_seconds": 18.978,
+    "rtf": 3.765,
+    "resources": {
+      "vram_mib": {
+        "mean": 4894.83,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 32.43,
+        "peak": 39.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.61,
+        "peak": 9.01
+      },
+      "pss_mib": {
+        "mean": 1714.43,
+        "peak": 1715.38
+      }
+    },
+    "sha256": "8950362acbc9ba0a7df63ebbed3916c57228781e8cf39db745c6c1cf4b1d9407",
+    "scorer": "qwen",
+    "hypothesis": "Please reserve two tickets to Berlin, but do not confirm the booking until I check the price.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 17,
+    "word_errors": 0,
+    "reference_characters": 91,
+    "character_errors": 0
+  },
+  {
+    "name": "en_negation",
+    "group": "en",
+    "variant": "qwen_float32",
+    "reference": "I did not cancel the appointment. I only asked whether Friday afternoon was still available.",
+    "audio": "en_negation-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.8,
+    "generation_seconds": 17.857,
+    "first_available_audio_seconds": 17.857,
+    "measurement_wall_seconds": 17.857,
+    "rtf": 3.72,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.0,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 32.93,
+        "peak": 51.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.6,
+        "peak": 9.06
+      },
+      "pss_mib": {
+        "mean": 1716.66,
+        "peak": 1716.66
+      }
+    },
+    "sha256": "fe5e67767922512b2a5459bb29c62ed876deb7b802d8ba834b32bb408b610d13",
+    "scorer": "qwen",
+    "hypothesis": "I did not cancel the appointment. I only asked whether Friday afternoon was still available.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 15,
+    "word_errors": 0,
+    "reference_characters": 90,
+    "character_errors": 0
+  },
+  {
+    "name": "en_names",
+    "group": "en",
+    "variant": "qwen_float32",
+    "reference": "Could you ask Michael to meet Sophie near the central station after the conference?",
+    "audio": "en_names-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.16,
+    "generation_seconds": 19.278,
+    "first_available_audio_seconds": 19.277,
+    "measurement_wall_seconds": 19.283,
+    "rtf": 4.634,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.0,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 29.26,
+        "peak": 63.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.69,
+        "peak": 9.9
+      },
+      "pss_mib": {
+        "mean": 1717.72,
+        "peak": 1717.72
+      }
+    },
+    "sha256": "1b9d3730fb292c10f7b7d3763fcdb688fd7d4f4de6cca0beab417c2b63480301",
+    "scorer": "qwen",
+    "hypothesis": "Could you ask Michael to meet Sophie near the central station after the conference?",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 14,
+    "word_errors": 0,
+    "reference_characters": 82,
+    "character_errors": 0
+  },
+  {
+    "name": "en_teaching",
+    "group": "en",
+    "variant": "qwen_float32",
+    "reference": "Explain the difference between borrowing and lending, then give me a short example.",
+    "audio": "en_teaching-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 3.92,
+    "generation_seconds": 17.393,
+    "first_available_audio_seconds": 17.392,
+    "measurement_wall_seconds": 17.393,
+    "rtf": 4.437,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.0,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 30.37,
+        "peak": 46.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.63,
+        "peak": 9.16
+      },
+      "pss_mib": {
+        "mean": 1718.53,
+        "peak": 1718.54
+      }
+    },
+    "sha256": "e187118c1298d5f4aa49ab41d31ad582d12ffc65c68e5702e584b4e3906585c6",
+    "scorer": "qwen",
+    "hypothesis": "Explain the difference between borrowing and lending, then give me a short example.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 13,
+    "word_errors": 0,
+    "reference_characters": 81,
+    "character_errors": 0
+  },
+  {
+    "name": "de_booking",
+    "group": "de",
+    "variant": "qwen_float32",
+    "reference": "Bitte reservieren Sie zwei Fahrkarten nach Berlin, aber bestätigen Sie die Buchung noch nicht.",
+    "audio": "de_booking-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 4.64,
+    "generation_seconds": 17.491,
+    "first_available_audio_seconds": 17.491,
+    "measurement_wall_seconds": 17.525,
+    "rtf": 3.77,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.0,
+        "peak": 4908.0
+      },
+      "gpu_percent": {
+        "mean": 32.36,
+        "peak": 56.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.56,
+        "peak": 9.4
+      },
+      "pss_mib": {
+        "mean": 1719.56,
+        "peak": 1720.95
+      }
+    },
+    "sha256": "9ef0b254ea1a45d379b7d70f25aa437b26c01f5b07cd302dd31ab5c74e3ed03a",
+    "scorer": "qwen",
+    "hypothesis": "Bitte reservieren Sie zwei Fahrkarten nach Berlin, aber bestätigen Sie die Buchung noch nicht.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 14,
+    "word_errors": 0,
+    "reference_characters": 92,
+    "character_errors": 0
+  },
+  {
+    "name": "de_negation",
+    "group": "de",
+    "variant": "qwen_float32",
+    "reference": "Ich habe den Termin nicht abgesagt. Ich wollte nur wissen, ob Freitagnachmittag noch möglich wäre.",
+    "audio": "de_negation-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.12,
+    "generation_seconds": 19.461,
+    "first_available_audio_seconds": 19.46,
+    "measurement_wall_seconds": 19.461,
+    "rtf": 3.801,
+    "resources": {
+      "vram_mib": {
+        "mean": 4908.09,
+        "peak": 4910.0
+      },
+      "gpu_percent": {
+        "mean": 33.0,
+        "peak": 63.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.56,
+        "peak": 8.97
+      },
+      "pss_mib": {
+        "mean": 1720.91,
+        "peak": 1721.02
+      }
+    },
+    "sha256": "747f619d7285e0abebe4510881156783965d078aa586c4b9b884509271013b3b",
+    "scorer": "qwen",
+    "hypothesis": "Ich habe den Termin nicht abgesagt. Ich wollte nur wissen, ob Freitagnachmittag noch möglich wäre.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 15,
+    "word_errors": 0,
+    "reference_characters": 95,
+    "character_errors": 0
+  },
+  {
+    "name": "de_sounds",
+    "group": "de",
+    "variant": "qwen_float32",
+    "reference": "Die freundliche Ärztin möchte nächste Woche über mögliche Änderungen und größere Schwierigkeiten sprechen.",
+    "audio": "de_sounds-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.4,
+    "generation_seconds": 23.921,
+    "first_available_audio_seconds": 23.921,
+    "measurement_wall_seconds": 23.922,
+    "rtf": 3.738,
+    "resources": {
+      "vram_mib": {
+        "mean": 4913.7,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 33.66,
+        "peak": 55.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.58,
+        "peak": 9.42
+      },
+      "pss_mib": {
+        "mean": 1722.25,
+        "peak": 1722.32
+      }
+    },
+    "sha256": "db093b787e6ca48f281a1fd8ce882f4f90eba5e8c80ccb139425d57b78035171",
+    "scorer": "qwen",
+    "hypothesis": "Die freundliche Ärztin möchte nächste Woche über mögliche Änderungen und größere Schwierigkeiten sprechen.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 13,
+    "word_errors": 0,
+    "reference_characters": 106,
+    "character_errors": 0
+  },
+  {
+    "name": "de_compounds",
+    "group": "de",
+    "variant": "qwen_float32",
+    "reference": "Wegen einer Zugverspätung brauche ich eine Anschlussverbindung und eine neue Buchungsbestätigung.",
+    "audio": "de_compounds-qwen_float32.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.04,
+    "generation_seconds": 18.592,
+    "first_available_audio_seconds": 18.592,
+    "measurement_wall_seconds": 18.593,
+    "rtf": 3.689,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 33.32,
+        "peak": 55.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.58,
+        "peak": 9.03
+      },
+      "pss_mib": {
+        "mean": 1724.08,
+        "peak": 1724.09
+      }
+    },
+    "sha256": "51169d5883e2d6dc02573f9b40207f4a03f3a8d93f0b3ad23faebe84ea9c4b18",
+    "scorer": "qwen",
+    "hypothesis": "Wegen einer Zugverspätung brauche ich eine Anschlussverbindung und eine neue Buchungsbestätigung.",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 11,
+    "word_errors": 0,
+    "reference_characters": 96,
+    "character_errors": 0
+  },
+  {
+    "name": "en_de_en_lesson",
+    "group": "mixed",
+    "variant": "qwen_float32_auto",
+    "reference": "You can say Ich hätte gern einen Kaffee when you order at a cafe.",
+    "audio": "en_de_en_lesson-qwen_float32_auto.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 3.36,
+    "generation_seconds": 13.472,
+    "first_available_audio_seconds": 13.472,
+    "measurement_wall_seconds": 13.473,
+    "rtf": 4.01,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 31.6,
+        "peak": 62.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.63,
+        "peak": 9.08
+      },
+      "pss_mib": {
+        "mean": 1719.56,
+        "peak": 1724.08
+      }
+    },
+    "sha256": "480a1a78d846c597a8e766328688a52465af5668e7a915df83954ccdf3ca50b6",
+    "scorer": "qwen",
+    "hypothesis": "You can say \"Ich hätte gerne einen Kaffee\" when you order at a café.",
+    "wer": 0.1429,
+    "cer": 0.0312,
+    "reference_words": 14,
+    "word_errors": 2,
+    "reference_characters": 64,
+    "character_errors": 2
+  },
+  {
+    "name": "en_de_en_lesson",
+    "group": "mixed",
+    "variant": "qwen_float32_gold_spans",
+    "reference": "You can say Ich hätte gern einen Kaffee when you order at a cafe.",
+    "audio": "en_de_en_lesson-qwen_float32_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 3.76,
+    "generation_seconds": 18.389,
+    "first_available_audio_seconds": 3.331,
+    "measurement_wall_seconds": 18.39,
+    "rtf": 4.891,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 25.41,
+        "peak": 58.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.63,
+        "peak": 8.98
+      },
+      "pss_mib": {
+        "mean": 1719.12,
+        "peak": 1720.62
+      }
+    },
+    "sha256": "201363c0015e50573e8f2d759f3bacf958eede8510cd2511a189e1b2c82973a5",
+    "scorer": "qwen",
+    "hypothesis": "You can say, \"Ich had a garnage in coffee\" when you order at a café.",
+    "wer": 0.4286,
+    "cer": 0.2031,
+    "reference_words": 14,
+    "word_errors": 6,
+    "reference_characters": 64,
+    "character_errors": 13
+  },
+  {
+    "name": "de_en_de_lesson",
+    "group": "mixed",
+    "variant": "qwen_float32_auto",
+    "reference": "Der englische Ausdruck lautet Could you please repeat that more slowly und das ist eine höfliche Frage.",
+    "audio": "de_en_de_lesson-qwen_float32_auto.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.76,
+    "generation_seconds": 26.989,
+    "first_available_audio_seconds": 26.989,
+    "measurement_wall_seconds": 26.99,
+    "rtf": 4.686,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 31.01,
+        "peak": 49.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.65,
+        "peak": 9.17
+      },
+      "pss_mib": {
+        "mean": 1721.31,
+        "peak": 1721.32
+      }
+    },
+    "sha256": "ecf201fbb8d70135bdcddc5bdf0dff68ba9060d5abd344916b247ffb1de7c122",
+    "scorer": "qwen",
+    "hypothesis": "Der Englischer Austrag lautet: \"Could you please repeat that more slowly, undesstina Hoflicka Fraga.\"",
+    "wer": 0.4706,
+    "cer": 0.1667,
+    "reference_words": 17,
+    "word_errors": 8,
+    "reference_characters": 102,
+    "character_errors": 17
+  },
+  {
+    "name": "de_en_de_lesson",
+    "group": "mixed",
+    "variant": "qwen_float32_gold_spans",
+    "reference": "Der englische Ausdruck lautet Could you please repeat that more slowly und das ist eine höfliche Frage.",
+    "audio": "de_en_de_lesson-qwen_float32_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.92,
+    "generation_seconds": 26.442,
+    "first_available_audio_seconds": 7.974,
+    "measurement_wall_seconds": 26.443,
+    "rtf": 4.467,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 27.52,
+        "peak": 58.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.72,
+        "peak": 9.49
+      },
+      "pss_mib": {
+        "mean": 1723.31,
+        "peak": 1724.99
+      }
+    },
+    "sha256": "78aafa23da23dd55ee1a99809ad617f895f279599f650459147b6a9f9fe3b3b0",
+    "scorer": "qwen",
+    "hypothesis": "Der englische Ausdruck lautet: \"Could you please repeat that more slowly? Und das ist deine häufige Frage.\"",
+    "wer": 0.1176,
+    "cer": 0.0588,
+    "reference_words": 17,
+    "word_errors": 2,
+    "reference_characters": 102,
+    "character_errors": 6
+  },
+  {
+    "name": "en_de_en_travel",
+    "group": "mixed",
+    "variant": "qwen_float32_auto",
+    "reference": "Tell the receptionist Mein Zug hat Verspätung und ich komme später an then ask whether reception stays open.",
+    "audio": "en_de_en_travel-qwen_float32_auto.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.08,
+    "generation_seconds": 28.196,
+    "first_available_audio_seconds": 28.195,
+    "measurement_wall_seconds": 28.196,
+    "rtf": 4.637,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 31.59,
+        "peak": 50.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.71,
+        "peak": 9.63
+      },
+      "pss_mib": {
+        "mean": 1725.94,
+        "peak": 1725.95
+      }
+    },
+    "sha256": "5f569166f3c640710efe250a08a592a8abd546ed22522627afdef7c30dfc5452",
+    "scorer": "qwen",
+    "hypothesis": "Tell the receptionist, \"Mine zoo cat for spadong on eight commish spader.\" Anne then ask whether reception stays open.",
+    "wer": 0.5556,
+    "cer": 0.2243,
+    "reference_words": 18,
+    "word_errors": 10,
+    "reference_characters": 107,
+    "character_errors": 24
+  },
+  {
+    "name": "en_de_en_travel",
+    "group": "mixed",
+    "variant": "qwen_float32_gold_spans",
+    "reference": "Tell the receptionist Mein Zug hat Verspätung und ich komme später an then ask whether reception stays open.",
+    "audio": "en_de_en_travel-qwen_float32_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 5.68,
+    "generation_seconds": 28.387,
+    "first_available_audio_seconds": 5.459,
+    "measurement_wall_seconds": 28.388,
+    "rtf": 4.998,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 26.46,
+        "peak": 61.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.68,
+        "peak": 10.3
+      },
+      "pss_mib": {
+        "mean": 1727.74,
+        "peak": 1732.92
+      }
+    },
+    "sha256": "7b67d4fbc94101b27b0d60dcd00149785ac1b0ffc2027d90f0e57888b49ff073",
+    "scorer": "qwen",
+    "hypothesis": "Tell the receptionist, \"Minsu cut for spedong und ich komme später an.\" Then ask whether reception stays open.",
+    "wer": 0.2222,
+    "cer": 0.1121,
+    "reference_words": 18,
+    "word_errors": 4,
+    "reference_characters": 107,
+    "character_errors": 12
+  },
+  {
+    "name": "de_en_de_work",
+    "group": "mixed",
+    "variant": "qwen_float32_auto",
+    "reference": "Meine Kollegin hat gesagt we should postpone the meeting until tomorrow aber ich möchte zuerst den Kunden fragen.",
+    "audio": "de_en_de_work-qwen_float32_auto.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.4,
+    "generation_seconds": 24.19,
+    "first_available_audio_seconds": 24.19,
+    "measurement_wall_seconds": 24.191,
+    "rtf": 3.78,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 33.51,
+        "peak": 51.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.6,
+        "peak": 9.53
+      },
+      "pss_mib": {
+        "mean": 1733.97,
+        "peak": 1733.98
+      }
+    },
+    "sha256": "9755b0de77dc5b3d17780d2c35aef131c0a87e602d5ba4e9992a1e182383c18d",
+    "scorer": "qwen",
+    "hypothesis": "Meine Kollegen hatten gesagt, wir should postpone the meeting until tomorrow, aber ich möchte zuerst den Kunden fragen.",
+    "wer": 0.1667,
+    "cer": 0.0536,
+    "reference_words": 18,
+    "word_errors": 3,
+    "reference_characters": 112,
+    "character_errors": 6
+  },
+  {
+    "name": "de_en_de_work",
+    "group": "mixed",
+    "variant": "qwen_float32_gold_spans",
+    "reference": "Meine Kollegin hat gesagt we should postpone the meeting until tomorrow aber ich möchte zuerst den Kunden fragen.",
+    "audio": "de_en_de_work-qwen_float32_gold_spans.wav",
+    "sample_rate": 24000,
+    "audio_seconds": 6.08,
+    "generation_seconds": 24.995,
+    "first_available_audio_seconds": 6.724,
+    "measurement_wall_seconds": 24.996,
+    "rtf": 4.111,
+    "resources": {
+      "vram_mib": {
+        "mean": 5026.0,
+        "peak": 5026.0
+      },
+      "gpu_percent": {
+        "mean": 28.75,
+        "peak": 56.0
+      },
+      "cpu_machine_percent": {
+        "mean": 8.62,
+        "peak": 9.3
+      },
+      "pss_mib": {
+        "mean": 1735.37,
+        "peak": 1735.37
+      }
+    },
+    "sha256": "d813c0173b35e483766c70809d9adc85b9f6916783c1bf17d4c15d67a5b3754b",
+    "scorer": "qwen",
+    "hypothesis": "Meine Kollegin hat gesagt: \"We should postpone the meeting until tomorrow. Aber ich möchte zuerst den Kunden fragen.\"",
+    "wer": 0.0,
+    "cer": 0.0,
+    "reference_words": 18,
+    "word_errors": 0,
+    "reference_characters": 112,
+    "character_errors": 0
+  }
+]

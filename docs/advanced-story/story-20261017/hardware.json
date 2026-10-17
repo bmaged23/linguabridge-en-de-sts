@@ -1,0 +1,8 @@
+{
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "cpu_logical": 12,
+  "cpu_physical": 6,
+  "wsl_ram_total_mib": 7848.8,
+  "memory_scope": "psutil system memory is the WSL/Linux guest; process RSS is local Linux processes. GPU metrics cover the shared physical Windows GPU.",
+  "cpu_model": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "pid": 2562,
+    "role": "server",
+    "command": "/home/bmage/projects/voice-bridge/.venv/bin/python scripts/serve.py scripts/serve_qa.py"
+  },
+  {
+    "pid": 2565,
+    "role": "server",
+    "command": "/home/bmage/projects/voice-bridge/.venv/bin/python scripts/serve_qa.py"
+  },
+  {
+    "pid": 2579,
+    "role": "tracker",
+    "command": "/home/bmage/projects/voice-bridge/.venv-tts-gpu/bin/python -c from multiprocessing.resource_tracker import main;main(17)"
+  },
+  {
+    "pid": 2581,
+    "role": "tts",
+    "command": "/home/bmage/projects/voice-bridge/.venv-tts-gpu/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=18, pipe_handle=23) --multiprocessing-fork"
+  },
+  {
+    "pid": 2584,
+    "role": "stt",
+    "command": "/home/bmage/projects/voice-bridge/.venv-asr/bin/python /home/bmage/projects/voice-bridge/scripts/qwen_worker.py"
+  }
+]

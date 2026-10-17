@@ -1,0 +1,29 @@
+{
+  "mp4": {
+    "seconds": 180.48,
+    "bytes": 5122757,
+    "codecs": [
+      "h264",
+      "aac"
+    ],
+    "audio_rms": 0.07566242665052414,
+    "audible_one_second_blocks": 157
+  },
+  "webm": {
+    "seconds": 180.483,
+    "bytes": 3997278,
+    "codecs": [
+      "vp9",
+      "vorbis"
+    ],
+    "audio_rms": 0.07607676833868027,
+    "audible_one_second_blocks": 157
+  },
+  "browser": {
+    "source": "bridge-demo.webm",
+    "duration": 180.483,
+    "playing_confirmed": true,
+    "ended_confirmed": true
+  },
+  "browser_errors": []
+}

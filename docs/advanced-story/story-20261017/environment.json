@@ -1,0 +1,232 @@
+{
+  "python": "3.12.15 (main, Oct  3 2026, 01:03:07) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "config_without_credentials": {
+    "language": "auto",
+    "audio": {
+      "input_sample_rate": 16000,
+      "input_channels": 1,
+      "frame_samples": 512,
+      "input_device_id": null,
+      "output_device_id": null,
+      "echo_cancellation": true,
+      "playback_echo_guard": true,
+      "playback_echo_tail_ms": 250,
+      "audio_clock_stall_timeout_ms": 4000,
+      "audio_clock_min_progress_ms": 100,
+      "noise_suppression": true,
+      "auto_gain_control": true,
+      "max_buffered_bytes": 65536,
+      "max_websocket_message_bytes": 65536,
+      "microphone_signal_timeout_ms": 8000,
+      "microphone_signal_threshold": 0.002
+    },
+    "vad": {
+      "provider": "silero",
+      "device": "cpu",
+      "speech_threshold": 0.5,
+      "minimum_rms": 0.002,
+      "min_speech_ms": 200,
+      "end_of_turn_silence_ms": 700,
+      "prefix_buffer_ms": 300,
+      "max_utterance_seconds": 30,
+      "intra_op_threads": 1,
+      "inter_op_threads": 1
+    },
+    "stt": {
+      "provider": "qwen_asr",
+      "model": "Qwen3-ASR-0.6B",
+      "runtime_python": ".venv-asr/bin/python",
+      "dtype": "float32",
+      "attention": "eager",
+      "max_new_tokens": 256,
+      "unfixed_chunk_num": 2,
+      "rollback_tokens": 5,
+      "context": "Transcribe English and German speech verbatim. Keep each word in its spoken language; do not translate.",
+      "startup_timeout_seconds": 180,
+      "request_timeout_seconds": 90,
+      "silence_peak_threshold": 0.0001,
+      "revision": "5eb144179a02acc5e5ba31e748d22b0cf3e303b0",
+      "device": "cuda",
+      "device_index": 0,
+      "compute_type": "int8_float32",
+      "mode": "progressive",
+      "audit_fresh_final": false,
+      "partial_interval_ms": 2000,
+      "window_seconds": 46,
+      "beam_size": 3,
+      "language": null,
+      "cpu_threads": 2,
+      "model_repo": "Qwen/Qwen3-ASR-0.6B",
+      "language_confidence_threshold": 0.6,
+      "language_margin_threshold": 0.15,
+      "minimum_language_words": 3,
+      "minimum_supported_language_probability": 0.2,
+      "relative_language_confidence_threshold": 0.65,
+      "allowed_languages": [
+        "en",
+        "de"
+      ],
+      "no_speech_threshold": 0.6,
+      "log_prob_threshold": -1.0
+    },
+    "llm": {
+      "provider": "ollama_cloud",
+      "base_url_env": "OLLAMA_BASE_URL",
+      "api_key_env": "OLLAMA_API_KEY",
+      "model_env": "OLLAMA_MODEL",
+      "stream": true,
+      "temperature": 0.3,
+      "max_response_tokens": 512,
+      "history_max_turns": 12,
+      "request_timeout_seconds": 60,
+      "first_token_timeout_seconds": 15,
+      "stream_idle_timeout_seconds": 15,
+      "system_prompt": "You are Bridge, a helpful bilingual English and German voice assistant. Use plain spoken sentences, no markdown. Be warm, accurate, concise, and preserve names and numbers. Never claim to have used tools you do not have.",
+      "think": false
+    },
+    "tts": {
+      "provider": "hybrid",
+      "language_segments": {
+        "enabled": true
+      },
+      "device": "cuda",
+      "runtime_python": ".venv-tts-gpu/bin/python",
+      "cuda_library_runtime": ".venv-asr",
+      "parallel_chunks": 2,
+      "parallel_chunks_by_language": {
+        "en": 1,
+        "de": 2
+      },
+      "cuda": {
+        "device_id": 0,
+        "gpu_mem_limit": 805306368,
+        "arena_extend_strategy": "kSameAsRequested",
+        "cudnn_conv_algo_search": "HEURISTIC",
+        "cudnn_conv_use_max_workspace": "0",
+        "do_copy_in_default_stream": "1"
+      },
+      "voices": {
+        "en": {
+          "provider": "kokoro",
+          "name": "af_heart",
+          "model": "models/kokoro-v1.0.onnx",
+          "voices": "models/voices-v1.0.bin",
+          "speed": 1.05
+        },
+        "de": {
+          "provider": "piper",
+          "name": "de_DE-thorsten-high",
+          "model": "models/piper/de_DE-thorsten-high.onnx"
+        }
+      },
+      "length_scale": 1.0,
+      "noise_scale": 0.667,
+      "noise_w_scale": 0.8,
+      "normalize_audio": true,
+      "intra_op_threads": 2,
+      "inter_op_threads": 1,
+      "chunking": {
+        "strategy": "phrase",
+        "min_characters": 40,
+        "max_characters": 180,
+        "flush_timeout_ms": 350
+      }
+    },
+    "interruptions": {
+      "enabled": true,
+      "min_speech_ms": 320,
+      "speech_threshold": 0.8,
+      "minimum_rms": 0.006,
+      "history_policy": "completed_phrases_only"
+    },
+    "workers": {
+      "start_method": "spawn",
+      "stt_processes": 1,
+      "tts_processes": 1,
+      "keep_models_loaded": true,
+      "warm_up_models": true,
+      "tts_queue_max_phrases": 3,
+      "playback_queue_max_chunks": 3,
+      "llm_token_queue_size": 32,
+      "max_sessions": 1
+    },
+    "logging": {
+      "level": "INFO",
+      "record_audio": false,
+      "log_transcripts": false,
+      "pipeline_trace": {
+        "enabled": false,
+        "directory": "logs/pipeline-trace"
+      }
+    },
+    "server": {
+      "host": "127.0.0.1",
+      "port": 8766,
+      "web_workers": 1
+    },
+    "paths": {
+      "models": "models",
+      "web": "web",
+      "cache": ".cache/huggingface",
+      "stt_model": "models/qwen3-asr-0.6b",
+      "vad_model": "models/silero_vad.onnx"
+    },
+    "modes": {
+      "default": "conversation",
+      "translation": {
+        "end_of_turn_silence_ms": 1200,
+        "max_utterance_seconds": 45,
+        "output_language": "opposite",
+        "suppress_microphone_during_playback": true
+      },
+      "conversation": {
+        "end_of_turn_silence_ms": 700,
+        "max_utterance_seconds": 30,
+        "output_language": "same"
+      },
+      "teaching": {
+        "end_of_turn_silence_ms": 1000,
+        "max_utterance_seconds": 45,
+        "output_language": "same"
+      }
+    },
+    "memory": {
+      "database": "data/memory.sqlite3",
+      "persist_transcripts": true,
+      "recent_turns": 12,
+      "translation_context_turns": 4,
+      "summary_trigger_turns": 20,
+      "summary_max_tokens": 384,
+      "summary_timeout_seconds": 4,
+      "summary_max_characters": 3000,
+      "max_recent_characters": 18000,
+      "max_fact_characters": 500,
+      "max_facts": 32,
+      "command_prefixes": [
+        "bridge",
+        "brücke"
+      ],
+      "response_language": "same"
+    },
+    "controls": {
+      "confirmation_timeout_seconds": 45,
+      "confirm_translation_changes": true,
+      "confirm_response_language_changes": true
+    }
+  },
+  "sha256": {
+    "config.py": "1ee56e5b1aa7e4f6e751f94047e07f49fe20e0389b82bb87404803710de6e5c1",
+    "scripts/qwen_worker.py": "d675168de3ef478c4385b8aa88f8007954c446758e0a02b1b3c36116b874c22b",
+    "src/voice_bridge/server.py": "0b71133914e01a6430b52d35af1104395c9cacd4c21f216cde52cb9649d7300c",
+    "src/voice_bridge/workers.py": "6e0ccb71e5038e791574fe38332a10aa015fa789f10dac73d3cc0fbb8a67a8dc",
+    "web/client.js": "a687727f2eb2466d8ad80db324889317e973527bdc93ff471ba8a02c8450cd37",
+    "web/capture.js": "d03ce4cd744dcb7d05bd07feca162948d2edfb4c6bc8f8c0cc1447e81fb3a970",
+    "scripts/run_advanced_story.py": "0de139feaac840016d3f3146e2630aa9746f11367da60024ba3e9a355969a7e4",
+    "scripts/advanced_resources.py": "e027d591393792532c2b54b65aeb20e59593a4c3c26c015a4190d32642780091"
+  },
+  "candidate_revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "candidate_source": "https://huggingface.co/Systran/faster-whisper-large-v3",
+  "qwen_source": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B",
+  "qa_notes": "Isolated memory; duplicate final decoding disabled; normal app settings otherwise preserved. Noise seeds and exact references frozen in cases.json."
+}

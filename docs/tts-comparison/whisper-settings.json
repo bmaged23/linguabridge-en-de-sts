@@ -1,0 +1,9 @@
+{
+  "model": "dropbox-dash/faster-whisper-large-v3-turbo",
+  "revision": "0a363e9161cbc7ed1431c9597a8ceaf0c4f78fcf",
+  "compute_type": "int8_float32",
+  "beam_size": 3,
+  "language": "auto",
+  "multilingual": true,
+  "condition_on_previous_text": false
+}

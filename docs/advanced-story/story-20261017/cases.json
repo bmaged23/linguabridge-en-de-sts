@@ -1,0 +1,1754 @@
+[
+  {
+    "id": "story_en_de_en_clean",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "clean",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_clean.wav",
+    "sha256": "9512779d233a644e547f7a95146f6f1b7dd5b82f068037d922442c67e53d74cb",
+    "seconds": 18.476,
+    "peak": 0.9983,
+    "rms": 0.10952
+  },
+  {
+    "id": "story_de_en_de_clean",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "clean",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_clean.wav",
+    "sha256": "6a8efc151d02461bf91b93eeab8e625d03aacc2edb9c41f8d7750f05092e757d",
+    "seconds": 19.449,
+    "peak": 0.9987,
+    "rms": 0.12668
+  },
+  {
+    "id": "story_en_de_en_quiet",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "quiet",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_quiet.wav",
+    "sha256": "c1d6beb573e0c6f3278d220fc0ee2e5274c43535bc9e8b710aefe6a049f5877e",
+    "seconds": 18.476,
+    "peak": 0.1797,
+    "rms": 0.01971
+  },
+  {
+    "id": "story_en_de_en_noise20",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_noise20.wav",
+    "sha256": "15cd91af07a449b68f480093dd6e4ba510e7c6f39adf1e163425d7a50659f7c1",
+    "seconds": 18.476,
+    "peak": 0.9919,
+    "rms": 0.11008
+  },
+  {
+    "id": "story_en_de_en_noise10",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise10",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_noise10.wav",
+    "sha256": "664962a3170ff51f4b8bf73b2263663070f1593fc8bea83d627909ab22f767e1",
+    "seconds": 18.476,
+    "peak": 1.0424,
+    "rms": 0.11489
+  },
+  {
+    "id": "story_en_de_en_pause",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "pause",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_pause.wav",
+    "sha256": "48a5cd3a5a7ffded4afd4f5904654359862f4294113b3d1e122f5b21b34a0c91",
+    "seconds": 20.786,
+    "peak": 0.9983,
+    "rms": 0.10326
+  },
+  {
+    "id": "story_en_de_en_noise15",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise15",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_noise15.wav",
+    "sha256": "572d5fb3d5120f16260ed4552e67e564d6fa6d7dc335e1f7fe7b92067e7f395a",
+    "seconds": 18.476,
+    "peak": 1.0114,
+    "rms": 0.11127
+  },
+  {
+    "id": "story_de_en_de_quiet",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "quiet",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_quiet.wav",
+    "sha256": "5672f916a26e87e33272cd0a00497c9e2f8e06f6ecb880e9686866ea7dc877ab",
+    "seconds": 19.449,
+    "peak": 0.1798,
+    "rms": 0.0228
+  },
+  {
+    "id": "story_de_en_de_noise20",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_noise20.wav",
+    "sha256": "c18040fb726063c012b4f668a81d1997d33a2ce7d07c1d4826cf096023dc7b7e",
+    "seconds": 19.449,
+    "peak": 1.007,
+    "rms": 0.12735
+  },
+  {
+    "id": "story_de_en_de_noise10",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise10",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_noise10.wav",
+    "sha256": "971629c91c1aeaa87fc4825d4f3981336f249b05772c454a9134389662247f23",
+    "seconds": 19.449,
+    "peak": 1.0519,
+    "rms": 0.13286
+  },
+  {
+    "id": "story_de_en_de_pause",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "pause",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_pause.wav",
+    "sha256": "28181a786ead5c6de802bb8605763052f2ecf378cccb2cb71f28a9b8e14b9e82",
+    "seconds": 21.759,
+    "peak": 0.9987,
+    "rms": 0.11977
+  },
+  {
+    "id": "story_de_en_de_noise15",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise15",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_noise15.wav",
+    "sha256": "ee4c168e7338ead21765a09f07b07e3aece200ce658e54d904a10c6f5b2aa51d",
+    "seconds": 19.449,
+    "peak": 1.0331,
+    "rms": 0.12867
+  },
+  {
+    "id": "story_en_de_en_noise8",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise8",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_noise8.wav",
+    "sha256": "42625b3aa94ce838e13085f3134384ec5c08890e20f38c4d1ba2897eba5b6c83",
+    "seconds": 18.476,
+    "peak": 1.0314,
+    "rms": 0.11795
+  },
+  {
+    "id": "story_en_de_en_noise25",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise25",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_noise25.wav",
+    "sha256": "81ef4394e5dd8ac526d1c04400d8c142f04b7c026dd1550336bab60c990ae401",
+    "seconds": 18.476,
+    "peak": 0.9975,
+    "rms": 0.10971
+  },
+  {
+    "id": "story_en_de_en_quiet_noise20",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "quiet_noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_quiet_noise20.wav",
+    "sha256": "b1404a09f642801219022e63af11e76d17ff1b9a706b42fc6c36e5972deecbf5",
+    "seconds": 18.476,
+    "peak": 0.1845,
+    "rms": 0.01981
+  },
+  {
+    "id": "story_en_de_en_pause_noise20",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "pause_noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_pause_noise20.wav",
+    "sha256": "9c4fce1d5d17c11aff9e008b7abe2742b396166a220e0b705728b35a3ad6fbed",
+    "seconds": 20.786,
+    "peak": 1.0004,
+    "rms": 0.10374
+  },
+  {
+    "id": "story_en_de_en_repeat1",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "repeat1",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_repeat1.wav",
+    "sha256": "9512779d233a644e547f7a95146f6f1b7dd5b82f068037d922442c67e53d74cb",
+    "seconds": 18.476,
+    "peak": 0.9983,
+    "rms": 0.10952
+  },
+  {
+    "id": "story_en_de_en_repeat2",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "repeat2",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_repeat2.wav",
+    "sha256": "9512779d233a644e547f7a95146f6f1b7dd5b82f068037d922442c67e53d74cb",
+    "seconds": 18.476,
+    "peak": 0.9983,
+    "rms": 0.10952
+  },
+  {
+    "id": "story_en_de_en_repeat3",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "repeat3",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_repeat3.wav",
+    "sha256": "9512779d233a644e547f7a95146f6f1b7dd5b82f068037d922442c67e53d74cb",
+    "seconds": 18.476,
+    "peak": 0.9983,
+    "rms": 0.10952
+  },
+  {
+    "id": "story_en_de_en_repeat4",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "repeat4",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_en_de_en_repeat4.wav",
+    "sha256": "9512779d233a644e547f7a95146f6f1b7dd5b82f068037d922442c67e53d74cb",
+    "seconds": 18.476,
+    "peak": 0.9983,
+    "rms": 0.10952
+  },
+  {
+    "id": "story_de_en_de_noise8",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise8",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_noise8.wav",
+    "sha256": "fee41729bf7e259f5692d9f440c868ac268e9094c27a0913549823f16817c3d5",
+    "seconds": 19.449,
+    "peak": 1.0703,
+    "rms": 0.1364
+  },
+  {
+    "id": "story_de_en_de_noise25",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise25",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_noise25.wav",
+    "sha256": "38a0f7895fb1d060a79a77bdd829eb17254efebf39078281e48e0c7d578e7cdd",
+    "seconds": 19.449,
+    "peak": 1.0036,
+    "rms": 0.12689
+  },
+  {
+    "id": "story_de_en_de_quiet_noise20",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "quiet_noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_quiet_noise20.wav",
+    "sha256": "5f7731beb460449d63ed1b5c6ae1d58b3644682990cfadb3a760f7a0284d5637",
+    "seconds": 19.449,
+    "peak": 0.1838,
+    "rms": 0.02291
+  },
+  {
+    "id": "story_de_en_de_pause_noise20",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "pause_noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_pause_noise20.wav",
+    "sha256": "8280785bea3d91920c87560e125aee781ce879683883b4cb06ac0c92d016421a",
+    "seconds": 21.759,
+    "peak": 1.0145,
+    "rms": 0.12038
+  },
+  {
+    "id": "story_de_en_de_repeat1",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "repeat1",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_repeat1.wav",
+    "sha256": "6a8efc151d02461bf91b93eeab8e625d03aacc2edb9c41f8d7750f05092e757d",
+    "seconds": 19.449,
+    "peak": 0.9987,
+    "rms": 0.12668
+  },
+  {
+    "id": "story_de_en_de_repeat2",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "repeat2",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_repeat2.wav",
+    "sha256": "6a8efc151d02461bf91b93eeab8e625d03aacc2edb9c41f8d7750f05092e757d",
+    "seconds": 19.449,
+    "peak": 0.9987,
+    "rms": 0.12668
+  },
+  {
+    "id": "story_de_en_de_repeat3",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "repeat3",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_repeat3.wav",
+    "sha256": "6a8efc151d02461bf91b93eeab8e625d03aacc2edb9c41f8d7750f05092e757d",
+    "seconds": 19.449,
+    "peak": 0.9987,
+    "rms": 0.12668
+  },
+  {
+    "id": "story_de_en_de_repeat4",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "repeat4",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_de_en_de_repeat4.wav",
+    "sha256": "6a8efc151d02461bf91b93eeab8e625d03aacc2edb9c41f8d7750f05092e757d",
+    "seconds": 19.449,
+    "peak": 0.9987,
+    "rms": 0.12668
+  },
+  {
+    "id": "story_english_clean",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "en",
+    "variant": "clean",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_english_clean.wav",
+    "sha256": "b98c578b99b9473d9063f85d0f9cf8b8d2f3c31e62cdbb477c8a7216f213be42",
+    "seconds": 18.653,
+    "peak": 0.4247,
+    "rms": 0.05959
+  },
+  {
+    "id": "story_german_clean",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "de",
+    "variant": "clean",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_german_clean.wav",
+    "sha256": "2a2545ca53383662d5d673575e599f32102158be215b5bb730917756867d2a7b",
+    "seconds": 18.852,
+    "peak": 0.9985,
+    "rms": 0.16001
+  },
+  {
+    "id": "story_english_quiet",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "en",
+    "variant": "quiet",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_english_quiet.wav",
+    "sha256": "61ca8c3758268f53215d8a88a9d2e2b8d007cfdc1dea40469d043fe39b5c48b1",
+    "seconds": 18.653,
+    "peak": 0.0764,
+    "rms": 0.01073
+  },
+  {
+    "id": "story_english_noise20",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "en",
+    "variant": "noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_english_noise20.wav",
+    "sha256": "a3a71c42f8fe427bb8d5da4e6c3bdf7ee4da8a3b92c059f2674ff3c5e63157b2",
+    "seconds": 18.653,
+    "peak": 0.427,
+    "rms": 0.05989
+  },
+  {
+    "id": "story_english_noise10",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "en",
+    "variant": "noise10",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_english_noise10.wav",
+    "sha256": "dbeb94c206dccbaa978606313336b8670cde65883d6b059986f6a116c66aa37c",
+    "seconds": 18.653,
+    "peak": 0.4271,
+    "rms": 0.06252
+  },
+  {
+    "id": "story_english_pause",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "en",
+    "variant": "pause",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_english_pause.wav",
+    "sha256": "d6a7a5c28396b411d3f2515dba3df75f13f48a3b06a01599a4cbb42d609101d2",
+    "seconds": 18.983,
+    "peak": 0.4247,
+    "rms": 0.05907
+  },
+  {
+    "id": "story_english_noise15",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences."
+      ]
+    ],
+    "kind": "en",
+    "variant": "noise15",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. At the station she said our train was cancelled. We found a bus, but I told her not to buy tickets yet. Then the company called. The interview was at ten, not nine. We arrived at nine forty five. Please summarize what happened in two sentences.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_english_noise15.wav",
+    "sha256": "03e0b8f6585adf9e94ef55addd863f8e02f67feaddbad73676706b05c9be01fa",
+    "seconds": 18.653,
+    "peak": 0.4488,
+    "rms": 0.06055
+  },
+  {
+    "id": "story_german_quiet",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "de",
+    "variant": "quiet",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_german_quiet.wav",
+    "sha256": "f60eb69ab4ccdaa2865d8385cefa7d2dda52d9141fc4c0fdf33ad1d2b752238d",
+    "seconds": 18.852,
+    "peak": 0.1797,
+    "rms": 0.0288
+  },
+  {
+    "id": "story_german_noise20",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "de",
+    "variant": "noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_german_noise20.wav",
+    "sha256": "c43420138a5624cc778c96fa82957fe1cdae7994b914183e0c2e41d719c3c189",
+    "seconds": 18.852,
+    "peak": 1.0208,
+    "rms": 0.16087
+  },
+  {
+    "id": "story_german_noise10",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "de",
+    "variant": "noise10",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_german_noise10.wav",
+    "sha256": "200425fee9465156359ba5957428ecd36aeac4475b2129963137a266ae20d524",
+    "seconds": 18.852,
+    "peak": 1.1261,
+    "rms": 0.16813
+  },
+  {
+    "id": "story_german_pause",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "de",
+    "variant": "pause",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_german_pause.wav",
+    "sha256": "ab428549a44e55543be61f0cf6b4bb4a81cc8ad28ad7df4b756b0ae17d19c673",
+    "seconds": 19.182,
+    "peak": 0.9985,
+    "rms": 0.15863
+  },
+  {
+    "id": "story_german_noise15",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen."
+      ]
+    ],
+    "kind": "de",
+    "variant": "noise15",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Am Bahnhof sagte sie, unser Zug fällt aus. Wir fanden einen Bus, aber ich sagte, kaufe noch keine Tickets. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. Wir kamen um neun Uhr fünfundvierzig an. Bitte fasse die Geschichte in zwei Sätzen zusammen.",
+    "story_facts": [
+      "Anna",
+      "Berlin",
+      "cancelled train / Zug fällt aus",
+      "do not buy tickets / keine Tickets",
+      "interview ten, not nine / zehn, nicht neun",
+      "arrival nine forty five / neun Uhr fünfundvierzig"
+    ],
+    "input": "inputs/story_german_noise15.wav",
+    "sha256": "5efd292b7e7e05ea417999bbc7c3d81bf944350c1dc2d78ef15dd4d432dfa403",
+    "seconds": 18.852,
+    "peak": 1.078,
+    "rms": 0.16247
+  }
+]

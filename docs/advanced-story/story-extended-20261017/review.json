@@ -1,0 +1,4769 @@
+{
+  "samples_reviewed": 10,
+  "findings_counts": {
+    "WER exceeds 15 percent": 4,
+    "de vocabulary largely missing or translated; inspect original and recognized text": 3,
+    "LLM/memory infers a bus journey that the current transcript only describes as finding a bus": 2,
+    "LLM/memory adds rescheduling; the current story only corrects ten rather than nine": 1,
+    "LLM omitted all voice markers; fallback routed the complete reply through one default voice": 5,
+    "Voice-span mismatch candidate: en chunk contains gestern, seid, vorstellungsgespräch": 2,
+    "Voice-span mismatch candidate: en chunk contains bahnhof": 2,
+    "Voice-span mismatch candidate: en chunk contains firma": 3,
+    "Voice-span mismatch candidate: en chunk contains angekommen, fünfundvierzig, seid": 2,
+    "TTS re-recognition disagrees with intended phrase: Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.": 2,
+    "TTS re-recognition disagrees with intended phrase: so you looked for a bus. Am Bahnhof sagte Anna,": 1,
+    "TTS re-recognition disagrees with intended phrase: dass der Zug ausfällt, also habt ihr einen Bus gesucht.": 1,
+    "TTS re-recognition disagrees with intended phrase: um die Zeit von neun auf zehn Uhr zu ändern,": 2,
+    "TTS re-recognition disagrees with intended phrase: und ihr seid um neun Uhr fünfundvierzig angekommen.": 1,
+    "1 detected speech segments were canceled before their final transcription was delivered": 3,
+    "Voice-span mismatch candidate: en chunk contains gesagt": 1,
+    "Voice-span mismatch candidate: en chunk contains keine, soll": 1,
+    "TTS re-recognition disagrees with intended phrase: You told Anna not to buy tickets. Du hast Anna gesagt,": 1,
+    "TTS re-recognition disagrees with intended phrase: dass sie keine Tickets kaufen soll. Then the company called to change the interview from nine to ten.": 1,
+    "TTS re-recognition disagrees with intended phrase: Dann hat die Firma angerufen, um das Gespräch von neun auf zehn Uhr zu verschieben.": 1,
+    "TTS re-recognition disagrees with intended phrase: You arrived at nine forty-five. Ihr seid um neun Uhr fünfundvierzig angekommen.": 1,
+    "en vocabulary largely missing or translated; inspect original and recognized text": 1,
+    "Voice-span mismatch candidate: de chunk contains yesterday, you": 2,
+    "Voice-span mismatch candidate: de chunk contains the": 2,
+    "Voice-span mismatch candidate: de chunk contains the, you": 2,
+    "Voice-span mismatch candidate: de chunk contains you": 2,
+    "Voice-span mismatch candidate: de chunk contains because, called, the": 2,
+    "Voice-span mismatch candidate: de chunk contains arrived, you": 2,
+    "TTS re-recognition disagrees with intended phrase: Yesterday, you and Anna traveled to Berlin for an interview.": 2,
+    "TTS re-recognition disagrees with intended phrase: sie solle noch keine Tickets kaufen. At the station,": 2,
+    "TTS re-recognition disagrees with intended phrase: Anna said the train was cancelled, so you found a bus,": 2,
+    "TTS re-recognition disagrees with intended phrase: but you told her not to buy tickets yet.": 2,
+    "TTS re-recognition disagrees with intended phrase: The company called because the interview was at ten instead of nine,": 2,
+    "TTS re-recognition disagrees with intended phrase: and you arrived at nine forty-five.": 2,
+    "Voice-span mismatch candidate: en chunk contains keine": 1,
+    "Voice-span mismatch candidate: en chunk contains fünfundvierzig": 1,
+    "TTS re-recognition disagrees with intended phrase: Am Bahnhof sagte Anna, dass der Zug ausfällt,": 1,
+    "TTS re-recognition disagrees with intended phrase: also habt ihr einen Bus gefunden, aber du sagtest,": 1,
+    "TTS re-recognition disagrees with intended phrase: sie solle noch keine Tickets kaufen. The company called to change the time from nine to ten,": 1,
+    "TTS re-recognition disagrees with intended phrase: and you arrived at nine forty-five. Die Firma rief an,": 1,
+    "TTS re-recognition disagrees with intended phrase: und ihr kamt um neun Uhr fünfundvierzig an.": 1,
+    "TTS re-recognition disagrees with intended phrase: Schließlich hat euch der Manager begrüßt und euch etwas Wasser angeboten.": 1
+  },
+  "samples": [
+    {
+      "case": "bilingual_retelling_en_de_en_clean",
+      "wer": 0.4483,
+      "cer": 0.288,
+      "language_vocabulary_retention": {
+        "en": 0.97,
+        "de": 0.053
+      },
+      "captured_segments": 1,
+      "delivered_finals": 1,
+      "findings": [
+        "WER exceeds 15 percent",
+        "de vocabulary largely missing or translated; inspect original and recognized text",
+        "LLM/memory infers a bus journey that the current transcript only describes as finding a bus",
+        "LLM/memory adds rescheduling; the current story only corrects ten rather than nine"
+      ],
+      "audio_integrity": [
+        {
+          "id": "1:1",
+          "language": "en",
+          "text": "Yesterday, Anna and you traveled to Berlin for an interview.",
+          "seconds": 3.2853,
+          "rate": 24000,
+          "rms": 0.05836,
+          "peak": 0.32343
+        },
+        {
+          "id": "1:2",
+          "language": "de",
+          "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+          "seconds": 3.3669,
+          "rate": 22050,
+          "rms": 0.18589,
+          "peak": 0.99997
+        },
+        {
+          "id": "1:3",
+          "language": "en",
+          "text": "The train was delayed, so you took a bus.",
+          "seconds": 2.2613,
+          "rate": 24000,
+          "rms": 0.06102,
+          "peak": 0.38019
+        },
+        {
+          "id": "1:4",
+          "language": "de",
+          "text": "Der Zug hatte Verspätung, also habt ihr einen Bus genommen.",
+          "seconds": 3.0534,
+          "rate": 22050,
+          "rms": 0.14569,
+          "peak": 0.99997
+        },
+        {
+          "id": "1:5",
+          "language": "en",
+          "text": "The interview time changed from nine to ten,",
+          "seconds": 2.5173,
+          "rate": 24000,
+          "rms": 0.05715,
+          "peak": 0.36163
+        },
+        {
+          "id": "1:6",
+          "language": "en",
+          "text": "so you arrived at nine forty-five.",
+          "seconds": 1.984,
+          "rate": 24000,
+          "rms": 0.05967,
+          "peak": 0.33716
+        },
+        {
+          "id": "1:7",
+          "language": "de",
+          "text": "Die Zeit für das Gespräch änderte sich von neun auf zehn Uhr,",
+          "seconds": 3.1811,
+          "rate": 22050,
+          "rms": 0.18269,
+          "peak": 0.99997
+        },
+        {
+          "id": "1:8",
+          "language": "de",
+          "text": "also seid ihr um neun Uhr fünfundvierzig angekommen.",
+          "seconds": 2.8328,
+          "rate": 22050,
+          "rms": 0.16409,
+          "peak": 0.99997
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 90,
+        "ram_tree_rss_mb": {
+          "peak": 2944.05,
+          "mean": 2825.05
+        },
+        "cpu_pct_one_core": {
+          "peak": 126.2,
+          "mean": 35.46
+        },
+        "cpu_pct_machine": {
+          "peak": 10.52,
+          "mean": 2.96
+        },
+        "gpu_vram_mb": {
+          "peak": 4782.0,
+          "mean": 4676.44
+        },
+        "gpu_util_pct": {
+          "peak": 44.0,
+          "mean": 12.86
+        },
+        "system_ram_used_mb": {
+          "peak": 3413.3,
+          "mean": 3268.2
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1699.31,
+          "mean_mb": 1646.52
+        },
+        "tts": {
+          "peak_mb": 1092.04,
+          "mean_mb": 1024.4
+        },
+        "server": {
+          "peak_mb": 152.7,
+          "mean_mb": 149.87
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 46.188,
+        "input_seconds": 19.595,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 0.5547,
+            "turn": 1,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2856.42,
+                "mean": 2856.42
+              },
+              "cpu_pct_one_core": {
+                "peak": 103.4,
+                "mean": 103.4
+              },
+              "cpu_pct_machine": {
+                "peak": 8.62,
+                "mean": 8.62
+              },
+              "gpu_vram_mb": {
+                "peak": 4630.0,
+                "mean": 4630.0
+              },
+              "gpu_util_pct": {
+                "peak": 30.0,
+                "mean": 30.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3273.49,
+                "mean": 3273.49
+              }
+            },
+            "decode_seconds": 0.5543
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.7185,
+            "turn": 1,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2856.43,
+                "mean": 2856.43
+              },
+              "cpu_pct_one_core": {
+                "peak": 2.0,
+                "mean": 2.0
+              },
+              "cpu_pct_machine": {
+                "peak": 0.17,
+                "mean": 0.17
+              },
+              "gpu_vram_mb": {
+                "peak": 4630.0,
+                "mean": 4630.0
+              },
+              "gpu_util_pct": {
+                "peak": 42.0,
+                "mean": 42.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3284.39,
+                "mean": 3284.39
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.381,
+            "turn": 1,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2859.86,
+                "mean": 2859.86
+              },
+              "cpu_pct_one_core": {
+                "peak": 66.0,
+                "mean": 66.0
+              },
+              "cpu_pct_machine": {
+                "peak": 5.5,
+                "mean": 5.5
+              },
+              "gpu_vram_mb": {
+                "peak": 4682.0,
+                "mean": 4682.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3284.96,
+                "mean": 3284.96
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.194,
+            "turn": 1,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.269,
+            "turn": 1,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2865.26,
+                "mean": 2865.26
+              },
+              "cpu_pct_one_core": {
+                "peak": 110.0,
+                "mean": 110.0
+              },
+              "cpu_pct_machine": {
+                "peak": 9.17,
+                "mean": 9.17
+              },
+              "gpu_vram_mb": {
+                "peak": 4762.0,
+                "mean": 4762.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3288.85,
+                "mean": 3288.85
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.2905,
+            "turn": 1,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5388,
+            "turn": 1,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2866.52,
+                "mean": 2866.52
+              },
+              "cpu_pct_one_core": {
+                "peak": 90.1,
+                "mean": 90.1
+              },
+              "cpu_pct_machine": {
+                "peak": 7.51,
+                "mean": 7.51
+              },
+              "gpu_vram_mb": {
+                "peak": 4762.0,
+                "mean": 4762.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3326.43,
+                "mean": 3326.43
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.2192,
+            "turn": 1,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4367,
+            "turn": 1,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2923.69,
+                "mean": 2923.69
+              },
+              "cpu_pct_one_core": {
+                "peak": 126.2,
+                "mean": 126.2
+              },
+              "cpu_pct_machine": {
+                "peak": 10.52,
+                "mean": 10.52
+              },
+              "gpu_vram_mb": {
+                "peak": 4782.0,
+                "mean": 4782.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3383.05,
+                "mean": 3383.05
+              }
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 23.252
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    },
+    {
+      "case": "bilingual_retelling_en_de_en_noise20",
+      "wer": 0.069,
+      "cer": 0.0095,
+      "language_vocabulary_retention": {
+        "en": 0.97,
+        "de": 0.842
+      },
+      "captured_segments": 1,
+      "delivered_finals": 1,
+      "findings": [],
+      "audio_integrity": [
+        {
+          "id": "2:1",
+          "language": "en",
+          "text": "Yesterday, you and Anna went to Berlin for an interview.",
+          "seconds": 2.9867,
+          "rate": 24000,
+          "rms": 0.05929,
+          "peak": 0.31641
+        },
+        {
+          "id": "2:2",
+          "language": "de",
+          "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+          "seconds": 3.274,
+          "rate": 22050,
+          "rms": 0.14575,
+          "peak": 0.99997
+        },
+        {
+          "id": "2:3",
+          "language": "en",
+          "text": "At the station, Anna said the train was cancelled,",
+          "seconds": 2.6667,
+          "rate": 24000,
+          "rms": 0.05683,
+          "peak": 0.42227
+        },
+        {
+          "id": "2:4",
+          "language": "en",
+          "text": "so you found a bus.",
+          "seconds": 1.1947,
+          "rate": 24000,
+          "rms": 0.06269,
+          "peak": 0.38196
+        },
+        {
+          "id": "2:5",
+          "language": "de",
+          "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt,",
+          "seconds": 3.3321,
+          "rate": 22050,
+          "rms": 0.12616,
+          "peak": 0.99997
+        },
+        {
+          "id": "2:6",
+          "language": "de",
+          "text": "also habt ihr einen Bus gefunden.",
+          "seconds": 1.5325,
+          "rate": 22050,
+          "rms": 0.15313,
+          "peak": 0.99997
+        },
+        {
+          "id": "2:7",
+          "language": "en",
+          "text": "The company called to move the interview from nine to ten,",
+          "seconds": 2.8587,
+          "rate": 24000,
+          "rms": 0.05847,
+          "peak": 0.35995
+        },
+        {
+          "id": "2:8",
+          "language": "en",
+          "text": "and you arrived at nine forty-five.",
+          "seconds": 1.92,
+          "rate": 24000,
+          "rms": 0.06068,
+          "peak": 0.3299
+        },
+        {
+          "id": "2:9",
+          "language": "de",
+          "text": "Die Firma hat angerufen, um das Gespräch von neun auf zehn Uhr zu verschieben,",
+          "seconds": 4.1099,
+          "rate": 22050,
+          "rms": 0.20389,
+          "peak": 0.99997
+        },
+        {
+          "id": "2:10",
+          "language": "de",
+          "text": "und ihr seid um neun Uhr fünfundvierzig angekommen.",
+          "seconds": 2.7864,
+          "rate": 22050,
+          "rms": 0.18209,
+          "peak": 0.99997
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 97,
+        "ram_tree_rss_mb": {
+          "peak": 2954.34,
+          "mean": 2948.88
+        },
+        "cpu_pct_one_core": {
+          "peak": 108.0,
+          "mean": 31.43
+        },
+        "cpu_pct_machine": {
+          "peak": 9.0,
+          "mean": 2.62
+        },
+        "gpu_vram_mb": {
+          "peak": 4936.0,
+          "mean": 4852.52
+        },
+        "gpu_util_pct": {
+          "peak": 39.0,
+          "mean": 12.55
+        },
+        "system_ram_used_mb": {
+          "peak": 3439.52,
+          "mean": 3409.13
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1704.32,
+          "mean_mb": 1702.61
+        },
+        "tts": {
+          "peak_mb": 1098.32,
+          "mean_mb": 1095.33
+        },
+        "server": {
+          "peak_mb": 152.7,
+          "mean_mb": 150.94
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 48.932,
+        "input_seconds": 19.595,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 0.6587,
+            "turn": 2,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2947.93,
+                "mean": 2947.93
+              },
+              "cpu_pct_one_core": {
+                "peak": 76.0,
+                "mean": 76.0
+              },
+              "cpu_pct_machine": {
+                "peak": 6.33,
+                "mean": 6.33
+              },
+              "gpu_vram_mb": {
+                "peak": 4782.0,
+                "mean": 4782.0
+              },
+              "gpu_util_pct": {
+                "peak": 16.0,
+                "mean": 16.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3423.49,
+                "mean": 3423.49
+              }
+            },
+            "decode_seconds": 0.6584
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.5755,
+            "turn": 2,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2948.0,
+                "mean": 2948.0
+              },
+              "cpu_pct_one_core": {
+                "peak": 68.0,
+                "mean": 68.0
+              },
+              "cpu_pct_machine": {
+                "peak": 5.67,
+                "mean": 5.67
+              },
+              "gpu_vram_mb": {
+                "peak": 4782.0,
+                "mean": 4782.0
+              },
+              "gpu_util_pct": {
+                "peak": 16.0,
+                "mean": 16.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3423.39,
+                "mean": 3423.39
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4025,
+            "turn": 2,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2948.02,
+                "mean": 2948.02
+              },
+              "cpu_pct_one_core": {
+                "peak": 6.0,
+                "mean": 6.0
+              },
+              "cpu_pct_machine": {
+                "peak": 0.5,
+                "mean": 0.5
+              },
+              "gpu_vram_mb": {
+                "peak": 4782.0,
+                "mean": 4782.0
+              },
+              "gpu_util_pct": {
+                "peak": 34.0,
+                "mean": 34.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3431.75,
+                "mean": 3431.75
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.2278,
+            "turn": 2,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2948.16,
+                "mean": 2948.16
+              },
+              "cpu_pct_one_core": {
+                "peak": 108.0,
+                "mean": 108.0
+              },
+              "cpu_pct_machine": {
+                "peak": 9.0,
+                "mean": 9.0
+              },
+              "gpu_vram_mb": {
+                "peak": 4840.0,
+                "mean": 4840.0
+              },
+              "gpu_util_pct": {
+                "peak": 34.0,
+                "mean": 34.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3421.57,
+                "mean": 3421.57
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3033,
+            "turn": 2,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3373,
+            "turn": 2,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2953.87,
+                "mean": 2953.87
+              },
+              "cpu_pct_one_core": {
+                "peak": 16.0,
+                "mean": 16.0
+              },
+              "cpu_pct_machine": {
+                "peak": 1.33,
+                "mean": 1.33
+              },
+              "gpu_vram_mb": {
+                "peak": 4892.0,
+                "mean": 4892.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3435.28,
+                "mean": 3435.28
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4647,
+            "turn": 2,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2954.3,
+                "mean": 2954.3
+              },
+              "cpu_pct_one_core": {
+                "peak": 34.0,
+                "mean": 34.0
+              },
+              "cpu_pct_machine": {
+                "peak": 2.83,
+                "mean": 2.83
+              },
+              "gpu_vram_mb": {
+                "peak": 4894.0,
+                "mean": 4894.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3404.86,
+                "mean": 3404.86
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3815,
+            "turn": 2,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4896,
+            "turn": 2,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2953.96,
+                "mean": 2953.96
+              },
+              "cpu_pct_one_core": {
+                "peak": 12.0,
+                "mean": 12.0
+              },
+              "cpu_pct_machine": {
+                "peak": 1.0,
+                "mean": 1.0
+              },
+              "gpu_vram_mb": {
+                "peak": 4900.0,
+                "mean": 4900.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3418.93,
+                "mean": 3418.93
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4595,
+            "turn": 2,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2954.32,
+                "mean": 2954.32
+              },
+              "cpu_pct_one_core": {
+                "peak": 61.6,
+                "mean": 61.6
+              },
+              "cpu_pct_machine": {
+                "peak": 5.13,
+                "mean": 5.13
+              },
+              "gpu_vram_mb": {
+                "peak": 4936.0,
+                "mean": 4936.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3402.09,
+                "mean": 3402.09
+              }
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 21.836
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    },
+    {
+      "case": "bilingual_retelling_en_de_en_quiet",
+      "wer": 0.069,
+      "cer": 0.0095,
+      "language_vocabulary_retention": {
+        "en": 0.97,
+        "de": 0.842
+      },
+      "captured_segments": 1,
+      "delivered_finals": 1,
+      "findings": [
+        "LLM omitted all voice markers; fallback routed the complete reply through one default voice",
+        "Voice-span mismatch candidate: en chunk contains gestern, seid, vorstellungsgespräch",
+        "Voice-span mismatch candidate: en chunk contains bahnhof",
+        "Voice-span mismatch candidate: en chunk contains firma",
+        "Voice-span mismatch candidate: en chunk contains angekommen, fünfundvierzig, seid",
+        "TTS re-recognition disagrees with intended phrase: Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+        "TTS re-recognition disagrees with intended phrase: so you looked for a bus. Am Bahnhof sagte Anna,",
+        "TTS re-recognition disagrees with intended phrase: dass der Zug ausfällt, also habt ihr einen Bus gesucht.",
+        "TTS re-recognition disagrees with intended phrase: um die Zeit von neun auf zehn Uhr zu ändern,",
+        "TTS re-recognition disagrees with intended phrase: und ihr seid um neun Uhr fünfundvierzig angekommen."
+      ],
+      "audio_integrity": [
+        {
+          "id": "3:1",
+          "language": "en",
+          "text": "Yesterday, you and Anna traveled to Berlin for an interview.",
+          "seconds": 3.2,
+          "rate": 24000,
+          "rms": 0.05913,
+          "peak": 0.33118
+        },
+        {
+          "id": "3:2",
+          "language": "en",
+          "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+          "seconds": 4.3947,
+          "rate": 24000,
+          "rms": 0.0565,
+          "peak": 0.35645
+        },
+        {
+          "id": "3:3",
+          "language": "en",
+          "text": "At the station, Anna said the train was cancelled,",
+          "seconds": 2.6667,
+          "rate": 24000,
+          "rms": 0.0568,
+          "peak": 0.44119
+        },
+        {
+          "id": "3:4",
+          "language": "en",
+          "text": "so you looked for a bus. Am Bahnhof sagte Anna,",
+          "seconds": 2.752,
+          "rate": 24000,
+          "rms": 0.06192,
+          "peak": 0.45596
+        },
+        {
+          "id": "3:5",
+          "language": "en",
+          "text": "dass der Zug ausfällt, also habt ihr einen Bus gesucht.",
+          "seconds": 3.8187,
+          "rate": 24000,
+          "rms": 0.05742,
+          "peak": 0.42029
+        },
+        {
+          "id": "3:6",
+          "language": "en",
+          "text": "The company called to change the time from nine to ten,",
+          "seconds": 2.9013,
+          "rate": 24000,
+          "rms": 0.05851,
+          "peak": 0.37494
+        },
+        {
+          "id": "3:7",
+          "language": "en",
+          "text": "and you arrived at nine forty-five. Die Firma hat angerufen,",
+          "seconds": 3.7547,
+          "rate": 24000,
+          "rms": 0.06061,
+          "peak": 0.40833
+        },
+        {
+          "id": "3:8",
+          "language": "en",
+          "text": "um die Zeit von neun auf zehn Uhr zu ändern,",
+          "seconds": 2.7307,
+          "rate": 24000,
+          "rms": 0.05888,
+          "peak": 0.36533
+        },
+        {
+          "id": "3:9",
+          "language": "en",
+          "text": "und ihr seid um neun Uhr fünfundvierzig angekommen.",
+          "seconds": 3.392,
+          "rate": 24000,
+          "rms": 0.06173,
+          "peak": 0.55359
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 103,
+        "ram_tree_rss_mb": {
+          "peak": 2963.07,
+          "mean": 2959.88
+        },
+        "cpu_pct_one_core": {
+          "peak": 106.0,
+          "mean": 35.52
+        },
+        "cpu_pct_machine": {
+          "peak": 8.83,
+          "mean": 2.96
+        },
+        "gpu_vram_mb": {
+          "peak": 5018.0,
+          "mean": 4987.05
+        },
+        "gpu_util_pct": {
+          "peak": 52.0,
+          "mean": 13.57
+        },
+        "system_ram_used_mb": {
+          "peak": 3441.17,
+          "mean": 3426.01
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1707.37,
+          "mean_mb": 1706.17
+        },
+        "tts": {
+          "peak_mb": 1103.89,
+          "mean_mb": 1101.5
+        },
+        "server": {
+          "peak_mb": 155.44,
+          "mean_mb": 152.15
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 51.814,
+        "input_seconds": 19.595,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 0.7202,
+            "turn": 3,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2957.43,
+                "mean": 2957.43
+              },
+              "cpu_pct_one_core": {
+                "peak": 90.0,
+                "mean": 90.0
+              },
+              "cpu_pct_machine": {
+                "peak": 7.5,
+                "mean": 7.5
+              },
+              "gpu_vram_mb": {
+                "peak": 4952.0,
+                "mean": 4952.0
+              },
+              "gpu_util_pct": {
+                "peak": 38.0,
+                "mean": 38.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3426.49,
+                "mean": 3426.49
+              }
+            },
+            "decode_seconds": 0.7198
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.4752,
+            "turn": 3,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2957.44,
+                "mean": 2957.44
+              },
+              "cpu_pct_one_core": {
+                "peak": 64.0,
+                "mean": 64.0
+              },
+              "cpu_pct_machine": {
+                "peak": 5.33,
+                "mean": 5.33
+              },
+              "gpu_vram_mb": {
+                "peak": 4952.0,
+                "mean": 4952.0
+              },
+              "gpu_util_pct": {
+                "peak": 34.0,
+                "mean": 34.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3434.34,
+                "mean": 3434.34
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.425,
+            "turn": 3,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2958.1,
+                "mean": 2958.1
+              },
+              "cpu_pct_one_core": {
+                "peak": 26.0,
+                "mean": 26.0
+              },
+              "cpu_pct_machine": {
+                "peak": 2.17,
+                "mean": 2.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5018.0,
+                "mean": 5018.0
+              },
+              "gpu_util_pct": {
+                "peak": 34.0,
+                "mean": 34.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3416.04,
+                "mean": 3416.04
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.7544,
+            "turn": 3,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 2962.49,
+                "mean": 2962.48
+              },
+              "cpu_pct_one_core": {
+                "peak": 104.0,
+                "mean": 102.05
+              },
+              "cpu_pct_machine": {
+                "peak": 8.67,
+                "mean": 8.5
+              },
+              "gpu_vram_mb": {
+                "peak": 5018.0,
+                "mean": 5018.0
+              },
+              "gpu_util_pct": {
+                "peak": 13.0,
+                "mean": 13.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3434.76,
+                "mean": 3434.52
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3449,
+            "turn": 3,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5295,
+            "turn": 3,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2962.95,
+                "mean": 2962.95
+              },
+              "cpu_pct_one_core": {
+                "peak": 91.9,
+                "mean": 91.9
+              },
+              "cpu_pct_machine": {
+                "peak": 7.66,
+                "mean": 7.66
+              },
+              "gpu_vram_mb": {
+                "peak": 5018.0,
+                "mean": 5018.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3423.88,
+                "mean": 3423.88
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.7218,
+            "turn": 3,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 2963.06,
+                "mean": 2963.01
+              },
+              "cpu_pct_one_core": {
+                "peak": 102.1,
+                "mean": 55.05
+              },
+              "cpu_pct_machine": {
+                "peak": 8.51,
+                "mean": 4.59
+              },
+              "gpu_vram_mb": {
+                "peak": 5018.0,
+                "mean": 5018.0
+              },
+              "gpu_util_pct": {
+                "peak": 24.0,
+                "mean": 12.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3440.23,
+                "mean": 3432.47
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4434,
+            "turn": 3,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2963.07,
+                "mean": 2963.07
+              },
+              "cpu_pct_one_core": {
+                "peak": 72.0,
+                "mean": 72.0
+              },
+              "cpu_pct_machine": {
+                "peak": 6.0,
+                "mean": 6.0
+              },
+              "gpu_vram_mb": {
+                "peak": 5018.0,
+                "mean": 5018.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3419.94,
+                "mean": 3419.94
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.7233,
+            "turn": 3,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 2963.07,
+                "mean": 2963.07
+              },
+              "cpu_pct_one_core": {
+                "peak": 104.0,
+                "mean": 61.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.67,
+                "mean": 5.08
+              },
+              "gpu_vram_mb": {
+                "peak": 5018.0,
+                "mean": 5018.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3424.38,
+                "mean": 3423.28
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4516,
+            "turn": 3,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2963.07,
+                "mean": 2963.07
+              },
+              "cpu_pct_one_core": {
+                "peak": 52.5,
+                "mean": 52.5
+              },
+              "cpu_pct_machine": {
+                "peak": 4.38,
+                "mean": 4.38
+              },
+              "gpu_vram_mb": {
+                "peak": 5018.0,
+                "mean": 5018.0
+              },
+              "gpu_util_pct": {
+                "peak": 8.0,
+                "mean": 8.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3410.29,
+                "mean": 3410.29
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.592,
+            "turn": 3,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2963.07,
+                "mean": 2963.07
+              },
+              "cpu_pct_one_core": {
+                "peak": 69.9,
+                "mean": 69.9
+              },
+              "cpu_pct_machine": {
+                "peak": 5.83,
+                "mean": 5.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5018.0,
+                "mean": 5018.0
+              },
+              "gpu_util_pct": {
+                "peak": 10.0,
+                "mean": 10.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3431.57,
+                "mean": 3431.57
+              }
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 21.764
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    },
+    {
+      "case": "bilingual_retelling_en_de_en_pause",
+      "wer": 0.4655,
+      "cer": 0.4082,
+      "language_vocabulary_retention": {
+        "en": 0.606,
+        "de": 0.474
+      },
+      "captured_segments": 2,
+      "delivered_finals": 1,
+      "findings": [
+        "WER exceeds 15 percent",
+        "1 detected speech segments were canceled before their final transcription was delivered",
+        "LLM omitted all voice markers; fallback routed the complete reply through one default voice",
+        "Voice-span mismatch candidate: en chunk contains gesagt",
+        "Voice-span mismatch candidate: en chunk contains keine, soll",
+        "Voice-span mismatch candidate: en chunk contains firma",
+        "Voice-span mismatch candidate: en chunk contains angekommen, fünfundvierzig, seid",
+        "TTS re-recognition disagrees with intended phrase: You told Anna not to buy tickets. Du hast Anna gesagt,",
+        "TTS re-recognition disagrees with intended phrase: dass sie keine Tickets kaufen soll. Then the company called to change the interview from nine to ten.",
+        "TTS re-recognition disagrees with intended phrase: Dann hat die Firma angerufen, um das Gespräch von neun auf zehn Uhr zu verschieben.",
+        "TTS re-recognition disagrees with intended phrase: You arrived at nine forty-five. Ihr seid um neun Uhr fünfundvierzig angekommen."
+      ],
+      "audio_integrity": [
+        {
+          "id": "5:1",
+          "language": "en",
+          "text": "You told Anna not to buy tickets. Du hast Anna gesagt,",
+          "seconds": 3.52,
+          "rate": 24000,
+          "rms": 0.05943,
+          "peak": 0.34204
+        },
+        {
+          "id": "5:2",
+          "language": "en",
+          "text": "dass sie keine Tickets kaufen soll. Then the company called to change the interview from nine to ten.",
+          "seconds": 5.8027,
+          "rate": 24000,
+          "rms": 0.05911,
+          "peak": 0.42529
+        },
+        {
+          "id": "5:3",
+          "language": "en",
+          "text": "Dann hat die Firma angerufen, um das Gespräch von neun auf zehn Uhr zu verschieben.",
+          "seconds": 5.376,
+          "rate": 24000,
+          "rms": 0.06066,
+          "peak": 0.36887
+        },
+        {
+          "id": "5:4",
+          "language": "en",
+          "text": "You arrived at nine forty-five. Ihr seid um neun Uhr fünfundvierzig angekommen.",
+          "seconds": 5.248,
+          "rate": 24000,
+          "rms": 0.06084,
+          "peak": 0.45883
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 90,
+        "ram_tree_rss_mb": {
+          "peak": 2966.42,
+          "mean": 2965.06
+        },
+        "cpu_pct_one_core": {
+          "peak": 107.5,
+          "mean": 38.82
+        },
+        "cpu_pct_machine": {
+          "peak": 8.96,
+          "mean": 3.24
+        },
+        "gpu_vram_mb": {
+          "peak": 5032.0,
+          "mean": 5025.16
+        },
+        "gpu_util_pct": {
+          "peak": 45.0,
+          "mean": 12.73
+        },
+        "system_ram_used_mb": {
+          "peak": 3445.98,
+          "mean": 3423.86
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1707.37,
+          "mean_mb": 1707.37
+        },
+        "tts": {
+          "peak_mb": 1104.43,
+          "mean_mb": 1104.12
+        },
+        "server": {
+          "peak_mb": 154.62,
+          "mean_mb": 153.55
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 44.632,
+        "input_seconds": 21.905,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 1.1361,
+            "turn": 5,
+            "resources": {
+              "sample_count": 3,
+              "ram_tree_rss_mb": {
+                "peak": 2965.52,
+                "mean": 2965.45
+              },
+              "cpu_pct_one_core": {
+                "peak": 107.5,
+                "mean": 98.03
+              },
+              "cpu_pct_machine": {
+                "peak": 8.96,
+                "mean": 8.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5032.0,
+                "mean": 5032.0
+              },
+              "gpu_util_pct": {
+                "peak": 34.0,
+                "mean": 25.33
+              },
+              "system_ram_used_mb": {
+                "peak": 3421.78,
+                "mean": 3418.42
+              }
+            },
+            "decode_seconds": 0.5748
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.4287,
+            "turn": 5,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2965.54,
+                "mean": 2965.54
+              },
+              "cpu_pct_one_core": {
+                "peak": 22.0,
+                "mean": 22.0
+              },
+              "cpu_pct_machine": {
+                "peak": 1.83,
+                "mean": 1.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5032.0,
+                "mean": 5032.0
+              },
+              "gpu_util_pct": {
+                "peak": 34.0,
+                "mean": 34.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3417.14,
+                "mean": 3417.14
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4678,
+            "turn": 5,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2965.54,
+                "mean": 2965.54
+              },
+              "cpu_pct_one_core": {
+                "peak": 63.8,
+                "mean": 63.8
+              },
+              "cpu_pct_machine": {
+                "peak": 5.32,
+                "mean": 5.32
+              },
+              "gpu_vram_mb": {
+                "peak": 5032.0,
+                "mean": 5032.0
+              },
+              "gpu_util_pct": {
+                "peak": 26.0,
+                "mean": 26.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3416.92,
+                "mean": 3416.92
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.8798,
+            "turn": 5,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 2965.55,
+                "mean": 2965.55
+              },
+              "cpu_pct_one_core": {
+                "peak": 103.5,
+                "mean": 102.9
+              },
+              "cpu_pct_machine": {
+                "peak": 8.62,
+                "mean": 8.57
+              },
+              "gpu_vram_mb": {
+                "peak": 5032.0,
+                "mean": 5032.0
+              },
+              "gpu_util_pct": {
+                "peak": 18.0,
+                "mean": 18.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3425.42,
+                "mean": 3423.4
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.773,
+            "turn": 5,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2966.08,
+                "mean": 2966.08
+              },
+              "cpu_pct_one_core": {
+                "peak": 98.4,
+                "mean": 98.4
+              },
+              "cpu_pct_machine": {
+                "peak": 8.2,
+                "mean": 8.2
+              },
+              "gpu_vram_mb": {
+                "peak": 5032.0,
+                "mean": 5032.0
+              },
+              "gpu_util_pct": {
+                "peak": 24.0,
+                "mean": 24.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3433.23,
+                "mean": 3433.23
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.962,
+            "turn": 5,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 2966.42,
+                "mean": 2966.42
+              },
+              "cpu_pct_one_core": {
+                "peak": 102.0,
+                "mean": 75.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.5,
+                "mean": 6.25
+              },
+              "gpu_vram_mb": {
+                "peak": 5032.0,
+                "mean": 5032.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3442.36,
+                "mean": 3440.2
+              }
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 24.285
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    },
+    {
+      "case": "long_story_en_de_en",
+      "wer": 0.8246,
+      "cer": 0.8124,
+      "language_vocabulary_retention": {
+        "en": 0.315,
+        "de": 0.0
+      },
+      "captured_segments": 2,
+      "delivered_finals": 1,
+      "findings": [
+        "WER exceeds 15 percent",
+        "1 detected speech segments were canceled before their final transcription was delivered",
+        "en vocabulary largely missing or translated; inspect original and recognized text",
+        "de vocabulary largely missing or translated; inspect original and recognized text"
+      ],
+      "audio_integrity": [
+        {
+          "id": "7:1",
+          "language": "en",
+          "text": "Yesterday, you and Anna traveled to Berlin for an interview.",
+          "seconds": 3.2,
+          "rate": 24000,
+          "rms": 0.05914,
+          "peak": 0.32999
+        },
+        {
+          "id": "7:2",
+          "language": "de",
+          "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+          "seconds": 3.4482,
+          "rate": 22050,
+          "rms": 0.14342,
+          "peak": 0.99997
+        },
+        {
+          "id": "7:3",
+          "language": "en",
+          "text": "The train was cancelled, so you found a bus,",
+          "seconds": 2.3253,
+          "rate": 24000,
+          "rms": 0.06064,
+          "peak": 0.39368
+        },
+        {
+          "id": "7:4",
+          "language": "en",
+          "text": "but you told Anna not to buy tickets yet.",
+          "seconds": 2.3253,
+          "rate": 24000,
+          "rms": 0.05736,
+          "peak": 0.35168
+        },
+        {
+          "id": "7:5",
+          "language": "de",
+          "text": "Der Zug fiel aus, also habt ihr einen Bus gefunden,",
+          "seconds": 2.9489,
+          "rate": 22050,
+          "rms": 0.15499,
+          "peak": 0.99997
+        },
+        {
+          "id": "7:6",
+          "language": "de",
+          "text": "aber du hast Anna gesagt, dass sie noch keine Tickets kaufen soll.",
+          "seconds": 3.1579,
+          "rate": 22050,
+          "rms": 0.12768,
+          "peak": 0.99997
+        },
+        {
+          "id": "7:7",
+          "language": "en",
+          "text": "The company called to move the interview from nine to ten,",
+          "seconds": 2.8587,
+          "rate": 24000,
+          "rms": 0.05848,
+          "peak": 0.36252
+        },
+        {
+          "id": "7:8",
+          "language": "en",
+          "text": "and you arrived at nine forty-five.",
+          "seconds": 1.92,
+          "rate": 24000,
+          "rms": 0.06066,
+          "peak": 0.33438
+        },
+        {
+          "id": "7:9",
+          "language": "de",
+          "text": "Die Firma hat angerufen, um das Gespräch von neun auf zehn Uhr zu verschieben,",
+          "seconds": 4.2609,
+          "rate": 22050,
+          "rms": 0.18673,
+          "peak": 0.99997
+        },
+        {
+          "id": "7:10",
+          "language": "de",
+          "text": "und ihr seid um neun Uhr fünfundvierzig angekommen.",
+          "seconds": 2.6935,
+          "rate": 22050,
+          "rms": 0.18341,
+          "peak": 0.99997
+        },
+        {
+          "id": "7:11",
+          "language": "en",
+          "text": "Finally, the man welcomed you and offered you some water.",
+          "seconds": 3.1573,
+          "rate": 24000,
+          "rms": 0.05916,
+          "peak": 0.47516
+        },
+        {
+          "id": "7:12",
+          "language": "de",
+          "text": "Schließlich hat euch der Mann begrüßt und euch etwas Wasser angeboten.",
+          "seconds": 3.3901,
+          "rate": 22050,
+          "rms": 0.15502,
+          "peak": 0.99997
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 154,
+        "ram_tree_rss_mb": {
+          "peak": 2999.47,
+          "mean": 2979.98
+        },
+        "cpu_pct_one_core": {
+          "peak": 117.8,
+          "mean": 39.14
+        },
+        "cpu_pct_machine": {
+          "peak": 9.82,
+          "mean": 3.26
+        },
+        "gpu_vram_mb": {
+          "peak": 5470.0,
+          "mean": 5211.48
+        },
+        "gpu_util_pct": {
+          "peak": 48.0,
+          "mean": 14.71
+        },
+        "system_ram_used_mb": {
+          "peak": 3488.16,
+          "mean": 3443.94
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1723.85,
+          "mean_mb": 1717.98
+        },
+        "tts": {
+          "peak_mb": 1125.72,
+          "mean_mb": 1110.08
+        },
+        "server": {
+          "peak_mb": 159.65,
+          "mean_mb": 151.96
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 77.362,
+        "input_seconds": 38.714,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 0.9689,
+            "turn": 7,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 2978.17,
+                "mean": 2978.11
+              },
+              "cpu_pct_one_core": {
+                "peak": 108.1,
+                "mean": 104.95
+              },
+              "cpu_pct_machine": {
+                "peak": 9.01,
+                "mean": 8.75
+              },
+              "gpu_vram_mb": {
+                "peak": 5214.0,
+                "mean": 5214.0
+              },
+              "gpu_util_pct": {
+                "peak": 23.0,
+                "mean": 16.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3435.08,
+                "mean": 3429.59
+              }
+            },
+            "decode_seconds": 0.4757
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.4353,
+            "turn": 7,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2978.17,
+                "mean": 2978.17
+              },
+              "cpu_pct_one_core": {
+                "peak": 72.0,
+                "mean": 72.0
+              },
+              "cpu_pct_machine": {
+                "peak": 6.0,
+                "mean": 6.0
+              },
+              "gpu_vram_mb": {
+                "peak": 5214.0,
+                "mean": 5214.0
+              },
+              "gpu_util_pct": {
+                "peak": 23.0,
+                "mean": 23.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3441.48,
+                "mean": 3441.48
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4246,
+            "turn": 7,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2978.17,
+                "mean": 2978.17
+              },
+              "cpu_pct_one_core": {
+                "peak": 28.0,
+                "mean": 28.0
+              },
+              "cpu_pct_machine": {
+                "peak": 2.33,
+                "mean": 2.33
+              },
+              "gpu_vram_mb": {
+                "peak": 5214.0,
+                "mean": 5214.0
+              },
+              "gpu_util_pct": {
+                "peak": 22.0,
+                "mean": 22.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3442.53,
+                "mean": 3442.53
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.2082,
+            "turn": 7,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2980.88,
+                "mean": 2980.88
+              },
+              "cpu_pct_one_core": {
+                "peak": 106.0,
+                "mean": 106.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.83,
+                "mean": 8.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5264.0,
+                "mean": 5264.0
+              },
+              "gpu_util_pct": {
+                "peak": 22.0,
+                "mean": 22.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3447.32,
+                "mean": 3447.32
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3137,
+            "turn": 7,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4942,
+            "turn": 7,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2983.06,
+                "mean": 2983.06
+              },
+              "cpu_pct_one_core": {
+                "peak": 87.8,
+                "mean": 87.8
+              },
+              "cpu_pct_machine": {
+                "peak": 7.32,
+                "mean": 7.32
+              },
+              "gpu_vram_mb": {
+                "peak": 5264.0,
+                "mean": 5264.0
+              },
+              "gpu_util_pct": {
+                "peak": 8.0,
+                "mean": 8.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3448.06,
+                "mean": 3448.06
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4719,
+            "turn": 7,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2983.69,
+                "mean": 2983.69
+              },
+              "cpu_pct_one_core": {
+                "peak": 58.0,
+                "mean": 58.0
+              },
+              "cpu_pct_machine": {
+                "peak": 4.83,
+                "mean": 4.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5318.0,
+                "mean": 5318.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3452.75,
+                "mean": 3452.75
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5874,
+            "turn": 7,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2983.35,
+                "mean": 2983.35
+              },
+              "cpu_pct_one_core": {
+                "peak": 65.8,
+                "mean": 65.8
+              },
+              "cpu_pct_machine": {
+                "peak": 5.48,
+                "mean": 5.48
+              },
+              "gpu_vram_mb": {
+                "peak": 5318.0,
+                "mean": 5318.0
+              },
+              "gpu_util_pct": {
+                "peak": 6.0,
+                "mean": 6.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3453.35,
+                "mean": 3453.35
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.2727,
+            "turn": 7,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4084,
+            "turn": 7,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2997.8,
+                "mean": 2997.8
+              },
+              "cpu_pct_one_core": {
+                "peak": 117.8,
+                "mean": 117.8
+              },
+              "cpu_pct_machine": {
+                "peak": 9.82,
+                "mean": 9.82
+              },
+              "gpu_vram_mb": {
+                "peak": 5412.0,
+                "mean": 5412.0
+              },
+              "gpu_util_pct": {
+                "peak": 12.0,
+                "mean": 12.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3462.4,
+                "mean": 3462.4
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5408,
+            "turn": 7,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2999.13,
+                "mean": 2999.13
+              },
+              "cpu_pct_one_core": {
+                "peak": 80.0,
+                "mean": 80.0
+              },
+              "cpu_pct_machine": {
+                "peak": 6.67,
+                "mean": 6.67
+              },
+              "gpu_vram_mb": {
+                "peak": 5412.0,
+                "mean": 5412.0
+              },
+              "gpu_util_pct": {
+                "peak": 3.0,
+                "mean": 3.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3484.28,
+                "mean": 3484.28
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3145,
+            "turn": 7,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 2999.13,
+                "mean": 2999.13
+              },
+              "cpu_pct_one_core": {
+                "peak": 24.0,
+                "mean": 24.0
+              },
+              "cpu_pct_machine": {
+                "peak": 2.0,
+                "mean": 2.0
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3476.27,
+                "mean": 3476.27
+              }
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 41.226
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    },
+    {
+      "case": "bilingual_retelling_de_en_de_clean",
+      "wer": 0.05,
+      "cer": 0.0208,
+      "language_vocabulary_retention": {
+        "en": 0.95,
+        "de": 0.972
+      },
+      "captured_segments": 1,
+      "delivered_finals": 1,
+      "findings": [
+        "LLM/memory infers a bus journey that the current transcript only describes as finding a bus"
+      ],
+      "audio_integrity": [
+        {
+          "id": "8:1",
+          "language": "de",
+          "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+          "seconds": 3.4714,
+          "rate": 22050,
+          "rms": 0.15417,
+          "peak": 0.99997
+        },
+        {
+          "id": "8:2",
+          "language": "en",
+          "text": "Yesterday, you and Anna traveled to Berlin for an interview.",
+          "seconds": 3.2,
+          "rate": 24000,
+          "rms": 0.05917,
+          "peak": 0.3356
+        },
+        {
+          "id": "8:3",
+          "language": "de",
+          "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt,",
+          "seconds": 2.9489,
+          "rate": 22050,
+          "rms": 0.1208,
+          "peak": 0.99997
+        },
+        {
+          "id": "8:4",
+          "language": "de",
+          "text": "also habt ihr einen Bus genommen, aber du sagtest,",
+          "seconds": 2.7051,
+          "rate": 22050,
+          "rms": 0.15295,
+          "peak": 0.99997
+        },
+        {
+          "id": "8:5",
+          "language": "de",
+          "text": "sie solle noch keine Tickets kaufen.",
+          "seconds": 1.9389,
+          "rate": 22050,
+          "rms": 0.13927,
+          "peak": 0.99997
+        },
+        {
+          "id": "8:6",
+          "language": "en",
+          "text": "At the station, Anna said the train was cancelled,",
+          "seconds": 2.6667,
+          "rate": 24000,
+          "rms": 0.0568,
+          "peak": 0.45288
+        },
+        {
+          "id": "8:7",
+          "language": "en",
+          "text": "so you found a bus, but you told her not to buy tickets yet.",
+          "seconds": 3.264,
+          "rate": 24000,
+          "rms": 0.06093,
+          "peak": 0.34488
+        },
+        {
+          "id": "8:8",
+          "language": "de",
+          "text": "Die Firma rief an, um den Termin von neun auf zehn Uhr zu verschieben,",
+          "seconds": 3.901,
+          "rate": 22050,
+          "rms": 0.20496,
+          "peak": 0.99997
+        },
+        {
+          "id": "8:9",
+          "language": "de",
+          "text": "und ihr kamt um neun Uhr fünfundvierzig an.",
+          "seconds": 2.8444,
+          "rate": 22050,
+          "rms": 0.17984,
+          "peak": 0.99997
+        },
+        {
+          "id": "8:10",
+          "language": "en",
+          "text": "The company called to move the appointment from nine to ten,",
+          "seconds": 2.9867,
+          "rate": 24000,
+          "rms": 0.0594,
+          "peak": 0.36407
+        },
+        {
+          "id": "8:11",
+          "language": "en",
+          "text": "and you arrived at nine forty-five.",
+          "seconds": 1.92,
+          "rate": 24000,
+          "rms": 0.06076,
+          "peak": 0.34131
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 108,
+        "ram_tree_rss_mb": {
+          "peak": 3007.61,
+          "mean": 3002.34
+        },
+        "cpu_pct_one_core": {
+          "peak": 107.9,
+          "mean": 33.2
+        },
+        "cpu_pct_machine": {
+          "peak": 8.99,
+          "mean": 2.77
+        },
+        "gpu_vram_mb": {
+          "peak": 5477.0,
+          "mean": 5470.06
+        },
+        "gpu_util_pct": {
+          "peak": 48.0,
+          "mean": 13.28
+        },
+        "system_ram_used_mb": {
+          "peak": 3489.27,
+          "mean": 3453.45
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1723.86,
+          "mean_mb": 1723.86
+        },
+        "tts": {
+          "peak_mb": 1128.29,
+          "mean_mb": 1126.99
+        },
+        "server": {
+          "peak_mb": 158.03,
+          "mean_mb": 151.46
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 54.153,
+        "input_seconds": 19.6,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 0.8967,
+            "turn": 8,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3007.61,
+                "mean": 3007.61
+              },
+              "cpu_pct_one_core": {
+                "peak": 107.9,
+                "mean": 106.8
+              },
+              "cpu_pct_machine": {
+                "peak": 8.99,
+                "mean": 8.9
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 42.0,
+                "mean": 39.5
+              },
+              "system_ram_used_mb": {
+                "peak": 3443.41,
+                "mean": 3442.18
+              }
+            },
+            "decode_seconds": 0.6736
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.4358,
+            "turn": 8,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3001.3,
+                "mean": 3001.3
+              },
+              "cpu_pct_one_core": {
+                "peak": 14.0,
+                "mean": 14.0
+              },
+              "cpu_pct_machine": {
+                "peak": 1.17,
+                "mean": 1.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 42.0,
+                "mean": 42.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3442.37,
+                "mean": 3442.37
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.1695,
+            "turn": 8,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3773,
+            "turn": 8,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3001.83,
+                "mean": 3001.83
+              },
+              "cpu_pct_one_core": {
+                "peak": 76.0,
+                "mean": 76.0
+              },
+              "cpu_pct_machine": {
+                "peak": 6.33,
+                "mean": 6.33
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 16.0,
+                "mean": 16.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3445.09,
+                "mean": 3445.09
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4854,
+            "turn": 8,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3003.42,
+                "mean": 3003.42
+              },
+              "cpu_pct_one_core": {
+                "peak": 62.0,
+                "mean": 62.0
+              },
+              "cpu_pct_machine": {
+                "peak": 5.17,
+                "mean": 5.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3424.91,
+                "mean": 3424.91
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.2904,
+            "turn": 8,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5706,
+            "turn": 8,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3003.07,
+                "mean": 3003.07
+              },
+              "cpu_pct_one_core": {
+                "peak": 93.9,
+                "mean": 93.9
+              },
+              "cpu_pct_machine": {
+                "peak": 7.83,
+                "mean": 7.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 32.0,
+                "mean": 32.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3441.72,
+                "mean": 3441.72
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.6342,
+            "turn": 8,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3003.07,
+                "mean": 3003.07
+              },
+              "cpu_pct_one_core": {
+                "peak": 58.0,
+                "mean": 58.0
+              },
+              "cpu_pct_machine": {
+                "peak": 4.83,
+                "mean": 4.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3440.92,
+                "mean": 3440.92
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.402,
+            "turn": 8,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3003.43,
+                "mean": 3003.43
+              },
+              "cpu_pct_one_core": {
+                "peak": 57.8,
+                "mean": 57.8
+              },
+              "cpu_pct_machine": {
+                "peak": 4.82,
+                "mean": 4.82
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 13.0,
+                "mean": 13.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3448.67,
+                "mean": 3448.67
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.6454,
+            "turn": 8,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3003.87,
+                "mean": 3003.87
+              },
+              "cpu_pct_one_core": {
+                "peak": 72.0,
+                "mean": 72.0
+              },
+              "cpu_pct_machine": {
+                "peak": 6.0,
+                "mean": 6.0
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3473.37,
+                "mean": 3473.37
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.2836,
+            "turn": 8,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 21.809
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    },
+    {
+      "case": "bilingual_retelling_de_en_de_noise20",
+      "wer": 0.0167,
+      "cer": 0.003,
+      "language_vocabulary_retention": {
+        "en": 0.95,
+        "de": 1.0
+      },
+      "captured_segments": 1,
+      "delivered_finals": 1,
+      "findings": [],
+      "audio_integrity": [
+        {
+          "id": "9:1",
+          "language": "de",
+          "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+          "seconds": 3.6107,
+          "rate": 22050,
+          "rms": 0.14677,
+          "peak": 0.99997
+        },
+        {
+          "id": "9:2",
+          "language": "en",
+          "text": "Yesterday, you and Anna traveled to Berlin for an interview.",
+          "seconds": 3.2,
+          "rate": 24000,
+          "rms": 0.05919,
+          "peak": 0.33218
+        },
+        {
+          "id": "9:3",
+          "language": "de",
+          "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt,",
+          "seconds": 3.0999,
+          "rate": 22050,
+          "rms": 0.12518,
+          "peak": 0.99997
+        },
+        {
+          "id": "9:4",
+          "language": "de",
+          "text": "also habt ihr einen Bus gefunden, aber du sagtest,",
+          "seconds": 2.6006,
+          "rate": 22050,
+          "rms": 0.16084,
+          "peak": 0.99997
+        },
+        {
+          "id": "9:5",
+          "language": "de",
+          "text": "sie solle noch keine Tickets kaufen.",
+          "seconds": 1.8924,
+          "rate": 22050,
+          "rms": 0.14881,
+          "peak": 0.99997
+        },
+        {
+          "id": "9:6",
+          "language": "en",
+          "text": "At the station, Anna said the train was cancelled,",
+          "seconds": 2.6667,
+          "rate": 24000,
+          "rms": 0.05681,
+          "peak": 0.3981
+        },
+        {
+          "id": "9:7",
+          "language": "en",
+          "text": "so you found a bus, but you told her not to buy tickets yet.",
+          "seconds": 3.264,
+          "rate": 24000,
+          "rms": 0.06104,
+          "peak": 0.34
+        },
+        {
+          "id": "9:8",
+          "language": "de",
+          "text": "Die Firma rief an, weil das Gespräch erst um zehn statt um neun Uhr war,",
+          "seconds": 3.9938,
+          "rate": 22050,
+          "rms": 0.16937,
+          "peak": 0.99997
+        },
+        {
+          "id": "9:9",
+          "language": "de",
+          "text": "und ihr kamt um neun Uhr fünfundvierzig an.",
+          "seconds": 2.5426,
+          "rate": 22050,
+          "rms": 0.17392,
+          "peak": 0.99997
+        },
+        {
+          "id": "9:10",
+          "language": "en",
+          "text": "The company called because the interview was at ten instead of nine,",
+          "seconds": 3.6693,
+          "rate": 24000,
+          "rms": 0.05968,
+          "peak": 0.37158
+        },
+        {
+          "id": "9:11",
+          "language": "en",
+          "text": "and you arrived at nine forty-five.",
+          "seconds": 1.92,
+          "rate": 24000,
+          "rms": 0.06071,
+          "peak": 0.33023
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 109,
+        "ram_tree_rss_mb": {
+          "peak": 3010.2,
+          "mean": 3005.43
+        },
+        "cpu_pct_one_core": {
+          "peak": 149.9,
+          "mean": 33.07
+        },
+        "cpu_pct_machine": {
+          "peak": 12.49,
+          "mean": 2.76
+        },
+        "gpu_vram_mb": {
+          "peak": 5544.0,
+          "mean": 5486.97
+        },
+        "gpu_util_pct": {
+          "peak": 44.0,
+          "mean": 13.78
+        },
+        "system_ram_used_mb": {
+          "peak": 3507.07,
+          "mean": 3476.36
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1723.86,
+          "mean_mb": 1723.86
+        },
+        "tts": {
+          "peak_mb": 1130.73,
+          "mean_mb": 1128.84
+        },
+        "server": {
+          "peak_mb": 158.05,
+          "mean_mb": 152.72
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 54.58,
+        "input_seconds": 19.6,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 0.7871,
+            "turn": 9,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3010.2,
+                "mean": 3010.01
+              },
+              "cpu_pct_one_core": {
+                "peak": 106.0,
+                "mean": 105.15
+              },
+              "cpu_pct_machine": {
+                "peak": 8.83,
+                "mean": 8.76
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 25.0,
+                "mean": 25.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3494.92,
+                "mean": 3493.18
+              }
+            },
+            "decode_seconds": 0.6374
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.4326,
+            "turn": 9,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3003.88,
+                "mean": 3003.88
+              },
+              "cpu_pct_one_core": {
+                "peak": 52.0,
+                "mean": 52.0
+              },
+              "cpu_pct_machine": {
+                "peak": 4.33,
+                "mean": 4.33
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 25.0,
+                "mean": 25.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3484.97,
+                "mean": 3484.97
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.1874,
+            "turn": 9,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3943,
+            "turn": 9,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3003.88,
+                "mean": 3003.88
+              },
+              "cpu_pct_one_core": {
+                "peak": 58.0,
+                "mean": 58.0
+              },
+              "cpu_pct_machine": {
+                "peak": 4.83,
+                "mean": 4.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 32.0,
+                "mean": 32.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3495.98,
+                "mean": 3495.98
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4496,
+            "turn": 9,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3004.25,
+                "mean": 3004.25
+              },
+              "cpu_pct_one_core": {
+                "peak": 117.9,
+                "mean": 117.9
+              },
+              "cpu_pct_machine": {
+                "peak": 9.83,
+                "mean": 9.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 6.0,
+                "mean": 6.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3461.6,
+                "mean": 3461.6
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.357,
+            "turn": 9,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3003.89,
+                "mean": 3003.89
+              },
+              "cpu_pct_one_core": {
+                "peak": 48.0,
+                "mean": 48.0
+              },
+              "cpu_pct_machine": {
+                "peak": 4.0,
+                "mean": 4.0
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3492.41,
+                "mean": 3492.41
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.7137,
+            "turn": 9,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3003.89,
+                "mean": 3003.89
+              },
+              "cpu_pct_one_core": {
+                "peak": 102.0,
+                "mean": 62.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.5,
+                "mean": 5.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3467.16,
+                "mean": 3466.43
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.6179,
+            "turn": 9,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3003.89,
+                "mean": 3003.89
+              },
+              "cpu_pct_one_core": {
+                "peak": 102.0,
+                "mean": 102.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.5,
+                "mean": 8.5
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 7.0,
+                "mean": 7.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3476.28,
+                "mean": 3476.28
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.484,
+            "turn": 9,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3004.25,
+                "mean": 3004.25
+              },
+              "cpu_pct_one_core": {
+                "peak": 149.9,
+                "mean": 149.9
+              },
+              "cpu_pct_machine": {
+                "peak": 12.49,
+                "mean": 12.49
+              },
+              "gpu_vram_mb": {
+                "peak": 5470.0,
+                "mean": 5470.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3453.16,
+                "mean": 3453.16
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5432,
+            "turn": 9,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3004.34,
+                "mean": 3004.34
+              },
+              "cpu_pct_one_core": {
+                "peak": 25.9,
+                "mean": 25.9
+              },
+              "cpu_pct_machine": {
+                "peak": 2.16,
+                "mean": 2.16
+              },
+              "gpu_vram_mb": {
+                "peak": 5544.0,
+                "mean": 5544.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3455.79,
+                "mean": 3455.79
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4597,
+            "turn": 9,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3006.32,
+                "mean": 3006.32
+              },
+              "cpu_pct_one_core": {
+                "peak": 24.0,
+                "mean": 24.0
+              },
+              "cpu_pct_machine": {
+                "peak": 2.0,
+                "mean": 2.0
+              },
+              "gpu_vram_mb": {
+                "peak": 5544.0,
+                "mean": 5544.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3488.27,
+                "mean": 3488.27
+              }
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 21.664
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    },
+    {
+      "case": "bilingual_retelling_de_en_de_quiet",
+      "wer": 0.0333,
+      "cer": 0.0119,
+      "language_vocabulary_retention": {
+        "en": 0.95,
+        "de": 0.972
+      },
+      "captured_segments": 1,
+      "delivered_finals": 1,
+      "findings": [
+        "LLM omitted all voice markers; fallback routed the complete reply through one default voice",
+        "Voice-span mismatch candidate: de chunk contains yesterday, you",
+        "Voice-span mismatch candidate: de chunk contains the",
+        "Voice-span mismatch candidate: de chunk contains the, you",
+        "Voice-span mismatch candidate: de chunk contains you",
+        "Voice-span mismatch candidate: de chunk contains because, called, the",
+        "Voice-span mismatch candidate: de chunk contains arrived, you",
+        "TTS re-recognition disagrees with intended phrase: Yesterday, you and Anna traveled to Berlin for an interview.",
+        "TTS re-recognition disagrees with intended phrase: sie solle noch keine Tickets kaufen. At the station,",
+        "TTS re-recognition disagrees with intended phrase: Anna said the train was cancelled, so you found a bus,",
+        "TTS re-recognition disagrees with intended phrase: but you told her not to buy tickets yet.",
+        "TTS re-recognition disagrees with intended phrase: The company called because the interview was at ten instead of nine,",
+        "TTS re-recognition disagrees with intended phrase: and you arrived at nine forty-five."
+      ],
+      "audio_integrity": [
+        {
+          "id": "10:1",
+          "language": "de",
+          "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+          "seconds": 3.6571,
+          "rate": 22050,
+          "rms": 0.13082,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:2",
+          "language": "de",
+          "text": "Yesterday, you and Anna traveled to Berlin for an interview.",
+          "seconds": 3.5991,
+          "rate": 22050,
+          "rms": 0.15325,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:3",
+          "language": "de",
+          "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt,",
+          "seconds": 2.9722,
+          "rate": 22050,
+          "rms": 0.13034,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:4",
+          "language": "de",
+          "text": "also habt ihr einen Bus gefunden, aber du sagtest,",
+          "seconds": 2.6006,
+          "rate": 22050,
+          "rms": 0.14262,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:5",
+          "language": "de",
+          "text": "sie solle noch keine Tickets kaufen. At the station,",
+          "seconds": 2.8328,
+          "rate": 22050,
+          "rms": 0.16277,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:6",
+          "language": "de",
+          "text": "Anna said the train was cancelled, so you found a bus,",
+          "seconds": 3.0766,
+          "rate": 22050,
+          "rms": 0.16134,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:7",
+          "language": "de",
+          "text": "but you told her not to buy tickets yet.",
+          "seconds": 2.4961,
+          "rate": 22050,
+          "rms": 0.15245,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:8",
+          "language": "de",
+          "text": "Die Firma rief an, weil das Gespräch erst um zehn statt um neun Uhr war,",
+          "seconds": 3.9822,
+          "rate": 22050,
+          "rms": 0.17463,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:9",
+          "language": "de",
+          "text": "und ihr kamt um neun Uhr fünfundvierzig an.",
+          "seconds": 2.6006,
+          "rate": 22050,
+          "rms": 0.17615,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:10",
+          "language": "de",
+          "text": "The company called because the interview was at ten instead of nine,",
+          "seconds": 4.2609,
+          "rate": 22050,
+          "rms": 0.16043,
+          "peak": 0.99997
+        },
+        {
+          "id": "10:11",
+          "language": "de",
+          "text": "and you arrived at nine forty-five.",
+          "seconds": 2.2059,
+          "rate": 22050,
+          "rms": 0.15704,
+          "peak": 0.99997
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 114,
+        "ram_tree_rss_mb": {
+          "peak": 3025.88,
+          "mean": 3015.49
+        },
+        "cpu_pct_one_core": {
+          "peak": 127.9,
+          "mean": 32.39
+        },
+        "cpu_pct_machine": {
+          "peak": 10.66,
+          "mean": 2.7
+        },
+        "gpu_vram_mb": {
+          "peak": 5612.0,
+          "mean": 5563.09
+        },
+        "gpu_util_pct": {
+          "peak": 50.0,
+          "mean": 11.53
+        },
+        "system_ram_used_mb": {
+          "peak": 3513.45,
+          "mean": 3480.86
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1723.86,
+          "mean_mb": 1723.85
+        },
+        "tts": {
+          "peak_mb": 1150.22,
+          "mean_mb": 1138.77
+        },
+        "server": {
+          "peak_mb": 158.07,
+          "mean_mb": 152.78
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 56.693,
+        "input_seconds": 19.6,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 1.1146,
+            "turn": 10,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3012.64,
+                "mean": 3012.53
+              },
+              "cpu_pct_one_core": {
+                "peak": 106.0,
+                "mean": 104.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.83,
+                "mean": 8.66
+              },
+              "gpu_vram_mb": {
+                "peak": 5544.0,
+                "mean": 5544.0
+              },
+              "gpu_util_pct": {
+                "peak": 39.0,
+                "mean": 39.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3479.94,
+                "mean": 3478.28
+              }
+            },
+            "decode_seconds": 0.5634
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.4208,
+            "turn": 10,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3006.37,
+                "mean": 3006.37
+              },
+              "cpu_pct_one_core": {
+                "peak": 40.0,
+                "mean": 40.0
+              },
+              "cpu_pct_machine": {
+                "peak": 3.33,
+                "mean": 3.33
+              },
+              "gpu_vram_mb": {
+                "peak": 5544.0,
+                "mean": 5544.0
+              },
+              "gpu_util_pct": {
+                "peak": 36.0,
+                "mean": 36.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3489.47,
+                "mean": 3489.47
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.2126,
+            "turn": 10,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3406,
+            "turn": 10,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3006.74,
+                "mean": 3006.74
+              },
+              "cpu_pct_one_core": {
+                "peak": 98.0,
+                "mean": 98.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.17,
+                "mean": 8.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5544.0,
+                "mean": 5544.0
+              },
+              "gpu_util_pct": {
+                "peak": 36.0,
+                "mean": 36.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3475.88,
+                "mean": 3475.88
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4709,
+            "turn": 10,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3006.73,
+                "mean": 3006.73
+              },
+              "cpu_pct_one_core": {
+                "peak": 127.9,
+                "mean": 127.9
+              },
+              "cpu_pct_machine": {
+                "peak": 10.66,
+                "mean": 10.66
+              },
+              "gpu_vram_mb": {
+                "peak": 5544.0,
+                "mean": 5544.0
+              },
+              "gpu_util_pct": {
+                "peak": 18.0,
+                "mean": 18.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3478.64,
+                "mean": 3478.64
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4235,
+            "turn": 10,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3020.36,
+                "mean": 3020.36
+              },
+              "cpu_pct_one_core": {
+                "peak": 82.0,
+                "mean": 82.0
+              },
+              "cpu_pct_machine": {
+                "peak": 6.83,
+                "mean": 6.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5544.0,
+                "mean": 5544.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3468.06,
+                "mean": 3468.06
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5493,
+            "turn": 10,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3023.15,
+                "mean": 3023.15
+              },
+              "cpu_pct_one_core": {
+                "peak": 106.0,
+                "mean": 106.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.83,
+                "mean": 8.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5612.0,
+                "mean": 5612.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3480.46,
+                "mean": 3480.46
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4461,
+            "turn": 10,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3025.88,
+                "mean": 3025.88
+              },
+              "cpu_pct_one_core": {
+                "peak": 108.0,
+                "mean": 108.0
+              },
+              "cpu_pct_machine": {
+                "peak": 9.0,
+                "mean": 9.0
+              },
+              "gpu_vram_mb": {
+                "peak": 5612.0,
+                "mean": 5612.0
+              },
+              "gpu_util_pct": {
+                "peak": 19.0,
+                "mean": 19.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3476.0,
+                "mean": 3476.0
+              }
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 21.952
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    },
+    {
+      "case": "bilingual_retelling_de_en_de_pause",
+      "wer": 0.0667,
+      "cer": 0.0357,
+      "language_vocabulary_retention": {
+        "en": 0.95,
+        "de": 0.944
+      },
+      "captured_segments": 1,
+      "delivered_finals": 1,
+      "findings": [
+        "LLM omitted all voice markers; fallback routed the complete reply through one default voice",
+        "Voice-span mismatch candidate: de chunk contains yesterday, you",
+        "Voice-span mismatch candidate: de chunk contains the",
+        "Voice-span mismatch candidate: de chunk contains the, you",
+        "Voice-span mismatch candidate: de chunk contains you",
+        "Voice-span mismatch candidate: de chunk contains because, called, the",
+        "Voice-span mismatch candidate: de chunk contains arrived, you",
+        "TTS re-recognition disagrees with intended phrase: Yesterday, you and Anna traveled to Berlin for an interview.",
+        "TTS re-recognition disagrees with intended phrase: sie solle noch keine Tickets kaufen. At the station,",
+        "TTS re-recognition disagrees with intended phrase: Anna said the train was cancelled, so you found a bus,",
+        "TTS re-recognition disagrees with intended phrase: but you told her not to buy tickets yet.",
+        "TTS re-recognition disagrees with intended phrase: The company called because the interview was at ten instead of nine,",
+        "TTS re-recognition disagrees with intended phrase: and you arrived at nine forty-five."
+      ],
+      "audio_integrity": [
+        {
+          "id": "11:1",
+          "language": "de",
+          "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+          "seconds": 3.2392,
+          "rate": 22050,
+          "rms": 0.15653,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:2",
+          "language": "de",
+          "text": "Yesterday, you and Anna traveled to Berlin for an interview.",
+          "seconds": 3.5294,
+          "rate": 22050,
+          "rms": 0.14072,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:3",
+          "language": "de",
+          "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt,",
+          "seconds": 3.007,
+          "rate": 22050,
+          "rms": 0.1285,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:4",
+          "language": "de",
+          "text": "also habt ihr einen Bus gefunden, aber du sagtest,",
+          "seconds": 2.8793,
+          "rate": 22050,
+          "rms": 0.13434,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:5",
+          "language": "de",
+          "text": "sie solle noch keine Tickets kaufen. At the station,",
+          "seconds": 2.8561,
+          "rate": 22050,
+          "rms": 0.16674,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:6",
+          "language": "de",
+          "text": "Anna said the train was cancelled, so you found a bus,",
+          "seconds": 2.8909,
+          "rate": 22050,
+          "rms": 0.14547,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:7",
+          "language": "de",
+          "text": "but you told her not to buy tickets yet.",
+          "seconds": 2.5774,
+          "rate": 22050,
+          "rms": 0.16824,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:8",
+          "language": "de",
+          "text": "Die Firma rief an, weil das Gespräch erst um zehn statt um neun Uhr war,",
+          "seconds": 3.9358,
+          "rate": 22050,
+          "rms": 0.16655,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:9",
+          "language": "de",
+          "text": "und ihr kamt um neun Uhr fünfundvierzig an.",
+          "seconds": 2.5658,
+          "rate": 22050,
+          "rms": 0.18765,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:10",
+          "language": "de",
+          "text": "The company called because the interview was at ten instead of nine,",
+          "seconds": 4.168,
+          "rate": 22050,
+          "rms": 0.15972,
+          "peak": 0.99997
+        },
+        {
+          "id": "11:11",
+          "language": "de",
+          "text": "and you arrived at nine forty-five.",
+          "seconds": 2.4381,
+          "rate": 22050,
+          "rms": 0.16207,
+          "peak": 0.99997
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 116,
+        "ram_tree_rss_mb": {
+          "peak": 3031.43,
+          "mean": 3027.81
+        },
+        "cpu_pct_one_core": {
+          "peak": 113.9,
+          "mean": 30.03
+        },
+        "cpu_pct_machine": {
+          "peak": 9.49,
+          "mean": 2.5
+        },
+        "gpu_vram_mb": {
+          "peak": 5684.0,
+          "mean": 5623.79
+        },
+        "gpu_util_pct": {
+          "peak": 46.0,
+          "mean": 12.03
+        },
+        "system_ram_used_mb": {
+          "peak": 3512.1,
+          "mean": 3491.04
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1723.85,
+          "mean_mb": 1723.74
+        },
+        "tts": {
+          "peak_mb": 1150.46,
+          "mean_mb": 1149.92
+        },
+        "server": {
+          "peak_mb": 157.84,
+          "mean_mb": 154.13
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 58.215,
+        "input_seconds": 21.91,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 0.9062,
+            "turn": 11,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3027.66,
+                "mean": 3027.62
+              },
+              "cpu_pct_one_core": {
+                "peak": 106.0,
+                "mean": 105.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.83,
+                "mean": 8.75
+              },
+              "gpu_vram_mb": {
+                "peak": 5612.0,
+                "mean": 5612.0
+              },
+              "gpu_util_pct": {
+                "peak": 42.0,
+                "mean": 42.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3486.8,
+                "mean": 3485.78
+              }
+            },
+            "decode_seconds": 0.643
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.4396,
+            "turn": 11,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3027.67,
+                "mean": 3027.67
+              },
+              "cpu_pct_one_core": {
+                "peak": 46.0,
+                "mean": 46.0
+              },
+              "cpu_pct_machine": {
+                "peak": 3.83,
+                "mean": 3.83
+              },
+              "gpu_vram_mb": {
+                "peak": 5612.0,
+                "mean": 5612.0
+              },
+              "gpu_util_pct": {
+                "peak": 42.0,
+                "mean": 42.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3500.89,
+                "mean": 3500.89
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.1785,
+            "turn": 11,
+            "resources": {
+              "sample_count": 0,
+              "ram_tree_rss_mb": null,
+              "cpu_pct_one_core": null,
+              "cpu_pct_machine": null,
+              "gpu_vram_mb": null,
+              "gpu_util_pct": null,
+              "system_ram_used_mb": null
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3404,
+            "turn": 11,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3028.01,
+                "mean": 3028.01
+              },
+              "cpu_pct_one_core": {
+                "peak": 86.0,
+                "mean": 86.0
+              },
+              "cpu_pct_machine": {
+                "peak": 7.17,
+                "mean": 7.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5612.0,
+                "mean": 5612.0
+              },
+              "gpu_util_pct": {
+                "peak": 39.0,
+                "mean": 39.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3503.81,
+                "mean": 3503.81
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5726,
+            "turn": 11,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3028.03,
+                "mean": 3028.03
+              },
+              "cpu_pct_one_core": {
+                "peak": 92.0,
+                "mean": 92.0
+              },
+              "cpu_pct_machine": {
+                "peak": 7.67,
+                "mean": 7.67
+              },
+              "gpu_vram_mb": {
+                "peak": 5612.0,
+                "mean": 5612.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3492.51,
+                "mean": 3492.51
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3866,
+            "turn": 11,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3028.03,
+                "mean": 3028.03
+              },
+              "cpu_pct_one_core": {
+                "peak": 113.9,
+                "mean": 113.9
+              },
+              "cpu_pct_machine": {
+                "peak": 9.49,
+                "mean": 9.49
+              },
+              "gpu_vram_mb": {
+                "peak": 5612.0,
+                "mean": 5612.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3487.77,
+                "mean": 3487.77
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4595,
+            "turn": 11,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3028.03,
+                "mean": 3028.03
+              },
+              "cpu_pct_one_core": {
+                "peak": 41.9,
+                "mean": 41.9
+              },
+              "cpu_pct_machine": {
+                "peak": 3.49,
+                "mean": 3.49
+              },
+              "gpu_vram_mb": {
+                "peak": 5612.0,
+                "mean": 5612.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3484.4,
+                "mean": 3484.4
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3675,
+            "turn": 11,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3028.27,
+                "mean": 3028.27
+              },
+              "cpu_pct_one_core": {
+                "peak": 30.0,
+                "mean": 30.0
+              },
+              "cpu_pct_machine": {
+                "peak": 2.5,
+                "mean": 2.5
+              },
+              "gpu_vram_mb": {
+                "peak": 5684.0,
+                "mean": 5684.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3480.48,
+                "mean": 3480.48
+              }
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 23.704
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    },
+    {
+      "case": "long_story_de_en_de",
+      "wer": 0.8205,
+      "cer": 0.8126,
+      "language_vocabulary_retention": {
+        "en": 0.353,
+        "de": 0.0
+      },
+      "captured_segments": 2,
+      "delivered_finals": 1,
+      "findings": [
+        "WER exceeds 15 percent",
+        "1 detected speech segments were canceled before their final transcription was delivered",
+        "de vocabulary largely missing or translated; inspect original and recognized text",
+        "LLM omitted all voice markers; fallback routed the complete reply through one default voice",
+        "Voice-span mismatch candidate: en chunk contains gestern, seid, vorstellungsgespräch",
+        "Voice-span mismatch candidate: en chunk contains bahnhof",
+        "Voice-span mismatch candidate: en chunk contains keine",
+        "Voice-span mismatch candidate: en chunk contains firma",
+        "Voice-span mismatch candidate: en chunk contains fünfundvierzig",
+        "TTS re-recognition disagrees with intended phrase: Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+        "TTS re-recognition disagrees with intended phrase: Am Bahnhof sagte Anna, dass der Zug ausfällt,",
+        "TTS re-recognition disagrees with intended phrase: also habt ihr einen Bus gefunden, aber du sagtest,",
+        "TTS re-recognition disagrees with intended phrase: sie solle noch keine Tickets kaufen. The company called to change the time from nine to ten,",
+        "TTS re-recognition disagrees with intended phrase: and you arrived at nine forty-five. Die Firma rief an,",
+        "TTS re-recognition disagrees with intended phrase: um die Zeit von neun auf zehn Uhr zu ändern,",
+        "TTS re-recognition disagrees with intended phrase: und ihr kamt um neun Uhr fünfundvierzig an.",
+        "TTS re-recognition disagrees with intended phrase: Schließlich hat euch der Manager begrüßt und euch etwas Wasser angeboten."
+      ],
+      "audio_integrity": [
+        {
+          "id": "13:1",
+          "language": "en",
+          "text": "Yesterday, you and Anna traveled to Berlin for an interview.",
+          "seconds": 3.2,
+          "rate": 24000,
+          "rms": 0.05915,
+          "peak": 0.33765
+        },
+        {
+          "id": "13:2",
+          "language": "en",
+          "text": "Gestern seid ihr für ein Vorstellungsgespräch nach Berlin gereist.",
+          "seconds": 4.3947,
+          "rate": 24000,
+          "rms": 0.0565,
+          "peak": 0.35919
+        },
+        {
+          "id": "13:3",
+          "language": "en",
+          "text": "At the station, Anna said the train was cancelled,",
+          "seconds": 2.6667,
+          "rate": 24000,
+          "rms": 0.05684,
+          "peak": 0.43161
+        },
+        {
+          "id": "13:4",
+          "language": "en",
+          "text": "so you found a bus, but you told her not to buy tickets yet.",
+          "seconds": 3.264,
+          "rate": 24000,
+          "rms": 0.06105,
+          "peak": 0.34595
+        },
+        {
+          "id": "13:5",
+          "language": "en",
+          "text": "Am Bahnhof sagte Anna, dass der Zug ausfällt,",
+          "seconds": 2.7093,
+          "rate": 24000,
+          "rms": 0.0603,
+          "peak": 0.35956
+        },
+        {
+          "id": "13:6",
+          "language": "en",
+          "text": "also habt ihr einen Bus gefunden, aber du sagtest,",
+          "seconds": 3.584,
+          "rate": 24000,
+          "rms": 0.05699,
+          "peak": 0.43192
+        },
+        {
+          "id": "13:7",
+          "language": "en",
+          "text": "sie solle noch keine Tickets kaufen. The company called to change the time from nine to ten,",
+          "seconds": 5.504,
+          "rate": 24000,
+          "rms": 0.05897,
+          "peak": 0.39554
+        },
+        {
+          "id": "13:8",
+          "language": "en",
+          "text": "and you arrived at nine forty-five. Die Firma rief an,",
+          "seconds": 3.2427,
+          "rate": 24000,
+          "rms": 0.06063,
+          "peak": 0.32623
+        },
+        {
+          "id": "13:9",
+          "language": "en",
+          "text": "um die Zeit von neun auf zehn Uhr zu ändern,",
+          "seconds": 2.7307,
+          "rate": 24000,
+          "rms": 0.05886,
+          "peak": 0.37122
+        },
+        {
+          "id": "13:10",
+          "language": "en",
+          "text": "und ihr kamt um neun Uhr fünfundvierzig an.",
+          "seconds": 2.9227,
+          "rate": 24000,
+          "rms": 0.0616,
+          "peak": 0.55463
+        },
+        {
+          "id": "13:11",
+          "language": "en",
+          "text": "Finally, the manager welcomed you and offered you some water.",
+          "seconds": 3.4133,
+          "rate": 24000,
+          "rms": 0.05909,
+          "peak": 0.43292
+        },
+        {
+          "id": "13:12",
+          "language": "en",
+          "text": "Schließlich hat euch der Manager begrüßt und euch etwas Wasser angeboten.",
+          "seconds": 4.8,
+          "rate": 24000,
+          "rms": 0.05945,
+          "peak": 0.36719
+        }
+      ],
+      "ram_vram": {
+        "sample_count": 169,
+        "ram_tree_rss_mb": {
+          "peak": 3036.53,
+          "mean": 3028.81
+        },
+        "cpu_pct_one_core": {
+          "peak": 110.0,
+          "mean": 37.78
+        },
+        "cpu_pct_machine": {
+          "peak": 9.17,
+          "mean": 3.15
+        },
+        "gpu_vram_mb": {
+          "peak": 5768.0,
+          "mean": 5726.75
+        },
+        "gpu_util_pct": {
+          "peak": 49.0,
+          "mean": 15.57
+        },
+        "system_ram_used_mb": {
+          "peak": 3563.22,
+          "mean": 3513.37
+        }
+      },
+      "model_ram": {
+        "stt": {
+          "peak_mb": 1724.85,
+          "mean_mb": 1724.45
+        },
+        "tts": {
+          "peak_mb": 1154.99,
+          "mean_mb": 1152.53
+        },
+        "server": {
+          "peak_mb": 161.56,
+          "mean_mb": 151.85
+        }
+      },
+      "gpu_clock_state": {
+        "states": [],
+        "min_sm_mhz": null,
+        "max_sm_mhz": null,
+        "sample_count": 0,
+        "final_stt_states": []
+      },
+      "timings": {
+        "whole_sample_seconds": 84.709,
+        "input_seconds": 39.538,
+        "stages": [
+          {
+            "stage": "final_stt",
+            "seconds": 0.4621,
+            "turn": 13,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3026.28,
+                "mean": 3026.28
+              },
+              "cpu_pct_one_core": {
+                "peak": 90.0,
+                "mean": 90.0
+              },
+              "cpu_pct_machine": {
+                "peak": 7.5,
+                "mean": 7.5
+              },
+              "gpu_vram_mb": {
+                "peak": 5684.0,
+                "mean": 5684.0
+              },
+              "gpu_util_pct": {
+                "peak": 33.0,
+                "mean": 33.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3506.55,
+                "mean": 3506.55
+              }
+            },
+            "decode_seconds": 0.4617
+          },
+          {
+            "stage": "llm_to_first_text",
+            "seconds": 0.6965,
+            "turn": 13,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3026.28,
+                "mean": 3026.28
+              },
+              "cpu_pct_one_core": {
+                "peak": 14.0,
+                "mean": 14.0
+              },
+              "cpu_pct_machine": {
+                "peak": 1.17,
+                "mean": 1.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5684.0,
+                "mean": 5684.0
+              },
+              "gpu_util_pct": {
+                "peak": 24.0,
+                "mean": 24.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3502.22,
+                "mean": 3502.22
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3761,
+            "turn": 13,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3026.28,
+                "mean": 3026.28
+              },
+              "cpu_pct_one_core": {
+                "peak": 39.9,
+                "mean": 39.9
+              },
+              "cpu_pct_machine": {
+                "peak": 3.32,
+                "mean": 3.32
+              },
+              "gpu_vram_mb": {
+                "peak": 5684.0,
+                "mean": 5684.0
+              },
+              "gpu_util_pct": {
+                "peak": 24.0,
+                "mean": 24.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3504.98,
+                "mean": 3504.98
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5256,
+            "turn": 13,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3028.89,
+                "mean": 3028.89
+              },
+              "cpu_pct_one_core": {
+                "peak": 107.8,
+                "mean": 107.8
+              },
+              "cpu_pct_machine": {
+                "peak": 8.98,
+                "mean": 8.98
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 14.0,
+                "mean": 14.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3500.51,
+                "mean": 3500.51
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.3035,
+            "turn": 13,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3030.74,
+                "mean": 3030.74
+              },
+              "cpu_pct_one_core": {
+                "peak": 104.1,
+                "mean": 104.1
+              },
+              "cpu_pct_machine": {
+                "peak": 8.67,
+                "mean": 8.67
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 14.0,
+                "mean": 14.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3494.84,
+                "mean": 3494.84
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5605,
+            "turn": 13,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3030.74,
+                "mean": 3030.74
+              },
+              "cpu_pct_one_core": {
+                "peak": 102.0,
+                "mean": 54.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.5,
+                "mean": 4.5
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3517.54,
+                "mean": 3517.36
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.6018,
+            "turn": 13,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3030.74,
+                "mean": 3030.74
+              },
+              "cpu_pct_one_core": {
+                "peak": 104.0,
+                "mean": 63.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.67,
+                "mean": 5.25
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 29.0,
+                "mean": 14.5
+              },
+              "system_ram_used_mb": {
+                "peak": 3517.98,
+                "mean": 3515.41
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.7137,
+            "turn": 13,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3030.74,
+                "mean": 3030.74
+              },
+              "cpu_pct_one_core": {
+                "peak": 84.1,
+                "mean": 84.1
+              },
+              "cpu_pct_machine": {
+                "peak": 7.01,
+                "mean": 7.01
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3503.21,
+                "mean": 3503.21
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 1.0968,
+            "turn": 13,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3030.74,
+                "mean": 3030.74
+              },
+              "cpu_pct_one_core": {
+                "peak": 101.6,
+                "mean": 65.8
+              },
+              "cpu_pct_machine": {
+                "peak": 8.47,
+                "mean": 5.49
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 18.0,
+                "mean": 9.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3513.48,
+                "mean": 3513.02
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.5082,
+            "turn": 13,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3031.16,
+                "mean": 3031.16
+              },
+              "cpu_pct_one_core": {
+                "peak": 86.0,
+                "mean": 86.0
+              },
+              "cpu_pct_machine": {
+                "peak": 7.17,
+                "mean": 7.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3509.62,
+                "mean": 3509.62
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.524,
+            "turn": 13,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3031.16,
+                "mean": 3031.16
+              },
+              "cpu_pct_one_core": {
+                "peak": 67.9,
+                "mean": 67.9
+              },
+              "cpu_pct_machine": {
+                "peak": 5.66,
+                "mean": 5.66
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 10.0,
+                "mean": 10.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3546.39,
+                "mean": 3546.39
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.4897,
+            "turn": 13,
+            "resources": {
+              "sample_count": 1,
+              "ram_tree_rss_mb": {
+                "peak": 3031.16,
+                "mean": 3031.16
+              },
+              "cpu_pct_one_core": {
+                "peak": 62.0,
+                "mean": 62.0
+              },
+              "cpu_pct_machine": {
+                "peak": 5.17,
+                "mean": 5.17
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 0.0,
+                "mean": 0.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3522.7,
+                "mean": 3522.7
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.6102,
+            "turn": 13,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3031.16,
+                "mean": 3031.16
+              },
+              "cpu_pct_one_core": {
+                "peak": 104.5,
+                "mean": 56.25
+              },
+              "cpu_pct_machine": {
+                "peak": 8.71,
+                "mean": 4.69
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 29.0,
+                "mean": 14.5
+              },
+              "system_ram_used_mb": {
+                "peak": 3563.22,
+                "mean": 3555.89
+              }
+            },
+            "decode_seconds": null
+          },
+          {
+            "stage": "tts_inference",
+            "seconds": 0.8414,
+            "turn": 13,
+            "resources": {
+              "sample_count": 2,
+              "ram_tree_rss_mb": {
+                "peak": 3031.16,
+                "mean": 3031.16
+              },
+              "cpu_pct_one_core": {
+                "peak": 102.0,
+                "mean": 81.0
+              },
+              "cpu_pct_machine": {
+                "peak": 8.5,
+                "mean": 6.75
+              },
+              "gpu_vram_mb": {
+                "peak": 5768.0,
+                "mean": 5768.0
+              },
+              "gpu_util_pct": {
+                "peak": 40.0,
+                "mean": 20.0
+              },
+              "system_ram_used_mb": {
+                "peak": 3531.12,
+                "mean": 3530.19
+              }
+            },
+            "decode_seconds": null
+          }
+        ],
+        "first_audio_from_input_start_seconds": 41.748
+      },
+      "review_scope": "Structural checks and transparent semantic heuristics; automatic ASR agreement is not a human pronunciation judgment."
+    }
+  ]
+}

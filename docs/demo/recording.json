@@ -1,0 +1,27 @@
+{
+  "recorded_utc": "2026-10-17T12:43:53Z",
+  "duration_seconds": 180.48,
+  "scene_count": 13,
+  "scenario": "A rainy Saturday at a Berlin food market",
+  "synthetic_user_voices": {
+    "en": "Kokoro am_michael",
+    "de": "Piper Thorsten High"
+  },
+  "assistant_voices": {
+    "en": "Kokoro af_heart",
+    "de": "Piper Thorsten High"
+  },
+  "stt": "Qwen3-ASR-0.6B FP32 CUDA",
+  "llm": "gemma4:31b on Ollama Cloud",
+  "mocked_assistant_responses": false,
+  "physical_microphone_or_speaker_test": false,
+  "real_voice_interruption_verified": true,
+  "translation_confirmation_verified": true,
+  "soundtrack": "Actual browser audio buffers, scheduled starts and observed stops; original pauses retained",
+  "captions": "Source synthesis text for user; actual synthesized phrase text for assistant; interrupted phrase caption omitted",
+  "browser_errors": null,
+  "video_bytes": 5122757,
+  "observed_stopped_assistant_chunks": 1,
+  "recorded_user_utterances": 13,
+  "post_capture_cleanup_note": "All 13 turns and audio/timeline artifacts were saved before an End conversation locator timed out following large PCM serialization. Media was recovered from the intact saved buffers; the recorder now stops capture before PCM export. The original recording browser-error list was not saved; player checks are reported separately."
+}

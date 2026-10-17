@@ -1,0 +1,37 @@
+{
+  "dtype": "float32",
+  "attention": "eager",
+  "baseline": {
+    "used_mib": 13.0,
+    "total_mib": 6144.0
+  },
+  "tts_loaded": {
+    "used_mib": 4826.0,
+    "total_mib": 6144.0
+  },
+  "components": {
+    "talker": 905788672,
+    "speaker_encoder": 8854336
+  },
+  "audio_tokenizer_parameters": 153714657,
+  "audio_tokenizer_dtype": "torch.float32",
+  "asr_initialization": "passed",
+  "both_loaded": {
+    "used_mib": 5924.0,
+    "total_mib": 6144.0
+  },
+  "asr_real_audio_seconds": 4.118,
+  "asr_real_audio_words": 17,
+  "after_asr_inference": {
+    "used_mib": 5952.0,
+    "total_mib": 6144.0
+  },
+  "tts_real_audio_generation_seconds": 7.536,
+  "tts_real_audio_seconds": 1.52,
+  "after_tts_inference": {
+    "used_mib": 5960.0,
+    "total_mib": 6144.0
+  },
+  "real_inference_check": "passed",
+  "asr_load_attempt_seconds": 32.72
+}

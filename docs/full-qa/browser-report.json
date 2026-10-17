@@ -1,0 +1,4482 @@
+{
+  "turns": [
+    {
+      "case": "hello",
+      "seconds": 7.61,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "en"
+      ],
+      "reply": "Hello, I am Bridge, your bilingual assistant.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Hello. Answer in one short sentence.",
+      "stt_final": "Hello. Answer in one short sentence.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 1,
+          "at_ms": 2179
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 2179.5
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 1,
+          "at_ms": 4708.799999999814
+        },
+        {
+          "type": "final",
+          "text": "Hello. Answer in one short sentence.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 5885.799999999814
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 5887.200000000186
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 1,
+          "at_ms": 5887.200000000186
+        },
+        {
+          "type": "token",
+          "text": "Hello",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6396.299999999814
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6398.4000000003725
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6422.100000000559
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6424
+        },
+        {
+          "type": "token",
+          "text": " Bridge",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6424.4000000003725
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6424.700000000186
+        },
+        {
+          "type": "token",
+          "text": " your",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6425
+        },
+        {
+          "type": "token",
+          "text": " bilingual",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6445.9000000003725
+        },
+        {
+          "type": "token",
+          "text": " assistant",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6446.4000000003725
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 1,
+          "language": "en",
+          "at_ms": 6446.799999999814
+        },
+        {
+          "type": "audio",
+          "id": "1:1",
+          "turn": 1,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 6692.9000000003725
+        },
+        {
+          "type": "latency",
+          "seconds": 1.981,
+          "at_ms": 6710.299999999814
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 1,
+          "at_ms": 6710.5
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "coffee_lesson",
+      "seconds": 17.8,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 6,
+      "played_chunks": 6,
+      "languages": [
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "en"
+      ],
+      "reply": "To order coffee, you can use these phrases. Ich hätte gerne einen Kaffee, bitte. This means I would like a coffee, please. Einen Kaffee, bitte. This is a shorter way to say one coffee, please.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Teach me how to order coffee in German, with two German examples and an English explanation.",
+      "stt_final": "Teach how to order coffee in German with two German examples and an English explanation.",
+      "stt_metrics": {
+        "wer": 0.0625,
+        "cer": 0.0333
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 2,
+          "at_ms": 10178.200000000186
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 10178.400000000373
+        },
+        {
+          "type": "partial",
+          "text": "Teach how to order coffee in German.",
+          "language": "en",
+          "at_ms": 13188.5
+        },
+        {
+          "type": "partial",
+          "text": "Teach how to order coffee in German with two German examples and an English.",
+          "language": "en",
+          "at_ms": 15335.600000000559
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 2,
+          "at_ms": 15808.600000000559
+        },
+        {
+          "type": "final",
+          "text": "Teach how to order coffee in German with two German examples and an English explanation.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 16389.5
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 16390.60000000056
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 2,
+          "at_ms": 16390.60000000056
+        },
+        {
+          "type": "token",
+          "text": "To",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16880.799999999814
+        },
+        {
+          "type": "token",
+          "text": " order",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16882.10000000056
+        },
+        {
+          "type": "token",
+          "text": " coffee",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16882.5
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16904.799999999814
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16908.799999999814
+        },
+        {
+          "type": "token",
+          "text": " can",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16909.400000000373
+        },
+        {
+          "type": "token",
+          "text": " use",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16909.900000000373
+        },
+        {
+          "type": "token",
+          "text": " these",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16910.299999999814
+        },
+        {
+          "type": "token",
+          "text": " phrases",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16930.200000000186
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16932.5
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 16932.900000000373
+        },
+        {
+          "type": "token",
+          "text": "Ich",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 16960.900000000373
+        },
+        {
+          "type": "token",
+          "text": " hätte",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 16961.400000000373
+        },
+        {
+          "type": "token",
+          "text": " gerne",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 16961.799999999814
+        },
+        {
+          "type": "token",
+          "text": " einen",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 16962.10000000056
+        },
+        {
+          "type": "token",
+          "text": " Kaffee",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 16962.5
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 16982.200000000186
+        },
+        {
+          "type": "token",
+          "text": " bitte",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 16984.5
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 16985
+        },
+        {
+          "type": "token",
+          "text": " This",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17074.5
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17075.10000000056
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17075.5
+        },
+        {
+          "type": "token",
+          "text": " would",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17075.799999999814
+        },
+        {
+          "type": "token",
+          "text": " like",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17076.200000000186
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17076.60000000056
+        },
+        {
+          "type": "token",
+          "text": " coffee",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17076.900000000373
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17077.299999999814
+        },
+        {
+          "type": "token",
+          "text": " please",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17077.799999999814
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17078.10000000056
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17078.5
+        },
+        {
+          "type": "token",
+          "text": "E",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 17086
+        },
+        {
+          "type": "token",
+          "text": "inen",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 17098.299999999814
+        },
+        {
+          "type": "token",
+          "text": " Kaffee",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 17099
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 17099.299999999814
+        },
+        {
+          "type": "token",
+          "text": " bitte",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 17099.60000000056
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 2,
+          "language": "de",
+          "at_ms": 17113
+        },
+        {
+          "type": "token",
+          "text": " This",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17113.5
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17113.900000000373
+        },
+        {
+          "type": "audio",
+          "id": "2:1",
+          "turn": 2,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 17184.900000000373
+        },
+        {
+          "type": "latency",
+          "seconds": 1.374,
+          "at_ms": 17199.5
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17199.700000000186
+        },
+        {
+          "type": "token",
+          "text": " shorter",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17200.400000000373
+        },
+        {
+          "type": "token",
+          "text": " way",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17200.799999999814
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17201.299999999814
+        },
+        {
+          "type": "token",
+          "text": " say",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17201.60000000056
+        },
+        {
+          "type": "token",
+          "text": " one",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17202
+        },
+        {
+          "type": "token",
+          "text": " coffee",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17202.299999999814
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17202.700000000186
+        },
+        {
+          "type": "token",
+          "text": " please",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17204.10000000056
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 2,
+          "language": "en",
+          "at_ms": 17204.5
+        },
+        {
+          "type": "audio",
+          "id": "2:2",
+          "turn": 2,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 17318
+        },
+        {
+          "type": "audio",
+          "id": "2:3",
+          "turn": 2,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 17509.400000000373
+        },
+        {
+          "type": "audio",
+          "id": "2:4",
+          "turn": 2,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 19875.799999999814
+        },
+        {
+          "type": "audio",
+          "id": "2:5",
+          "turn": 2,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 21582.60000000056
+        },
+        {
+          "type": "audio",
+          "id": "2:6",
+          "turn": 2,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 23683.5
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 2,
+          "at_ms": 23683.900000000373
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "2:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "2:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "2:3",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "2:4",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "2:5",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "2:6",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "mixed_repeat",
+      "seconds": 9.15,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 3,
+      "played_chunks": 3,
+      "languages": [
+        "en",
+        "de",
+        "en"
+      ],
+      "reply": "You can say Guten Morgen to greet someone.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Repeat exactly: You can say Guten Morgen to greet someone.",
+      "stt_final": "Repeat exactly. You can say \"Guten Morgen\" to greet someone.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 3,
+          "at_ms": 28298.900000000373
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 28299.10000000056
+        },
+        {
+          "type": "partial",
+          "text": "Repeat exactly. You can say \"gut\" and \"more.\"",
+          "language": "en",
+          "at_ms": 31605.299999999814
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 3,
+          "at_ms": 32168.900000000373
+        },
+        {
+          "type": "final",
+          "text": "Repeat exactly. You can say \"Guten Morgen\" to greet someone.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 33434.10000000056
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 33435.40000000037
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 3,
+          "at_ms": 33435.5
+        },
+        {
+          "type": "token",
+          "text": "You",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 33898
+        },
+        {
+          "type": "token",
+          "text": " can",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 33899.40000000037
+        },
+        {
+          "type": "token",
+          "text": " say",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 33899.700000000186
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 33925.90000000037
+        },
+        {
+          "type": "token",
+          "text": "G",
+          "turn": 3,
+          "language": "de",
+          "at_ms": 33928
+        },
+        {
+          "type": "token",
+          "text": "uten",
+          "turn": 3,
+          "language": "de",
+          "at_ms": 33928.60000000056
+        },
+        {
+          "type": "token",
+          "text": " Morgen",
+          "turn": 3,
+          "language": "de",
+          "at_ms": 33952.5
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 33954.60000000056
+        },
+        {
+          "type": "token",
+          "text": " greet",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 33985.200000000186
+        },
+        {
+          "type": "token",
+          "text": " someone",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 33985.700000000186
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 33986
+        },
+        {
+          "type": "audio",
+          "id": "3:1",
+          "turn": 3,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 34049.700000000186
+        },
+        {
+          "type": "latency",
+          "seconds": 1.88,
+          "at_ms": 34058.200000000186
+        },
+        {
+          "type": "audio",
+          "id": "3:2",
+          "turn": 3,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 34182.799999999814
+        },
+        {
+          "type": "audio",
+          "id": "3:3",
+          "turn": 3,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 34318.200000000186
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 3,
+          "at_ms": 34318.799999999814
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "3:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "3:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "3:3",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "german_lesson",
+      "seconds": 15.48,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 2,
+      "played_chunks": 2,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "reply": "Ein Beruf ist das, was man arbeitet, während ein Land ein geografischer Ort ist. For example, my profession is a teacher and my country is Germany.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Erkläre mir bitte den Unterschied zwischen borrow und lend, mit einem englischen Beispiel.",
+      "stt_final": "Erkläre mir bitte den Unterschied zwischen Beruf und Land mit einem englischen Beispiel.",
+      "stt_metrics": {
+        "wer": 0.1538,
+        "cer": 0.0568
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 4,
+          "at_ms": 37809.200000000186
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 37809.5
+        },
+        {
+          "type": "partial",
+          "text": "Erkläre mir bitte den Unterschied zwischen Beruf.",
+          "language": "de",
+          "at_ms": 41018.200000000186
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 4,
+          "at_ms": 42541.90000000037
+        },
+        {
+          "type": "final",
+          "text": "Erkläre mir bitte den Unterschied zwischen Beruf und Land mit einem englischen Beispiel.",
+          "language": "de",
+          "certain": true,
+          "at_ms": 43843.299999999814
+        },
+        {
+          "type": "route",
+          "source": "de",
+          "target": "de",
+          "mode": "conversation",
+          "at_ms": 43844.5
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 4,
+          "at_ms": 43844.60000000056
+        },
+        {
+          "type": "token",
+          "text": "Ein",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44307.299999999814
+        },
+        {
+          "type": "token",
+          "text": " Beruf",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44308.40000000037
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44308.90000000037
+        },
+        {
+          "type": "token",
+          "text": " das",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44312.90000000037
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44322.799999999814
+        },
+        {
+          "type": "token",
+          "text": " was",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44323.60000000056
+        },
+        {
+          "type": "token",
+          "text": " man",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44324.200000000186
+        },
+        {
+          "type": "token",
+          "text": " arbeitet",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44333.200000000186
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44365.5
+        },
+        {
+          "type": "token",
+          "text": " während",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44366
+        },
+        {
+          "type": "token",
+          "text": " ein",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44375.40000000037
+        },
+        {
+          "type": "token",
+          "text": " Land",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44376
+        },
+        {
+          "type": "token",
+          "text": " ein",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44376.5
+        },
+        {
+          "type": "token",
+          "text": " geograf",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44385.10000000056
+        },
+        {
+          "type": "token",
+          "text": "ischer",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44398.200000000186
+        },
+        {
+          "type": "token",
+          "text": " Ort",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44399
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44399.60000000056
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44400.200000000186
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 4,
+          "language": "de",
+          "at_ms": 44401.5
+        },
+        {
+          "type": "token",
+          "text": "For",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44402
+        },
+        {
+          "type": "token",
+          "text": " example",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44485.299999999814
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44486.10000000056
+        },
+        {
+          "type": "token",
+          "text": " my",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44486.60000000056
+        },
+        {
+          "type": "token",
+          "text": " profession",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44487.10000000056
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44487.5
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44487.90000000037
+        },
+        {
+          "type": "token",
+          "text": " teacher",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44488.40000000037
+        },
+        {
+          "type": "token",
+          "text": " and",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44488.60000000056
+        },
+        {
+          "type": "token",
+          "text": " my",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44489
+        },
+        {
+          "type": "token",
+          "text": " country",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44489.299999999814
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44491.10000000056
+        },
+        {
+          "type": "token",
+          "text": " Germany",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44491.60000000056
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 4,
+          "language": "en",
+          "at_ms": 44492.10000000056
+        },
+        {
+          "type": "audio",
+          "id": "4:1",
+          "turn": 4,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 44623
+        },
+        {
+          "type": "latency",
+          "seconds": 2.076,
+          "at_ms": 44642.10000000056
+        },
+        {
+          "type": "audio",
+          "id": "4:2",
+          "turn": 4,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 45069.200000000186
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 4,
+          "at_ms": 45069.40000000037
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "4:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "4:2",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "five_pairs",
+      "seconds": 17.39,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 10,
+      "played_chunks": 10,
+      "languages": [
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de"
+      ],
+      "reply": "How are you? Wie geht es dir? I am hungry. Ich habe Hunger. Where is the station? Wo ist der Bahnhof? Thank you very much. Vielen Dank. I love you. Ich liebe dich.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Give me five pairs of German phrases and their English translations, no introduction.",
+      "stt_final": "Give me five pairs of German phrases and their English translations. No introduction.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 5,
+          "at_ms": 53649.60000000056
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 53649.799999999814
+        },
+        {
+          "type": "partial",
+          "text": "Give me five pairs of German phrases.",
+          "language": "en",
+          "at_ms": 56601.200000000186
+        },
+        {
+          "type": "partial",
+          "text": "Give me five pairs of German phrases and their English translations.",
+          "language": "en",
+          "at_ms": 58703.299999999814
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 5,
+          "at_ms": 59148.40000000037
+        },
+        {
+          "type": "final",
+          "text": "Give me five pairs of German phrases and their English translations. No introduction.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 59744
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 59745.299999999814
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 5,
+          "at_ms": 59745.40000000037
+        },
+        {
+          "type": "token",
+          "text": "How",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60191.10000000056
+        },
+        {
+          "type": "token",
+          "text": " are",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60221.40000000037
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60248.700000000186
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60249.299999999814
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60249.700000000186
+        },
+        {
+          "type": "token",
+          "text": "Wie",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60280.40000000037
+        },
+        {
+          "type": "token",
+          "text": " geht",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60281
+        },
+        {
+          "type": "token",
+          "text": " es",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60281.299999999814
+        },
+        {
+          "type": "token",
+          "text": " dir",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60281.60000000056
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60347.90000000037
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60348.5
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60348.799999999814
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60349.299999999814
+        },
+        {
+          "type": "token",
+          "text": " hungry",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60349.60000000056
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60351.5
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60372
+        },
+        {
+          "type": "token",
+          "text": "Ich",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60372.40000000037
+        },
+        {
+          "type": "audio",
+          "id": "5:1",
+          "turn": 5,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 60382.10000000056
+        },
+        {
+          "type": "latency",
+          "seconds": 1.233,
+          "at_ms": 60390.799999999814
+        },
+        {
+          "type": "token",
+          "text": " habe",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60390.90000000037
+        },
+        {
+          "type": "token",
+          "text": " Hunger",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60391.60000000056
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60392
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60392.299999999814
+        },
+        {
+          "type": "token",
+          "text": "Where",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60445.90000000037
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60446.700000000186
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60447
+        },
+        {
+          "type": "token",
+          "text": " station",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60447.299999999814
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60447.60000000056
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60448
+        },
+        {
+          "type": "token",
+          "text": "Wo",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60448.299999999814
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60457
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60457.799999999814
+        },
+        {
+          "type": "token",
+          "text": " Bahnhof",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60481.10000000056
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60483.200000000186
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60483.60000000056
+        },
+        {
+          "type": "audio",
+          "id": "5:2",
+          "turn": 5,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 60511.700000000186
+        },
+        {
+          "type": "token",
+          "text": "Thank",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60544.299999999814
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60544.799999999814
+        },
+        {
+          "type": "token",
+          "text": " very",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60545.10000000056
+        },
+        {
+          "type": "token",
+          "text": " much",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60545.5
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60545.90000000037
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60546.200000000186
+        },
+        {
+          "type": "audio",
+          "id": "5:3",
+          "turn": 5,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 60624
+        },
+        {
+          "type": "token",
+          "text": "V",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60624.5
+        },
+        {
+          "type": "token",
+          "text": "ielen",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60625.10000000056
+        },
+        {
+          "type": "token",
+          "text": " Dank",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60625.5
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60625.90000000037
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 60626.10000000056
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60626.5
+        },
+        {
+          "type": "token",
+          "text": " love",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60626.799999999814
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60627.299999999814
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60627.90000000037
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 5,
+          "language": "en",
+          "at_ms": 60628.299999999814
+        },
+        {
+          "type": "audio",
+          "id": "5:4",
+          "turn": 5,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 61538.200000000186
+        },
+        {
+          "type": "audio",
+          "id": "5:5",
+          "turn": 5,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 62631.200000000186
+        },
+        {
+          "type": "token",
+          "text": "Ich",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 62631.799999999814
+        },
+        {
+          "type": "token",
+          "text": " liebe",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 62632.200000000186
+        },
+        {
+          "type": "token",
+          "text": " dich",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 62632.60000000056
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 5,
+          "language": "de",
+          "at_ms": 62633
+        },
+        {
+          "type": "audio",
+          "id": "5:6",
+          "turn": 5,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 63722.200000000186
+        },
+        {
+          "type": "audio",
+          "id": "5:7",
+          "turn": 5,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 64685.5
+        },
+        {
+          "type": "audio",
+          "id": "5:8",
+          "turn": 5,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 65829.20000000019
+        },
+        {
+          "type": "audio",
+          "id": "5:9",
+          "turn": 5,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 67200.10000000056
+        },
+        {
+          "type": "audio",
+          "id": "5:10",
+          "turn": 5,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 68363
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 5,
+          "at_ms": 68363.29999999981
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "5:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:3",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:4",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:5",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:6",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:7",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:8",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:9",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "5:10",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "long_lesson",
+      "seconds": 43.54,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 21,
+      "played_chunks": 21,
+      "languages": [
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en"
+      ],
+      "reply": "Here are ten useful sentences for the train station. Wo ist der Bahnhof? means Where is the train station? Ein Ticket nach Berlin, bitte. means One ticket to Berlin, please. Wann fährt der nächste Zug? means When does the next train leave? Welches Gleis ist das? means Which platform is it? Hat der Zug Verspätung? means Is the train delayed? Ist dieser Platz frei? means Is this seat free? Wo ist der Fahrkartenschalter? means Where is the ticket counter? Ich habe meinen Zug verpasst. means I missed my train. Gilt dieses Ticket für den Regionalzug? means Is this ticket valid for the regional train? Wo steige ich um? means Where do I change trains?",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Teach me ten useful German sentences for the train station and explain each one in English.",
+      "stt_final": "Teach ten useful German sentences for the train station, and explain each one in English.",
+      "stt_metrics": {
+        "wer": 0.0625,
+        "cer": 0.0333
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 6,
+          "at_ms": 71469.10000000056
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 71469.29999999981
+        },
+        {
+          "type": "partial",
+          "text": "Teach ten useful German sentences.",
+          "language": "en",
+          "at_ms": 74549.90000000037
+        },
+        {
+          "type": "partial",
+          "text": "Teach ten useful German sentences for the train station, and explain.",
+          "language": "en",
+          "at_ms": 76565.40000000037
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 6,
+          "at_ms": 77328
+        },
+        {
+          "type": "final",
+          "text": "Teach ten useful German sentences for the train station, and explain each one in English.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 78052.20000000019
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 78053.20000000019
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 6,
+          "at_ms": 78053.29999999981
+        },
+        {
+          "type": "token",
+          "text": "Here",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78499.5
+        },
+        {
+          "type": "token",
+          "text": " are",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78526.70000000019
+        },
+        {
+          "type": "token",
+          "text": " ten",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78527.29999999981
+        },
+        {
+          "type": "token",
+          "text": " useful",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78527.79999999981
+        },
+        {
+          "type": "token",
+          "text": " sentences",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78528.20000000019
+        },
+        {
+          "type": "token",
+          "text": " for",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78550.29999999981
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78556.60000000056
+        },
+        {
+          "type": "token",
+          "text": " train",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78557.10000000056
+        },
+        {
+          "type": "token",
+          "text": " station",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78557.60000000056
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78558.10000000056
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78580.10000000056
+        },
+        {
+          "type": "token",
+          "text": "Wo",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78580.5
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78652.70000000019
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78653.10000000056
+        },
+        {
+          "type": "token",
+          "text": " Bahnhof",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78653.40000000037
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78653.70000000019
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78654.10000000056
+        },
+        {
+          "type": "token",
+          "text": " Where",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78680.5
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78681.10000000056
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78681.5
+        },
+        {
+          "type": "token",
+          "text": " train",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78681.90000000037
+        },
+        {
+          "type": "token",
+          "text": " station",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78682.29999999981
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78687.40000000037
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78690.70000000019
+        },
+        {
+          "type": "token",
+          "text": "Ein",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78691.20000000019
+        },
+        {
+          "type": "token",
+          "text": " Ticket",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78713.29999999981
+        },
+        {
+          "type": "token",
+          "text": " nach",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78747.29999999981
+        },
+        {
+          "type": "token",
+          "text": " Berlin",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78773.20000000019
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78788.20000000019
+        },
+        {
+          "type": "token",
+          "text": " bitte",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78788.70000000019
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78789
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78801.29999999981
+        },
+        {
+          "type": "token",
+          "text": " One",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78829
+        },
+        {
+          "type": "token",
+          "text": " ticket",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78845.5
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78845.90000000037
+        },
+        {
+          "type": "token",
+          "text": " Berlin",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78846.29999999981
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78846.5
+        },
+        {
+          "type": "token",
+          "text": " please",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78872
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78872.60000000056
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78872.90000000037
+        },
+        {
+          "type": "audio",
+          "id": "6:1",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 78911.70000000019
+        },
+        {
+          "type": "latency",
+          "seconds": 1.581,
+          "at_ms": 78926.70000000019
+        },
+        {
+          "type": "token",
+          "text": "W",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78926.90000000037
+        },
+        {
+          "type": "token",
+          "text": "ann",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78927.79999999981
+        },
+        {
+          "type": "token",
+          "text": " fährt",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78928.10000000056
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78928.5
+        },
+        {
+          "type": "token",
+          "text": " nächste",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78928.90000000037
+        },
+        {
+          "type": "token",
+          "text": " Zug",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78930.90000000037
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 78931.40000000037
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78945.40000000037
+        },
+        {
+          "type": "token",
+          "text": " When",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78946.10000000056
+        },
+        {
+          "type": "token",
+          "text": " does",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78946.40000000037
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78972.40000000037
+        },
+        {
+          "type": "token",
+          "text": " next",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78973.10000000056
+        },
+        {
+          "type": "token",
+          "text": " train",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78973.5
+        },
+        {
+          "type": "token",
+          "text": " leave",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78973.90000000037
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78974.29999999981
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 78996
+        },
+        {
+          "type": "audio",
+          "id": "6:2",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 79031.90000000037
+        },
+        {
+          "type": "audio",
+          "id": "6:3",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 79203.20000000019
+        },
+        {
+          "type": "token",
+          "text": "Wel",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 79203.79999999981
+        },
+        {
+          "type": "token",
+          "text": "ches",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 79204.20000000019
+        },
+        {
+          "type": "token",
+          "text": " Gle",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 79204.60000000056
+        },
+        {
+          "type": "token",
+          "text": "is",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 79204.90000000037
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 79205.20000000019
+        },
+        {
+          "type": "token",
+          "text": " das",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 79205.60000000056
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 79205.90000000037
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 79206.20000000019
+        },
+        {
+          "type": "token",
+          "text": " Which",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 79206.5
+        },
+        {
+          "type": "token",
+          "text": " platform",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 79206.79999999981
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 79207.10000000056
+        },
+        {
+          "type": "token",
+          "text": " it",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 79207.40000000037
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 79207.79999999981
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 79208.10000000056
+        },
+        {
+          "type": "audio",
+          "id": "6:4",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 82308.29999999981
+        },
+        {
+          "type": "audio",
+          "id": "6:5",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 83476.20000000019
+        },
+        {
+          "type": "token",
+          "text": "Hat",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 83476.90000000037
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 83477.5
+        },
+        {
+          "type": "token",
+          "text": " Zug",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 83477.79999999981
+        },
+        {
+          "type": "token",
+          "text": " Vers",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 83478.10000000056
+        },
+        {
+          "type": "token",
+          "text": "p",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 83478.5
+        },
+        {
+          "type": "token",
+          "text": "ät",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 83478.79999999981
+        },
+        {
+          "type": "token",
+          "text": "ung",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 83479.20000000019
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 83479.5
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 83479.79999999981
+        },
+        {
+          "type": "token",
+          "text": " Is",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 83480.10000000056
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 83480.40000000037
+        },
+        {
+          "type": "token",
+          "text": " train",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 83480.70000000019
+        },
+        {
+          "type": "token",
+          "text": " delayed",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 83481.10000000056
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 83481.29999999981
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 83481.60000000056
+        },
+        {
+          "type": "audio",
+          "id": "6:6",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 85191
+        },
+        {
+          "type": "audio",
+          "id": "6:7",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 86995.40000000037
+        },
+        {
+          "type": "token",
+          "text": "Ist",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 86996.10000000056
+        },
+        {
+          "type": "token",
+          "text": " dieser",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 86996.60000000056
+        },
+        {
+          "type": "token",
+          "text": " Platz",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 86997
+        },
+        {
+          "type": "token",
+          "text": " frei",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 86997.29999999981
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 86997.60000000056
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 86997.90000000037
+        },
+        {
+          "type": "token",
+          "text": " Is",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 86998.29999999981
+        },
+        {
+          "type": "token",
+          "text": " this",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 86998.60000000056
+        },
+        {
+          "type": "token",
+          "text": " seat",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 86998.90000000037
+        },
+        {
+          "type": "token",
+          "text": " free",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 86999.20000000019
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 86999.60000000056
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 86999.79999999981
+        },
+        {
+          "type": "audio",
+          "id": "6:8",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 88955.29999999981
+        },
+        {
+          "type": "audio",
+          "id": "6:9",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 90267.5
+        },
+        {
+          "type": "token",
+          "text": "Wo",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 90268.10000000056
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 90268.70000000019
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 90269.10000000056
+        },
+        {
+          "type": "token",
+          "text": " Fahr",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 90269.40000000037
+        },
+        {
+          "type": "token",
+          "text": "kart",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 90269.70000000019
+        },
+        {
+          "type": "token",
+          "text": "ensch",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 90270
+        },
+        {
+          "type": "token",
+          "text": "alter",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 90270.40000000037
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 90270.79999999981
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 90271.10000000056
+        },
+        {
+          "type": "token",
+          "text": " Where",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 90271.40000000037
+        },
+        {
+          "type": "token",
+          "text": " is",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 90271.79999999981
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 90272.10000000056
+        },
+        {
+          "type": "token",
+          "text": " ticket",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 90272.40000000037
+        },
+        {
+          "type": "token",
+          "text": " counter",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 90272.79999999981
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 90273.20000000019
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 90273.40000000037
+        },
+        {
+          "type": "audio",
+          "id": "6:10",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 92214.5
+        },
+        {
+          "type": "audio",
+          "id": "6:11",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 93546.5
+        },
+        {
+          "type": "token",
+          "text": "Ich",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 93547.20000000019
+        },
+        {
+          "type": "token",
+          "text": " habe",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 93547.79999999981
+        },
+        {
+          "type": "token",
+          "text": " meinen",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 93548
+        },
+        {
+          "type": "token",
+          "text": " Zug",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 93548.40000000037
+        },
+        {
+          "type": "token",
+          "text": " ver",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 93548.79999999981
+        },
+        {
+          "type": "token",
+          "text": "passt",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 93549.20000000019
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 93549.5
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 93549.79999999981
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 93550.20000000019
+        },
+        {
+          "type": "token",
+          "text": " missed",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 93550.60000000056
+        },
+        {
+          "type": "token",
+          "text": " my",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 93551.10000000056
+        },
+        {
+          "type": "token",
+          "text": " train",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 93551.70000000019
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 93552.20000000019
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 93552.70000000019
+        },
+        {
+          "type": "audio",
+          "id": "6:12",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 94928.10000000056
+        },
+        {
+          "type": "audio",
+          "id": "6:13",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 96429.10000000056
+        },
+        {
+          "type": "token",
+          "text": "G",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 96429.60000000056
+        },
+        {
+          "type": "token",
+          "text": "ilt",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 96430.20000000019
+        },
+        {
+          "type": "token",
+          "text": " dieses",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 96430.60000000056
+        },
+        {
+          "type": "token",
+          "text": " Ticket",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 96431
+        },
+        {
+          "type": "token",
+          "text": " für",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 96431.5
+        },
+        {
+          "type": "token",
+          "text": " den",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 96432.10000000056
+        },
+        {
+          "type": "token",
+          "text": " Regional",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 96432.60000000056
+        },
+        {
+          "type": "token",
+          "text": "zug",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 96433
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 96433.29999999981
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96433.70000000019
+        },
+        {
+          "type": "token",
+          "text": " Is",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96434.10000000056
+        },
+        {
+          "type": "token",
+          "text": " this",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96434.5
+        },
+        {
+          "type": "token",
+          "text": " ticket",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96435
+        },
+        {
+          "type": "token",
+          "text": " valid",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96435.29999999981
+        },
+        {
+          "type": "token",
+          "text": " for",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96435.70000000019
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96436.20000000019
+        },
+        {
+          "type": "token",
+          "text": " regional",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96436.60000000056
+        },
+        {
+          "type": "token",
+          "text": " train",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96437.10000000056
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 96437.5
+        },
+        {
+          "type": "audio",
+          "id": "6:14",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 97860.60000000056
+        },
+        {
+          "type": "audio",
+          "id": "6:15",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 99401.5
+        },
+        {
+          "type": "token",
+          "text": " ",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 99402.20000000019
+        },
+        {
+          "type": "token",
+          "text": "Wo",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 99402.79999999981
+        },
+        {
+          "type": "token",
+          "text": " ste",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 99403.20000000019
+        },
+        {
+          "type": "token",
+          "text": "ige",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 99403.70000000019
+        },
+        {
+          "type": "token",
+          "text": " ich",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 99404
+        },
+        {
+          "type": "token",
+          "text": " um",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 99404.40000000037
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "de",
+          "at_ms": 99404.79999999981
+        },
+        {
+          "type": "token",
+          "text": " means",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 99405.20000000019
+        },
+        {
+          "type": "token",
+          "text": " Where",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 99405.60000000056
+        },
+        {
+          "type": "token",
+          "text": " do",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 99405.90000000037
+        },
+        {
+          "type": "token",
+          "text": " I",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 99406.29999999981
+        },
+        {
+          "type": "token",
+          "text": " change",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 99406.79999999981
+        },
+        {
+          "type": "token",
+          "text": " trains",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 99407.20000000019
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 6,
+          "language": "en",
+          "at_ms": 99407.5
+        },
+        {
+          "type": "audio",
+          "id": "6:16",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 100652.70000000019
+        },
+        {
+          "type": "audio",
+          "id": "6:17",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 102594.70000000019
+        },
+        {
+          "type": "audio",
+          "id": "6:18",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 104186.20000000019
+        },
+        {
+          "type": "audio",
+          "id": "6:19",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 105663.90000000037
+        },
+        {
+          "type": "audio",
+          "id": "6:20",
+          "turn": 6,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 106967.90000000037
+        },
+        {
+          "type": "audio",
+          "id": "6:21",
+          "turn": 6,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 109433.29999999981
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 6,
+          "at_ms": 109433.90000000037
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "6:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:2",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:3",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:4",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:5",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:6",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:7",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:8",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:9",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:10",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:11",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:12",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:13",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:14",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:15",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:16",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:17",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:18",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:19",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:20",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "6:21",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "continue",
+      "seconds": 9.35,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 2,
+      "played_chunks": 2,
+      "languages": [
+        "en",
+        "en"
+      ],
+      "reply": "Since we finished the train station list, would you like to learn phrases for a restaurant or a hotel?",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Keep going with the next example.",
+      "stt_final": "Keep going with the next example.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 7,
+          "at_ms": 115569.79999999981
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 115570.10000000056
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 7,
+          "at_ms": 117448.29999999981
+        },
+        {
+          "type": "final",
+          "text": "Keep going with the next example.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 118279.10000000056
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 118280.10000000056
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 7,
+          "at_ms": 118280.20000000019
+        },
+        {
+          "type": "token",
+          "text": "Since",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118871.60000000056
+        },
+        {
+          "type": "token",
+          "text": " we",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118872.79999999981
+        },
+        {
+          "type": "token",
+          "text": " finished",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118887.60000000056
+        },
+        {
+          "type": "token",
+          "text": " the",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118916.10000000056
+        },
+        {
+          "type": "token",
+          "text": " train",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118918.79999999981
+        },
+        {
+          "type": "token",
+          "text": " station",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118919.40000000037
+        },
+        {
+          "type": "token",
+          "text": " list",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118919.70000000019
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118931.79999999981
+        },
+        {
+          "type": "token",
+          "text": " would",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118932.29999999981
+        },
+        {
+          "type": "token",
+          "text": " you",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118953.79999999981
+        },
+        {
+          "type": "token",
+          "text": " like",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118954.29999999981
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 118954.70000000019
+        },
+        {
+          "type": "token",
+          "text": " learn",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 119015.60000000056
+        },
+        {
+          "type": "token",
+          "text": " phrases",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 119016
+        },
+        {
+          "type": "token",
+          "text": " for",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 119016.40000000037
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 119029.79999999981
+        },
+        {
+          "type": "token",
+          "text": " restaurant",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 119030.20000000019
+        },
+        {
+          "type": "token",
+          "text": " or",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 119030.60000000056
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 119030.90000000037
+        },
+        {
+          "type": "token",
+          "text": " hotel",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 119031.20000000019
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 7,
+          "language": "en",
+          "at_ms": 119039.29999999981
+        },
+        {
+          "type": "audio",
+          "id": "7:1",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 119157.29999999981
+        },
+        {
+          "type": "latency",
+          "seconds": 1.707,
+          "at_ms": 119166.29999999981
+        },
+        {
+          "type": "audio",
+          "id": "7:2",
+          "turn": 7,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 119545.70000000019
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 7,
+          "at_ms": 119546.79999999981
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "7:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "7:2",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "recovery",
+      "seconds": 6.8,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "en"
+      ],
+      "reply": "I am here and ready to help.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "I am still here. Please reply briefly.",
+      "stt_final": "I am here. Please reply briefly.",
+      "stt_metrics": {
+        "wer": 0.1429,
+        "cer": 0.1667
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 8,
+          "at_ms": 125099.20000000019
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 125099.5
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 8,
+          "at_ms": 127818.10000000056
+        },
+        {
+          "type": "final",
+          "text": "I am here. Please reply briefly.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 128984.90000000037
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 128985.90000000037
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 8,
+          "at_ms": 128986
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 129471.79999999981
+        },
+        {
+          "type": "token",
+          "text": " am",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 129473
+        },
+        {
+          "type": "token",
+          "text": " here",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 129473.29999999981
+        },
+        {
+          "type": "token",
+          "text": " and",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 129491.60000000056
+        },
+        {
+          "type": "token",
+          "text": " ready",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 129511.79999999981
+        },
+        {
+          "type": "token",
+          "text": " to",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 129513.5
+        },
+        {
+          "type": "token",
+          "text": " help",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 129514
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 8,
+          "language": "en",
+          "at_ms": 129514.40000000037
+        },
+        {
+          "type": "audio",
+          "id": "8:1",
+          "turn": 8,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 129832
+        },
+        {
+          "type": "latency",
+          "seconds": 2.012,
+          "at_ms": 129840.5
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 8,
+          "at_ms": 129840.70000000019
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "8:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "enable_translation",
+      "seconds": 9.22,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 2,
+      "played_chunks": 2,
+      "languages": [
+        "en",
+        "en"
+      ],
+      "reply": "Enable English ↔ German translation until you turn it off? Please say yes or no.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Bridge, translator mode.",
+      "stt_final": "Bridge translator mode.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 9,
+          "at_ms": 140209
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 140209.2999999998
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 9,
+          "at_ms": 141968.60000000056
+        },
+        {
+          "type": "final",
+          "text": "Bridge translator mode.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 142726.2000000002
+        },
+        {
+          "type": "mode",
+          "mode": "conversation",
+          "response_language": "same",
+          "facts": [],
+          "recent": [
+            {
+              "id": 1,
+              "source": "en",
+              "target": "en",
+              "user": "Hello. Answer in one short sentence.",
+              "heard": "Hello, I am Bridge, your bilingual assistant. "
+            },
+            {
+              "id": 2,
+              "source": "en",
+              "target": "en",
+              "user": "Teach how to order coffee in German with two German examples and an English explanation.",
+              "heard": "To order coffee, you can use these phrases. Ich hätte gerne einen Kaffee, bitte. This means I would like a coffee, please. Einen Kaffee, bitte. This is a shorter way to say one coffee, please. "
+            },
+            {
+              "id": 3,
+              "source": "en",
+              "target": "en",
+              "user": "Give me five pairs of German phrases and their English translations. No introduction.",
+              "heard": ""
+            },
+            {
+              "id": 4,
+              "source": "en",
+              "target": "en",
+              "user": "Hello. Answer in one short sentence.",
+              "heard": "Hello, I am Bridge, your bilingual assistant. "
+            },
+            {
+              "id": 5,
+              "source": "en",
+              "target": "en",
+              "user": "Teach how to order coffee in German with two German examples and an English explanation.",
+              "heard": "To order coffee, you can use these phrases. Ich hätte gerne einen Kaffee, bitte. This means I would like a coffee, please. Einen Kaffee, bitte. This is a shorter way to say one coffee, please. "
+            },
+            {
+              "id": 6,
+              "source": "en",
+              "target": "en",
+              "user": "Repeat exactly. You can say \"Guten Morgen\" to greet someone.",
+              "heard": "You can say Guten Morgen to greet someone. "
+            },
+            {
+              "id": 7,
+              "source": "de",
+              "target": "de",
+              "user": "Erkläre mir bitte den Unterschied zwischen Beruf und Land mit einem englischen Beispiel.",
+              "heard": "Ein Beruf ist das, was man arbeitet, während ein Land ein geografischer Ort ist. For example, my profession is a teacher and my country is Germany. "
+            },
+            {
+              "id": 8,
+              "source": "en",
+              "target": "en",
+              "user": "Give me five pairs of German phrases and their English translations. No introduction.",
+              "heard": "How are you? Wie geht es dir? I am hungry. Ich habe Hunger. Where is the station? Wo ist der Bahnhof? Thank you very much. Vielen Dank. I love you. Ich liebe dich. "
+            },
+            {
+              "id": 9,
+              "source": "en",
+              "target": "en",
+              "user": "Teach ten useful German sentences for the train station, and explain each one in English.",
+              "heard": "Here are ten useful sentences for the train station. Wo ist der Bahnhof? means Where is the train station? Ein Ticket nach Berlin, bitte. means One ticket to Berlin, please. Wann fährt der nächste Zug? means When does the next train leave? Welches Gleis ist das? means Which platform is it? Hat der Zug Verspätung? means Is the train delayed? Ist dieser Platz frei? means Is this seat free? Wo ist der Fahrkartenschalter? means Where is the ticket counter? Ich habe meinen Zug verpasst. means I missed my train. Gilt dieses Ticket für den Regionalzug? means Is this ticket valid for the regional train? Wo steige ich um? means Where do I change trains? "
+            },
+            {
+              "id": 10,
+              "source": "en",
+              "target": "en",
+              "user": "Keep going with the next example.",
+              "heard": "Since we finished the train station list, would you like to learn phrases for a restaurant or a hotel? "
+            },
+            {
+              "id": 11,
+              "source": "en",
+              "target": "en",
+              "user": "I am here. Please reply briefly.",
+              "heard": "I am here and ready to help. "
+            }
+          ],
+          "summary": "",
+          "persistent": true,
+          "suppress_playback_input": true,
+          "silence_ms": 700,
+          "pending_confirmation": {
+            "id": "37f485cdc5788ec5b6d00cfa",
+            "kind": "mode",
+            "value": "translation",
+            "message": "Enable English ↔ German translation until you turn it off?"
+          },
+          "at_ms": 142727.60000000056
+        },
+        {
+          "type": "token",
+          "text": "Enable English ↔ German translation until you turn it off? Please say yes or no.",
+          "turn": 9,
+          "language": "en",
+          "at_ms": 142727.90000000037
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 9,
+          "at_ms": 142737.2000000002
+        },
+        {
+          "type": "audio",
+          "id": "9:1",
+          "turn": 9,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 143280.2999999998
+        },
+        {
+          "type": "latency",
+          "seconds": 1.307,
+          "at_ms": 143356.2000000002
+        },
+        {
+          "type": "audio",
+          "id": "9:2",
+          "turn": 9,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 143406.7999999998
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 9,
+          "at_ms": 143407.5
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "9:1",
+          "complete": true
+        },
+        {
+          "type": "played",
+          "id": "9:2",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "confirm_translation",
+      "seconds": 4.88,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "en"
+      ],
+      "reply": "Confirmed. Your settings are now active.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Yes, confirm.",
+      "stt_final": "Yes, confirm.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 10,
+          "at_ms": 149768.90000000037
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 149769
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 10,
+          "at_ms": 151148.2999999998
+        },
+        {
+          "type": "final",
+          "text": "Yes, confirm.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 151798.2000000002
+        },
+        {
+          "type": "mode",
+          "mode": "translation",
+          "response_language": "same",
+          "facts": [],
+          "recent": [],
+          "summary": "",
+          "persistent": true,
+          "suppress_playback_input": true,
+          "silence_ms": 1200,
+          "pending_confirmation": null,
+          "at_ms": 151823.5
+        },
+        {
+          "type": "token",
+          "text": "Confirmed. Your settings are now active.",
+          "turn": 10,
+          "language": "en",
+          "at_ms": 151824.2999999998
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 10,
+          "at_ms": 151829.40000000037
+        },
+        {
+          "type": "audio",
+          "id": "10:1",
+          "turn": 10,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 152055.10000000056
+        },
+        {
+          "type": "latency",
+          "seconds": 0.904,
+          "at_ms": 152065.5
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 10,
+          "at_ms": 152065.7000000002
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "10:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "translate_english",
+      "seconds": 5.97,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "de"
+      ],
+      "reply": "Wo ist der nächste Bahnhof?",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Where is the nearest train station?",
+      "stt_final": "Where is nearest train station?",
+      "stt_metrics": {
+        "wer": 0.1667,
+        "cer": 0.1176
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 11,
+          "at_ms": 155049.2000000002
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 155049.5
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 11,
+          "at_ms": 157577.90000000037
+        },
+        {
+          "type": "final",
+          "text": "Where is nearest train station?",
+          "language": "en",
+          "certain": true,
+          "at_ms": 158523
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "de",
+          "mode": "translation",
+          "at_ms": 158523.7999999998
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 11,
+          "at_ms": 158523.90000000037
+        },
+        {
+          "type": "token",
+          "text": "Wo",
+          "turn": 11,
+          "language": "de",
+          "at_ms": 158952.60000000056
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 11,
+          "language": "de",
+          "at_ms": 158953.60000000056
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 11,
+          "language": "de",
+          "at_ms": 158953.90000000037
+        },
+        {
+          "type": "token",
+          "text": " nächste",
+          "turn": 11,
+          "language": "de",
+          "at_ms": 158958.5
+        },
+        {
+          "type": "token",
+          "text": " Bahnhof",
+          "turn": 11,
+          "language": "de",
+          "at_ms": 158960.5
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 11,
+          "language": "de",
+          "at_ms": 158961
+        },
+        {
+          "type": "audio",
+          "id": "11:1",
+          "turn": 11,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 159176
+        },
+        {
+          "type": "latency",
+          "seconds": 1.597,
+          "at_ms": 159184.7999999998
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 11,
+          "at_ms": 159185
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "11:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "translate_german",
+      "seconds": 6.38,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "en"
+      ],
+      "reply": "I would like a coffee, please.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Ich möchte einen Kaffee, bitte.",
+      "stt_final": "Ich möchte einen Kaffee, bitte.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 12,
+          "at_ms": 161388.7000000002
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 161388.90000000037
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 12,
+          "at_ms": 163658
+        },
+        {
+          "type": "final",
+          "text": "Ich möchte einen Kaffee, bitte.",
+          "language": "de",
+          "certain": true,
+          "at_ms": 164996.90000000037
+        },
+        {
+          "type": "route",
+          "source": "de",
+          "target": "en",
+          "mode": "translation",
+          "at_ms": 164999.2000000002
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 12,
+          "at_ms": 164999.2999999998
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 12,
+          "language": "en",
+          "at_ms": 165426.90000000037
+        },
+        {
+          "type": "token",
+          "text": " would",
+          "turn": 12,
+          "language": "en",
+          "at_ms": 165428.10000000056
+        },
+        {
+          "type": "token",
+          "text": " like",
+          "turn": 12,
+          "language": "en",
+          "at_ms": 165428.40000000037
+        },
+        {
+          "type": "token",
+          "text": " a",
+          "turn": 12,
+          "language": "en",
+          "at_ms": 165433
+        },
+        {
+          "type": "token",
+          "text": " coffee",
+          "turn": 12,
+          "language": "en",
+          "at_ms": 165434.90000000037
+        },
+        {
+          "type": "token",
+          "text": ",",
+          "turn": 12,
+          "language": "en",
+          "at_ms": 165435.40000000037
+        },
+        {
+          "type": "token",
+          "text": " please",
+          "turn": 12,
+          "language": "en",
+          "at_ms": 165435.7000000002
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 12,
+          "language": "en",
+          "at_ms": 165436.2000000002
+        },
+        {
+          "type": "audio",
+          "id": "12:1",
+          "turn": 12,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 165771.5
+        },
+        {
+          "type": "latency",
+          "seconds": 2.112,
+          "at_ms": 165779.60000000056
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 12,
+          "at_ms": 165779.7000000002
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "12:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "translate_english",
+      "seconds": 5.95,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "de"
+      ],
+      "reply": "Wo ist der nächste Bahnhof?",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Where is the nearest train station?",
+      "stt_final": "Where nearest train station.",
+      "stt_metrics": {
+        "wer": 0.3333,
+        "cer": 0.2059
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 1,
+          "at_ms": 1589.5
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 1589.7999999998137
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 1,
+          "at_ms": 4122.299999999814
+        },
+        {
+          "type": "final",
+          "text": "Where nearest train station.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 5042.899999999441
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "de",
+          "mode": "translation",
+          "at_ms": 5043.799999999814
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 1,
+          "at_ms": 5043.899999999441
+        },
+        {
+          "type": "token",
+          "text": "Wo",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 5445.5999999996275
+        },
+        {
+          "type": "token",
+          "text": " ist",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 5447.299999999814
+        },
+        {
+          "type": "token",
+          "text": " der",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 5447.700000000186
+        },
+        {
+          "type": "token",
+          "text": " nächste",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 5455.5999999996275
+        },
+        {
+          "type": "token",
+          "text": " Bahnhof",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 5456
+        },
+        {
+          "type": "token",
+          "text": "?",
+          "turn": 1,
+          "language": "de",
+          "at_ms": 5456.399999999441
+        },
+        {
+          "type": "audio",
+          "id": "1:1",
+          "turn": 1,
+          "sample_rate": 22050,
+          "language": "de",
+          "at_ms": 5635.399999999441
+        },
+        {
+          "type": "latency",
+          "seconds": 1.512,
+          "at_ms": 5644.899999999441
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 1,
+          "at_ms": 5645
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case": "short_response",
+      "seconds": 6.62,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "en"
+      ],
+      "reply": "I will keep my answers short.",
+      "ui_state": "listening",
+      "context_state": "running",
+      "input": "Please answer with just one short sentence.",
+      "stt_final": "Please answer with just one short sentence.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0
+      },
+      "events": [
+        {
+          "type": "interrupt",
+          "turn": 3,
+          "at_ms": 8019.799999999814
+        },
+        {
+          "type": "status",
+          "text": "Listening to you",
+          "at_ms": 8020.0999999996275
+        },
+        {
+          "type": "status",
+          "text": "Transcribing",
+          "turn": 3,
+          "at_ms": 10610.099999999627
+        },
+        {
+          "type": "final",
+          "text": "Please answer with just one short sentence.",
+          "language": "en",
+          "certain": true,
+          "at_ms": 11661.799999999814
+        },
+        {
+          "type": "route",
+          "source": "en",
+          "target": "en",
+          "mode": "conversation",
+          "at_ms": 11662.700000000186
+        },
+        {
+          "type": "status",
+          "text": "Thinking",
+          "turn": 3,
+          "at_ms": 11662.799999999814
+        },
+        {
+          "type": "token",
+          "text": "I",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 12217
+        },
+        {
+          "type": "token",
+          "text": " will",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 12240.299999999814
+        },
+        {
+          "type": "token",
+          "text": " keep",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 12264.599999999627
+        },
+        {
+          "type": "token",
+          "text": " my",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 12290.899999999441
+        },
+        {
+          "type": "token",
+          "text": " answers",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 12293.299999999814
+        },
+        {
+          "type": "token",
+          "text": " short",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 12311.5
+        },
+        {
+          "type": "token",
+          "text": ".",
+          "turn": 3,
+          "language": "en",
+          "at_ms": 12334.5
+        },
+        {
+          "type": "audio",
+          "id": "3:1",
+          "turn": 3,
+          "sample_rate": 24000,
+          "language": "en",
+          "at_ms": 12617
+        },
+        {
+          "type": "latency",
+          "seconds": 2.005,
+          "at_ms": 12626.099999999627
+        },
+        {
+          "type": "status",
+          "text": "Listening",
+          "turn": 3,
+          "at_ms": 12626.200000000186
+        }
+      ],
+      "playback_acks": [
+        {
+          "type": "played",
+          "id": "3:1",
+          "complete": true
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "browser_errors": []
+}

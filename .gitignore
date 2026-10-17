@@ -1,0 +1,53 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+.venv-asr/
+.venv-tts-gpu/
+.venv-qwen-tts/
+.venv-*/
+venv/
+
+# Models and private runtime content
+models/
+.cache/
+logs/
+recordings/
+tmp/
+temp/
+*.log
+*.part
+
+# Python and tools
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Editor / OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Reviewed documentation media in docs/ is intentionally tracked.
+
+# Private design notes and persistent user memory
+description/
+data/
+*.sqlite
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db

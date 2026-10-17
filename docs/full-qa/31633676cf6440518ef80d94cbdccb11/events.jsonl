@@ -1,0 +1,8 @@
+{"seconds": 0.8229, "event": "interrupt", "turn": 0}
+{"seconds": 4.3456, "event": "stt_partial", "turn": 1, "text": "Hello.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 9.0638, "event": "stt_partial", "turn": 1, "text": "Hello.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 12.6108, "event": "stt_partial", "turn": 1, "text": "Hello. Answer.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 16.1447, "event": "stt_partial", "turn": 1, "text": "Hello. Answer.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 21.6892, "event": "stt_partial", "turn": 1, "text": "Hello. Answer.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 25.047, "event": "stt_partial", "turn": 1, "text": "Hello. Answer in.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}
+{"seconds": 28.5771, "event": "stt_partial", "turn": 1, "text": "Hello. Answer in.", "language": "en", "detected_language": "English", "certain": true, "probability": null, "used_context": false, "can_route": true, "supported_probability": null}

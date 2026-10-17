@@ -1,0 +1,74 @@
+[
+  {
+    "case": "hello",
+    "source": "en",
+    "prompt": "Hello. Answer in one short sentence.",
+    "raw": "[en]Hello, how can I help you today?",
+    "parser_error": null,
+    "done_reason": "stop"
+  },
+  {
+    "case": "coffee_lesson",
+    "source": "en",
+    "prompt": "Teach me how to order coffee in German, with two German examples and an English explanation.",
+    "raw": "[en]To order coffee, you can use the phrase [de]Ich hätte gerne[en] which means I would like. [en]For example, you can say [de]Ich hätte gerne einen Kaffee, bitte[en] for I would like a coffee, please. [en]Or if you want a latte, say [de]Ich hätte gerne einen Latte Macchiato[en].",
+    "parser_error": null,
+    "done_reason": "stop"
+  },
+  {
+    "case": "mixed_repeat",
+    "source": "en",
+    "prompt": "Repeat exactly: You can say Guten Morgen to greet someone.",
+    "raw": "[en]You can say [de]Guten Morgen[en] to greet someone.",
+    "parser_error": null,
+    "done_reason": "stop"
+  },
+  {
+    "case": "german_lesson",
+    "source": "de",
+    "prompt": "Erkläre mir bitte den Unterschied zwischen borrow und lend, mit einem englischen Beispiel.",
+    "raw": "[de]Der Unterschied ist die Richtung der Aktion. [en]Borrow bedeutet, dass man sich etwas leiht, während lend bedeutet, dass man jemandem etwas leiht. [de]Ein Beispiel ist [en]Can I borrow your pen? [de]Das heißt, darf ich mir deinen Stift leihen.",
+    "parser_error": null,
+    "done_reason": "stop"
+  },
+  {
+    "case": "five_pairs",
+    "source": "en",
+    "prompt": "Give me five pairs of German phrases and their English translations, no introduction.",
+    "raw": "[de]Wie geht es dir?[en] How are you? [de]Ich verstehe nicht.[en] I do not understand. [de]Wo ist der Bahnhof?[en] Where is the train station? [de]Vielen Dank.[en] Thank you very much. [de]Schönen Tag noch.[en] Have a nice day.",
+    "parser_error": null,
+    "done_reason": "stop"
+  },
+  {
+    "case": "long_lesson",
+    "source": "en",
+    "prompt": "Teach me ten useful German sentences for the train station and explain each one in English.",
+    "raw": "[en]You can say [de]Wo ist der Bahnsteig?[en] to ask where the platform is. [de]Wann fährt der Zug ab?[en] means when does the train depart. Use [de]Hat der Zug Verspätung?[en] to ask if the train is delayed. [de]Ein Ticket nach Berlin, bitte[en] means one ticket to Berlin, please. [de]Ist dieser Platz frei?[en] asks if this seat is free. [de]Wo kann ich eine Fahrkarte kaufen?[en] means where can I buy a ticket. [de]Welcher Zug geht nach München?[en] asks which train goes to Munich. [de]Muss ich umsteigen?[en] means do I have to change trains. [de]Ist das die Endstation?[en] asks if this is the final stop. And [de]Entschuldigung, wo ist der Ausgang?[en] means excuse me, where is the exit.",
+    "parser_error": null,
+    "done_reason": "stop"
+  },
+  {
+    "case": "isolated_vocabulary",
+    "source": "en",
+    "prompt": "Explain the German words obwohl and weil in English, and give one German example for each.",
+    "raw": "[en]The word [de]obwohl[en] means although and is used for contrast. For example, [de]Ich gehe spazieren, obwohl es regnet[en]. The word [de]weil[en] means because and is used to give a reason. For example, [de]Ich bleibe zu Hause, weil ich müde bin[en].",
+    "parser_error": null,
+    "done_reason": "stop"
+  },
+  {
+    "case": "continue",
+    "source": "en",
+    "prompt": "Keep going with the next example.",
+    "raw": "[en]Since we were talking about conjunctions, another useful one is [de]trotzdem[en] which means nevertheless. For example, [de]Es regnet, trotzdem gehe ich raus[en] means it is raining, nevertheless I am going outside.",
+    "parser_error": null,
+    "done_reason": "stop"
+  },
+  {
+    "case": "recovery",
+    "source": "en",
+    "prompt": "I am still here. Please reply briefly.",
+    "raw": "[en]I am here and ready to help.",
+    "parser_error": null,
+    "done_reason": "stop"
+  }
+]

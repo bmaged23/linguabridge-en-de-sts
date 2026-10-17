@@ -1,0 +1,450 @@
+[
+  {
+    "id": "bilingual_retelling_en_de_en_clean",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please retell this story briefly using both English and German."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "clean",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+    "input": "inputs/bilingual_retelling_en_de_en_clean.wav",
+    "sha256": "c16972926e8dcd76a54aee2cd43ce4b5edb3d6b91810de05ec39de37c5dffb47",
+    "seconds": 19.595,
+    "peak": 0.9998,
+    "rms": 0.09839
+  },
+  {
+    "id": "bilingual_retelling_en_de_en_noise20",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please retell this story briefly using both English and German."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+    "input": "inputs/bilingual_retelling_en_de_en_noise20.wav",
+    "sha256": "4fb9bd9d50d5638b63063335b0c224df6b251dbcd0cd5ddfd4b88fb55c87b82e",
+    "seconds": 19.595,
+    "peak": 0.9955,
+    "rms": 0.09885
+  },
+  {
+    "id": "bilingual_retelling_en_de_en_quiet",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please retell this story briefly using both English and German."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "quiet",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+    "input": "inputs/bilingual_retelling_en_de_en_quiet.wav",
+    "sha256": "edf4f0f802a4d71ee44edf58ddd2c0be968ae207ea50003646402c69125471b7",
+    "seconds": 19.595,
+    "peak": 0.18,
+    "rms": 0.01771
+  },
+  {
+    "id": "bilingual_retelling_en_de_en_pause",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Please retell this story briefly using both English and German."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "pause",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Please retell this story briefly using both English and German.",
+    "input": "inputs/bilingual_retelling_en_de_en_pause.wav",
+    "sha256": "7d18d7ffaa8c2434f0a52c1539835d713759d2b3699fba3bc5f22b5376755f43",
+    "seconds": 21.905,
+    "peak": 0.9998,
+    "rms": 0.09306
+  },
+  {
+    "id": "long_story_en_de_en",
+    "spans": [
+      [
+        "en",
+        "Yesterday Anna and I travelled to Berlin for an interview."
+      ],
+      [
+        "de",
+        "Am Bahnhof sagte sie, unser Zug fällt aus."
+      ],
+      [
+        "en",
+        "We found a bus, but I said,"
+      ],
+      [
+        "de",
+        "bitte kaufe noch keine Tickets."
+      ],
+      [
+        "en",
+        "Then the company called. The interview was at ten, not nine."
+      ],
+      [
+        "de",
+        "Wir kamen um neun Uhr fünfundvierzig an."
+      ],
+      [
+        "en",
+        "Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs."
+      ],
+      [
+        "de",
+        "Während wir warteten, erklärte ich ihr noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine Korrektur war."
+      ],
+      [
+        "en",
+        "The manager finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "clean",
+    "expected_speech": true,
+    "mode": "conversation",
+    "stress": "May exceed the configured 30-second utterance limit; inspect premature endpoint cancellation",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Am Bahnhof sagte sie, unser Zug fällt aus. We found a bus, but I said, bitte kaufe noch keine Tickets. Then the company called. The interview was at ten, not nine. Wir kamen um neun Uhr fünfundvierzig an. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich ihr noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine Korrektur war. The manager finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+    "input": "inputs/long_story_en_de_en.wav",
+    "sha256": "90d8977cc1ac2d7dc54f427db5508d713639062b54f31ae5a4f3b780f72a7d85",
+    "seconds": 38.714,
+    "peak": 0.9998,
+    "rms": 0.10374
+  },
+  {
+    "id": "bilingual_retelling_de_en_de_clean",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "clean",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+    "input": "inputs/bilingual_retelling_de_en_de_clean.wav",
+    "sha256": "6c6855db4793171afa5459127b9a7b9e938395b1b4dff80d4510750e07d0870c",
+    "seconds": 19.6,
+    "peak": 0.9999,
+    "rms": 0.13097
+  },
+  {
+    "id": "bilingual_retelling_de_en_de_noise20",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "noise20",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+    "input": "inputs/bilingual_retelling_de_en_de_noise20.wav",
+    "sha256": "e4c0e9e674b95bc84026abbd3cbd16d6e6878a9a930fb668adca26717ff22885",
+    "seconds": 19.6,
+    "peak": 1.0271,
+    "rms": 0.13166
+  },
+  {
+    "id": "bilingual_retelling_de_en_de_quiet",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "quiet",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+    "input": "inputs/bilingual_retelling_de_en_de_quiet.wav",
+    "sha256": "4e97957620188e0cdeaece25c507ad87789339235f92ad75186ebba3f3a71a5b",
+    "seconds": 19.6,
+    "peak": 0.18,
+    "rms": 0.02358
+  },
+  {
+    "id": "bilingual_retelling_de_en_de_pause",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "de",
+        "Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "pause",
+    "expected_speech": true,
+    "mode": "conversation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Bitte erzähle diese Geschichte kurz auf Englisch und Deutsch.",
+    "input": "inputs/bilingual_retelling_de_en_de_pause.wav",
+    "sha256": "f40c506bd59948a0f101c8fb04426c3f3b1b712ecaae72c50adc0f974366516f",
+    "seconds": 21.91,
+    "peak": 0.9999,
+    "rms": 0.12388
+  },
+  {
+    "id": "long_story_de_en_de",
+    "spans": [
+      [
+        "de",
+        "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch."
+      ],
+      [
+        "en",
+        "At the station she said our train was cancelled."
+      ],
+      [
+        "de",
+        "Wir fanden einen Bus, aber ich sagte,"
+      ],
+      [
+        "en",
+        "please do not buy tickets yet."
+      ],
+      [
+        "de",
+        "Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun."
+      ],
+      [
+        "en",
+        "We arrived at nine forty five."
+      ],
+      [
+        "en",
+        "Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs."
+      ],
+      [
+        "de",
+        "Während wir warteten, erklärte ich ihr noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine Korrektur war."
+      ],
+      [
+        "en",
+        "The manager finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German."
+      ]
+    ],
+    "kind": "mixed",
+    "variant": "clean",
+    "expected_speech": true,
+    "mode": "conversation",
+    "stress": "May exceed the configured 30-second utterance limit; inspect premature endpoint cancellation",
+    "reference": "Gestern fuhren Anna und ich nach Berlin zu einem Vorstellungsgespräch. At the station she said our train was cancelled. Wir fanden einen Bus, aber ich sagte, please do not buy tickets yet. Dann rief die Firma an. Das Gespräch war um zehn, nicht um neun. We arrived at nine forty five. Before entering the office, Anna checked the invitation again. We had brought our documents, but the receptionist asked us to wait downstairs. Während wir warteten, erklärte ich ihr noch einmal, dass wir keine Bustickets gekauft hatten und dass die neue Uhrzeit nur eine Korrektur war. The manager finally welcomed us and offered us some water. Please retell the complete story briefly using both English and German.",
+    "input": "inputs/long_story_de_en_de.wav",
+    "sha256": "7615ec6725f3c3d1ddacf3d3718578ac0af9ec374dbf41f007f099820066f808",
+    "seconds": 39.538,
+    "peak": 0.9999,
+    "rms": 0.11192
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "turns": [
+    {
+      "case": "hello",
+      "seconds": 7.54,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 1,
+      "played_chunks": 1,
+      "languages": [
+        "en"
+      ],
+      "reply": "Hello, I am Bridge, your bilingual assistant.",
+      "ui_state": "listening",
+      "context_state": "running"
+    },
+    {
+      "case": "coffee_lesson",
+      "seconds": 17.86,
+      "timed_out": false,
+      "errors": [],
+      "audio_chunks": 6,
+      "played_chunks": 6,
+      "languages": [
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "en"
+      ],
+      "reply": " To order coffee, you can use these phrases.  Ich hätte gerne einen Kaffee, bitte.  This means I would like a coffee, please.  Einen Kaffee, bitte.  This is a shorter way to say one coffee, please. ",
+      "ui_state": "listening",
+      "context_state": "running"
+    },
+    {
+      "case": "five_pairs",
+      "seconds": 7.01,
+      "timed_out": false,
+      "errors": [
+        "The model did not label its speech languages correctly. Please try again."
+      ],
+      "audio_chunks": 0,
+      "played_chunks": 0,
+      "languages": [],
+      "reply": "Guten Tag Good day",
+      "ui_state": "listening",
+      "context_state": "running"
+    }
+  ],
+  "failures": [
+    {
+      "case": "five_pairs",
+      "seconds": 7.01,
+      "timed_out": false,
+      "errors": [
+        "The model did not label its speech languages correctly. Please try again."
+      ],
+      "audio_chunks": 0,
+      "played_chunks": 0,
+      "languages": [],
+      "reply": "Guten Tag Good day",
+      "ui_state": "listening",
+      "context_state": "running"
+    }
+  ],
+  "browser_errors": []
+}

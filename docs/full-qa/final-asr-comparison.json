@@ -1,0 +1,72 @@
+[
+  {
+    "case": "coffee_lesson",
+    "reference": "Teach me how to order coffee in German, with two German examples and an English explanation.",
+    "progressive": "Teach me how to order coffee in German, with two German examples and an English explanation.",
+    "fresh": "Teach me how to order coffee in German, with two German examples and an English explanation.",
+    "progressive_metrics": {
+      "wer": 0.0,
+      "cer": 0.0
+    },
+    "fresh_metrics": {
+      "wer": 0.0,
+      "cer": 0.0
+    }
+  },
+  {
+    "case": "memory_recall",
+    "reference": "What is my German level? Please answer in one short sentence.",
+    "progressive": "What is my German level? Please answer in one short sentence.",
+    "fresh": "What is my German level? Please answer in one short sentence.",
+    "progressive_metrics": {
+      "wer": 0.0,
+      "cer": 0.0
+    },
+    "fresh_metrics": {
+      "wer": 0.0,
+      "cer": 0.0
+    }
+  },
+  {
+    "case": "recovery",
+    "reference": "I am still here. Please reply briefly.",
+    "progressive": "I am still here. Please reply briefly.",
+    "fresh": "I am still here. Please reply briefly.",
+    "progressive_metrics": {
+      "wer": 0.0,
+      "cer": 0.0
+    },
+    "fresh_metrics": {
+      "wer": 0.0,
+      "cer": 0.0
+    }
+  },
+  {
+    "case": "translate_english",
+    "reference": "Where is the nearest train station?",
+    "progressive": "Where is the nearest train station?",
+    "fresh": "Where is the nearest train station?",
+    "progressive_metrics": {
+      "wer": 0.0,
+      "cer": 0.0
+    },
+    "fresh_metrics": {
+      "wer": 0.0,
+      "cer": 0.0
+    }
+  },
+  {
+    "case": "german_lesson",
+    "reference": "Erkläre mir bitte den Unterschied zwischen borrow und lend, mit einem englischen Beispiel.",
+    "progressive": "Erkläre mir bitte den Unterschied zwischen Beruf und Land mit einem englischen Beispiel.",
+    "fresh": "Erkläre mir bitte den Unterschied zwischen Beruf und Land mit einem englischen Beispiel.",
+    "progressive_metrics": {
+      "wer": 0.1538,
+      "cer": 0.0568
+    },
+    "fresh_metrics": {
+      "wer": 0.1538,
+      "cer": 0.0568
+    }
+  }
+]
