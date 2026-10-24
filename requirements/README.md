@@ -1,41 +1,41 @@
-# Exact Python environment snapshots
+# Dependency environments
 
-The app uses separate interpreters because CPU/GPU ONNX Runtime and the Qwen PyTorch stack need independent environments. Run installation commands from the repository root; the root README contains the full setup and dependency-check caveats.
+Run installation commands from the repository root. The application, recognizer and GPU voices use separate environments to keep CPU/GPU ONNX Runtime and PyTorch dependencies compatible. Follow the [complete installation steps](../README.md#installation--clone-to-first-conversation).
 
-| Snapshot | Environment | Purpose |
+## Current installation files
+
+| File | Environment | Purpose |
 | --- | --- | --- |
-| [`../requirements.txt`](../requirements.txt) | `.venv` | Main application, CPU VAD, browser QA and tests |
-| [`stt-cuda.txt`](stt-cuda.txt) | `.venv-asr` | Deployed Qwen3-ASR GPU recognizer |
-| [`tts-cuda.txt`](tts-cuda.txt) | `.venv-tts-gpu` | Deployed GPU Kokoro English and Piper German |
-| [`experimental-qwen-tts.txt`](experimental-qwen-tts.txt) | `.venv-qwen-tts` | Optional Qwen TTS experiment; not part of normal startup |
-| [`evaluation.txt`](evaluation.txt) | `.venv-evaluation` | Pinned lightweight cloud scoring/judging tools; local speech evaluation uses the main/GPU environments |
-| [`archive/`](archive) | Historical evaluation environments | Previous snapshots, preserved for older experiment reproduction |
+| [`release/app.txt`](release/app.txt) | `.venv` | Application, CPU VAD, browser evaluation and offline tests |
+| [`stt-cuda.txt`](stt-cuda.txt) | `.venv-asr` | Qwen3-ASR and shared CUDA libraries |
+| [`release/tts.txt`](release/tts.txt) | `.venv-tts-gpu` | GPU Kokoro/Piper and required helper libraries |
+| [`evaluation.txt`](evaluation.txt) | `.venv-evaluation` | Optional lightweight cloud scoring/judging tools; speech evaluation uses the main/GPU environments |
 
-Every installed distribution is pinned with `==`. Keep snapshots separate and install with `--no-deps` as described in the [root README](../README.md). The app/TTS files include `-e .`, which refers to the repository root when you run the commands there. CUDA PyTorch snapshots include their wheel index.
+Install exact pins with `--no-deps` as shown in the root README. For `stt-cuda.txt`, also use uv's `--index-strategy unsafe-best-match`: its pins span PyPI and the official PyTorch CUDA index. This matches the original pip selection; uv's default first-index policy cannot find some pinned versions on the CUDA index. Do not apply that policy to unrelated installs.
+
+The release app file omits unused main-interpreter CUDA packages. The release TTS file adds `coloredlogs`, `humanfriendly`, `sympy` and `mpmath` and shares the recognizer's CUDA libraries. Some voice packages declare the CPU `onnxruntime` distribution in their metadata, while the GPU distribution provides the required `onnxruntime` module. Do not co-install both distributions in one environment. See [container and dependency details](../deployment/README.md).
+
+## Installed snapshots and historical experiments
+
+| File | Purpose |
+| --- | --- |
+| [`../requirements.txt`](../requirements.txt) | Original exact main-environment snapshot |
+| [`tts-cuda.txt`](tts-cuda.txt) | Original installed GPU voice snapshot; the release variant supplies additional declared helper dependencies |
+| [`experimental-qwen-tts.txt`](experimental-qwen-tts.txt) | Optional Qwen TTS experiment; not used by application startup |
+| [`evaluation.in`](evaluation.in) | Input declarations for the lightweight evaluation lock |
+| [`archive/`](archive/README.md) | Earlier evaluation snapshots and the obsolete main-app uv lock |
+
+Historical files preserve the environments used for earlier measurements. Their package metadata/dependency checks should not be interpreted as current clean-install instructions. The old root `uv.lock` is archived as [`archive/uv-main-2026-10-17.lock`](archive/uv-main-2026-10-17.lock); it does not reproduce the three production environments. New root lockfiles are ignored to avoid confusing them with the supported pinned-requirements route.
+
+## Export installed versions
 
 ```bash
 .venv/bin/python -m scripts.dependencies.export_installed_versions
 .venv/bin/python -m scripts.dependencies.export_installed_versions --check
 ```
 
-These commands read installed package metadata without importing models or changing environments. The main `uv.lock` remains an older dependency resolution; it does not reproduce all three production environments.
+These commands read installed package metadata without importing models or changing environments. They export/check the original environment snapshots, not the curated release variants. Editable `-e .` entries refer to the repository root. An absent optional environment is skipped.
 
-## Captured environment caveats
+## Verification
 
-The main app and ASR environments pass `uv pip check`. GPU TTS currently reports six incompatibilities: four packages declare a dependency on the CPU `onnxruntime` distribution even though the GPU distribution provides the same Python module; `onnxruntime-gpu` also declares `coloredlogs` and `sympy`, which are absent in this captured environment. These files preserve the installed versions that ran the local app. They do not claim a clean dependency check or a validated clean-machine installation.
-
-Do not fix the CPU/GPU package-name mismatch by co-installing both ONNX Runtime distributions. The project keeps CPU VAD and GPU voices in separate interpreters. The optional Qwen TTS environment is an experiment and is not required for normal startup.
-
-```bash
-uv pip check --python .venv/bin/python
-uv pip check --python .venv-asr/bin/python
-uv pip check --python .venv-tts-gpu/bin/python
-```
-
-## Release environments
-
-`release/app.txt` omits unused main-interpreter CUDA packages and has been freshly installed: all 76 distributions pass dependency checks and 89 tests pass. `release/tts.txt` shares ASR CUDA libraries and adds declared missing helper dependencies; see the [container guide](../deployment/README.md). Original installed-environment snapshots above are retained unchanged.
-
-The README now uses those release files for new installations. The clean main environment, including the editable project and its corrected core dependency metadata, passes dependency checks and all 91 current tests. The historical 89-test result above describes the earlier checkpoint.
-
-For `stt-cuda.txt`, use uv's `--index-strategy unsafe-best-match`: this snapshot pins packages across PyPI and the official PyTorch CUDA index, matching pip's cross-index selection. uv's default first-index policy otherwise finds packages such as `certifi` on the CUDA index but cannot find their pinned version there. Versions remain exact. Do not add that index policy to unrelated installations.
+The [verified GPU release](../evaluation/results/gpu-container-release-2026-10-24/README.md) records the exact source, public image digest, 94 offline tests and real-model/browser checks. The clean release application environment passed dependency checks. Earlier clean-install checkpoints with 89 or 91 tests describe the suite at those dates, not the current suite size. Fresh native installation on every possible device is not certified; the Docker report names the tested hardware and supported platform.

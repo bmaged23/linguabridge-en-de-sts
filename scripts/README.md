@@ -37,6 +37,7 @@ Run commands from the repository root. Activate `.venv`, or use its Python expli
 | [`evaluation/`](evaluation) | Recognition/synthesis comparisons and resource profiling | `evaluate_mixed_language_asr.py`, `compare_speech_synthesis.py` |
 | [`story_tests/`](story_tests) | Continuous multilingual story inputs, pipeline tests and resource monitoring | `prepare_story_inputs.py`, `run_story_pipeline_tests.py` |
 | [`reports/`](reports) | Export existing results as shareable reports and dashboards | `export_story_report.py`, `build_story_dashboard.py` |
+| [`release/`](release) | Qualify real GPU images, check container startup and synchronize Docker Hub documentation | `check_gpu_image.py`, `smoke_container.py`, `update_dockerhub.py`; see the [release guide](../deployment/README.md) |
 | [`archive/`](archive) | One-off October 2026 audit orchestration, retained as historical reference | See its README before use |
 
 ## Demo

@@ -3,9 +3,12 @@
 ## Start here
 
 - [Project overview and installation](../README.md)
+- [Application API and streaming protocol](api/README.md)
+- [Project layout and generated files](reference/project-structure.md)
 - [Tools and commands](../scripts/README.md)
 - [GPU container and release pipeline](../deployment/README.md)
 - [Latest measured latency improvement](../evaluation/results/asr-latency-optimization-2026-10-24/README.md)
+- [Verified public GPU release and evaluation results](../evaluation/results/gpu-container-release-2026-10-24/README.md)
 - [Exact dependency environments](../requirements/README.md)
 - [Memory and voice commands](guides/memory-and-voice-commands.md)
 - [Model notices and privacy](reference/model-notices.md)
@@ -23,6 +26,8 @@
 | [Runtime profile](reports/runtime-profile.md) | Earlier runtime measurements |
 
 ## Evaluation and validation
+
+Start with the [current evaluation index](../evaluation/README.md) and [report index](reports/README.md). The reports below also preserve older experiments; their dates and configurations matter when comparing scores.
 
 | Report | Contents |
 | --- | --- |

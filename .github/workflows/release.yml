@@ -19,6 +19,8 @@ on:
       - '.github/workflows/**'
       - '.dockerignore'
       - '!requirements/**/*.md'
+      - '!requirements/archive/**'
+      - '!scripts/**/*.md'
       - '!deployment/**/*.md'
 permissions:
   contents: read

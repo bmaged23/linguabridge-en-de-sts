@@ -133,7 +133,7 @@ uv pip install --python .venv-tts-gpu/bin/python --no-deps -r requirements/relea
 
 These release files pin runtime distributions, including transitive dependencies. `--no-deps` reproduces those versions without adding a separately resolved dependency set. The recognizer provides shared CUDA libraries; the main environment uses CPU ONNX Runtime for VAD and the voice environment uses GPU ONNX Runtime. Keep those ONNX distributions separate. The original complete installed-environment snapshots remain in `requirements.txt` and `requirements/*-cuda.txt`. The optional Qwen TTS experiment is not needed.
 
-**Reproducibility note:** a clean release application environment passes all offline tests and dependency checks. The release TTS file supplies two helper dependencies absent from the historical snapshot. Its Piper/Kokoro metadata still names the CPU ONNX distribution although the GPU package provides the required module; co-installing both is not the fix. Native reinstall of all three environments has not been independently certified on another machine. See the [environment details](requirements/README.md) and the container verification status below. `uv sync` uses an older main-app lock and does not replace the three steps above.
+**Reproducibility note:** a clean release application environment passes offline tests and dependency checks. The release TTS file supplies two helper dependencies absent from the historical snapshot. Its Piper/Kokoro metadata still names the CPU ONNX distribution although the GPU package provides the required module; co-installing both is not the fix. Native reinstall of all three environments has not been independently certified on another machine. See the [environment details](requirements/README.md) and the container verification status below. The obsolete main-app uv lock is kept in `requirements/archive/`; use the three pinned-environment installation steps above rather than `uv sync`.
 
 ### 5. Add your Ollama Cloud credentials
 
@@ -305,14 +305,19 @@ English/German recognition can still omit words or translate mixed speech, and a
 src/voice_bridge/     Voice pipeline, routing, memory and API
 web/                 Browser interface and microphone worklet
 config.py            Runtime model, VAD, queue and memory settings
-requirements/        Exact GPU environment snapshots
+requirements/        Current install pins and historical environment snapshots
+  release/           Supported app and GPU voice installation files
+  archive/           Earlier experiment pins and obsolete uv resolution
 scripts/             Setup, startup, validation, demos and evaluations
   documentation/     Animated diagram builder and GIF renderer
 docs/                Guides, parameter reference, reports and demo media
+  api/               HTTP endpoints and streaming protocol README
+  guides/            Model deployment, memory and evaluation instructions
+  reports/           Reviewed reports and historical report index
 tests/               Offline regression tests
 evaluation/          Versioned datasets, evaluation settings and reviewed metrics
 deployment/          GPU Docker recipe, entrypoint, compose and release guide
 .github/workflows/   Offline checks and gated image release
 ```
 
-[Documentation index](docs/README.md) · [Tool commands](scripts/README.md) · [Dependency environments](requirements/README.md) · [Model licenses and notices](docs/reference/model-notices.md)
+[Project layout and generated files](docs/reference/project-structure.md) · [Documentation index](docs/README.md) · [Tool commands](scripts/README.md) · [Dependency environments](requirements/README.md) · [Model licenses and notices](docs/reference/model-notices.md)

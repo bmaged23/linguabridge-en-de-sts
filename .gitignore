@@ -14,12 +14,15 @@ venv/
 # Models and private runtime content
 models/
 .cache/
+.uv-cache/
 logs/
 recordings/
 tmp/
 temp/
 *.log
 *.part
+*.tmp
+*.download
 
 # Python and tools
 __pycache__/
@@ -31,6 +34,9 @@ coverage.xml
 htmlcov/
 .mypy_cache/
 .ruff_cache/
+playwright-report/
+test-results/
+blob-report/
 *.egg-info/
 build/
 dist/
@@ -40,6 +46,13 @@ dist/
 .vscode/
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
+*~
+
+# The supported multi-environment install uses pinned requirements files.
+# The original uv resolution is preserved in requirements/archive/.
+/uv.lock
 
 # Reviewed documentation media in docs/ is intentionally tracked.
 
