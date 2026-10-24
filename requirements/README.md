@@ -35,3 +35,7 @@ uv pip check --python .venv-tts-gpu/bin/python
 ## Release environments
 
 `release/app.txt` omits unused main-interpreter CUDA packages and has been freshly installed: all 76 distributions pass dependency checks and 89 tests pass. `release/tts.txt` shares ASR CUDA libraries and adds declared missing helper dependencies; see the [container guide](../deployment/README.md). Original installed-environment snapshots above are retained unchanged.
+
+The README now uses those release files for new installations. The clean main environment, including the editable project and its corrected core dependency metadata, passes dependency checks and all 91 current tests. The historical 89-test result above describes the earlier checkpoint.
+
+For `stt-cuda.txt`, use uv's `--index-strategy unsafe-best-match`: this snapshot pins packages across PyPI and the official PyTorch CUDA index, matching pip's cross-index selection. uv's default first-index policy otherwise finds packages such as `certifi` on the CUDA index but cannot find their pinned version there. Versions remain exact. Do not add that index policy to unrelated installations.

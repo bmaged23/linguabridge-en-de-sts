@@ -77,6 +77,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: gpu-release-summaries
+          include-hidden-files: true
           path: |
             .evaluation-local/image-*/asr-gate.json
             .evaluation-local/image-*/release-gate.json

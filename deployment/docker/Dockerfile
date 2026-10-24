@@ -15,7 +15,7 @@ COPY deployment/docker/deduplicate_envs.py /tmp/deduplicate_envs.py
 RUN python -m pip install --no-cache-dir uv==0.12.24 \
     && python -m venv .venv && python -m venv .venv-asr && python -m venv .venv-tts-gpu \
     && uv pip install --python .venv/bin/python --no-cache --no-deps --link-mode=copy -r /tmp/app.txt \
-    && uv pip install --python .venv-asr/bin/python --no-cache --no-deps --link-mode=copy -r /tmp/stt.txt \
+    && uv pip install --python .venv-asr/bin/python --no-cache --no-deps --link-mode=copy --index-strategy unsafe-best-match -r /tmp/stt.txt \
     && uv pip install --python .venv-tts-gpu/bin/python --no-cache --no-deps --link-mode=copy -r /tmp/tts.txt \
     && uv pip check --python .venv/bin/python \
     && uv pip check --python .venv-asr/bin/python \

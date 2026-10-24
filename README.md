@@ -109,20 +109,21 @@ The app, recognizer and GPU voices have separate environments so their ONNX Runt
 ```bash
 # Main app, CPU VAD and testing tools
 uv venv .venv --python 3.12
-uv pip install --python .venv/bin/python --no-deps -r requirements.txt
+uv pip install --python .venv/bin/python --no-deps -r requirements/release/app.txt
+uv pip install --python .venv/bin/python --no-deps -e .
 
 # Qwen GPU speech recognition
 uv venv .venv-asr --python .venv/bin/python
-uv pip install --python .venv-asr/bin/python --no-deps -r requirements/stt-cuda.txt
+uv pip install --python .venv-asr/bin/python --no-deps --index-strategy unsafe-best-match -r requirements/stt-cuda.txt
 
 # Kokoro / Piper GPU speech synthesis
 uv venv .venv-tts-gpu --python .venv/bin/python
-uv pip install --python .venv-tts-gpu/bin/python --no-deps -r requirements/tts-cuda.txt
+uv pip install --python .venv-tts-gpu/bin/python --no-deps -r requirements/release/tts.txt
 ```
 
-These snapshots pin the installed versions, including transitive dependencies. `--no-deps` reproduces those versions without adding a separately resolved dependency set. Keep CPU `onnxruntime` and `onnxruntime-gpu` in their separate environments. The optional Qwen TTS experiment is not needed.
+These release files pin runtime distributions, including transitive dependencies. `--no-deps` reproduces those versions without adding a separately resolved dependency set. The recognizer provides shared CUDA libraries; the main environment uses CPU ONNX Runtime for VAD and the voice environment uses GPU ONNX Runtime. Keep those ONNX distributions separate. The original complete installed-environment snapshots remain in `requirements.txt` and `requirements/*-cuda.txt`. The optional Qwen TTS experiment is not needed.
 
-**Reproducibility note:** the app and ASR environments pass dependency checks. The captured GPU TTS environment has known metadata conflicts and two declared missing dependencies despite working in the tested app. A clean-machine reinstall has not yet been validated. See the [environment details and exact snapshot caveats](requirements/README.md). `uv sync` uses an older main-app lock and does not replace the three steps above.
+**Reproducibility note:** a clean release application environment passes all offline tests and dependency checks. The release TTS file supplies two helper dependencies absent from the historical snapshot. Its Piper/Kokoro metadata still names the CPU ONNX distribution although the GPU package provides the required module; co-installing both is not the fix. Native reinstall of all three environments has not been independently certified on another machine. See the [environment details](requirements/README.md) and the container verification status below. `uv sync` uses an older main-app lock and does not replace the three steps above.
 
 ### 5. Add your Ollama Cloud credentials
 

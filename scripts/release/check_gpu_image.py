@@ -77,8 +77,11 @@ def main():
         with (output / 'container.log').open('w') as stream:
             subprocess.run(['docker', 'logs', name], stdout=stream, stderr=subprocess.STDOUT)
         subprocess.run(['docker', 'rm', '-f', name], stdout=subprocess.DEVNULL)
+    asr_report = json.loads((output / 'asr-gate.json').read_text())
+    browser_report = json.loads((ROOT / browser / 'summary.json').read_text())
     (output / 'release-gate.json').write_text(json.dumps({
-        'image': args.image, 'passed': True, 'asr_waveforms': 52, 'browser_cases': 17,
+        'image': args.image, 'passed': True, 'asr_waveforms': asr_report['waveforms'],
+        'browser_cases': browser_report['completed_cases'],
         'scope': 'Image GPU models; external host browser. Browser runner RSS excludes container.'
     }, indent=2) + '\n')
 
