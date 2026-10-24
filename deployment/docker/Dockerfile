@@ -27,6 +27,8 @@ COPY docs/reference/model-manifest.json ./docs/reference/model-manifest.json
 RUN HF_HUB_OFFLINE=0 .venv/bin/python scripts/setup/download_speech_models.py \
     && rm -rf /app/.cache /app/models/.cache /root/.cache
 COPY config.py pyproject.toml README.md ./
+COPY requirements.txt ./requirements.txt
+COPY requirements ./requirements
 COPY src ./src
 COPY scripts ./scripts
 COPY web ./web
