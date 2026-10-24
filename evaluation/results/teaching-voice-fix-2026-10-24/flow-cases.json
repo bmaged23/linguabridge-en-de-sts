@@ -1,0 +1,799 @@
+[
+  {
+    "case_id": "translation-request",
+    "reference": "Bridge, translator mode.",
+    "hypothesis": "Bridge translator mode.",
+    "visible_answer": "Enable translation between English and German until you turn it off? Please say yes or no.",
+    "raw_llm_content": "",
+    "audio_languages": [
+      "en",
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "confirmation_state_correct": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 3,
+      "reference_characters": 22,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 3,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.1146875,
+      "request_to_test_completion_seconds": 10.15485929600004,
+      "first_audio_after_input_recording_end_seconds": 2.3895999999999766
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "translation-confirm",
+    "reference": "Yes, confirm.",
+    "hypothesis": "Yes. Confirm.",
+    "visible_answer": "Confirmed. Your settings are now active.",
+    "raw_llm_content": "",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "confirmation_state_correct": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 2,
+      "reference_characters": 11,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 2,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 1.752,
+      "request_to_test_completion_seconds": 5.006663982999953,
+      "first_audio_after_input_recording_end_seconds": 0.9618000000000466
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "translation-en-first",
+    "reference": "The interview is at ten, not nine.",
+    "hypothesis": "The interview is at ten, not nine.",
+    "visible_answer": "Das Vorstellungsgespräch ist um zehn, nicht um neun.",
+    "raw_llm_content": "[de]Das Vorstellungsgespräch ist um zehn, nicht um neun.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "answer_content_3": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 7,
+      "reference_characters": 32,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 7,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.669375,
+      "request_to_test_completion_seconds": 8.461927196000033,
+      "first_audio_after_input_recording_end_seconds": 2.67759999999986,
+      "cloud_first_text_seconds": 0.7594860000001518
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "translation-de",
+    "reference": "Anna wartet vor dem Bahnhof.",
+    "hypothesis": "Anna wartet vor dem Bahnhof.",
+    "visible_answer": "Anna is waiting in front of the train station.",
+    "raw_llm_content": "[en]Anna is waiting in front of the train station.",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "answer_content_3": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 5,
+      "reference_characters": 27,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 5,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.1209375,
+      "request_to_test_completion_seconds": 7.52458409299993,
+      "first_audio_after_input_recording_end_seconds": 2.9145,
+      "cloud_first_text_seconds": 0.625039999999899
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "translation-en-again",
+    "reference": "Please do not buy the tickets yet.",
+    "hypothesis": "Please do not buy the tickets yet.",
+    "visible_answer": "Bitte kaufen Sie die Fahrkarten noch nicht.",
+    "raw_llm_content": "[de]Bitte kaufen Sie die Fahrkarten noch nicht.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 7,
+      "reference_characters": 33,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 7,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.413375,
+      "request_to_test_completion_seconds": 7.388641934000134,
+      "first_audio_after_input_recording_end_seconds": 2.8281999999999536,
+      "cloud_first_text_seconds": 0.769130000000132
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "translation-en-consecutive",
+    "reference": "Please wait here until she arrives.",
+    "hypothesis": "Please wait here until she arrives.",
+    "visible_answer": "Bitte warten Sie hier, bis sie ankommt.",
+    "raw_llm_content": "[de]Bitte warten Sie hier, bis sie ankommt.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 6,
+      "reference_characters": 34,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 6,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.4986875,
+      "request_to_test_completion_seconds": 6.900510662999977,
+      "first_audio_after_input_recording_end_seconds": 2.48109999999986,
+      "cloud_first_text_seconds": 0.4319780000000719
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "remember-interview",
+    "reference": "Bridge, remember that my interview is in Berlin at ten.",
+    "hypothesis": "Bridge, remember that my interview is in Berlin at ten.",
+    "visible_answer": "I saved that note in your persistent memory.",
+    "raw_llm_content": "",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "explicit_note_present": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 10,
+      "reference_characters": 53,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 10,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 3.6506875,
+      "request_to_test_completion_seconds": 7.555596102999971,
+      "first_audio_after_input_recording_end_seconds": 1.4156999999999533
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "recall-german",
+    "reference": "Wo ist mein Vorstellungsgespräch und um wie viel Uhr?",
+    "hypothesis": "Wo ist mein Vorstellungsgespräch und um wie viel Uhr",
+    "visible_answer": "Dein Vorstellungsgespräch ist in Berlin um zehn Uhr.",
+    "raw_llm_content": "[de]Dein Vorstellungsgespräch ist in Berlin um zehn Uhr.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 9,
+      "reference_characters": 52,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 9,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 3.3631875,
+      "request_to_test_completion_seconds": 8.768029388000059,
+      "first_audio_after_input_recording_end_seconds": 2.5865,
+      "cloud_first_text_seconds": 0.8055449999999382
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "mixed-connected-story",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Unser Zug fiel aus, aber wir kauften noch keine Fahrkarten. The interview was at ten, not nine. We arrived at nine forty five. Please summarize this story briefly in both English and German.",
+    "hypothesis": "Yesterday, Anna and I traveled to Berlin for an interview. Our zug filled out, but we bought no fare cards. The interview was at ten, not nine. We arrived at nine forty-five. Please summarize the story briefly in both English and German.",
+    "visible_answer": "Anna and the speaker traveled to Berlin for a ten o'clock interview, arriving at nine forty-five on a full train without tickets. Anna und der Sprecher reisten für ein Vorstellungsgespräch um zehn Uhr nach Berlin und kamen um neun Uhr fünfundvierzig mit einem vollen Zug ohne Fahrkarten an.",
+    "raw_llm_content": "[en]Anna and the speaker traveled to Berlin for a ten o'clock interview, arriving at nine forty-five on a full train without tickets. [de]Anna und der Sprecher reisten für ein Vorstellungsgespräch um zehn Uhr nach Berlin und kamen um neun Uhr fünfundvierzig mit einem vollen Zug ohne Fahrkarten an.",
+    "audio_languages": [
+      "en",
+      "en",
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.2558139534883721,
+      "cer": 0.15289256198347106,
+      "reference_words": 43,
+      "reference_characters": 242,
+      "word_errors": 11,
+      "character_errors": 37,
+      "substitutions": 11,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 32,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 15.1045625,
+      "request_to_test_completion_seconds": 36.98845007800014,
+      "first_audio_after_input_recording_end_seconds": 6.255300000000046,
+      "cloud_first_text_seconds": 2.0386839999998756
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "recall-after-reload",
+    "reference": "What time is my interview, and in which city?",
+    "hypothesis": "What time is my interview, and in which city?",
+    "visible_answer": "Your interview is in Berlin at ten.",
+    "raw_llm_content": "[en]Your interview is in Berlin at ten.",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "explicit_note_present": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 9,
+      "reference_characters": 43,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 9,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.9466875,
+      "request_to_test_completion_seconds": 7.926518321999993,
+      "first_audio_after_input_recording_end_seconds": 3.0243999999999067,
+      "cloud_first_text_seconds": 0.8738639999999123
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "teaching-english",
+    "reference": "Please explain the difference between borrowing and lending in two sentences.",
+    "hypothesis": "Please explain the difference between borrowing and lending in two sentences.",
+    "visible_answer": "Borrowing is the act of taking something from someone with the intention of returning it. Lending is the act of giving something to someone for a period of time.",
+    "raw_llm_content": "[en]Borrowing is the act of taking something from someone with the intention of returning it. Lending is the act of giving something to someone for a period of time.",
+    "audio_languages": [
+      "en",
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 11,
+      "reference_characters": 76,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 11,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 4.888,
+      "request_to_test_completion_seconds": 16.609216480999976,
+      "first_audio_after_input_recording_end_seconds": 3.073899999999907,
+      "cloud_first_text_seconds": 0.731326000000081
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "teaching-de-en-de",
+    "reference": "Bitte erkläre although and because mit einem kurzen Beispiel auf Deutsch und Englisch.",
+    "hypothesis": "Bitte erkläre, although and because, mit einem kurzen Beispiel auf Deutsch und Englisch.",
+    "visible_answer": " Although is used to show a contrast or a concession. For example, Although it is raining, I am going for a walk. Obwohl es regnet, gehe ich spazieren.  Because is used to give a reason for something. For example, I am staying home because it is raining. Ich bleibe zu Hause, weil es regnet.  Do you understand the difference between these two words?",
+    "raw_llm_content": "[en] Although is used to show a contrast or a concession. For example, [en]Although it is raining, I am going for a walk. [de]Obwohl es regnet, gehe ich spazieren. [en] Because is used to give a reason for something. For example, [en]I am staying home because it is raining. [de]Ich bleibe zu Hause, weil es regnet. [en] Do you understand the difference between these two words?",
+    "audio_languages": [
+      "en",
+      "en",
+      "de",
+      "en",
+      "en",
+      "de",
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 13,
+      "reference_characters": 85,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 13,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 5.6675625,
+      "request_to_test_completion_seconds": 28.744386587999998,
+      "first_audio_after_input_recording_end_seconds": 4.375800000000047,
+      "cloud_first_text_seconds": 1.7529179999999087
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "teaching-en-de-en",
+    "reference": "Please say exactly: Hello. Guten Morgen. See you tomorrow.",
+    "hypothesis": "Please say exactly: \"Hello.\" \"Guten Morgen.\" \"See you tomorrow.\"",
+    "visible_answer": "Hello. Guten Morgen. See you tomorrow.",
+    "raw_llm_content": "[en]Hello. [de]Guten Morgen. [en]See you tomorrow.",
+    "audio_languages": [
+      "en",
+      "de",
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "voice_switch_order_correct": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "answer_content_3": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 9,
+      "reference_characters": 54,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 9,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 4.70175,
+      "request_to_test_completion_seconds": 10.722401569000112,
+      "first_audio_after_input_recording_end_seconds": 3.097100000000093,
+      "cloud_first_text_seconds": 0.6411559999999099
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "teaching-german",
+    "reference": "Wie kann ich am Bahnhof höflich nach dem Preis einer Fahrkarte fragen?",
+    "hypothesis": "Wie kann ich am Bahnhof höflich nach dem Preis eine Fahrkarte fragen?",
+    "visible_answer": "Sie können höflich fragen, indem Sie die Form Was kostet oder Wie viel kostet verwenden. Ein Beispiel ist Entschuldigung, was kostet eine Fahrkarte nach Berlin? Haben Sie das verstanden?",
+    "raw_llm_content": "[de]Sie können höflich fragen, indem Sie die Form Was kostet oder Wie viel kostet verwenden. Ein Beispiel ist [de]Entschuldigung, was kostet eine Fahrkarte nach Berlin?[de] Haben Sie das verstanden?",
+    "audio_languages": [
+      "de",
+      "de",
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.08333333333333333,
+      "cer": 0.014492753623188406,
+      "reference_words": 12,
+      "reference_characters": 69,
+      "word_errors": 1,
+      "character_errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 11,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 4.083,
+      "request_to_test_completion_seconds": 16.912322501000062,
+      "first_audio_after_input_recording_end_seconds": 2.5696999999999535,
+      "cloud_first_text_seconds": 0.41923799999995026
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "long-reply-to-interrupt",
+    "reference": "Tell me a long story about a family travelling across Austria.",
+    "hypothesis": "Tell me a long story about a family traveling across Austria.",
+    "visible_answer": "The Miller family started their grand adventure in Vienna, where they spent three days admiring the imperial palaces and eating slices of Sachertorte in cozy cafes. With their suitcases packed and a map of the Alps spread across the table, they rented a sturdy silver station wagon and headed west. Their first stop was Salzburg, the birthplace of Mozart. The children loved running through the Mirabell Gardens,",
+    "raw_llm_content": "[en]The Miller family started their grand adventure in Vienna, where they spent three days admiring the imperial palaces and eating slices of Sachertorte in cozy cafes. With their suitcases packed and a map of the Alps spread across the table, they rented a sturdy silver station wagon and headed west. Their first stop was Salzburg, the birthplace of Mozart. The children loved running through the Mirabell Gardens, while the parents marveled at the fortress",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.09090909090909091,
+      "cer": 0.01639344262295082,
+      "reference_words": 11,
+      "reference_characters": 61,
+      "word_errors": 1,
+      "character_errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 10,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 4.0346875,
+      "request_to_test_completion_seconds": 7.103173161000086,
+      "first_audio_after_input_recording_end_seconds": 3.027100000000093,
+      "cloud_first_text_seconds": 1.5252559999998994
+    },
+    "interruption": null
+  },
+  {
+    "case_id": "voice-interruption",
+    "reference": "Stop the story. What is two plus two?",
+    "hypothesis": "Stop the story. What is two plus two?",
+    "visible_answer": "Two plus two is four.",
+    "raw_llm_content": "[en]Two plus two is four.",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "emitted_audio_finished_playback": true,
+      "speech_started_during_reply": true,
+      "old_reply_playback_cancelled": true,
+      "interrupt_packet_received": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 8,
+      "reference_characters": 35,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 8,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.84,
+      "request_to_test_completion_seconds": 6.947351516000026,
+      "first_audio_after_input_recording_end_seconds": 2.7045,
+      "cloud_first_text_seconds": 0.6293550000000323
+    },
+    "interruption": {
+      "old_playing_id": "1:1",
+      "cancelled_chunks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": false,
+          "at_ms": 9918.899999999907
+        }
+      ],
+      "input_start_to_interrupt_seconds": 0.9427000000001863
+    }
+  },
+  {
+    "case_id": "after-interruption-german",
+    "reference": "Bitte antworte kurz: Was ist zwei plus zwei?",
+    "hypothesis": "Bitte antworte kurz: Was ist zwei plus zwei",
+    "visible_answer": "Zwei plus zwei ist vier.",
+    "raw_llm_content": "[de]Zwei plus zwei ist vier.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "emitted_audio_finished_playback": true,
+      "silent_microphone_stays_active": true,
+      "no_false_turn_during_silence": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 8,
+      "reference_characters": 42,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 8,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 3.537375,
+      "request_to_test_completion_seconds": 7.455850819000034,
+      "first_audio_after_input_recording_end_seconds": 2.12459999999986,
+      "cloud_first_text_seconds": 0.5641550000000279
+    },
+    "interruption": null
+  }
+]

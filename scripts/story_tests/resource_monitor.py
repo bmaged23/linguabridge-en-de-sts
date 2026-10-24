@@ -18,7 +18,7 @@ class Resources:
      for process in [root,*root.children(recursive=True)]:
       try:
        if process.pid not in self.processes:self.processes[process.pid]=process;process.cpu_percent()
-       p=self.processes[process.pid];row['processes'].append({'pid':p.pid,'rss_mb':round(p.memory_info().rss/1048576,2),'cpu_pct_one_core':p.cpu_percent(),'role':'stt' if 'qwen_worker.py' in ' '.join(p.cmdline()) else 'tts' if 'spawn_main' in ' '.join(p.cmdline()) else 'server'})
+       p=self.processes[process.pid];row['processes'].append({'pid':p.pid,'rss_mb':round(p.memory_info().rss/1048576,2),'cpu_pct_one_core':p.cpu_percent(),'role':'stt' if any(name in ' '.join(p.cmdline()) for name in ('qwen_worker.py','qwen_asr_worker.py')) else 'tts' if 'spawn_main' in ' '.join(p.cmdline()) else 'server'})
       except (psutil.Error,OSError):pass
     except psutil.Error:pass
     row['ram_tree_rss_mb']=round(sum(p['rss_mb'] for p in row['processes']),2)

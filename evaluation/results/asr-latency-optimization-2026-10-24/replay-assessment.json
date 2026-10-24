@@ -1,0 +1,321 @@
+{
+  "reference_matches_frozen_accuracy": true,
+  "all_profiles_accuracy_passed": true,
+  "profiles": {
+    "cached_batch2": {
+      "recordings": 12,
+      "coverage_complete": true,
+      "accuracy_unchanged": true,
+      "median_final_seconds": 2.3002025855012107,
+      "median_total_compute_seconds": 12.975036134499533,
+      "final_model_calls": 17,
+      "final_cache_hits": 40,
+      "batch_oom_fallbacks": 0,
+      "mixed": {
+        "recordings": 8,
+        "median_final_seconds": 1.5105310609997105,
+        "median_total_compute_seconds": 12.975036134499533
+      },
+      "human": {
+        "recordings": 4,
+        "median_final_seconds": 3.769037669499994,
+        "median_total_compute_seconds": 12.875615509999989
+      }
+    },
+    "cached_serial": {
+      "recordings": 12,
+      "coverage_complete": true,
+      "accuracy_unchanged": true,
+      "median_final_seconds": 2.3261907585010704,
+      "median_total_compute_seconds": 16.765807189499355,
+      "final_model_calls": 20,
+      "final_cache_hits": 40,
+      "batch_oom_fallbacks": 0,
+      "mixed": {
+        "recordings": 8,
+        "median_final_seconds": 1.8156151464991126,
+        "median_total_compute_seconds": 16.765807189499355
+      },
+      "human": {
+        "recordings": 4,
+        "median_final_seconds": 3.9669713595003486,
+        "median_total_compute_seconds": 14.828613224000037
+      }
+    },
+    "reference": {
+      "recordings": 12,
+      "coverage_complete": true,
+      "accuracy_unchanged": true,
+      "median_final_seconds": 5.649422016500466,
+      "median_total_compute_seconds": 15.57060009199995,
+      "final_model_calls": 60,
+      "final_cache_hits": 0,
+      "batch_oom_fallbacks": 0,
+      "mixed": {
+        "recordings": 8,
+        "median_final_seconds": 6.561293707000004,
+        "median_total_compute_seconds": 15.57060009199995
+      },
+      "human": {
+        "recordings": 4,
+        "median_final_seconds": 5.098139001999698,
+        "median_total_compute_seconds": 14.486184579499422
+      }
+    }
+  },
+  "checks": [
+    {
+      "input_id": "fleurs-de_de-1721-10159541282515887574",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-fresh-final-flow-v2",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-full-flow-v1",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-full-flow-v3",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-teaching-fix-flow-v1",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-de_de-2003-10004059102127011984",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-en_us-1675-10052240106321793346",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-en_us-1904-1003119935936341070",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-bus--noise20",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-delivery--noise20",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-library--noise20",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-service--noise20",
+      "profile": "cached_batch2",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-de_de-1721-10159541282515887574",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-fresh-final-flow-v2",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-full-flow-v1",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-full-flow-v3",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-teaching-fix-flow-v1",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-de_de-2003-10004059102127011984",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-en_us-1675-10052240106321793346",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-en_us-1904-1003119935936341070",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-bus--noise20",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-delivery--noise20",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-library--noise20",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-service--noise20",
+      "profile": "cached_serial",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-de_de-1721-10159541282515887574",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-fresh-final-flow-v2",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-full-flow-v1",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-full-flow-v3",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "capture-teaching-fix-flow-v1",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-de_de-2003-10004059102127011984",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-en_us-1675-10052240106321793346",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "fleurs-en_us-1904-1003119935936341070",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-bus--noise20",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-delivery--noise20",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-library--noise20",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    },
+    {
+      "input_id": "val-service--noise20",
+      "profile": "reference",
+      "text_identical": true,
+      "routing_identical": true,
+      "meaning_retained": true
+    }
+  ],
+  "scope": "Offline cumulative replay. Final timing excludes actual arrival/worker queue/endpointing/cloud/TTS; total compute is not elapsed conversation time."
+}

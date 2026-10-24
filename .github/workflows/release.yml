@@ -1,0 +1,79 @@
+name: GPU image release
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'web/**'
+      - 'scripts/**'
+      - 'config.py'
+      - 'requirements/**'
+      - 'requirements.txt'
+      - 'deployment/**'
+      - 'evaluation/datasets/**'
+      - 'evaluation/config.py'
+      - '.github/workflows/**'
+      - '.dockerignore'
+permissions:
+  contents: read
+concurrency:
+  group: linguabridge-gpu-release
+  cancel-in-progress: false
+jobs:
+  tests:
+    uses: ./.github/workflows/tests.yml
+  publish:
+    if: github.repository == 'bmaged23/linguabridge-en-de-sts' && github.ref == 'refs/heads/main' && github.actor == 'bmaged23'
+    needs: tests
+    runs-on: [self-hosted, Linux, X64, linguabridge-gpu]
+    timeout-minutes: 90
+    env:
+      IMAGE: bmaged23/linguabridge-en-de-sts
+      OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+      OLLAMA_BASE_URL: https://ollama.com
+      OLLAMA_MODEL: gemma4:31b
+      PLAYWRIGHT_BROWSERS_PATH: ${{ vars.PLAYWRIGHT_BROWSERS_PATH }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned browser evaluation tools
+        run: |
+          uv venv .venv --python 3.12
+          uv pip install --python .venv/bin/python --no-deps -r requirements/release/app.txt
+      - name: Build the candidate; offline tests run inside the image
+        run: docker build --build-arg SOURCE_REVISION="$GITHUB_SHA" -f deployment/docker/Dockerfile -t "$IMAGE:sha-$GITHUB_SHA" .
+      - name: Evaluate candidate GPU models and complete browser flows
+        env:
+          PYTHONPATH: src:.
+          FIXTURES: ${{ vars.LINGUABRIDGE_FIXTURES }}
+        run: |
+          .venv/bin/python -m scripts.release.smoke_container --image "$IMAGE:sha-$GITHUB_SHA"
+          .venv/bin/python -m scripts.release.check_gpu_image \
+            --image "$IMAGE:sha-$GITHUB_SHA" --fixtures "$FIXTURES" \
+            --run-id "$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+      - name: Publish the exact passing candidate
+        env:
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: |
+          printf '%s' "$DOCKERHUB_TOKEN" | docker login --username bmaged23 --password-stdin
+          docker tag "$IMAGE:sha-$GITHUB_SHA" "$IMAGE:gpu"
+          docker push "$IMAGE:sha-$GITHUB_SHA"
+          docker push "$IMAGE:gpu"
+      - name: Pull the published image and verify its identity
+        run: |
+          candidate=$(docker image inspect "$IMAGE:sha-$GITHUB_SHA" --format '{{.Id}}')
+          docker pull "$IMAGE:gpu"
+          published=$(docker image inspect "$IMAGE:gpu" --format '{{.Id}}')
+          test "$candidate" = "$published"
+          docker image inspect "$IMAGE:gpu" --format '{{json .RepoDigests}}' > .evaluation-local/published-image-digests.json
+          .venv/bin/python -m scripts.release.smoke_container --image "$IMAGE:gpu"
+      - name: Retain safe release summaries
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gpu-release-summaries
+          path: |
+            .evaluation-local/image-*/asr-gate.json
+            .evaluation-local/image-*/release-gate.json
+            .evaluation-local/image-*/browser/summary.json
+            .evaluation-local/published-image-digests.json

@@ -22,25 +22,39 @@ The animation plays directly in this README. Click it for the interactive versio
 
 1. **Capture speech.** Your browser requests echo cancellation and noise suppression, then sends 16 kHz mono audio to the local server in 512-sample frames—32 ms each.
 2. **Detect a turn.** Silero VAD distinguishes speech from silence. Each mode has its own pause allowance; translation waits longer so speakers can finish their sentences.
-3. **Transcribe.** Qwen3-ASR produces replaceable previews while you speak, then a final transcript. It attempts to preserve English and German words in their original language. Only finalized text goes to the LLM.
+3. **Transcribe.** Qwen3-ASR produces replaceable previews while you speak. Short requests receive a fresh whole-turn final decode. Long requests also probe speech-bounded pause chunks; their joined result is used only when both supported languages have sufficient evidence. Monolingual or unreliable chunks fall back to the original whole-turn decoder. Only finalized text goes to the LLM.
 4. **Build the request.** The app adds the confirmed mode, target language, and relevant local memory. Gemma streams its answer or translation through Ollama Cloud.
 5. **Choose the voices.** The LLM marks English/German text spans. A local parser removes these markers from the transcript and sends short phrases to Kokoro or Piper. English → German → English output can switch voices within a reply while preserving order.
 6. **Play and remember.** The browser plays each completed audio chunk. Only fully played assistant phrases count as heard history. New speech stops playback, clears pending audio, and cancels the previous response.
 
-STT uses progressive cumulative-audio decoding with prefix reuse. TTS streams completed **phrases**, rather than generating individual audio tokens. One STT process and one shared TTS process keep their models loaded between turns.
+STT uses progressive cumulative-audio previews with prefix reuse. `stt.final_strategy` controls the final decode; the adaptive strategy improves measured mixed-language accuracy but costs more processing for long requests. TTS streams completed **phrases**, rather than generating individual audio tokens. One STT process and one shared TTS process keep their models loaded between turns.
 
 ## Models
 
 | Stage | Model / voice | Location | Active settings |
 | --- | --- | --- | --- |
 | Speech detection | Silero VAD ONNX | Local CPU | 16 kHz audio, 32 ms frames |
-| STT | Qwen3-ASR-0.6B | Local GPU | FP32, eager attention, progressive previews |
+| STT | Qwen3-ASR-0.6B | Local GPU | FP32/eager, greedy previews, adaptive final chunks with 3 beams |
 | LLM | `gemma4:31b` | Ollama Cloud | Streaming on, thinking off, temperature 0.3 |
 | English TTS | Kokoro 82M ONNX, `af_heart` | Local GPU | Speed 1.05, 24 kHz output |
 | German TTS | Piper `de_DE-thorsten-high` | Local GPU | Length scale 1.0, 22.05 kHz output |
 | Memory | SQLite | Local disk | Mode, notes, recent turns and summaries |
 
 No local LLM installation is required. An Ollama Cloud account with access to the configured model is required. Model weights download separately from the repository. See the [pinned model manifest](docs/reference/model-manifest.json) and [model notices](docs/reference/model-notices.md).
+
+## Measured evaluation
+
+Latest: the [noisy mixed-speech fix](evaluation/results/mixed-asr-fix-2026-10-24/README.md) reduced validation-story WER from **14.32% to 9.40%** on four source stories with clean/20 dB/10 dB variants. All 24 human calibration transcripts retained their baseline scores. The previously failing noisy story now passes explicit cancellation/negation checks, including independent checks of both spoken summaries. **17/17 browser turns** passed the stronger suite; **83 regression tests** pass.
+
+The prior scripted full flow measured **2.31% WER / 0.51% CER** and **2.75 s median first audio after input recording**. Completed-segment caching and GPU batches of two subsequently reduced the long mixed story’s first-audio delay from **7.77 s to 2.69 s** in matched real-time browser runs, with unchanged transcription. Offline final-decode comparisons preserved all 52 transcripts. See the [latency and accuracy report](evaluation/results/asr-latency-optimization-2026-10-24/README.md) for scope and measurements. Six of 45 validation fact checks still fail under noise; recognition is not error-free.
+
+The earlier [teaching and voice-marker fix](evaluation/results/teaching-voice-fix-2026-10-24/README.md) passed a 12-case teaching regression suite in two passes. Its two previously failing turns produced 10 native audio chunks with 0% normalized WER/CER in an independent Whisper check. Historical measurements and known failures remain in the [earlier evaluation](evaluation/results/review-2026-10-24/README.md).
+
+On six matched texts, GPU streamed synthesis took **0.47 s median versus 2.64 s on CPU** (5.61× for synthesis only). The reports include actual-audio Whisper scores, model-judge coverage, RAM/VRAM/CPU measurements and retained failures.
+
+On 24 human FLEURS clips, the enabled strategy retained **3.77% English / 4.42% German WER**. The [component report](evaluation/results/component-v1/README.md) preserves the original progressive-decoding, independent TTS, endpointing and translation measurements. These small read-speech/development sets do not establish general accuracy or naturally code-switched human speech performance.
+
+All 24 production-streamed TTS cases completed; one unbounded long-text baseline failed its memory allocation. The [first full browser run](evaluation/results/browser-v1/README.md) and [fresh-final follow-up](evaluation/results/browser-v2/README.md) preserve the original recognition, completeness and marker failures. See [evaluation methods and limitations](evaluation/README.md) for the later fixes and remaining recognition issue.
 
 ## Installation — clone to first conversation
 
@@ -168,9 +182,15 @@ Translation requires confirmation before it starts. Once confirmed, it stays act
 
 Modes can be selected in the UI or through explicit commands such as “LinguaBridge, translator mode” and “LinguaBridge, conversation mode.” `Bridge` and `Brücke` remain compatible prefixes.
 
+## Docker and CI/CD
+
+The [GPU container guide](deployment/README.md) contains the image recipe, local build/run commands, required hardware and release status. The image bundles the production speech assets; credentials and persistent memory are supplied at runtime. Docker Hub publication is still being verified.
+
+GitHub offline CI installs pinned application dependencies and runs the regression suite without keys or models. The GPU release workflow is designed to build a candidate, test normal startup, compare 52 frozen ASR recordings, run 17 full browser turns against the container, and publish only after those gates pass. It then pulls the published tag, checks image identity and repeats startup verification. This delivers an image; it does not deploy a public server. The trusted GPU runner and fixture bundle must be online. Remote workflow verification is pending.
+
 ## Important configuration
 
-All tuning lives in [`config.py`](config.py). Credentials and cloud model selection live in `.env`. The [complete parameter reference](docs/reference/configuration-parameters.md) lists every setting.
+Application tuning lives in [`config.py`](config.py). Credentials and cloud model selection live in `.env`; evaluation budgets and test selection live in [`evaluation/config.py`](evaluation/config.py). The [complete parameter reference](docs/reference/configuration-parameters.md) lists application settings.
 
 | Area | Configuration | Default and effect |
 | --- | --- | --- |
@@ -181,6 +201,10 @@ All tuning lives in [`config.py`](config.py). Credentials and cloud model select
 | STT compute | `stt.device`, `dtype`, `attention` | CUDA / FP32 / eager; the validated Qwen runtime |
 | STT previews | `stt.partial_interval_ms`, `window_seconds` | ≥2,000 ms / 46 s cumulative window; previews stay local |
 | STT decoding | `stt.max_new_tokens`, `unfixed_chunk_num`, `rollback_tokens` | 256 / 2 / 5; controls output length and progressive text-prefix reuse |
+| Final ASR strategy | `stt.final_strategy`, `final_segmentation.minimum_total_seconds` | Adaptive pause chunks for inputs ≥8 s; original whole decode for short/monolingual/uncertain inputs |
+| ASR reuse / batching | `stt.stream_chunk_cache`, `final_batch_size`, `stream_cache_max_entries` | Enabled / 2 / 64; reuse only exact completed segments, decode remaining segments in GPU batches; unfinished tails stay fresh |
+| ASR search | `stt.num_beams`, `final_num_beams`, `final_padding_ms` | 1 for previews/whole fallback; 3 and 200 ms padding for candidate chunks |
+| ASR pause/evidence gates | `stt.final_segmentation` | 80 ms pauses, ≥2 s pieces/tail, ≥4 words per language; existing Silero and output-plausibility guards |
 | LLM response | `llm.temperature`, `max_response_tokens`, `think` | 0.3 / 512 / false; bounded streamed replies |
 | Cloud deadlines | `llm.first_token_timeout_seconds`, `stream_idle_timeout_seconds` | 15 s / 15 s; avoids waiting indefinitely for reply text |
 | Voice selection | `tts.voices.en`, `tts.voices.de` | Kokoro `af_heart` at speed 1.05; Piper Thorsten High |
@@ -234,6 +258,9 @@ scripts/             Setup, startup, validation, demos and evaluations
   documentation/     Animated diagram builder and GIF renderer
 docs/                Guides, parameter reference, reports and demo media
 tests/               Offline regression tests
+evaluation/          Versioned datasets, evaluation settings and reviewed metrics
+deployment/          GPU Docker recipe, entrypoint, compose and release guide
+.github/workflows/   Offline checks and gated image release
 ```
 
 [Documentation index](docs/README.md) · [Tool commands](scripts/README.md) · [Dependency environments](requirements/README.md) · [Model licenses and notices](docs/reference/model-notices.md)

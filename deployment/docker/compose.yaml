@@ -1,0 +1,13 @@
+services:
+  linguabridge:
+    image: bmaged23/linguabridge-en-de-sts:gpu
+    gpus: all
+    ports:
+      - "127.0.0.1:8766:8766"
+    env_file:
+      - ../../.env
+    volumes:
+      - conversation-memory:/app/data
+    restart: unless-stopped
+volumes:
+  conversation-memory:

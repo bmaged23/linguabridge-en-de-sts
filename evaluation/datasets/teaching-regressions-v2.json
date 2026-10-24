@@ -1,0 +1,354 @@
+{
+  "version": "teaching-regressions-v2",
+  "created_before_inference": true,
+  "scope": "Ordered teaching turns; first four reproduce known failures, remaining eight are new regression cases. Same isolated memory per pass; text-level cloud tests, not STT/TTS audio tests. Stricter known-German phrase checks added after manual review of v1; this is a regression revision, not an independent holdout.",
+  "cases": [
+    {
+      "case_id": "en-borrow-lend",
+      "source": "en",
+      "text": "Please explain the difference between borrowing and lending in two sentences.",
+      "expected_languages": [
+        "en"
+      ],
+      "required_terms": [
+        [
+          "borrow"
+        ],
+        [
+          "lend"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "de-although-because",
+      "source": "de",
+      "text": "Bitte erkläre although and because mit einem kurzen Beispiel auf Deutsch und Englisch.",
+      "expected_languages": [
+        "en",
+        "de"
+      ],
+      "required_terms": [
+        [
+          "although"
+        ],
+        [
+          "because"
+        ],
+        [
+          "obwohl"
+        ],
+        [
+          "weil",
+          "da "
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "obwohl",
+        "weil",
+        "fahrkarte",
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "en-fixed-quotes",
+      "source": "en",
+      "text": "Say exactly: Hello. Then say Guten Morgen in German. Then say See you tomorrow in English.",
+      "expected_languages": [
+        "en",
+        "de"
+      ],
+      "required_terms": [
+        [
+          "hello"
+        ],
+        [
+          "guten morgen"
+        ],
+        [
+          "see you tomorrow"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "guten morgen",
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "de-station",
+      "source": "de",
+      "text": "Wie kann ich am Bahnhof höflich nach dem Preis einer Fahrkarte fragen?",
+      "expected_languages": [
+        "de"
+      ],
+      "required_terms": [
+        [
+          "fahrkarte",
+          "ticket"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "en-affect-effect",
+      "source": "en",
+      "text": "Explain both affect and effect, with one short example for each.",
+      "expected_languages": [
+        "en"
+      ],
+      "required_terms": [
+        [
+          "affect"
+        ],
+        [
+          "effect"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "de-dass-das",
+      "source": "de",
+      "text": "Erkläre bitte den Unterschied zwischen dass und das. Gib für beide ein kurzes Beispiel.",
+      "expected_languages": [
+        "de"
+      ],
+      "required_terms": [
+        [
+          "dass"
+        ],
+        [
+          "das"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "en-german-questions",
+      "source": "en",
+      "text": "Give these two German questions with a brief English explanation: where is the pharmacy, and what time does it close?",
+      "expected_languages": [
+        "en",
+        "de"
+      ],
+      "required_terms": [
+        [
+          "apotheke"
+        ],
+        [
+          "wo"
+        ],
+        [
+          "wann",
+          "uhr"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "apotheke",
+        "wann",
+        "schließt",
+        "schliesst",
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "de-english-questions",
+      "source": "de",
+      "text": "Nenne zwei englische Fragen: Wo ist die Bibliothek und wann öffnet sie? Erkläre beide kurz auf Deutsch.",
+      "expected_languages": [
+        "de",
+        "en"
+      ],
+      "required_terms": [
+        [
+          "library"
+        ],
+        [
+          "where"
+        ],
+        [
+          "when",
+          "time"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "bibliothek",
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "en-en-de-en",
+      "source": "en",
+      "text": "Say exactly in this order: I need help. Ich habe meinen Schlüssel verloren. Thank you for your help.",
+      "expected_languages": [
+        "en",
+        "de"
+      ],
+      "required_terms": [
+        [
+          "i need help"
+        ],
+        [
+          "schlüssel"
+        ],
+        [
+          "thank you"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "schlüssel",
+        "verloren",
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "de-de-en-de",
+      "source": "de",
+      "text": "Sprich genau in dieser Reihenfolge: Das Wetter ist schön. Could you open the window? Vielen Dank.",
+      "expected_languages": [
+        "de",
+        "en"
+      ],
+      "required_terms": [
+        [
+          "wetter"
+        ],
+        [
+          "could you open"
+        ],
+        [
+          "vielen dank"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "wetter",
+        "vielen dank",
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "en-only-after-bilingual",
+      "source": "en",
+      "text": "Now explain how to ask a colleague for help politely. Use English only.",
+      "expected_languages": [
+        "en"
+      ],
+      "required_terms": [
+        [
+          "help"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    },
+    {
+      "case_id": "de-only-after-bilingual",
+      "source": "de",
+      "text": "Wie bitte ich im Restaurant höflich um ein Glas Wasser? Antworte nur auf Deutsch.",
+      "expected_languages": [
+        "de"
+      ],
+      "required_terms": [
+        [
+          "wasser"
+        ]
+      ],
+      "forbidden_terms_in_english": [
+        "haben sie",
+        "verstanden",
+        "ein beispiel",
+        "das wort",
+        "auf deutsch",
+        "und wird",
+        "und gibt",
+        " bedeutet "
+      ]
+    }
+  ]
+}

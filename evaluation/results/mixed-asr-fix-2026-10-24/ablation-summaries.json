@@ -1,0 +1,1072 @@
+{
+  "mixed-asr-development-v1": {
+    "expected_decodes": 80,
+    "completed": 80,
+    "model_load_seconds": 13.057703413999889,
+    "methods": {
+      "configured_greedy": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.13333333333333333,
+            "cer": 0.1090458488228005,
+            "word_errors": 56,
+            "character_errors": 264,
+            "substitutions": 17,
+            "deletions": 38,
+            "insertions": 1,
+            "hits": 365,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.25,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 31,
+          "semantic_checks": 42,
+          "median_seconds": 3.1043951510000625,
+          "median_real_time_factor": 0.25412751072887824
+        },
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.13953488372093023,
+            "cer": 0.0640495867768595,
+            "word_errors": 24,
+            "character_errors": 62,
+            "substitutions": 24,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 148,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 8,
+          "semantic_checks": 12,
+          "median_seconds": 3.8957258619998356,
+          "median_real_time_factor": 0.2533624577165926
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.0379746835443038,
+            "cer": 0.009153318077803204,
+            "word_errors": 3,
+            "character_errors": 4,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 76,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.5,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 1.9874420915000428,
+          "median_real_time_factor": 0.18299117925678515
+        }
+      },
+      "empty_greedy": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.16666666666666666,
+            "cer": 0.13093762907889303,
+            "word_errors": 70,
+            "character_errors": 317,
+            "substitutions": 32,
+            "deletions": 38,
+            "insertions": 0,
+            "hits": 350,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.3333333333333333,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 29,
+          "semantic_checks": 42,
+          "median_seconds": 3.0570899220000456,
+          "median_real_time_factor": 0.2538206167461511
+        },
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.05232558139534884,
+            "cer": 0.013429752066115703,
+            "word_errors": 9,
+            "character_errors": 13,
+            "substitutions": 9,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 163,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 12,
+          "semantic_checks": 12,
+          "median_seconds": 4.3453058034999685,
+          "median_real_time_factor": 0.2826121524736856
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.0379746835443038,
+            "cer": 0.009153318077803204,
+            "word_errors": 3,
+            "character_errors": 4,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 76,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.5,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 2.0387938204999045,
+          "median_real_time_factor": 0.18773610114217848
+        }
+      },
+      "configured_beam3": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.13333333333333333,
+            "cer": 0.11069805865344899,
+            "word_errors": 56,
+            "character_errors": 268,
+            "substitutions": 18,
+            "deletions": 38,
+            "insertions": 0,
+            "hits": 364,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.3333333333333333,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 33,
+          "semantic_checks": 42,
+          "median_seconds": 3.627659705499923,
+          "median_real_time_factor": 0.30847934625616946
+        },
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.09302325581395349,
+            "cer": 0.03305785123966942,
+            "word_errors": 16,
+            "character_errors": 32,
+            "substitutions": 16,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 156,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 10,
+          "semantic_checks": 12,
+          "median_seconds": 4.5203183699998135,
+          "median_real_time_factor": 0.2936797277806532
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.0379746835443038,
+            "cer": 0.009153318077803204,
+            "word_errors": 3,
+            "character_errors": 4,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 76,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.5,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 2.250495270500096,
+          "median_real_time_factor": 0.2073738069444533
+        }
+      },
+      "empty_beam3": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.20476190476190476,
+            "cer": 0.1755472945064023,
+            "word_errors": 86,
+            "character_errors": 425,
+            "substitutions": 27,
+            "deletions": 59,
+            "insertions": 0,
+            "hits": 334,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.25,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 28,
+          "semantic_checks": 42,
+          "median_seconds": 3.4988080045002334,
+          "median_real_time_factor": 0.28712634422394884
+        },
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.05232558139534884,
+            "cer": 0.013429752066115703,
+            "word_errors": 9,
+            "character_errors": 13,
+            "substitutions": 9,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 163,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 12,
+          "semantic_checks": 12,
+          "median_seconds": 4.454294063999896,
+          "median_real_time_factor": 0.28999310312499327
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.0379746835443038,
+            "cer": 0.009153318077803204,
+            "word_errors": 3,
+            "character_errors": 4,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 76,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.5,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 2.204052670999772,
+          "median_real_time_factor": 0.20286818926969213
+        }
+      }
+    },
+    "resources": {
+      "sample_count": 1102,
+      "ram_tree_rss_mb": {
+        "peak": 2583.31,
+        "mean": 1766.13
+      },
+      "cpu_pct_one_core": {
+        "peak": 503.9,
+        "mean": 100.54
+      },
+      "cpu_pct_machine": {
+        "peak": 41.99,
+        "mean": 8.38
+      },
+      "gpu_vram_mb": {
+        "peak": 4202.0,
+        "mean": 3926.21
+      },
+      "gpu_util_pct": {
+        "peak": 69.0,
+        "mean": 35.54
+      },
+      "system_ram_used_mb": {
+        "peak": 2396.5,
+        "mean": 2282.04
+      }
+    }
+  },
+  "mixed-asr-canonical-development-v1": {
+    "expected_decodes": 40,
+    "completed": 40,
+    "model_load_seconds": 8.721032168999955,
+    "methods": {
+      "canonical_greedy": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.18095238095238095,
+            "cer": 0.1482858323007022,
+            "word_errors": 76,
+            "character_errors": 359,
+            "substitutions": 24,
+            "deletions": 52,
+            "insertions": 0,
+            "hits": 344,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.3333333333333333,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 28,
+          "semantic_checks": 42,
+          "median_seconds": 2.950977936500067,
+          "median_real_time_factor": 0.24761732462410965
+        },
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.2558139534883721,
+            "cer": 0.15289256198347106,
+            "word_errors": 44,
+            "character_errors": 148,
+            "substitutions": 40,
+            "deletions": 4,
+            "insertions": 0,
+            "hits": 128,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 4,
+          "semantic_checks": 12,
+          "median_seconds": 3.322600103500008,
+          "median_real_time_factor": 0.2160895597900565
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.0379746835443038,
+            "cer": 0.009153318077803204,
+            "word_errors": 3,
+            "character_errors": 4,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 76,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.5,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 2.0785238435000792,
+          "median_real_time_factor": 0.17499841173790265
+        }
+      },
+      "canonical_beam3": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.17142857142857143,
+            "cer": 0.14456836018174307,
+            "word_errors": 72,
+            "character_errors": 350,
+            "substitutions": 20,
+            "deletions": 52,
+            "insertions": 0,
+            "hits": 348,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.3333333333333333,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 31,
+          "semantic_checks": 42,
+          "median_seconds": 3.377596760499955,
+          "median_real_time_factor": 0.28312043339361764
+        },
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.13372093023255813,
+            "cer": 0.06301652892561983,
+            "word_errors": 23,
+            "character_errors": 61,
+            "substitutions": 22,
+            "deletions": 1,
+            "insertions": 0,
+            "hits": 149,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 7,
+          "semantic_checks": 12,
+          "median_seconds": 4.050646267500042,
+          "median_real_time_factor": 0.263713949707034
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.0379746835443038,
+            "cer": 0.009153318077803204,
+            "word_errors": 3,
+            "character_errors": 4,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 76,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.5,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 2.3377705584998694,
+          "median_real_time_factor": 0.21242421582086524
+        }
+      }
+    },
+    "resources": {
+      "sample_count": 534,
+      "ram_tree_rss_mb": {
+        "peak": 2583.38,
+        "mean": 1756.59
+      },
+      "cpu_pct_one_core": {
+        "peak": 539.7,
+        "mean": 101.93
+      },
+      "cpu_pct_machine": {
+        "peak": 44.98,
+        "mean": 8.49
+      },
+      "gpu_vram_mb": {
+        "peak": 4240.0,
+        "mean": 3760.86
+      },
+      "gpu_util_pct": {
+        "peak": 67.0,
+        "mean": 36.27
+      },
+      "system_ram_used_mb": {
+        "peak": 2443.37,
+        "mean": 2273.99
+      }
+    }
+  },
+  "mixed-asr-pauses-development-v1": {
+    "expected_decodes": 40,
+    "completed": 40,
+    "model_load_seconds": 13.817886921000081,
+    "methods": {
+      "pause_greedy": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.1261904761904762,
+            "cer": 0.08137133415943824,
+            "word_errors": 53,
+            "character_errors": 197,
+            "substitutions": 30,
+            "deletions": 17,
+            "insertions": 6,
+            "hits": 373,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 36,
+          "semantic_checks": 42,
+          "median_seconds": 4.437889543999745,
+          "median_real_time_factor": 0.39506238926626314
+        },
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.046511627906976744,
+            "cer": 0.012396694214876033,
+            "word_errors": 8,
+            "character_errors": 12,
+            "substitutions": 8,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 164,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 12,
+          "semantic_checks": 12,
+          "median_seconds": 5.755873316999896,
+          "median_real_time_factor": 0.37435436783217335
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.12658227848101267,
+            "cer": 0.06407322654462243,
+            "word_errors": 10,
+            "character_errors": 28,
+            "substitutions": 7,
+            "deletions": 0,
+            "insertions": 3,
+            "hits": 72,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.25,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 3.0954682864999086,
+          "median_real_time_factor": 0.27739639323413784
+        }
+      },
+      "pause_beam3": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.1,
+            "cer": 0.07187112763320942,
+            "word_errors": 42,
+            "character_errors": 174,
+            "substitutions": 18,
+            "deletions": 20,
+            "insertions": 4,
+            "hits": 382,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.08333333333333333,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 38,
+          "semantic_checks": 42,
+          "median_seconds": 5.249254957499716,
+          "median_real_time_factor": 0.4382679213314232
+        },
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.046511627906976744,
+            "cer": 0.012396694214876033,
+            "word_errors": 8,
+            "character_errors": 12,
+            "substitutions": 8,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 164,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 12,
+          "semantic_checks": 12,
+          "median_seconds": 6.6575574989999495,
+          "median_real_time_factor": 0.43297347818306264
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.11392405063291139,
+            "cer": 0.07551487414187644,
+            "word_errors": 9,
+            "character_errors": 33,
+            "substitutions": 6,
+            "deletions": 0,
+            "insertions": 3,
+            "hits": 73,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.25,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 3.71765893949987,
+          "median_real_time_factor": 0.33538213567226155
+        }
+      }
+    },
+    "resources": {
+      "sample_count": 833,
+      "ram_tree_rss_mb": {
+        "peak": 2601.45,
+        "mean": 1768.86
+      },
+      "cpu_pct_one_core": {
+        "peak": 524.0,
+        "mean": 100.34
+      },
+      "cpu_pct_machine": {
+        "peak": 43.67,
+        "mean": 8.36
+      },
+      "gpu_vram_mb": {
+        "peak": 3902.0,
+        "mean": 3669.41
+      },
+      "gpu_util_pct": {
+        "peak": 50.0,
+        "mean": 32.55
+      },
+      "system_ram_used_mb": {
+        "peak": 2388.35,
+        "mean": 2265.07
+      }
+    }
+  },
+  "mixed-asr-validation-v1": {
+    "expected_decodes": 32,
+    "completed": 32,
+    "model_load_seconds": 13.36033611899984,
+    "methods": {
+      "configured_greedy": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 447,
+            "reference_characters": 2649,
+            "wer": 0.14317673378076062,
+            "cer": 0.11211778029445074,
+            "word_errors": 64,
+            "character_errors": 297,
+            "substitutions": 19,
+            "deletions": 45,
+            "insertions": 0,
+            "hits": 383,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.25,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 35,
+          "semantic_checks": 45,
+          "median_seconds": 2.9189434204999998,
+          "median_real_time_factor": 0.22077495279671616
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.0379746835443038,
+            "cer": 0.009153318077803204,
+            "word_errors": 3,
+            "character_errors": 4,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 76,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.5,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 1.9156237239999427,
+          "median_real_time_factor": 0.16929044253127512
+        }
+      },
+      "adaptive_pause_beam3": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 447,
+            "reference_characters": 2649,
+            "wer": 0.09619686800894854,
+            "cer": 0.06983767459418648,
+            "word_errors": 43,
+            "character_errors": 185,
+            "substitutions": 17,
+            "deletions": 26,
+            "insertions": 0,
+            "hits": 404,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.16666666666666666,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 40,
+          "semantic_checks": 45,
+          "median_seconds": 4.78772992800009,
+          "median_real_time_factor": 0.37393264968209183
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 79,
+            "reference_characters": 437,
+            "wer": 0.0379746835443038,
+            "cer": 0.009153318077803204,
+            "word_errors": 3,
+            "character_errors": 4,
+            "substitutions": 3,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 76,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.5,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 5.373359563499889,
+          "median_real_time_factor": 0.468117115543286
+        }
+      }
+    },
+    "resources": {
+      "sample_count": 550,
+      "ram_tree_rss_mb": {
+        "peak": 2792.07,
+        "mean": 1732.85
+      },
+      "cpu_pct_one_core": {
+        "peak": 448.5,
+        "mean": 99.63
+      },
+      "cpu_pct_machine": {
+        "peak": 37.38,
+        "mean": 8.3
+      },
+      "gpu_vram_mb": {
+        "peak": 3858.0,
+        "mean": 3528.17
+      },
+      "gpu_util_pct": {
+        "peak": 57.0,
+        "mean": 35.26
+      },
+      "system_ram_used_mb": {
+        "peak": 2460.09,
+        "mean": 2250.15
+      }
+    }
+  },
+  "mixed-asr-expanded-controls-v1": {
+    "expected_decodes": 56,
+    "completed": 56,
+    "model_load_seconds": 13.245898656000008,
+    "methods": {
+      "configured_greedy": {
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.13953488372093023,
+            "cer": 0.0640495867768595,
+            "word_errors": 24,
+            "character_errors": 62,
+            "substitutions": 24,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 148,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 8,
+          "semantic_checks": 12,
+          "median_seconds": 3.2036366434999763,
+          "median_real_time_factor": 0.20835315883650174
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 24,
+            "speech_samples": 24,
+            "empty_reference_samples": 0,
+            "reference_words": 559,
+            "reference_characters": 3485,
+            "wer": 0.04114490161001789,
+            "cer": 0.020373027259684363,
+            "word_errors": 23,
+            "character_errors": 71,
+            "substitutions": 19,
+            "deletions": 3,
+            "insertions": 1,
+            "hits": 537,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.375,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 2.2646244640000077,
+          "median_real_time_factor": 0.2237850233846653
+        }
+      },
+      "adaptive_pause_beam3": {
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.046511627906976744,
+            "cer": 0.012396694214876033,
+            "word_errors": 8,
+            "character_errors": 12,
+            "substitutions": 8,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 164,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 12,
+          "semantic_checks": 12,
+          "median_seconds": 6.04604398850006,
+          "median_real_time_factor": 0.3932127394236899
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 24,
+            "speech_samples": 24,
+            "empty_reference_samples": 0,
+            "reference_words": 559,
+            "reference_characters": 3485,
+            "wer": 0.08050089445438283,
+            "cer": 0.05968436154949785,
+            "word_errors": 45,
+            "character_errors": 208,
+            "substitutions": 22,
+            "deletions": 3,
+            "insertions": 20,
+            "hits": 534,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.375,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 5.301054251000096,
+          "median_real_time_factor": 0.42219080606566284
+        }
+      }
+    },
+    "resources": {
+      "sample_count": 1021,
+      "ram_tree_rss_mb": {
+        "peak": 2663.51,
+        "mean": 1802.64
+      },
+      "cpu_pct_one_core": {
+        "peak": 479.9,
+        "mean": 100.73
+      },
+      "cpu_pct_machine": {
+        "peak": 39.99,
+        "mean": 8.39
+      },
+      "gpu_vram_mb": {
+        "peak": 3840.0,
+        "mean": 3670.06
+      },
+      "gpu_util_pct": {
+        "peak": 62.0,
+        "mean": 34.03
+      },
+      "system_ram_used_mb": {
+        "peak": 2447.88,
+        "mean": 2319.96
+      }
+    }
+  },
+  "mixed-asr-speech-gated-v2": {
+    "expected_decodes": 52,
+    "completed": 52,
+    "model_load_seconds": 14.33303817199976,
+    "methods": {
+      "speech_gated_pause_beam3": {
+        "new_synthetic": {
+          "metrics": {
+            "samples": 24,
+            "speech_samples": 24,
+            "empty_reference_samples": 0,
+            "reference_words": 867,
+            "reference_characters": 5070,
+            "wer": 0.1314878892733564,
+            "cer": 0.10236686390532544,
+            "word_errors": 114,
+            "character_errors": 519,
+            "substitutions": 39,
+            "deletions": 40,
+            "insertions": 35,
+            "hits": 788,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.125,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 74,
+          "semantic_checks": 87,
+          "median_seconds": 4.945922218500073,
+          "median_real_time_factor": 0.40419429033285337
+        },
+        "captured": {
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.046511627906976744,
+            "cer": 0.012396694214876033,
+            "word_errors": 8,
+            "character_errors": 12,
+            "substitutions": 8,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 164,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 12,
+          "semantic_checks": 12,
+          "median_seconds": 6.086053870999876,
+          "median_real_time_factor": 0.39582024841969327
+        },
+        "human_control": {
+          "metrics": {
+            "samples": 24,
+            "speech_samples": 24,
+            "empty_reference_samples": 0,
+            "reference_words": 559,
+            "reference_characters": 3485,
+            "wer": 0.07692307692307693,
+            "cer": 0.0593974175035868,
+            "word_errors": 43,
+            "character_errors": 207,
+            "substitutions": 21,
+            "deletions": 3,
+            "insertions": 19,
+            "hits": 535,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.375,
+            "empty_hypotheses": 0
+          },
+          "semantic_passed": 0,
+          "semantic_checks": 0,
+          "median_seconds": 4.9654075234998345,
+          "median_real_time_factor": 0.43386742470572914
+        }
+      }
+    },
+    "resources": {
+      "sample_count": 1165,
+      "ram_tree_rss_mb": {
+        "peak": 2616.14,
+        "mean": 1873.89
+      },
+      "cpu_pct_one_core": {
+        "peak": 288.4,
+        "mean": 100.76
+      },
+      "cpu_pct_machine": {
+        "peak": 24.03,
+        "mean": 8.4
+      },
+      "gpu_vram_mb": {
+        "peak": 3856.0,
+        "mean": 3685.66
+      },
+      "gpu_util_pct": {
+        "peak": 65.0,
+        "mean": 37.53
+      },
+      "system_ram_used_mb": {
+        "peak": 2499.05,
+        "mean": 2370.87
+      }
+    }
+  }
+}

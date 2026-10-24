@@ -1,0 +1,4 @@
+# Lightweight cloud translation metrics; speech runs in the existing GPU runtimes.
+httpx==0.28.1
+python-dotenv==1.1.1
+sacrebleu==2.5.1

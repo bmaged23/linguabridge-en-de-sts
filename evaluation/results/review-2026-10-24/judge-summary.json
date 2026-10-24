@@ -1,0 +1,30 @@
+{
+  "cases": 14,
+  "valid_judgments": 14,
+  "dimensions": {
+    "source_fidelity": {
+      "assessed": 14,
+      "mean_normalized": 0.9107142857142857
+    },
+    "transcript_faithfulness": {
+      "assessed": 14,
+      "mean_normalized": 1.0
+    },
+    "completeness": {
+      "assessed": 14,
+      "mean_normalized": 0.9464285714285714
+    },
+    "voice_markers": {
+      "assessed": 14,
+      "mean_normalized": 0.9285714285714286
+    },
+    "memory_grounding": {
+      "assessed": 14,
+      "mean_normalized": 1.0
+    }
+  },
+  "limitations": [
+    "Single-model development judge, not a human rating.",
+    "Functional checks and STT/TTS metrics remain separate; no single overall accuracy."
+  ]
+}

@@ -46,19 +46,22 @@ async def lifespan(app):
                                           initargs=(settings["stt"], str(ROOT)))
     app.state.tts = ProcessPoolExecutor(settings["workers"]["tts_processes"], mp_context=context, initializer=init_tts,
                                       initargs=(settings["tts"], str(ROOT)))
+    stt_initialized = False
     try:
         loop = asyncio.get_running_loop()
-        await asyncio.gather(loop.run_in_executor(app.state.stt, ready),
-                             loop.run_in_executor(app.state.tts, ready))
+        # Serialize model initialization to avoid overlapping CUDA loading peaks.
+        await loop.run_in_executor(app.state.stt, ready)
+        stt_initialized = True
+        await loop.run_in_executor(app.state.tts, ready)
         if settings["workers"].get("warm_up_models", True):
-            await asyncio.gather(loop.run_in_executor(app.state.stt, warmup_stt),
-                                 loop.run_in_executor(app.state.tts, warmup_tts))
+            await loop.run_in_executor(app.state.stt, warmup_stt)
+            await loop.run_in_executor(app.state.tts, warmup_tts)
         async with httpx.AsyncClient(timeout=settings["llm"]["request_timeout_seconds"]) as client:
             app.state.client = client
             yield
     finally:
         try:
-            if settings['stt']['provider']=='qwen_asr':
+            if settings['stt']['provider']=='qwen_asr' and stt_initialized:
                 await asyncio.get_running_loop().run_in_executor(app.state.stt,shutdown_stt)
         finally:
             app.state.stt.shutdown(wait=True, cancel_futures=True)
@@ -384,6 +387,7 @@ class Session:
                     await tokens.put(content)
                     content_deadline=self.loop.time()+settings['stream_idle_timeout_seconds']
                 if packet.get("done"):
+                    self.trace.event('llm_usage',turn=self.turn,input_tokens=packet.get('prompt_eval_count'),output_tokens=packet.get('eval_count'),total_duration_ns=packet.get('total_duration'))
                     if packet.get('done_reason')=='length':
                         self.trace.event('response_limit',turn=self.turn)
                         await self.send('notice',text='The reply reached its length limit. Ask me to continue.')

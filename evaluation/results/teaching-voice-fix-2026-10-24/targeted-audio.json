@@ -1,0 +1,442 @@
+[
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "2:1",
+    "turn": 2,
+    "reference": "Although is used to show a contrast or a concession.",
+    "language": "en",
+    "audio_sha256": "7af19f192740166bc89c3c494a8acc7ccec2ad436ec305d5f0880257f2fe225a",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 2.816,
+      "finite": true,
+      "empty": false,
+      "rms": 0.05827277898788452,
+      "peak_amplitude": 0.32098388671875,
+      "clipped_sample_fraction": 0.0,
+      "silent_frame_fraction": 0.1347517730496454,
+      "longest_silent_run_seconds": 0.14
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.56,
+        "text": " Although is used to show a contrast or a concession."
+      }
+    ],
+    "hypothesis": "Although is used to show a contrast or a concession.",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 10,
+      "reference_characters": 51,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 10,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 1.0223830990000806,
+    "real_time_factor": 0.3630621800426423
+  },
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "2:2",
+    "turn": 2,
+    "reference": "For example, Although it is raining, I am going for a walk.",
+    "language": "en",
+    "audio_sha256": "e0d2a6c645731c5b6472819d7d80490fe8e4dda9a6e08f5f7a18eff381c210b5",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 3.264,
+      "finite": true,
+      "empty": false,
+      "rms": 0.05816114321351051,
+      "peak_amplitude": 0.365142822265625,
+      "clipped_sample_fraction": 0.0,
+      "silent_frame_fraction": 0.18292682926829268,
+      "longest_silent_run_seconds": 0.26
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.12,
+        "text": " For example, although it is raining, I am going for a walk."
+      }
+    ],
+    "hypothesis": "For example, although it is raining, I am going for a walk.",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 12,
+      "reference_characters": 56,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 12,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 1.0012799989999621,
+    "real_time_factor": 0.3067647055759688
+  },
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "2:3",
+    "turn": 2,
+    "reference": "Obwohl es regnet, gehe ich spazieren.",
+    "language": "de",
+    "audio_sha256": "e9bd45fb8a7b9d9a8b2c9d53ecad4204fb0b69746f8247e5c56b4673b1f4777c",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 2.0781875,
+      "finite": true,
+      "empty": false,
+      "rms": 0.13535431027412415,
+      "peak_amplitude": 0.998046875,
+      "clipped_sample_fraction": 0.0,
+      "silent_frame_fraction": 0.19230769230769232,
+      "longest_silent_run_seconds": 0.2
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.86,
+        "text": " Obwohl es regnet, gehe ich spazieren."
+      }
+    ],
+    "hypothesis": "Obwohl es regnet, gehe ich spazieren.",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 6,
+      "reference_characters": 35,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 6,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 1.009449598999936,
+    "real_time_factor": 0.4857355743887094
+  },
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "2:4",
+    "turn": 2,
+    "reference": "Because is used to give a reason for something.",
+    "language": "en",
+    "audio_sha256": "4931c84dcf0e07d5c736103a1353a54b7b722cf6815bce5d931c73dd70a574f9",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 2.56,
+      "finite": true,
+      "empty": false,
+      "rms": 0.05787201225757599,
+      "peak_amplitude": 0.348541259765625,
+      "clipped_sample_fraction": 0.0,
+      "silent_frame_fraction": 0.140625,
+      "longest_silent_run_seconds": 0.16
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.3000000000000003,
+        "text": " Because is used to give a reason for something."
+      }
+    ],
+    "hypothesis": "Because is used to give a reason for something.",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 9,
+      "reference_characters": 46,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 9,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 0.8898908999999549,
+    "real_time_factor": 0.34761363281248236
+  },
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "2:5",
+    "turn": 2,
+    "reference": "For example, I am staying home because it is raining.",
+    "language": "en",
+    "audio_sha256": "2db9a26bde4339a4a632d27f1a1f6e3df1cecc0f99374ba417bab4d14ecb1bb0",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 3.029375,
+      "finite": true,
+      "empty": false,
+      "rms": 0.05673392489552498,
+      "peak_amplitude": 0.487060546875,
+      "clipped_sample_fraction": 0.0,
+      "silent_frame_fraction": 0.17763157894736842,
+      "longest_silent_run_seconds": 0.26
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.7800000000000002,
+        "text": " For example, I am staying home because it is raining."
+      }
+    ],
+    "hypothesis": "For example, I am staying home because it is raining.",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 10,
+      "reference_characters": 51,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 10,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 0.9816896859999815,
+    "real_time_factor": 0.3240568387868724
+  },
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "2:6",
+    "turn": 2,
+    "reference": "Ich bleibe zu Hause, weil es regnet.",
+    "language": "de",
+    "audio_sha256": "e5c294a12a69fd2c1a7148bc74df11bf6bce60bfc9d5b61a226c87f9c48523a1",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 2.252375,
+      "finite": true,
+      "empty": false,
+      "rms": 0.16362082958221436,
+      "peak_amplitude": 0.999969482421875,
+      "clipped_sample_fraction": 2.7748487707419947e-05,
+      "silent_frame_fraction": 0.23893805309734514,
+      "longest_silent_run_seconds": 0.24
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.02,
+        "text": " Ich bleibe zu Hause, weil es regnet."
+      }
+    ],
+    "hypothesis": "Ich bleibe zu Hause, weil es regnet.",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 7,
+      "reference_characters": 34,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 7,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 0.9087770759999785,
+    "real_time_factor": 0.40347503235472715
+  },
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "2:7",
+    "turn": 2,
+    "reference": "Do you understand the difference between these two words?",
+    "language": "en",
+    "audio_sha256": "85d447b1c782a79ccbd387177cf105160c59cd959896b206d91eccf462f67437",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 2.6026875,
+      "finite": true,
+      "empty": false,
+      "rms": 0.05833599716424942,
+      "peak_amplitude": 0.327362060546875,
+      "clipped_sample_fraction": 0.0,
+      "silent_frame_fraction": 0.13740458015267176,
+      "longest_silent_run_seconds": 0.16
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.38,
+        "text": " Do you understand the difference between these two words?"
+      }
+    ],
+    "hypothesis": "Do you understand the difference between these two words?",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 9,
+      "reference_characters": 56,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 9,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 0.8808359859999655,
+    "real_time_factor": 0.3384332487092536
+  },
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "4:1",
+    "turn": 4,
+    "reference": "Sie können höflich fragen, indem Sie die Form Was kostet oder Wie viel kostet verwenden.",
+    "language": "de",
+    "audio_sha256": "2ca8ba4f41999fb5ce0df7e5fbc792a3c8ebd71f27b0c0ef53307ce036218a94",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 4.93425,
+      "finite": true,
+      "empty": false,
+      "rms": 0.1638140082359314,
+      "peak_amplitude": 0.994293212890625,
+      "clipped_sample_fraction": 0.0,
+      "silent_frame_fraction": 0.10931174089068826,
+      "longest_silent_run_seconds": 0.12
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.76,
+        "text": " Sie können höflich fragen, indem Sie die Form, was kostet oder wie viel kostet, verwenden."
+      }
+    ],
+    "hypothesis": "Sie können höflich fragen, indem Sie die Form, was kostet oder wie viel kostet, verwenden.",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 15,
+      "reference_characters": 86,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 15,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 1.238099757999862,
+    "real_time_factor": 0.25091954359828994
+  },
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "4:2",
+    "turn": 4,
+    "reference": "Ein Beispiel ist Entschuldigung, was kostet eine Fahrkarte nach Berlin?",
+    "language": "de",
+    "audio_sha256": "928f67ba57b00c10e251cef354bd991f8a5d7265d35f892c631c4881287e862b",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 3.5875,
+      "finite": true,
+      "empty": false,
+      "rms": 0.18532198667526245,
+      "peak_amplitude": 0.999969482421875,
+      "clipped_sample_fraction": 1.7421602787456446e-05,
+      "silent_frame_fraction": 0.08333333333333333,
+      "longest_silent_run_seconds": 0.1
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.42,
+        "text": " Ein Beispiel ist Entschuldigung. Was kostet eine Fahrkarte nach Berlin?"
+      }
+    ],
+    "hypothesis": "Ein Beispiel ist Entschuldigung. Was kostet eine Fahrkarte nach Berlin?",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 10,
+      "reference_characters": 69,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 10,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 1.16858520400001,
+    "real_time_factor": 0.32573803595819095
+  },
+  {
+    "session": "292298feabed4510b3507277799a2615",
+    "id": "4:3",
+    "turn": 4,
+    "reference": "Haben Sie das verstanden?",
+    "language": "de",
+    "audio_sha256": "3c48c1ca083c5153d8dfabad1ca4291a3a5a52a83feca5e67f6a8f2c7900d04d",
+    "completed_playback": true,
+    "signal": {
+      "audio_seconds": 1.6138125,
+      "finite": true,
+      "empty": false,
+      "rms": 0.1269543617963791,
+      "peak_amplitude": 0.99749755859375,
+      "clipped_sample_fraction": 0.0,
+      "silent_frame_fraction": 0.32098765432098764,
+      "longest_silent_run_seconds": 0.24
+    },
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 1.22,
+        "text": " Haben Sie das verstanden?"
+      }
+    ],
+    "hypothesis": "Haben Sie das verstanden?",
+    "metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 4,
+      "reference_characters": 24,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 4,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "decode_seconds": 0.8113357839999935,
+    "real_time_factor": 0.5027447637194491
+  }
+]

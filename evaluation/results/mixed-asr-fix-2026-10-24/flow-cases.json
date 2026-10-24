@@ -1,0 +1,1205 @@
+[
+  {
+    "case_id": "translation-request",
+    "reference": "Bridge, translator mode.",
+    "hypothesis": "Bridge translator mode.",
+    "visible_answer": "Enable translation between English and German until you turn it off? Please say yes or no.",
+    "raw_llm_content": "",
+    "audio_languages": [
+      "en",
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "confirmation_state_correct": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 3,
+      "reference_characters": 22,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 3,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.1146875,
+      "request_to_test_completion_seconds": 10.827512070000012,
+      "first_audio_after_input_recording_end_seconds": 3.1061000000005587
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 1,
+        "text": "Bridge translator mode.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Bridge translator mode.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 2.1418
+      }
+    ]
+  },
+  {
+    "case_id": "translation-confirm",
+    "reference": "Yes, confirm.",
+    "hypothesis": "Yes. Confirm.",
+    "visible_answer": "Confirmed. Your settings are now active.",
+    "raw_llm_content": "",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "confirmation_state_correct": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 2,
+      "reference_characters": 11,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 2,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 1.752,
+      "request_to_test_completion_seconds": 5.1478506439998455,
+      "first_audio_after_input_recording_end_seconds": 1.1054000000003725
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 2,
+        "text": "Yes. Confirm.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Yes. Confirm.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 0.7888
+      }
+    ]
+  },
+  {
+    "case_id": "translation-en-first",
+    "reference": "The interview is at ten, not nine.",
+    "hypothesis": "The interview is at ten, not nine.",
+    "visible_answer": "Das Vorstellungsgespräch ist um zehn, nicht um neun.",
+    "raw_llm_content": "[de]Das Vorstellungsgespräch ist um zehn, nicht um neun.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "answer_content_3": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 7,
+      "reference_characters": 32,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 7,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.669375,
+      "request_to_test_completion_seconds": 8.286638175000007,
+      "first_audio_after_input_recording_end_seconds": 2.563200000000186,
+      "cloud_first_text_seconds": 0.42463600000064616
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 3,
+        "text": "The interview is at ten, not nine.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>The interview is at ten, not nine.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.0002
+      }
+    ]
+  },
+  {
+    "case_id": "translation-de",
+    "reference": "Anna wartet vor dem Bahnhof.",
+    "hypothesis": "Anna wartet vor dem Bahnhof.",
+    "visible_answer": "Anna is waiting in front of the train station.",
+    "raw_llm_content": "[en]Anna is waiting in front of the train station.",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "answer_content_3": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 5,
+      "reference_characters": 27,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 5,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.1209375,
+      "request_to_test_completion_seconds": 10.909695220000685,
+      "first_audio_after_input_recording_end_seconds": 6.286299999999814,
+      "cloud_first_text_seconds": 0.4275079999997615
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 4,
+        "text": "Anna wartet vor dem Bahnhof.",
+        "language": "de",
+        "detected_language": "German",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language German<asr_text>Anna wartet vor dem Bahnhof.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.6313
+      }
+    ]
+  },
+  {
+    "case_id": "translation-en-again",
+    "reference": "Please do not buy the tickets yet.",
+    "hypothesis": "Please do not buy the tickets yet.",
+    "visible_answer": "Bitte kaufen Sie die Fahrkarten noch nicht.",
+    "raw_llm_content": "[de]Bitte kaufen Sie die Fahrkarten noch nicht.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 7,
+      "reference_characters": 33,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 7,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.413375,
+      "request_to_test_completion_seconds": 7.1723606599998675,
+      "first_audio_after_input_recording_end_seconds": 2.621799999999814,
+      "cloud_first_text_seconds": 0.401756999999634
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 5,
+        "text": "Please do not buy the tickets yet.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Please do not buy the tickets yet.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 0.7272
+      }
+    ]
+  },
+  {
+    "case_id": "translation-en-consecutive",
+    "reference": "Please wait here until she arrives.",
+    "hypothesis": "Please wait here until she arrives.",
+    "visible_answer": "Bitte warten Sie hier, bis sie ankommt.",
+    "raw_llm_content": "[de]Bitte warten Sie hier, bis sie ankommt.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 6,
+      "reference_characters": 34,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 6,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.4986875,
+      "request_to_test_completion_seconds": 7.088170716000604,
+      "first_audio_after_input_recording_end_seconds": 2.252299999999814,
+      "cloud_first_text_seconds": 0.42696800000067014
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 6,
+        "text": "Please wait here until she arrives.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Please wait here until she arrives.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 0.6273
+      }
+    ]
+  },
+  {
+    "case_id": "remember-interview",
+    "reference": "Bridge, remember that my interview is in Berlin at ten.",
+    "hypothesis": "Bridge, remember that my interview is in Berlin at ten.",
+    "visible_answer": "I saved that note in your persistent memory.",
+    "raw_llm_content": "",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "explicit_note_present": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 10,
+      "reference_characters": 53,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 10,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 3.6506875,
+      "request_to_test_completion_seconds": 7.723068801000409,
+      "first_audio_after_input_recording_end_seconds": 1.5834000000003725
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 1,
+        "text": "Bridge, remember that my interview is in Berlin at ten.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Bridge, remember that my interview is in Berlin at ten.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.0811
+      }
+    ]
+  },
+  {
+    "case_id": "recall-german",
+    "reference": "Wo ist mein Vorstellungsgespräch und um wie viel Uhr?",
+    "hypothesis": "Wo ist mein Vorstellungsgespräch und um wie viel Uhr",
+    "visible_answer": "Ihr Vorstellungsgespräch ist in Berlin um zehn Uhr.",
+    "raw_llm_content": "[de]Ihr Vorstellungsgespräch ist in Berlin um zehn Uhr.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 9,
+      "reference_characters": 52,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 9,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 3.3631875,
+      "request_to_test_completion_seconds": 8.917200820999824,
+      "first_audio_after_input_recording_end_seconds": 2.740300000000745,
+      "cloud_first_text_seconds": 0.6212900000000445
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 2,
+        "text": "Wo ist mein Vorstellungsgespräch und um wie viel Uhr",
+        "language": "de",
+        "detected_language": "German",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language German<asr_text>Wo ist mein Vorstellungsgespräch und um wie viel Uhr",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.1296
+      }
+    ]
+  },
+  {
+    "case_id": "mixed-connected-story",
+    "reference": "Yesterday Anna and I travelled to Berlin for an interview. Unser Zug fiel aus, aber wir kauften noch keine Fahrkarten. The interview was at ten, not nine. We arrived at nine forty five. Please summarize this story briefly in both English and German.",
+    "hypothesis": "Yesterday, Anna and I traveled to Berlin. For an interview, unser Zug fiel aus. Aber wir kauften noch keine Fahrkarten. The interview was at ten, not nine. We arrived at nine forty-five. Please. Summarize the story briefly in both English and German.",
+    "visible_answer": "Anna and the speaker traveled to Berlin for an interview at ten. Their train was canceled, and they had not bought tickets yet. They arrived at nine forty-five. Anna und die sprechende Person reisten für ein Vorstellungsgespräch um zehn Uhr nach Berlin. Ihr Zug fiel aus, und sie hatten noch keine Fahrkarten gekauft. Sie kamen um neun Uhr fünfundvierzig an.",
+    "raw_llm_content": "[en]Anna and the speaker traveled to Berlin for an interview at ten. Their train was canceled, and they had not bought tickets yet. They arrived at nine forty-five. [de]Anna und die sprechende Person reisten für ein Vorstellungsgespräch um zehn Uhr nach Berlin. Ihr Zug fiel aus, und sie hatten noch keine Fahrkarten gekauft. Sie kamen um neun Uhr fünfundvierzig an.",
+    "audio_languages": [
+      "en",
+      "en",
+      "en",
+      "de",
+      "de",
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "meaning_train_cancelled": true,
+      "meaning_tickets_not_bought": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.046511627906976744,
+      "cer": 0.012396694214876033,
+      "reference_words": 43,
+      "reference_characters": 242,
+      "word_errors": 2,
+      "character_errors": 3,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 41,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 15.1045625,
+      "request_to_test_completion_seconds": 42.3988823539994,
+      "first_audio_after_input_recording_end_seconds": 8.456299999999814,
+      "cloud_first_text_seconds": 0.4857979999997042
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 3,
+        "text": "Yesterday, Anna and I traveled to Berlin. For an interview, unser Zug fiel aus. Aber wir kauften noch keine Fahrkarten. The interview was at ten, not nine. We arrived at nine forty-five. Please. Summarize the story briefly in both English and German.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "pause_chunks",
+        "model_decode_calls": 6,
+        "decoder_raw": "language English<asr_text>Yesterday, Anna and I traveled to Berlin.\nlanguage English<asr_text>For an interview, unser Zug fiel aus.\nlanguage German<asr_text>Aber wir kauften noch keine Fahrkarten.\nlanguage English<asr_text>The interview was at ten, not nine.\nlanguage English<asr_text>We arrived at nine forty-five. Please.\nlanguage English<asr_text>Summarize the story briefly in both English and German.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [
+          {
+            "start_seconds": 0.088,
+            "end_seconds": 2.598,
+            "raw": "language English<asr_text>Yesterday, Anna and I traveled to Berlin.",
+            "language": "English",
+            "text": "Yesterday, Anna and I traveled to Berlin."
+          },
+          {
+            "start_seconds": 2.598,
+            "end_seconds": 4.728,
+            "raw": "language English<asr_text>For an interview, unser Zug fiel aus.",
+            "language": "English",
+            "text": "For an interview, unser Zug fiel aus."
+          },
+          {
+            "start_seconds": 4.728,
+            "end_seconds": 6.728,
+            "raw": "language German<asr_text>Aber wir kauften noch keine Fahrkarten.",
+            "language": "German",
+            "text": "Aber wir kauften noch keine Fahrkarten."
+          },
+          {
+            "start_seconds": 6.728,
+            "end_seconds": 8.968,
+            "raw": "language English<asr_text>The interview was at ten, not nine.",
+            "language": "English",
+            "text": "The interview was at ten, not nine."
+          },
+          {
+            "start_seconds": 8.968,
+            "end_seconds": 11.308,
+            "raw": "language English<asr_text>We arrived at nine forty-five. Please.",
+            "language": "English",
+            "text": "We arrived at nine forty-five. Please."
+          },
+          {
+            "start_seconds": 11.308,
+            "end_seconds": 15.008,
+            "raw": "language English<asr_text>Summarize the story briefly in both English and German.",
+            "language": "English",
+            "text": "Summarize the story briefly in both English and German."
+          }
+        ],
+        "decode_seconds": 6.9092
+      }
+    ]
+  },
+  {
+    "case_id": "recall-after-reload",
+    "reference": "What time is my interview, and in which city?",
+    "hypothesis": "What time is my interview, and in which city?",
+    "visible_answer": "Your interview is in Berlin at ten.",
+    "raw_llm_content": "[en]Your interview is in Berlin at ten.",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "explicit_note_present": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 9,
+      "reference_characters": 43,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 9,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.9466875,
+      "request_to_test_completion_seconds": 7.655662733999634,
+      "first_audio_after_input_recording_end_seconds": 2.7494000000003727,
+      "cloud_first_text_seconds": 0.4355780000005325
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 1,
+        "text": "What time is my interview, and in which city?",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>What time is my interview, and in which city?",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.1659
+      }
+    ]
+  },
+  {
+    "case_id": "teaching-english",
+    "reference": "Please explain the difference between borrowing and lending in two sentences.",
+    "hypothesis": "Please explain the difference between borrowing and lending in two sentences.",
+    "visible_answer": "Borrowing is the act of receiving something from someone with the intention of returning it. Lending is the act of giving something to someone for a period of time.",
+    "raw_llm_content": "[en]Borrowing is the act of receiving something from someone with the intention of returning it. Lending is the act of giving something to someone for a period of time.",
+    "audio_languages": [
+      "en",
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 11,
+      "reference_characters": 76,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 11,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 4.888,
+      "request_to_test_completion_seconds": 17.12288942699979,
+      "first_audio_after_input_recording_end_seconds": 3.495299999999814,
+      "cloud_first_text_seconds": 0.41166900000007445
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 1,
+        "text": "Please explain the difference between borrowing and lending in two sentences.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Please explain the difference between borrowing and lending in two sentences.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.2013
+      }
+    ]
+  },
+  {
+    "case_id": "teaching-de-en-de",
+    "reference": "Bitte erkläre although and because mit einem kurzen Beispiel auf Deutsch und Englisch.",
+    "hypothesis": "Bitte erkläre, although and because, mit einem kurzen Beispiel auf Deutsch und Englisch.",
+    "visible_answer": " Although is used to show a contrast or a concession. For example,  Although it was raining, we went for a walk.  Obwohl es regnete, gingen wir spazieren.  Because is used to give a reason for something. For example,  I stayed home because I was tired.  Ich blieb zu Hause, weil ich müde war.  Do you feel comfortable using these words in your own sentences?",
+    "raw_llm_content": "[en] Although is used to show a contrast or a concession. For example, [en] Although it was raining, we went for a walk. [de] Obwohl es regnete, gingen wir spazieren. [en] Because is used to give a reason for something. For example, [en] I stayed home because I was tired. [de] Ich blieb zu Hause, weil ich müde war. [en] Do you feel comfortable using these words in your own sentences?",
+    "audio_languages": [
+      "en",
+      "en",
+      "de",
+      "en",
+      "en",
+      "de",
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 13,
+      "reference_characters": 85,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 13,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 5.6675625,
+      "request_to_test_completion_seconds": 28.11220245200002,
+      "first_audio_after_input_recording_end_seconds": 3.5185,
+      "cloud_first_text_seconds": 0.7579599999999118
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 2,
+        "text": "Bitte erkläre, although and because, mit einem kurzen Beispiel auf Deutsch und Englisch.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Bitte erkläre, although and because, mit einem kurzen Beispiel auf Deutsch und Englisch.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.659
+      }
+    ]
+  },
+  {
+    "case_id": "teaching-en-de-en",
+    "reference": "Please say exactly: Hello. Guten Morgen. See you tomorrow.",
+    "hypothesis": "Please say exactly: \"Hello.\" \"Guten Morgen.\" \"See you tomorrow.\"",
+    "visible_answer": " Hello.  Guten Morgen.  See you tomorrow.",
+    "raw_llm_content": "[en] Hello. [de] Guten Morgen. [en] See you tomorrow.",
+    "audio_languages": [
+      "en",
+      "de",
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "voice_switch_order_correct": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "answer_content_3": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 9,
+      "reference_characters": 54,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 9,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 4.70175,
+      "request_to_test_completion_seconds": 10.42688703299973,
+      "first_audio_after_input_recording_end_seconds": 3.0095,
+      "cloud_first_text_seconds": 0.4319079999995665
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 3,
+        "text": "Please say exactly: \"Hello.\" \"Guten Morgen.\" \"See you tomorrow.\"",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Please say exactly: \"Hello.\" \"Guten Morgen.\" \"See you tomorrow.\"",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.355
+      }
+    ]
+  },
+  {
+    "case_id": "teaching-german",
+    "reference": "Wie kann ich am Bahnhof höflich nach dem Preis einer Fahrkarte fragen?",
+    "hypothesis": "Wie kann ich am Bahnhof höflich nach dem Preis eine Fahrkarte fragen",
+    "visible_answer": "Um höflich nach dem Preis zu fragen, können Sie die Formel Was kostet bitte eine Fahrkarte verwenden. Ein Beispiel ist Guten Tag, was kostet bitte eine Fahrkarte nach Berlin? Alternativ können Sie fragen Wie viel kostet bitte das Ticket? Haben Sie das verstanden?",
+    "raw_llm_content": "[de]Um höflich nach dem Preis zu fragen, können Sie die Formel Was kostet bitte eine Fahrkarte verwenden. Ein Beispiel ist [de]Guten Tag, was kostet bitte eine Fahrkarte nach Berlin?[de] Alternativ können Sie fragen [de]Wie viel kostet bitte das Ticket?[de] Haben Sie das verstanden?",
+    "audio_languages": [
+      "de",
+      "de",
+      "de",
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "answer_content_2": true,
+      "emitted_audio_finished_playback": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.08333333333333333,
+      "cer": 0.014492753623188406,
+      "reference_words": 12,
+      "reference_characters": 69,
+      "word_errors": 1,
+      "character_errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 11,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 4.083,
+      "request_to_test_completion_seconds": 21.54241166599968,
+      "first_audio_after_input_recording_end_seconds": 3.0818999999994414,
+      "cloud_first_text_seconds": 0.44536799999968935
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 4,
+        "text": "Wie kann ich am Bahnhof höflich nach dem Preis eine Fahrkarte fragen",
+        "language": "de",
+        "detected_language": "German",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language German<asr_text>Wie kann ich am Bahnhof höflich nach dem Preis eine Fahrkarte fragen",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.6082
+      }
+    ]
+  },
+  {
+    "case_id": "long-reply-to-interrupt",
+    "reference": "Tell me a long story about a family travelling across Austria.",
+    "hypothesis": "Tell me a long story about a family traveling across Austria.",
+    "visible_answer": "The Miller family started their grand adventure in Vienna, where they spent three days admiring the imperial palaces and eating slices of Sachertorte in cozy cafes. With their suitcases packed and a map of the Alps spread across the table, they rented a sturdy silver station",
+    "raw_llm_content": "[en]The Miller family started their grand adventure in Vienna, where they spent three days admiring the imperial palaces and eating slices of Sachertorte in cozy cafes. With their suitcases packed and a map of the Alps spread across the table, they rented a sturdy silver station",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.09090909090909091,
+      "cer": 0.01639344262295082,
+      "reference_words": 11,
+      "reference_characters": 61,
+      "word_errors": 1,
+      "character_errors": 1,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 10,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 4.0346875,
+      "request_to_test_completion_seconds": 6.08201528599966,
+      "first_audio_after_input_recording_end_seconds": 2.0034000000003727,
+      "cloud_first_text_seconds": 0.43461699999988923
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 1,
+        "text": "Tell me a long story about a family traveling across Austria.",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Tell me a long story about a family traveling across Austria.",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 0.9931
+      }
+    ]
+  },
+  {
+    "case_id": "voice-interruption",
+    "reference": "Stop the story. What is two plus two?",
+    "hypothesis": "Stop the story. What is two plus two?",
+    "visible_answer": "Two plus two is four.",
+    "raw_llm_content": "[en]Two plus two is four.",
+    "audio_languages": [
+      "en"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "emitted_audio_finished_playback": true,
+      "speech_started_during_reply": true,
+      "old_reply_playback_cancelled": true,
+      "interrupt_packet_received": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 8,
+      "reference_characters": 35,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 8,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 2.84,
+      "request_to_test_completion_seconds": 11.188475365000158,
+      "first_audio_after_input_recording_end_seconds": 6.9598999999994415,
+      "cloud_first_text_seconds": 4.483232999999927
+    },
+    "interruption": {
+      "old_playing_id": "1:1",
+      "cancelled_chunks": [
+        {
+          "type": "played",
+          "id": "1:1",
+          "complete": false,
+          "at_ms": 9112.899999999441
+        }
+      ],
+      "input_start_to_interrupt_seconds": 0.9045
+    },
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 2,
+        "text": "Stop the story. What is two plus two?",
+        "language": "en",
+        "detected_language": "English",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language English<asr_text>Stop the story. What is two plus two?",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 0.8746
+      }
+    ]
+  },
+  {
+    "case_id": "after-interruption-german",
+    "reference": "Bitte antworte kurz: Was ist zwei plus zwei?",
+    "hypothesis": "Bitte antworte kurz: Was ist zwei plus zwei",
+    "visible_answer": "Zwei plus zwei ist vier.",
+    "raw_llm_content": "[de]Zwei plus zwei ist vier.",
+    "audio_languages": [
+      "de"
+    ],
+    "checks": {
+      "no_browser_or_pipeline_timeout": true,
+      "final_transcript_present": true,
+      "one_input_turn": true,
+      "no_pipeline_errors": true,
+      "mode_correct": true,
+      "audio_emitted": true,
+      "requested_audio_languages_present": true,
+      "no_unrequested_voice": true,
+      "answer_content_1": true,
+      "emitted_audio_finished_playback": true,
+      "silent_microphone_stays_active": true,
+      "no_false_turn_during_silence": true
+    },
+    "passed": true,
+    "stt_metrics": {
+      "wer": 0.0,
+      "cer": 0.0,
+      "reference_words": 8,
+      "reference_characters": 42,
+      "word_errors": 0,
+      "character_errors": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 8,
+      "normalized_exact_match": true,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "timing": {
+      "recording_seconds": 3.537375,
+      "request_to_test_completion_seconds": 7.44178269799977,
+      "first_audio_after_input_recording_end_seconds": 1.9735,
+      "cloud_first_text_seconds": 0.395940000000337
+    },
+    "interruption": null,
+    "asr_audit": [
+      {
+        "event": "stt_final",
+        "turn": 3,
+        "text": "Bitte antworte kurz: Was ist zwei plus zwei",
+        "language": "de",
+        "detected_language": "German",
+        "certain": true,
+        "probability": null,
+        "used_context": false,
+        "can_route": true,
+        "supported_probability": null,
+        "decode_strategy": "whole_short",
+        "model_decode_calls": 1,
+        "decoder_raw": "language German<asr_text>Bitte antworte kurz: Was ist zwei plus zwei",
+        "reused_prefix": "",
+        "updates": 1,
+        "decoder_chunks": [],
+        "decode_seconds": 1.07
+      }
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "dataset_sha256": "73441b0c72b9f35196885990eb416508c4d0ab7098af968c7750f72f31ae41ab",
+  "dataset": "evaluation/datasets/bilingual-flows-v2.json",
+  "input_directory": ".evaluation-local/flow-inputs-v2",
+  "application_source_sha256": "0f9737701c700fb0a0cbfea6866e2af5dc544e956772e8d5fd06d8847c980597",
+  "selected_sessions": [
+    "translation-persistence",
+    "story-and-memory",
+    "bilingual-teaching",
+    "interrupt-and-recover"
+  ],
+  "parameters": {
+    "dataset": "evaluation/datasets/bilingual-flows-v2.json",
+    "input_directory": ".evaluation-local/flow-inputs-v2",
+    "output_directory": ".evaluation-local/semantic-flow-v2",
+    "port": 8767,
+    "startup_timeout_seconds": 180,
+    "turn_timeout_ms": 120000,
+    "idle_settle_ms": 500,
+    "resource_interval_seconds": 0.5,
+    "maximum_cloud_requests": 20
+  },
+  "browser_microphone": "Real-time prerecorded synthetic WebAudio source; silent real-time output sink, not a physical microphone/speaker test."
+}

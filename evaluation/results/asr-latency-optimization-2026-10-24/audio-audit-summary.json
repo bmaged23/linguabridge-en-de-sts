@@ -1,0 +1,72 @@
+{
+  "generated_chunks": 37,
+  "scored": 37,
+  "failed": 0,
+  "model_load_seconds": 9.42745826600003,
+  "groups": {
+    "en": {
+      "samples": 23,
+      "speech_samples": 23,
+      "empty_reference_samples": 0,
+      "reference_words": 189,
+      "reference_characters": 1018,
+      "wer": 0.042328042328042326,
+      "cer": 0.029469548133595286,
+      "word_errors": 8,
+      "character_errors": 30,
+      "substitutions": 7,
+      "deletions": 1,
+      "insertions": 0,
+      "hits": 181,
+      "hallucinated_words_on_empty_reference": 0,
+      "normalized_exact_match_rate": 0.8260869565217391,
+      "empty_hypotheses": 0
+    },
+    "de": {
+      "samples": 14,
+      "speech_samples": 14,
+      "empty_reference_samples": 0,
+      "reference_words": 111,
+      "reference_characters": 637,
+      "wer": 0.09009009009009009,
+      "cer": 0.07378335949764521,
+      "word_errors": 10,
+      "character_errors": 47,
+      "substitutions": 10,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 101,
+      "hallucinated_words_on_empty_reference": 0,
+      "normalized_exact_match_rate": 0.6428571428571429,
+      "empty_hypotheses": 0
+    }
+  },
+  "resources": {
+    "sample_count": 181,
+    "ram_tree_rss_mb": {
+      "peak": 3105.68,
+      "mean": 1853.85
+    },
+    "cpu_pct_one_core": {
+      "peak": 556.5,
+      "mean": 188.27
+    },
+    "cpu_pct_machine": {
+      "peak": 46.38,
+      "mean": 15.69
+    },
+    "gpu_vram_mb": {
+      "peak": 2225.0,
+      "mean": 1622.35
+    },
+    "gpu_util_pct": {
+      "peak": 91.0,
+      "mean": 63.98
+    },
+    "system_ram_used_mb": {
+      "peak": 3908.14,
+      "mean": 2689.8
+    }
+  },
+  "scope": "Known-language native generated chunks, including cancelled/unplayed chunks labelled separately. Text/audio agreement proxy, not a human listening score or a check of LLM marker correctness."
+}

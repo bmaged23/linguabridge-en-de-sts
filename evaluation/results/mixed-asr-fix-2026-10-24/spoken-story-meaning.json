@@ -1,0 +1,16 @@
+{
+  "en": {
+    "independent_whisper_transcript": "Anna and the speaker traveled to Berlin for an interview at 10. Their train was canceled, and they had not bought tickets yet. They arrived at 9.45.",
+    "checks": {
+      "train_cancelled": true,
+      "tickets_not_bought": true
+    }
+  },
+  "de": {
+    "independent_whisper_transcript": "Anna und die sprechende Person reisten für ein Vorstellungsgespräch um 10 Uhr nach Berlin. Ihr Zug fiel aus und sie hatten noch keine Fahrkarten gekauft. Sie kamen um 9.45 Uhr an.",
+    "checks": {
+      "train_cancelled": true,
+      "tickets_not_bought": true
+    }
+  }
+}

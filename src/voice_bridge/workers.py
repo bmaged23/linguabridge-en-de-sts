@@ -32,7 +32,12 @@ def init_stt(settings, root):
 def transcribe(audio, previous=None, stream_id=None, final=True):
     if _settings['provider']=='qwen_asr':
         started=time.perf_counter()
-        result=_model.transcribe(audio,stream_id,final)
+        # Prefix reuse can freeze a wrong language interpretation into previews.
+        # Keep previews fast but let final audio correct its complete transcript.
+        chunk_cache=(_settings.get('final_strategy')=='adaptive_pause_chunks' and
+                     _settings.get('stream_chunk_cache',False))
+        identity=None if final and _settings.get('fresh_final_decode',False) and not chunk_cache else stream_id
+        result=_model.transcribe(audio,identity,final)
         result['decode_seconds']=round(time.perf_counter()-started,4)
         if final and _settings.get('audit_fresh_final',False):
             fresh=_model.transcribe(audio,str(stream_id)+':audit',True)
@@ -171,6 +176,9 @@ class Silero:
         options.intra_op_num_threads = (settings or {}).get("intra_op_threads", 1)
         options.inter_op_num_threads = (settings or {}).get("inter_op_threads", 1)
         self.session = ort.InferenceSession(str(path), options, providers=["CPUExecutionProvider"])
+        self.reset()
+
+    def reset(self):
         self.state = np.zeros((2, 1, 128), dtype=np.float32)
         self.context = np.zeros((1, 64), dtype=np.float32)
 

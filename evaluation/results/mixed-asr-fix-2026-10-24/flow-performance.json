@@ -1,0 +1,56 @@
+{
+  "stt_corpus": {
+    "samples": 17,
+    "speech_samples": 17,
+    "empty_reference_samples": 0,
+    "reference_words": 173,
+    "reference_characters": 971,
+    "wer": 0.023121387283236993,
+    "cer": 0.005149330587023687,
+    "word_errors": 4,
+    "character_errors": 5,
+    "substitutions": 4,
+    "deletions": 0,
+    "insertions": 0,
+    "hits": 169,
+    "hallucinated_words_on_empty_reference": 0,
+    "normalized_exact_match_rate": 0.8235294117647058,
+    "empty_hypotheses": 0
+  },
+  "median_first_audio_after_recording_seconds": 2.7494000000003727,
+  "story_first_audio_after_recording_seconds": 8.456299999999814,
+  "interruption": {
+    "old_playing_id": "1:1",
+    "cancelled_chunks": [
+      {
+        "type": "played",
+        "id": "1:1",
+        "complete": false,
+        "at_ms": 9112.899999999441
+      }
+    ],
+    "input_start_to_interrupt_seconds": 0.9045
+  },
+  "resources": {
+    "ram_tree_rss_mb": {
+      "peak": 3957.29,
+      "mean": 3540.559080675422
+    },
+    "cpu_pct_one_core": {
+      "peak": 320.1,
+      "mean": 65.89136960600375
+    },
+    "cpu_pct_machine": {
+      "peak": 26.68,
+      "mean": 5.491125703564728
+    },
+    "gpu_vram_mb": {
+      "peak": 5008.0,
+      "mean": 4565.8818011257035
+    },
+    "gpu_util_pct": {
+      "peak": 47.0,
+      "mean": 9.74108818011257
+    }
+  }
+}

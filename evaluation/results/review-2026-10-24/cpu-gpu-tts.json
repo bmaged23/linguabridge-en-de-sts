@@ -1,0 +1,115 @@
+{
+  "pairs": [
+    {
+      "id": "tts-en_booking--reference_spans",
+      "variant": "reference_spans",
+      "cpu_seconds": 3.096389110999951,
+      "gpu_seconds": 0.648021835999316,
+      "cpu_first_audio_seconds": 3.0963869109999678,
+      "gpu_first_audio_seconds": 0.6480208359989774
+    },
+    {
+      "id": "tts-en_booking--streamed_phrases",
+      "variant": "streamed_phrases",
+      "cpu_seconds": 3.1742662810000297,
+      "gpu_seconds": 0.6940067449995695,
+      "cpu_first_audio_seconds": 3.1742250810000314,
+      "gpu_first_audio_seconds": 0.6937678329995833
+    },
+    {
+      "id": "tts-en_negation--reference_spans",
+      "variant": "reference_spans",
+      "cpu_seconds": 3.460848110000029,
+      "gpu_seconds": 0.7878179540002748,
+      "cpu_first_audio_seconds": 3.460847510000008,
+      "gpu_first_audio_seconds": 0.787816453999767
+    },
+    {
+      "id": "tts-en_negation--streamed_phrases",
+      "variant": "streamed_phrases",
+      "cpu_seconds": 3.657081409,
+      "gpu_seconds": 0.6410871869993571,
+      "cpu_first_audio_seconds": 3.6570385089999604,
+      "gpu_first_audio_seconds": 0.6410489850004524
+    },
+    {
+      "id": "tts-de_booking--reference_spans",
+      "variant": "reference_spans",
+      "cpu_seconds": 2.334552419999966,
+      "gpu_seconds": 0.23413622400039458,
+      "cpu_first_audio_seconds": 2.334551919999967,
+      "gpu_first_audio_seconds": 0.23413562400128285
+    },
+    {
+      "id": "tts-de_booking--streamed_phrases",
+      "variant": "streamed_phrases",
+      "cpu_seconds": 2.258564519999993,
+      "gpu_seconds": 0.40333829700102797,
+      "cpu_first_audio_seconds": 1.2192386099999908,
+      "gpu_first_audio_seconds": 0.19607591900057741
+    },
+    {
+      "id": "tts-de_negation--reference_spans",
+      "variant": "reference_spans",
+      "cpu_seconds": 2.544441720000009,
+      "gpu_seconds": 0.32646274700164213,
+      "cpu_first_audio_seconds": 2.5444411199999877,
+      "gpu_first_audio_seconds": 0.3264621470007114
+    },
+    {
+      "id": "tts-de_negation--streamed_phrases",
+      "variant": "streamed_phrases",
+      "cpu_seconds": 2.5264449179999815,
+      "gpu_seconds": 0.4302135420002742,
+      "cpu_first_audio_seconds": 1.4330225100000007,
+      "gpu_first_audio_seconds": 0.28703737300020293
+    },
+    {
+      "id": "tts-en_de_en_lesson--reference_spans",
+      "variant": "reference_spans",
+      "cpu_seconds": 2.868055421000008,
+      "gpu_seconds": 0.49651886299943726,
+      "cpu_first_audio_seconds": 0.9585809069999982,
+      "gpu_first_audio_seconds": 0.1223723279999831
+    },
+    {
+      "id": "tts-en_de_en_lesson--streamed_phrases",
+      "variant": "streamed_phrases",
+      "cpu_seconds": 2.3755887140000027,
+      "gpu_seconds": 0.43923249499857775,
+      "cpu_first_audio_seconds": 0.8419600059999652,
+      "gpu_first_audio_seconds": 0.12421722099861654
+    },
+    {
+      "id": "tts-de_en_de_lesson--reference_spans",
+      "variant": "reference_spans",
+      "cpu_seconds": 2.788873412999976,
+      "gpu_seconds": 0.5676130219999322,
+      "cpu_first_audio_seconds": 0.5960372029999803,
+      "gpu_first_audio_seconds": 0.11002880900014134
+    },
+    {
+      "id": "tts-de_en_de_lesson--streamed_phrases",
+      "variant": "streamed_phrases",
+      "cpu_seconds": 2.7573735130000046,
+      "gpu_seconds": 0.5020344389995444,
+      "cpu_first_audio_seconds": 0.675929602999986,
+      "gpu_first_audio_seconds": 0.151070964999235
+    }
+  ],
+  "scope": "Same six texts, models, settings and two synthesis variants; serial runs with model load/warmup excluded. Small development timing comparison, not end-to-end speedup. CPU outputs have not had separate independent ASR scoring.",
+  "by_variant": {
+    "streamed_phrases": {
+      "matched_texts": 6,
+      "cpu_median_seconds": 2.641909215499993,
+      "gpu_median_seconds": 0.47063346699906106,
+      "ratio_of_median_generation_times": 5.613517526379534
+    },
+    "reference_spans": {
+      "matched_texts": 6,
+      "cpu_median_seconds": 2.828464416999992,
+      "gpu_median_seconds": 0.5320659424996848,
+      "ratio_of_median_generation_times": 5.316003508346464
+    }
+  }
+}

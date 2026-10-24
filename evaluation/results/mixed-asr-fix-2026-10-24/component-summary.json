@@ -1,0 +1,108 @@
+{
+  "expected_decodes": 52,
+  "completed": 52,
+  "model_load_seconds": 14.561131294000006,
+  "methods": {
+    "speech_gated_pause_beam3": {
+      "new_synthetic": {
+        "metrics": {
+          "samples": 24,
+          "speech_samples": 24,
+          "empty_reference_samples": 0,
+          "reference_words": 867,
+          "reference_characters": 5070,
+          "wer": 0.09803921568627451,
+          "cer": 0.07100591715976332,
+          "word_errors": 85,
+          "character_errors": 360,
+          "substitutions": 35,
+          "deletions": 46,
+          "insertions": 4,
+          "hits": 786,
+          "hallucinated_words_on_empty_reference": 0,
+          "normalized_exact_match_rate": 0.125,
+          "empty_hypotheses": 0
+        },
+        "semantic_passed": 76,
+        "semantic_checks": 87,
+        "median_seconds": 4.786840601499534,
+        "median_real_time_factor": 0.39625872717939603
+      },
+      "captured": {
+        "metrics": {
+          "samples": 4,
+          "speech_samples": 4,
+          "empty_reference_samples": 0,
+          "reference_words": 172,
+          "reference_characters": 968,
+          "wer": 0.046511627906976744,
+          "cer": 0.012396694214876033,
+          "word_errors": 8,
+          "character_errors": 12,
+          "substitutions": 8,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 164,
+          "hallucinated_words_on_empty_reference": 0,
+          "normalized_exact_match_rate": 0.0,
+          "empty_hypotheses": 0
+        },
+        "semantic_passed": 12,
+        "semantic_checks": 12,
+        "median_seconds": 6.042481941499773,
+        "median_real_time_factor": 0.3929797877680493
+      },
+      "human_control": {
+        "metrics": {
+          "samples": 24,
+          "speech_samples": 24,
+          "empty_reference_samples": 0,
+          "reference_words": 559,
+          "reference_characters": 3485,
+          "wer": 0.04114490161001789,
+          "cer": 0.020373027259684363,
+          "word_errors": 23,
+          "character_errors": 71,
+          "substitutions": 19,
+          "deletions": 3,
+          "insertions": 1,
+          "hits": 537,
+          "hallucinated_words_on_empty_reference": 0,
+          "normalized_exact_match_rate": 0.375,
+          "empty_hypotheses": 0
+        },
+        "semantic_passed": 0,
+        "semantic_checks": 0,
+        "median_seconds": 4.782773519999864,
+        "median_real_time_factor": 0.4291890421855149
+      }
+    }
+  },
+  "resources": {
+    "sample_count": 1157,
+    "ram_tree_rss_mb": {
+      "peak": 2728.29,
+      "mean": 1849.75
+    },
+    "cpu_pct_one_core": {
+      "peak": 316.7,
+      "mean": 100.62
+    },
+    "cpu_pct_machine": {
+      "peak": 26.39,
+      "mean": 8.39
+    },
+    "gpu_vram_mb": {
+      "peak": 3840.0,
+      "mean": 3671.71
+    },
+    "gpu_util_pct": {
+      "peak": 62.0,
+      "mean": 36.85
+    },
+    "system_ram_used_mb": {
+      "peak": 2471.18,
+      "mean": 2344.01
+    }
+  }
+}

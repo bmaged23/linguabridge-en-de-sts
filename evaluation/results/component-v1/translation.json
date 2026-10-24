@@ -1,0 +1,51 @@
+{
+  "expected_cases": 20,
+  "completed_translations": 20,
+  "completed_judgments": 20,
+  "valid_judgments": 17,
+  "agent_model": "gemma4:31b",
+  "judge_model": "gpt-oss:120b",
+  "requests_this_invocation": 48,
+  "maximum_requests_per_invocation": 48,
+  "groups": {
+    "en_de": {
+      "cases": 11,
+      "chrF_plus_plus": 90.54923010965814,
+      "chrF_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "BLEU": 75.9242936308349,
+      "BLEU_signature": "nrefs:1|case:mixed|eff:yes|tok:13a|smooth:exp|version:2.5.1",
+      "diagnostic_anchor_pass_rate": 1.0,
+      "marker_contract_pass_rate": 1.0
+    },
+    "de_en": {
+      "cases": 9,
+      "chrF_plus_plus": 84.4501535154215,
+      "chrF_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+      "BLEU": 78.23153224615952,
+      "BLEU_signature": "nrefs:1|case:mixed|eff:yes|tok:13a|smooth:exp|version:2.5.1",
+      "diagnostic_anchor_pass_rate": 1.0,
+      "marker_contract_pass_rate": 1.0
+    }
+  },
+  "judge_scores": {
+    "adequacy": {
+      "mean": 1.0,
+      "coverage": 17
+    },
+    "faithfulness": {
+      "mean": 1.0,
+      "coverage": 17
+    },
+    "target_language": {
+      "mean": 1.0,
+      "coverage": 17
+    }
+  },
+  "limitations": [
+    "Small synthetic manually referenced regression set; no human adjudication.",
+    "Single-reference translation scores penalize acceptable paraphrases.",
+    "Anchor checks and language markers are structural diagnostics, not independent language identification.",
+    "LLM judge is a separate model family but requires human calibration; valid low scores are never retried.",
+    "Remote server RAM/VRAM is unavailable; API client resources are not cloud model hardware."
+  ]
+}

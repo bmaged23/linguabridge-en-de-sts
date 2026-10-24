@@ -1,0 +1,1110 @@
+{
+  "summary": {
+    "selected_cases": 17,
+    "completed_cases": 17,
+    "passed": 17,
+    "javascript_errors": [],
+    "failed_cases": [],
+    "scope": "Actual browser, model workers and cloud; isolated synthetic memory and real-time prerecorded microphone. Browser playback uses silent sink."
+  },
+  "median_first_audio_seconds": 2.6235999999996276,
+  "cases": [
+    {
+      "case_id": "translation-request",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "confirmation_state_correct": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 3,
+        "reference_characters": 22,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 3,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 2.1146875,
+        "request_to_test_completion_seconds": 9.834986571999252,
+        "first_audio_after_input_recording_end_seconds": 2.2907999999988826
+      },
+      "resources": {
+        "sample_count": 20,
+        "ram_tree_rss_mb": {
+          "peak": 3633.31,
+          "mean": 3465.83
+        },
+        "cpu_pct_one_core": {
+          "peak": 149.3,
+          "mean": 56.55
+        },
+        "cpu_pct_machine": {
+          "peak": 12.44,
+          "mean": 4.71
+        },
+        "gpu_vram_mb": {
+          "peak": 4596.0,
+          "mean": 4564.4
+        },
+        "gpu_util_pct": {
+          "peak": 51.0,
+          "mean": 9.0
+        },
+        "system_ram_used_mb": {
+          "peak": 3326.32,
+          "mean": 3195.23
+        }
+      }
+    },
+    {
+      "case_id": "translation-confirm",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "confirmation_state_correct": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 2,
+        "reference_characters": 11,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 2,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 1.752,
+        "request_to_test_completion_seconds": 5.077935515999343,
+        "first_audio_after_input_recording_end_seconds": 1.0339000000003726
+      },
+      "resources": {
+        "sample_count": 10,
+        "ram_tree_rss_mb": {
+          "peak": 3611.54,
+          "mean": 3599.82
+        },
+        "cpu_pct_one_core": {
+          "peak": 131.9,
+          "mean": 51.55
+        },
+        "cpu_pct_machine": {
+          "peak": 10.99,
+          "mean": 4.3
+        },
+        "gpu_vram_mb": {
+          "peak": 4596.0,
+          "mean": 4596.0
+        },
+        "gpu_util_pct": {
+          "peak": 31.0,
+          "mean": 9.2
+        },
+        "system_ram_used_mb": {
+          "peak": 3345.44,
+          "mean": 3334.98
+        }
+      }
+    },
+    {
+      "case_id": "translation-en-first",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "answer_content_3": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 7,
+        "reference_characters": 32,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 7,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 2.669375,
+        "request_to_test_completion_seconds": 7.479249926000193,
+        "first_audio_after_input_recording_end_seconds": 2.316300000000745,
+        "cloud_first_text_seconds": 0.6365190000014991
+      },
+      "resources": {
+        "sample_count": 15,
+        "ram_tree_rss_mb": {
+          "peak": 3625.26,
+          "mean": 3617.5
+        },
+        "cpu_pct_one_core": {
+          "peak": 141.7,
+          "mean": 57.97
+        },
+        "cpu_pct_machine": {
+          "peak": 11.81,
+          "mean": 4.83
+        },
+        "gpu_vram_mb": {
+          "peak": 4634.0,
+          "mean": 4610.0
+        },
+        "gpu_util_pct": {
+          "peak": 36.0,
+          "mean": 10.0
+        },
+        "system_ram_used_mb": {
+          "peak": 3371.29,
+          "mean": 3352.23
+        }
+      }
+    },
+    {
+      "case_id": "translation-de",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "answer_content_3": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 5,
+        "reference_characters": 27,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 5,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 2.1209375,
+        "request_to_test_completion_seconds": 7.156377496999994,
+        "first_audio_after_input_recording_end_seconds": 2.8807000000011174,
+        "cloud_first_text_seconds": 0.41635800000040035
+      },
+      "resources": {
+        "sample_count": 14,
+        "ram_tree_rss_mb": {
+          "peak": 3631.12,
+          "mean": 3620.99
+        },
+        "cpu_pct_one_core": {
+          "peak": 140.0,
+          "mean": 63.71
+        },
+        "cpu_pct_machine": {
+          "peak": 11.67,
+          "mean": 5.31
+        },
+        "gpu_vram_mb": {
+          "peak": 4634.0,
+          "mean": 4634.0
+        },
+        "gpu_util_pct": {
+          "peak": 33.0,
+          "mean": 11.14
+        },
+        "system_ram_used_mb": {
+          "peak": 3372.09,
+          "mean": 3348.57
+        }
+      }
+    },
+    {
+      "case_id": "translation-en-again",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 7,
+        "reference_characters": 33,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 7,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 2.413375,
+        "request_to_test_completion_seconds": 7.241247771999042,
+        "first_audio_after_input_recording_end_seconds": 2.8002000000011176,
+        "cloud_first_text_seconds": 0.6190740000001824
+      },
+      "resources": {
+        "sample_count": 15,
+        "ram_tree_rss_mb": {
+          "peak": 3637.15,
+          "mean": 3628.55
+        },
+        "cpu_pct_one_core": {
+          "peak": 138.0,
+          "mean": 59.85
+        },
+        "cpu_pct_machine": {
+          "peak": 11.5,
+          "mean": 4.99
+        },
+        "gpu_vram_mb": {
+          "peak": 4676.0,
+          "mean": 4648.0
+        },
+        "gpu_util_pct": {
+          "peak": 39.0,
+          "mean": 10.8
+        },
+        "system_ram_used_mb": {
+          "peak": 3363.4,
+          "mean": 3343.71
+        }
+      }
+    },
+    {
+      "case_id": "translation-en-consecutive",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 6,
+        "reference_characters": 34,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 6,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 2.4986875,
+        "request_to_test_completion_seconds": 6.9159953969992785,
+        "first_audio_after_input_recording_end_seconds": 2.3964000000003725,
+        "cloud_first_text_seconds": 0.4405430000006163
+      },
+      "resources": {
+        "sample_count": 14,
+        "ram_tree_rss_mb": {
+          "peak": 3638.61,
+          "mean": 3634.04
+        },
+        "cpu_pct_one_core": {
+          "peak": 142.0,
+          "mean": 59.86
+        },
+        "cpu_pct_machine": {
+          "peak": 11.83,
+          "mean": 4.99
+        },
+        "gpu_vram_mb": {
+          "peak": 4676.0,
+          "mean": 4676.0
+        },
+        "gpu_util_pct": {
+          "peak": 39.0,
+          "mean": 9.57
+        },
+        "system_ram_used_mb": {
+          "peak": 3368.52,
+          "mean": 3351.45
+        }
+      }
+    },
+    {
+      "case_id": "remember-interview",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "explicit_note_present": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 10,
+        "reference_characters": 53,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 10,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 3.6506875,
+        "request_to_test_completion_seconds": 7.457945265998205,
+        "first_audio_after_input_recording_end_seconds": 1.324
+      },
+      "resources": {
+        "sample_count": 14,
+        "ram_tree_rss_mb": {
+          "peak": 3719.05,
+          "mean": 3684.67
+        },
+        "cpu_pct_one_core": {
+          "peak": 146.0,
+          "mean": 68.44
+        },
+        "cpu_pct_machine": {
+          "peak": 12.17,
+          "mean": 5.7
+        },
+        "gpu_vram_mb": {
+          "peak": 4682.0,
+          "mean": 4678.86
+        },
+        "gpu_util_pct": {
+          "peak": 35.0,
+          "mean": 13.0
+        },
+        "system_ram_used_mb": {
+          "peak": 3366.27,
+          "mean": 3357.29
+        }
+      }
+    },
+    {
+      "case_id": "recall-german",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 9,
+        "reference_characters": 52,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 9,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 3.3631875,
+        "request_to_test_completion_seconds": 9.302507087000777,
+        "first_audio_after_input_recording_end_seconds": 2.8889000000003726,
+        "cloud_first_text_seconds": 1.0877789999995002
+      },
+      "resources": {
+        "sample_count": 18,
+        "ram_tree_rss_mb": {
+          "peak": 3654.17,
+          "mean": 3648.93
+        },
+        "cpu_pct_one_core": {
+          "peak": 136.7,
+          "mean": 62.46
+        },
+        "cpu_pct_machine": {
+          "peak": 11.39,
+          "mean": 5.2
+        },
+        "gpu_vram_mb": {
+          "peak": 4682.0,
+          "mean": 4682.0
+        },
+        "gpu_util_pct": {
+          "peak": 39.0,
+          "mean": 12.44
+        },
+        "system_ram_used_mb": {
+          "peak": 3371.83,
+          "mean": 3360.04
+        }
+      }
+    },
+    {
+      "case_id": "mixed-connected-story",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "meaning_train_cancelled": true,
+        "meaning_tickets_not_bought": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.046511627906976744,
+        "cer": 0.012396694214876033,
+        "reference_words": 43,
+        "reference_characters": 242,
+        "word_errors": 2,
+        "character_errors": 3,
+        "substitutions": 2,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 41,
+        "normalized_exact_match": false,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 15.1045625,
+        "request_to_test_completion_seconds": 36.181380766000075,
+        "first_audio_after_input_recording_end_seconds": 2.6904000000003725,
+        "cloud_first_text_seconds": 0.5433400000001711
+      },
+      "resources": {
+        "sample_count": 73,
+        "ram_tree_rss_mb": {
+          "peak": 3880.51,
+          "mean": 3778.44
+        },
+        "cpu_pct_one_core": {
+          "peak": 174.2,
+          "mean": 70.65
+        },
+        "cpu_pct_machine": {
+          "peak": 14.52,
+          "mean": 5.89
+        },
+        "gpu_vram_mb": {
+          "peak": 4780.0,
+          "mean": 4725.7
+        },
+        "gpu_util_pct": {
+          "peak": 58.0,
+          "mean": 16.49
+        },
+        "system_ram_used_mb": {
+          "peak": 3531.74,
+          "mean": 3445.39
+        }
+      }
+    },
+    {
+      "case_id": "recall-after-reload",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "explicit_note_present": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 9,
+        "reference_characters": 43,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 9,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 2.9466875,
+        "request_to_test_completion_seconds": 7.490516550000393,
+        "first_audio_after_input_recording_end_seconds": 2.587699999999255,
+        "cloud_first_text_seconds": 0.40277600000081293
+      },
+      "resources": {
+        "sample_count": 14,
+        "ram_tree_rss_mb": {
+          "peak": 3907.59,
+          "mean": 3875.63
+        },
+        "cpu_pct_one_core": {
+          "peak": 147.1,
+          "mean": 69.38
+        },
+        "cpu_pct_machine": {
+          "peak": 12.26,
+          "mean": 5.78
+        },
+        "gpu_vram_mb": {
+          "peak": 4780.0,
+          "mean": 4780.0
+        },
+        "gpu_util_pct": {
+          "peak": 42.0,
+          "mean": 12.14
+        },
+        "system_ram_used_mb": {
+          "peak": 3527.41,
+          "mean": 3516.51
+        }
+      }
+    },
+    {
+      "case_id": "teaching-english",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 11,
+        "reference_characters": 76,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 11,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 4.888,
+        "request_to_test_completion_seconds": 16.054943046001426,
+        "first_audio_after_input_recording_end_seconds": 2.7547000000011175,
+        "cloud_first_text_seconds": 0.45351300000038464
+      },
+      "resources": {
+        "sample_count": 32,
+        "ram_tree_rss_mb": {
+          "peak": 3909.34,
+          "mean": 3855.25
+        },
+        "cpu_pct_one_core": {
+          "peak": 153.3,
+          "mean": 58.8
+        },
+        "cpu_pct_machine": {
+          "peak": 12.78,
+          "mean": 4.9
+        },
+        "gpu_vram_mb": {
+          "peak": 4808.0,
+          "mean": 4794.88
+        },
+        "gpu_util_pct": {
+          "peak": 32.0,
+          "mean": 9.75
+        },
+        "system_ram_used_mb": {
+          "peak": 3530.78,
+          "mean": 3513.18
+        }
+      }
+    },
+    {
+      "case_id": "teaching-de-en-de",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.07692307692307693,
+        "cer": 0.011764705882352941,
+        "reference_words": 13,
+        "reference_characters": 85,
+        "word_errors": 1,
+        "character_errors": 1,
+        "substitutions": 1,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 12,
+        "normalized_exact_match": false,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 5.6675625,
+        "request_to_test_completion_seconds": 28.659807103000276,
+        "first_audio_after_input_recording_end_seconds": 3.2622000000011178,
+        "cloud_first_text_seconds": 0.6924159999998665
+      },
+      "resources": {
+        "sample_count": 57,
+        "ram_tree_rss_mb": {
+          "peak": 3878.79,
+          "mean": 3852.95
+        },
+        "cpu_pct_one_core": {
+          "peak": 173.7,
+          "mean": 53.13
+        },
+        "cpu_pct_machine": {
+          "peak": 14.47,
+          "mean": 4.43
+        },
+        "gpu_vram_mb": {
+          "peak": 4884.0,
+          "mean": 4846.0
+        },
+        "gpu_util_pct": {
+          "peak": 40.0,
+          "mean": 10.35
+        },
+        "system_ram_used_mb": {
+          "peak": 3547.68,
+          "mean": 3520.62
+        }
+      }
+    },
+    {
+      "case_id": "teaching-en-de-en",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "voice_switch_order_correct": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "answer_content_3": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 9,
+        "reference_characters": 54,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 9,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 4.70175,
+        "request_to_test_completion_seconds": 11.098782562999986,
+        "first_audio_after_input_recording_end_seconds": 3.4430999999996277,
+        "cloud_first_text_seconds": 0.5379269999993994
+      },
+      "resources": {
+        "sample_count": 22,
+        "ram_tree_rss_mb": {
+          "peak": 3842.81,
+          "mean": 3827.97
+        },
+        "cpu_pct_one_core": {
+          "peak": 155.9,
+          "mean": 73.61
+        },
+        "cpu_pct_machine": {
+          "peak": 12.99,
+          "mean": 6.13
+        },
+        "gpu_vram_mb": {
+          "peak": 4884.0,
+          "mean": 4884.0
+        },
+        "gpu_util_pct": {
+          "peak": 32.0,
+          "mean": 12.73
+        },
+        "system_ram_used_mb": {
+          "peak": 3531.7,
+          "mean": 3516.98
+        }
+      }
+    },
+    {
+      "case_id": "teaching-german",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "stt_metrics": {
+        "wer": 0.08333333333333333,
+        "cer": 0.014492753623188406,
+        "reference_words": 12,
+        "reference_characters": 69,
+        "word_errors": 1,
+        "character_errors": 1,
+        "substitutions": 1,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 11,
+        "normalized_exact_match": false,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 4.083,
+        "request_to_test_completion_seconds": 17.074282884999775,
+        "first_audio_after_input_recording_end_seconds": 2.9902000000011175,
+        "cloud_first_text_seconds": 0.418906999999308
+      },
+      "resources": {
+        "sample_count": 34,
+        "ram_tree_rss_mb": {
+          "peak": 3825.13,
+          "mean": 3811.13
+        },
+        "cpu_pct_one_core": {
+          "peak": 146.5,
+          "mean": 53.92
+        },
+        "cpu_pct_machine": {
+          "peak": 12.21,
+          "mean": 4.49
+        },
+        "gpu_vram_mb": {
+          "peak": 4884.0,
+          "mean": 4884.0
+        },
+        "gpu_util_pct": {
+          "peak": 43.0,
+          "mean": 7.41
+        },
+        "system_ram_used_mb": {
+          "peak": 3520.12,
+          "mean": 3508.95
+        }
+      }
+    },
+    {
+      "case_id": "long-reply-to-interrupt",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true
+      },
+      "stt_metrics": {
+        "wer": 0.09090909090909091,
+        "cer": 0.01639344262295082,
+        "reference_words": 11,
+        "reference_characters": 61,
+        "word_errors": 1,
+        "character_errors": 1,
+        "substitutions": 1,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 10,
+        "normalized_exact_match": false,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 4.0346875,
+        "request_to_test_completion_seconds": 6.1852284530014,
+        "first_audio_after_input_recording_end_seconds": 2.1095,
+        "cloud_first_text_seconds": 0.45127299999876413
+      },
+      "resources": {
+        "sample_count": 12,
+        "ram_tree_rss_mb": {
+          "peak": 3910.2,
+          "mean": 3883.69
+        },
+        "cpu_pct_one_core": {
+          "peak": 134.1,
+          "mean": 71.3
+        },
+        "cpu_pct_machine": {
+          "peak": 11.17,
+          "mean": 5.94
+        },
+        "gpu_vram_mb": {
+          "peak": 4884.0,
+          "mean": 4884.0
+        },
+        "gpu_util_pct": {
+          "peak": 35.0,
+          "mean": 12.0
+        },
+        "system_ram_used_mb": {
+          "peak": 3534.51,
+          "mean": 3519.33
+        }
+      }
+    },
+    {
+      "case_id": "voice-interruption",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "emitted_audio_finished_playback": true,
+        "speech_started_during_reply": true,
+        "old_reply_playback_cancelled": true,
+        "interrupt_packet_received": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 8,
+        "reference_characters": 35,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 8,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 2.84,
+        "request_to_test_completion_seconds": 6.851753778999409,
+        "first_audio_after_input_recording_end_seconds": 2.6235999999996276,
+        "cloud_first_text_seconds": 0.44741400000020803
+      },
+      "resources": {
+        "sample_count": 14,
+        "ram_tree_rss_mb": {
+          "peak": 3841.01,
+          "mean": 3836.95
+        },
+        "cpu_pct_one_core": {
+          "peak": 218.0,
+          "mean": 88.01
+        },
+        "cpu_pct_machine": {
+          "peak": 18.17,
+          "mean": 7.33
+        },
+        "gpu_vram_mb": {
+          "peak": 4946.0,
+          "mean": 4946.0
+        },
+        "gpu_util_pct": {
+          "peak": 36.0,
+          "mean": 20.36
+        },
+        "system_ram_used_mb": {
+          "peak": 3528.78,
+          "mean": 3516.02
+        }
+      }
+    },
+    {
+      "case_id": "after-interruption-german",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "emitted_audio_finished_playback": true,
+        "silent_microphone_stays_active": true,
+        "no_false_turn_during_silence": true
+      },
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 8,
+        "reference_characters": 42,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 8,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "timing": {
+        "recording_seconds": 3.537375,
+        "request_to_test_completion_seconds": 7.186147542999606,
+        "first_audio_after_input_recording_end_seconds": 1.7376999999992548,
+        "cloud_first_text_seconds": 0.41570300000057614
+      },
+      "resources": {
+        "sample_count": 14,
+        "ram_tree_rss_mb": {
+          "peak": 3850.95,
+          "mean": 3846.53
+        },
+        "cpu_pct_one_core": {
+          "peak": 136.1,
+          "mean": 65.29
+        },
+        "cpu_pct_machine": {
+          "peak": 11.34,
+          "mean": 5.44
+        },
+        "gpu_vram_mb": {
+          "peak": 4946.0,
+          "mean": 4946.0
+        },
+        "gpu_util_pct": {
+          "peak": 48.0,
+          "mean": 12.71
+        },
+        "system_ram_used_mb": {
+          "peak": 3529.2,
+          "mean": 3519.45
+        }
+      }
+    }
+  ]
+}

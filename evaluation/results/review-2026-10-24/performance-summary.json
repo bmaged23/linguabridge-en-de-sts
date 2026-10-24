@@ -1,0 +1,55 @@
+{
+  "stt_corpus": {
+    "samples": 17,
+    "speech_samples": 17,
+    "empty_reference_samples": 0,
+    "reference_words": 173,
+    "reference_characters": 971,
+    "wer": 0.03468208092485549,
+    "cer": 0.010298661174047374,
+    "word_errors": 6,
+    "character_errors": 10,
+    "substitutions": 6,
+    "deletions": 0,
+    "insertions": 0,
+    "hits": 167,
+    "hallucinated_words_on_empty_reference": 0,
+    "normalized_exact_match_rate": 0.8235294117647058,
+    "empty_hypotheses": 0
+  },
+  "latency_seconds": {
+    "first_audio_after_recording": {
+      "samples": 17,
+      "median": 2.627199999999255,
+      "p95": 4.367879999998956
+    },
+    "cloud_first_text": {
+      "samples": 14,
+      "median": 0.48948249999921245,
+      "p95": 1.5269561000006433
+    }
+  },
+  "resource_scope": "Browser driver, Chromium, local server and workers; GPU metrics device-wide; cloud inference excluded.",
+  "resources": {
+    "ram_tree_rss_mb": {
+      "peak": 3835.27,
+      "mean": 3486.5097759674136
+    },
+    "cpu_pct_one_core": {
+      "peak": 307.3,
+      "mean": 64.82912423625254
+    },
+    "cpu_pct_machine": {
+      "peak": 25.61,
+      "mean": 5.402362525458249
+    },
+    "gpu_vram_mb": {
+      "peak": 4974.0,
+      "mean": 4552.486761710794
+    },
+    "gpu_util_pct": {
+      "peak": 55.0,
+      "mean": 9.317718940936864
+    }
+  }
+}

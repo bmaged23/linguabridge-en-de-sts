@@ -11,6 +11,8 @@ class QwenBridge:
     def __init__(self, settings, root):
         self.settings = settings
         root = Path(root)
+        self.root=root
+        self.speech_detector=None
         interpreter = root / settings['runtime_python']
         if not interpreter.is_file():
             raise RuntimeError('Qwen runtime missing. See docs/guides/qwen-stt-deployment.md.')
@@ -42,9 +44,38 @@ class QwenBridge:
             raise RuntimeError(result['error'])
         return result
 
-    def transcribe(self, audio, stream_id=None, final=True):
-        return self._exchange({'type': 'transcribe', 'audio': base64.b64encode(audio.astype('<f4').tobytes()).decode(),
-            'stream_id': stream_id, 'final': final}, self.settings['request_timeout_seconds'])
+    def transcribe(self, audio, stream_id=None, final=True, decode_options=None):
+        packet={'type': 'transcribe', 'audio': base64.b64encode(audio.astype('<f4').tobytes()).decode(),
+                'stream_id': stream_id, 'final': final}
+        if decode_options is not None:packet['decode_options']=decode_options
+        options=decode_options or {}
+        segmentation=self.settings.get('final_segmentation',{})
+        strategy=options.get('strategy',self.settings.get('final_strategy','whole'))
+        caching=options.get('stream_cache',self.settings.get('stream_chunk_cache',False)) and stream_id is not None
+        if ((final or caching) and strategy=='adaptive_pause_chunks' and
+                len(audio)>=segmentation.get('minimum_total_seconds',8)*16000 and
+                options.get('speech_gate',segmentation.get('use_speech_gate',False))):
+            packet['speech_regions']=self.speech_regions(audio)
+        return self._exchange(packet, self.settings['request_timeout_seconds'])
+
+    def speech_regions(self,audio):
+        import numpy as np
+        from .workers import Silero
+        settings=self.settings['final_segmentation']
+        if self.speech_detector is None:
+            self.speech_detector=Silero(self.root/settings['vad_model_path'],{
+                'intra_op_threads':settings['vad_intra_op_threads'],
+                'inter_op_threads':settings['vad_inter_op_threads']})
+        self.speech_detector.reset()
+        regions=[]
+        for left in range(0,len(audio),512):
+            frame=audio[left:left+512]
+            if len(frame)<512:frame=np.pad(frame,(0,512-len(frame)))
+            if self.speech_detector(frame)>=settings['vad_speech_threshold']:
+                right=min(left+512,len(audio))
+                if regions and regions[-1][1]==left:regions[-1][1]=right
+                else:regions.append([left,right])
+        return regions
 
     def close(self):
         if self.process.poll() is None:

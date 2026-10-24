@@ -4,6 +4,8 @@
 
 - [Project overview and installation](../README.md)
 - [Tools and commands](../scripts/README.md)
+- [GPU container and release pipeline](../deployment/README.md)
+- [Latest measured latency improvement](../evaluation/results/asr-latency-optimization-2026-10-24/README.md)
 - [Exact dependency environments](../requirements/README.md)
 - [Memory and voice commands](guides/memory-and-voice-commands.md)
 - [Model notices and privacy](reference/model-notices.md)

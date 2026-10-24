@@ -1,0 +1,744 @@
+[
+  {
+    "run": "teaching-fix-cloud-v3",
+    "configuration": {
+      "dataset_sha256": "01dbdfd1e018dd005cd5cba6318c8b704f0e95993ba974bb406487886b0d649f",
+      "application_prompt_sha256": "7ff7952240e8e5bc24f811649753e9ab128a0ca29423215dadae124f1e90a4cd",
+      "parameters": {
+        "dataset": "evaluation/datasets/teaching-regressions-v2.json",
+        "maximum_requests": 12,
+        "request_timeout_seconds": 60
+      },
+      "model": "gemma4:31b"
+    },
+    "cases": [
+      {
+        "case_id": "en-borrow-lend",
+        "request": "Please explain the difference between borrowing and lending in two sentences.",
+        "output_tokens": 38,
+        "raw_llm_content": "[en]Borrowing is the act of receiving something from someone with the intention of giving it back. Lending is the act of giving something to someone else for a period of time.",
+        "spans": [
+          [
+            "en",
+            "Borrowing is the act of receiving something from someone with the intention of giving it back. Lending is the act of giving something to someone else for a period of time."
+          ]
+        ],
+        "visible_answer": "Borrowing is the act of receiving something from someone with the intention of giving it back. Lending is the act of giving something to someone else for a period of time.",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.7847275120000177
+      },
+      {
+        "case_id": "de-although-because",
+        "request": "Bitte erkläre although and because mit einem kurzen Beispiel auf Deutsch und Englisch.",
+        "output_tokens": 110,
+        "raw_llm_content": "[de]Das Wort [en]although[de] wird benutzt, um einen Gegensatz auszudrücken. Ein Beispiel ist [en]Although it is cold, I go outside.[de] Auf Deutsch heißt das: Obwohl es kalt ist, gehe ich nach draußen. Das Wort [en]because[de] gibt einen Grund an. Ein Beispiel ist [en]I stay home because it is raining.[de] Auf Deutsch heißt das: Ich bleibe zu Hause, weil es regnet. Haben Sie das verstanden?",
+        "spans": [
+          [
+            "de",
+            "Das Wort "
+          ],
+          [
+            "en",
+            "although"
+          ],
+          [
+            "de",
+            " wird benutzt, um einen Gegensatz auszudrücken. Ein Beispiel ist "
+          ],
+          [
+            "en",
+            "Although it is cold, I go outside."
+          ],
+          [
+            "de",
+            " Auf Deutsch heißt das: Obwohl es kalt ist, gehe ich nach draußen. Das Wort "
+          ],
+          [
+            "en",
+            "because"
+          ],
+          [
+            "de",
+            " gibt einen Grund an. Ein Beispiel ist "
+          ],
+          [
+            "en",
+            "I stay home because it is raining."
+          ],
+          [
+            "de",
+            " Auf Deutsch heißt das: Ich bleibe zu Hause, weil es regnet. Haben Sie das verstanden?"
+          ]
+        ],
+        "visible_answer": "Das Wort although wird benutzt, um einen Gegensatz auszudrücken. Ein Beispiel ist Although it is cold, I go outside. Auf Deutsch heißt das: Obwohl es kalt ist, gehe ich nach draußen. Das Wort because gibt einen Grund an. Ein Beispiel ist I stay home because it is raining. Auf Deutsch heißt das: Ich bleibe zu Hause, weil es regnet. Haben Sie das verstanden?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "requested_item_4": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.8933245319999514
+      },
+      {
+        "case_id": "en-fixed-quotes",
+        "request": "Say exactly: Hello. Then say Guten Morgen in German. Then say See you tomorrow in English.",
+        "output_tokens": 19,
+        "raw_llm_content": "[en]Hello. [de]Guten Morgen [en]See you tomorrow.",
+        "spans": [
+          [
+            "en",
+            "Hello. "
+          ],
+          [
+            "de",
+            "Guten Morgen "
+          ],
+          [
+            "en",
+            "See you tomorrow."
+          ]
+        ],
+        "visible_answer": "Hello. Guten Morgen See you tomorrow.",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.6496193229999108
+      },
+      {
+        "case_id": "de-station",
+        "request": "Wie kann ich am Bahnhof höflich nach dem Preis einer Fahrkarte fragen?",
+        "output_tokens": 55,
+        "raw_llm_content": "[de]Sie können höflich fragen, indem Sie die Formel Was kostet bitte eine Fahrkarte verwenden. Ein Beispiel ist [de]Guten Tag, was kostet bitte eine Fahrkarte nach Berlin? Möchten Sie noch weitere Sätze für den Bahnhof lernen?",
+        "spans": [
+          [
+            "de",
+            "Sie können höflich fragen, indem Sie die Formel Was kostet bitte eine Fahrkarte verwenden. Ein Beispiel ist Guten Tag, was kostet bitte eine Fahrkarte nach Berlin? Möchten Sie noch weitere Sätze für den Bahnhof lernen?"
+          ]
+        ],
+        "visible_answer": "Sie können höflich fragen, indem Sie die Formel Was kostet bitte eine Fahrkarte verwenden. Ein Beispiel ist Guten Tag, was kostet bitte eine Fahrkarte nach Berlin? Möchten Sie noch weitere Sätze für den Bahnhof lernen?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.7841206289999718
+      },
+      {
+        "case_id": "en-affect-effect",
+        "request": "Explain both affect and effect, with one short example for each.",
+        "output_tokens": 56,
+        "raw_llm_content": "[en]Affect is usually a verb meaning to influence something. For example, the weather can affect your mood. Effect is usually a noun meaning the result of a change. For example, the medicine had a positive effect. Do you feel confident using these two words now?",
+        "spans": [
+          [
+            "en",
+            "Affect is usually a verb meaning to influence something. For example, the weather can affect your mood. Effect is usually a noun meaning the result of a change. For example, the medicine had a positive effect. Do you feel confident using these two words now?"
+          ]
+        ],
+        "visible_answer": "Affect is usually a verb meaning to influence something. For example, the weather can affect your mood. Effect is usually a noun meaning the result of a change. For example, the medicine had a positive effect. Do you feel confident using these two words now?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.9082489329999817
+      },
+      {
+        "case_id": "de-dass-das",
+        "request": "Erkläre bitte den Unterschied zwischen dass und das. Gib für beide ein kurzes Beispiel.",
+        "output_tokens": 71,
+        "raw_llm_content": "[de]Das Wort das mit einem s ist ein Artikel oder ein Pronomen und bezieht sich auf eine Sache. Ein Beispiel ist Das Haus ist groß. Das Wort dass mit Doppel s ist eine Konjunktion und leitet einen Nebensatz ein. Ein Beispiel ist Ich glaube, dass es morgen regnet. Haben Sie den Unterschied verstanden?",
+        "spans": [
+          [
+            "de",
+            "Das Wort das mit einem s ist ein Artikel oder ein Pronomen und bezieht sich auf eine Sache. Ein Beispiel ist Das Haus ist groß. Das Wort dass mit Doppel s ist eine Konjunktion und leitet einen Nebensatz ein. Ein Beispiel ist Ich glaube, dass es morgen regnet. Haben Sie den Unterschied verstanden?"
+          ]
+        ],
+        "visible_answer": "Das Wort das mit einem s ist ein Artikel oder ein Pronomen und bezieht sich auf eine Sache. Ein Beispiel ist Das Haus ist groß. Das Wort dass mit Doppel s ist eine Konjunktion und leitet einen Nebensatz ein. Ein Beispiel ist Ich glaube, dass es morgen regnet. Haben Sie den Unterschied verstanden?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 1.5164254540000002
+      },
+      {
+        "case_id": "en-german-questions",
+        "request": "Give these two German questions with a brief English explanation: where is the pharmacy, and what time does it close?",
+        "output_tokens": 62,
+        "raw_llm_content": "[en]The first question is [de]Wo ist die Apotheke?[en] This asks for the location of the pharmacy. The second question is [de]Um wie viel Uhr schließt sie?[en] This asks for the closing time. Do you have any other questions about these phrases?",
+        "spans": [
+          [
+            "en",
+            "The first question is "
+          ],
+          [
+            "de",
+            "Wo ist die Apotheke?"
+          ],
+          [
+            "en",
+            " This asks for the location of the pharmacy. The second question is "
+          ],
+          [
+            "de",
+            "Um wie viel Uhr schließt sie?"
+          ],
+          [
+            "en",
+            " This asks for the closing time. Do you have any other questions about these phrases?"
+          ]
+        ],
+        "visible_answer": "The first question is Wo ist die Apotheke? This asks for the location of the pharmacy. The second question is Um wie viel Uhr schließt sie? This asks for the closing time. Do you have any other questions about these phrases?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.965693334999969
+      },
+      {
+        "case_id": "de-english-questions",
+        "request": "Nenne zwei englische Fragen: Wo ist die Bibliothek und wann öffnet sie? Erkläre beide kurz auf Deutsch.",
+        "output_tokens": 62,
+        "raw_llm_content": "[de]Die erste Frage ist [en]Where is the library?[de] Damit fragt man nach dem Ort der Bibliothek. Die zweite Frage ist [en]When does it open?[de] Damit erkundigt man sich nach der Öffnungszeit. Haben Sie diese Fragen verstanden?",
+        "spans": [
+          [
+            "de",
+            "Die erste Frage ist "
+          ],
+          [
+            "en",
+            "Where is the library?"
+          ],
+          [
+            "de",
+            " Damit fragt man nach dem Ort der Bibliothek. Die zweite Frage ist "
+          ],
+          [
+            "en",
+            "When does it open?"
+          ],
+          [
+            "de",
+            " Damit erkundigt man sich nach der Öffnungszeit. Haben Sie diese Fragen verstanden?"
+          ]
+        ],
+        "visible_answer": "Die erste Frage ist Where is the library? Damit fragt man nach dem Ort der Bibliothek. Die zweite Frage ist When does it open? Damit erkundigt man sich nach der Öffnungszeit. Haben Sie diese Fragen verstanden?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.6868636250000009
+      },
+      {
+        "case_id": "en-en-de-en",
+        "request": "Say exactly in this order: I need help. Ich habe meinen Schlüssel verloren. Thank you for your help.",
+        "output_tokens": 26,
+        "raw_llm_content": "[en]I need help. [de]Ich habe meinen Schlüssel verloren. [en]Thank you for your help.",
+        "spans": [
+          [
+            "en",
+            "I need help. "
+          ],
+          [
+            "de",
+            "Ich habe meinen Schlüssel verloren. "
+          ],
+          [
+            "en",
+            "Thank you for your help."
+          ]
+        ],
+        "visible_answer": "I need help. Ich habe meinen Schlüssel verloren. Thank you for your help.",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.8977866320000203
+      },
+      {
+        "case_id": "de-de-en-de",
+        "request": "Sprich genau in dieser Reihenfolge: Das Wetter ist schön. Could you open the window? Vielen Dank.",
+        "output_tokens": 25,
+        "raw_llm_content": "[de]Das Wetter ist schön. [en]Could you open the window? [de]Vielen Dank.",
+        "spans": [
+          [
+            "de",
+            "Das Wetter ist schön. "
+          ],
+          [
+            "en",
+            "Could you open the window? "
+          ],
+          [
+            "de",
+            "Vielen Dank."
+          ]
+        ],
+        "visible_answer": "Das Wetter ist schön. Could you open the window? Vielen Dank.",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.7581899040000053
+      },
+      {
+        "case_id": "en-only-after-bilingual",
+        "request": "Now explain how to ask a colleague for help politely. Use English only.",
+        "output_tokens": 49,
+        "raw_llm_content": "[en]You can ask a colleague for help by using a polite opening like Could you please help me with this? Another good option is I would appreciate some help if you have a moment. Do you want to try practicing these phrases?",
+        "spans": [
+          [
+            "en",
+            "You can ask a colleague for help by using a polite opening like Could you please help me with this? Another good option is I would appreciate some help if you have a moment. Do you want to try practicing these phrases?"
+          ]
+        ],
+        "visible_answer": "You can ask a colleague for help by using a polite opening like Could you please help me with this? Another good option is I would appreciate some help if you have a moment. Do you want to try practicing these phrases?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.9535190999999941
+      },
+      {
+        "case_id": "de-only-after-bilingual",
+        "request": "Wie bitte ich im Restaurant höflich um ein Glas Wasser? Antworte nur auf Deutsch.",
+        "output_tokens": 54,
+        "raw_llm_content": "[de]Sie können höflich fragen, indem Sie die Formel Ich hätte gerne ein Glas Wasser bitte verwenden. Ein Beispiel ist Entschuldigung, ich hätte gerne ein Glas Wasser bitte. Möchten Sie auch wissen, wie man die Rechnung bestellt?",
+        "spans": [
+          [
+            "de",
+            "Sie können höflich fragen, indem Sie die Formel Ich hätte gerne ein Glas Wasser bitte verwenden. Ein Beispiel ist Entschuldigung, ich hätte gerne ein Glas Wasser bitte. Möchten Sie auch wissen, wie man die Rechnung bestellt?"
+          ]
+        ],
+        "visible_answer": "Sie können höflich fragen, indem Sie die Formel Ich hätte gerne ein Glas Wasser bitte verwenden. Ein Beispiel ist Entschuldigung, ich hätte gerne ein Glas Wasser bitte. Möchten Sie auch wissen, wie man die Rechnung bestellt?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 1.901241399000014
+      }
+    ]
+  },
+  {
+    "run": "teaching-fix-repeat-v1",
+    "configuration": {
+      "dataset_sha256": "01dbdfd1e018dd005cd5cba6318c8b704f0e95993ba974bb406487886b0d649f",
+      "application_prompt_sha256": "7ff7952240e8e5bc24f811649753e9ab128a0ca29423215dadae124f1e90a4cd",
+      "parameters": {
+        "dataset": "evaluation/datasets/teaching-regressions-v2.json",
+        "maximum_requests": 12,
+        "request_timeout_seconds": 60
+      },
+      "model": "gemma4:31b"
+    },
+    "cases": [
+      {
+        "case_id": "en-borrow-lend",
+        "request": "Please explain the difference between borrowing and lending in two sentences.",
+        "output_tokens": 38,
+        "raw_llm_content": "[en]Borrowing is the act of receiving something from someone with the intention of giving it back. Lending is the act of giving something to someone else for a period of time.",
+        "spans": [
+          [
+            "en",
+            "Borrowing is the act of receiving something from someone with the intention of giving it back. Lending is the act of giving something to someone else for a period of time."
+          ]
+        ],
+        "visible_answer": "Borrowing is the act of receiving something from someone with the intention of giving it back. Lending is the act of giving something to someone else for a period of time.",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.7931864780000524
+      },
+      {
+        "case_id": "de-although-because",
+        "request": "Bitte erkläre although and because mit einem kurzen Beispiel auf Deutsch und Englisch.",
+        "output_tokens": 113,
+        "raw_llm_content": "[de]Das Wort [en]although[de] drückt einen Gegensatz aus. Ein Beispiel ist [en]Although it is cold, I go outside.[de] Auf Deutsch heißt das [de]Obwohl es kalt ist, gehe ich nach draußen.[de] Das Wort [en]because[de] gibt einen Grund an. Ein Beispiel ist [en]I stay home because it is raining.[de] Auf Deutsch heißt das [de]Ich bleibe zu Hause, weil es regnet.[de] Hast du das verstanden?",
+        "spans": [
+          [
+            "de",
+            "Das Wort "
+          ],
+          [
+            "en",
+            "although"
+          ],
+          [
+            "de",
+            " drückt einen Gegensatz aus. Ein Beispiel ist "
+          ],
+          [
+            "en",
+            "Although it is cold, I go outside."
+          ],
+          [
+            "de",
+            " Auf Deutsch heißt das Obwohl es kalt ist, gehe ich nach draußen. Das Wort "
+          ],
+          [
+            "en",
+            "because"
+          ],
+          [
+            "de",
+            " gibt einen Grund an. Ein Beispiel ist "
+          ],
+          [
+            "en",
+            "I stay home because it is raining."
+          ],
+          [
+            "de",
+            " Auf Deutsch heißt das Ich bleibe zu Hause, weil es regnet. Hast du das verstanden?"
+          ]
+        ],
+        "visible_answer": "Das Wort although drückt einen Gegensatz aus. Ein Beispiel ist Although it is cold, I go outside. Auf Deutsch heißt das Obwohl es kalt ist, gehe ich nach draußen. Das Wort because gibt einen Grund an. Ein Beispiel ist I stay home because it is raining. Auf Deutsch heißt das Ich bleibe zu Hause, weil es regnet. Hast du das verstanden?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "requested_item_4": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.9079826749999711
+      },
+      {
+        "case_id": "en-fixed-quotes",
+        "request": "Say exactly: Hello. Then say Guten Morgen in German. Then say See you tomorrow in English.",
+        "output_tokens": 19,
+        "raw_llm_content": "[en]Hello. [de]Guten Morgen [en]See you tomorrow.",
+        "spans": [
+          [
+            "en",
+            "Hello. "
+          ],
+          [
+            "de",
+            "Guten Morgen "
+          ],
+          [
+            "en",
+            "See you tomorrow."
+          ]
+        ],
+        "visible_answer": "Hello. Guten Morgen See you tomorrow.",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.9674721740000223
+      },
+      {
+        "case_id": "de-station",
+        "request": "Wie kann ich am Bahnhof höflich nach dem Preis einer Fahrkarte fragen?",
+        "output_tokens": 50,
+        "raw_llm_content": "[de]Sie können höflich fragen, wie viel eine Fahrkarte kostet. Ein Beispiel ist [de]Entschuldigung, was kostet bitte eine Fahrkarte nach Berlin? Möchten Sie noch weitere Sätze für den Bahnhof lernen?",
+        "spans": [
+          [
+            "de",
+            "Sie können höflich fragen, wie viel eine Fahrkarte kostet. Ein Beispiel ist Entschuldigung, was kostet bitte eine Fahrkarte nach Berlin? Möchten Sie noch weitere Sätze für den Bahnhof lernen?"
+          ]
+        ],
+        "visible_answer": "Sie können höflich fragen, wie viel eine Fahrkarte kostet. Ein Beispiel ist Entschuldigung, was kostet bitte eine Fahrkarte nach Berlin? Möchten Sie noch weitere Sätze für den Bahnhof lernen?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.9112725759999876
+      },
+      {
+        "case_id": "en-affect-effect",
+        "request": "Explain both affect and effect, with one short example for each.",
+        "output_tokens": 62,
+        "raw_llm_content": "[en]Affect is usually a verb that means to influence something. For example, the weather can affect your mood. Effect is usually a noun that refers to the result of a change. For example, the medicine had a positive effect on the patient. Do you feel confident using these two words now?",
+        "spans": [
+          [
+            "en",
+            "Affect is usually a verb that means to influence something. For example, the weather can affect your mood. Effect is usually a noun that refers to the result of a change. For example, the medicine had a positive effect on the patient. Do you feel confident using these two words now?"
+          ]
+        ],
+        "visible_answer": "Affect is usually a verb that means to influence something. For example, the weather can affect your mood. Effect is usually a noun that refers to the result of a change. For example, the medicine had a positive effect on the patient. Do you feel confident using these two words now?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.9294294930000433
+      },
+      {
+        "case_id": "de-dass-das",
+        "request": "Erkläre bitte den Unterschied zwischen dass und das. Gib für beide ein kurzes Beispiel.",
+        "output_tokens": 65,
+        "raw_llm_content": "[de]Das mit einem s ist ein Artikel oder ein Pronomen und bezieht sich auf eine Sache. Ein Beispiel ist Das Haus ist groß. Dass mit zwei s ist eine Konjunktion und leitet einen Nebensatz ein. Ein Beispiel ist Ich weiß, dass du kommst. Hast du den Unterschied verstanden?",
+        "spans": [
+          [
+            "de",
+            "Das mit einem s ist ein Artikel oder ein Pronomen und bezieht sich auf eine Sache. Ein Beispiel ist Das Haus ist groß. Dass mit zwei s ist eine Konjunktion und leitet einen Nebensatz ein. Ein Beispiel ist Ich weiß, dass du kommst. Hast du den Unterschied verstanden?"
+          ]
+        ],
+        "visible_answer": "Das mit einem s ist ein Artikel oder ein Pronomen und bezieht sich auf eine Sache. Ein Beispiel ist Das Haus ist groß. Dass mit zwei s ist eine Konjunktion und leitet einen Nebensatz ein. Ein Beispiel ist Ich weiß, dass du kommst. Hast du den Unterschied verstanden?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 1.3937399899999718
+      },
+      {
+        "case_id": "en-german-questions",
+        "request": "Give these two German questions with a brief English explanation: where is the pharmacy, and what time does it close?",
+        "output_tokens": 62,
+        "raw_llm_content": "[en]The first question is [de]Wo ist die Apotheke?[en] This asks for the location of the pharmacy. The second question is [de]Um wie viel Uhr schließt sie?[en] This asks for the closing time. Do you have any other questions about these phrases?",
+        "spans": [
+          [
+            "en",
+            "The first question is "
+          ],
+          [
+            "de",
+            "Wo ist die Apotheke?"
+          ],
+          [
+            "en",
+            " This asks for the location of the pharmacy. The second question is "
+          ],
+          [
+            "de",
+            "Um wie viel Uhr schließt sie?"
+          ],
+          [
+            "en",
+            " This asks for the closing time. Do you have any other questions about these phrases?"
+          ]
+        ],
+        "visible_answer": "The first question is Wo ist die Apotheke? This asks for the location of the pharmacy. The second question is Um wie viel Uhr schließt sie? This asks for the closing time. Do you have any other questions about these phrases?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 1.0076943929999516
+      },
+      {
+        "case_id": "de-english-questions",
+        "request": "Nenne zwei englische Fragen: Wo ist die Bibliothek und wann öffnet sie? Erkläre beide kurz auf Deutsch.",
+        "output_tokens": 64,
+        "raw_llm_content": "[de]Die erste Frage ist [en]Where is the library?[de] Damit fragt man nach dem Ort der Bibliothek. Die zweite Frage ist [en]When does it open?[de] Damit fragt man nach der Uhrzeit der Öffnung. Möchten Sie noch weitere Fragen auf Englisch lernen?",
+        "spans": [
+          [
+            "de",
+            "Die erste Frage ist "
+          ],
+          [
+            "en",
+            "Where is the library?"
+          ],
+          [
+            "de",
+            " Damit fragt man nach dem Ort der Bibliothek. Die zweite Frage ist "
+          ],
+          [
+            "en",
+            "When does it open?"
+          ],
+          [
+            "de",
+            " Damit fragt man nach der Uhrzeit der Öffnung. Möchten Sie noch weitere Fragen auf Englisch lernen?"
+          ]
+        ],
+        "visible_answer": "Die erste Frage ist Where is the library? Damit fragt man nach dem Ort der Bibliothek. Die zweite Frage ist When does it open? Damit fragt man nach der Uhrzeit der Öffnung. Möchten Sie noch weitere Fragen auf Englisch lernen?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.7748066950000521
+      },
+      {
+        "case_id": "en-en-de-en",
+        "request": "Say exactly in this order: I need help. Ich habe meinen Schlüssel verloren. Thank you for your help.",
+        "output_tokens": 26,
+        "raw_llm_content": "[en]I need help. [de]Ich habe meinen Schlüssel verloren. [en]Thank you for your help.",
+        "spans": [
+          [
+            "en",
+            "I need help. "
+          ],
+          [
+            "de",
+            "Ich habe meinen Schlüssel verloren. "
+          ],
+          [
+            "en",
+            "Thank you for your help."
+          ]
+        ],
+        "visible_answer": "I need help. Ich habe meinen Schlüssel verloren. Thank you for your help.",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.8550920940000424
+      },
+      {
+        "case_id": "de-de-en-de",
+        "request": "Sprich genau in dieser Reihenfolge: Das Wetter ist schön. Could you open the window? Vielen Dank.",
+        "output_tokens": 25,
+        "raw_llm_content": "[de]Das Wetter ist schön. [en]Could you open the window? [de]Vielen Dank.",
+        "spans": [
+          [
+            "de",
+            "Das Wetter ist schön. "
+          ],
+          [
+            "en",
+            "Could you open the window? "
+          ],
+          [
+            "de",
+            "Vielen Dank."
+          ]
+        ],
+        "visible_answer": "Das Wetter ist schön. Could you open the window? Vielen Dank.",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "requested_item_2": true,
+          "requested_item_3": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.8995728929999132
+      },
+      {
+        "case_id": "en-only-after-bilingual",
+        "request": "Now explain how to ask a colleague for help politely. Use English only.",
+        "output_tokens": 55,
+        "raw_llm_content": "[en]To ask a colleague for help politely, you should use a soft opening and a request rather than a command. For example, you could say, Could you please help me with this task when you have a moment? Do you want to try another example?",
+        "spans": [
+          [
+            "en",
+            "To ask a colleague for help politely, you should use a soft opening and a request rather than a command. For example, you could say, Could you please help me with this task when you have a moment? Do you want to try another example?"
+          ]
+        ],
+        "visible_answer": "To ask a colleague for help politely, you should use a soft opening and a request rather than a command. For example, you could say, Could you please help me with this task when you have a moment? Do you want to try another example?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 0.7425543949999565
+      },
+      {
+        "case_id": "de-only-after-bilingual",
+        "request": "Wie bitte ich im Restaurant höflich um ein Glas Wasser? Antworte nur auf Deutsch.",
+        "output_tokens": 39,
+        "raw_llm_content": "[de]Sie können höflich fragen, ob Sie ein Glas Wasser haben könnten. Ein Beispiel ist Ich hätte gerne ein Glas Wasser, bitte. Möchten Sie noch etwas anderes bestellen?",
+        "spans": [
+          [
+            "de",
+            "Sie können höflich fragen, ob Sie ein Glas Wasser haben könnten. Ein Beispiel ist Ich hätte gerne ein Glas Wasser, bitte. Möchten Sie noch etwas anderes bestellen?"
+          ]
+        ],
+        "visible_answer": "Sie können höflich fragen, ob Sie ein Glas Wasser haben könnten. Ein Beispiel ist Ich hätte gerne ein Glas Wasser, bitte. Möchten Sie noch etwas anderes bestellen?",
+        "checks": {
+          "complete_provider_stream": true,
+          "expected_voice_languages": true,
+          "requested_item_1": true,
+          "known_german_words_not_sent_to_english_voice": true
+        },
+        "passed": true,
+        "seconds": 1.0040782930000205
+      }
+    ]
+  }
+]

@@ -1,0 +1,461 @@
+{
+  "version": "bilingual-flows-v2",
+  "created_before_inference": true,
+  "input_prefix_ms": 200,
+  "input_suffix_ms": 400,
+  "input_chunk_gap_ms": 100,
+  "noise_seed": 20261023,
+  "sessions": [
+    {
+      "id": "translation-persistence",
+      "initial_mode": "conversation",
+      "turns": [
+        {
+          "case_id": "translation-request",
+          "spans": [
+            [
+              "en",
+              "Bridge, translator mode."
+            ]
+          ],
+          "reference": "Bridge, translator mode.",
+          "expected_mode": "conversation",
+          "expected_audio_languages": [],
+          "required_answer_alternatives": [],
+          "pending_confirmation": true
+        },
+        {
+          "case_id": "translation-confirm",
+          "spans": [
+            [
+              "en",
+              "Yes, confirm."
+            ]
+          ],
+          "reference": "Yes, confirm.",
+          "expected_mode": "translation",
+          "expected_audio_languages": [],
+          "required_answer_alternatives": [],
+          "pending_confirmation": false
+        },
+        {
+          "case_id": "translation-en-first",
+          "spans": [
+            [
+              "en",
+              "The interview is at ten, not nine."
+            ]
+          ],
+          "reference": "The interview is at ten, not nine.",
+          "expected_mode": "translation",
+          "expected_audio_languages": [
+            "de"
+          ],
+          "required_answer_alternatives": [
+            [
+              "zehn",
+              "10"
+            ],
+            [
+              "nicht"
+            ],
+            [
+              "neun",
+              "9"
+            ]
+          ]
+        },
+        {
+          "case_id": "translation-de",
+          "spans": [
+            [
+              "de",
+              "Anna wartet vor dem Bahnhof."
+            ]
+          ],
+          "reference": "Anna wartet vor dem Bahnhof.",
+          "expected_mode": "translation",
+          "expected_audio_languages": [
+            "en"
+          ],
+          "required_answer_alternatives": [
+            [
+              "anna"
+            ],
+            [
+              "wait"
+            ],
+            [
+              "station"
+            ]
+          ]
+        },
+        {
+          "case_id": "translation-en-again",
+          "spans": [
+            [
+              "en",
+              "Please do not buy the tickets yet."
+            ]
+          ],
+          "reference": "Please do not buy the tickets yet.",
+          "expected_mode": "translation",
+          "expected_audio_languages": [
+            "de"
+          ],
+          "required_answer_alternatives": [
+            [
+              "nicht",
+              "keine"
+            ],
+            [
+              "fahrkarten",
+              "tickets"
+            ]
+          ]
+        },
+        {
+          "case_id": "translation-en-consecutive",
+          "spans": [
+            [
+              "en",
+              "Please wait here until she arrives."
+            ]
+          ],
+          "reference": "Please wait here until she arrives.",
+          "expected_mode": "translation",
+          "expected_audio_languages": [
+            "de"
+          ],
+          "required_answer_alternatives": [
+            [
+              "warte"
+            ],
+            [
+              "hier"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story-and-memory",
+      "initial_mode": "conversation",
+      "turns": [
+        {
+          "case_id": "remember-interview",
+          "spans": [
+            [
+              "en",
+              "Bridge, remember that my interview is in Berlin at ten."
+            ]
+          ],
+          "reference": "Bridge, remember that my interview is in Berlin at ten.",
+          "expected_mode": "conversation",
+          "expected_audio_languages": [],
+          "required_answer_alternatives": [],
+          "expected_note": "Berlin"
+        },
+        {
+          "case_id": "recall-german",
+          "spans": [
+            [
+              "de",
+              "Wo ist mein Vorstellungsgespräch und um wie viel Uhr?"
+            ]
+          ],
+          "reference": "Wo ist mein Vorstellungsgespräch und um wie viel Uhr?",
+          "expected_mode": "conversation",
+          "expected_audio_languages": [
+            "de"
+          ],
+          "required_answer_alternatives": [
+            [
+              "berlin"
+            ],
+            [
+              "zehn",
+              "10"
+            ]
+          ]
+        },
+        {
+          "case_id": "mixed-connected-story",
+          "spans": [
+            [
+              "en",
+              "Yesterday Anna and I travelled to Berlin for an interview."
+            ],
+            [
+              "de",
+              "Unser Zug fiel aus, aber wir kauften noch keine Fahrkarten."
+            ],
+            [
+              "en",
+              "The interview was at ten, not nine. We arrived at nine forty five. Please summarize this story briefly in both English and German."
+            ]
+          ],
+          "reference": "Yesterday Anna and I travelled to Berlin for an interview. Unser Zug fiel aus, aber wir kauften noch keine Fahrkarten. The interview was at ten, not nine. We arrived at nine forty five. Please summarize this story briefly in both English and German.",
+          "expected_mode": "conversation",
+          "expected_audio_languages": [
+            "en",
+            "de"
+          ],
+          "required_answer_alternatives": [
+            [
+              "anna"
+            ],
+            [
+              "berlin"
+            ]
+          ],
+          "snr_db": 20,
+          "semantic_checks": [
+            {
+              "name": "train_cancelled",
+              "any_patterns": [
+                "train (?:was |is )?cancel[el]*d",
+                "zug fiel aus",
+                "zug (?:ist |war )?ausgefallen"
+              ],
+              "forbidden_patterns": [
+                "full train",
+                "train (?:was |is )?full",
+                "vollen zug",
+                "zug war voll"
+              ]
+            },
+            {
+              "name": "tickets_not_bought",
+              "any_patterns": [
+                "without tickets",
+                "no tickets",
+                "not (?:bought|buy|purchased)",
+                "hadn t (?:bought|purchased)",
+                "kein(?:e|en) (?:fahrkarten|tickets)",
+                "noch nicht (?:gekauft|gebucht)"
+              ]
+            }
+          ]
+        },
+        {
+          "case_id": "recall-after-reload",
+          "spans": [
+            [
+              "en",
+              "What time is my interview, and in which city?"
+            ]
+          ],
+          "reference": "What time is my interview, and in which city?",
+          "expected_mode": "conversation",
+          "expected_audio_languages": [
+            "en"
+          ],
+          "required_answer_alternatives": [
+            [
+              "berlin"
+            ],
+            [
+              "ten",
+              "10"
+            ]
+          ],
+          "reload_before": true,
+          "expected_note": "Berlin"
+        }
+      ]
+    },
+    {
+      "id": "bilingual-teaching",
+      "initial_mode": "teaching",
+      "turns": [
+        {
+          "case_id": "teaching-english",
+          "spans": [
+            [
+              "en",
+              "Please explain the difference between borrowing and lending in two sentences."
+            ]
+          ],
+          "reference": "Please explain the difference between borrowing and lending in two sentences.",
+          "expected_mode": "teaching",
+          "expected_audio_languages": [
+            "en"
+          ],
+          "required_answer_alternatives": [
+            [
+              "borrow"
+            ],
+            [
+              "lend"
+            ]
+          ]
+        },
+        {
+          "case_id": "teaching-de-en-de",
+          "spans": [
+            [
+              "de",
+              "Bitte erkläre"
+            ],
+            [
+              "en",
+              "although and because"
+            ],
+            [
+              "de",
+              "mit einem kurzen Beispiel auf Deutsch und Englisch."
+            ]
+          ],
+          "reference": "Bitte erkläre although and because mit einem kurzen Beispiel auf Deutsch und Englisch.",
+          "expected_mode": "teaching",
+          "expected_audio_languages": [
+            "en",
+            "de"
+          ],
+          "required_answer_alternatives": [
+            [
+              "although"
+            ],
+            [
+              "because"
+            ]
+          ]
+        },
+        {
+          "case_id": "teaching-en-de-en",
+          "spans": [
+            [
+              "en",
+              "Please say exactly: Hello."
+            ],
+            [
+              "de",
+              "Guten Morgen."
+            ],
+            [
+              "en",
+              "See you tomorrow."
+            ]
+          ],
+          "reference": "Please say exactly: Hello. Guten Morgen. See you tomorrow.",
+          "expected_mode": "teaching",
+          "expected_audio_languages": [
+            "en",
+            "de"
+          ],
+          "required_answer_alternatives": [
+            [
+              "hello"
+            ],
+            [
+              "guten morgen"
+            ],
+            [
+              "see you tomorrow"
+            ]
+          ],
+          "expected_language_sequence": [
+            "en",
+            "de",
+            "en"
+          ]
+        },
+        {
+          "case_id": "teaching-german",
+          "spans": [
+            [
+              "de",
+              "Wie kann ich am Bahnhof höflich nach dem Preis einer Fahrkarte fragen?"
+            ]
+          ],
+          "reference": "Wie kann ich am Bahnhof höflich nach dem Preis einer Fahrkarte fragen?",
+          "expected_mode": "teaching",
+          "expected_audio_languages": [
+            "de"
+          ],
+          "required_answer_alternatives": [
+            [
+              "fahrkarte",
+              "ticket"
+            ],
+            [
+              "kostet",
+              "preis"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interrupt-and-recover",
+      "initial_mode": "conversation",
+      "turns": [
+        {
+          "case_id": "long-reply-to-interrupt",
+          "spans": [
+            [
+              "en",
+              "Tell me a long story about a family travelling across Austria."
+            ]
+          ],
+          "reference": "Tell me a long story about a family travelling across Austria.",
+          "expected_mode": "conversation",
+          "expected_audio_languages": [
+            "en"
+          ],
+          "required_answer_alternatives": [],
+          "leave_playing": true
+        },
+        {
+          "case_id": "voice-interruption",
+          "spans": [
+            [
+              "en",
+              "Stop the story. What is two plus two?"
+            ]
+          ],
+          "reference": "Stop the story. What is two plus two?",
+          "expected_mode": "conversation",
+          "expected_audio_languages": [
+            "en"
+          ],
+          "required_answer_alternatives": [
+            [
+              "four",
+              "4"
+            ]
+          ],
+          "barge_in": true
+        },
+        {
+          "case_id": "after-interruption-german",
+          "spans": [
+            [
+              "de",
+              "Bitte antworte kurz: Was ist zwei plus zwei?"
+            ]
+          ],
+          "reference": "Bitte antworte kurz: Was ist zwei plus zwei?",
+          "expected_mode": "conversation",
+          "expected_audio_languages": [
+            "de"
+          ],
+          "required_answer_alternatives": [
+            [
+              "vier",
+              "4"
+            ]
+          ],
+          "idle_after_seconds": 4
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic microphone speech with language-specific voices, not human microphone accuracy.",
+    "Answer anchors and audio language metadata are diagnostic contracts, not independently human-adjudicated semantic accuracy.",
+    "Browser reload exercises saved notes; this suite does not claim a cold full-server restart memory test."
+  ],
+  "regression_scope": "Adds source-grounded cancelled-train and ticket-negation assertions after the v1 keyword-only false positive. Same speech references and source WAVs; not an independent held-out set."
+}

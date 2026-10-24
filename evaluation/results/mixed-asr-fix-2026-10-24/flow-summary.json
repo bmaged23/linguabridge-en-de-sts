@@ -1,0 +1,8 @@
+{
+  "selected_cases": 17,
+  "completed_cases": 17,
+  "passed": 17,
+  "javascript_errors": [],
+  "failed_cases": [],
+  "scope": "Actual browser, model workers and cloud; isolated synthetic memory and real-time prerecorded microphone. Browser playback uses silent sink."
+}

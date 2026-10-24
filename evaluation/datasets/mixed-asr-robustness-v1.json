@@ -1,0 +1,360 @@
+{
+  "version": "mixed-asr-robustness-v1",
+  "created_before_inference": true,
+  "scope": "Eight new continuous synthetic bilingual stories; four development and four untouched validation stories. Each receives clean,20dB,10dB variants. All variants of a story remain in the same split. Case-specific semantic checks are regressions, not universal understanding scores.",
+  "noise_seed": 20261024,
+  "snr_db": [
+    null,
+    20,
+    10
+  ],
+  "cases": [
+    {
+      "case_id": "dev-train",
+      "split": "development",
+      "spans": [
+        [
+          "en",
+          "Maya and I planned a trip to Hamburg for a meeting."
+        ],
+        [
+          "de",
+          "Unser Zug fiel aus, und wir kauften noch keine Fahrkarten."
+        ],
+        [
+          "en",
+          "The meeting starts at eleven, not ten. We will ask about another connection before paying."
+        ]
+      ],
+      "reference": "Maya and I planned a trip to Hamburg for a meeting. Unser Zug fiel aus, und wir kauften noch keine Fahrkarten. The meeting starts at eleven, not ten. We will ask about another connection before paying.",
+      "semantic_checks": [
+        {
+          "name": "cancelled_train",
+          "any_patterns": [
+            "zug fiel aus",
+            "zug .*ausgefallen"
+          ]
+        },
+        {
+          "name": "tickets_not_bought",
+          "any_patterns": [
+            "(?:noch )?keine fahrkarten",
+            "(?:not|no|never).*tickets"
+          ]
+        },
+        {
+          "name": "eleven_not_ten",
+          "any_patterns": [
+            "eleven.*not ten",
+            "11.*not 10"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "dev-backup",
+      "split": "development",
+      "spans": [
+        [
+          "de",
+          "Gestern habe ich mit Sara die Datenbank überprüft."
+        ],
+        [
+          "en",
+          "The backup completed successfully, but do not delete the original files."
+        ],
+        [
+          "de",
+          "Wir starten den neuen Dienst erst morgen um acht und nicht heute Abend."
+        ]
+      ],
+      "reference": "Gestern habe ich mit Sara die Datenbank überprüft. The backup completed successfully, but do not delete the original files. Wir starten den neuen Dienst erst morgen um acht und nicht heute Abend.",
+      "semantic_checks": [
+        {
+          "name": "backup_complete",
+          "any_patterns": [
+            "backup completed successfully"
+          ]
+        },
+        {
+          "name": "do_not_delete",
+          "any_patterns": [
+            "do not delete",
+            "don t delete"
+          ]
+        },
+        {
+          "name": "tomorrow_eight",
+          "any_patterns": [
+            "morgen um (?:acht|8)"
+          ]
+        },
+        {
+          "name": "not_tonight",
+          "any_patterns": [
+            "nicht heute abend"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "dev-appointment",
+      "split": "development",
+      "spans": [
+        [
+          "en",
+          "I phoned the office this morning about my appointment with Laura."
+        ],
+        [
+          "de",
+          "Der Termin wurde auf Donnerstag verschoben, aber nicht abgesagt."
+        ],
+        [
+          "en",
+          "Please keep the confirmation email. I need the afternoon appointment, not the morning one."
+        ]
+      ],
+      "reference": "I phoned the office this morning about my appointment with Laura. Der Termin wurde auf Donnerstag verschoben, aber nicht abgesagt. Please keep the confirmation email. I need the afternoon appointment, not the morning one.",
+      "semantic_checks": [
+        {
+          "name": "moved_thursday",
+          "any_patterns": [
+            "donnerstag.*verschoben",
+            "verschoben.*donnerstag"
+          ]
+        },
+        {
+          "name": "not_cancelled",
+          "any_patterns": [
+            "nicht abgesagt"
+          ]
+        },
+        {
+          "name": "afternoon_not_morning",
+          "any_patterns": [
+            "afternoon.*not.*morning"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "dev-meeting",
+      "split": "development",
+      "spans": [
+        [
+          "de",
+          "Nach dem Gespräch mit Jonas habe ich die Einladung noch einmal gelesen."
+        ],
+        [
+          "en",
+          "The workshop is online, not in the Berlin office. Please do not book a train."
+        ],
+        [
+          "de",
+          "Wir treffen uns um halb zehn, und die Teilnahme kostet nichts."
+        ]
+      ],
+      "reference": "Nach dem Gespräch mit Jonas habe ich die Einladung noch einmal gelesen. The workshop is online, not in the Berlin office. Please do not book a train. Wir treffen uns um halb zehn, und die Teilnahme kostet nichts.",
+      "semantic_checks": [
+        {
+          "name": "online_not_office",
+          "any_patterns": [
+            "online.*not.*berlin office"
+          ]
+        },
+        {
+          "name": "do_not_book",
+          "any_patterns": [
+            "do not book.*train"
+          ]
+        },
+        {
+          "name": "half_past_nine",
+          "any_patterns": [
+            "halb zehn"
+          ]
+        },
+        {
+          "name": "free_entry",
+          "any_patterns": [
+            "kostet nichts"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "val-delivery",
+      "split": "validation",
+      "spans": [
+        [
+          "en",
+          "I checked the order with Nina after lunch and saved the message."
+        ],
+        [
+          "de",
+          "Die Lieferung wurde storniert, und das Paket wurde noch nicht verschickt."
+        ],
+        [
+          "en",
+          "The refund is twelve euros, not twenty. Please wait for the confirmation before placing another order."
+        ]
+      ],
+      "reference": "I checked the order with Nina after lunch and saved the message. Die Lieferung wurde storniert, und das Paket wurde noch nicht verschickt. The refund is twelve euros, not twenty. Please wait for the confirmation before placing another order.",
+      "semantic_checks": [
+        {
+          "name": "delivery_cancelled",
+          "any_patterns": [
+            "lieferung wurde storniert"
+          ]
+        },
+        {
+          "name": "not_shipped",
+          "any_patterns": [
+            "noch nicht verschickt"
+          ]
+        },
+        {
+          "name": "twelve_not_twenty",
+          "any_patterns": [
+            "(?:twelve|12).*not (?:twenty|20)"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "val-bus",
+      "split": "validation",
+      "spans": [
+        [
+          "de",
+          "Am Samstag wollten Felix und ich mit dem Bus nach Graz fahren."
+        ],
+        [
+          "en",
+          "We missed the first bus, but the journey was not cancelled."
+        ],
+        [
+          "de",
+          "Der nächste Bus fährt um sieben, und wir brauchen zwei Fahrkarten statt drei."
+        ]
+      ],
+      "reference": "Am Samstag wollten Felix und ich mit dem Bus nach Graz fahren. We missed the first bus, but the journey was not cancelled. Der nächste Bus fährt um sieben, und wir brauchen zwei Fahrkarten statt drei.",
+      "semantic_checks": [
+        {
+          "name": "missed_bus",
+          "any_patterns": [
+            "missed the first bus"
+          ]
+        },
+        {
+          "name": "journey_not_cancelled",
+          "any_patterns": [
+            "not cancel[el]*d"
+          ]
+        },
+        {
+          "name": "seven_departure",
+          "any_patterns": [
+            "bus fährt um (?:sieben|7)"
+          ]
+        },
+        {
+          "name": "two_not_three",
+          "any_patterns": [
+            "(?:zwei|2) fahrkarten statt (?:drei|3)"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "val-service",
+      "split": "validation",
+      "spans": [
+        [
+          "en",
+          "Yesterday I reviewed the server logs with Elena and found the error."
+        ],
+        [
+          "de",
+          "Die Sicherung ist vollständig, aber die alten Dateien dürfen nicht gelöscht werden."
+        ],
+        [
+          "en",
+          "Keep the existing service running until after seven. Restart the test service only, not the production service."
+        ]
+      ],
+      "reference": "Yesterday I reviewed the server logs with Elena and found the error. Die Sicherung ist vollständig, aber die alten Dateien dürfen nicht gelöscht werden. Keep the existing service running until after seven. Restart the test service only, not the production service.",
+      "semantic_checks": [
+        {
+          "name": "backup_complete",
+          "any_patterns": [
+            "sicherung ist vollständig"
+          ]
+        },
+        {
+          "name": "do_not_delete",
+          "any_patterns": [
+            "nicht gelöscht"
+          ]
+        },
+        {
+          "name": "after_seven",
+          "any_patterns": [
+            "until after (?:seven|7)"
+          ]
+        },
+        {
+          "name": "not_production",
+          "any_patterns": [
+            "not the production service"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "val-library",
+      "split": "validation",
+      "spans": [
+        [
+          "de",
+          "Heute habe ich die Bibliothek wegen meiner Bestellung angerufen."
+        ],
+        [
+          "en",
+          "The reservation is confirmed, but I have not borrowed the books yet."
+        ],
+        [
+          "de",
+          "Ich hole zwei Bücher am Mittwoch ab, nicht drei Bücher am Freitag."
+        ]
+      ],
+      "reference": "Heute habe ich die Bibliothek wegen meiner Bestellung angerufen. The reservation is confirmed, but I have not borrowed the books yet. Ich hole zwei Bücher am Mittwoch ab, nicht drei Bücher am Freitag.",
+      "semantic_checks": [
+        {
+          "name": "reservation_confirmed",
+          "any_patterns": [
+            "reservation is confirmed"
+          ]
+        },
+        {
+          "name": "not_borrowed",
+          "any_patterns": [
+            "not borrowed"
+          ]
+        },
+        {
+          "name": "wednesday_not_friday",
+          "any_patterns": [
+            "mittwoch.*nicht.*freitag"
+          ]
+        },
+        {
+          "name": "two_not_three",
+          "any_patterns": [
+            "(?:zwei|2) bücher.*nicht (?:drei|3)"
+          ]
+        }
+      ]
+    }
+  ]
+}

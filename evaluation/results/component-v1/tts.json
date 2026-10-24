@@ -1,0 +1,45 @@
+{
+  "selected_cases": 24,
+  "expected_outputs": 48,
+  "completed_outputs": 47,
+  "warmup_and_model_load_seconds": 7.642705166999804,
+  "resources": {
+    "sample_count": 173,
+    "ram_tree_rss_mb": {
+      "peak": 1274.66,
+      "mean": 1146.55
+    },
+    "cpu_pct_one_core": {
+      "peak": 175.9,
+      "mean": 92.15
+    },
+    "cpu_pct_machine": {
+      "peak": 14.66,
+      "mean": 7.68
+    },
+    "gpu_vram_mb": {
+      "peak": 1579.0,
+      "mean": 1294.54
+    },
+    "gpu_util_pct": {
+      "peak": 53.0,
+      "mean": 28.96
+    },
+    "system_ram_used_mb": {
+      "peak": 2391.17,
+      "mean": 2192.9
+    }
+  },
+  "device": "cuda",
+  "execution_providers": {
+    "en": [
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "de": [
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ]
+  },
+  "scope": "Direct TTS and actual application chunk/parser path with immediate synthetic acknowledgements; no cloud or browser playback timing."
+}

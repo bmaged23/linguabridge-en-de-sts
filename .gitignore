@@ -51,3 +51,6 @@ data/
 *.sqlite3-wal
 *.sqlite3-shm
 *.db
+
+# Private benchmark inputs, raw traces and evaluation jobs
+.evaluation-local/

@@ -33,6 +33,34 @@ def load_settings():
         if stt['window_seconds']<max(config['modes'][name]['max_utterance_seconds'] for name in ('translation','conversation','teaching')):
             raise ValueError('Qwen requires cumulative whole-utterance previews')
         if min(stt['rollback_tokens'],stt['max_new_tokens'],stt['partial_interval_ms'])<=0:raise ValueError('Invalid Qwen stream limits')
+        if type(stt.get('num_beams',1)) is not int or not 1<=stt.get('num_beams',1)<=5:
+            raise ValueError('Qwen beam count must be an integer from1to5')
+        padding=stt.get('final_padding_ms')
+        if padding is not None and (type(padding) is not int or not 0<=padding<=2000):
+            raise ValueError('Final ASR padding must be None or milliseconds from0to2000')
+        if stt.get('final_strategy','whole') not in ('whole','adaptive_pause_chunks'):
+            raise ValueError('Unknown final ASR strategy')
+        if type(stt.get('final_num_beams',1)) is not int or not 1<=stt.get('final_num_beams',1)<=5:
+            raise ValueError('Final beam count must be an integer from1to5')
+        if type(stt.get('final_batch_size',1)) is not int or not 1<=stt.get('final_batch_size',1)<=4:
+            raise ValueError('Final ASR batch size must be an integer from1to4')
+        if type(stt.get('stream_chunk_cache',False)) is not bool:
+            raise ValueError('Streaming chunk cache must be a boolean')
+        if type(stt.get('stream_cache_max_entries',64)) is not int or not 1<=stt.get('stream_cache_max_entries',64)<=512:
+            raise ValueError('Streaming ASR cache capacity must be an integer from1to512')
+        if stt.get('final_strategy')=='adaptive_pause_chunks':
+            segment=stt['final_segmentation']
+            if not (0<segment['frame_ms']<=segment['minimum_pause_ms'] and
+                    0<segment['minimum_segment_seconds']<=segment['preferred_maximum_segment_seconds'] and
+                    segment['minimum_total_seconds']>=segment['minimum_segment_seconds']+segment['minimum_tail_seconds'] and
+                    segment['minimum_tail_seconds']>0 and type(segment['maximum_segments']) is int and
+                    2<=segment['maximum_segments']<=64 and 0<=segment['minimum_rms']<1 and
+                    segment['noise_multiplier']>=1 and 0<segment['maximum_relative_threshold']<1 and
+                    0<segment['vad_speech_threshold']<1 and segment['speech_head_padding_seconds']>=0 and
+                    segment['speech_tail_padding_seconds']>=0 and segment['vad_intra_op_threads']>=1 and
+                    segment['vad_inter_op_threads']>=1 and segment['minimum_words_per_language']>=1 and
+                    segment['maximum_chunk_words_per_second']>0 and segment['minimum_context_echo_words']>=1):
+                raise ValueError('Invalid final ASR segmentation settings')
     if config['controls']['confirmation_timeout_seconds']<=0:raise ValueError('Confirmation timeout must be positive')
     if config['tts']['device'] not in ('cpu','cuda'):raise ValueError('Unsupported TTS device')
     if config['tts']['device']=='cuda':

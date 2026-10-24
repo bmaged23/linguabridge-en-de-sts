@@ -1,0 +1,339 @@
+{
+  "version": "bilingual-tts-v1",
+  "created_before_inference": true,
+  "source": "Manually authored synthetic test text; initial12 cases retained from the previous synthesis comparison.",
+  "limitations": [
+    "Synthetic text and voices, not human microphone speech.",
+    "Known language spans test synthesis; real LLM language-marker choices need end-to-end evaluation."
+  ],
+  "cases": [
+    {
+      "case_id": "tts-en_booking",
+      "group": "en",
+      "spans": [
+        [
+          "en",
+          "Please reserve two tickets to Berlin, but do not confirm the booking until I check the price."
+        ]
+      ],
+      "reference": "Please reserve two tickets to Berlin, but do not confirm the booking until I check the price."
+    },
+    {
+      "case_id": "tts-en_negation",
+      "group": "en",
+      "spans": [
+        [
+          "en",
+          "I did not cancel the appointment. I only asked whether Friday afternoon was still available."
+        ]
+      ],
+      "reference": "I did not cancel the appointment. I only asked whether Friday afternoon was still available."
+    },
+    {
+      "case_id": "tts-en_names",
+      "group": "en",
+      "spans": [
+        [
+          "en",
+          "Could you ask Michael to meet Sophie near the central station after the conference?"
+        ]
+      ],
+      "reference": "Could you ask Michael to meet Sophie near the central station after the conference?"
+    },
+    {
+      "case_id": "tts-en_teaching",
+      "group": "en",
+      "spans": [
+        [
+          "en",
+          "Explain the difference between borrowing and lending, then give me a short example."
+        ]
+      ],
+      "reference": "Explain the difference between borrowing and lending, then give me a short example."
+    },
+    {
+      "case_id": "tts-de_booking",
+      "group": "de",
+      "spans": [
+        [
+          "de",
+          "Bitte reservieren Sie zwei Fahrkarten nach Berlin, aber bestätigen Sie die Buchung noch nicht."
+        ]
+      ],
+      "reference": "Bitte reservieren Sie zwei Fahrkarten nach Berlin, aber bestätigen Sie die Buchung noch nicht."
+    },
+    {
+      "case_id": "tts-de_negation",
+      "group": "de",
+      "spans": [
+        [
+          "de",
+          "Ich habe den Termin nicht abgesagt. Ich wollte nur wissen, ob Freitagnachmittag noch möglich wäre."
+        ]
+      ],
+      "reference": "Ich habe den Termin nicht abgesagt. Ich wollte nur wissen, ob Freitagnachmittag noch möglich wäre."
+    },
+    {
+      "case_id": "tts-de_sounds",
+      "group": "de",
+      "spans": [
+        [
+          "de",
+          "Die freundliche Ärztin möchte nächste Woche über mögliche Änderungen und größere Schwierigkeiten sprechen."
+        ]
+      ],
+      "reference": "Die freundliche Ärztin möchte nächste Woche über mögliche Änderungen und größere Schwierigkeiten sprechen."
+    },
+    {
+      "case_id": "tts-de_compounds",
+      "group": "de",
+      "spans": [
+        [
+          "de",
+          "Wegen einer Zugverspätung brauche ich eine Anschlussverbindung und eine neue Buchungsbestätigung."
+        ]
+      ],
+      "reference": "Wegen einer Zugverspätung brauche ich eine Anschlussverbindung und eine neue Buchungsbestätigung."
+    },
+    {
+      "case_id": "tts-en_de_en_lesson",
+      "group": "mixed",
+      "spans": [
+        [
+          "en",
+          "You can say"
+        ],
+        [
+          "de",
+          "Ich hätte gern einen Kaffee"
+        ],
+        [
+          "en",
+          "when you order at a cafe."
+        ]
+      ],
+      "reference": "You can say Ich hätte gern einen Kaffee when you order at a cafe."
+    },
+    {
+      "case_id": "tts-de_en_de_lesson",
+      "group": "mixed",
+      "spans": [
+        [
+          "de",
+          "Der englische Ausdruck lautet"
+        ],
+        [
+          "en",
+          "Could you please repeat that more slowly"
+        ],
+        [
+          "de",
+          "und das ist eine höfliche Frage."
+        ]
+      ],
+      "reference": "Der englische Ausdruck lautet Could you please repeat that more slowly und das ist eine höfliche Frage."
+    },
+    {
+      "case_id": "tts-en_de_en_travel",
+      "group": "mixed",
+      "spans": [
+        [
+          "en",
+          "Tell the receptionist"
+        ],
+        [
+          "de",
+          "Mein Zug hat Verspätung und ich komme später an"
+        ],
+        [
+          "en",
+          "then ask whether reception stays open."
+        ]
+      ],
+      "reference": "Tell the receptionist Mein Zug hat Verspätung und ich komme später an then ask whether reception stays open."
+    },
+    {
+      "case_id": "tts-de_en_de_work",
+      "group": "mixed",
+      "spans": [
+        [
+          "de",
+          "Meine Kollegin hat gesagt"
+        ],
+        [
+          "en",
+          "we should postpone the meeting until tomorrow"
+        ],
+        [
+          "de",
+          "aber ich möchte zuerst den Kunden fragen."
+        ]
+      ],
+      "reference": "Meine Kollegin hat gesagt we should postpone the meeting until tomorrow aber ich möchte zuerst den Kunden fragen."
+    },
+    {
+      "case_id": "tts-en_numbers",
+      "group": "en",
+      "spans": [
+        [
+          "en",
+          "The platform is seven, the departure is at sixteen forty five, and the fare is twelve euros and fifty cents."
+        ]
+      ],
+      "reference": "The platform is seven, the departure is at sixteen forty five, and the fare is twelve euros and fifty cents."
+    },
+    {
+      "case_id": "tts-en_correction",
+      "group": "en",
+      "spans": [
+        [
+          "en",
+          "The delivery address is number fourteen, not forty. Please repeat the corrected number before we continue."
+        ]
+      ],
+      "reference": "The delivery address is number fourteen, not forty. Please repeat the corrected number before we continue."
+    },
+    {
+      "case_id": "tts-en_story",
+      "group": "en",
+      "spans": [
+        [
+          "en",
+          "Yesterday Anna and I travelled to Berlin for an interview. Our train was cancelled, so we found a bus. I asked Anna not to buy tickets yet. The company called and moved the interview from nine to ten. We arrived at nine forty five, with our documents still safely in the blue bag."
+        ]
+      ],
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Our train was cancelled, so we found a bus. I asked Anna not to buy tickets yet. The company called and moved the interview from nine to ten. We arrived at nine forty five, with our documents still safely in the blue bag."
+    },
+    {
+      "case_id": "tts-en_short",
+      "group": "en",
+      "spans": [
+        [
+          "en",
+          "Yes. I understand. Please continue."
+        ]
+      ],
+      "reference": "Yes. I understand. Please continue."
+    },
+    {
+      "case_id": "tts-de_numbers",
+      "group": "de",
+      "spans": [
+        [
+          "de",
+          "Der Zug fährt um sechzehn Uhr fünfundvierzig von Gleis sieben. Die Fahrkarte kostet zwölf Euro und fünfzig Cent."
+        ]
+      ],
+      "reference": "Der Zug fährt um sechzehn Uhr fünfundvierzig von Gleis sieben. Die Fahrkarte kostet zwölf Euro und fünfzig Cent."
+    },
+    {
+      "case_id": "tts-de_correction",
+      "group": "de",
+      "spans": [
+        [
+          "de",
+          "Die Hausnummer ist vierzehn, nicht vierzig. Bitte wiederhole die richtige Nummer, bevor wir weitermachen."
+        ]
+      ],
+      "reference": "Die Hausnummer ist vierzehn, nicht vierzig. Bitte wiederhole die richtige Nummer, bevor wir weitermachen."
+    },
+    {
+      "case_id": "tts-de_story",
+      "group": "de",
+      "spans": [
+        [
+          "de",
+          "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Unser Zug fiel aus, deshalb suchten wir einen Bus. Ich bat Anna, noch keine Fahrkarten zu kaufen. Die Firma verschob das Gespräch von neun auf zehn Uhr. Wir kamen um neun Uhr fünfundvierzig an und hatten unsere Unterlagen in der blauen Tasche."
+        ]
+      ],
+      "reference": "Gestern fuhren Anna und ich für ein Vorstellungsgespräch nach Berlin. Unser Zug fiel aus, deshalb suchten wir einen Bus. Ich bat Anna, noch keine Fahrkarten zu kaufen. Die Firma verschob das Gespräch von neun auf zehn Uhr. Wir kamen um neun Uhr fünfundvierzig an und hatten unsere Unterlagen in der blauen Tasche."
+    },
+    {
+      "case_id": "tts-de_short",
+      "group": "de",
+      "spans": [
+        [
+          "de",
+          "Ja. Ich verstehe. Bitte sprich weiter."
+        ]
+      ],
+      "reference": "Ja. Ich verstehe. Bitte sprich weiter."
+    },
+    {
+      "case_id": "tts-en_de_en_story",
+      "group": "mixed",
+      "spans": [
+        [
+          "en",
+          "Anna and I were travelling to Berlin when she said"
+        ],
+        [
+          "de",
+          "unser Zug fällt aus, aber wir sollten noch keine Fahrkarten kaufen"
+        ],
+        [
+          "en",
+          "so we waited for the company to confirm the interview time."
+        ]
+      ],
+      "reference": "Anna and I were travelling to Berlin when she said unser Zug fällt aus, aber wir sollten noch keine Fahrkarten kaufen so we waited for the company to confirm the interview time."
+    },
+    {
+      "case_id": "tts-de_en_de_story",
+      "group": "mixed",
+      "spans": [
+        [
+          "de",
+          "Anna und ich wollten nach Berlin fahren, aber sie sagte"
+        ],
+        [
+          "en",
+          "our train is cancelled, and we should not buy tickets yet"
+        ],
+        [
+          "de",
+          "deshalb warteten wir auf die neue Uhrzeit für das Gespräch."
+        ]
+      ],
+      "reference": "Anna und ich wollten nach Berlin fahren, aber sie sagte our train is cancelled, and we should not buy tickets yet deshalb warteten wir auf die neue Uhrzeit für das Gespräch."
+    },
+    {
+      "case_id": "tts-en_de_en_sounds",
+      "group": "mixed",
+      "spans": [
+        [
+          "en",
+          "Please pronounce the words"
+        ],
+        [
+          "de",
+          "Ärztin, größer, Brötchen und Schwierigkeiten"
+        ],
+        [
+          "en",
+          "and then return to English without changing their meaning."
+        ]
+      ],
+      "reference": "Please pronounce the words Ärztin, größer, Brötchen und Schwierigkeiten and then return to English without changing their meaning."
+    },
+    {
+      "case_id": "tts-de_en_de_sounds",
+      "group": "mixed",
+      "spans": [
+        [
+          "de",
+          "Bitte lies diesen englischen Satz vor"
+        ],
+        [
+          "en",
+          "The weather was surprisingly pleasant throughout the journey"
+        ],
+        [
+          "de",
+          "und sprich danach wieder Deutsch."
+        ]
+      ],
+      "reference": "Bitte lies diesen englischen Satz vor The weather was surprisingly pleasant throughout the journey und sprich danach wieder Deutsch."
+    }
+  ]
+}

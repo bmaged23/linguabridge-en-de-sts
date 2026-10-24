@@ -1,6 +1,6 @@
 # Configuration reference
 
-Generated from `config.py`. Secrets are excluded. Saved, confirmed mode/output-language override their initial defaults.
+Generated from `config.py` without loading secrets. Saved, confirmed mode/output-language override their initial defaults.
 
 - `language`: `auto`
 
@@ -52,6 +52,33 @@ Generated from `config.py`. Secrets are excluded. Saved, confirmed mode/output-l
 | `max_new_tokens` | `256` |
 | `unfixed_chunk_num` | `2` |
 | `rollback_tokens` | `5` |
+| `num_beams` | `1` |
+| `final_padding_ms` | `200` |
+| `final_strategy` | `adaptive_pause_chunks` |
+| `final_num_beams` | `3` |
+| `final_batch_size` | `2` |
+| `stream_chunk_cache` | `True` |
+| `stream_cache_max_entries` | `64` |
+| `final_segmentation.minimum_total_seconds` | `8.0` |
+| `final_segmentation.use_speech_gate` | `True` |
+| `final_segmentation.vad_model_path` | `models/silero_vad.onnx` |
+| `final_segmentation.vad_speech_threshold` | `0.5` |
+| `final_segmentation.vad_intra_op_threads` | `1` |
+| `final_segmentation.vad_inter_op_threads` | `1` |
+| `final_segmentation.speech_head_padding_seconds` | `0.2` |
+| `final_segmentation.speech_tail_padding_seconds` | `0.32` |
+| `final_segmentation.frame_ms` | `20` |
+| `final_segmentation.minimum_pause_ms` | `80` |
+| `final_segmentation.minimum_segment_seconds` | `2.0` |
+| `final_segmentation.preferred_maximum_segment_seconds` | `8.0` |
+| `final_segmentation.minimum_tail_seconds` | `2.0` |
+| `final_segmentation.maximum_segments` | `16` |
+| `final_segmentation.maximum_chunk_words_per_second` | `8.0` |
+| `final_segmentation.minimum_context_echo_words` | `8` |
+| `final_segmentation.minimum_words_per_language` | `4` |
+| `final_segmentation.minimum_rms` | `0.003` |
+| `final_segmentation.noise_multiplier` | `1.8` |
+| `final_segmentation.maximum_relative_threshold` | `0.3` |
 | `context` | `Transcribe English and German speech verbatim. Keep each word in its spoken language; do not translate.` |
 | `startup_timeout_seconds` | `180` |
 | `request_timeout_seconds` | `90` |
@@ -61,6 +88,7 @@ Generated from `config.py`. Secrets are excluded. Saved, confirmed mode/output-l
 | `device_index` | `0` |
 | `compute_type` | `int8_float32` |
 | `mode` | `progressive` |
+| `fresh_final_decode` | `True` |
 | `audit_fresh_final` | `False` |
 | `partial_interval_ms` | `2000` |
 | `window_seconds` | `46` |
@@ -76,6 +104,10 @@ Generated from `config.py`. Secrets are excluded. Saved, confirmed mode/output-l
 | `allowed_languages` | `['en', 'de']` |
 | `no_speech_threshold` | `0.6` |
 | `log_prob_threshold` | `-1.0` |
+
+Qwen uses `num_beams` for previews/original whole decoding and `final_num_beams` for adaptive chunks. `final_padding_ms` conditions candidate chunks; short and monolingual fallbacks retain the original unmodified waveform. The legacy `beam_size`, `compute_type` and language-confidence fields belong to the optional faster-whisper path, not Qwen.
+
+The original whole-decoding baseline uses `final_strategy="whole"` and `final_padding_ms=None`. The adaptive strategy adds probing cost for long recordings; its existing Silero speech check runs on CPU with a separate recurrent state.
 
 ## llm
 

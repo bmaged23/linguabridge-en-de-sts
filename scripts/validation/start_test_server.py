@@ -10,11 +10,15 @@ from voice_bridge.settings import ROOT,load_settings
 
 
 class QAClient:
-    def __init__(self,client):self.client=client;self.fault=None
-    async def post(self,*args,**kwargs):return await self.client.post(*args,**kwargs)
+    def __init__(self,client,max_requests=None):self.client=client;self.fault=None;self.requests=0;self.max_requests=max_requests
+    def charge(self):
+        if self.max_requests is not None and self.requests>=self.max_requests:raise httpx.RequestError("Configured QA cloud request budget reached")
+        self.requests+=1
+    async def post(self,*args,**kwargs):
+        self.charge();return await self.client.post(*args,**kwargs)
     @asynccontextmanager
     async def stream(self,*args,**kwargs):
-        fault=self.fault;self.fault=None
+        self.charge();fault=self.fault;self.fault=None
         if fault=='cloud_timeout':raise httpx.ReadTimeout('Synthetic QA timeout')
         if fault=='length':
             class Response:
@@ -31,9 +35,27 @@ if __name__=='__main__':
     settings=load_settings();folder=ROOT/os.environ.get('VOICE_BRIDGE_QA_DIR','logs/full-qa');folder.mkdir(parents=True,exist_ok=True)
     settings['server']['port']=8767
     settings['stt']['audit_fresh_final']=os.environ.get('VOICE_BRIDGE_QA_AUDIT_FINAL','1')=='1'
+    settings['stt']['audit_raw_outputs']=True
+    if 'VOICE_BRIDGE_QA_STREAM_CACHE' in os.environ:
+        settings['stt']['stream_chunk_cache']=os.environ['VOICE_BRIDGE_QA_STREAM_CACHE']=='1'
+    if 'VOICE_BRIDGE_QA_ASR_BATCH_SIZE' in os.environ:
+        settings['stt']['final_batch_size']=int(os.environ['VOICE_BRIDGE_QA_ASR_BATCH_SIZE'])
     settings['memory']['database']=str(folder/'memory.sqlite3')
     settings['logging']['pipeline_trace']={'enabled':True,'directory':str((folder/'pipeline-traces').relative_to(ROOT))}
     server.load_settings=lambda:settings
+    maximum=int(os.environ.get('VOICE_BRIDGE_QA_MAX_REQUESTS','0'))
+    if maximum>0:
+        original_lifespan=server.app.router.lifespan_context
+        @asynccontextmanager
+        async def budget_lifespan(app):
+            async with original_lifespan(app):
+                app.state.client=QAClient(app.state.client,maximum)
+                yield
+        server.app.router.lifespan_context=budget_lifespan
+    @server.app.get('/__qa__/cloud-usage')
+    async def cloud_usage():
+        client=server.app.state.client
+        return {'requests':getattr(client,'requests',None),'maximum':getattr(client,'max_requests',None)}
     @server.app.post('/__qa__/fault')
     async def inject_fault(request:Request):
         kind=(await request.json()).get('kind')
@@ -56,4 +78,4 @@ if __name__=='__main__':
         started=time.perf_counter()
         result=await asyncio.get_running_loop().run_in_executor(server.app.state.stt,transcribe,audio,None,None,True)
         return {**result,'audit_seconds':round(time.perf_counter()-started,4)}
-    uvicorn.run(server.app,host='127.0.0.1',port=8767,log_level='info',access_log=False)
+    uvicorn.run(server.app,host=os.environ.get('VOICE_BRIDGE_QA_BIND_HOST','127.0.0.1'),port=8767,log_level='info',access_log=False)

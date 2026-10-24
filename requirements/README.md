@@ -8,6 +8,7 @@ The app uses separate interpreters because CPU/GPU ONNX Runtime and the Qwen PyT
 | [`stt-cuda.txt`](stt-cuda.txt) | `.venv-asr` | Deployed Qwen3-ASR GPU recognizer |
 | [`tts-cuda.txt`](tts-cuda.txt) | `.venv-tts-gpu` | Deployed GPU Kokoro English and Piper German |
 | [`experimental-qwen-tts.txt`](experimental-qwen-tts.txt) | `.venv-qwen-tts` | Optional Qwen TTS experiment; not part of normal startup |
+| [`evaluation.txt`](evaluation.txt) | `.venv-evaluation` | Pinned lightweight cloud scoring/judging tools; local speech evaluation uses the main/GPU environments |
 | [`archive/`](archive) | Historical evaluation environments | Previous snapshots, preserved for older experiment reproduction |
 
 Every installed distribution is pinned with `==`. Keep snapshots separate and install with `--no-deps` as described in the [root README](../README.md). The app/TTS files include `-e .`, which refers to the repository root when you run the commands there. CUDA PyTorch snapshots include their wheel index.
@@ -30,3 +31,7 @@ uv pip check --python .venv/bin/python
 uv pip check --python .venv-asr/bin/python
 uv pip check --python .venv-tts-gpu/bin/python
 ```
+
+## Release environments
+
+`release/app.txt` omits unused main-interpreter CUDA packages and has been freshly installed: all 76 distributions pass dependency checks and 89 tests pass. `release/tts.txt` shares ASR CUDA libraries and adds declared missing helper dependencies; see the [container guide](../deployment/README.md). Original installed-environment snapshots above are retained unchanged.

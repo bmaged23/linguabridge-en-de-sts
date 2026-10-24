@@ -1,0 +1,123 @@
+{
+  "scope": "One matched prerecorded mixed story, real-time browser and local GPU models, silent playback sink. Cloud latency can vary; not a repeated-trial population estimate.",
+  "reference": {
+    "audio_sha256": "1f82f0b03db9deaae6ad64ab84f60feb1e3e1082241dd949bd4c1084bd9d9ae8",
+    "passed": true,
+    "timing": {
+      "recording_seconds": 15.1045625,
+      "request_to_test_completion_seconds": 41.80641780100086,
+      "first_audio_after_input_recording_end_seconds": 7.771400000000373,
+      "cloud_first_text_seconds": 0.5111280000000988
+    },
+    "stt_metrics": {
+      "wer": 0.046511627906976744,
+      "cer": 0.012396694214876033,
+      "reference_words": 43,
+      "reference_characters": 242,
+      "word_errors": 2,
+      "character_errors": 3,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 41,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "resources": {
+      "sample_count": 84,
+      "ram_tree_rss_mb": {
+        "peak": 3763.74,
+        "mean": 3682.9
+      },
+      "cpu_pct_one_core": {
+        "peak": 169.6,
+        "mean": 68.56
+      },
+      "cpu_pct_machine": {
+        "peak": 14.13,
+        "mean": 5.71
+      },
+      "gpu_vram_mb": {
+        "peak": 4832.0,
+        "mean": 4697.6
+      },
+      "gpu_util_pct": {
+        "peak": 46.0,
+        "mean": 14.86
+      },
+      "system_ram_used_mb": {
+        "peak": 3534.19,
+        "mean": 3421.41
+      }
+    },
+    "stt_final": [
+      {
+        "decode_seconds": 6.4121,
+        "cached_segment_hits": 0,
+        "model_decode_calls": 6,
+        "batch_oom_fallbacks": 0
+      }
+    ]
+  },
+  "candidate": {
+    "audio_sha256": "1f82f0b03db9deaae6ad64ab84f60feb1e3e1082241dd949bd4c1084bd9d9ae8",
+    "passed": true,
+    "timing": {
+      "recording_seconds": 15.1045625,
+      "request_to_test_completion_seconds": 36.181380766000075,
+      "first_audio_after_input_recording_end_seconds": 2.6904000000003725,
+      "cloud_first_text_seconds": 0.5433400000001711
+    },
+    "stt_metrics": {
+      "wer": 0.046511627906976744,
+      "cer": 0.012396694214876033,
+      "reference_words": 43,
+      "reference_characters": 242,
+      "word_errors": 2,
+      "character_errors": 3,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 41,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    },
+    "resources": {
+      "sample_count": 73,
+      "ram_tree_rss_mb": {
+        "peak": 3880.51,
+        "mean": 3778.44
+      },
+      "cpu_pct_one_core": {
+        "peak": 174.2,
+        "mean": 70.65
+      },
+      "cpu_pct_machine": {
+        "peak": 14.52,
+        "mean": 5.89
+      },
+      "gpu_vram_mb": {
+        "peak": 4780.0,
+        "mean": 4725.7
+      },
+      "gpu_util_pct": {
+        "peak": 58.0,
+        "mean": 16.49
+      },
+      "system_ram_used_mb": {
+        "peak": 3531.74,
+        "mean": 3445.39
+      }
+    },
+    "stt_final": [
+      {
+        "decode_seconds": 1.2445,
+        "cached_segment_hits": 5,
+        "model_decode_calls": 1,
+        "batch_oom_fallbacks": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,240 @@
+[
+  {
+    "case_id": "translation-en-first",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The response accurately preserves the factual content, matches the STT input without invention, fully satisfies the translation request, correctly marks the German text with [de], and is grounded in the provided synthetic memory state.\"\n}",
+    "seconds": 1.8988426309999795,
+    "done_reason": "stop",
+    "input_tokens": 788,
+    "output_tokens": 208,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The response accurately preserves the factual content, matches the STT input without invention, fully satisfies the translation request, correctly marks the German text with [de], and is grounded in the provided synthetic memory state."
+    }
+  },
+  {
+    "case_id": "translation-de",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The answer correctly translates the German source sentence, preserving all factual content. The LLM output matches the STT input without inventing information. The translation fulfills the request completely. Language markers are correctly applied ([en] encloses English text). No facts are introduced that lack grounding in the provided memory or context.\"\n}",
+    "seconds": 1.8130441869999459,
+    "done_reason": "stop",
+    "input_tokens": 871,
+    "output_tokens": 295,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The answer correctly translates the German source sentence, preserving all factual content. The LLM output matches the STT input without inventing information. The translation fulfills the request completely. Language markers are correctly applied ([en] encloses English text). No facts are introduced that lack grounding in the provided memory or context."
+    }
+  },
+  {
+    "case_id": "translation-en-again",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The answer preserves the exact factual content, matches the STT transcript, fulfills the translation request fully, correctly marks the German language span, and is grounded in the supplied recent memory entry.\"\n}",
+    "seconds": 1.5736425890000305,
+    "done_reason": "stop",
+    "input_tokens": 958,
+    "output_tokens": 211,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The answer preserves the exact factual content, matches the STT transcript, fulfills the translation request fully, correctly marks the German language span, and is grounded in the supplied recent memory entry."
+    }
+  },
+  {
+    "case_id": "translation-en-consecutive",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The answer preserves the exact factual content of the reference, matches the STT transcript, provides the full requested translation, correctly marks the German text with [de] and no other language tags, and the translation is grounded in the recent memory entry for the same utterance.\"\n}",
+    "seconds": 3.353682575999983,
+    "done_reason": "stop",
+    "input_tokens": 1051,
+    "output_tokens": 224,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The answer preserves the exact factual content of the reference, matches the STT transcript, provides the full requested translation, correctly marks the German text with [de] and no other language tags, and the translation is grounded in the recent memory entry for the same utterance."
+    }
+  },
+  {
+    "case_id": "recall-german",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The response correctly preserves the factual content (location Berlin, time ten o'clock), matches the transcript without inventing information, answers both parts of the user’s request, uses proper [de] markup with German text, and the fact is supported by the provided memory state.\"\n}",
+    "seconds": 1.5051815869999814,
+    "done_reason": "stop",
+    "input_tokens": 791,
+    "output_tokens": 257,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The response correctly preserves the factual content (location Berlin, time ten o'clock), matches the transcript without inventing information, answers both parts of the user’s request, uses proper [de] markup with German text, and the fact is supported by the provided memory state."
+    }
+  },
+  {
+    "case_id": "mixed-connected-story",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The response accurately preserves all factual details from the reference, does not add or alter any information, provides both English and German summaries as requested, correctly marks language spans with appropriate content, and the recalled interview‑time fact is supported by the supplied memory state.\"\n}",
+    "seconds": 3.360138756000026,
+    "done_reason": "stop",
+    "input_tokens": 1239,
+    "output_tokens": 259,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The response accurately preserves all factual details from the reference, does not add or alter any information, provides both English and German summaries as requested, correctly marks language spans with appropriate content, and the recalled interview‑time fact is supported by the supplied memory state."
+    }
+  },
+  {
+    "case_id": "recall-after-reload",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The response exactly repeats the factual answer (ten, Berlin) from the transcript and memory, covering both requested pieces of information. Language tags are correct and no hallucinations are present.\"\n}",
+    "seconds": 1.9283013740000001,
+    "done_reason": "stop",
+    "input_tokens": 1191,
+    "output_tokens": 259,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The response exactly repeats the factual answer (ten, Berlin) from the transcript and memory, covering both requested pieces of information. Language tags are correct and no hallucinations are present."
+    }
+  },
+  {
+    "case_id": "teaching-english",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The response accurately preserves the factual content of the reference, matches the spoken input, provides the required two‑sentence explanation, uses correctly marked English language tags, and is grounded in the recent turn without needing additional memory.\"\n}",
+    "seconds": 2.9906677609999974,
+    "done_reason": "stop",
+    "input_tokens": 846,
+    "output_tokens": 210,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The response accurately preserves the factual content of the reference, matches the spoken input, provides the required two‑sentence explanation, uses correctly marked English language tags, and is grounded in the recent turn without needing additional memory."
+    }
+  },
+  {
+    "case_id": "teaching-de-en-de",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 2,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 1,\n  \"voice_markers\": 2,\n  \"memory_grounding\": 4,\n  \"reason\": \"The answer preserves the spoken content (no hallucination) so transcript_faithfulness is high, and it correctly uses the remembered sentence, giving good memory grounding. However, the reference request also asked for \\\"because\\\" which is omitted, lowering source_fidelity and completeness. Voice‑marker tags are mis‑used: an [en] span is opened and then a [de] tag is inserted before a purely English clause, which violates the language‑marker rule. Other dimensions are scored accordingly.\"\n}",
+    "seconds": 3.123700364000001,
+    "done_reason": "stop",
+    "input_tokens": 1052,
+    "output_tokens": 480,
+    "scores": {
+      "source_fidelity": 2,
+      "transcript_faithfulness": 4,
+      "completeness": 1,
+      "voice_markers": 2,
+      "memory_grounding": 4,
+      "reason": "The answer preserves the spoken content (no hallucination) so transcript_faithfulness is high, and it correctly uses the remembered sentence, giving good memory grounding. However, the reference request also asked for \"because\" which is omitted, lowering source_fidelity and completeness. Voice‑marker tags are mis‑used: an [en] span is opened and then a [de] tag is inserted before a purely English clause, which violates the language‑marker rule. Other dimensions are scored accordingly."
+    }
+  },
+  {
+    "case_id": "teaching-en-de-en",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The response exactly matches the reference text, preserves all factual content, includes all three requested utterances, correctly tags each language span, and does not rely on any unsupported memory facts.\"\n}",
+    "seconds": 1.4961064830000055,
+    "done_reason": "stop",
+    "input_tokens": 1123,
+    "output_tokens": 232,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The response exactly matches the reference text, preserves all factual content, includes all three requested utterances, correctly tags each language span, and does not rely on any unsupported memory facts."
+    }
+  },
+  {
+    "case_id": "teaching-german",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 1,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 2,\n  \"memory_grounding\": 4,\n  \"reason\": \"The answer changes the original request (asks about a ticket to Berlin rather than a generic price at the station), so it does not preserve the source factual content. The LLM output matches its own transcript, so transcript faithfulness is high. It does provide a polite example and asks for confirmation, satisfying the request, thus completeness is good. Voice‑marker tagging is wrong: the last [en] span contains German text, violating the language‑marker rule. No external facts are introduced, so memory grounding is fine.\"\n}",
+    "seconds": 2.765589265000017,
+    "done_reason": "stop",
+    "input_tokens": 1308,
+    "output_tokens": 439,
+    "scores": {
+      "source_fidelity": 1,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 2,
+      "memory_grounding": 4,
+      "reason": "The answer changes the original request (asks about a ticket to Berlin rather than a generic price at the station), so it does not preserve the source factual content. The LLM output matches its own transcript, so transcript faithfulness is high. It does provide a polite example and asks for confirmation, satisfying the request, thus completeness is good. Voice‑marker tagging is wrong: the last [en] span contains German text, violating the language‑marker rule. No external facts are introduced, so memory grounding is fine."
+    }
+  },
+  {
+    "case_id": "long-reply-to-interrupt",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The answer preserves the requested story content and matches the transcript without inventing facts. Although the story is cut off, leave_playing=true means this is not a completeness error. Language tags correctly enclose English and German text. No external facts are recalled, so memory grounding is satisfied.\"\n}",
+    "seconds": 1.8180079929999806,
+    "done_reason": "stop",
+    "input_tokens": 857,
+    "output_tokens": 308,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The answer preserves the requested story content and matches the transcript without inventing facts. Although the story is cut off, leave_playing=true means this is not a completeness error. Language tags correctly enclose English and German text. No external facts are recalled, so memory grounding is satisfied."
+    }
+  },
+  {
+    "case_id": "voice-interruption",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The response correctly states the arithmetic result, matches the STT transcript, fulfills both parts of the user request, uses proper [en] tagging with English text, and does not rely on unsupported memory facts.\"\n}",
+    "seconds": 1.8028628939999862,
+    "done_reason": "stop",
+    "input_tokens": 885,
+    "output_tokens": 282,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The response correctly states the arithmetic result, matches the STT transcript, fulfills both parts of the user request, uses proper [en] tagging with English text, and does not rely on unsupported memory facts."
+    }
+  },
+  {
+    "case_id": "after-interruption-german",
+    "valid": true,
+    "raw_model_content": "{\n  \"source_fidelity\": 4,\n  \"transcript_faithfulness\": 4,\n  \"completeness\": 4,\n  \"voice_markers\": 4,\n  \"memory_grounding\": 4,\n  \"reason\": \"The answer correctly preserves the factual content (2+2=4), matches the transcript, fully satisfies the short answer request, uses proper [de] language tagging, and does not rely on any unsupported memory facts.\"\n}",
+    "seconds": 1.4954968110000095,
+    "done_reason": "stop",
+    "input_tokens": 918,
+    "output_tokens": 233,
+    "scores": {
+      "source_fidelity": 4,
+      "transcript_faithfulness": 4,
+      "completeness": 4,
+      "voice_markers": 4,
+      "memory_grounding": 4,
+      "reason": "The answer correctly preserves the factual content (2+2=4), matches the transcript, fully satisfies the short answer request, uses proper [de] language tagging, and does not rely on any unsupported memory facts."
+    }
+  }
+]

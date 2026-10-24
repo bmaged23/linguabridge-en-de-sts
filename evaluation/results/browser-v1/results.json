@@ -1,0 +1,1266 @@
+{
+  "scope": "Actual browser, model workers and cloud; isolated synthetic memory and real-time prerecorded microphone. Browser playback uses silent sink.",
+  "cases": [
+    {
+      "case_id": "translation-request",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "confirmation_state_correct": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Bridge, translator mode.",
+      "hypothesis": "Bridge translator mode.",
+      "visible_answer": "Enable translation between English and German until you turn it off? Please say yes or no.",
+      "raw_llm_content": "",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 3,
+        "reference_characters": 22,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 3,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en",
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 2.1146875,
+        "request_to_test_completion_seconds": 10.00433300000077,
+        "first_audio_after_input_recording_end_seconds": 2.44389999999851
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 20,
+        "ram_tree_rss_mb": {
+          "peak": 3607.07,
+          "mean": 3434.0
+        },
+        "cpu_pct_one_core": {
+          "peak": 178.8,
+          "mean": 61.91
+        },
+        "cpu_pct_machine": {
+          "peak": 14.9,
+          "mean": 5.16
+        },
+        "gpu_vram_mb": {
+          "peak": 4592.0,
+          "mean": 4558.8
+        },
+        "gpu_util_pct": {
+          "peak": 42.0,
+          "mean": 8.7
+        },
+        "system_ram_used_mb": {
+          "peak": 3544.27,
+          "mean": 3383.82
+        }
+      }
+    },
+    {
+      "case_id": "translation-confirm",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "confirmation_state_correct": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Yes, confirm.",
+      "hypothesis": "Yes. Confirm.",
+      "visible_answer": "Confirmed. Your settings are now active.",
+      "raw_llm_content": "",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 2,
+        "reference_characters": 11,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 2,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 1.752,
+        "request_to_test_completion_seconds": 5.112092044000747,
+        "first_audio_after_input_recording_end_seconds": 1.0439000000022352
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 10,
+        "ram_tree_rss_mb": {
+          "peak": 3592.58,
+          "mean": 3579.88
+        },
+        "cpu_pct_one_core": {
+          "peak": 146.0,
+          "mean": 58.36
+        },
+        "cpu_pct_machine": {
+          "peak": 12.17,
+          "mean": 4.86
+        },
+        "gpu_vram_mb": {
+          "peak": 4606.0,
+          "mean": 4600.4
+        },
+        "gpu_util_pct": {
+          "peak": 38.0,
+          "mean": 9.2
+        },
+        "system_ram_used_mb": {
+          "peak": 3550.86,
+          "mean": 3542.93
+        }
+      }
+    },
+    {
+      "case_id": "translation-en-first",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "answer_content_3": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "The interview is at ten, not nine.",
+      "hypothesis": "The interview is at ten, not nine.",
+      "visible_answer": "Das Interview ist um zehn, nicht um neun.",
+      "raw_llm_content": "[de]Das Interview ist um zehn, nicht um neun.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 7,
+        "reference_characters": 32,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 7,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "de"
+      ],
+      "timing": {
+        "recording_seconds": 2.669375,
+        "request_to_test_completion_seconds": 7.779258947997732,
+        "first_audio_after_input_recording_end_seconds": 2.5112999999970196,
+        "cloud_first_text_seconds": 0.4052350000019942
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 16,
+        "ram_tree_rss_mb": {
+          "peak": 3602.93,
+          "mean": 3597.94
+        },
+        "cpu_pct_one_core": {
+          "peak": 141.1,
+          "mean": 65.08
+        },
+        "cpu_pct_machine": {
+          "peak": 11.76,
+          "mean": 5.42
+        },
+        "gpu_vram_mb": {
+          "peak": 4680.0,
+          "mean": 4631.75
+        },
+        "gpu_util_pct": {
+          "peak": 40.0,
+          "mean": 11.25
+        },
+        "system_ram_used_mb": {
+          "peak": 3567.53,
+          "mean": 3547.68
+        }
+      }
+    },
+    {
+      "case_id": "translation-de",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "answer_content_3": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Anna wartet vor dem Bahnhof.",
+      "hypothesis": "Anna wartet vor dem Bahnhof.",
+      "visible_answer": "Anna is waiting in front of the train station.",
+      "raw_llm_content": "[en]Anna is waiting in front of the train station.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 5,
+        "reference_characters": 27,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 5,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 2.1209375,
+        "request_to_test_completion_seconds": 7.9914952109975275,
+        "first_audio_after_input_recording_end_seconds": 3.3670999999977647,
+        "cloud_first_text_seconds": 0.41689100000075996
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 16,
+        "ram_tree_rss_mb": {
+          "peak": 3603.63,
+          "mean": 3587.63
+        },
+        "cpu_pct_one_core": {
+          "peak": 146.0,
+          "mean": 62.02
+        },
+        "cpu_pct_machine": {
+          "peak": 12.17,
+          "mean": 5.17
+        },
+        "gpu_vram_mb": {
+          "peak": 4680.0,
+          "mean": 4680.0
+        },
+        "gpu_util_pct": {
+          "peak": 44.0,
+          "mean": 10.75
+        },
+        "system_ram_used_mb": {
+          "peak": 3565.91,
+          "mean": 3558.17
+        }
+      }
+    },
+    {
+      "case_id": "translation-en-again",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Please do not buy the tickets yet.",
+      "hypothesis": "Please do not buy the tickets yet.",
+      "visible_answer": "Bitte kaufen Sie die Tickets noch nicht.",
+      "raw_llm_content": "[de]Bitte kaufen Sie die Tickets noch nicht.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 7,
+        "reference_characters": 33,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 7,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "de"
+      ],
+      "timing": {
+        "recording_seconds": 2.413375,
+        "request_to_test_completion_seconds": 6.887397507001879,
+        "first_audio_after_input_recording_end_seconds": 2.66089999999851,
+        "cloud_first_text_seconds": 0.39871100000164006
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 14,
+        "ram_tree_rss_mb": {
+          "peak": 3599.73,
+          "mean": 3591.32
+        },
+        "cpu_pct_one_core": {
+          "peak": 140.0,
+          "mean": 66.13
+        },
+        "cpu_pct_machine": {
+          "peak": 11.67,
+          "mean": 5.51
+        },
+        "gpu_vram_mb": {
+          "peak": 4680.0,
+          "mean": 4680.0
+        },
+        "gpu_util_pct": {
+          "peak": 41.0,
+          "mean": 13.21
+        },
+        "system_ram_used_mb": {
+          "peak": 3564.47,
+          "mean": 3548.49
+        }
+      }
+    },
+    {
+      "case_id": "translation-en-consecutive",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Please wait here until she arrives.",
+      "hypothesis": "Please wait here until she arrives.",
+      "visible_answer": "Bitte warten Sie hier, bis sie ankommt.",
+      "raw_llm_content": "[de]Bitte warten Sie hier, bis sie ankommt.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 6,
+        "reference_characters": 34,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 6,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "de"
+      ],
+      "timing": {
+        "recording_seconds": 2.4986875,
+        "request_to_test_completion_seconds": 7.0314965509969625,
+        "first_audio_after_input_recording_end_seconds": 2.43489999999851,
+        "cloud_first_text_seconds": 0.40522799999962444
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 14,
+        "ram_tree_rss_mb": {
+          "peak": 3601.57,
+          "mean": 3597.05
+        },
+        "cpu_pct_one_core": {
+          "peak": 139.6,
+          "mean": 62.99
+        },
+        "cpu_pct_machine": {
+          "peak": 11.63,
+          "mean": 5.25
+        },
+        "gpu_vram_mb": {
+          "peak": 4710.0,
+          "mean": 4688.57
+        },
+        "gpu_util_pct": {
+          "peak": 41.0,
+          "mean": 11.71
+        },
+        "system_ram_used_mb": {
+          "peak": 3576.91,
+          "mean": 3570.13
+        }
+      }
+    },
+    {
+      "case_id": "remember-interview",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "explicit_note_present": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Bridge, remember that my interview is in Berlin at ten.",
+      "hypothesis": "Bridge, remember that my interview is in Berlin at ten.",
+      "visible_answer": "I saved that note in your persistent memory.",
+      "raw_llm_content": "",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 10,
+        "reference_characters": 53,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 10,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 3.6506875,
+        "request_to_test_completion_seconds": 7.911145235000731,
+        "first_audio_after_input_recording_end_seconds": 1.779
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 16,
+        "ram_tree_rss_mb": {
+          "peak": 3680.24,
+          "mean": 3643.3
+        },
+        "cpu_pct_one_core": {
+          "peak": 148.3,
+          "mean": 74.86
+        },
+        "cpu_pct_machine": {
+          "peak": 12.36,
+          "mean": 6.24
+        },
+        "gpu_vram_mb": {
+          "peak": 4714.0,
+          "mean": 4712.0
+        },
+        "gpu_util_pct": {
+          "peak": 38.0,
+          "mean": 10.88
+        },
+        "system_ram_used_mb": {
+          "peak": 3592.55,
+          "mean": 3573.75
+        }
+      }
+    },
+    {
+      "case_id": "recall-german",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Wo ist mein Vorstellungsgespräch und um wie viel Uhr?",
+      "hypothesis": "Wo ist mein Vorstellungsgespräch und um wie viel Uhr",
+      "visible_answer": "Dein Vorstellungsgespräch ist in Berlin um zehn Uhr.",
+      "raw_llm_content": "[de]Dein Vorstellungsgespräch ist in Berlin um zehn Uhr.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 9,
+        "reference_characters": 52,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 9,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "de"
+      ],
+      "timing": {
+        "recording_seconds": 3.3631875,
+        "request_to_test_completion_seconds": 9.608058542002254,
+        "first_audio_after_input_recording_end_seconds": 3.26160000000149,
+        "cloud_first_text_seconds": 0.4295640000018466
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 19,
+        "ram_tree_rss_mb": {
+          "peak": 3616.05,
+          "mean": 3608.9
+        },
+        "cpu_pct_one_core": {
+          "peak": 162.3,
+          "mean": 80.61
+        },
+        "cpu_pct_machine": {
+          "peak": 13.53,
+          "mean": 6.72
+        },
+        "gpu_vram_mb": {
+          "peak": 4740.0,
+          "mean": 4722.74
+        },
+        "gpu_util_pct": {
+          "peak": 37.0,
+          "mean": 11.58
+        },
+        "system_ram_used_mb": {
+          "peak": 3591.66,
+          "mean": 3580.07
+        }
+      }
+    },
+    {
+      "case_id": "mixed-connected-story",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Yesterday Anna and I travelled to Berlin for an interview. Unser Zug fiel aus, aber wir kauften noch keine Fahrkarten. The interview was at ten, not nine. We arrived at nine forty five. Please summarize this story briefly in both English and German.",
+      "hypothesis": "Yesterday, Anna and I traveled to Berlin for an interview. Our zug filled out, but we bought no car tickets. The interview was at ten, not nine. We arrived at nine forty-five. Please summarize the story briefly in both English and German.",
+      "visible_answer": "Anna and you traveled to Berlin for an interview at ten. Your train was full, and you did not buy car tickets, but you arrived at nine forty-five. Anna und du seid für ein Vorstellungsgespräch um zehn Uhr nach Berlin gereist. Euer Zug war voll und ihr habt keine Autotickets gekauft, aber ihr seid um neun Uhr fünfundvierzig angekommen.",
+      "raw_llm_content": "[en]Anna and you traveled to Berlin for an interview at ten. Your train was full, and you did not buy car tickets, but you arrived at nine forty-five. [de]Anna und du seid für ein Vorstellungsgespräch um zehn Uhr nach Berlin gereist. Euer Zug war voll und ihr habt keine Autotickets gekauft, aber ihr seid um neun Uhr fünfundvierzig angekommen.",
+      "stt_metrics": {
+        "wer": 0.2558139534883721,
+        "cer": 0.15702479338842976,
+        "reference_words": 43,
+        "reference_characters": 242,
+        "word_errors": 11,
+        "character_errors": 38,
+        "substitutions": 11,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 32,
+        "normalized_exact_match": false,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en",
+        "en",
+        "en",
+        "de",
+        "de",
+        "de"
+      ],
+      "timing": {
+        "recording_seconds": 15.1045625,
+        "request_to_test_completion_seconds": 35.07527673200093,
+        "first_audio_after_input_recording_end_seconds": 1.92010000000149,
+        "cloud_first_text_seconds": 0.4152059999978519
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 70,
+        "ram_tree_rss_mb": {
+          "peak": 3741.05,
+          "mean": 3672.78
+        },
+        "cpu_pct_one_core": {
+          "peak": 171.1,
+          "mean": 68.58
+        },
+        "cpu_pct_machine": {
+          "peak": 14.26,
+          "mean": 5.72
+        },
+        "gpu_vram_mb": {
+          "peak": 5006.0,
+          "mean": 4871.74
+        },
+        "gpu_util_pct": {
+          "peak": 53.0,
+          "mean": 12.14
+        },
+        "system_ram_used_mb": {
+          "peak": 3724.67,
+          "mean": 3663.57
+        }
+      }
+    },
+    {
+      "case_id": "recall-after-reload",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "explicit_note_present": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "What time is my interview, and in which city?",
+      "hypothesis": "What time is my interview, and in which city?",
+      "visible_answer": "Your interview is in Berlin at ten.",
+      "raw_llm_content": "[en]Your interview is in Berlin at ten.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 9,
+        "reference_characters": 43,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 9,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 2.9466875,
+        "request_to_test_completion_seconds": 7.4875362219972885,
+        "first_audio_after_input_recording_end_seconds": 2.578300000000745,
+        "cloud_first_text_seconds": 0.4527510000007169
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 15,
+        "ram_tree_rss_mb": {
+          "peak": 3772.76,
+          "mean": 3743.94
+        },
+        "cpu_pct_one_core": {
+          "peak": 143.9,
+          "mean": 72.8
+        },
+        "cpu_pct_machine": {
+          "peak": 11.99,
+          "mean": 6.07
+        },
+        "gpu_vram_mb": {
+          "peak": 5006.0,
+          "mean": 5006.0
+        },
+        "gpu_util_pct": {
+          "peak": 48.0,
+          "mean": 12.67
+        },
+        "system_ram_used_mb": {
+          "peak": 3716.52,
+          "mean": 3698.07
+        }
+      }
+    },
+    {
+      "case_id": "teaching-english",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Please explain the difference between borrowing and lending in two sentences.",
+      "hypothesis": "Please explain the difference between borrowing and lending in two sentences.",
+      "visible_answer": "Borrowing is when you take something from someone with the plan to give it back. Lending is when you give something to someone for a short time.",
+      "raw_llm_content": "[en]Borrowing is when you take something from someone with the plan to give it back. [en]Lending is when you give something to someone for a short time.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 11,
+        "reference_characters": 76,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 11,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en",
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 4.888,
+        "request_to_test_completion_seconds": 14.339033931999438,
+        "first_audio_after_input_recording_end_seconds": 2.077,
+        "cloud_first_text_seconds": 0.4146050000017567
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 29,
+        "ram_tree_rss_mb": {
+          "peak": 3785.67,
+          "mean": 3728.68
+        },
+        "cpu_pct_one_core": {
+          "peak": 164.2,
+          "mean": 58.54
+        },
+        "cpu_pct_machine": {
+          "peak": 13.68,
+          "mean": 4.88
+        },
+        "gpu_vram_mb": {
+          "peak": 5082.0,
+          "mean": 5047.93
+        },
+        "gpu_util_pct": {
+          "peak": 42.0,
+          "mean": 8.69
+        },
+        "system_ram_used_mb": {
+          "peak": 3709.18,
+          "mean": 3684.49
+        }
+      }
+    },
+    {
+      "case_id": "teaching-de-en-de",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Bitte erkläre although and because mit einem kurzen Beispiel auf Deutsch und Englisch.",
+      "hypothesis": "Bitte erklären. Although and because, with a short example on German and English.",
+      "visible_answer": "I can help you with that. Let us start with the word although. Although is used to show a contrast. Obwohl means although. For example, Although it is raining, I am going for a walk obwohl es regnet, gehe ich spazieren. Do you understand how to use although before we move to because?",
+      "raw_llm_content": "[en]I can help you with that. Let us start with the word although. [en]Although is used to show a contrast. [de]Obwohl[en] means although. For example, [en]Although it is raining, I am going for a walk[de]obwohl es regnet, gehe ich spazieren. [en]Do you understand how to use although before we move to because?",
+      "stt_metrics": {
+        "wer": 0.6923076923076923,
+        "cer": 0.36470588235294116,
+        "reference_words": 13,
+        "reference_characters": 85,
+        "word_errors": 9,
+        "character_errors": 31,
+        "substitutions": 9,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 4,
+        "normalized_exact_match": false,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en",
+        "en",
+        "de",
+        "en",
+        "en",
+        "de",
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 5.6675625,
+        "request_to_test_completion_seconds": 23.52972247100115,
+        "first_audio_after_input_recording_end_seconds": 1.889800000000745,
+        "cloud_first_text_seconds": 0.41984799999772804
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 47,
+        "ram_tree_rss_mb": {
+          "peak": 3750.5,
+          "mean": 3734.31
+        },
+        "cpu_pct_one_core": {
+          "peak": 177.8,
+          "mean": 57.51
+        },
+        "cpu_pct_machine": {
+          "peak": 14.82,
+          "mean": 4.79
+        },
+        "gpu_vram_mb": {
+          "peak": 5082.0,
+          "mean": 5082.0
+        },
+        "gpu_util_pct": {
+          "peak": 46.0,
+          "mean": 10.0
+        },
+        "system_ram_used_mb": {
+          "peak": 3750.24,
+          "mean": 3722.51
+        }
+      }
+    },
+    {
+      "case_id": "teaching-en-de-en",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "voice_switch_order_correct": true,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "answer_content_3": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Please say exactly: Hello. Guten Morgen. See you tomorrow.",
+      "hypothesis": "Please say exactly \"hello\". \"Guten Morgen\". \"See you tomorrow\".",
+      "visible_answer": "hello Guten Morgen See you tomorrow",
+      "raw_llm_content": "[en]hello [de]Guten Morgen [en]See you tomorrow",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 9,
+        "reference_characters": 54,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 9,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en",
+        "de",
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 4.70175,
+        "request_to_test_completion_seconds": 9.465888209997502,
+        "first_audio_after_input_recording_end_seconds": 2.038800000000745,
+        "cloud_first_text_seconds": 0.4209159999991243
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 19,
+        "ram_tree_rss_mb": {
+          "peak": 3766.62,
+          "mean": 3741.9
+        },
+        "cpu_pct_one_core": {
+          "peak": 151.0,
+          "mean": 68.04
+        },
+        "cpu_pct_machine": {
+          "peak": 12.58,
+          "mean": 5.67
+        },
+        "gpu_vram_mb": {
+          "peak": 5082.0,
+          "mean": 5082.0
+        },
+        "gpu_util_pct": {
+          "peak": 43.0,
+          "mean": 11.58
+        },
+        "system_ram_used_mb": {
+          "peak": 3760.93,
+          "mean": 3738.65
+        }
+      }
+    },
+    {
+      "case_id": "teaching-german",
+      "passed": false,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": false,
+        "answer_content_1": true,
+        "answer_content_2": true,
+        "emitted_audio_finished_playback": true
+      },
+      "reference": "Wie kann ich am Bahnhof höflich nach dem Preis einer Fahrkarte fragen?",
+      "hypothesis": "Wie kann ich am Bahnhof höflich nach dem Preis eine Fahrkarte fragen?",
+      "visible_answer": "Das ist eine gute Frage. Sie können zum Beispiel sagen How much is a ticket to Berlin, please? Das bedeutet auf Deutsch Wie viel kostet bitte eine Fahrkarte nach Berlin? Haben Sie das verstanden oder möchten Sie ein anderes Beispiel ausprobieren?",
+      "raw_llm_content": "[de]Das ist eine gute Frage. Sie können zum Beispiel sagen [en]How much is a ticket to Berlin, please?[de] Das bedeutet auf Deutsch [en]Wie viel kostet bitte eine Fahrkarte nach Berlin? [de]Haben Sie das verstanden oder möchten Sie ein anderes Beispiel ausprobieren?",
+      "stt_metrics": {
+        "wer": 0.08333333333333333,
+        "cer": 0.014492753623188406,
+        "reference_words": 12,
+        "reference_characters": 69,
+        "word_errors": 1,
+        "character_errors": 1,
+        "substitutions": 1,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 11,
+        "normalized_exact_match": false,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "de",
+        "en",
+        "de",
+        "en",
+        "de"
+      ],
+      "timing": {
+        "recording_seconds": 4.083,
+        "request_to_test_completion_seconds": 32.111772313000984,
+        "first_audio_after_input_recording_end_seconds": 15.15489999999851,
+        "cloud_first_text_seconds": 12.399913999997807
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 65,
+        "ram_tree_rss_mb": {
+          "peak": 3719.5,
+          "mean": 3689.54
+        },
+        "cpu_pct_one_core": {
+          "peak": 172.3,
+          "mean": 48.54
+        },
+        "cpu_pct_machine": {
+          "peak": 14.36,
+          "mean": 4.04
+        },
+        "gpu_vram_mb": {
+          "peak": 5082.0,
+          "mean": 5082.0
+        },
+        "gpu_util_pct": {
+          "peak": 45.0,
+          "mean": 5.54
+        },
+        "system_ram_used_mb": {
+          "peak": 3734.93,
+          "mean": 3695.71
+        }
+      }
+    },
+    {
+      "case_id": "long-reply-to-interrupt",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true
+      },
+      "reference": "Tell me a long story about a family travelling across Austria.",
+      "hypothesis": "Tell me a long story about a family traveling across Austria.",
+      "visible_answer": "The Miller family started their journey in Vienna. They spent their first morning walking through the city center and visiting the palaces. The father, Mark, wanted to see the history, while the children, Leo and Mia",
+      "raw_llm_content": "[en]The Miller family started their journey in Vienna. They spent their first morning walking through the city center and visiting the palaces. The father, Mark, wanted to see the history, while the children, Leo and Mia",
+      "stt_metrics": {
+        "wer": 0.09090909090909091,
+        "cer": 0.01639344262295082,
+        "reference_words": 11,
+        "reference_characters": 61,
+        "word_errors": 1,
+        "character_errors": 1,
+        "substitutions": 1,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 10,
+        "normalized_exact_match": false,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 4.0346875,
+        "request_to_test_completion_seconds": 6.014741895000043,
+        "first_audio_after_input_recording_end_seconds": 1.933,
+        "cloud_first_text_seconds": 0.39907899999889196
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 12,
+        "ram_tree_rss_mb": {
+          "peak": 3778.41,
+          "mean": 3751.01
+        },
+        "cpu_pct_one_core": {
+          "peak": 137.9,
+          "mean": 75.02
+        },
+        "cpu_pct_machine": {
+          "peak": 11.49,
+          "mean": 6.25
+        },
+        "gpu_vram_mb": {
+          "peak": 5082.0,
+          "mean": 5082.0
+        },
+        "gpu_util_pct": {
+          "peak": 32.0,
+          "mean": 10.0
+        },
+        "system_ram_used_mb": {
+          "peak": 3681.16,
+          "mean": 3670.71
+        }
+      }
+    },
+    {
+      "case_id": "voice-interruption",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "emitted_audio_finished_playback": true,
+        "speech_started_during_reply": true,
+        "old_reply_playback_cancelled": true,
+        "interrupt_packet_received": true
+      },
+      "reference": "Stop the story. What is two plus two?",
+      "hypothesis": "Stop the story. What is two plus two?",
+      "visible_answer": "Two plus two is four.",
+      "raw_llm_content": "[en]Two plus two is four.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 8,
+        "reference_characters": 35,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 8,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "en"
+      ],
+      "timing": {
+        "recording_seconds": 2.84,
+        "request_to_test_completion_seconds": 6.809033094999904,
+        "first_audio_after_input_recording_end_seconds": 2.5811999999992548,
+        "cloud_first_text_seconds": 0.4083390000014333
+      },
+      "interruption": {
+        "old_playing_id": "1:1",
+        "cancelled_chunks": [
+          {
+            "type": "played",
+            "id": "1:1",
+            "complete": false,
+            "at_ms": 9063.099999997765
+          }
+        ],
+        "input_start_to_interrupt_seconds": 0.904
+      },
+      "resources": {
+        "sample_count": 13,
+        "ram_tree_rss_mb": {
+          "peak": 3701.8,
+          "mean": 3700.67
+        },
+        "cpu_pct_one_core": {
+          "peak": 227.8,
+          "mean": 83.06
+        },
+        "cpu_pct_machine": {
+          "peak": 18.98,
+          "mean": 6.92
+        },
+        "gpu_vram_mb": {
+          "peak": 5082.0,
+          "mean": 5082.0
+        },
+        "gpu_util_pct": {
+          "peak": 47.0,
+          "mean": 18.77
+        },
+        "system_ram_used_mb": {
+          "peak": 3678.29,
+          "mean": 3652.48
+        }
+      }
+    },
+    {
+      "case_id": "after-interruption-german",
+      "passed": true,
+      "checks": {
+        "no_browser_or_pipeline_timeout": true,
+        "final_transcript_present": true,
+        "one_input_turn": true,
+        "no_pipeline_errors": true,
+        "mode_correct": true,
+        "audio_emitted": true,
+        "requested_audio_languages_present": true,
+        "no_unrequested_voice": true,
+        "answer_content_1": true,
+        "emitted_audio_finished_playback": true,
+        "silent_microphone_stays_active": true,
+        "no_false_turn_during_silence": true
+      },
+      "reference": "Bitte antworte kurz: Was ist zwei plus zwei?",
+      "hypothesis": "Bitte antworte kurz: Was ist zwei plus zwei",
+      "visible_answer": "Zwei plus zwei ist vier.",
+      "raw_llm_content": "[de]Zwei plus zwei ist vier.",
+      "stt_metrics": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "reference_words": 8,
+        "reference_characters": 42,
+        "word_errors": 0,
+        "character_errors": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "hits": 8,
+        "normalized_exact_match": true,
+        "empty_hypothesis": false,
+        "hallucinated_words_on_empty_reference": 0
+      },
+      "audio_languages": [
+        "de"
+      ],
+      "timing": {
+        "recording_seconds": 3.537375,
+        "request_to_test_completion_seconds": 7.587479924997751,
+        "first_audio_after_input_recording_end_seconds": 2.220300000000745,
+        "cloud_first_text_seconds": 0.7726000000002387
+      },
+      "interruption": null,
+      "resources": {
+        "sample_count": 15,
+        "ram_tree_rss_mb": {
+          "peak": 3718.41,
+          "mean": 3710.37
+        },
+        "cpu_pct_one_core": {
+          "peak": 147.2,
+          "mean": 69.43
+        },
+        "cpu_pct_machine": {
+          "peak": 12.27,
+          "mean": 5.79
+        },
+        "gpu_vram_mb": {
+          "peak": 5082.0,
+          "mean": 5082.0
+        },
+        "gpu_util_pct": {
+          "peak": 51.0,
+          "mean": 12.67
+        },
+        "system_ram_used_mb": {
+          "peak": 3659.23,
+          "mean": 3653.49
+        }
+      }
+    }
+  ]
+}

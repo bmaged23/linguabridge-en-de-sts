@@ -57,12 +57,24 @@ class LanguageSegments:
         return events
 
 
-def speech_protocol(config):
+def speech_protocol(config, default_language='en'):
     if not config['tts']['language_segments']['enabled']:return ''
-    return (' Speech voice markers: start with [en] for English or [de] for German. '
+    examples = (
+        ' German-only reply: [de]Die Fahrkarte kostet zwölf Euro. '
+        'German-led bilingual lesson: [de]Obwohl heißt auf Englisch [en]although[de]. '
+        'Ein Beispiel ist [en]Although it rains, I walk.[de] Auf Deutsch: Obwohl es regnet, gehe ich spazieren. '
+        if default_language == 'de' else
+        ' English-only reply: [en]The ticket costs twelve euros. '
+        'English-led bilingual lesson: [en]The German question is [de]Was kostet die Fahrkarte?[en] This asks for the price. '
+    )
+    return (f' The main speech language for this reply is {default_language}. '
+            'Speech voice markers: start with [en] for English or [de] for German. '
             'Insert a new [en] or [de] ONLY when the spoken language changes, including quotations and examples. '
+            'Choose each marker from the actual words that follow it, not the language of the surrounding explanation. '
+            'German translations and German questions always use [de], even inside an English lesson. '
+            '[en] is NOT a closing tag for German. It switches the voice to English and must be followed by English words. '
+            'After a quoted example, explicitly return to the main speech language before continuing its explanation. '
             'These markers choose the voice and are not spoken. Do not use closing tags. '
             'Keep the original word order and spaces, and keep punctuation with the words it belongs to. '
             'Never switch language for punctuation alone. Output plain spoken text, without markdown or lists. '
-            'Mark isolated foreign vocabulary too: [de]obwohl[en] means although, and [de]weil[en] means because. '
-            'Example: [en]You can say [de]Guten Morgen[en] to greet someone.')
+            'Mark isolated foreign vocabulary in its spoken language too. ' + examples)

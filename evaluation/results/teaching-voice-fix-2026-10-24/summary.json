@@ -1,0 +1,61 @@
+{
+  "functional_flow": {
+    "selected_cases": 17,
+    "completed_cases": 17,
+    "passed": 17,
+    "javascript_errors": [],
+    "failed_cases": [],
+    "scope": "Actual browser, model workers and cloud; isolated synthetic memory and real-time prerecorded microphone. Browser playback uses silent sink."
+  },
+  "text_regression_passes": [
+    {
+      "cases": 12,
+      "passed": 12,
+      "scope": "Real cloud and actual app prompt/parser; synthetic text inputs, no speech recognition or playback. Keyword/known-language regression checks, not universal semantic or language classification."
+    },
+    {
+      "cases": 12,
+      "passed": 12,
+      "scope": "Real cloud and actual app prompt/parser; synthetic text inputs, no speech recognition or playback. Keyword/known-language regression checks, not universal semantic or language classification."
+    }
+  ],
+  "targeted_generated_audio": {
+    "samples": 10,
+    "speech_samples": 10,
+    "empty_reference_samples": 0,
+    "reference_words": 92,
+    "reference_characters": 508,
+    "wer": 0.0,
+    "cer": 0.0,
+    "word_errors": 0,
+    "character_errors": 0,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "hits": 92,
+    "hallucinated_words_on_empty_reference": 0,
+    "normalized_exact_match_rate": 1.0,
+    "empty_hypotheses": 0
+  },
+  "current_stt_corpus": {
+    "samples": 17,
+    "speech_samples": 17,
+    "empty_reference_samples": 0,
+    "reference_words": 173,
+    "reference_characters": 971,
+    "wer": 0.07514450867052024,
+    "cer": 0.04016477857878476,
+    "word_errors": 13,
+    "character_errors": 39,
+    "substitutions": 13,
+    "deletions": 0,
+    "insertions": 0,
+    "hits": 160,
+    "hallucinated_words_on_empty_reference": 0,
+    "normalized_exact_match_rate": 0.8235294117647058,
+    "empty_hypotheses": 0
+  },
+  "median_first_audio_after_recording_seconds": 2.7045,
+  "offline_tests_passed": 65,
+  "unresolved": "Noisy connected mixed-language STT varied in this run:25.58% WER; source meaning was then incorrectly summarized. Functional keyword checks do not detect this semantic failure."
+}

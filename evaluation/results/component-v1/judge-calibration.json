@@ -1,0 +1,44 @@
+{
+  "original_valid_judgments": 17,
+  "additional_repaired_valid_judgments": 3,
+  "combined_valid_judgments": 20,
+  "expected_translations": 20,
+  "requests": 9,
+  "maximum_requests": 9,
+  "calibration_checks": [
+    {
+      "case_id": "calibration-good-en-de",
+      "passed": true
+    },
+    {
+      "case_id": "calibration-good-de-en",
+      "passed": true
+    },
+    {
+      "case_id": "calibration-negation",
+      "passed": true
+    },
+    {
+      "case_id": "calibration-amount",
+      "passed": true
+    },
+    {
+      "case_id": "calibration-wrong-language",
+      "passed": true
+    },
+    {
+      "case_id": "calibration-invented-action",
+      "passed": true
+    }
+  ],
+  "combined_scores": {
+    "adequacy": 1.0,
+    "faithfulness": 1.0,
+    "target_language": 1.0
+  },
+  "limitations": [
+    "Controls are simple synthetic sanity checks, not full human calibration.",
+    "Initial invalid/truncated judgments remain preserved; no valid low score was replaced.",
+    "Combined means use two recorded decoding protocols; inspect coverage and control failures."
+  ]
+}

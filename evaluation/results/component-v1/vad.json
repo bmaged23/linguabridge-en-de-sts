@@ -1,0 +1,69 @@
+{
+  "cases": 200,
+  "expected_cases": 200,
+  "missed_speech_cases": 0,
+  "false_speech_cases": 0,
+  "profiles": {
+    "conversation": {
+      "cases": 50,
+      "missed_speech": 0,
+      "false_speech": 0,
+      "recordings_split_before_end": 0,
+      "median_compute_real_time_factor": 0.006349690255052633
+    },
+    "translation": {
+      "cases": 50,
+      "missed_speech": 0,
+      "false_speech": 0,
+      "recordings_split_before_end": 0,
+      "median_compute_real_time_factor": 0.006272351781807342
+    },
+    "teaching": {
+      "cases": 50,
+      "missed_speech": 0,
+      "false_speech": 0,
+      "recordings_split_before_end": 0,
+      "median_compute_real_time_factor": 0.006179089882692857
+    },
+    "interruption_gate": {
+      "cases": 50,
+      "missed_speech": 0,
+      "false_speech": 0,
+      "recordings_split_before_end": 0,
+      "median_compute_real_time_factor": 0.0057430050547230506
+    }
+  },
+  "resources": {
+    "sample_count": 62,
+    "ram_tree_rss_mb": {
+      "peak": 123.0,
+      "mean": 115.2
+    },
+    "cpu_pct_one_core": {
+      "peak": 104.8,
+      "mean": 99.46
+    },
+    "cpu_pct_machine": {
+      "peak": 8.73,
+      "mean": 8.29
+    },
+    "gpu_vram_mb": {
+      "peak": 0.0,
+      "mean": 0.0
+    },
+    "gpu_util_pct": {
+      "peak": 1.0,
+      "mean": 0.02
+    },
+    "system_ram_used_mb": {
+      "peak": 1400.27,
+      "mean": 1351.35
+    }
+  },
+  "limitations": [
+    "Known inserted silence and synthetic noise are true non-speech controls.",
+    "Speech boundaries are energy-derived, not manual phonetic labels; no frame-F1 claim.",
+    "Interruption gate latency is not full browser barge-in latency.",
+    "Offline compute speed is not wall-clock microphone delivery."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "selected_cases": 17,
+  "completed_cases": 17,
+  "passed": 15,
+  "javascript_errors": [],
+  "failed_cases": [
+    {
+      "case_id": "teaching-de-en-de",
+      "checks": [
+        "answer_content_2"
+      ]
+    },
+    {
+      "case_id": "teaching-german",
+      "checks": [
+        "no_unrequested_voice"
+      ]
+    }
+  ],
+  "scope": "Actual browser, model workers and cloud; isolated synthetic memory and real-time prerecorded microphone. Browser playback uses silent sink."
+}
