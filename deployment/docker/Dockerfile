@@ -19,7 +19,13 @@ RUN python -m venv .venv && python -m venv .venv-asr && python -m venv .venv-tts
     && .venv/bin/python -m pip install --no-cache-dir --no-deps -r /tmp/app.txt \
     && .venv-asr/bin/python -m pip install --no-cache-dir --no-deps -r /tmp/stt.txt \
     && .venv-tts-gpu/bin/python -m pip install --no-cache-dir --no-deps -r /tmp/tts.txt
-COPY config.py pyproject.toml README.md ./
+COPY config.py ./
+COPY scripts/setup/download_speech_models.py ./scripts/setup/download_speech_models.py
+COPY docs/reference/model-manifest.json ./docs/reference/model-manifest.json
+# Keep the immutable speech assets before application code so code releases reuse them.
+RUN HF_HUB_OFFLINE=0 .venv/bin/python scripts/setup/download_speech_models.py \
+    && rm -rf /app/.cache /app/models/.cache /root/.cache
+COPY pyproject.toml README.md ./
 COPY src ./src
 COPY scripts ./scripts
 COPY web ./web
@@ -27,9 +33,7 @@ COPY tests ./tests
 COPY evaluation ./evaluation
 COPY docs/reference/model-manifest.json docs/reference/model-notices.md ./docs/reference/
 COPY deployment/docker ./deployment/docker
-RUN HF_HUB_OFFLINE=0 .venv/bin/python -m scripts.setup.download_speech_models \
-    && rm -rf /app/.cache /app/models/.cache /root/.cache \
-    && .venv/bin/python -m pytest -q
+RUN .venv/bin/python -m pytest -q
 RUN useradd --uid 10001 --create-home bridge \
     && mkdir -p /app/data /app/logs /app/.cache \
     && chown -R bridge:bridge /app/data /app/logs /app/.cache

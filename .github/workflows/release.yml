@@ -10,6 +10,9 @@ on:
       - 'config.py'
       - 'requirements/**'
       - 'requirements.txt'
+      - 'pyproject.toml'
+      - 'tests/**'
+      - 'docs/reference/model-manifest.json'
       - 'deployment/**'
       - 'evaluation/datasets/**'
       - 'evaluation/config.py'
@@ -77,3 +80,8 @@ jobs:
             .evaluation-local/image-*/release-gate.json
             .evaluation-local/image-*/browser/summary.json
             .evaluation-local/published-image-digests.json
+      - name: Update Docker Hub overview and source link
+        if: success()
+        env:
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: .venv/bin/python -m scripts.release.update_dockerhub
