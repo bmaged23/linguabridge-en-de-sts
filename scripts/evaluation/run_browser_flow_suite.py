@@ -167,9 +167,12 @@ async def execute(page, case, folder, monitor):
     prior = await page.evaluate("({active,turn,playing_id:playing?.id??null})")
     timing = {}
     try:
-        timing = await page.evaluate(
-            "async url=>{const start=performance.now();await __say(url);return {start_ms:start,end_ms:performance.now()}}",
-            "/__flow__/" + case["case_id"] + ".wav",
+        timing = await asyncio.wait_for(
+            page.evaluate(
+                "async url=>{const start=performance.now();await __say(url);return {start_ms:start,end_ms:performance.now()}}",
+                "/__flow__/" + case["case_id"] + ".wav",
+            ),
+            timeout=case['audio_seconds'] + CONFIG['input_timeout_margin_seconds'],
         )
         if case.get("leave_playing"):
             await page.wait_for_function(
@@ -319,6 +322,7 @@ async def execute(page, case, folder, monitor):
         "interruption": interruption,
         "timing": times,
         "failure": failure,
+        "browser_connection": await page.evaluate("({active,socket_state:ws?.readyState,buffered_bytes:ws?.bufferedAmount,error:document.getElementById('error')?.textContent})"),
         "resources": monitor.summarize(began, ended),
         "pipeline_trace": trace,
         "synthetic_memory_state": current,

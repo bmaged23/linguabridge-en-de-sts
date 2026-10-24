@@ -22,6 +22,7 @@ BROWSER_EVALUATION = {
     "port": 8767,
     "startup_timeout_seconds": 180,
     "turn_timeout_ms": 120000,
+    "input_timeout_margin_seconds": 15,
     "idle_settle_ms": 500,
     "resource_interval_seconds": 0.5,
     "maximum_cloud_requests": 20,

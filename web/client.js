@@ -2,6 +2,7 @@
 const el = id => document.getElementById(id);
 const clock = seconds => `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
 let ws, context, stream, microphone, capture, inputMeter, outputMeter, outputGain;
+let microphoneTransport;
 let queue = [], playing = null, turn = 0, active = false, muted = false, generation = 0;
 let userMessage = null, assistantMessage = null, responsePending = false, totalTurns = 0;
 let timer = null, sessionStart = 0, lastLatency = null;
@@ -115,6 +116,7 @@ async function listMicrophones() {
 async function stopSession(detail = 'Microphone off') {
   generation++;
   active = false; responsePending = false;
+  microphoneTransport?.close(); microphoneTransport = null;
   el('resume-audio').hidden=true;
   haltPlayback();
   clearInterval(timer); timer = null;
@@ -262,14 +264,17 @@ async function startSession() {
         microphone = context.createMediaStreamSource(stream);
         inputMeter = context.createAnalyser(); inputMeter.fftSize = 512;
         capture = new AudioWorkletNode(context, 'microphone-capture');
+        microphoneTransport = new BridgeMicrophoneTransport(socket, {
+          maxBufferedBytes: audioConfig.max_buffered_bytes,
+          maxPendingFrames: audioConfig.max_pending_microphone_frames,
+          drainIntervalMs: audioConfig.microphone_drain_interval_ms,
+          onOverflow: () => { showError('The audio connection fell behind. Please start a new session.'); stopSession(); }
+        });
         capture.addEventListener('processorerror',()=>{showError('Microphone processing stopped. Start the conversation again.');stopSession('Microphone stopped');});
         capture.port.onmessage = e => {
           if (!active || socket.readyState !== WebSocket.OPEN || token !== generation) return;
-          if (socket.bufferedAmount > audioConfig.max_buffered_bytes) {
-            showError('The audio connection fell behind. Please start a new session.'); stopSession(); return;
-          }
-          if (BridgePlaybackPolicy.suppressMicrophone({mode:bridgeMode,translationGuard:suppressPlaybackInput,echoGuard:playbackEchoGuard,allowInterruptions:el('allow-interruptions').checked,playing:Boolean(playing),queued:queue.length,resumeAt:resumeMicrophoneAt,now:performance.now()})) socket.send(new Float32Array(512).buffer);
-          else socket.send(e.data);
+          if (BridgePlaybackPolicy.suppressMicrophone({mode:bridgeMode,translationGuard:suppressPlaybackInput,echoGuard:playbackEchoGuard,allowInterruptions:el('allow-interruptions').checked,playing:Boolean(playing),queued:queue.length,resumeAt:resumeMicrophoneAt,now:performance.now()})) microphoneTransport.send(new Float32Array(512).buffer);
+          else microphoneTransport.send(e.data);
         };
         microphone.connect(inputMeter); inputMeter.connect(capture); capture.connect(context.destination);
       } else onPacket(packet);
