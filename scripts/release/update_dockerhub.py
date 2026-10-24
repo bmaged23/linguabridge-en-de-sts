@@ -19,7 +19,7 @@ def main():
         'username': 'bmaged23', 'password': os.environ['DOCKERHUB_TOKEN']})
     root = Path(__file__).resolve().parents[2]
     result = request('https://hub.docker.com/v2/repositories/bmaged23/linguabridge-en-de-sts/', {
-        'description': 'English–German GPU speech-to-speech translation and conversation with cloud LLM and persistent memory.',
+        'description': 'English-German GPU speech translation with cloud LLM, memory and voice interruption.',
         'full_description': (root / 'deployment/dockerhub/README.md').read_text()},
         login['token'], method='PATCH')
     if result.get('is_private') is True:

@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.source_sha }}
+          ref: ${{ github.sha }}
       - name: Require the matching source and successful GPU qualification
         run: |
           [[ "$SOURCE_SHA" =~ ^[0-9a-f]{40}$ ]]
