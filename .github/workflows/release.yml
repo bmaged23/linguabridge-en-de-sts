@@ -18,6 +18,8 @@ on:
       - 'evaluation/config.py'
       - '.github/workflows/**'
       - '.dockerignore'
+      - '!requirements/**/*.md'
+      - '!deployment/**/*.md'
 permissions:
   contents: read
 concurrency:

@@ -1,0 +1,22 @@
+name: Docker Hub documentation
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['deployment/dockerhub/README.md']
+permissions:
+  contents: read
+jobs:
+  overview:
+    if: github.repository == 'bmaged23/linguabridge-en-de-sts' && github.actor == 'bmaged23' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Update maintained overview without rebuilding models
+        env:
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: python -m scripts.release.update_dockerhub

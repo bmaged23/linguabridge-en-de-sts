@@ -24,6 +24,8 @@ The Docker Hub name reserved in the compose example is `bmaged23/linguabridge-en
 
 The release gate must test the candidate image with real GPU model inference and full browser flows before publishing it. GitHub-hosted offline tests cannot measure this laptop's GPU models or reach its local workers. A trusted GPU runner and archived waveform/reference fixtures are required for the real-model gate. Raw fixture paths, private credentials and user memory are excluded from Git and image context.
 
+Commit labels are applied after the expensive build layers. Separately pinned download inputs in `docker/model_config.py` keep unrelated runtime tuning from invalidating the model layer; an offline contract test rejects model/config mismatches. Version-pinned uv installs the exact distributions without precompiling every library. Byte-identical libraries with matching permissions are hardlinked across the isolated environments; different CPU/GPU ONNX providers remain separate. Documentation-only changes skip image delivery, and maintained Docker Hub overview changes use a lightweight metadata workflow.
+
 ## Dependencies
 
 `requirements/release/app.txt` preserves installed application pins while omitting unused CUDA packages in the main interpreter. `requirements/release/tts.txt` shares the recognizer's CUDA libraries and adds the GPU ONNX runtime's declared `coloredlogs` and `sympy` dependencies. It intentionally contains only GPU ONNX Runtime; the Piper/Kokoro metadata names the CPU distribution, although both distributions expose the same `onnxruntime` module. Do not co-install them. The original environment snapshots remain in `requirements.txt` and `requirements/*-cuda.txt`.
