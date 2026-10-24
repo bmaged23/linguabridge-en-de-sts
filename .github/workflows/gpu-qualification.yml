@@ -98,4 +98,3 @@ jobs:
         run: |
           docker logout ghcr.io || true
           docker logout || true
-

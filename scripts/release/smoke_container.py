@@ -4,15 +4,18 @@ import json
 import subprocess
 import time
 import urllib.request
+import uuid
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--image', required=True)
-    parser.add_argument('--name', default='linguabridge-release-smoke')
+    parser.add_argument('--name', default='linguabridge-release-smoke-' + uuid.uuid4().hex[:10])
     args = parser.parse_args()
+    ownership = uuid.uuid4().hex
     try:
-        subprocess.run(['docker', 'run', '-d', '--name', args.name, '--gpus', 'all',
+        subprocess.run(['docker', 'run', '-d', '--name', args.name,
+                        '--label', 'io.linguabridge.test-run=' + ownership, '--gpus', 'all',
                         '-p', '127.0.0.1:8768:8766', '-e', 'OLLAMA_API_KEY',
                         '-e', 'OLLAMA_BASE_URL', '-e', 'OLLAMA_MODEL', args.image], check=True)
         deadline = time.monotonic() + 180
@@ -31,7 +34,11 @@ def main():
                     raise RuntimeError('Normal container startup smoke failed')
                 time.sleep(1)
     finally:
-        subprocess.run(['docker', 'rm', '-f', args.name], stdout=subprocess.DEVNULL, check=False)
+        existing = subprocess.run(['docker', 'inspect', args.name, '--format',
+                                   '{{index .Config.Labels "io.linguabridge.test-run"}}'],
+                                  capture_output=True, text=True, check=False)
+        if existing.returncode == 0 and existing.stdout.strip() == ownership:
+            subprocess.run(['docker', 'rm', '-f', args.name], stdout=subprocess.DEVNULL, check=False)
 
 
 if __name__ == '__main__':
