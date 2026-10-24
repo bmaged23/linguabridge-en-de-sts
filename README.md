@@ -44,7 +44,7 @@ No local LLM installation is required. An Ollama Cloud account with access to th
 
 ## Measured evaluation
 
-Latest: the [noisy mixed-speech fix](evaluation/results/mixed-asr-fix-2026-10-24/README.md) reduced validation-story WER from **14.32% to 9.40%** on four source stories with clean/20 dB/10 dB variants. All 24 human calibration transcripts retained their baseline scores. The previously failing noisy story now passes explicit cancellation/negation checks, including independent checks of both spoken summaries. **17/17 browser turns** passed the stronger suite; The current offline suite passes **93 regression tests**; the linked accuracy checkpoint originally had 83.
+Latest: the [noisy mixed-speech fix](evaluation/results/mixed-asr-fix-2026-10-24/README.md) reduced validation-story WER from **14.32% to 9.40%** on four source stories with clean/20 dB/10 dB variants. All 24 human calibration transcripts retained their baseline scores. The previously failing noisy story now passes explicit cancellation/negation checks, including independent checks of both spoken summaries. **17/17 browser turns** passed the stronger suite; The current offline suite passes **94 regression tests**; the linked accuracy checkpoint originally had 83.
 
 The prior scripted full flow measured **2.31% WER / 0.51% CER** and **2.75 s median first audio after input recording**. Completed-segment caching and GPU batches of two subsequently reduced the long mixed story’s first-audio delay from **7.77 s to 2.69 s** in matched real-time browser runs, with unchanged transcription. Offline final-decode comparisons preserved all 52 transcripts. See the [latency and accuracy report](evaluation/results/asr-latency-optimization-2026-10-24/README.md) for scope and measurements. Six of 45 validation fact checks still fail under noise; recognition is not error-free.
 
@@ -179,7 +179,7 @@ Click **Start conversation**, allow microphone access, and speak. Headphones hel
 - Speak during a reply to interrupt it.
 - Select **Translate**, then confirm the change to interpret English ⇄ German.
 
-Stop capture with **End conversation**. Stop the server with **Ctrl+C**. Restart the server after editing `config.py`.
+Stop capture with **End conversation**. Stop the server with **Ctrl+C**. Restart the server after editing `config.py`. Browser microphone frames pass through a bounded ordered queue: `audio.max_buffered_bytes=65536`, `audio.max_pending_microphone_frames=64` and `audio.microphone_drain_interval_ms=8`. Brief scheduling bursts drain without discarding samples; sustained overflow stops the session instead of accumulating unlimited delay.
 
 ## Conversation, translation and teaching
 
@@ -195,9 +195,9 @@ Modes can be selected in the UI or through explicit commands such as “LinguaBr
 
 ## Docker and CI/CD
 
-The [GPU container guide](deployment/README.md) contains the image recipe, local build/run commands, required hardware and release status. The image bundles the production speech assets; credentials and persistent memory are supplied at runtime. Docker Hub publication is still being verified.
+The [GPU container guide](deployment/README.md) contains the image recipe, local build/run commands, required hardware and release status. The image bundles the production speech assets; credentials and persistent memory are supplied at runtime. The [public GPU image](https://hub.docker.com/r/bmaged23/linguabridge-en-de-sts) passed anonymous pull, GPU model warmup, health and UI startup. You can pull and run it without cloning or downloading models separately; see the guide.
 
-GitHub offline CI installs pinned dependencies and runs the regression suite without keys or models. A hosted CPU builder stages a candidate image; the trusted laptop runner pulls its exact digest and tests real GPU inference. The release gate checks normal startup, 52 frozen ASR recordings and 17 full browser turns before public Docker Hub publication. It then verifies an anonymous pull, image identity and startup again. This delivers an image; it does not deploy a public server. The GPU runner and fixture bundle must be available. Remote workflow verification is pending.
+GitHub offline CI installs pinned dependencies and runs the regression suite without keys or models. A hosted CPU builder stages a candidate image; the trusted laptop runner pulls its exact digest and tests real GPU inference. The release gate checks normal startup, 52 frozen ASR recordings and 17 full browser turns before public Docker Hub publication. It then verifies an anonymous pull, image identity and startup again. This delivers an image; it does not deploy a public server. The GPU runner and fixture bundle must be available. The [verified release report](evaluation/results/gpu-container-release-2026-10-24/README.md) records 94 offline tests, 52/52 STT recordings and 17/17 browser turns, with 2.53 s median first audio. Hosted delivery can resume an already-qualified immutable digest after checking the source and successful GPU gate; this route completed publication and public GPU startup for this release.
 
 ## Important configuration
 

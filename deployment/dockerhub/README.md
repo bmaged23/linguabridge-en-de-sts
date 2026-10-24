@@ -6,7 +6,7 @@ Talk in English, German or both. The application supports conversation, confirme
 
 ## Pull and run
 
-Requires Linux x86-64 containers and an NVIDIA GPU exposed to Docker. The tested native GPU has 6 GiB VRAM. GPU/container verification details and exact release digest belong in the GitHub release record. This is not a CPU image.
+Requires Linux x86-64 containers and an NVIDIA GPU exposed to Docker. The tested native GPU has 6 GiB VRAM. [Verified GPU/container release, digest and measurements](https://github.com/bmaged23/linguabridge-en-de-sts/tree/main/evaluation/results/gpu-container-release-2026-10-24). This is not a CPU image.
 
 Create a local `.env` containing your own credentials:
 
@@ -25,6 +25,12 @@ docker run --rm --gpus all --env-file .env \
 ```
 
 After warmup, open http://localhost:8766 and allow microphone access. No Git clone or first-run model download is needed: the image contains the production speech models. The cloud LLM requires your own account allowance. Your microphone stays in the browser, so no audio device passthrough is required. Notes/history persist in the named Docker volume. Stop with Ctrl+C.
+
+## Verified container measurements
+
+The qualified image passed **94 offline tests, 52/52 STT recordings and 17/17 browser turns**, with zero JavaScript errors. Median first audio after recording ended was **2.53 seconds**. Highest observed container memory was **2,601 MiB** and whole-device VRAM **4,954 MiB** on a GTX 1660 Ti with 6 GiB VRAM; the cloud LLM hardware is excluded. These are sampled observations on one setup, not device-wide guarantees. Whisper independently scored 37/37 output chunks; English agreement WER/CER 4.04%/2.84%, German 9.09%/7.08%, including number-format differences and one lexical disagreement. See the linked report for all comparisons and limitations.
+
+Immutable image: `bmaged23/linguabridge-en-de-sts@sha256:04ec957cf2fb6df7e0d9b0ca378ac7f3f37e5fcc79ebcd04181ce36b2c08bcbd`.
 
 ## Evaluation and release process
 

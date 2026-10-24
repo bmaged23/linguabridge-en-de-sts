@@ -1,0 +1,1368 @@
+{
+  "source_revision": "21902e9e8380eb82464039637dc356715375d53b",
+  "workflow_url": "https://github.com/bmaged23/linguabridge-en-de-sts/actions/runs/40140657528",
+  "offline_tests": 94,
+  "asr": {
+    "waveforms": 52,
+    "all_final_texts_identical": true,
+    "deployment_gates": {
+      "all_expected_waveforms": true,
+      "validation_wer_not_worse": true,
+      "validation_cer_not_worse": true,
+      "validation_meaning_not_worse": true,
+      "all_captured_facts_retained": true,
+      "human_wer_not_worse": true,
+      "no_individual_human_word_error_regression": true,
+      "no_recording_word_or_character_regression": true,
+      "no_recording_fact_regression": true,
+      "routing_unchanged": true
+    },
+    "cohorts": {
+      "development_stories": {
+        "baseline": {
+          "recordings": 12,
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.10238095238095238,
+            "cer": 0.0751755472945064,
+            "word_errors": 43,
+            "character_errors": 182,
+            "substitutions": 21,
+            "deletions": 19,
+            "insertions": 3,
+            "hits": 380,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.16666666666666666,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 37,
+          "meaning_checks": 42,
+          "median_processing_seconds": 4.621288706999621,
+          "median_processing_rtf": 0.4002539919468383
+        },
+        "candidate": {
+          "recordings": 12,
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 420,
+            "reference_characters": 2421,
+            "wer": 0.10238095238095238,
+            "cer": 0.0751755472945064,
+            "word_errors": 43,
+            "character_errors": 182,
+            "substitutions": 21,
+            "deletions": 19,
+            "insertions": 3,
+            "hits": 380,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.16666666666666666,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 37,
+          "meaning_checks": 42,
+          "median_processing_seconds": 3.788292716999422,
+          "median_processing_rtf": 0.34015671694203503
+        }
+      },
+      "validation_stories": {
+        "baseline": {
+          "recordings": 12,
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 447,
+            "reference_characters": 2649,
+            "wer": 0.09395973154362416,
+            "cer": 0.06719516798791997,
+            "word_errors": 42,
+            "character_errors": 178,
+            "substitutions": 14,
+            "deletions": 27,
+            "insertions": 1,
+            "hits": 406,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.08333333333333333,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 39,
+          "meaning_checks": 45,
+          "median_processing_seconds": 5.354583821000233,
+          "median_processing_rtf": 0.39033028634159606
+        },
+        "candidate": {
+          "recordings": 12,
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 447,
+            "reference_characters": 2649,
+            "wer": 0.09395973154362416,
+            "cer": 0.06719516798791997,
+            "word_errors": 42,
+            "character_errors": 178,
+            "substitutions": 14,
+            "deletions": 27,
+            "insertions": 1,
+            "hits": 406,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.08333333333333333,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 39,
+          "meaning_checks": 45,
+          "median_processing_seconds": 4.206248751999738,
+          "median_processing_rtf": 0.3227831872347259
+        }
+      },
+      "captured_regressions": {
+        "baseline": {
+          "recordings": 4,
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.046511627906976744,
+            "cer": 0.012396694214876033,
+            "word_errors": 8,
+            "character_errors": 12,
+            "substitutions": 8,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 164,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 12,
+          "meaning_checks": 12,
+          "median_processing_seconds": 6.042481941499773,
+          "median_processing_rtf": 0.3929797877680493
+        },
+        "candidate": {
+          "recordings": 4,
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 172,
+            "reference_characters": 968,
+            "wer": 0.046511627906976744,
+            "cer": 0.012396694214876033,
+            "word_errors": 8,
+            "character_errors": 12,
+            "substitutions": 8,
+            "deletions": 0,
+            "insertions": 0,
+            "hits": 164,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 12,
+          "meaning_checks": 12,
+          "median_processing_seconds": 4.2094434304999595,
+          "median_processing_rtf": 0.2737646273872629
+        }
+      },
+      "human_all": {
+        "baseline": {
+          "recordings": 24,
+          "metrics": {
+            "samples": 24,
+            "speech_samples": 24,
+            "empty_reference_samples": 0,
+            "reference_words": 559,
+            "reference_characters": 3485,
+            "wer": 0.04114490161001789,
+            "cer": 0.020373027259684363,
+            "word_errors": 23,
+            "character_errors": 71,
+            "substitutions": 19,
+            "deletions": 3,
+            "insertions": 1,
+            "hits": 537,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.375,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 0,
+          "meaning_checks": 0,
+          "median_processing_seconds": 4.782773519999864,
+          "median_processing_rtf": 0.4291890421855149
+        },
+        "candidate": {
+          "recordings": 24,
+          "metrics": {
+            "samples": 24,
+            "speech_samples": 24,
+            "empty_reference_samples": 0,
+            "reference_words": 559,
+            "reference_characters": 3485,
+            "wer": 0.04114490161001789,
+            "cer": 0.020373027259684363,
+            "word_errors": 23,
+            "character_errors": 71,
+            "substitutions": 19,
+            "deletions": 3,
+            "insertions": 1,
+            "hits": 537,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.375,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 0,
+          "meaning_checks": 0,
+          "median_processing_seconds": 4.352298764000807,
+          "median_processing_rtf": 0.37944746600884205
+        }
+      },
+      "human_en": {
+        "baseline": {
+          "recordings": 12,
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 265,
+            "reference_characters": 1510,
+            "wer": 0.03773584905660377,
+            "cer": 0.02052980132450331,
+            "word_errors": 10,
+            "character_errors": 31,
+            "substitutions": 8,
+            "deletions": 1,
+            "insertions": 1,
+            "hits": 256,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.3333333333333333,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 0,
+          "meaning_checks": 0,
+          "median_processing_seconds": 2.7320661834996827,
+          "median_processing_rtf": 0.316102481388822
+        },
+        "candidate": {
+          "recordings": 12,
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 265,
+            "reference_characters": 1510,
+            "wer": 0.03773584905660377,
+            "cer": 0.02052980132450331,
+            "word_errors": 10,
+            "character_errors": 31,
+            "substitutions": 8,
+            "deletions": 1,
+            "insertions": 1,
+            "hits": 256,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.3333333333333333,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 0,
+          "meaning_checks": 0,
+          "median_processing_seconds": 3.108496640499652,
+          "median_processing_rtf": 0.3186021177722481
+        }
+      },
+      "human_de": {
+        "baseline": {
+          "recordings": 12,
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 294,
+            "reference_characters": 1975,
+            "wer": 0.04421768707482993,
+            "cer": 0.020253164556962026,
+            "word_errors": 13,
+            "character_errors": 40,
+            "substitutions": 11,
+            "deletions": 2,
+            "insertions": 0,
+            "hits": 281,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.4166666666666667,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 0,
+          "meaning_checks": 0,
+          "median_processing_seconds": 6.985353141999894,
+          "median_processing_rtf": 0.5456760028237911
+        },
+        "candidate": {
+          "recordings": 12,
+          "metrics": {
+            "samples": 12,
+            "speech_samples": 12,
+            "empty_reference_samples": 0,
+            "reference_words": 294,
+            "reference_characters": 1975,
+            "wer": 0.04421768707482993,
+            "cer": 0.020253164556962026,
+            "word_errors": 13,
+            "character_errors": 40,
+            "substitutions": 11,
+            "deletions": 2,
+            "insertions": 0,
+            "hits": 281,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.4166666666666667,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 0,
+          "meaning_checks": 0,
+          "median_processing_seconds": 6.448320032999618,
+          "median_processing_rtf": 0.49805013403237686
+        }
+      },
+      "validation_clean": {
+        "baseline": {
+          "recordings": 4,
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 149,
+            "reference_characters": 883,
+            "wer": 0.04697986577181208,
+            "cer": 0.027180067950169876,
+            "word_errors": 7,
+            "character_errors": 24,
+            "substitutions": 3,
+            "deletions": 4,
+            "insertions": 0,
+            "hits": 142,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.25,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 15,
+          "meaning_checks": 15,
+          "median_processing_seconds": 4.872913822500323,
+          "median_processing_rtf": 0.38906194305204533
+        },
+        "candidate": {
+          "recordings": 4,
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 149,
+            "reference_characters": 883,
+            "wer": 0.04697986577181208,
+            "cer": 0.027180067950169876,
+            "word_errors": 7,
+            "character_errors": 24,
+            "substitutions": 3,
+            "deletions": 4,
+            "insertions": 0,
+            "hits": 142,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.25,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 15,
+          "meaning_checks": 15,
+          "median_processing_seconds": 4.136239243500313,
+          "median_processing_rtf": 0.3402474515358383
+        }
+      },
+      "validation_noise20": {
+        "baseline": {
+          "recordings": 4,
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 149,
+            "reference_characters": 883,
+            "wer": 0.10067114093959731,
+            "cer": 0.08040770101925254,
+            "word_errors": 15,
+            "character_errors": 71,
+            "substitutions": 2,
+            "deletions": 12,
+            "insertions": 1,
+            "hits": 135,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 13,
+          "meaning_checks": 15,
+          "median_processing_seconds": 5.354583821000233,
+          "median_processing_rtf": 0.4079188599302819
+        },
+        "candidate": {
+          "recordings": 4,
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 149,
+            "reference_characters": 883,
+            "wer": 0.10067114093959731,
+            "cer": 0.08040770101925254,
+            "word_errors": 15,
+            "character_errors": 71,
+            "substitutions": 2,
+            "deletions": 12,
+            "insertions": 1,
+            "hits": 135,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 13,
+          "meaning_checks": 15,
+          "median_processing_seconds": 4.446929412000827,
+          "median_processing_rtf": 0.3235030496657626
+        }
+      },
+      "validation_noise10": {
+        "baseline": {
+          "recordings": 4,
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 149,
+            "reference_characters": 883,
+            "wer": 0.1342281879194631,
+            "cer": 0.09399773499433749,
+            "word_errors": 20,
+            "character_errors": 83,
+            "substitutions": 9,
+            "deletions": 11,
+            "insertions": 0,
+            "hits": 129,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 11,
+          "meaning_checks": 15,
+          "median_processing_seconds": 5.389190743500421,
+          "median_processing_rtf": 0.41139418024136254
+        },
+        "candidate": {
+          "recordings": 4,
+          "metrics": {
+            "samples": 4,
+            "speech_samples": 4,
+            "empty_reference_samples": 0,
+            "reference_words": 149,
+            "reference_characters": 883,
+            "wer": 0.1342281879194631,
+            "cer": 0.09399773499433749,
+            "word_errors": 20,
+            "character_errors": 83,
+            "substitutions": 9,
+            "deletions": 11,
+            "insertions": 0,
+            "hits": 129,
+            "hallucinated_words_on_empty_reference": 0,
+            "normalized_exact_match_rate": 0.0,
+            "empty_hypotheses": 0
+          },
+          "meaning_checks_passed": 11,
+          "meaning_checks": 15,
+          "median_processing_seconds": 3.8659413654986565,
+          "median_processing_rtf": 0.3227831872347259
+        }
+      }
+    }
+  },
+  "browser": {
+    "selected": 17,
+    "passed": 17,
+    "javascript_errors": [],
+    "first_audio_seconds": {
+      "count": 17,
+      "median": 2.53329999999702,
+      "minimum": 1.1785999999977648,
+      "maximum": 3.462199999999255
+    },
+    "tts_batch_seconds": {
+      "en": {
+        "batches": 22,
+        "median": 0.3306,
+        "maximum": 0.7116
+      },
+      "de": {
+        "batches": 13,
+        "median": 0.1606,
+        "maximum": 0.5976
+      }
+    },
+    "cloud_usage": {
+      "completed_calls": 13,
+      "input_tokens": 7279,
+      "output_tokens": 415
+    },
+    "cases": [
+      {
+        "case_id": "translation-request",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "confirmation_state_correct": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 3,
+          "reference_characters": 22,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 3,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en",
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 2.1146875,
+          "request_to_test_completion_seconds": 9.929251556000963,
+          "first_audio_after_input_recording_end_seconds": 2.3563000000007452
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "translation-confirm",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "confirmation_state_correct": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 2,
+          "reference_characters": 11,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 2,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 1.752,
+          "request_to_test_completion_seconds": 5.223582867001824,
+          "first_audio_after_input_recording_end_seconds": 1.1785999999977648
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "translation-en-first",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "answer_content_3": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 7,
+          "reference_characters": 32,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 7,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "de"
+        ],
+        "timing": {
+          "recording_seconds": 2.669375,
+          "request_to_test_completion_seconds": 7.859834697999759,
+          "first_audio_after_input_recording_end_seconds": 2.53329999999702,
+          "cloud_first_text_seconds": 0.44973599999866565
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "translation-de",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "answer_content_3": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 5,
+          "reference_characters": 27,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 5,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 2.1209375,
+          "request_to_test_completion_seconds": 7.622901695998735,
+          "first_audio_after_input_recording_end_seconds": 2.9920999999977647,
+          "cloud_first_text_seconds": 0.3939329999993788
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "translation-en-again",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 7,
+          "reference_characters": 33,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 7,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "de"
+        ],
+        "timing": {
+          "recording_seconds": 2.413375,
+          "request_to_test_completion_seconds": 7.106774242998654,
+          "first_audio_after_input_recording_end_seconds": 2.581699999999255,
+          "cloud_first_text_seconds": 0.42033599999922444
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "translation-en-consecutive",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 6,
+          "reference_characters": 34,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 6,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "de"
+        ],
+        "timing": {
+          "recording_seconds": 2.4986875,
+          "request_to_test_completion_seconds": 6.977020769998489,
+          "first_audio_after_input_recording_end_seconds": 2.378099999997765,
+          "cloud_first_text_seconds": 0.39660899999944377
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "remember-interview",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "explicit_note_present": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 10,
+          "reference_characters": 53,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 10,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 3.6506875,
+          "request_to_test_completion_seconds": 7.670318333999603,
+          "first_audio_after_input_recording_end_seconds": 1.522699999999255
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 2048,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "recall-german",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 9,
+          "reference_characters": 52,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 9,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "de"
+        ],
+        "timing": {
+          "recording_seconds": 3.3631875,
+          "request_to_test_completion_seconds": 8.529248259001179,
+          "first_audio_after_input_recording_end_seconds": 2.255199999999255,
+          "cloud_first_text_seconds": 0.3745789999993576
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "mixed-connected-story",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "meaning_train_cancelled": true,
+          "meaning_tickets_not_bought": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.046511627906976744,
+          "cer": 0.012396694214876033,
+          "reference_words": 43,
+          "reference_characters": 242,
+          "word_errors": 2,
+          "character_errors": 3,
+          "substitutions": 2,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 41,
+          "normalized_exact_match": false,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en",
+          "en",
+          "en",
+          "de",
+          "de",
+          "de"
+        ],
+        "timing": {
+          "recording_seconds": 15.1045625,
+          "request_to_test_completion_seconds": 37.02168453699778,
+          "first_audio_after_input_recording_end_seconds": 3.462199999999255,
+          "cloud_first_text_seconds": 0.4035279999989143
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "recall-after-reload",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "explicit_note_present": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 9,
+          "reference_characters": 43,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 9,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 2.9466875,
+          "request_to_test_completion_seconds": 7.752214176998677,
+          "first_audio_after_input_recording_end_seconds": 2.856800000000745,
+          "cloud_first_text_seconds": 0.4228240000011283
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "teaching-english",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 11,
+          "reference_characters": 76,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 11,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en",
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 4.888,
+          "request_to_test_completion_seconds": 16.40488869500041,
+          "first_audio_after_input_recording_end_seconds": 2.84939999999851,
+          "cloud_first_text_seconds": 0.3842229999972915
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "teaching-de-en-de",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 13,
+          "reference_characters": 85,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 13,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en",
+          "en",
+          "de",
+          "en",
+          "en",
+          "de",
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 5.6675625,
+          "request_to_test_completion_seconds": 26.223094023000158,
+          "first_audio_after_input_recording_end_seconds": 2.831699999999255,
+          "cloud_first_text_seconds": 0.41668700000082026
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "teaching-en-de-en",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "voice_switch_order_correct": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "answer_content_3": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 9,
+          "reference_characters": 54,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 9,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en",
+          "de",
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 4.70175,
+          "request_to_test_completion_seconds": 10.827386128999933,
+          "first_audio_after_input_recording_end_seconds": 3.1689000000022354,
+          "cloud_first_text_seconds": 0.40839100000084727
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "teaching-german",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "answer_content_2": true,
+          "emitted_audio_finished_playback": true
+        },
+        "stt_metrics": {
+          "wer": 0.08333333333333333,
+          "cer": 0.014492753623188406,
+          "reference_words": 12,
+          "reference_characters": 69,
+          "word_errors": 1,
+          "character_errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 11,
+          "normalized_exact_match": false,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "de",
+          "de",
+          "de",
+          "de"
+        ],
+        "timing": {
+          "recording_seconds": 4.083,
+          "request_to_test_completion_seconds": 19.871227159997943,
+          "first_audio_after_input_recording_end_seconds": 2.87239999999851,
+          "cloud_first_text_seconds": 0.43029099999694154
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "long-reply-to-interrupt",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true
+        },
+        "stt_metrics": {
+          "wer": 0.09090909090909091,
+          "cer": 0.01639344262295082,
+          "reference_words": 11,
+          "reference_characters": 61,
+          "word_errors": 1,
+          "character_errors": 1,
+          "substitutions": 1,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 10,
+          "normalized_exact_match": false,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 4.0346875,
+          "request_to_test_completion_seconds": 5.962747401998058,
+          "first_audio_after_input_recording_end_seconds": 1.890800000000745,
+          "cloud_first_text_seconds": 0.3965060000009544
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "voice-interruption",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "emitted_audio_finished_playback": true,
+          "speech_started_during_reply": true,
+          "old_reply_playback_cancelled": true,
+          "interrupt_packet_received": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 8,
+          "reference_characters": 35,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 8,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "en"
+        ],
+        "timing": {
+          "recording_seconds": 2.84,
+          "request_to_test_completion_seconds": 6.085633686998335,
+          "first_audio_after_input_recording_end_seconds": 1.8528999999985099,
+          "cloud_first_text_seconds": 0.38448200000129873
+        },
+        "interruption": {
+          "old_playing_id": "1:1",
+          "cancelled_chunks": [
+            {
+              "type": "played",
+              "id": "1:1",
+              "complete": false,
+              "at_ms": 9372
+            }
+          ],
+          "input_start_to_interrupt_seconds": 1.1037999999970198
+        },
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      },
+      {
+        "case_id": "after-interruption-german",
+        "passed": true,
+        "checks": {
+          "no_browser_or_pipeline_timeout": true,
+          "final_transcript_present": true,
+          "one_input_turn": true,
+          "no_pipeline_errors": true,
+          "mode_correct": true,
+          "audio_emitted": true,
+          "requested_audio_languages_present": true,
+          "no_unrequested_voice": true,
+          "answer_content_1": true,
+          "emitted_audio_finished_playback": true,
+          "silent_microphone_stays_active": true,
+          "no_false_turn_during_silence": true
+        },
+        "stt_metrics": {
+          "wer": 0.0,
+          "cer": 0.0,
+          "reference_words": 8,
+          "reference_characters": 42,
+          "word_errors": 0,
+          "character_errors": 0,
+          "substitutions": 0,
+          "deletions": 0,
+          "insertions": 0,
+          "hits": 8,
+          "normalized_exact_match": true,
+          "empty_hypothesis": false,
+          "hallucinated_words_on_empty_reference": 0
+        },
+        "audio_languages": [
+          "de"
+        ],
+        "timing": {
+          "recording_seconds": 3.537375,
+          "request_to_test_completion_seconds": 7.140501068999583,
+          "first_audio_after_input_recording_end_seconds": 1.7635999999977647,
+          "cloud_first_text_seconds": 0.41656700000021374
+        },
+        "interruption": null,
+        "browser_connection": {
+          "active": true,
+          "socket_state": 1,
+          "buffered_bytes": 0,
+          "error": ""
+        }
+      }
+    ]
+  },
+  "scope": "Frozen regression recordings; browser uses synthetic real-time microphone and silent output sink. Native and container runs are not controlled speedup trials. Cloud LLM hardware/cost excluded. TTS batch timings exclude browser playback and may cover multiple phrases.",
+  "container_resources": {
+    "observations": 38,
+    "docker_cpu_percent_mean": 41.99815789473684,
+    "docker_cpu_percent_peak": 210.77,
+    "container_memory_peak_mib": 2600.96,
+    "whole_device_vram_peak_mib": 4954.0,
+    "whole_device_gpu_utilization_peak_percent": 44.0,
+    "scope": "5-second requested sampling plus docker-stats collection delay, including startup. CPU100%=one logical core; sampled peaks are not certified maxima. Docker memory excludes host browser/evaluator. GPU is whole device, not per-model allocation."
+  }
+}

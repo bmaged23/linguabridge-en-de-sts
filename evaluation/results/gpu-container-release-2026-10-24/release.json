@@ -1,0 +1,23 @@
+{
+  "image": "bmaged23/linguabridge-en-de-sts:gpu",
+  "immutable_image": "bmaged23/linguabridge-en-de-sts@sha256:04ec957cf2fb6df7e0d9b0ca378ac7f3f37e5fcc79ebcd04181ce36b2c08bcbd",
+  "source_revision": "21902e9e8380eb82464039637dc356715375d53b",
+  "platform": "linux/amd64",
+  "compressed_layers_gib": 5.404,
+  "qualification_run": "https://github.com/bmaged23/linguabridge-en-de-sts/actions/runs/40140657528",
+  "delivery_run": "https://github.com/bmaged23/linguabridge-en-de-sts/actions/runs/40142850698",
+  "verified": {
+    "offline_tests": 94,
+    "asr_waveforms": 52,
+    "browser_cases": 17,
+    "javascript_errors": 0,
+    "independent_tts_audio_chunks_scored": 37,
+    "public_manifest_digest_match": true,
+    "anonymous_pull": true,
+    "normal_gpu_warmup_health_ui": true,
+    "public_dockerhub_overview": true
+  },
+  "qualification_run_note": "Build and model/browser gates passed. Slow laptop upload was cancelled after qualification; the successful hosted delivery resumed the same immutable image, without rebuilding or substituting test outputs.",
+  "hardware": "NVIDIA GTX 1660 Ti 6 GiB, Windows Docker Desktop/Ubuntu WSL2, NVIDIA driver560.76",
+  "scope": "Public pull reused locally available content-addressed layers. This is one tested hardware configuration, not universal device certification."
+}

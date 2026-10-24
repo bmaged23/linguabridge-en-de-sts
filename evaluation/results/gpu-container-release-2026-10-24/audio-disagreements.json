@@ -1,0 +1,202 @@
+[
+  {
+    "language": "en",
+    "reference": "Two plus two is four.",
+    "hypothesis": "2 plus 2 is 4.",
+    "metrics": {
+      "wer": 0.6,
+      "cer": 0.5,
+      "reference_words": 5,
+      "reference_characters": 20,
+      "word_errors": 3,
+      "character_errors": 10,
+      "substitutions": 3,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 2,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  },
+  {
+    "language": "de",
+    "reference": "Zwei plus zwei ist vier.",
+    "hypothesis": "2 plus 2 ist 4.",
+    "metrics": {
+      "wer": 0.6,
+      "cer": 0.5217391304347826,
+      "reference_words": 5,
+      "reference_characters": 23,
+      "word_errors": 3,
+      "character_errors": 12,
+      "substitutions": 3,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 2,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  },
+  {
+    "language": "de",
+    "reference": "Das Interview ist um zehn, nicht um neun.",
+    "hypothesis": "Das Interview ist um 10, nicht um 9.",
+    "metrics": {
+      "wer": 0.25,
+      "cer": 0.20512820512820512,
+      "reference_words": 8,
+      "reference_characters": 39,
+      "word_errors": 2,
+      "character_errors": 8,
+      "substitutions": 2,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 6,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  },
+  {
+    "language": "en",
+    "reference": "Your interview is in Berlin at ten.",
+    "hypothesis": "Your interview is in Berlin at 10.",
+    "metrics": {
+      "wer": 0.14285714285714285,
+      "cer": 0.08823529411764706,
+      "reference_words": 7,
+      "reference_characters": 34,
+      "word_errors": 1,
+      "character_errors": 3,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 6,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  },
+  {
+    "language": "de",
+    "reference": "Ihr Vorstellungsgespräch ist in Berlin um zehn Uhr.",
+    "hypothesis": "Ihr Vorstellungsgespräch ist in Berlin um 10 Uhr.",
+    "metrics": {
+      "wer": 0.125,
+      "cer": 0.08,
+      "reference_words": 8,
+      "reference_characters": 50,
+      "word_errors": 1,
+      "character_errors": 4,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 7,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  },
+  {
+    "language": "en",
+    "reference": "Anna and the speaker traveled to Berlin for an interview at ten.",
+    "hypothesis": "Anna and the speaker traveled to Berlin for an interview at 10.",
+    "metrics": {
+      "wer": 0.08333333333333333,
+      "cer": 0.047619047619047616,
+      "reference_words": 12,
+      "reference_characters": 63,
+      "word_errors": 1,
+      "character_errors": 3,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 11,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  },
+  {
+    "language": "en",
+    "reference": "They arrived at nine forty-five.",
+    "hypothesis": "They arrived at 9.45.",
+    "metrics": {
+      "wer": 0.5,
+      "cer": 0.45161290322580644,
+      "reference_words": 6,
+      "reference_characters": 31,
+      "word_errors": 3,
+      "character_errors": 14,
+      "substitutions": 2,
+      "deletions": 1,
+      "insertions": 0,
+      "hits": 3,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  },
+  {
+    "language": "de",
+    "reference": "Anna und die sprechende Person reisten für ein Vorstellungsgespräch um zehn Uhr nach Berlin.",
+    "hypothesis": "Anna und die sprechende Person reisten für ein Vorstellungsgespräch um 10 Uhr nach Berlin.",
+    "metrics": {
+      "wer": 0.07142857142857142,
+      "cer": 0.04395604395604396,
+      "reference_words": 14,
+      "reference_characters": 91,
+      "word_errors": 1,
+      "character_errors": 4,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 13,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  },
+  {
+    "language": "de",
+    "reference": "Ihr Zug fiel aus, und sie hatten noch keine Fahrkarten gekauft.",
+    "hypothesis": "Der Zug fiel aus und sie hatten noch keine Fahrkarten gekauft.",
+    "metrics": {
+      "wer": 0.09090909090909091,
+      "cer": 0.03278688524590164,
+      "reference_words": 11,
+      "reference_characters": 61,
+      "word_errors": 1,
+      "character_errors": 2,
+      "substitutions": 1,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 10,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  },
+  {
+    "language": "de",
+    "reference": "Sie kamen um neun Uhr fünfundvierzig an.",
+    "hypothesis": "Sie kamen um 9.45 Uhr an.",
+    "metrics": {
+      "wer": 0.42857142857142855,
+      "cer": 0.48717948717948717,
+      "reference_words": 7,
+      "reference_characters": 39,
+      "word_errors": 3,
+      "character_errors": 19,
+      "substitutions": 3,
+      "deletions": 0,
+      "insertions": 0,
+      "hits": 4,
+      "normalized_exact_match": false,
+      "empty_hypothesis": false,
+      "hallucinated_words_on_empty_reference": 0
+    }
+  }
+]
