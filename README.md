@@ -234,6 +234,12 @@ These are frozen regression tests on a GTX 1660 Ti with 6 GiB VRAM, not universa
 
 The automatic release path is **offline tests → hosted image build → local GPU/model/browser gate → Docker Hub publication → anonymous pull and startup verification**. The GPU runner, fixtures and cloud credentials must be available for real-model checks. The [successful delivery run](https://github.com/bmaged23/linguabridge-en-de-sts/actions/runs/40142850698) used the documented hosted resume route after the original run's successful quality gates and slow laptop upload. That delivery-only route is manually dispatched and verifies the prior gate and exact source/digest; it does not replace evaluation.
 
+## Application API
+
+The application includes a **FastAPI backend**: HTTP endpoints expose health, configuration, diagnostics, memory and mode controls, while **`WS /ws` runs the live speech-to-speech pipeline**, accepting microphone frames and returning transcripts, streamed LLM text and synthesized audio. These are the functional endpoints used by the browser UI, available after starting the application through Docker or Python at `http://localhost:8766`.
+
+See the **[API README: endpoints, request examples and streaming protocol](docs/api/README.md)** for usage, audio formats, playback acknowledgements, same-origin requirements and the current one-session limit. Interactive HTTP documentation is available at `http://localhost:8766/docs` while the server is running.
+
 ## Important configuration
 
 Application tuning lives in [`config.py`](config.py). Credentials and cloud model selection live in `.env`; evaluation budgets and test selection live in [`evaluation/config.py`](evaluation/config.py). The [complete parameter reference](docs/reference/configuration-parameters.md) lists application settings.

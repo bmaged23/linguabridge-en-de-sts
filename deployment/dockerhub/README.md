@@ -26,6 +26,10 @@ docker run --rm --gpus all --env-file .env \
 
 After warmup, open http://localhost:8766 and allow microphone access. No Git clone or first-run model download is needed: the image contains the production speech models. The cloud LLM requires your own account allowance. Your microphone stays in the browser, so no audio device passthrough is required. Notes/history persist in the named Docker volume. Stop with Ctrl+C.
 
+## Application API
+
+The FastAPI backend exposes HTTP health/state/configuration/control endpoints and `WS /ws` for streaming microphone audio, STT text, LLM replies and synthesized speech. Start the container first, then connect at `http://localhost:8766`. See the [API README](https://github.com/bmaged23/linguabridge-en-de-sts/blob/main/docs/api/README.md) for endpoint examples, audio formats, playback acknowledgements and the current same-origin, single-session scope.
+
 ## Verified container measurements
 
 The qualified image passed **94 offline tests, 52/52 STT recordings and 17/17 browser turns**, with zero JavaScript errors. Median first audio after recording ended was **2.53 seconds**. Highest observed container memory was **2,601 MiB** and whole-device VRAM **4,954 MiB** on a GTX 1660 Ti with 6 GiB VRAM; the cloud LLM hardware is excluded. These are sampled observations on one setup, not device-wide guarantees. Whisper independently scored 37/37 output chunks; English agreement WER/CER 4.04%/2.84%, German 9.09%/7.08%, including number-format differences and one lexical disagreement. See the linked report for all comparisons and limitations.
