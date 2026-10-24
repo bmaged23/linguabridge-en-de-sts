@@ -199,6 +199,41 @@ The [GPU container guide](deployment/README.md) contains the image recipe, local
 
 GitHub offline CI installs pinned dependencies and runs the regression suite without keys or models. A hosted CPU builder stages a candidate image; the trusted laptop runner pulls its exact digest and tests real GPU inference. The release gate checks normal startup, 52 frozen ASR recordings and 17 full browser turns before public Docker Hub publication. It then verifies an anonymous pull, image identity and startup again. This delivers an image; it does not deploy a public server. The GPU runner and fixture bundle must be available. The [verified release report](evaluation/results/gpu-container-release-2026-10-24/README.md) records 94 offline tests, 52/52 STT recordings and 17/17 browser turns, with 2.53 s median first audio. Hosted delivery can resume an already-qualified immutable digest after checking the source and successful GPU gate; this route completed publication and public GPU startup for this release.
 
+### Pull and run the public image
+
+[Docker Hub repository and instructions](https://hub.docker.com/r/bmaged23/linguabridge-en-de-sts) · Image: `bmaged23/linguabridge-en-de-sts:gpu`
+
+Requires Linux/amd64 containers and an NVIDIA GPU available to Docker. Create a local `.env` containing your own `OLLAMA_API_KEY`, `OLLAMA_BASE_URL=https://ollama.com` and `OLLAMA_MODEL=gemma4:31b`, then run:
+
+```bash
+docker pull bmaged23/linguabridge-en-de-sts:gpu
+docker run --rm --name linguabridge --gpus all --env-file .env \
+  -p 127.0.0.1:8766:8766 \
+  -v linguabridge-memory:/app/data \
+  bmaged23/linguabridge-en-de-sts:gpu
+```
+
+After model warmup, open **http://localhost:8766** and allow microphone access. No Git clone, Python installation or separate speech-model download is needed. The named volume preserves memory. See the [GPU guide](deployment/README.md) for hardware, troubleshooting and the immutable image digest.
+
+### Verified tests and measurements
+
+| Test or measurement | Published result |
+| --- | --- |
+| Offline behavior regressions | **94 passed** |
+| Real GPU STT regression | **52/52 recordings** matched frozen baseline outputs; all accuracy/meaning gates passed |
+| Full browser speech-to-speech tests | **17/17 passed**, zero JavaScript errors |
+| Tested conversation behavior | Translation confirmation/persistence, English/German/mixed speech, memory/reload, teaching, silence and interruption/recovery |
+| Independent TTS audit | Whisper large-v3 scored **37/37 chunks**, zero execution failures |
+| TTS text/audio agreement, English | **4.04% WER / 2.84% CER** |
+| TTS text/audio agreement, German | **9.09% WER / 7.08% CER** |
+| Time to first audio after input recording | **2.53 s median** |
+| Highest observed container RAM / whole-device VRAM | **2,601 MiB / 4,954 MiB** |
+| Public-image verification | Anonymous pull, exact digest match, GPU warmup, health endpoint and UI startup passed |
+
+These are frozen regression tests on a GTX 1660 Ti with 6 GiB VRAM, not universal accuracy or device guarantees. TTS agreement includes number/time formatting differences and one lexical disagreement; it is not a human voice-quality score. The cloud LLM's hardware is excluded from local resource measurements. [Full evaluation method, per-case results and limitations](evaluation/results/gpu-container-release-2026-10-24/README.md).
+
+The automatic release path is **offline tests → hosted image build → local GPU/model/browser gate → Docker Hub publication → anonymous pull and startup verification**. The GPU runner, fixtures and cloud credentials must be available for real-model checks. The [successful delivery run](https://github.com/bmaged23/linguabridge-en-de-sts/actions/runs/40142850698) used the documented hosted resume route after the original run's successful quality gates and slow laptop upload. That delivery-only route is manually dispatched and verifies the prior gate and exact source/digest; it does not replace evaluation.
+
 ## Important configuration
 
 Application tuning lives in [`config.py`](config.py). Credentials and cloud model selection live in `.env`; evaluation budgets and test selection live in [`evaluation/config.py`](evaluation/config.py). The [complete parameter reference](docs/reference/configuration-parameters.md) lists application settings.
