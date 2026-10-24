@@ -27,14 +27,14 @@ The animation plays directly in this README. Click it for the interactive versio
 5. **Choose the voices.** The LLM marks English/German text spans. A local parser removes these markers from the transcript and sends short phrases to Kokoro or Piper. English → German → English output can switch voices within a reply while preserving order.
 6. **Play and remember.** The browser plays each completed audio chunk. Only fully played assistant phrases count as heard history. New speech stops playback, clears pending audio, and cancels the previous response.
 
-STT uses progressive cumulative-audio previews with prefix reuse. `stt.final_strategy` controls the final decode; the adaptive strategy improves measured mixed-language accuracy but costs more processing for long requests. TTS streams completed **phrases**, rather than generating individual audio tokens. One STT process and one shared TTS process keep their models loaded between turns.
+STT receives cumulative audio previews while you speak. Short previews use progressive prefix reuse; longer inputs can decode completed pause segments early. Exact audio/settings matches let the final pass reuse completed segments, while the unfinished tail is decoded again. GPU batches of two reduce repeated work. The original whole-input fallback remains for monolingual or uncertain cases. TTS streams completed **phrases**, rather than individual audio tokens. One STT process and one shared TTS process keep their models loaded between turns.
 
 ## Models
 
 | Stage | Model / voice | Location | Active settings |
 | --- | --- | --- | --- |
 | Speech detection | Silero VAD ONNX | Local CPU | 16 kHz audio, 32 ms frames |
-| STT | Qwen3-ASR-0.6B | Local GPU | FP32/eager, greedy previews, adaptive final chunks with 3 beams |
+| STT | Qwen3-ASR-0.6B | Local GPU | FP32/eager; greedy short/whole decoding, 3-beam long chunks; exact segment cache and batches of 2 |
 | LLM | `gemma4:31b` | Ollama Cloud | Streaming on, thinking off, temperature 0.3 |
 | English TTS | Kokoro 82M ONNX, `af_heart` | Local GPU | Speed 1.05, 24 kHz output |
 | German TTS | Piper `de_DE-thorsten-high` | Local GPU | Length scale 1.0, 22.05 kHz output |
@@ -44,9 +44,19 @@ No local LLM installation is required. An Ollama Cloud account with access to th
 
 ## Measured evaluation
 
-Latest: the [noisy mixed-speech fix](evaluation/results/mixed-asr-fix-2026-10-24/README.md) reduced validation-story WER from **14.32% to 9.40%** on four source stories with clean/20 dB/10 dB variants. All 24 human calibration transcripts retained their baseline scores. The previously failing noisy story now passes explicit cancellation/negation checks, including independent checks of both spoken summaries. **17/17 browser turns** passed the stronger suite; **83 regression tests** pass.
+Latest: the [noisy mixed-speech fix](evaluation/results/mixed-asr-fix-2026-10-24/README.md) reduced validation-story WER from **14.32% to 9.40%** on four source stories with clean/20 dB/10 dB variants. All 24 human calibration transcripts retained their baseline scores. The previously failing noisy story now passes explicit cancellation/negation checks, including independent checks of both spoken summaries. **17/17 browser turns** passed the stronger suite; The current offline suite passes **91 regression tests**; the linked accuracy checkpoint originally had 83.
 
 The prior scripted full flow measured **2.31% WER / 0.51% CER** and **2.75 s median first audio after input recording**. Completed-segment caching and GPU batches of two subsequently reduced the long mixed story’s first-audio delay from **7.77 s to 2.69 s** in matched real-time browser runs, with unchanged transcription. Offline final-decode comparisons preserved all 52 transcripts. See the [latency and accuracy report](evaluation/results/asr-latency-optimization-2026-10-24/README.md) for scope and measurements. Six of 45 validation fact checks still fail under noise; recognition is not error-free.
+
+| Native STT evaluation | WER | CER | Scope |
+| --- | ---: | ---: | --- |
+| English human speech | 3.77% | 2.05% | 12 FLEURS calibration recordings |
+| German human speech | 4.42% | 2.03% | 12 FLEURS calibration recordings |
+| Mixed validation speech | 9.40% | 6.72% | Four synthetic stories × clean/20 dB/10 dB conditions |
+
+These cohorts differ and are not a single multilingual accuracy score. The model’s training overlap with the human calibration clips is unknown. The [component report](evaluation/results/component-v1/README.md) and [guarded mixed-speech report](evaluation/results/mixed-asr-fix-2026-10-24/README.md) describe the inputs and limitations.
+
+Independent Whisper scored **37/37 generated audio chunks** without execution failures: English text/audio agreement WER **4.23%**, CER **2.95%**; German WER **9.01%**, CER **7.38%**. Review of every discrepancy found number/time spelling differences, such as “ten” versus “10”. These are automatic agreement measurements with a known language, not human voice-quality scores. See the [native audio audit](evaluation/results/asr-latency-optimization-2026-10-24/audio-audit-summary.json).
 
 The earlier [teaching and voice-marker fix](evaluation/results/teaching-voice-fix-2026-10-24/README.md) passed a 12-case teaching regression suite in two passes. Its two previously failing turns produced 10 native audio chunks with 0% normalized WER/CER in an independent Whisper check. Historical measurements and known failures remain in the [earlier evaluation](evaluation/results/review-2026-10-24/README.md).
 
@@ -187,7 +197,7 @@ Modes can be selected in the UI or through explicit commands such as “LinguaBr
 
 The [GPU container guide](deployment/README.md) contains the image recipe, local build/run commands, required hardware and release status. The image bundles the production speech assets; credentials and persistent memory are supplied at runtime. Docker Hub publication is still being verified.
 
-GitHub offline CI installs pinned application dependencies and runs the regression suite without keys or models. The GPU release workflow is designed to build a candidate, test normal startup, compare 52 frozen ASR recordings, run 17 full browser turns against the container, and publish only after those gates pass. It then pulls the published tag, checks image identity and repeats startup verification. This delivers an image; it does not deploy a public server. The trusted GPU runner and fixture bundle must be online. Remote workflow verification is pending.
+GitHub offline CI installs pinned dependencies and runs the regression suite without keys or models. A hosted CPU builder stages a private candidate image; the trusted laptop runner pulls its exact digest and tests real GPU inference. The release gate checks normal startup, 52 frozen ASR recordings and 17 full browser turns before public Docker Hub publication. It then verifies an anonymous pull, image identity and startup again. This delivers an image; it does not deploy a public server. The GPU runner and fixture bundle must be available. Remote workflow verification is pending.
 
 ## Important configuration
 

@@ -1,0 +1,101 @@
+name: Qualify and publish GPU image
+on:
+  workflow_call:
+    inputs:
+      source_sha:
+        type: string
+        required: true
+      image_ref:
+        type: string
+        required: true
+      pull_candidate:
+        type: boolean
+        default: true
+jobs:
+  qualify:
+    if: github.repository == 'bmaged23/linguabridge-en-de-sts' && github.ref == 'refs/heads/main' && github.actor == 'bmaged23'
+    runs-on: [self-hosted, Linux, X64, linguabridge-gpu]
+    timeout-minutes: 60
+    env:
+      IMAGE: bmaged23/linguabridge-en-de-sts
+      CANDIDATE: ${{ inputs.image_ref }}
+      SOURCE_SHA: ${{ inputs.source_sha }}
+      OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+      OLLAMA_BASE_URL: https://ollama.com
+      OLLAMA_MODEL: gemma4:31b
+      PLAYWRIGHT_BROWSERS_PATH: ${{ vars.PLAYWRIGHT_BROWSERS_PATH }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_sha }}
+      - name: Prepare isolated temporary registry credentials
+        run: |
+          mkdir -p "$RUNNER_TEMP/linguabridge-docker"
+          echo "DOCKER_CONFIG=$RUNNER_TEMP/linguabridge-docker" >> "$GITHUB_ENV"
+      - uses: docker/login-action@v3
+        if: inputs.pull_candidate
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Pull candidate by digest
+        if: inputs.pull_candidate
+        run: docker pull "$CANDIDATE"
+      - name: Verify application revision and record image identity
+        run: |
+          [[ "$SOURCE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          revision=$(docker image inspect "$CANDIDATE" --format '{{index .Config.Labels "org.opencontainers.image.revision"}}')
+          test "$revision" = "$SOURCE_SHA"
+          docker tag "$CANDIDATE" "$IMAGE:sha-$SOURCE_SHA"
+      - name: Install pinned browser evaluation tools
+        run: |
+          uv venv .venv --python 3.12
+          uv pip install --python .venv/bin/python --no-deps -r requirements/release/app.txt
+      - name: Evaluate candidate GPU models and complete browser flows
+        env:
+          PYTHONPATH: src:.
+          FIXTURES: ${{ vars.LINGUABRIDGE_FIXTURES }}
+        run: |
+          .venv/bin/python -m scripts.release.smoke_container --image "$IMAGE:sha-$SOURCE_SHA"
+          .venv/bin/python -m scripts.release.check_gpu_image \
+            --image "$IMAGE:sha-$SOURCE_SHA" --fixtures "$FIXTURES" \
+            --run-id "$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"
+      - name: Publish the exact passing candidate
+        env:
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: |
+          printf '%s' "$DOCKERHUB_TOKEN" | docker login --username bmaged23 --password-stdin
+          docker tag "$IMAGE:sha-$SOURCE_SHA" "$IMAGE:gpu"
+          docker push "$IMAGE:sha-$SOURCE_SHA"
+          docker push "$IMAGE:gpu"
+      - name: Verify anonymous public pull and startup
+        run: |
+          candidate=$(docker image inspect "$IMAGE:sha-$SOURCE_SHA" --format '{{.Id}}')
+          mkdir -p "$RUNNER_TEMP/linguabridge-anonymous"
+          docker --config "$RUNNER_TEMP/linguabridge-anonymous" pull "$IMAGE:gpu"
+          published=$(docker image inspect "$IMAGE:gpu" --format '{{.Id}}')
+          test "$candidate" = "$published"
+          docker image inspect "$IMAGE:gpu" --format '{{json .RepoDigests}}' > .evaluation-local/published-image-digests.json
+          .venv/bin/python -m scripts.release.smoke_container --image "$IMAGE:gpu"
+      - name: Retain safe release summaries
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gpu-release-summaries
+          include-hidden-files: true
+          path: |
+            .evaluation-local/image-*/asr-gate.json
+            .evaluation-local/image-*/release-gate.json
+            .evaluation-local/image-*/browser/summary.json
+            .evaluation-local/published-image-digests.json
+      - name: Update Docker Hub overview and source link
+        env:
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: .venv/bin/python -m scripts.release.update_dockerhub
+      - name: Clear temporary registry credentials
+        if: always()
+        run: |
+          docker logout ghcr.io || true
+          docker logout || true
+
