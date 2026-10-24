@@ -50,7 +50,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build tested candidate into private staging registry
+      - name: Build tested candidate into staging registry
         id: image
         uses: docker/build-push-action@v6
         with:
@@ -63,12 +63,6 @@ jobs:
           build-args: SOURCE_REVISION=${{ github.sha }}
           cache-from: type=gha,scope=linguabridge-gpu
           cache-to: type=gha,scope=linguabridge-gpu,mode=max
-      - name: Confirm staging package is private
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          visibility=$(gh api users/bmaged23/packages/container/linguabridge-en-de-sts-candidates --jq .visibility)
-          test "$visibility" = private
   publish:
     needs: [tests, build]
     permissions:

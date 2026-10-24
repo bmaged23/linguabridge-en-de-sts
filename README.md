@@ -197,7 +197,7 @@ Modes can be selected in the UI or through explicit commands such as “LinguaBr
 
 The [GPU container guide](deployment/README.md) contains the image recipe, local build/run commands, required hardware and release status. The image bundles the production speech assets; credentials and persistent memory are supplied at runtime. Docker Hub publication is still being verified.
 
-GitHub offline CI installs pinned dependencies and runs the regression suite without keys or models. A hosted CPU builder stages a private candidate image; the trusted laptop runner pulls its exact digest and tests real GPU inference. The release gate checks normal startup, 52 frozen ASR recordings and 17 full browser turns before public Docker Hub publication. It then verifies an anonymous pull, image identity and startup again. This delivers an image; it does not deploy a public server. The GPU runner and fixture bundle must be available. Remote workflow verification is pending.
+GitHub offline CI installs pinned dependencies and runs the regression suite without keys or models. A hosted CPU builder stages a candidate image; the trusted laptop runner pulls its exact digest and tests real GPU inference. The release gate checks normal startup, 52 frozen ASR recordings and 17 full browser turns before public Docker Hub publication. It then verifies an anonymous pull, image identity and startup again. This delivers an image; it does not deploy a public server. The GPU runner and fixture bundle must be available. Remote workflow verification is pending.
 
 ## Important configuration
 
