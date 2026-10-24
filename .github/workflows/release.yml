@@ -16,7 +16,6 @@ on:
       - 'deployment/**'
       - 'evaluation/datasets/**'
       - 'evaluation/config.py'
-      - '.github/workflows/**'
       - '.dockerignore'
       - '!requirements/**/*.md'
       - '!requirements/archive/**'
