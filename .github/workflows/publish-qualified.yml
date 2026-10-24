@@ -1,0 +1,95 @@
+name: Publish already qualified GPU image
+on:
+  workflow_dispatch:
+    inputs:
+      source_sha:
+        description: Exact application commit already qualified on the GPU runner
+        required: true
+      candidate_digest:
+        description: Exact GHCR candidate sha256 digest
+        required: true
+      qualification_run:
+        description: Release run with successful build and GPU evaluation steps
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  publish:
+    if: github.repository == 'bmaged23/linguabridge-en-de-sts' && github.actor == 'bmaged23' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      SOURCE_SHA: ${{ inputs.source_sha }}
+      CANDIDATE_DIGEST: ${{ inputs.candidate_digest }}
+      QUALIFICATION_RUN: ${{ inputs.qualification_run }}
+      GH_TOKEN: ${{ github.token }}
+      IMAGE: bmaged23/linguabridge-en-de-sts
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_sha }}
+      - name: Require the matching source and successful GPU qualification
+        run: |
+          [[ "$SOURCE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$CANDIDATE_DIGEST" =~ ^sha256:[0-9a-f]{64}$ ]]
+          [[ "$QUALIFICATION_RUN" =~ ^[0-9]+$ ]]
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$QUALIFICATION_RUN" > /tmp/qualified-run.json
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$QUALIFICATION_RUN/jobs?per_page=100" > /tmp/qualified-jobs.json
+          python3 - <<'PY'
+          import json,os
+          run=json.load(open('/tmp/qualified-run.json'))
+          jobs=json.load(open('/tmp/qualified-jobs.json'))['jobs']
+          assert run['head_sha']==os.environ['SOURCE_SHA']
+          assert run['head_branch']=='main' and run['actor']['login']=='bmaged23'
+          assert any(j['name']=='build' and j['conclusion']=='success' for j in jobs)
+          assert any(s['name']=='Evaluate candidate GPU models and complete browser flows' and s['conclusion']=='success' for j in jobs for s in j['steps'])
+          print('Matching source build and complete GPU gate verified.')
+          PY
+      - name: Install registry-to-registry transfer tool
+        run: sudo apt-get update -qq && sudo apt-get install -y skopeo
+      - uses: docker/login-action@v3
+        with:
+          username: bmaged23
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Verify candidate revision and stream exact manifest to Docker Hub
+        run: |
+          candidate="ghcr.io/bmaged23/linguabridge-en-de-sts-candidates@$CANDIDATE_DIGEST"
+          skopeo inspect "docker://$candidate" > /tmp/candidate.json
+          python3 - <<'PY'
+          import json,os
+          image=json.load(open('/tmp/candidate.json'))
+          assert image['Digest']==os.environ['CANDIDATE_DIGEST']
+          assert image['Labels']['org.opencontainers.image.revision']==os.environ['SOURCE_SHA']
+          assert image['Architecture']=='amd64' and image['Os']=='linux'
+          PY
+          skopeo copy --preserve-digests --dest-authfile "$HOME/.docker/config.json" "docker://$candidate" "docker://$IMAGE:sha-$SOURCE_SHA"
+          skopeo copy --preserve-digests --dest-authfile "$HOME/.docker/config.json" "docker://$candidate" "docker://$IMAGE:gpu"
+          mkdir -p /tmp/anonymous
+          printf '{"auths":{}}' > /tmp/anonymous/auth.json
+          skopeo inspect --authfile /tmp/anonymous/auth.json --raw "docker://$IMAGE:gpu" > /tmp/public-manifest.json
+          test "sha256:$(sha256sum /tmp/public-manifest.json | cut -d' ' -f1)" = "$CANDIDATE_DIGEST"
+      - name: Synchronize public Docker Hub overview
+        env:
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: python3 -m scripts.release.update_dockerhub
+  public_gpu_startup:
+    needs: publish
+    runs-on: [self-hosted, Linux, X64, linguabridge-gpu]
+    timeout-minutes: 10
+    env:
+      OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+      OLLAMA_BASE_URL: https://ollama.com
+      OLLAMA_MODEL: gemma4:31b
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_sha }}
+      - name: Anonymous pull and normal GPU startup of the published image
+        env:
+          IMAGE: bmaged23/linguabridge-en-de-sts
+          DIGEST: ${{ inputs.candidate_digest }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/linguabridge-public-pull"
+          docker --config "$RUNNER_TEMP/linguabridge-public-pull" pull "$IMAGE@$DIGEST"
+          python3 -m scripts.release.smoke_container --image "$IMAGE@$DIGEST"
